@@ -1,0 +1,670 @@
+{
+  "period": "2026 Q1",
+  "title": "Q1 2026: reported genre hit counts; supply and hit rates unavailable",
+  "cutoff": "2026-04-02",
+  "publicationDate": "2026-05-14",
+  "sourceLastModified": "2026-05-17",
+  "accessedAt": "2026-09-02",
+  "scope": "Steam releases dated 2026-01-01 through 2026-03-31, sampled from VG Insights on April 2; not indie-only.",
+  "methodology": "Threshold: at least 1,000 reviews by cutoff. Chris Zukowski manually assigns one genre per qualifying game. Exact counts extracted from the public article's genreData variable, not inferred from chart thickness. Genre supplies are not published; rates remain null.",
+  "sources": [
+    {
+      "id": "htmag-q1-2026",
+      "title": "2026 Q1 Games",
+      "author": "Chris Zukowski",
+      "url": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "type": "Primary analyst publication",
+      "access": "Public article and embedded chart data fully inspected"
+    },
+    {
+      "id": "vgi-origin",
+      "title": "VG Insights / Sensor Tower",
+      "url": "https://app.sensortower.com/vgi/",
+      "type": "Original data provider referenced by article",
+      "access": "No public original release-cohort export located"
+    }
+  ],
+  "rows": [
+    {
+      "name": "2D Platformer",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 2,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "3D Platformer",
+      "hits": 2,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "4X",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Action Roguelike",
+      "hits": 2,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 2
+    },
+    {
+      "name": "Adult",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 2
+    },
+    {
+      "name": "Adventure",
+      "hits": 5,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 4
+    },
+    {
+      "name": "Auto-battler",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 2,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Beat-em-up",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "City Builder",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Colony Sim",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Creature Collector",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Farm",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Fighter",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Friendslop",
+      "hits": 3,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 2
+    },
+    {
+      "name": "High Concept",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Horror",
+      "hits": 3,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 7
+    },
+    {
+      "name": "Idle",
+      "hits": 4,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 5
+    },
+    {
+      "name": "Immersive Sim",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Local multiplayer",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "MMO",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 2
+    },
+    {
+      "name": "Management",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Metroidvania",
+      "hits": 2,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Mod",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Multiplayer Shooter",
+      "hits": 3,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 2
+    },
+    {
+      "name": "Narrative",
+      "hits": 6,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 12
+    },
+    {
+      "name": "OWSC",
+      "hits": 4,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 6,
+      "q1_2025Hits": 3
+    },
+    {
+      "name": "Puzzle",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 5,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "RPG",
+      "hits": 6,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 5,
+      "q1_2025Hits": 5
+    },
+    {
+      "name": "RTS",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Racing",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 3
+    },
+    {
+      "name": "Rhythm",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Roguelike",
+      "hits": 2,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 4,
+      "q1_2025Hits": 4
+    },
+    {
+      "name": "Roguelike Deckbuilder",
+      "hits": 3,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Sandbox",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 2,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Shooter",
+      "hits": 4,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 3,
+      "q1_2025Hits": 5
+    },
+    {
+      "name": "Simulation",
+      "hits": 10,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 2,
+      "q1_2025Hits": 7
+    },
+    {
+      "name": "Souls-like",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Sports",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 0,
+      "q1_2025Hits": 1
+    },
+    {
+      "name": "Strategy",
+      "hits": 5,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Up",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 2,
+      "q1_2025Hits": 3
+    },
+    {
+      "name": "Tactics",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 0
+    },
+    {
+      "name": "Tower Defense",
+      "hits": 1,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Down",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 2
+    },
+    {
+      "name": "Virtual Pet",
+      "hits": 0,
+      "supply": null,
+      "rate": null,
+      "evidence": "Exact published chart data (genreData); denominator unavailable",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "direction": "Flat",
+      "directionBasis": "Q1 2026 vs Q1 2025 hit count; not demand growth",
+      "q1_2024Hits": 1,
+      "q1_2025Hits": 0
+    }
+  ],
+  "stats": [
+    {
+      "name": "Q1 releases",
+      "value": 5971,
+      "unit": "games",
+      "evidence": "Published count; also sum of review buckets",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Games with >=1,000 reviews",
+      "value": 96,
+      "unit": "games",
+      "evidence": "Published all-Steam review bucket",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Overall >=1,000-review share",
+      "value": 1.6077708926477978,
+      "display": "1.61%",
+      "unit": "percent",
+      "evidence": "Calculated: 96 / 5,971 × 100",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Games with 0–9 reviews",
+      "value": 3686,
+      "unit": "games",
+      "evidence": "Published raw count",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "0–9-review share (recalculated)",
+      "value": 61.731703232289405,
+      "display": "61.7%",
+      "unit": "percent",
+      "evidence": "Calculated: 3,686 / 5,971 × 100; agrees with runtime chart formula",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Low-review games per >=1,000-review game",
+      "value": 38.395833333333336,
+      "display": "38.4:1",
+      "unit": "ratio",
+      "evidence": "Calculated: 3,686 / 96; article rounds to 38",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Sum of genre-chart Q1 2026 hit counts",
+      "value": 74,
+      "unit": "games",
+      "evidence": "Calculated from 42 published genreData rows; does not equal 96",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Genre-chart / all-Steam hit-count gap",
+      "value": 22,
+      "unit": "games",
+      "evidence": "Calculated: 96 − 74; unexplained in source",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "2026 full-year release projection",
+      "value": 25799,
+      "unit": "games",
+      "evidence": "Author forecast, not an actual count",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Projected full-year growth over article's 2025 baseline",
+      "value": 23.7,
+      "unit": "percent",
+      "evidence": "Author forecast using 20,853 baseline; not Q1 growth",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "name": "Q1 release growth using published chart counts",
+      "value": 24.785788923719963,
+      "display": "24.8%",
+      "unit": "percent",
+      "evidence": "Calculated: 5,971 / 4,785 − 1; not the article's approximate 23% prose",
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    }
+  ],
+  "reviewBuckets": [
+    {
+      "name": "0–9",
+      "count": 3686,
+      "publishedFallbackPercent": 63.2,
+      "calculatedPercent": 61.731703232289405,
+      "evidence": "Counts from raw2026 in public HTML; percentages recomputed over 5,971"
+    },
+    {
+      "name": "10–50",
+      "count": 1362,
+      "publishedFallbackPercent": 23.4,
+      "calculatedPercent": 22.81024953944063,
+      "evidence": "Counts from raw2026 in public HTML; percentages recomputed over 5,971"
+    },
+    {
+      "name": "51–100",
+      "count": 317,
+      "publishedFallbackPercent": 5.4,
+      "calculatedPercent": 5.3089934684307485,
+      "evidence": "Counts from raw2026 in public HTML; percentages recomputed over 5,971"
+    },
+    {
+      "name": "101–399",
+      "count": 387,
+      "publishedFallbackPercent": 6.6,
+      "calculatedPercent": 6.481326410986435,
+      "evidence": "Counts from raw2026 in public HTML; percentages recomputed over 5,971"
+    },
+    {
+      "name": "400–999",
+      "count": 123,
+      "publishedFallbackPercent": 2.1,
+      "calculatedPercent": 2.059956456204991,
+      "evidence": "Counts from raw2026 in public HTML; percentages recomputed over 5,971"
+    },
+    {
+      "name": "1000+",
+      "count": 96,
+      "publishedFallbackPercent": 1.6,
+      "calculatedPercent": 1.6077708926477978,
+      "evidence": "Counts from raw2026 in public HTML; percentages recomputed over 5,971"
+    }
+  ],
+  "caveats": [
+    "Genre counts total 74, but the all-Steam >=1,000-review bucket contains 96. The article does not explain the 22-game discrepancy; do not normalize these rows to 96 or present them as exhaustive.",
+    "Canvas fallback text says 63.2% for 0–9 reviews. Its raw counts and runtime formula yield 61.7%; other fallback percentages also disagree. Preserve raw counts and label recalculations.",
+    "No same-taxonomy genre-supply denominator or full public game-level cohort was linked or found. Null is unknown, not zero.",
+    "Late-March games had far less exposure than January games. Do not compare this early-quarter snapshot directly with mature full-year 2025 hit rates.",
+    "Direction compares published Q1 hit counts, not revenue, audience growth or likelihood of success. A zero means no hit in this chart, not zero demand.",
+    "Categories are hand-assigned and exclusive; Steam tags overlap. Mixing tagged supply with these hit counts would produce invalid rates.",
+    "'Real Steam' and the review threshold are the author's heuristic, not a published Valve algorithm trigger. Review counts do not prove organic acquisition or profitability.",
+    "The full-year projection and its 23.7% growth are forecasts. Current SteamDB totals may use different snapshots or definitions."
+  ]
+}

@@ -1,0 +1,1572 @@
+{
+  "updatedAt": "2026-09-03",
+  "author": "Steam Discovery Research",
+  "methodology": "Game-first editorial synthesis of public developer accounts, practitioner case studies and dated Steam observations. These are not our interviews or audited campaign accounts. Observed facts, reported claims and proposed experiments are distinguished; missing spend, sales and attribution remain unknown.",
+  "stories": [
+    {
+      "id": "dreadmoor",
+      "title": "DREADMOOR",
+      "appId": 3629430,
+      "headline": "Sell a recognizable fear, then prove there is a game underneath",
+      "deck": "Fishing offers a readable ritual; threatening water gives it tension. Repeated playable proof matters as much as a striking trailer.",
+      "genre": "First-person fishing / survival adventure",
+      "releaseStatus": "Unreleased; Steam lists Q4 2026 as a planned window.",
+      "readingMinutes": 3,
+      "sourcePublications": [
+        "Game World Observer",
+        "Official Steam announcements",
+        "Steam"
+      ],
+      "marketQuestion": "Can a familiar activity make an unfamiliar horror world easier to understand?",
+      "playerPromise": "Risk another catch, improve your vessel and return alive from an unsettling flooded world.",
+      "hook": "A routine fishing action becomes a decision about greed, safety and preparation.",
+      "story": [
+        {
+          "heading": "The product behind the attention",
+          "body": "Our interpretation: fishing is an unusually legible entry point. A viewer understands a line, a catch and a boat without learning a fictional economy. Horror changes the meaning of that ordinary task: staying longer may improve the haul while making the return more dangerous. The useful design question is whether a player feels that tradeoff, not whether screenshots merely resemble an established fishing hit.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/3629430/DREADMOOR/"
+          ]
+        },
+        {
+          "heading": "Interest, not a launch result",
+          "body": "The campaign records below show dated interest milestones, not purchases. The later official announcement extends the story beyond the older marketing column. Treat it as a new checkpoint, not proof that the intervening showcase caused the increase. A wishlist is an expression of future interest; it does not reveal price tolerance, refund risk or whether the playable experience satisfies the trailer.",
+          "sourceUrls": [
+            "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+            "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093"
+          ]
+        },
+        {
+          "heading": "What a small team should learn",
+          "body": "Our inference: the strongest transferable asset is a repeatable tension-producing interaction. Build one encounter that can generate several truthful clips, then let a small test group expose where the controls or feedback break. Publishing more footage only helps if it sharpens the same promise. A spectacular reveal followed by an ordinary minigame may increase the eventual expectation gap.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Historical wishlist milestone",
+          "value": "200,000+",
+          "unit": "Steam wishlists",
+          "window": "2026-05-21",
+          "evidence": "Publisher self-report",
+          "source": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+          "caveat": "Not sales."
+        },
+        {
+          "label": "Later wishlist milestone",
+          "value": ">350,000",
+          "unit": "Steam wishlists",
+          "window": "2026-07-16",
+          "evidence": "Official developer/publisher announcement",
+          "source": "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093",
+          "caveat": "Not today's balance or isolated showcase lift."
+        },
+        {
+          "label": "Current released-game CCU / reviews",
+          "value": null,
+          "unit": "Unavailable",
+          "window": "Checked 2026-09-03",
+          "evidence": "Steam observation",
+          "source": "https://store.steampowered.com/app/3629430/DREADMOOR/",
+          "caveat": "Unreleased; playtests are separate."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "January 2026",
+          "channel": "Closed playtest",
+          "action": "Technical test plus social promotion",
+          "outcome": "Reported +4,000 wishlists / week",
+          "spend": "Some UA; amount unknown",
+          "source": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+          "caveat": "One event window."
+        },
+        {
+          "when": "February 2026",
+          "channel": "IGN Fan Fest + outreach",
+          "action": "Gameplay trailer and parallel distribution",
+          "outcome": "Reported >44,000 additions / month",
+          "spend": "Paid traffic included; unknown",
+          "source": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+          "caveat": "Mixed channels."
+        },
+        {
+          "when": "April 2026",
+          "channel": "IndieGameJoe",
+          "action": "Cross-platform posts",
+          "outcome": "Reported >25,000 additions / week",
+          "spend": "Posts reportedly free; total unknown",
+          "source": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+          "caveat": "Not controlled attribution."
+        },
+        {
+          "when": "2026-07-16",
+          "channel": "Official announcement",
+          "action": "Showcase trailer; October 6 demo announced",
+          "outcome": "350,000+ wishlist checkpoint",
+          "spend": "Unknown",
+          "source": "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093",
+          "caveat": "Demo date was a plan."
+        }
+      ],
+      "demand": {
+        "audience": "Players attracted to eerie exploration and tangible progression.",
+        "job": "Make a satisfying catch while managing uncertainty.",
+        "trigger": "Readable reward beside visible danger.",
+        "supply": "DREADMOOR itself occupies this intersection; no genre census was established.",
+        "opening": "Test a shorter, stronger risk/reward encounter, not a supposedly empty genre.",
+        "notProven": "That this audience wants your art style, price or short format.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/3629430/DREADMOOR/"
+        ]
+      },
+      "mechanism": {
+        "observed": "Playtesting, social, showcases and creators accompanied wishlist spikes.",
+        "inference": "Repeated proof may reduce skepticism and make the promise memorable.",
+        "confounds": "Spend is unknown. 'Tripled' is approximate. February IGN participation precedes claimed first IGN contact in March; sequence unresolved.",
+        "sourceUrls": [
+          "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "A familiar action with an unsettling consequence.",
+        "change": "Night Quota: a stationary fishing kiosk instead of a traversable flooded world.",
+        "miniDemo": "Three catches, one upgrade and one looming threat; sell now or risk another cast. Two developers build the loop; the artist creates readable catch silhouettes. PM tests decisions; marketer captures real alternatives.",
+        "technicalCut": "Fixed camera region, scripted water threat, simple inventory; no sailing, land combat or multiplayer.",
+        "doNotCopy": "DREADMOOR's names, creatures, vessel art or broad content promise.",
+        "successTest": "By day five, cold testers should understand why stopping can be the smart choice. By day fifteen, show two genuinely different outcomes."
+      },
+      "risks": [
+        "Atmosphere hides shallow fishing.",
+        "Scope expands into boat physics.",
+        "Reach is mistaken for purchase demand."
+      ],
+      "sourceUrls": [
+        "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+        "https://store.steampowered.com/app/3629430/DREADMOOR/",
+        "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3629430&count=10&maxlength=0&feeds=steam_community_announcements"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3629430/132411f9af108c43fd75c8b3c9fd730ebdb62c89/capsule_616x353.jpg?t=1787930956",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/3629430/?l=english&cc=us",
+        "kind": "Official Steam capsule",
+        "httpStatus": 200,
+        "decoded": true,
+        "width": 616,
+        "height": 353,
+        "checkedAt": "2026-09-03"
+      },
+      "steamSnapshot": {
+        "reviews": null,
+        "currentCCU": null,
+        "peakCCU": null,
+        "peakDate": null,
+        "source": "https://store.steampowered.com/app/3629430/DREADMOOR/",
+        "note": "Unreleased base game; demo/playtest metrics excluded."
+      }
+    },
+    {
+      "id": "design-and-conjure",
+      "title": "Design and Conjure",
+      "appId": 2390130,
+      "headline": "Make the payoff visible, then find creators who already enjoy it",
+      "deck": "Tidying and decorating can explain themselves on video. The hard part is delivering satisfying choices rather than a pleasant asset catalogue.",
+      "genre": "Cozy organizing / decorating simulation",
+      "releaseStatus": "Full game coming soon; separate demo released August 3, 2025.",
+      "readingMinutes": 3,
+      "sourcePublications": [
+        "Game If You Are",
+        "Steam"
+      ],
+      "marketQuestion": "Can a compact transformation create enough pleasure to make viewers want control?",
+      "playerPromise": "Restore magical spaces at a gentle pace and make them feel personal.",
+      "hook": "A neglected room becomes an inviting place through small player decisions.",
+      "story": [
+        {
+          "heading": "A promise with its own demonstration",
+          "body": "Our interpretation: this concept connects two related pleasures—removing disorder and expressing taste. They need different feedback. Cleaning needs an unmistakable improvement; decorating needs several outcomes that feel valid. A beautiful room is not sufficient evidence of either. The decisive clip shows the player's intervention changing the space, so the viewer can imagine making a different choice.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2390130/Design_and_Conjure/"
+          ]
+        },
+        {
+          "heading": "The campaign was also a logistics problem",
+          "body": "The agency's useful lesson is operational: relevant creators, ready assets and quick decisions made a short campaign possible. The output and wishlist figures below describe different stages of the funnel. They are not a conversion table. Festival visibility arrived alongside sponsored coverage, and the case supplies neither a counterfactual nor a disclosed budget.",
+          "sourceUrls": [
+            "https://gameifyouare.com/case-study-design-and-conjure/"
+          ]
+        },
+        {
+          "heading": "The current product is a separate checkpoint",
+          "body": "Steam now offers a distinct demo while the full product remains upcoming. That distinction prevents a common research error: assigning demo feedback or campaign attention to a paid launch that has not happened. For this team, the next useful proof is behavioral. Do unfamiliar players enjoy arranging the room after the required task ends, or are they only completing instructions?",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2390130/Design_and_Conjure/",
+            "https://store.steampowered.com/app/3641540/Design_and_Conjure_Demo/"
+          ]
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Creator output",
+          "value": "4 creators / 5 pieces",
+          "unit": "Sponsored content",
+          "window": "Undated Next Fest campaign",
+          "evidence": "Agency self-report",
+          "source": "https://gameifyouare.com/case-study-design-and-conjure/",
+          "caveat": "Fifteen creators approached."
+        },
+        {
+          "label": "Content exposure",
+          "value": "Almost 25,000",
+          "unit": "YouTube + Twitch views",
+          "window": "Same undated campaign",
+          "evidence": "Agency self-report",
+          "source": "https://gameifyouare.com/case-study-design-and-conjure/",
+          "caveat": "Not unique viewers."
+        },
+        {
+          "label": "Wishlist additions",
+          "value": ">4,000",
+          "unit": "Steam wishlist additions",
+          "window": "Campaign week",
+          "evidence": "Agency self-report",
+          "source": "https://gameifyouare.com/case-study-design-and-conjure/",
+          "caveat": "Includes festival promotion."
+        },
+        {
+          "label": "Demo review score sample",
+          "value": 109,
+          "unit": "Scored demo reviews",
+          "window": "Read 2026-09-03",
+          "evidence": "Official Steam observation",
+          "source": "https://store.steampowered.com/app/3641540/Design_and_Conjure_Demo/",
+          "caveat": "Demo app 3641540; 99% positive. Not full-game purchasers."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "Undated; shortly before Next Fest",
+          "channel": "Creator outreach",
+          "action": "Prepare briefs, rates and assets",
+          "outcome": "Four creator agreements",
+          "spend": "Sponsored; total unknown",
+          "source": "https://gameifyouare.com/case-study-design-and-conjure/",
+          "caveat": "Event edition not identified."
+        },
+        {
+          "when": "Same campaign week",
+          "channel": "Creators + Steam festival",
+          "action": "Publish content around the demo",
+          "outcome": ">4,000 reported additions",
+          "spend": "Unknown",
+          "source": "https://gameifyouare.com/case-study-design-and-conjure/",
+          "caveat": "No channel split."
+        },
+        {
+          "when": "2025-08-03",
+          "channel": "Steam",
+          "action": "Separate demo released",
+          "outcome": "Public playable sample",
+          "spend": "Not disclosed",
+          "source": "https://store.steampowered.com/app/3641540/Design_and_Conjure_Demo/",
+          "caveat": "Does not date the agency campaign."
+        }
+      ],
+      "demand": {
+        "audience": "Players seeking gentle completion and room-making.",
+        "job": "Turn disorder into something welcoming and personally chosen.",
+        "trigger": "Immediate, legible before/after change.",
+        "supply": "Decorating is a recognizable promise; this case provides no supply denominator.",
+        "opening": "Give each furnishing a playful purpose, not merely another visual variant.",
+        "notProven": "Whether a new audience values your specific theme enough to buy.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2390130/Design_and_Conjure/"
+        ]
+      },
+      "mechanism": {
+        "observed": "Matched cozy creators delivered sponsored content during a festival.",
+        "inference": "Audience fit and visible transformation may lower explanation costs.",
+        "confounds": "Dates, total spend and incremental lift are unknown; views cannot be divided into a valid conversion rate.",
+        "sourceUrls": [
+          "https://gameifyouare.com/case-study-design-and-conjure/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Gentle transformation and player-owned results.",
+        "change": "Rooms for Odd Tenants: furnish one tiny room for an oversized snail with unusual needs.",
+        "miniDemo": "Six props, two room conditions and several valid layouts. Developers implement placement and feedback; artist makes one expressive tenant. PM watches uncoached play; marketer tests a transformation clip.",
+        "technicalCut": "One room, authored sockets, simple tenant reactions; no thousand-item catalogue, branching story or town.",
+        "doNotCopy": "The witch characters, branded room designs or implied breadth.",
+        "successTest": "By day five, players understand the tenant's needs; by day fifteen, they voluntarily try a second layout. This is an internal test, not a market benchmark."
+      },
+      "risks": [
+        "Decoration offers no meaningful choice.",
+        "Placement feels fiddly.",
+        "A cozy label conceals a large art workload."
+      ],
+      "sourceUrls": [
+        "https://gameifyouare.com/case-study-design-and-conjure/",
+        "https://store.steampowered.com/app/2390130/Design_and_Conjure/",
+        "https://store.steampowered.com/app/3641540/Design_and_Conjure_Demo/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2390130/99b1a017cd5c8aac6eb7a53001cb434ee3190112/capsule_616x353.jpg?t=1785396653",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/2390130/?l=english&cc=us",
+        "kind": "Official Steam capsule",
+        "httpStatus": 200,
+        "decoded": true,
+        "width": 616,
+        "height": 353,
+        "checkedAt": "2026-09-03"
+      },
+      "steamSnapshot": {
+        "reviews": null,
+        "currentCCU": null,
+        "peakCCU": null,
+        "peakDate": null,
+        "source": "https://store.steampowered.com/app/2390130/Design_and_Conjure/",
+        "note": "Unreleased base game; demo/playtest metrics excluded."
+      }
+    },
+    {
+      "id": "hauntii",
+      "title": "Hauntii",
+      "appId": 2060790,
+      "headline": "A better pitch can unlock funding without proving a sales breakout",
+      "deck": "Possession and atmosphere explain a distinctive adventure more clearly than a control-scheme label. Commercial outcomes still need separate evidence.",
+      "genre": "Exploration / possession puzzle adventure",
+      "releaseStatus": "Released May 23, 2024. Current Steam publisher: Balor Games; historical case: Firestoke.",
+      "readingMinutes": 3,
+      "sourcePublications": [
+        "Game If You Are",
+        "Moonloop Games",
+        "Steam",
+        "SteamDB"
+      ],
+      "marketQuestion": "What changes when marketing describes the player's power instead of the genre's inputs?",
+      "playerPromise": "Become parts of a strange world to solve problems and uncover a ghost's past.",
+      "hook": "The environment is not merely scenery; it can become something you control.",
+      "story": [
+        {
+          "heading": "Reframe the experience, not the evidence",
+          "body": "Our interpretation: calling a game a twin-stick shooter tells a practiced audience how it controls, but may leave everyone else expecting a reflex challenge. A possession-led promise instead raises a concrete question: what can I become, and what does that let me do? The lesson is not to hide combat. It is to choose the explanation that best represents the experience players actually receive.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2060790/Hauntii/",
+            "https://www.moonloop.games/hauntii"
+          ]
+        },
+        {
+          "heading": "A funding story with a visible limit",
+          "body": "GIYA describes recovering from failed crowdfunding through positioning and publisher-pitch work, ending in a Firestoke agreement. That establishes a reported financing outcome, not the game's lifetime economics. The later Steam footprint below is useful precisely because it resists an easy success narrative. Neither a modest Steam peak nor positive reviews settles profitability: budget, contract terms and other-platform results are missing.",
+          "sourceUrls": [
+            "https://gameifyouare.com/case-study-hauntii/",
+            "https://steamdb.info/app/2060790/charts/"
+          ]
+        },
+        {
+          "heading": "The build must make the sentence true",
+          "body": "Our inference: a strong verb can organize development as well as copy. If the pitch is possession, each early obstacle should reveal a new consequence of controlling an object. A short slice can test that proposition without recreating an expansive world. Attractive presentation helps people notice it, but only an enjoyable sequence of decisions tests whether the promise has substance.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Publishing finance",
+          "value": null,
+          "unit": "Amount undisclosed",
+          "window": "Undated agency case",
+          "evidence": "Agency self-report",
+          "source": "https://gameifyouare.com/case-study-hauntii/",
+          "caveat": "Agreement is not sales revenue."
+        },
+        {
+          "label": "Aggregate Steam reviews",
+          "value": 418,
+          "unit": "Reviews",
+          "window": "Read 2026-09-03",
+          "evidence": "Manual SteamDB observation",
+          "source": "https://steamdb.info/app/2060790/charts/",
+          "caveat": "Not Steam's 361-review score sample."
+        },
+        {
+          "label": "All-time Steam peak",
+          "value": 63,
+          "unit": "Concurrent players",
+          "window": "2024-05-24",
+          "evidence": "Manual SteamDB observation",
+          "source": "https://steamdb.info/app/2060790/charts/",
+          "caveat": "Steam only; not unique lifetime players."
+        },
+        {
+          "label": "Displayed current CCU",
+          "value": 3,
+          "unit": "Concurrent players",
+          "window": "At source read, 2026-09-03",
+          "evidence": "Manual SteamDB observation",
+          "source": "https://steamdb.info/app/2060790/charts/",
+          "caveat": "Volatile; page may be cached."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "Undated; before publishing deal",
+          "channel": "Positioning",
+          "action": "Rework genre-led messaging after failed Kickstarter",
+          "outcome": "Three audience personas",
+          "spend": "Agency fee unknown",
+          "source": "https://gameifyouare.com/case-study-hauntii/",
+          "caveat": "Not a measured demand experiment."
+        },
+        {
+          "when": "Undated",
+          "channel": "Publisher pitching",
+          "action": "Prepare production plan and pitch",
+          "outcome": "Reported Firestoke agreement",
+          "spend": "Funding amount unknown",
+          "source": "https://gameifyouare.com/case-study-hauntii/",
+          "caveat": "No contract or sales audit."
+        },
+        {
+          "when": "2024-05-23",
+          "channel": "Steam",
+          "action": "Full-game release",
+          "outcome": "Public commercial product",
+          "spend": "Launch spend unknown",
+          "source": "https://store.steampowered.com/app/2060790/Hauntii/",
+          "caveat": "Current publisher field differs from historical case."
+        }
+      ],
+      "demand": {
+        "audience": "Players drawn to exploration, expressive worlds and clever environmental solutions.",
+        "job": "Discover what an unusual power lets them do.",
+        "trigger": "A visible change of control produces an unexpected solution.",
+        "supply": "A genre label alone cannot establish an underserved audience.",
+        "opening": "Build around one versatile verb with unmistakable consequences.",
+        "notProven": "That reframing caused funding, or that funding established profitable consumer demand.",
+        "sourceUrls": [
+          "https://gameifyouare.com/case-study-hauntii/",
+          "https://www.moonloop.games/hauntii"
+        ]
+      },
+      "mechanism": {
+        "observed": "The agency reports new positioning, coverage support and publisher pitching.",
+        "inference": "A clearer promise can align audience expectations and production decisions.",
+        "confounds": "No campaign date, spend, attribution study or full commercial result. Balor's current listing does not explain the historical publisher transition.",
+        "sourceUrls": [
+          "https://gameifyouare.com/case-study-hauntii/",
+          "https://store.steampowered.com/app/2060790/Hauntii/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "One power that transforms familiar objects into tools.",
+        "change": "Night Shift for Furniture: a tiny ghost operates a fan, lamp and trolley to finish one absurd delivery.",
+        "miniDemo": "Three controllable props and three linked obstacles in one room. Developers implement a shared possession interface; artist makes transformations readable. PM observes discovery; marketer compares verb-led and genre-led footage.",
+        "technicalCut": "Authored interactions, fixed camera and resettable states; no universal possession or large combat roster.",
+        "doNotCopy": "Hauntii's ghost design, two-tone compositions or world-building.",
+        "successTest": "By day five, players discover a second use without instructions. By day fifteen, a cold viewer can explain the power from actual gameplay."
+      },
+      "risks": [
+        "The hook is only cosmetic.",
+        "Each object requires expensive bespoke code.",
+        "Funding is advertised as consumer-market validation."
+      ],
+      "sourceUrls": [
+        "https://gameifyouare.com/case-study-hauntii/",
+        "https://store.steampowered.com/app/2060790/Hauntii/",
+        "https://www.moonloop.games/hauntii",
+        "https://steamdb.info/app/2060790/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2060790/capsule_616x353.jpg?t=1776970975",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/2060790/?l=english&cc=us",
+        "kind": "Official Steam capsule",
+        "httpStatus": 200,
+        "decoded": true,
+        "width": 616,
+        "height": 353,
+        "checkedAt": "2026-09-03"
+      },
+      "steamSnapshot": {
+        "reviews": 418,
+        "currentCCU": 3,
+        "peakCCU": 63,
+        "peakDate": "2024-05-24",
+        "source": "https://steamdb.info/app/2060790/charts/",
+        "note": "Manual read; cached/volatile snapshot, not live feed."
+      }
+    },
+    {
+      "id": "into-the-radius",
+      "title": "Into the Radius VR",
+      "appId": 1012790,
+      "headline": "Shared audiences can create distribution; impressions still are not buyers",
+      "deck": "A specialist VR survival game found promotional partners around a common player interest. The transferable lesson is audience fit, not guaranteed Steam featuring.",
+      "genre": "Single-player VR survival shooter",
+      "releaseStatus": "Full release July 20, 2020; Early Access began November 6, 2019.",
+      "readingMinutes": 3,
+      "sourcePublications": [
+        "Game World Observer",
+        "CM IMMERSIVE",
+        "Steam",
+        "SteamDB"
+      ],
+      "marketQuestion": "Can complementary games make a niche audience easier to reach together?",
+      "playerPromise": "Prepare carefully, handle equipment physically and survive an uncertain expedition.",
+      "hook": "Ordinary equipment procedures become tense when performed inside a hostile world.",
+      "story": [
+        {
+          "heading": "Demand comes from the procedure",
+          "body": "Our interpretation: this fantasy is not simply shooting at threats. Packing, handling equipment and deciding whether to continue an expedition can make players feel competent and vulnerable simultaneously. VR gives those procedures physical presence. That matters when borrowing the concept: a desktop version does not automatically inherit either the embodied appeal or the same addressable audience.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/1012790/Into_the_Radius_VR/",
+            "https://www.cm-immersive.com/"
+          ]
+        },
+        {
+          "heading": "The event was a coalition",
+          "body": "CM Games' historical postmortem describes matching VR-action participants, coordinating promotional material and receiving substantial Steam placement. Its exposure figures cover different surfaces. A person may encounter both repeatedly, so adding them into a unique-audience number is invalid. The useful mechanism is a relevant recommendation context; the unknown is how much additional purchasing the collaboration caused.",
+          "sourceUrls": [
+            "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem"
+          ]
+        },
+        {
+          "heading": "Transfer the fit, not the scale",
+          "body": "Our inference: a small team should identify neighboring audiences before pursuing a large event. A useful partner has players who would understand the prototype's central pleasure, not merely a large following. The current developer site still invites giveaway collaboration, but an invitation route is not an endorsement or guaranteed placement. For the sprint, a reliable build and appropriate partners are controllable; platform featuring is not.",
+          "sourceUrls": [
+            "https://www.cm-immersive.com/"
+          ]
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Homepage exposure",
+          "value": ">11 million",
+          "unit": "Impressions",
+          "window": "Historical Lock & Load sale; exact dates absent",
+          "evidence": "Developer self-report",
+          "source": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+          "caveat": "Not unique people or game visits."
+        },
+        {
+          "label": "Sale-event exposure",
+          "value": "2 million",
+          "unit": "Impressions",
+          "window": "Same event",
+          "evidence": "Developer self-report",
+          "source": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+          "caveat": "Do not add to homepage as unique reach."
+        },
+        {
+          "label": "Aggregate Steam reviews",
+          "value": 11302,
+          "unit": "Reviews",
+          "window": "Read 2026-09-03",
+          "evidence": "Manual SteamDB observation",
+          "source": "https://steamdb.info/app/1012790/charts/",
+          "caveat": "Steam only; not all VR stores."
+        },
+        {
+          "label": "All-time Steam peak",
+          "value": 496,
+          "unit": "Concurrent players",
+          "window": "2023-01-22",
+          "evidence": "Manual SteamDB observation",
+          "source": "https://steamdb.info/app/1012790/charts/",
+          "caveat": "Not attributed to this event."
+        },
+        {
+          "label": "Displayed current CCU",
+          "value": 28,
+          "unit": "Concurrent players",
+          "window": "At source read, 2026-09-03",
+          "evidence": "Manual SteamDB observation",
+          "source": "https://steamdb.info/app/1012790/charts/",
+          "caveat": "Volatile; not lifetime audience."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2022 planning; sale dates unstated",
+          "channel": "Developer collaboration",
+          "action": "Assemble matching VR games",
+          "outcome": ">20 participants",
+          "spend": "Staff cost undisclosed",
+          "source": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+          "caveat": "Historical planning context."
+        },
+        {
+          "when": "Same historical sale",
+          "channel": "Steam + communities",
+          "action": "Joint promotion and discounts",
+          "outcome": "96 hours homepage featuring",
+          "spend": "Discounts; total cost unknown",
+          "source": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+          "caveat": "Special placement is not guaranteed."
+        },
+        {
+          "when": "2024-05-10",
+          "channel": "Developer postmortem",
+          "action": "Publish results",
+          "outcome": "Exposure disclosed; incremental revenue absent",
+          "spend": "Unknown",
+          "source": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+          "caveat": "Publication date is not event date."
+        }
+      ],
+      "demand": {
+        "audience": "VR players seeking deliberate, equipment-focused survival.",
+        "job": "Feel prepared while deciding how much danger to accept.",
+        "trigger": "An understandable procedure under pressure.",
+        "supply": "The coalition joined existing games; it did not establish an empty niche.",
+        "opening": "Test a compact equipment dilemma with a sharply different setting.",
+        "notProven": "That a desktop spin will appeal to the same people or convert similarly.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1012790/Into_the_Radius_VR/",
+          "https://www.cm-immersive.com/"
+        ]
+      },
+      "mechanism": {
+        "observed": "Matched communities and Steam placement promoted a themed sale.",
+        "inference": "Curation may make discovery more relevant and reduce explanation effort.",
+        "confounds": "Discounts, established games and featuring overlap. No control group, spend total or incremental sales.",
+        "sourceUrls": [
+          "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Preparation that visibly changes survival options.",
+        "change": "Anomaly Parcel Service: carry one unstable package across a small industrial yard.",
+        "miniDemo": "Three tools, one route fork and one threat. Developers build equipment states and recovery; artist establishes readable hazards. PM tests decisions; marketer checks whether the procedure is watchable.",
+        "technicalCut": "Desktop-first unless an established VR foundation exists; one authored area, slot inventory, no full weapon simulation.",
+        "doNotCopy": "The setting, branded equipment presentation or assumption that VR demand transfers.",
+        "successTest": "By day five, choosing a tool changes the route. By day fifteen, testers can explain their tradeoff and retry without coaching."
+      },
+      "risks": [
+        "Interaction friction replaces meaningful decisions.",
+        "VR scope consumes the sprint.",
+        "Exposure is mistaken for profitable demand."
+      ],
+      "sourceUrls": [
+        "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+        "https://store.steampowered.com/app/1012790/Into_the_Radius_VR/",
+        "https://www.cm-immersive.com/",
+        "https://steamdb.info/app/1012790/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1012790/0e4b4adb8e89ae7174312a43d57c53502b14604a/capsule_616x353.jpg?t=1773504670",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/1012790/?l=english&cc=us",
+        "kind": "Official Steam capsule",
+        "httpStatus": 200,
+        "decoded": true,
+        "width": 616,
+        "height": 353,
+        "checkedAt": "2026-09-03"
+      },
+      "steamSnapshot": {
+        "reviews": 11302,
+        "currentCCU": 28,
+        "peakCCU": 496,
+        "peakDate": "2023-01-22",
+        "source": "https://steamdb.info/app/1012790/charts/",
+        "note": "Manual read; Steam-only, cached/volatile snapshot."
+      }
+    },
+    {
+      "id": "dear-passengers",
+      "title": "Dear Passengers",
+      "appId": 4534960,
+      "headline": "The airline fantasy attracted attention; the repeatable game still has to earn it",
+      "deck": "A huge wishlist story is strongest as evidence of an appealing promise—not proof that any chaotic co-op clone will sell.",
+      "genre": "First-person co-op comedy / shared-task sandbox",
+      "releaseStatus": "Unreleased; Steam displays a planned 2026 release as checked on 2026-09-03.",
+      "readingMinutes": 4,
+      "sourcePublications": [
+        "FLEXUS / Steam announcements",
+        "Official Steam store",
+        "Derek Lieu",
+        "SteamDB"
+      ],
+      "marketQuestion": "What makes a familiar job feel like a game friends will want to sabotage together?",
+      "playerPromise": "Crew an unreliable airline, make questionable decisions, and turn your friends' mistakes into the evening's shared story.",
+      "hook": "A serious public-service role collides with permission to behave irresponsibly.",
+      "story": [
+        {
+          "heading": "What actually happened",
+          "body": "FLEXUS publicly reported one million wishlists in its July milestone announcement and two million later that month. The game is still unreleased, so those numbers describe anticipation, not paying customers. Its store makes the intended loop more concrete: choose passengers and cargo, fly, service the cabin, and manage escalating problems. Lieu's comparison with Banana Airways favors the readable, playful incidents, but explicitly refuses to explain the campaigns' view gap through editing alone.",
+          "sourceUrls": [
+            "https://steamcommunity.com/games/4534960/announcements/detail/698770449667981855",
+            "https://steamcommunity.com/games/4534960/announcements/detail/692016318956701189",
+            "https://store.steampowered.com/app/4534960/Dear_Passengers/",
+            "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways"
+          ]
+        },
+        {
+          "heading": "Why the promise is worth studying",
+          "body": "Interpretation: the useful unit of design is not an airplane; it is a social disagreement with a visible consequence. A player accepts risky cargo for a better reward, another tries to keep passengers happy, and a third interrupts both. That produces roles viewers can understand without knowing a class system. The development opportunity is to make one such collision repeatable. A funny trailer incident is weaker evidence if a normal group cannot recreate its underlying conditions during ordinary play.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/4534960/Dear_Passengers/"
+          ]
+        },
+        {
+          "heading": "Where a copy would become expensive",
+          "body": "Editorial recommendation: borrow the conflicting priorities, not the vehicle. A fixed room with one public-facing job and one reckless shortcut is a cheaper hypothesis to test than a flying multiplayer physics environment. Prototype the consequence first, then ask whether people deliberately create a second variation. Allocate the artist to readable poses, silhouettes, and reactions; allocate one developer to the interaction and another to the resettable session. The PM recruits cold groups while marketing captures actual play. Do not spend the final week building unrelated gag props to disguise an unfinished loop.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Developer-reported wishlists",
+          "value": 1000000,
+          "unit": "wishlists",
+          "window": "Announcement published 2026-07-17 00:36 UTC; claims a two-day milestone",
+          "evidence": "Developer self-report",
+          "source": "https://steamcommunity.com/games/4534960/announcements/detail/698770449667981855",
+          "caveat": "Some regional Steam pages show July 16. Not sales or independently audited attribution."
+        },
+        {
+          "label": "Later developer-reported wishlists",
+          "value": 2000000,
+          "unit": "wishlists",
+          "window": "2026-07-31",
+          "evidence": "Developer self-report",
+          "source": "https://steamcommunity.com/games/4534960/announcements/detail/692016318956701189",
+          "caveat": "A cumulative milestone, not incremental impact of this announcement."
+        },
+        {
+          "label": "Steam hub followers",
+          "value": 81581,
+          "unit": "followers",
+          "window": "Snapshot retrieved 2026-09-03",
+          "evidence": "SteamDB public observation",
+          "source": "https://steamdb.info/app/4534960/charts/",
+          "caveat": "Followers are not wishlists; no conversion ratio is assumed."
+        },
+        {
+          "label": "SteamDB total reviews",
+          "value": null,
+          "unit": "reviews",
+          "window": "As checked 2026-09-03",
+          "evidence": "Unavailable for this prerelease case",
+          "source": "https://steamdb.info/app/4534960/charts/",
+          "caveat": "No numeric review aggregate was supplied; do not substitute a fabricated zero."
+        },
+        {
+          "label": "Released-game peak concurrency",
+          "value": null,
+          "unit": "concurrent players",
+          "window": "As checked 2026-09-03",
+          "evidence": "Unavailable for this prerelease case",
+          "source": "https://steamdb.info/app/4534960/charts/",
+          "caveat": "Do not replace unknown playership or sales with zero."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2026-07-17 00:36 UTC",
+          "channel": "Steam announcement",
+          "action": "Share the first million-wishlist milestone and invite further sharing.",
+          "outcome": "Reported one million wishlists.",
+          "spend": null,
+          "source": "https://steamcommunity.com/games/4534960/announcements/detail/698770449667981855",
+          "caveat": "The team claims no paid creators or ads; this is not an audited zero-cost campaign."
+        },
+        {
+          "when": "2026-07-31",
+          "channel": "Steam announcement",
+          "action": "Share the next milestone and solicit gameplay ideas.",
+          "outcome": "Reported two million wishlists and top-six ranking at that time.",
+          "spend": null,
+          "source": "https://steamcommunity.com/games/4534960/announcements/detail/692016318956701189",
+          "caveat": "The post documents attention already earned, not its cause."
+        },
+        {
+          "when": "2026-08-23",
+          "channel": "Independent trailer analysis",
+          "action": "Lieu publishes the Banana Airways comparison.",
+          "outcome": null,
+          "spend": null,
+          "source": "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways",
+          "caveat": "Publication date, not trailer release date; no measured marketing uplift."
+        }
+      ],
+      "demand": {
+        "audience": "Hypothesis: existing friend groups seeking a low-commitment shared activity.",
+        "job": "Give the group an understandable task and stories worth retelling.",
+        "trigger": "An ordinary responsibility goes visibly wrong because of a player's choice.",
+        "supply": "Banana Airways already occupies the airline-chaos premise; its official page targets Q1 2027.",
+        "opening": "Test a different job with the same conflict between efficient teamwork and tempting mischief.",
+        "notProven": "No genre-wide denominator, paid conversion, retention, or replicable organic acquisition rate is established.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/4534960/Dear_Passengers/",
+          "https://store.steampowered.com/app/4835560/Banana_Airways/",
+          "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways"
+        ]
+      },
+      "mechanism": {
+        "observed": "Public milestone posts and a player-incident-heavy trailer coexist.",
+        "inference": "A recognizable job may reduce explanation cost while voluntary disruption supplies shareable variation.",
+        "confounds": "Distribution, timing, visual appeal, existing networks, and game quality differ between the two trailers.",
+        "sourceUrls": [
+          "https://steamcommunity.com/app/4534960/allnews/",
+          "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Conflicting objectives that act on the same object or shared resource.",
+        "change": "Move to a fixed roadside booth or service counter with an original consequence.",
+        "miniDemo": "Proposed: one room, one five-minute shift, two hazards, one temptation, and immediate restart.",
+        "technicalCut": "Avoid flight simulation, unrestricted networked rigid bodies, progression, matchmaking, and large crowds.",
+        "doNotCopy": "Do not present a staged vignette as evidence of a finished multiplayer system.",
+        "successTest": "Proposed gate: three cold groups independently create a second funny variation and can explain the causal choice."
+      },
+      "risks": [
+        "A broad montage can hide a shallow session.",
+        "Networked chaos can exhaust the production budget.",
+        "Wishlist attention does not validate the eventual price."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/4534960/Dear_Passengers/",
+        "https://dearpassengers.game/",
+        "https://steamcommunity.com/games/4534960/announcements/detail/698770449667981855",
+        "https://steamcommunity.com/games/4534960/announcements/detail/692016318956701189",
+        "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways",
+        "https://store.steampowered.com/app/4835560/Banana_Airways/",
+        "https://steamdb.info/app/4534960/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4534960/7ddef53346afe3e3d4d479dbed740cdb38cfe09a/header.jpg?t=1787132605",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/4534960/?l=english",
+        "selection": "game_header_image_full from official Steam HTML",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "width": 460,
+        "height": 215,
+        "bytes": 57274,
+        "verification": "Full image decode succeeded; not only a HEAD request",
+        "checkedAt": "2026-09-03"
+      }
+    },
+    {
+      "id": "sheepherds",
+      "title": "Sheepherds!",
+      "appId": 3006280,
+      "headline": "A clear mechanic is more useful than a bigger list of cozy features",
+      "deck": "This is a 2025 release with a 2026 trailer retrospective—not a newly discovered 2026 breakout.",
+      "genre": "Cozy co-op herding / spatial party puzzle",
+      "releaseStatus": "Released on Steam on 2025-11-17; ongoing updates observed in 2026.",
+      "readingMinutes": 4,
+      "sourcePublications": [
+        "Ultimo Disco / Steam announcements",
+        "Official Steam store",
+        "Derek Lieu",
+        "SteamDB"
+      ],
+      "marketQuestion": "Can a relaxing game show enough friction to make the viewer want to take control?",
+      "playerPromise": "Be a sheepdog, guide a colorful flock, and enjoy cooperation without a mandatory time limit.",
+      "hook": "One familiar action—herding—creates visible spatial puzzles when colors and terrain interact.",
+      "story": [
+        {
+          "heading": "The campaign has a real chronology",
+          "body": "The developer announced an IGN-exclusive launch trailer on November 15, 2025, before the November 17 release. Lieu's August 2026 article looks back at his consultation: demonstrate basic herding before adding color rules and cosmetics, and let some attempts go imperfectly. The article reports over 100,000 IGN views, but supplies no measured sales effect. A June 2026 Steam announcement later paired a new mode and key art with a summer discount.",
+          "sourceUrls": [
+            "https://steamcommunity.com/games/3006280/announcements/detail/607550464526909455",
+            "https://store.steampowered.com/app/3006280/Sheepherds/",
+            "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+            "https://steamcommunity.com/games/3006280/announcements/detail/678501715215912993"
+          ]
+        },
+        {
+          "heading": "The commercially useful tension",
+          "body": "Interpretation: relaxing does not need to mean visually consequence-free. The target feeling can be gentle competence: see a sheep drift away, adjust position, recover the group, and admire the result. That gives an observer a small problem to solve mentally. A trailer that immediately switches from animals to costumes loses that invitation. The useful demand hypothesis is therefore more specific than cozy co-op: approachable coordination where errors are funny, reversible, and comprehensible to spectators. The measured review footprint supports studying the execution, not declaring a large unserved market.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/3006280/Sheepherds/",
+            "https://steamdb.info/app/3006280/charts/"
+          ]
+        },
+        {
+          "heading": "A small team's version",
+          "body": "Editorial recommendation: prototype a new herd-like object whose behavior is legible with almost no text. For example, guide wandering shopping carts into bays while wind and slopes interfere. Keep one interaction verb and one spatial rule that transforms the task. The artist can emphasize direction, state, and reactions instead of producing collectible outfits. One developer implements steering and collision; the other builds the compact challenge and reset. The PM tests whether players enjoy recovering from mistakes. Marketing should capture an understandable attempt, not only a flawless one.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "SteamDB total reviews",
+          "value": 372,
+          "unit": "reviews",
+          "window": "Snapshot retrieved 2026-09-03",
+          "evidence": "Public all-language aggregate",
+          "source": "https://steamdb.info/app/3006280/charts/",
+          "caveat": "366 positive plus 6 negative. Broader than the store's displayed review subset; not sales."
+        },
+        {
+          "label": "All-time Steam peak",
+          "value": 148,
+          "unit": "concurrent players",
+          "window": "2025-11-22",
+          "evidence": "SteamDB public observation",
+          "source": "https://steamdb.info/app/3006280/charts/",
+          "caveat": "Concurrency is not lifetime reach."
+        },
+        {
+          "label": "Reported IGN trailer reach",
+          "value": 100000,
+          "unit": "views; lower bound",
+          "window": "As reported in the 2026-08-08 retrospective",
+          "evidence": "Trailer consultant's reported observation",
+          "source": "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+          "caveat": "Source says over 100,000; no matched before/after conversion study."
+        },
+        {
+          "label": "Studio founding team",
+          "value": 5,
+          "unit": "people",
+          "window": "Undated studio homepage checked 2026-09-03",
+          "evidence": "Developer self-description",
+          "source": "https://ultimodiscogames.com/",
+          "caveat": "Founding headcount, not verified current staffing or a production-duration benchmark."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2025-11-15",
+          "channel": "Steam / IGN",
+          "action": "Announce the exclusive launch trailer and a launch-week offer.",
+          "outcome": "Trailer distribution documented; incremental reach unreported.",
+          "spend": null,
+          "source": "https://steamcommunity.com/games/3006280/announcements/detail/607550464526909455",
+          "caveat": "Offer included 10% off and supporter DLC; this is not a current offer."
+        },
+        {
+          "when": "2025-11-17",
+          "channel": "Steam release",
+          "action": "Release the game.",
+          "outcome": "Full product available.",
+          "spend": null,
+          "source": "https://store.steampowered.com/app/3006280/Sheepherds/",
+          "caveat": "Revenue and campaign spend are undisclosed."
+        },
+        {
+          "when": "2026-06-25",
+          "channel": "Steam update / summer sale",
+          "action": "Combine new key art, Star Edition, and a 35% discount.",
+          "outcome": "Update and offer documented; sales uplift unknown.",
+          "spend": null,
+          "source": "https://steamcommunity.com/games/3006280/announcements/detail/678501715215912993",
+          "caveat": "Historical promotion, not proof of effect."
+        },
+        {
+          "when": "2026-08-08",
+          "channel": "Practitioner retrospective",
+          "action": "Publish the trailer makeover breakdown.",
+          "outcome": null,
+          "spend": null,
+          "source": "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+          "caveat": "Do not move the 2025 trailer launch into 2026."
+        }
+      ],
+      "demand": {
+        "audience": "Hypothesis: couples, families, and mixed-skill friends who want gentle coordination.",
+        "job": "Create shared competence without punishing the least experienced participant.",
+        "trigger": "The viewer understands an almost-successful attempt and imagines improving it.",
+        "supply": "This is an existing cozy co-op product; no complete tagged competitor cohort was counted.",
+        "opening": "An original, familiar task with reversible errors may distinguish a compact demo more clearly than extra cosmetics.",
+        "notProven": "The case does not establish a 100,000–200,000-owner opportunity or an editing-to-sales conversion.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/3006280/Sheepherds/",
+          "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+          "https://steamdb.info/app/3006280/charts/"
+        ]
+      },
+      "mechanism": {
+        "observed": "The documented edit introduces the core action before its complications.",
+        "inference": "Readable recovery may create participation desire even without pressure or lethal failure.",
+        "confounds": "IGN distribution, price promotions, art, release timing, and content updates complicate attribution.",
+        "sourceUrls": [
+          "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+          "https://steamcommunity.com/games/3006280/announcements/detail/607550464526909455",
+          "https://steamcommunity.com/games/3006280/announcements/detail/678501715215912993"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "A single action with visible state changes and recoverable mistakes.",
+        "change": "Invent a different object behavior and setting; do not reskin the sheep and flowers.",
+        "miniDemo": "Proposed: three short layouts built from one room kit and two interacting rules.",
+        "technicalCut": "No hub, collectible catalog, online networking, procedural levels, or multiple bonus modes.",
+        "doNotCopy": "Avoid requiring bespoke animation or realistic flock simulation before testing the spatial decision.",
+        "successTest": "Proposed gate: four of five cold viewers explain the rule silently, and players voluntarily retry a failed arrangement."
+      },
+      "risks": [
+        "Readable herding still needs convincing movement.",
+        "Cozy tone can conceal weak decisions.",
+        "A five-person founding team does not imply a 15-day full-game scope."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3006280/Sheepherds/",
+        "https://ultimodiscogames.com/",
+        "https://steamcommunity.com/games/3006280/announcements/detail/607550464526909455",
+        "https://steamcommunity.com/games/3006280/announcements/detail/678501715215912993",
+        "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+        "https://steamdb.info/app/3006280/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3006280/8c29be5a10992c5165c3d114d45de334179ebf42/header.jpg?t=1787654499",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/3006280/?l=english",
+        "selection": "game_header_image_full from official Steam HTML",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "width": 460,
+        "height": 215,
+        "bytes": 51834,
+        "verification": "Full image decode succeeded; not only a HEAD request",
+        "checkedAt": "2026-09-03"
+      }
+    },
+    {
+      "id": "dosa-divas",
+      "title": "Dosa Divas",
+      "appId": 2950710,
+      "headline": "Distinctive identity can clarify a pitch without proving a large market",
+      "deck": "Cooking, family conflict, and tactical combat form a coherent promise—but current Steam engagement remains modest.",
+      "genre": "Narrative turn-based RPG / cooking / exploration",
+      "releaseStatus": "Released on Steam on 2026-04-14; a demo is available on the store.",
+      "readingMinutes": 4,
+      "sourcePublications": [
+        "Outerloop Games / Steam announcements",
+        "Official Steam store",
+        "Derek Lieu",
+        "SteamDB"
+      ],
+      "marketQuestion": "When several mechanics share one theme, can the audience understand why they belong together?",
+      "playerPromise": "Cook for communities and fight a fast-food empire through a story about estranged sisters and reconciliation.",
+      "hook": "Food is not merely a crafting resource; it links the characters' conflict, battles, and community recovery.",
+      "story": [
+        {
+          "heading": "The strong pitch and the measured footprint",
+          "body": "The official game presents a narrative RPG in which cooking, combat, and rebuilding community connect. Lieu's consultation made the antagonist and objective clearer in the announcement trailer instead of replacing the whole edit. However, his article reports no commercial uplift. By this check, SteamDB shows 67 total reviews and an all-time peak of 20 concurrent players. Those figures do not settle cross-platform sales, profitability, or artistic value; they do prevent treating this as demonstrated mass Steam demand.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2950710/Dosa_Divas/",
+            "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+            "https://steamdb.info/app/2950710/charts/"
+          ]
+        },
+        {
+          "heading": "What the niche actually asks of a developer",
+          "body": "Interpretation: a hybrid pitch needs a unifying reason, not simply more verbs. A player who likes cooking may not automatically want tactical battles, while an RPG player may not care about food preparation. The connecting motivation has to make both actions feel necessary. That is the opportunity to test: does one culturally specific conflict turn two familiar mechanics into a more memorable whole? It is also the scope warning. If the promise relies on many villages, relationships, recipes, and animated scenes, a clear trailer can advertise a project the team cannot afford to finish.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2950710/Dosa_Divas/",
+            "https://outerloopgames.com/dosa"
+          ]
+        },
+        {
+          "heading": "Transfer the connection, not the RPG",
+          "body": "Editorial recommendation: build one encounter where the same preparation choice changes both a character's response and the mechanical outcome. For example, a tiny community kitchen could serve one demanding visitor while a single neighborhood dispute unfolds. Use authored state changes rather than a full reputation simulation. Put the before-and-after consequence on screen. The artist makes one room feel inhabited; the PM tests the motivation; marketing checks whether strangers describe the goal without being coached. If viewers only remember attractive food, the story connection is not yet doing commercial work.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "SteamDB total reviews",
+          "value": 67,
+          "unit": "reviews",
+          "window": "Snapshot retrieved 2026-09-03",
+          "evidence": "Public all-language aggregate",
+          "source": "https://steamdb.info/app/2950710/charts/",
+          "caveat": "65 positive plus 2 negative; not an owner or revenue count."
+        },
+        {
+          "label": "All-time Steam peak",
+          "value": 20,
+          "unit": "concurrent players",
+          "window": "2026-04-15",
+          "evidence": "SteamDB public observation",
+          "source": "https://steamdb.info/app/2950710/charts/",
+          "caveat": "Steam only; do not extrapolate total platform sales."
+        },
+        {
+          "label": "Advertised demo length",
+          "value": 90,
+          "unit": "minutes, approximately",
+          "window": "Developer announcement on 2026-04-01",
+          "evidence": "Developer description",
+          "source": "https://steamcommunity.com/games/2950710/announcements/detail/506232053082096293",
+          "caveat": "Described as the first hour and a half; not observed median playtime."
+        },
+        {
+          "label": "Trailer-attributed commercial lift",
+          "value": null,
+          "unit": "wishlists or sales",
+          "window": "2026-04-13 retrospective",
+          "evidence": "Not reported",
+          "source": "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+          "caveat": "Qualitative clarity is not a measured acquisition result."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2026-04-01",
+          "channel": "Steam demo update / gameplay video",
+          "action": "Publish cooking-and-delivery footage and accessibility/usability fixes.",
+          "outcome": "Demo save carryover to the full game was advertised.",
+          "spend": null,
+          "source": "https://steamcommunity.com/games/2950710/announcements/detail/506232053082096293",
+          "caveat": "The announcement describes features, not measured conversion."
+        },
+        {
+          "when": "2026-04-13",
+          "channel": "Practitioner retrospective",
+          "action": "Explain the announcement trailer's narrative revisions.",
+          "outcome": null,
+          "spend": null,
+          "source": "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+          "caveat": "Displayed publication date; not the original announcement date."
+        },
+        {
+          "when": "2026-04-14",
+          "channel": "Steam release",
+          "action": "Release the full game.",
+          "outcome": "Full product available.",
+          "spend": null,
+          "source": "https://store.steampowered.com/app/2950710/Dosa_Divas/",
+          "caveat": "Campaign budget and revenue were not disclosed in checked sources."
+        }
+      ],
+      "demand": {
+        "audience": "Hypothesis: narrative-RPG players attracted to a specific cultural perspective and relationships.",
+        "job": "Make progression emotionally meaningful rather than a sequence of disconnected systems.",
+        "trigger": "The player understands who needs help, who opposes them, and why the next action matters.",
+        "supply": "The checked material establishes a distinctive hybrid, not the number or success rate of competing hybrids.",
+        "opening": "Test a small, specific narrative-mechanical connection before financing an expansive content pipeline.",
+        "notProven": "Neither thematic originality nor positive reviews demonstrates a large reachable Steam audience.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2950710/Dosa_Divas/",
+          "https://outerloopgames.com/dosa",
+          "https://steamdb.info/app/2950710/charts/"
+        ]
+      },
+      "mechanism": {
+        "observed": "The trailer consultation ties activities to a clearer antagonist and objective.",
+        "inference": "A unified motivation may improve recall and help the correct audience self-select.",
+        "confounds": "No exposure-controlled test; platform mix, price, distribution, timing, and audience fit remain unresolved.",
+        "sourceUrls": [
+          "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+          "https://outerloopgames.com/dosa"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "One visible action that changes both a relationship and a practical outcome.",
+        "change": "Use your team's own grounded setting and conflict; research the community you depict.",
+        "miniDemo": "Proposed: one visitor, two preparations, one dispute, and a visible resolution in ten minutes.",
+        "technicalCut": "No party roster, world map, full combat system, branching campaign, or voiced cinematics.",
+        "doNotCopy": "Do not imitate culturally specific surface details while removing the meaning that connects them.",
+        "successTest": "Proposed gate: cold players explain why their preparation mattered and request a second encounter for its consequence, not only its appearance."
+      },
+      "risks": [
+        "A coherent pitch may still have limited demand.",
+        "Narrative and animation multiply content cost.",
+        "A long reference demo is not a suitable 15-day target."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2950710/Dosa_Divas/",
+        "https://outerloopgames.com/dosa",
+        "https://outerloopgames.com/dosa_presskit",
+        "https://steamcommunity.com/games/2950710/announcements/detail/506232053082096293",
+        "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+        "https://steamdb.info/app/2950710/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950710/c0c89ccd2e684e6b89fd0fc2130be4a1030ea3ce/header.jpg?t=1776172270",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/2950710/?l=english",
+        "selection": "game_header_image_full from official Steam HTML",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "width": 460,
+        "height": 215,
+        "bytes": 50817,
+        "verification": "Full image decode succeeded; not only a HEAD request",
+        "checkedAt": "2026-09-03"
+      }
+    },
+    {
+      "id": "freerunners",
+      "title": "Freerunners",
+      "appId": 1430330,
+      "headline": "A tiny movement loop can still become a years-long production trap",
+      "deck": "This downside case joins a modest festival result to a later release and a developer's frank account of commercial disappointment.",
+      "genre": "Side-scrolling precision parkour platformer",
+      "releaseStatus": "Released on Steam on 2026-03-04; the store also offers a demo.",
+      "readingMinutes": 4,
+      "sourcePublications": [
+        "CBgameDev / James Rowbotham",
+        "Game Developer",
+        "Official Steam store",
+        "SteamDB"
+      ],
+      "marketQuestion": "Does a movement fantasy remain compelling when compressed into both a short clip and a first-time player's hands?",
+      "playerPromise": "Read obstacles, preserve momentum, and improve the rhythm of a clean parkour route.",
+      "hook": "The satisfaction is the transition between obstacles, not the inventory of moves.",
+      "story": [
+        {
+          "heading": "Follow the game beyond the festival headline",
+          "body": "The 2024 festival postmortem reports limited traction and leaves conflicting wishlist arithmetic and visit totals. The later game did ship in March 2026. Rowbotham's April production retrospective says it was not a financial success and describes scope and workflow problems. Crucially, this is not a forecast reconstructed from reviews: the developer himself distinguishes the learning value of finishing from the commercial result. The small current SteamDB footprint supplies context, not an explanation for failure.",
+          "sourceUrls": [
+            "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+            "https://store.steampowered.com/app/1430330/Freerunners/",
+            "https://www.cbgamedev.com/blog/the-reality-of-solo-game-development-lessons-from-freerunners",
+            "https://steamdb.info/app/1430330/charts/"
+          ]
+        },
+        {
+          "heading": "Presentation and implementation meet at the camera",
+          "body": "A March update changed the camera from following the pelvis bone to following the actor capsule, while early speed, stamina, and obstacle spacing were adjusted. Interpretation: for a movement game, the camera is part of the product promise. Marketing cannot repair a sensation the opening does not deliver. Conversely, an expressive animation is not useful if its camera response makes motion appear hesitant. The test should join clip comprehension and hands-on feel: can the same short route look fluid, teach itself, and reward a second attempt?",
+          "sourceUrls": [
+            "https://www.cbgamedev.com/blog/2026/3/10/freerunners-flow-update"
+          ]
+        },
+        {
+          "heading": "A practical 15-day investment test",
+          "body": "Editorial recommendation: timebox a single ninety-second route with three reusable obstacles. One developer owns movement and camera; the other builds reset, timing, and lightweight instrumentation. The artist controls silhouettes and contact cues instead of creating another district. The PM records where new players lose flow. Marketing recruits outside the team's immediate circle and uses the exported, compressed video—not only the pristine editor capture. If the route cannot earn voluntary retries, additional levels are a liability. Decide at the end of the sprint whether to continue, narrow the concept, or stop; a finished prototype is useful evidence even when the answer is no.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Festival impressions",
+          "value": 154724,
+          "unit": "impressions",
+          "window": "February 2024 Next Fest",
+          "evidence": "Developer self-report",
+          "source": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+          "caveat": "Historical exposure, not unique people."
+        },
+        {
+          "label": "Festival store visits",
+          "value": "2,261 or 2,430",
+          "unit": "visits",
+          "window": "February 2024 Next Fest",
+          "evidence": "Conflicting values in the same post",
+          "source": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+          "caveat": "Denominator unresolved; do not derive conversion."
+        },
+        {
+          "label": "Wishlist endpoints",
+          "value": "420 → 755",
+          "unit": "wishlists",
+          "window": "February 2024 Next Fest",
+          "evidence": "Developer-reported endpoints",
+          "source": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+          "caveat": "Arithmetic difference is 335, not claimed 355; gross/net explanation unknown."
+        },
+        {
+          "label": "Median demo playtime",
+          "value": 6,
+          "unit": "minutes",
+          "window": "February 2024 postmortem",
+          "evidence": "Developer self-report",
+          "source": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+          "caveat": "Demo described as 8–10 minutes; not a completion rate."
+        },
+        {
+          "label": "SteamDB total reviews",
+          "value": 2,
+          "unit": "reviews",
+          "window": "Snapshot retrieved 2026-09-03",
+          "evidence": "Public aggregate",
+          "source": "https://steamdb.info/app/1430330/charts/",
+          "caveat": "The store displays no reviews in its default subset; definitions differ."
+        },
+        {
+          "label": "All-time Steam peak",
+          "value": 2,
+          "unit": "concurrent players",
+          "window": "2026-03-05",
+          "evidence": "SteamDB public observation",
+          "source": "https://steamdb.info/app/1430330/charts/",
+          "caveat": "Not lifetime users or sales."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2023-09",
+          "channel": "Steam demo",
+          "action": "Publish an early demo for iteration.",
+          "outcome": "Demo available before the festival.",
+          "spend": null,
+          "source": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+          "caveat": "Month reported retrospectively."
+        },
+        {
+          "when": "2024-02",
+          "channel": "Steam Next Fest",
+          "action": "Participate with a short onboarding-led demo.",
+          "outcome": "Reported figures retained with conflicts.",
+          "spend": null,
+          "source": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+          "caveat": "No claim of attributable purchase conversion."
+        },
+        {
+          "when": "2026-03-04",
+          "channel": "Steam release",
+          "action": "Ship the full game.",
+          "outcome": "Full product available.",
+          "spend": null,
+          "source": "https://store.steampowered.com/app/1430330/Freerunners/",
+          "caveat": "Not a 2024 release despite the old postmortem's plans."
+        },
+        {
+          "when": "2026-03-10",
+          "channel": "Developer update",
+          "action": "Revise camera and early movement flow.",
+          "outcome": "Patch also applied to the demo.",
+          "spend": null,
+          "source": "https://www.cbgamedev.com/blog/2026/3/10/freerunners-flow-update",
+          "caveat": "Improvement described by developer; no sales lift measured."
+        },
+        {
+          "when": "2026-04-04",
+          "channel": "Developer postmortem",
+          "action": "Reflect on production and commercial outcome.",
+          "outcome": "Developer states the game was not financially successful.",
+          "spend": null,
+          "source": "https://www.cbgamedev.com/blog/the-reality-of-solo-game-development-lessons-from-freerunners",
+          "caveat": "No revenue total is published."
+        }
+      ],
+      "demand": {
+        "audience": "Hypothesis: players who enjoy precision, repetition, and visible personal improvement.",
+        "job": "Offer a route that becomes satisfying as the player masters it.",
+        "trigger": "An almost-perfect attempt makes the next attempt feel worthwhile.",
+        "supply": "The developer judged the side-scrolling presentation difficult to market; that is one practitioner's assessment, not a measured cohort.",
+        "opening": "Test a clearer expression of movement before producing a large level catalog.",
+        "notProven": "No evidence that switching camera perspective alone would rescue demand or that another parkour game will fail.",
+        "sourceUrls": [
+          "https://www.cbgamedev.com/blog/the-reality-of-solo-game-development-lessons-from-freerunners",
+          "https://store.steampowered.com/app/1430330/Freerunners/"
+        ]
+      },
+      "mechanism": {
+        "observed": "A demo, festival exposure, a later release, and post-launch feel adjustments are documented.",
+        "inference": "An opening that withholds the promised sensation may weaken both player interest and useful promotional footage.",
+        "confounds": "Long development, limited promotion, scope, platformer competition, and execution cannot be disentangled here.",
+        "sourceUrls": [
+          "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+          "https://www.cbgamedev.com/blog/2026/3/10/freerunners-flow-update",
+          "https://www.cbgamedev.com/blog/the-reality-of-solo-game-development-lessons-from-freerunners"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "A repeatable route with immediate restart and a visible improvement goal.",
+        "change": "Find an original movement constraint that reads at phone-video size.",
+        "miniDemo": "Proposed: one route, three obstacles, two optional shortcuts, and no metagame.",
+        "technicalCut": "Freeze the engine; avoid new core technology, large animation libraries, and fifty bespoke levels.",
+        "doNotCopy": "Do not treat personal learning goals as proof of a commercial production plan.",
+        "successTest": "Proposed gate: four of five cold players retry voluntarily and identify one controllable cause of improvement."
+      },
+      "risks": [
+        "Many tiny levels still create a large content workload.",
+        "Weak compressed footage can misrepresent feel.",
+        "Small metrics do not isolate why a game underperformed."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1430330/Freerunners/",
+        "https://www.cbgamedev.com/games/freerunners-steam",
+        "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+        "https://www.cbgamedev.com/blog/2026/3/10/freerunners-flow-update",
+        "https://www.cbgamedev.com/blog/the-reality-of-solo-game-development-lessons-from-freerunners",
+        "https://steamdb.info/app/1430330/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1430330/ce99ad6e7dbf311c4982c4151ff1ce8cd7ab300f/header.jpg?t=1772662291",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/1430330/?l=english",
+        "selection": "game_header_image_full from official Steam HTML",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "width": 460,
+        "height": 215,
+        "bytes": 37731,
+        "verification": "Full image decode succeeded; not only a HEAD request",
+        "checkedAt": "2026-09-03"
+      }
+    },
+    {
+      "id": "inkbound",
+      "title": "Inkbound",
+      "appId": 1062810,
+      "headline": "Co-op changes the audience contract, not just the player count",
+      "deck": "A tactical roguelike reached a meaningful Steam audience while exposing design and business tensions that a short demo must decide early.",
+      "genre": "Turn-based tactical roguelike / online co-op",
+      "releaseStatus": "Steam Early Access began 2023-05-22; version 1.0 released 2024-04-09.",
+      "readingMinutes": 4,
+      "sourcePublications": [
+        "Shiny Shoe / Mark Cooke",
+        "Game Developer",
+        "Official Steam store",
+        "SteamDB"
+      ],
+      "marketQuestion": "Can a cooperative strategy hook serve solo players equally without diluting what makes cooperation interesting?",
+      "playerPromise": "Draft a powerful build and solve tactical encounters at a pace the group can control.",
+      "hook": "Players can act simultaneously in turn-based battles rather than wait through a fixed teammate order.",
+      "story": [
+        {
+          "heading": "A real audience, with a split inside it",
+          "body": "Shiny Shoe's postmortem reports that approximately 60% of runs were solo and 40% co-op. These are session observations, not percentages of unique customers. Cooke describes tensions between the two audiences, negative reactions to optional cosmetic monetization, and missing Chinese support as the leading Early Access refund reason. Current SteamDB engagement is substantially larger than the small-release cases here, but none of those facts quantifies which individual decision created sales or refunds.",
+          "sourceUrls": [
+            "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+            "https://steamdb.info/app/1062810/charts/"
+          ]
+        },
+        {
+          "heading": "The demand structure is the design problem",
+          "body": "Interpretation: co-op strategy promises conversation, shared plans, and a reason to care about another person's build. Solo strategy promises control, pace, and no dependence on a partner's availability. Some systems serve both; others require choosing. A two-person action that is essential to the hook may become meaningless when an AI partner performs it automatically. The useful opening is not adding multiplayer to a familiar roguelike, but identifying a decision that is better specifically because another person has agency. That claim should be tested before content or networking infrastructure expands.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/1062810/Inkbound/"
+          ]
+        },
+        {
+          "heading": "What can fit into a demo sprint",
+          "body": "Editorial recommendation: use one authored encounter to investigate cooperative decision-making. Begin with two local inputs or explicit hot-seat roles so the interaction can be evaluated without a service backend. A second developer can explore networking only after the interaction proves essential and only if the team already has reliable foundations. The artist makes intent and consequences readable; the PM records disagreements and dead time; marketing tests whether the interaction is explainable in a short clip. If solo is also promised, test it separately rather than averaging both groups into one satisfaction score.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "SteamDB total reviews",
+          "value": 4027,
+          "unit": "reviews",
+          "window": "Snapshot retrieved 2026-09-03",
+          "evidence": "Public all-language aggregate",
+          "source": "https://steamdb.info/app/1062810/charts/",
+          "caveat": "3,490 positive plus 537 negative; not paid sales."
+        },
+        {
+          "label": "All-time Steam peak",
+          "value": 3229,
+          "unit": "concurrent players",
+          "window": "2024-04-14",
+          "evidence": "SteamDB public observation",
+          "source": "https://steamdb.info/app/1062810/charts/",
+          "caveat": "Includes the game's full history; not a current active-user estimate."
+        },
+        {
+          "label": "Solo/co-op run split",
+          "value": "60% / 40%",
+          "unit": "runs",
+          "window": "Historical post-launch observations reported 2024-06-11",
+          "evidence": "Studio self-report",
+          "source": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+          "caveat": "Approximate; sampling window and count not disclosed. Not user shares."
+        },
+        {
+          "label": "Refund reason ranking",
+          "value": 1,
+          "unit": "rank: missing Chinese support",
+          "window": "Early Access, as reported 2024-06-11",
+          "evidence": "Studio self-report",
+          "source": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+          "caveat": "No refund count, denominator, or recoverable-revenue estimate."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2023-05-22",
+          "channel": "Steam Early Access",
+          "action": "Release for public iteration.",
+          "outcome": "Early Access begins.",
+          "spend": null,
+          "source": "https://store.steampowered.com/app/1062810/Inkbound/",
+          "caveat": "Not a three-week production benchmark."
+        },
+        {
+          "when": "During Early Access, 2023–2024",
+          "channel": "Product / business-model change",
+          "action": "Remove in-game monetization and move cosmetics into optional supporter DLC.",
+          "outcome": "Change reported positively by the studio.",
+          "spend": null,
+          "source": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+          "caveat": "Exact change date and commercial lift not established by this source."
+        },
+        {
+          "when": "2024-04-09",
+          "channel": "Steam version 1.0",
+          "action": "Launch the full release.",
+          "outcome": "Release date corroborated by the developer's anniversary note.",
+          "spend": null,
+          "source": "https://shinyshoe.com/news/inkbound-two-years-of-adventure/",
+          "caveat": "Sales and campaign spend undisclosed."
+        },
+        {
+          "when": "2024-06-11",
+          "channel": "Developer postmortem",
+          "action": "Publish the Early Access lessons.",
+          "outcome": null,
+          "spend": null,
+          "source": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+          "caveat": "A retrospective, not a measured acquisition event."
+        }
+      ],
+      "demand": {
+        "audience": "Hypothesis: buildcraft-focused strategy players and groups seeking tactical coordination.",
+        "job": "Create interesting decisions without long periods of inactive waiting.",
+        "trigger": "A teammate's choice enables an outcome neither player could create alone.",
+        "supply": "Inkbound is an established example of the hybrid, not proof of an empty co-op roguelike niche.",
+        "opening": "Test one genuinely interdependent decision for a clearly chosen play mode.",
+        "notProven": "Public data cannot price the addressable niche or show that this model transfers to a tiny unknown studio.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1062810/Inkbound/",
+          "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+          "https://steamdb.info/app/1062810/charts/"
+        ]
+      },
+      "mechanism": {
+        "observed": "Simultaneous actions are advertised, and the studio documents conflicting solo/co-op feedback.",
+        "inference": "Reducing waiting may help cooperation, but preserving agency matters more than simply allowing simultaneous input.",
+        "confounds": "Prior studio reputation, Early Access iteration, localization, content depth, and business-model changes overlap.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1062810/Inkbound/",
+          "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Visible intentions, complementary abilities, and immediate feedback on combined choices.",
+        "change": "Choose co-op-first or solo-first explicitly; do not promise equal support by default.",
+        "miniDemo": "Proposed: two roles, three abilities each, one arena, and three encounter variations.",
+        "technicalCut": "No social hub, centralized hosting fleet, procedural campaign, hundreds of items, or cosmetic shop.",
+        "doNotCopy": "Free testers' approval does not validate a paid business model or localization priorities.",
+        "successTest": "Proposed gate: cold pairs discuss meaningful choices, retain individual agency, and request another encounter; test solo satisfaction separately."
+      },
+      "risks": [
+        "Dual-mode support can double balancing obligations.",
+        "Network services add operational work beyond gameplay.",
+        "A mature studio's reach is not an attainable baseline."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1062810/Inkbound/",
+        "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+        "https://shinyshoe.com/news/inkbound-two-years-of-adventure/",
+        "https://steamdb.info/app/1062810/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "artworkUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062810/header.jpg?t=1780422654",
+      "artworkProvenance": {
+        "source": "https://store.steampowered.com/app/1062810/?l=english",
+        "selection": "game_header_image_full from official Steam HTML",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "width": 460,
+        "height": 215,
+        "bytes": 55466,
+        "verification": "Full image decode succeeded; not only a HEAD request",
+        "checkedAt": "2026-09-03"
+      }
+    }
+  ]
+}

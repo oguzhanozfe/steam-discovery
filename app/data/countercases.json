@@ -1,0 +1,147 @@
+[
+  {
+    "id": "guntouchables",
+    "title": "GUNTOUCHABLES",
+    "appId": 2543510,
+    "releaseDate": "2025-08-07",
+    "genre": "Co-op action roguelite",
+    "subgenre": "Top-down doomsday shooter",
+    "tropes": [
+      "co-op",
+      "mutating enemies",
+      "preppers",
+      "post-apocalypse",
+      "free-to-keep launch",
+      "attribution control"
+    ],
+    "mode": "Single-player and 1–4-player online co-op",
+    "scopeFit": "Medium",
+    "team": "Game Swing, an established studio; published by Ghost Ship Publishing with PR support. Exact project headcount unverified.",
+    "devTime": null,
+    "hook": "Fight through a mutant apocalypse with friends while the enemy horde evolves during the run.",
+    "whyDemand": "Counter-case: a launch giveaway generated more than two million claims, but claims, simultaneous players and paid buyers are different populations. Its 16,284 peak CCU shows real play without establishing either a Content Warning-scale breakout or a financial failure.",
+    "spin": "Use this as an acquisition control: measure free claims, unique first sessions, return cohorts and paid purchases separately. For a three-week co-op prototype, test one arena and one visible enemy-mutation rule before expanding runs and content.",
+    "observedMetrics": {
+      "reviews": 4146,
+      "peakCCU": 16284,
+      "peakCCUDate": "2025-08-07",
+      "asOf": "2026-09-02",
+      "source": "https://steamdb.info/app/2543510/charts/"
+    },
+    "reportedOutcome": {
+      "metric": "Free-to-keep claims during the first 24 hours",
+      "value": 2000000,
+      "unit": "free claims (more than)",
+      "date": "2025-08-08",
+      "scope": "Steam giveaway acquisitions; NOT two million paid sales, installs or retained players",
+      "source": "https://www.mynewsdesk.com/uk/swipe-right/pressreleases/guntouchables-hits-over-2m-downloads-in-the-first-24-hours-3398663",
+      "evidence": "Reported"
+    },
+    "estimatedOwners": null,
+    "marketingEvents": [
+      {
+        "date": "2025-08-07",
+        "channel": "Steam launch / free-to-keep promotion",
+        "action": "Released with a 24-hour free-to-keep window; the publisher also promoted the offer on Reddit.",
+        "outcome": "The offer removed the purchase requirement during the launch window; its paid-revenue effect was not disclosed.",
+        "source": "https://www.reddit.com/r/pcgaming/comments/1mjx108",
+        "evidence": "Publisher campaign artifact",
+        "spend": null
+      },
+      {
+        "date": "2025-08-08",
+        "channel": "Publisher / PR milestone",
+        "action": "Ghost Ship Publishing and Game Swing announced the giveaway result.",
+        "outcome": "More than two million claims; the release separately cited over 16,000 launch-day concurrent players and a subsequent $4.99 price.",
+        "source": "https://www.mynewsdesk.com/uk/swipe-right/pressreleases/guntouchables-hits-over-2m-downloads-in-the-first-24-hours-3398663",
+        "evidence": "Primary publisher/developer press release",
+        "spend": null
+      }
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/2543510/GUNTOUCHABLES/",
+      "https://steamdb.info/app/2543510/charts/",
+      "https://www.reddit.com/r/pcgaming/comments/1mjx108",
+      "https://www.mynewsdesk.com/uk/swipe-right/pressreleases/guntouchables-hits-over-2m-downloads-in-the-first-24-hours-3398663"
+    ],
+    "caveat": "Not proof of categorical or financial failure. Budget, paid units, revenue and acquisition mix are unknown. Never divide peak CCU by claims and call it activation or retention. It is a different genre from Content Warning, not a controlled experiment. Medium demo fit assumes a proven co-op stack; networking and run balance still cost time.",
+    "depth": "Counter-case / attribution control"
+  },
+  {
+    "id": "arco",
+    "title": "Arco",
+    "appId": 2366970,
+    "releaseDate": "2024-08-15",
+    "genre": "Tactical RPG",
+    "subgenre": "Simultaneous turn-based / real-time combat",
+    "tropes": [
+      "Mesoamerican fantasy",
+      "revenge",
+      "pixel art",
+      "narrative tactics",
+      "critical acclaim",
+      "long-tail recovery"
+    ],
+    "mode": "Single-player",
+    "scopeFit": "Medium",
+    "team": "Four core creators: Franek, Max Cahill, Bibiki and Fáyer; published by Panic.",
+    "devTime": null,
+    "hook": "Plan actions in a Mesoamerican fantasy world where turns resolve together and danger does not always wait.",
+    "whyDemand": "Counter-case: excellent launch-era reviews did not produce enough first-month income to fund six further months of team work, according to a co-creator. The later reported breakeven shows why neither early praise nor an early shortfall determines the entire commercial lifetime.",
+    "spin": "Prototype one encounter that makes simultaneous combat immediately legible. Test whether the capsule and first trailer seconds communicate tactics rather than a slow walking-and-dialogue game; that positioning issue is an interviewer's hypothesis, not proven sales causality.",
+    "observedMetrics": {
+      "reviews": 2289,
+      "peakCCU": 164,
+      "peakCCUDate": "2024-08-25",
+      "asOf": "2026-09-02",
+      "source": "https://steamdb.info/app/2366970/charts/"
+    },
+    "reportedOutcome": {
+      "metric": "First-month income did not meet the co-creator's illustrative six-month team-runway threshold",
+      "value": null,
+      "unit": "qualitative commercial outcome",
+      "date": "2024-09-20",
+      "scope": "Antonio Uribe's launch-era account; no exact launch units, revenue or loss disclosed",
+      "source": "https://www.pushtotalk.gg/p/are-old-games-killing-new-games",
+      "evidence": "Reported"
+    },
+    "estimatedOwners": null,
+    "marketingEvents": [
+      {
+        "date": "2024-08-15",
+        "channel": "Steam / multi-platform launch",
+        "action": "Released the narrative tactical RPG.",
+        "outcome": null,
+        "source": "https://store.steampowered.com/app/2366970/Arco/",
+        "evidence": "Official store record",
+        "spend": null
+      },
+      {
+        "date": "2024-09-20",
+        "channel": "Developer interview / positioning discussion",
+        "action": "Antonio Uribe discussed the team's uncertain continuation after launch; interviewer Ryan Rigney described initially misreading the game's presentation.",
+        "outcome": "The first month did not provide roughly six months of continued team funding despite the article's 98%-positive Steam review snapshot.",
+        "source": "https://www.pushtotalk.gg/p/are-old-games-killing-new-games",
+        "evidence": "Direct co-creator interview; review percentage is historical",
+        "spend": null
+      },
+      {
+        "date": "2026-08-18",
+        "channel": "Developer follow-up / trade interview",
+        "action": "Composer and sound designer José Ramón confirmed to Game Developer that the project had broken even after two years.",
+        "outcome": "More than 100,000 copies worldwide across platforms; most sales were on Steam, but no exact Steam-only split was disclosed.",
+        "source": "https://www.gamedeveloper.com/business/arco-breaks-even-after-topping-100-000-sales",
+        "evidence": "Original reporting from direct exchange with a team member",
+        "spend": null
+      }
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/2366970/Arco/",
+      "https://steamdb.info/app/2366970/charts/",
+      "https://www.pushtotalk.gg/p/are-old-games-killing-new-games",
+      "https://www.gamedeveloper.com/business/arco-breaks-even-after-topping-100-000-sales"
+    ],
+    "caveat": "Not proof that tactical RPGs, pixel art or this game categorically failed. The 2026 100k milestone combines Steam, Switch, Mac App Store and Epic; it is not 100k confirmed Steam sales. Breakeven is a team member's report, not an audited margin. A three-week combat slice is plausible; a complete authored RPG is not. Current reviews and CCU must not be backdated to launch.",
+    "depth": "Counter-case / attribution control"
+  }
+]

@@ -1,0 +1,506 @@
+{
+  "asOf": "2026-09-03",
+  "status": "Public-source evidence audit plus explicitly editorial validation proposal",
+  "method": "Manually read official Steam stores and Steamworks documentation, an official developer announcement, and individual public SteamDB chart pages through the web reader. No bulk scraping or sales estimation.",
+  "definitions": {
+    "sample": "Five selected comparisons, not an exhaustive zombie-survival release cohort. No supply denominator or genre success rate is calculated.",
+    "englishStoreReviews": "The English Reviews count and whole-number positive percentage displayed by the observed Steam store page; not all-language reviews or units sold.",
+    "steamDbReviews": "SteamDB's displayed aggregate review count and raw positive-review share. This is not its adjusted SteamDB Rating and is not interchangeable with Steam's English-language score.",
+    "peakCCU": "SteamDB's highest observed simultaneous Steam players, with its displayed UTC date; not unique players, reach, owners or copies sold.",
+    "checkedAt": "Date the source was checked, not necessarily the publication date or an exact simultaneous live snapshot. Dynamic counts can change between requests.",
+    "milestone": "A developer-reported number with original platform and time scope retained; not an independently audited financial result.",
+    "inference": "Our interpretation of the cited evidence, not a causal attribution result or a developer statement."
+  },
+  "comparables": [
+    {
+      "appId": 108600,
+      "title": "Project Zomboid",
+      "role": "Emotional reference: ordinary-person vulnerability and a home worth protecting",
+      "checkedAt": "2026-09-03",
+      "sourceURL": "https://store.steampowered.com/app/108600/Project_Zomboid/",
+      "perspective": "Isometric, not first-person",
+      "release": {
+        "earlyAccessDate": "2013-11-08",
+        "fullReleaseDate": null,
+        "status": "Early Access",
+        "definition": "Steam displays 8 November 2013 and still labels the game Early Access."
+      },
+      "promises": [
+        "House looting, crafting, barricades and a large persistent survival sandbox",
+        "Zombie sight and hearing, dangerous gun noise, illness and resource pressure",
+        "Solo and multiplayer; extensive accumulated systems and mod support"
+      ],
+      "currentVersusPlanned": "NPC survivors with relationships remain in the developer's 1.0 plans; do not count planned NPC scope as currently shipped.",
+      "storeReviews": {
+        "count": 157017,
+        "positivePercent": 93,
+        "scope": "English Reviews",
+        "recentCount": 9119,
+        "recentPositivePercent": 88,
+        "recentWindow": "last 30 days"
+      },
+      "steamDb": {
+        "sourceURL": "https://steamdb.info/app/108600/charts/",
+        "checkedAt": "2026-09-03",
+        "peakCCU": 124995,
+        "peakDateUTC": "2026-08-09",
+        "aggregateReviews": 478359,
+        "positiveReviews": 448689,
+        "rawPositivePercent": 93.8,
+        "definition": "Historical simultaneous-player peak and observed aggregate review counts, not owners or sales.",
+        "caveat": "The peak belongs to an established game first on Steam in 2013; it is not a 2026 new-launch outcome."
+      },
+      "reportedMilestones": [],
+      "caveat": "Its breadth is a player-expectation reference, not a feasible three-week feature checklist."
+    },
+    {
+      "appId": 1857950,
+      "title": "VEIN",
+      "role": "Direct substitute: first-person zombie survival crafting already exists",
+      "checkedAt": "2026-09-03",
+      "sourceURL": "https://store.steampowered.com/app/1857950/VEIN/",
+      "perspective": "First-person; solo and multiplayer",
+      "release": {
+        "earlyAccessDate": "2025-10-24",
+        "fullReleaseDate": null,
+        "status": "Early Access",
+        "definition": "Steam explicitly lists its Early Access release date."
+      },
+      "promises": [
+        "Scavenge buildings, craft, farm, cook and fortify a home",
+        "Developer says multiplayer, combat, power and water systems are playable",
+        "A demo with a smaller region and lower skill cap is available"
+      ],
+      "currentVersusPlanned": "EA notes describe about 4 × 4 km currently playable. A 14 × 14 km map, NPCs, raiders, settlements and quests are future plans, with a roughly five-year estimate, not a guarantee.",
+      "storeReviews": {
+        "count": 8149,
+        "positivePercent": 89,
+        "scope": "English Reviews",
+        "recentCount": 496,
+        "recentPositivePercent": 82,
+        "recentWindow": "last 30 days"
+      },
+      "steamDb": {
+        "sourceURL": "https://steamdb.info/app/1857950/charts/",
+        "checkedAt": "2026-09-03",
+        "peakCCU": 11073,
+        "peakDateUTC": "2025-11-02",
+        "aggregateReviews": 12230,
+        "positiveReviews": 10772,
+        "rawPositivePercent": 88.1,
+        "definition": "Historical simultaneous-player peak and observed aggregate review counts, not owners or sales.",
+        "caveat": "A launch-era peak establishes activity for this competitor, not profitability or unpaid reach."
+      },
+      "reportedMilestones": [],
+      "caveat": "'Project Zomboid, but FPS' is occupied positioning. A new game must distinguish the experience rather than only perspective and tags."
+    },
+    {
+      "appId": 251570,
+      "title": "7 Days to Die",
+      "role": "Established first-person scavenging, crafting and defence reference",
+      "checkedAt": "2026-09-03",
+      "sourceURL": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+      "perspective": "First-person; solo and multiplayer",
+      "release": {
+        "earlyAccessDate": "2013-12-13",
+        "fullReleaseDate": "2024-07-25",
+        "status": "Released, no longer Early Access",
+        "definition": "Steam separately displays full and Early Access release dates."
+      },
+      "promises": [
+        "Open-world FPS, survival horror, tower defence and RPG",
+        "Looting, crafting, fortification and destructible construction",
+        "Large environments, vehicles and extensive progression"
+      ],
+      "storeReviews": {
+        "count": 124190,
+        "positivePercent": 85,
+        "scope": "English Reviews",
+        "recentCount": 1430,
+        "recentPositivePercent": 66,
+        "recentWindow": "last 30 days",
+        "caveat": "Steam flags one or more off-topic review periods and says those periods are excluded from the displayed score under the observed preferences."
+      },
+      "steamDb": {
+        "sourceURL": "https://steamdb.info/app/251570/charts/",
+        "checkedAt": "2026-09-03",
+        "peakCCU": 125419,
+        "peakDateUTC": "2024-07-28",
+        "aggregateReviews": 408640,
+        "positiveReviews": 352208,
+        "rawPositivePercent": 86.2,
+        "definition": "Historical simultaneous-player peak and observed aggregate review counts, not owners or sales.",
+        "caveat": "The peak is from the July 2024 full-release period, after a long Early Access history."
+      },
+      "reportedMilestones": [
+        {
+          "claim": "The current store description reports over 20 million copies sold.",
+          "valueLowerBound": 20000000,
+          "strictlyGreaterThan": true,
+          "metric": "Copies sold",
+          "platformScope": "Not specified in the statement",
+          "publicationDate": null,
+          "sourceURL": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+          "checkedAt": "2026-09-03",
+          "definition": "Undated developer marketing statement on the store.",
+          "caveat": "Do not call this Steam-only sales, 2026 sales, launch sales, net copies or revenue."
+        }
+      ],
+      "caveat": "Long-run audience scale does not estimate the odds for a new entrant."
+    },
+    {
+      "appId": 1963610,
+      "title": "Road to Vostok",
+      "role": "Adjacent solo FPS survival reference; not a zombie game",
+      "checkedAt": "2026-09-03",
+      "sourceURL": "https://store.steampowered.com/app/1963610/Road_to_Vostok/",
+      "perspective": "First-person, single-player, map-to-map travel rather than one asserted continuous world",
+      "release": {
+        "earlyAccessDate": "2026-04-07",
+        "fullReleaseDate": null,
+        "status": "Early Access",
+        "definition": "Steam explicitly lists its Early Access release date."
+      },
+      "promises": [
+        "Grounded FPS survival, looting, shelter customization and trading",
+        "Cross a dangerous border into an optional permadeath region",
+        "A free demo and multi-phase development are part of the presentation"
+      ],
+      "currentVersusPlanned": "Store EA text estimates two to four more years. Some prose still describes pre-launch work; treat it as developer intent, not a fresh inventory of shipped features.",
+      "storeReviews": {
+        "count": 5914,
+        "positivePercent": 84,
+        "scope": "English Reviews",
+        "recentCount": 249,
+        "recentPositivePercent": 78,
+        "recentWindow": "last 30 days"
+      },
+      "steamDb": {
+        "sourceURL": "https://steamdb.info/app/1963610/charts/",
+        "checkedAt": "2026-09-03",
+        "peakCCU": 8282,
+        "peakDateUTC": "2026-04-12",
+        "aggregateReviews": 8814,
+        "positiveReviews": 7429,
+        "rawPositivePercent": 84.3,
+        "definition": "Historical simultaneous-player peak and observed aggregate review counts, not owners or sales.",
+        "caveat": "This adjacent success does not isolate demand for zombies, co-op, crafting or the proposed route mechanic."
+      },
+      "reportedMilestones": [
+        {
+          "claim": "The developer reported over 250,000 copies sold on Steam in 'What's Next (Build 2)'.",
+          "valueLowerBound": 250000,
+          "strictlyGreaterThan": true,
+          "metric": "Copies sold",
+          "platformScope": "Steam explicitly named",
+          "publicationDate": "2026-04-25",
+          "sourceURL": "https://steamcommunity.com/app/1963610/allnews/",
+          "canonicalAnnouncementURL": "https://steamcommunity.com/games/1963610/announcements/detail/524248354559886111",
+          "checkedAt": "2026-09-03",
+          "definition": "Developer self-report at that date, read in full in the official Steam news feed; direct announcement URL returned only a title/image in the web reader.",
+          "caveat": "Gross/net refund treatment not specified. Not current lifetime sales, profit, or a causal marketing study."
+        }
+      ],
+      "caveat": "Supports the existence of a solo FPS survival audience, not a three-week production benchmark."
+    },
+    {
+      "appId": 1766060,
+      "title": "HumanitZ",
+      "role": "Adjacent zombie-scavenging/base reference; not first-person",
+      "checkedAt": "2026-09-03",
+      "sourceURL": "https://store.steampowered.com/app/1766060/humanitz?l=english",
+      "perspective": "Isometric; solo and multiplayer",
+      "release": {
+        "earlyAccessDate": "2023-09-18",
+        "fullReleaseDate": "2026-02-06",
+        "status": "Released, no longer Early Access",
+        "definition": "Steam separately displays full and Early Access release dates; this is not a wholly new February 2026 game."
+      },
+      "promises": [
+        "Urban scavenging versus countryside hunting, fishing and farming",
+        "Crafting, vehicles, base fortification and survival pressures",
+        "Solo, co-op, PvE and PvP with dedicated servers"
+      ],
+      "storeReviews": {
+        "count": 4362,
+        "positivePercent": 73,
+        "scope": "English Reviews",
+        "recentCount": 319,
+        "recentPositivePercent": 69,
+        "recentWindow": "last 30 days",
+        "caveat": "Fresh opened page replaced an older search snippet showing 4,322 reviews. Do not mix the snapshots."
+      },
+      "steamDb": {
+        "sourceURL": "https://steamdb.info/app/1766060/charts/",
+        "checkedAt": "2026-09-03",
+        "peakCCU": 12674,
+        "peakDateUTC": "2026-02-15",
+        "aggregateReviews": 14186,
+        "positiveReviews": 10534,
+        "rawPositivePercent": 74.3,
+        "definition": "Historical simultaneous-player peak and observed aggregate review counts, not owners or sales.",
+        "caveat": "A full-release-era peak after Early Access since 2023, not a clean new-IP launch cohort observation."
+      },
+      "reportedMilestones": [],
+      "caveat": "A shared theme can attract activity without uniformly strong satisfaction; review percentages alone do not explain causes."
+    }
+  ],
+  "constraintFacts": [
+    {
+      "id": "initial-title-wait",
+      "claim": "Steam onboarding lists a 30-day interval between paying the app fee and releasing a game for a partner's first few titles.",
+      "sourceURL": "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+      "checkedAt": "2026-09-03",
+      "definition": "Game-release eligibility measured from fee payment, not 30 development workdays.",
+      "caveat": "The docs phrase this for the first few titles, not every app forever. The provided sources do not explicitly resolve a new partner's demo eligibility under this interval; verify the actual Steamworks checklist or ask Steam support before promising a date.",
+      "planningImplication": "A new full-game release cannot be promised inside a three-calendar-week sprint if this wait starts on day one."
+    },
+    {
+      "id": "full-game-coming-soon",
+      "claim": "The full game's public Coming Soon page must be visible for at least two weeks before its release.",
+      "sourceURL": "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+      "checkedAt": "2026-09-03",
+      "definition": "A public store-presence interval, separate from fee payment and review time.",
+      "caveat": "Do not add 30 days and 14 days automatically; requirements can overlap. Do not transfer this rule to a demo's own optional upcoming page."
+    },
+    {
+      "id": "review-buffer",
+      "claim": "Store-page and product-build review each typically take 3–5 business days; Valve asks for at least 7 business days of planning allowance for each.",
+      "sourceURL": "https://partner.steamgames.com/doc/store/review_process",
+      "checkedAt": "2026-09-03",
+      "definition": "Typical review duration and recommended buffer, not a guaranteed service deadline.",
+      "caveat": "Submit a near-final build. Rework may be required. The dedicated Review Process page specifies business days; it is more precise than the shorter onboarding summary.",
+      "planningImplication": "For a day-15 Steam demo target, plan the near-final candidate and store preparation early, not on day 15. Day 8 is a proposed latest candidate target, not a Valve guarantee."
+    },
+    {
+      "id": "demo-is-separate",
+      "claim": "A demo has a separate App ID linked to its base game, its own configuration and review checklist. Before a pre-release demo goes live, the base game's store page must be public as Coming Soon.",
+      "sourceURL": "https://partner.steamgames.com/doc/store/application/demos",
+      "checkedAt": "2026-09-03",
+      "definition": "A Steam demo is not releasing the commercial base app.",
+      "caveat": "The demo's own upcoming phase is explicitly optional: a fully reviewed demo can release directly to playable. This is not evidence that all new-partner onboarding constraints are waived."
+    },
+    {
+      "id": "demo-notification",
+      "claim": "After the first playable demo release, its owner can trigger one wishlist notification to base-game wishlisters within the first two weeks.",
+      "sourceURL": "https://partner.steamgames.com/doc/store/application/demos",
+      "checkedAt": "2026-09-03",
+      "definition": "An optional once-only action, not automatic notification on every update.",
+      "caveat": "The documentation also describes a two-week wishlist-notification cooldown. An early rough public demo can consume a useful launch moment; a private prototype handoff is a separate deliverable."
+    },
+    {
+      "id": "store-truthfulness",
+      "claim": "Review checks require store screenshots to show gameplay and listed supported features to exist in the current build; future content must be clearly distinguished.",
+      "sourceURL": "https://partner.steamgames.com/doc/store/review_process",
+      "checkedAt": "2026-09-03",
+      "definition": "Product representation rules, not evidence that a prototype will pass review.",
+      "caveat": "Label one-street prototype footage honestly. Do not present a mockup, cinematic or unbuilt open world as shipped gameplay."
+    },
+    {
+      "id": "utm-counts",
+      "claim": "UTM Total Visits count visits with tagged URLs. Trusted Visits exclude bots/crawlers. Tracked Visits are signed-in visits with abnormal repeated traffic excluded.",
+      "sourceURL": "https://partner.steamgames.com/doc/marketing/utm_analytics",
+      "checkedAt": "2026-09-03",
+      "definition": "Visits, not unique people or impressions.",
+      "caveat": "Report these denominators separately. Small campaign rows may be hidden by privacy thresholds; absence of a row is not zero demand."
+    },
+    {
+      "id": "utm-conversions",
+      "claim": "Steam attributes wishlists, purchases and free-game/key activations to tracked UTM visits when the action occurs within 72 hours of the click.",
+      "sourceURL": "https://partner.steamgames.com/doc/marketing/utm_analytics",
+      "checkedAt": "2026-09-03",
+      "definition": "Attributed store action within a fixed window, not proof that the link caused the action.",
+      "caveat": "Browser, device and app transitions can break attribution, although Steam's supported open-in-client/app banners can preserve it. UTM Analytics does not measure demo completion, route comprehension or voluntary replay; collect those separately with consent."
+    }
+  ],
+  "marketTheses": [
+    {
+      "id": "occupied-demand",
+      "kind": "Inference",
+      "claim": "There is demonstrated interest, but no empty 'FPS Zomboid' slot. VEIN directly combines the requested ingredients and has observed review/player activity; 7 Days to Die is an established first-person substitute.",
+      "sourceURL": [
+        "https://store.steampowered.com/app/1857950/VEIN/",
+        "https://steamdb.info/app/1857950/charts/",
+        "https://store.steampowered.com/app/251570/7_Days_to_Die/"
+      ],
+      "checkedAt": "2026-09-03",
+      "definition": "Competitive-positioning inference from selected released products.",
+      "caveat": "This does not quantify market size, unmet demand, acquisition cost or startup success probability."
+    },
+    {
+      "id": "solo-is-testable",
+      "kind": "Inference",
+      "claim": "Single-player is a credible slice to test: Road to Vostok's developer reports a substantial Steam sales milestone for a solo FPS survival game.",
+      "sourceURL": [
+        "https://store.steampowered.com/app/1963610/Road_to_Vostok/",
+        "https://steamcommunity.com/app/1963610/allnews/"
+      ],
+      "checkedAt": "2026-09-03",
+      "definition": "Evidence for adjacent audience existence, not proof of demand for this game's zombies or hook.",
+      "caveat": "A selected success with a long demo/development history cannot forecast a new team's three-week outcome."
+    },
+    {
+      "id": "scope-is-expectation-gap",
+      "kind": "Inference",
+      "claim": "The largest risk is the gap between a mature survival-sandbox promise and a small team's deliverable. Narrow the demo to a repeated scavenging decision that changes the route home.",
+      "sourceURL": [
+        "https://store.steampowered.com/app/108600/Project_Zomboid/",
+        "https://store.steampowered.com/app/1857950/VEIN/",
+        "https://store.steampowered.com/app/1766060/humanitz?l=english"
+      ],
+      "checkedAt": "2026-09-03",
+      "definition": "Editorial production judgment based on comparable feature breadth.",
+      "caveat": "No comparable supplies a reliable cost estimate for this team."
+    },
+    {
+      "id": "local-hook-not-feature-invention",
+      "kind": "Editorial hypothesis",
+      "claim": "A shortcut that helps carry loot home also gives infected a route to the safehouse. Test whether players recognize their own decision in the later threat and voluntarily try a different plan.",
+      "sourceURL": [
+        "https://store.steampowered.com/app/108600/Project_Zomboid/",
+        "https://store.steampowered.com/app/1857950/VEIN/"
+      ],
+      "checkedAt": "2026-09-03",
+      "definition": "Original synthesis for the proposed prototype, not a claim to have invented noise, persistence, doors or fortification.",
+      "caveat": "Novelty, enjoyment and distinctiveness are unproven. An unexplained scripted ambush would not validate systemic consequence."
+    },
+    {
+      "id": "no-rate-no-organic",
+      "kind": "Method limit",
+      "claim": "These five examples support design comparison and demand existence only. Do not compute a Q2 hit rate or label their activity organic.",
+      "sourceURL": [
+        "https://steamdb.info/app/108600/charts/",
+        "https://steamdb.info/app/1857950/charts/",
+        "https://steamdb.info/app/251570/charts/",
+        "https://steamdb.info/app/1963610/charts/",
+        "https://steamdb.info/app/1766060/charts/"
+      ],
+      "checkedAt": "2026-09-03",
+      "definition": "Selected-case sample with no complete release denominator or controlled channel experiment.",
+      "caveat": "No review-to-sales, CCU-to-owners, follower-to-wishlist or view-to-revenue conversion is made."
+    }
+  ],
+  "sourcesChecked": [
+    {
+      "title": "Project Zomboid — official Steam store",
+      "sourceURL": "https://store.steampowered.com/app/108600/Project_Zomboid/",
+      "checkedAt": "2026-09-03",
+      "type": "Primary store",
+      "supports": "Release/EA status, English reviews and feature promises",
+      "caveat": "Store copy distinguishes planned features; dynamic snapshot."
+    },
+    {
+      "title": "Project Zomboid — SteamDB charts",
+      "sourceURL": "https://steamdb.info/app/108600/charts/",
+      "checkedAt": "2026-09-03",
+      "type": "Independent measurement source",
+      "supports": "Peak CCU/date and aggregate raw reviews",
+      "caveat": "SteamDB is not Valve; ignore displayed third-party owner estimates."
+    },
+    {
+      "title": "VEIN — official Steam store",
+      "sourceURL": "https://store.steampowered.com/app/1857950/VEIN/",
+      "checkedAt": "2026-09-03",
+      "type": "Primary store",
+      "supports": "EA date, English reviews, playable versus planned scope and demo",
+      "caveat": "General marketing prose mentions raiders while EA notes say they are planned; EA notes used for current-state claims."
+    },
+    {
+      "title": "VEIN — SteamDB charts",
+      "sourceURL": "https://steamdb.info/app/1857950/charts/",
+      "checkedAt": "2026-09-03",
+      "type": "Independent measurement source",
+      "supports": "Peak CCU/date and aggregate raw reviews",
+      "caveat": "Concurrency is not paid units."
+    },
+    {
+      "title": "7 Days to Die — official Steam store",
+      "sourceURL": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+      "checkedAt": "2026-09-03",
+      "type": "Primary store",
+      "supports": "Both release dates, features, review scope and reported 20-million-plus milestone",
+      "caveat": "Milestone is undated/platform-unspecified; English score excludes flagged off-topic activity."
+    },
+    {
+      "title": "7 Days to Die — SteamDB charts",
+      "sourceURL": "https://steamdb.info/app/251570/charts/",
+      "checkedAt": "2026-09-03",
+      "type": "Independent measurement source",
+      "supports": "Peak CCU/date and aggregate raw reviews",
+      "caveat": "2024 peak is not a 2026 new-release result."
+    },
+    {
+      "title": "Road to Vostok — official Steam store",
+      "sourceURL": "https://store.steampowered.com/app/1963610/Road_to_Vostok/",
+      "checkedAt": "2026-09-03",
+      "type": "Primary store",
+      "supports": "EA date, English reviews, solo FPS and map-to-map positioning",
+      "caveat": "Some EA explanatory prose predates launch and is not a current feature audit."
+    },
+    {
+      "title": "Road to Vostok — SteamDB charts",
+      "sourceURL": "https://steamdb.info/app/1963610/charts/",
+      "checkedAt": "2026-09-03",
+      "type": "Independent measurement source",
+      "supports": "Peak CCU/date and aggregate raw reviews",
+      "caveat": "Non-zombie adjacent comparison."
+    },
+    {
+      "title": "Road to Vostok — What's Next (Build 2), 25 April 2026",
+      "sourceURL": "https://steamcommunity.com/app/1963610/allnews/",
+      "canonicalAnnouncementURL": "https://steamcommunity.com/games/1963610/announcements/detail/524248354559886111",
+      "checkedAt": "2026-09-03",
+      "type": "Primary developer announcement",
+      "supports": "Over 250,000 copies on Steam as of the announcement",
+      "caveat": "Full text read in official feed; permalink reader returned no body. Gross/net unspecified."
+    },
+    {
+      "title": "HumanitZ — official English Steam store",
+      "sourceURL": "https://store.steampowered.com/app/1766060/humanitz?l=english",
+      "checkedAt": "2026-09-03",
+      "type": "Primary store",
+      "supports": "EA/full dates, isometric positioning, English reviews and features",
+      "caveat": "Initial capitalized URL returned an age gate; English URL read successfully and refreshed."
+    },
+    {
+      "title": "HumanitZ — SteamDB charts",
+      "sourceURL": "https://steamdb.info/app/1766060/charts/",
+      "checkedAt": "2026-09-03",
+      "type": "Independent measurement source",
+      "supports": "Peak CCU/date and aggregate raw reviews",
+      "caveat": "Full release follows years of Early Access."
+    },
+    {
+      "title": "Steamworks — Onboarding",
+      "sourceURL": "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+      "checkedAt": "2026-09-03",
+      "type": "Primary platform documentation",
+      "supports": "Initial title fee wait and public Coming Soon interval",
+      "caveat": "Does not explicitly settle demo eligibility for a newly onboarded partner."
+    },
+    {
+      "title": "Steamworks — Review Process",
+      "sourceURL": "https://partner.steamgames.com/doc/store/review_process",
+      "checkedAt": "2026-09-03",
+      "type": "Primary platform documentation",
+      "supports": "Typical 3–5 business days, at least 7-business-day planning allowance, truthful assets/features",
+      "caveat": "Typical timing is not an approval guarantee."
+    },
+    {
+      "title": "Steamworks — Demos",
+      "sourceURL": "https://partner.steamgames.com/doc/store/application/demos",
+      "checkedAt": "2026-09-03",
+      "type": "Primary platform documentation",
+      "supports": "Separate demo app/review, base Coming Soon, optional demo upcoming phase and notifications",
+      "caveat": "Do not equate commercial app launch with demo launch."
+    },
+    {
+      "title": "Steamworks — UTM Analytics",
+      "sourceURL": "https://partner.steamgames.com/doc/marketing/utm_analytics",
+      "checkedAt": "2026-09-03",
+      "type": "Primary platform documentation",
+      "supports": "Visit definitions, privacy thresholds, tracked conversions, 72-hour window and attribution gaps",
+      "caveat": "No demo gameplay outcomes or causal lift measurement."
+    }
+  ]
+}

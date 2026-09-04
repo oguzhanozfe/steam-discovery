@@ -1,0 +1,1710 @@
+{
+  "schemaVersion": 1,
+  "title": "Expanded Steam indie-game benchmarks",
+  "asOf": "2026-09-02",
+  "gameCount": 22,
+  "methodology": {
+    "purpose": "Broaden the research library beyond blockbuster anecdotes with comparable games, dated outcomes, discoverable marketing events and three-week-demo scope judgments.",
+    "metrics": "Reviews and peak concurrent players are observed SteamDB snapshots retrieved on 2026-09-02; upstream cached snapshots may lag. Reviews are not paid copies and CCU is not reach.",
+    "estimates": "VGI, PlayTracker and Gamalytic owner figures are the rounded estimates displayed by SteamDB at retrieval. They are model outputs, may disagree, and are not verified unit sales or net revenue. Null means not verified.",
+    "milestones": "Reported outcomes preserve the source's date, metric and platform scope. Cross-platform sales, downloads including demos, wishlists, views, modelled units and confirmed copies must never be added or relabelled.",
+    "attribution": "A marketing event preceding a result is not proof that it caused that result. No entry is labelled zero-spend organic. Unknown spend is null; publisher and creator advantages are called out where visible.",
+    "judgment": "Hook descriptions summarize the games; whyDemand, spin, scopeFit and production caveats are analyst interpretations. Scope fit concerns a tightly bounded three-week proof-of-concept/demo, not full-game parity.",
+    "selectionBias": "This is a purposive comparator set, not a representative sample of every release. It cannot estimate base-rate success or prove an unfilled market gap. Smaller outcomes are deliberately retained alongside hits.",
+    "revenue": "No gross revenue is derived from owners multiplied by list price. Discounts, regions, refunds, taxes, platform fees and publisher splits are unknown.",
+    "datePrecision": "Month-only or relative dates are retained where sources did not support a verified exact day. Mutable community announcement URLs may contain multiple updates."
+  },
+  "games": [
+    {
+      "id": "super-battle-golf",
+      "title": "Super Battle Golf",
+      "appId": 4069520,
+      "releaseDate": "2026-02-19",
+      "genre": "Party / sport",
+      "subgenre": "Simultaneous multiplayer golf",
+      "tropes": [
+        "golf sabotage",
+        "friendly rivalry",
+        "physics comedy"
+      ],
+      "mode": "1–8 players online",
+      "scopeFit": "Medium",
+      "team": "Brimstone; published by Oro Interactive. Verified headcount unavailable.",
+      "devTime": "4.5 months, developer-reported",
+      "hook": "Everybody plays golf at once—and can shoot, ram or orbital-strike their friends.",
+      "whyDemand": "Large player and owner signals support demand for instantly readable competitive comedy. Golf supplies familiar rules while simultaneous sabotage creates spectator-readable reversals; this is evidence of an audience, not proof that another golf game will sell.",
+      "spin": "Prototype one compact mini-golf arena with a single sabotage tool and short rematches. Differentiate through a specific setting or interaction, not a larger item catalogue.",
+      "observedMetrics": {
+        "reviews": 11584,
+        "peakCCU": 20421,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold in approximately one month",
+        "value": 1000000,
+        "unit": "copies",
+        "date": "2026-03-30",
+        "scope": "Steam milestone reported from the developer's Steam announcement",
+        "source": "https://www.gamesradar.com/games/sports/pvp-indie-golf-game-with-93-percent-very-positive-reviews-hits-1-million-copies-sold-on-steam-in-just-over-a-month-so-many-friendships-ended/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 1450000,
+        "PlayTracker": 1590000,
+        "Gamalytic": 1490000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2026-02-19",
+          "channel": "Steam launch",
+          "action": "Released a compact simultaneous-golf party game.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/4069520/",
+          "evidence": "Store record",
+          "spend": null
+        },
+        {
+          "date": "2026-02-22",
+          "channel": "Developer milestone / press",
+          "action": "Developer disclosed the short production period and 48-hour sales result.",
+          "outcome": "100,000 copies in 48 hours; development reported as 4.5 months.",
+          "source": "https://www.pcgamer.com/games/sports/that-golf-game-with-orbital-death-lasers-sold-100k-copies-in-two-days-we-made-super-battle-golf-together-in-4-5-months-and-are-so-happy/",
+          "evidence": "Press quoting developer",
+          "spend": null
+        },
+        {
+          "date": "2026-03-30",
+          "channel": "Steam announcement / press",
+          "action": "Shared a larger sales milestone.",
+          "outcome": "1 million copies in just over a month.",
+          "source": "https://www.gamesradar.com/games/sports/pvp-indie-golf-game-with-93-percent-very-positive-reviews-hits-1-million-copies-sold-on-steam-in-just-over-a-month-so-many-friendships-ended/",
+          "evidence": "Press quoting developer",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/4069520/charts/",
+        "https://store.steampowered.com/app/4069520/",
+        "https://www.pcgamer.com/games/sports/that-golf-game-with-orbital-death-lasers-sold-100k-copies-in-two-days-we-made-super-battle-golf-together-in-4-5-months-and-are-so-happy/",
+        "https://www.gamesradar.com/games/sports/pvp-indie-golf-game-with-93-percent-very-positive-reviews-hits-1-million-copies-sold-on-steam-in-just-over-a-month-so-many-friendships-ended/"
+      ],
+      "caveat": "Publisher support and total marketing spend are not quantified. Its 4.5-month production is not evidence that a comparable full game can be made in three weeks. Networked physics, authority, collisions and reconnection remain material demo risks.",
+      "depth": "Milestone-backed benchmark"
+    },
+    {
+      "id": "creature-kitchen",
+      "title": "Creature Kitchen",
+      "appId": 3097300,
+      "releaseDate": "2026-02-06",
+      "genre": "Cozy / simulation",
+      "subgenre": "Creepy-cozy cooking and wildlife feeding",
+      "tropes": [
+        "cryptid hospitality",
+        "eerie woodland home",
+        "cute creatures",
+        "recipe discovery"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "The Rat Zone; headcount unverified",
+      "devTime": "Developer described working on it for the past year when the December 2025 demo appeared.",
+      "hook": "Cook in an unsettling woodland house and feed raccoons, strange wildlife and cryptids.",
+      "whyDemand": "The strong review response supports a creepy-cozy audience beyond combat horror. Low peak concurrency alongside substantial review and owner signals illustrates why single-player demand should not be ranked by CCU alone.",
+      "spin": "One haunted pantry, three visitors, six recipes and a photographable feeding reveal. Put the novelty in creature reactions and discovery rather than a large crafting economy.",
+      "observedMetrics": {
+        "reviews": 9618,
+        "peakCCU": 553,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Steam reviews shortly after launch",
+        "value": 707,
+        "unit": "reviews",
+        "date": "2026-02-12",
+        "scope": "PC Gamer observed 99% positive across 707 reviews",
+        "source": "https://www.pcgamer.com/games/sim/one-of-the-best-reviewed-new-games-on-steam-right-now-is-about-feeding-raccoons-and-cryptids-with-the-cosmic-lynchian-oven-of-your-eerie-woodland-house/",
+        "evidence": "Observed"
+      },
+      "estimatedOwners": {
+        "VGI": 95700,
+        "PlayTracker": 237400,
+        "Gamalytic": 129700,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-12-04",
+          "channel": "Reddit / public demo",
+          "action": "Developer introduced the playable wildlife-feeding simulator after roughly a year of work.",
+          "outcome": null,
+          "source": "https://www.reddit.com/r/playmygame/comments/1pec3on/the_wildlife_feeding_simulator_ive_been_working/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2026-02-12",
+          "channel": "Editorial coverage",
+          "action": "PC Gamer highlighted the unusual cooking premise and early reception.",
+          "outcome": "707 Steam reviews, 99% positive at the article snapshot.",
+          "source": "https://www.pcgamer.com/games/sim/one-of-the-best-reviewed-new-games-on-steam-right-now-is-about-feeding-raccoons-and-cryptids-with-the-cosmic-lynchian-oven-of-your-eerie-woodland-house/",
+          "evidence": "Editorial observation",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3097300/charts/",
+        "https://store.steampowered.com/app/3097300/",
+        "https://www.reddit.com/r/playmygame/comments/1pec3on/the_wildlife_feeding_simulator_ive_been_working/",
+        "https://www.pcgamer.com/games/sim/one-of-the-best-reviewed-new-games-on-steam-right-now-is-about-feeding-raccoons-and-cryptids-with-the-cosmic-lynchian-oven-of-your-eerie-woodland-house/"
+      ],
+      "caveat": "No verified paid-sales milestone or channel attribution was found. Current owner models disagree substantially; the interval must not be presented as confirmed 100k–200k demand. Creature animation and bespoke environments can expand art scope.",
+      "depth": "Demand-signal benchmark"
+    },
+    {
+      "id": "horse-magnifier",
+      "title": "Horse Magnifier: The Full Horse",
+      "appId": 4585340,
+      "releaseDate": "2026-08-10",
+      "genre": "Puzzle / comedy",
+      "subgenre": "Visual distortion puzzle",
+      "tropes": [
+        "absurd animals",
+        "literal title",
+        "optical toy",
+        "user-made puzzles"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "sketbordcat",
+      "devTime": null,
+      "hook": "Arrange magnifying lenses until a horse matches the target shape.",
+      "whyDemand": "A single visual verb and an absurd, immediately understandable subject generated a small but strongly reviewed release. This is a useful modest-scale counterexample to the assumption that a marketable game requires multiplayer or a simulation economy.",
+      "spin": "Use one deformable everyday object and a different expressive transformation rule. A 10-puzzle demo should test whether the manipulation is funny before adding Workshop or dozens of levels.",
+      "observedMetrics": {
+        "reviews": 1420,
+        "peakCCU": 160,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Early Steam reviews",
+        "value": 250,
+        "unit": "reviews (more than)",
+        "date": "2026-08-12",
+        "scope": "Steam reviews observed by PC Gamer two days after release; not sales",
+        "source": "https://www.pcgamer.com/games/puzzle/this-weeks-most-compelling-new-steam-game-is-horse-magnifier-which-is-about-magnifying-horses/",
+        "evidence": "Observed"
+      },
+      "estimatedOwners": {
+        "VGI": 23000,
+        "PlayTracker": 39000,
+        "Gamalytic": 20300,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2026-05-27",
+          "channel": "itch.io devlog",
+          "action": "Announced the expanded commercial version of the browser jam game.",
+          "outcome": null,
+          "source": "https://sketbordcat.itch.io/horse-magnifier",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2026-08-10",
+          "channel": "Steam / itch.io launch",
+          "action": "Released The Full Horse, expanding the original visual puzzle.",
+          "outcome": null,
+          "source": "https://sketbordcat.itch.io/horse-magnifier-the-full-horse",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2026-08-12",
+          "channel": "Editorial coverage",
+          "action": "The literal, unusual premise received PC Gamer coverage.",
+          "outcome": "Article observed over 250 positive Steam reviews after two days.",
+          "source": "https://www.pcgamer.com/games/puzzle/this-weeks-most-compelling-new-steam-game-is-horse-magnifier-which-is-about-magnifying-horses/",
+          "evidence": "Editorial observation",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/4585340/charts/",
+        "https://store.steampowered.com/app/4585340/",
+        "https://sketbordcat.itch.io/horse-magnifier",
+        "https://sketbordcat.itch.io/horse-magnifier-the-full-horse",
+        "https://www.pcgamer.com/games/puzzle/this-weeks-most-compelling-new-steam-game-is-horse-magnifier-which-is-about-magnifying-horses/"
+      ],
+      "caveat": "The current modelled audience is tens of thousands, not 100k–200k. Jam exposure and free browser play do not establish purchase conversion. Optical puzzle implementation still needs legibility, good snapping and carefully authored puzzles.",
+      "depth": "Small-scale demand benchmark"
+    },
+    {
+      "id": "waterpark-simulator",
+      "title": "Waterpark Simulator",
+      "appId": 3293260,
+      "releaseDate": "2025-08-22",
+      "genre": "Simulation / management",
+      "subgenre": "First-person attraction-management sandbox",
+      "tropes": [
+        "ragdoll customers",
+        "messy service work",
+        "theme-park chaos",
+        "creator spectacle"
+      ],
+      "mode": "Single-player and online co-op in the current store listing",
+      "scopeFit": "Medium",
+      "team": "CayPlay: began with 2 developers; reported 6 developers plus 2 full-time QA and support staff in early 2026.",
+      "devTime": null,
+      "hook": "Build and run a waterpark from ground level while customers become physical comedy props.",
+      "whyDemand": "Both the commercial game's audience and a large combined demo/main-game download milestone indicate interest in a familiar simulator with unusually visible physical mishaps. The evidence supports the hook, not the cost or likelihood of reproducing its creator reach.",
+      "spin": "One small pool, one dangerous slide and a five-minute opening shift. Test staff/customer comedy before building a complete park-management system.",
+      "observedMetrics": {
+        "reviews": 13774,
+        "peakCCU": 13126,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Combined main-game and demo downloads during 2025",
+        "value": 1000000,
+        "unit": "downloads (more than)",
+        "date": "Early 2026; studio page displays February 11",
+        "scope": "Main game plus demo; explicitly NOT one million paid copies",
+        "source": "https://cayplay.com/news/winter-extravaganza-event---have-you-been-naughty-or-nice-",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 463800,
+        "PlayTracker": 553500,
+        "Gamalytic": 643600,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-05",
+          "channel": "Steam page / IGN reveal",
+          "action": "Developer described launching the Steam page alongside an IGN announcement trailer.",
+          "outcome": null,
+          "source": "https://www.reddit.com/r/IndieDev/comments/1kir2vb",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-08-22",
+          "channel": "Steam Early Access",
+          "action": "Launched the paid simulator into Early Access.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/3293260/",
+          "evidence": "Store record",
+          "spend": null
+        },
+        {
+          "date": "Early 2026; exact publication date uncertain",
+          "channel": "Studio retrospective",
+          "action": "CayPlay shared its 2025 download and team-growth results.",
+          "outcome": "Over one million downloads across the demo and main game; not a paid-sales count.",
+          "source": "https://cayplay.com/news/winter-extravaganza-event---have-you-been-naughty-or-nice-",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2026-07-31",
+          "channel": "1.0 release",
+          "action": "Released the full version after Early Access.",
+          "outcome": "Observed peak of 13,126 concurrent Steam players followed on August 2; correlation only.",
+          "source": "https://steamdb.info/app/3293260/charts/",
+          "evidence": "Store and SteamDB records",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3293260/charts/",
+        "https://store.steampowered.com/app/3293260/",
+        "https://www.reddit.com/r/IndieDev/comments/1kir2vb",
+        "https://cayplay.com/news/winter-extravaganza-event---have-you-been-naughty-or-nice-",
+        "https://cayplay.com/"
+      ],
+      "caveat": "CayPlay has creator connections and a growing production team. The million-download claim combines free and paid acquisition. Full attraction building, guest navigation and co-op are far beyond a three-week demo budget; constrain the slice.",
+      "depth": "Milestone-backed benchmark"
+    },
+    {
+      "id": "gamblers-table",
+      "title": "Gamblers Table",
+      "appId": 3618390,
+      "releaseDate": "2026-01-11",
+      "genre": "Incremental",
+      "subgenre": "Coin-flipping automation",
+      "tropes": [
+        "luck",
+        "tabletop toy",
+        "automation",
+        "number growth"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "greenpixels and Bossforge; exact headcount unverified",
+      "devTime": null,
+      "hook": "Flip coins, buy better coins and hire tiny helpers to automate the table.",
+      "whyDemand": "A playable web prototype produced measurable prelaunch interest before the full Steam release. The clear cause-and-effect loop is easy to sample and show in short clips; current mixed-positive review sentiment is a reminder that a strong acquisition hook does not guarantee long-term satisfaction.",
+      "spin": "Replace coin flipping with a distinct tactile ritual that gains surprising automation. Ship a browser-playable two-minute loop with a visible, tagged Steam wishlist path.",
+      "observedMetrics": {
+        "reviews": 2857,
+        "peakCCU": 9309,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Steam wishlists after the page went live",
+        "value": 10000,
+        "unit": "wishlists",
+        "date": "2025-05-17",
+        "scope": "Developer postmortem: reached in under three weeks",
+        "source": "https://www.reddit.com/r/gamedev/comments/1kowjz4/update_our_game_blew_up_on_itch_but_we_were_not/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 253200,
+        "PlayTracker": 245100,
+        "Gamalytic": 276500,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-04 to 2025-05",
+          "channel": "itch.io / Steam setup",
+          "action": "After an early web prototype took off without a Steam page, the developers added a localized store page, stronger art and an improved demo.",
+          "outcome": "Developer reported almost 900 wishlists on the page's first day.",
+          "source": "https://www.reddit.com/r/gamedev/comments/1kowjz4/update_our_game_blew_up_on_itch_but_we_were_not/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-05",
+          "channel": "Genre Reddit / creator outreach",
+          "action": "Posted in relevant communities; used an ImCade video as social proof when contacting other creators.",
+          "outcome": "Postmortem reported a 380k-view video, roughly 80k web plays and 10k Steam wishlists. These are separate funnel counts.",
+          "source": "https://www.reddit.com/r/gamedev/comments/1kowjz4/update_our_game_blew_up_on_itch_but_we_were_not/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-05-17",
+          "channel": "Funnel retrospective",
+          "action": "Disclosed missing UTM tracking for the first ten days.",
+          "outcome": "After tracking began, 85% of tracked Steam visits came through the in-game wishlist button—not 85% of all wishlists.",
+          "source": "https://www.reddit.com/r/gamedev/comments/1kowjz4/update_our_game_blew_up_on_itch_but_we_were_not/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3618390/charts/",
+        "https://store.steampowered.com/app/3618390/",
+        "https://www.reddit.com/r/gamedev/comments/1kowjz4/update_our_game_blew_up_on_itch_but_we_were_not/",
+        "https://www.reddit.com/r/incremental_games/comments/1q9vrft/gamblers_table_is_out_now/"
+      ],
+      "caveat": "The developer's acquisition post is not a controlled attribution experiment; platforms and creator exposure overlapped. Spend was not fully documented. Prototype popularity, tracked visits, wishlists and paid owners must remain separate metrics.",
+      "depth": "Marketing-process case"
+    },
+    {
+      "id": "raccoin",
+      "title": "RACCOIN: Coin Pusher Roguelike",
+      "appId": 3784030,
+      "releaseDate": "2026-03-31",
+      "genre": "Roguelike / arcade",
+      "subgenre": "Coin-pusher combo builder",
+      "tropes": [
+        "arcade nostalgia",
+        "raccoon mascot",
+        "run synergies",
+        "physical jackpots"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "Medium",
+      "team": "Doraccoon; published by Playstack",
+      "devTime": null,
+      "hook": "A coin-pusher machine becomes a roguelike engine of special coins and absurd chain reactions.",
+      "whyDemand": "The verified 100k-unit launch milestone supports demand for familiar gambling-adjacent interfaces with genuine mechanical interactions. The important feature is combinatorial spectacle, not merely placing a casino skin on an idle counter.",
+      "spin": "Choose a different recognisable coin-operated toy and implement five deeply interacting modifiers. A single machine is a plausible demo; stable physics and satisfying combo readability are the hard parts.",
+      "observedMetrics": {
+        "reviews": 4615,
+        "peakCCU": 11626,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Units sold in less than 24 hours",
+        "value": 100000,
+        "unit": "units",
+        "date": "2026-04-01",
+        "scope": "Publisher-reported launch result",
+        "source": "https://www.linkedin.com/posts/wangjintao_raccoin-hit-100k-units-sold-in-less-than-activity-7445078418062385152-_kK1",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 691400,
+        "PlayTracker": 707400,
+        "Gamalytic": 801600,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-08-18",
+          "channel": "Public playtest / Reddit",
+          "action": "Playstack promoted an open playtest ahead of launch.",
+          "outcome": null,
+          "source": "https://www.reddit.com/r/u_PlaystackGames/comments/1mtfa9e",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-08-20",
+          "channel": "Editorial preview",
+          "action": "PC Gamer covered the coin-pusher premise and the publisher's Balatro connection.",
+          "outcome": null,
+          "source": "https://www.pcgamer.com/games/roguelike/playstack-not-content-with-obliterating-my-free-time-via-balatro-is-publishing-another-roguelike-about-coin-pusher-machines/",
+          "evidence": "Editorial coverage",
+          "spend": null
+        },
+        {
+          "date": "2026-04-01",
+          "channel": "Publisher milestone",
+          "action": "Publisher disclosed the first-day unit result.",
+          "outcome": "100k units in under 24 hours.",
+          "source": "https://www.linkedin.com/posts/wangjintao_raccoin-hit-100k-units-sold-in-less-than-activity-7445078418062385152-_kK1",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3784030/charts/",
+        "https://store.steampowered.com/app/3784030/",
+        "https://www.linkedin.com/posts/wangjintao_raccoin-hit-100k-units-sold-in-less-than-activity-7445078418062385152-_kK1",
+        "https://www.gamespew.com/2026/04/raccoin-sold-100000-copies/",
+        "https://www.reddit.com/r/u_PlaystackGames/comments/1mtfa9e",
+        "https://www.pcgamer.com/games/roguelike/playstack-not-content-with-obliterating-my-free-time-via-balatro-is-publishing-another-roguelike-about-coin-pusher-machines/"
+      ],
+      "caveat": "Playstack's distribution experience and existing audience are important confounders. No causal channel split or total spend was disclosed. A successful roguelike requires balanced combinations and replayability beyond a visually exciting prototype.",
+      "depth": "Milestone-backed benchmark"
+    },
+    {
+      "id": "scritchy-scratchy",
+      "title": "Scritchy Scratchy",
+      "appId": 3948120,
+      "releaseDate": "2026-03-18",
+      "genre": "Incremental",
+      "subgenre": "Scratch-card progression",
+      "tropes": [
+        "scratch tickets",
+        "tactile reveals",
+        "automation",
+        "jackpot anticipation"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "Lunch Money Games; published by Funday Games",
+      "devTime": null,
+      "hook": "Scratch tickets, reveal rewards and build an increasingly automated scratch-card machine.",
+      "whyDemand": "Large observed Steam activity and a publisher-reported cross-platform milestone support appetite for tactile, low-friction incremental play. The repeatable visual reveal provides an obvious short-video structure; that is a marketing hypothesis, not disclosed acquisition attribution.",
+      "spin": "Use a different reveal action—peeling labels, opening sealed parcels or polishing fossils—with escalating tools and a distinctive thematic payoff.",
+      "observedMetrics": {
+        "reviews": 15432,
+        "peakCCU": 23881,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold within two months",
+        "value": 1000000,
+        "unit": "copies",
+        "date": "2026-05 (two months after launch)",
+        "scope": "Combined PC and mobile; not Steam-only",
+        "source": "https://www.linkedin.com/posts/fundaygames_we-like-big-round-numbers-in-just-activity-7464940921948811264-1OHm",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 1280000,
+        "PlayTracker": 1110000,
+        "Gamalytic": 1390000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2026-03-18",
+          "channel": "Steam launch",
+          "action": "Released the scratch-card incremental.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/3948120/",
+          "evidence": "Store record",
+          "spend": null
+        },
+        {
+          "date": "2026-03 (first week)",
+          "channel": "Publisher milestone",
+          "action": "Funday reported the first week's cross-platform result.",
+          "outcome": "250k copies across PC and mobile in seven days.",
+          "source": "https://www.linkedin.com/posts/fundaygames_250000-copies-sold-what-a-week-its-activity-7442472993777287168-ZnMD",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2026-05 (two months after launch)",
+          "channel": "Publisher milestone",
+          "action": "Shared a larger cross-platform result.",
+          "outcome": "One million copies across PC and mobile.",
+          "source": "https://www.linkedin.com/posts/fundaygames_we-like-big-round-numbers-in-just-activity-7464940921948811264-1OHm",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3948120/charts/",
+        "https://store.steampowered.com/app/3948120/",
+        "https://www.linkedin.com/posts/fundaygames_250000-copies-sold-what-a-week-its-activity-7442472993777287168-ZnMD",
+        "https://www.linkedin.com/posts/fundaygames_we-like-big-round-numbers-in-just-activity-7464940921948811264-1OHm"
+      ],
+      "caveat": "Publisher milestones combine platforms. Steam model estimates are a separate, later snapshot and should not be used to allocate the cross-platform milestone. Marketing spend and source-level conversion are unknown.",
+      "depth": "Milestone-backed benchmark"
+    },
+    {
+      "id": "black-hole-fishing",
+      "title": "Black Hole Fishing",
+      "appId": 3667390,
+      "releaseDate": "2026-04-07",
+      "genre": "Incremental / fishing",
+      "subgenre": "Pond breeding and consumption",
+      "tropes": [
+        "cosmic absurdity",
+        "fish breeding",
+        "trait collection",
+        "number growth"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "SDG Games; published by Playsaurus",
+      "devTime": null,
+      "hook": "Breed increasingly valuable fish and feed an insatiable black hole.",
+      "whyDemand": "The game offers a smaller commercial comparator than the million-selling incrementals. Its current tens-of-thousands owner estimates show a plausible audience for an odd, compact theme, but do not establish a 100k–200k outcome.",
+      "spin": "Combine one calm collection verb with a ridiculous consumer: a hungry moon, office printer or miniature volcano. Limit the demo to a small trait matrix that produces visibly different results.",
+      "observedMetrics": {
+        "reviews": 575,
+        "peakCCU": 1503,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": null,
+      "estimatedOwners": {
+        "VGI": 41400,
+        "PlayTracker": 52000,
+        "Gamalytic": 43400,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-07-30",
+          "channel": "Genre Reddit / demo",
+          "action": "Developer promoted the playable game using the combinatorial fish-generation hook.",
+          "outcome": "The post highlighted 2.5 septillion possible fish; this is a content-combination claim, not an audience metric.",
+          "source": "https://www.reddit.com/r/incremental_games/comments/1mcz4iz/i_made_25_septillion_fish_for_my_game_also_the/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2026-04-07",
+          "channel": "Steam launch",
+          "action": "Released the incremental fishing game.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/3667390/",
+          "evidence": "Store record",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3667390/charts/",
+        "https://store.steampowered.com/app/3667390/",
+        "https://www.reddit.com/r/incremental_games/comments/1mcz4iz/i_made_25_septillion_fish_for_my_game_also_the/"
+      ],
+      "caveat": "No official paid-unit or revenue milestone was verified. Trait combinations are not the same as meaningful content variety. Progression balance and readable differences between fish matter more than a gigantic theoretical content count.",
+      "depth": "Small-scale demand benchmark"
+    },
+    {
+      "id": "horripilant",
+      "title": "Horripilant",
+      "appId": 3525970,
+      "releaseDate": "2026-02-20",
+      "genre": "Incremental / horror",
+      "subgenre": "Dungeon-crawl idle adventure",
+      "tropes": [
+        "occult dungeon",
+        "retro interface",
+        "idle combat",
+        "unsettling discovery"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "Alexandre Declos / Pas Game Studio; published by Black Lantern Collective",
+      "devTime": null,
+      "hook": "An ominous dungeon crawler hides incremental progression inside a horror adventure.",
+      "whyDemand": "The official 50k first-month milestone and current roughly 116k–162k owner estimates make this a useful mid-sized reference. The combination suggests an audience for authored atmosphere around incremental progression, not only cheerful desktop toys.",
+      "spin": "Create a single cursed room with one automated ritual and several increasingly troubling unlocks. Let the interface itself tell the horror story rather than requiring many monsters or maps.",
+      "observedMetrics": {
+        "reviews": 2952,
+        "peakCCU": 4219,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold in the first month",
+        "value": 50000,
+        "unit": "copies",
+        "date": "2026-03-22",
+        "scope": "Developer's Steam community milestone",
+        "source": "https://store.steampowered.com/news/app/3525970/view/492719985750181073",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 117900,
+        "PlayTracker": 162200,
+        "Gamalytic": 115600,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-05-29",
+          "channel": "Steam demo",
+          "action": "Released a separate demo before the full launch.",
+          "outcome": null,
+          "source": "https://steamdb.info/app/3771400/charts/",
+          "evidence": "SteamDB demo record",
+          "spend": null
+        },
+        {
+          "date": "2026-03-22",
+          "channel": "Steam community milestone",
+          "action": "Developer discussed support and response to a first commercial release.",
+          "outcome": "50,000 copies sold in the first month.",
+          "source": "https://store.steampowered.com/news/app/3525970/view/492719985750181073",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2026-04-23",
+          "channel": "Publisher showcase / press",
+          "action": "Black Lantern promoted the game alongside announcements in the Second Wind showcase.",
+          "outcome": "Publisher press release stated more than 60,000 Steam copies sold.",
+          "source": "https://press.ukiyostudios.com/exorcist-hotline-leads-7-announcements-from-black-lantern-collective-in-the-inaugural-second-wind-games-showcase",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3525970/charts/",
+        "https://store.steampowered.com/app/3525970/",
+        "https://store.steampowered.com/news/app/3525970/view/492719985750181073",
+        "https://steamdb.info/app/3771400/charts/",
+        "https://press.ukiyostudios.com/exorcist-hotline-leads-7-announcements-from-black-lantern-collective-in-the-inaugural-second-wind-games-showcase"
+      ],
+      "caveat": "Current owner estimates are not the same as the dated official milestone. The later showcase cannot explain earlier sales. The public sources do not identify the proportion of discovery from creators, Steam or paid promotion.",
+      "depth": "Mid-market milestone benchmark"
+    },
+    {
+      "id": "outhold",
+      "title": "Outhold",
+      "appId": 3767740,
+      "releaseDate": "2025-12-12",
+      "genre": "Incremental / strategy",
+      "subgenre": "Minimalist tower-defense progression",
+      "tropes": [
+        "large skill tree",
+        "short-session optimization",
+        "defend the core",
+        "automation"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "Tellus Games; headcount unverified",
+      "devTime": "Prototype began in April 2025; released December 2025 (approximately eight calendar months).",
+      "hook": "A small tower-defense battlefield feeds a large, persistent upgrade tree.",
+      "whyDemand": "An official 50k first-week sales result and later owner models around 193k–221k provide evidence for a compact, finite incremental game. Its appeal appears tied to rapid upgrade feedback and strategic variation rather than a huge map or long campaign.",
+      "spin": "Build one defendable object, three tower behaviours and a branching 15-node upgrade tree. Change the setting and sacrifice/reward decision so the game has its own strategic identity.",
+      "observedMetrics": {
+        "reviews": 1809,
+        "peakCCU": 1468,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold in one week",
+        "value": 50000,
+        "unit": "copies",
+        "date": "2025-12-19",
+        "scope": "Official Steam announcement mirrored by SteamDB",
+        "source": "https://steamdb.info/patchnotes/21257975/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 203500,
+        "PlayTracker": 193300,
+        "Gamalytic": 220600,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-12-12",
+          "channel": "itch.io / Steam / bundles",
+          "action": "Developer's release post traced the April prototype and promoted launch bundles with other incremental games.",
+          "outcome": null,
+          "source": "https://tellusgames.itch.io/outhold/devlog/1141147/outhold-is-out-now-on-steam",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-12-19",
+          "channel": "Steam milestone",
+          "action": "Developer announced the first-week result.",
+          "outcome": "50,000 copies sold in a week.",
+          "source": "https://steamdb.info/patchnotes/21257975/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3767740/charts/",
+        "https://store.steampowered.com/app/3767740/",
+        "https://steamdb.info/patchnotes/21257975/",
+        "https://tellusgames.itch.io/outhold/devlog/1141147/outhold-is-out-now-on-steam"
+      ],
+      "caveat": "The developer described a roughly four-to-five-hour complete game, not a three-week production. Bundle exposure is documented but bundle-attributed revenue is not. A visually minimal game can still require substantial balance work.",
+      "depth": "Mid-market milestone benchmark"
+    },
+    {
+      "id": "cloverpit",
+      "title": "CloverPit",
+      "appId": 3314790,
+      "releaseDate": "2025-09-26",
+      "genre": "Horror / roguelite",
+      "subgenre": "Debt-trap slot-machine roguelite",
+      "tropes": [
+        "financial pressure",
+        "locked room",
+        "cursed charms",
+        "gambling imagery"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "Medium",
+      "team": "Panik Arcade: 2 developers; published by Future Friends Games",
+      "devTime": null,
+      "hook": "Win enough on a sinister slot machine to pay the next debt deadline—or die in the room.",
+      "whyDemand": "The million-copy milestone shows that a highly legible gambling interface can attract a large audience when combined with horror stakes and build-changing synergies. It does not establish that the slot-machine niche remains unsaturated.",
+      "spin": "Use another pressure ritual—a pawnshop auction, cursed vending machine or rigged claw machine—and one clear survival deadline. Demonstrate player agency beyond random outcomes.",
+      "observedMetrics": {
+        "reviews": 25904,
+        "peakCCU": 25190,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold in six weeks",
+        "value": 1000000,
+        "unit": "copies",
+        "date": "2025-11-13",
+        "scope": "Publisher press release",
+        "source": "https://lulop.com/en_EN/post/show/337722/cloverpit-1m-copies-sold-hard-.html",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 1590000,
+        "PlayTracker": 1690000,
+        "Gamalytic": 1820000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-09-26",
+          "channel": "Steam launch",
+          "action": "Released the horror slot-machine roguelite.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/3314790/",
+          "evidence": "Store record",
+          "spend": null
+        },
+        {
+          "date": "2025-11-13",
+          "channel": "Content update / publisher PR",
+          "action": "Paired the million-copy announcement with the Hard Mode 1.2 update.",
+          "outcome": "One million copies in six weeks; a new update created a fresh communication beat.",
+          "source": "https://lulop.com/en_EN/post/show/337722/cloverpit-1m-copies-sold-hard-.html",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3314790/charts/",
+        "https://store.steampowered.com/app/3314790/",
+        "https://lulop.com/en_EN/post/show/337722/cloverpit-1m-copies-sold-hard-.html",
+        "https://rogueliker.com/cloverpit-hard-mode/"
+      ],
+      "caveat": "A two-person developer team did not work without publishing support. No verified spend or channel-attribution split is available. Tiny spatial scope hides potentially large balancing, audio, pacing and interaction requirements.",
+      "depth": "Milestone-backed benchmark"
+    },
+    {
+      "id": "slots-and-daggers",
+      "title": "Slots & Daggers",
+      "appId": 3631290,
+      "releaseDate": "2025-10-24",
+      "genre": "Roguelike / RPG",
+      "subgenre": "Fantasy combat through slot-machine outcomes",
+      "tropes": [
+        "fantasy adventure",
+        "tactical slots",
+        "equipment synergies",
+        "short runs"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "Friedemann: solo developer; published by Future Friends Games",
+      "devTime": "A one-day prototype was pitched in March 2025; commercial release followed in October, approximately seven calendar months.",
+      "hook": "A miniature fantasy RPG resolves combat through a manipulable slot machine.",
+      "whyDemand": "The official 100k-copy result in ten days demonstrates demand for a thematic and tactical reinterpretation of slot mechanics. Compared with a horror-room format, the fantasy journey creates different progression expectations and merchandising.",
+      "spin": "Combine a compact familiar randomizer with a distinct strategic situation: courtroom testimony, cooking duels or dungeon repair. The demo needs meaningful mitigation choices, not just a reskinned spin button.",
+      "observedMetrics": {
+        "reviews": 7564,
+        "peakCCU": 2235,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "More than 100,000 copies sold in ten days",
+        "value": 100000,
+        "unit": "copies",
+        "date": "2025-11-03",
+        "scope": "Developer's Steam announcement before later console releases",
+        "source": "https://store.steampowered.com/news/app/3631290/view/687488077158942074",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 236200,
+        "PlayTracker": 350400,
+        "Gamalytic": 295200,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-03",
+          "channel": "Prototype / publisher pitch",
+          "action": "Developer built a one-day prototype and pitched it to the publisher.",
+          "outcome": "A tiny prototype led to months of subsequent development, not a one-day commercial game.",
+          "source": "https://www.gamesradar.com/games/roguelike/another-roguelike-success-story-has-hit-steam-d-and-d-flavored-slot-machine-slots-and-daggers-sells-100-000-copies-in-10-days-a-surreal-number-for-a-solo-dev-like-me/",
+          "evidence": "Press quoting developer",
+          "spend": null
+        },
+        {
+          "date": "October 2025; documented 24 October",
+          "channel": "Steam Next Fest / demo recognition",
+          "action": "A demo received a Future Games Show Next Fest award.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/news/app/3631290/view/538868565209514436",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-11-03",
+          "channel": "Steam milestone",
+          "action": "Developer shared the ten-day sales result.",
+          "outcome": "More than 100,000 copies sold in ten days.",
+          "source": "https://store.steampowered.com/news/app/3631290/view/687488077158942074",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3631290/charts/",
+        "https://store.steampowered.com/app/3631290/",
+        "https://www.gamesradar.com/games/roguelike/another-roguelike-success-story-has-hit-steam-d-and-d-flavored-slot-machine-slots-and-daggers-sells-100-000-copies-in-10-days-a-surreal-number-for-a-solo-dev-like-me/",
+        "https://store.steampowered.com/news/app/3631290/view/687488077158942074",
+        "https://store.steampowered.com/news/app/3631290/view/538868565209514436"
+      ],
+      "caveat": "The developer had prior shipped games and publishing relationships. A later 300k announcement followed console releases and should not automatically be described as Steam-only. The initial production estimate proved too short.",
+      "depth": "Milestone-backed benchmark"
+    },
+    {
+      "id": "a-game-about-digging-a-hole",
+      "title": "A Game About Digging A Hole",
+      "appId": 3244220,
+      "releaseDate": "2025-02-07",
+      "genre": "Simulation / incremental",
+      "subgenre": "Short digging-and-upgrading experience",
+      "tropes": [
+        "literal title",
+        "destructible terrain",
+        "backyard mystery",
+        "sell-and-upgrade"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "DoubleBee; published by rokaplay select / Drillhounds",
+      "devTime": "Developer's side project took roughly three weeks of free time, reusing existing voxel technology from Solarpunk.",
+      "hook": "Dig a hole in your backyard, sell what you find, buy better equipment and uncover a secret.",
+      "whyDemand": "The marketing postmortem provides a clear example of an immediately readable verb generating prelaunch interest. The title, first frame and progression promise reinforce the same expectation; existing reusable technology was crucial to the small development scope.",
+      "spin": "Choose another universally understandable physical task with a visible depth/reveal payoff. Use proven terrain technology or an authored destruction grid rather than building a new voxel engine in the demo sprint.",
+      "observedMetrics": {
+        "reviews": 20066,
+        "peakCCU": 7477,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Wishlists in four weeks",
+        "value": 82000,
+        "unit": "wishlists",
+        "date": "2025-01",
+        "scope": "Publisher/marketer postmortem, before release",
+        "source": "https://www.reddit.com/r/gamedev/comments/1i1zazy/how_we_managed_to_reach_82000_wishlists_in_4/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 1070000,
+        "PlayTracker": 1090000,
+        "Gamalytic": null,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2024-12-10",
+          "channel": "Steam setup",
+          "action": "Steam page quietly went live before the reveal to allow search indexing.",
+          "outcome": null,
+          "source": "https://www.reddit.com/r/gamedev/comments/1i1zazy/how_we_managed_to_reach_82000_wishlists_in_4/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2024-12-12",
+          "channel": "German Indie Showcase / short video / press",
+          "action": "Revealed with a trailer edited to show the hook immediately; distributed across short-video platforms and IGN.",
+          "outcome": "Postmortem later reported 5m TikTok, 14.5m Instagram and 2.2m YouTube Shorts views.",
+          "source": "https://www.reddit.com/r/gamedev/comments/1i1zazy/how_we_managed_to_reach_82000_wishlists_in_4/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-01",
+          "channel": "Marketing retrospective",
+          "action": "Shared the four-week wishlist outcome.",
+          "outcome": "82,000 wishlists; overlapping campaigns prevented a clean channel-level causal explanation.",
+          "source": "https://www.reddit.com/r/gamedev/comments/1i1zazy/how_we_managed_to_reach_82000_wishlists_in_4/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3244220/charts/",
+        "https://store.steampowered.com/app/3244220/",
+        "https://www.reddit.com/r/gamedev/comments/1i1zazy/how_we_managed_to_reach_82000_wishlists_in_4/"
+      ],
+      "caveat": "The three-week claim refers to a side project using existing technology, not an equivalent game built from scratch. The marketer had established press relationships. Views are not unique buyers; the post does not prove zero paid spend.",
+      "depth": "Marketing-process case"
+    },
+    {
+      "id": "the-cabin-factory",
+      "title": "The Cabin Factory",
+      "appId": 3311740,
+      "releaseDate": "2024-12-13",
+      "genre": "Horror / inspection",
+      "subgenre": "Anomaly-spotting workplace horror",
+      "tropes": [
+        "haunted prefab cabin",
+        "repeated inspection",
+        "liminal factory",
+        "accept-or-reject"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "International Cat Studios; published by Future Friends Games",
+      "devTime": null,
+      "hook": "Inspect manufactured cabins and reject the ones that are haunted.",
+      "whyDemand": "This earlier comparator has unusually useful public acquisition evidence: repeated social clips and a concrete wishlist result. A mundane job with an alarming binary decision is easy to explain without lore, and a reusable room makes a short demo feasible.",
+      "spin": "Inspect a different manufactured space—elevators, food trucks or hotel rooms—with a specific anomaly grammar. One reused environment and a handful of authored scares can communicate the concept.",
+      "observedMetrics": {
+        "reviews": 3786,
+        "peakCCU": 538,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Wishlists gained in ten days",
+        "value": 20000,
+        "unit": "wishlists",
+        "date": "2024-12-03",
+        "scope": "Public GameDiscoverCo case referencing publisher's campaign report",
+        "source": "https://newsletter.gamediscover.co/p/revealed-new-data-on-steam-wishlist",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 217000,
+        "PlayTracker": 326100,
+        "Gamalytic": 247100,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2024-11-13",
+          "channel": "X",
+          "action": "A short, native-looking horror clip circulated.",
+          "outcome": "Campaign report: 3m views, 63k likes and 4.5k shares.",
+          "source": "https://newsletter.gamediscover.co/p/revealed-new-data-on-steam-wishlist",
+          "evidence": "Publisher report relayed by GameDiscoverCo",
+          "spend": null
+        },
+        {
+          "date": "2024-11-14 and 2024-11-16",
+          "channel": "TikTok",
+          "action": "Published further short inspection/scare clips.",
+          "outcome": "Campaign report: 1.4m and 1.2m views on the two clips.",
+          "source": "https://newsletter.gamediscover.co/p/revealed-new-data-on-steam-wishlist",
+          "evidence": "Publisher report relayed by GameDiscoverCo",
+          "spend": null
+        },
+        {
+          "date": "2024-12-03",
+          "channel": "Campaign retrospective",
+          "action": "Reported the wishlist result and promotion mix.",
+          "outcome": "20k wishlists in ten days; minimal press and some Reddit test ads were also involved.",
+          "source": "https://newsletter.gamediscover.co/p/revealed-new-data-on-steam-wishlist",
+          "evidence": "Publisher report relayed by GameDiscoverCo",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3311740/charts/",
+        "https://store.steampowered.com/app/3311740/",
+        "https://newsletter.gamediscover.co/p/revealed-new-data-on-steam-wishlist",
+        "https://www.linkedin.com/posts/thomas-reisenegger-32571766_our-indie-horror-game-went-viral-on-social-activity-7269302450770137088-5zfS"
+      ],
+      "caveat": "Included as a 2024 marketing-process comparator, not a 2026 release. Paid Reddit tests mean this must not be labelled zero-spend organic. Social views and wishlists are correlated campaign outcomes, not a controlled conversion experiment.",
+      "depth": "Marketing-process case"
+    },
+    {
+      "id": "no-im-not-a-human",
+      "title": "No, I'm not a Human",
+      "appId": 3180070,
+      "releaseDate": "2025-09-15",
+      "genre": "Horror / narrative",
+      "subgenre": "Social deduction and identity inspection",
+      "tropes": [
+        "end-times paranoia",
+        "visitors at the door",
+        "body clues",
+        "uncertain trust"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "Medium",
+      "team": "Trioskaz; published by Critical Reflex",
+      "devTime": null,
+      "hook": "Shelter strangers during the apocalypse, but identify the inhuman Visitors before they kill the household.",
+      "whyDemand": "Reported milestone progression demonstrates sustained demand for character-led inspection horror. The distinguishing appeal is uncertain social judgement and memorable people, not merely finding visual anomalies.",
+      "spin": "Set one night in a different place with a meaningful admission rule: a shelter, emergency ferry or overnight clinic. Author five characters with conflicting clues and consequences before expanding the cast.",
+      "observedMetrics": {
+        "reviews": 30658,
+        "peakCCU": 8248,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold",
+        "value": 1000000,
+        "unit": "copies",
+        "date": "2026-03-19",
+        "scope": "Developer/publisher milestone relayed by WN Hub",
+        "source": "https://wnhub.io/news/finance/item-50376",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 843600,
+        "PlayTracker": 1090000,
+        "Gamalytic": 1060000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-09-19",
+          "channel": "Sales milestone",
+          "action": "Developer/publisher announced the early result.",
+          "outcome": "100k copies four days after release, as recapped by WN Hub.",
+          "source": "https://wnhub.io/news/finance/item-50376",
+          "evidence": "Trade report citing developer/publisher",
+          "spend": null
+        },
+        {
+          "date": "2025-12-18",
+          "channel": "Content update / accolades trailer",
+          "action": "Publisher added twelve characters, a new ending and other events.",
+          "outcome": "Press release reported 850k copies sold.",
+          "source": "https://www.dlh.net/en/news/87507/no-i-m-not-a-human-receives-fresh-visitors.html",
+          "evidence": "Publisher press release",
+          "spend": null
+        },
+        {
+          "date": "2026-03-19",
+          "channel": "Sales milestone",
+          "action": "Developer/publisher shared the million-copy milestone.",
+          "outcome": "One million copies reported.",
+          "source": "https://wnhub.io/news/finance/item-50376",
+          "evidence": "Trade report citing developer/publisher",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3180070/charts/",
+        "https://store.steampowered.com/app/3180070/",
+        "https://wnhub.io/news/finance/item-50376",
+        "https://www.dlh.net/en/news/87507/no-i-m-not-a-human-receives-fresh-visitors.html"
+      ],
+      "caveat": "A sustained milestone series does not reveal channel attribution. Its writing, visual identity and character design are substantial production assets. A generic anomaly clone would omit the features that make this a distinct comparison.",
+      "depth": "Milestone-backed benchmark"
+    },
+    {
+      "id": "quarantine-zone",
+      "title": "Quarantine Zone: The Last Check",
+      "appId": 3419520,
+      "releaseDate": "2026-01-12",
+      "genre": "Simulation / horror",
+      "subgenre": "Zombie checkpoint inspection",
+      "tropes": [
+        "border-control decisions",
+        "infection symptoms",
+        "triage",
+        "disaster logistics"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "Medium",
+      "team": "Brigada Games; published by Devolver Digital",
+      "devTime": null,
+      "hook": "Inspect survivors for infection and decide who enters the quarantine zone, who waits and who dies.",
+      "whyDemand": "A developer-reported 650k-wishlist position at the demo launch and strong commercial concurrency establish a large audience for inspection with visible bodily clues. They do not prove that this remains an uncontested niche or that the full operational simulation is cheap.",
+      "spin": "Build a single checkpoint and two diagnostic tools for a different crisis. Use one memorable moral/mechanical twist, such as fraudulent paperwork versus physical symptoms.",
+      "observedMetrics": {
+        "reviews": 13182,
+        "peakCCU": 31653,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Wishlists at public demo release",
+        "value": 650000,
+        "unit": "wishlists",
+        "date": "2025-05-22",
+        "scope": "Developer self-report; prelaunch audience, not sales",
+        "source": "https://www.reddit.com/r/indiegames/comments/1kssqtg/quarantine_zone_the_last_check_demo_is_out_now/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 897500,
+        "PlayTracker": 837900,
+        "Gamalytic": 1010000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-05-22",
+          "channel": "Steam demo / Reddit / social",
+          "action": "Developer announced the public demo and described prelaunch reach.",
+          "outcome": "Self-reported 650k wishlists, Steam wishlist rank #46 and 250m+ social views; these are distinct metrics.",
+          "source": "https://www.reddit.com/r/indiegames/comments/1kssqtg/quarantine_zone_the_last_check_demo_is_out_now/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-07",
+          "channel": "Publisher signing / press",
+          "action": "Devolver's publishing deal was announced alongside a wishlist milestone.",
+          "outcome": "Reported one million wishlists.",
+          "source": "https://www.gamesradar.com/games/simulation/the-zombie-apocalypse-simulator-where-youre-a-last-of-us-style-fed-deciding-who-gets-to-live-in-the-quarantine-zone-hits-1-million-wishlists-as-indie-powerhouse-devolver-digital-signs-on-as-publisher/",
+          "evidence": "Press citing developer/publisher",
+          "spend": null
+        },
+        {
+          "date": "2026-01-15",
+          "channel": "Post-launch collaboration",
+          "action": "Added a Dead by Daylight collaboration immediately after launch.",
+          "outcome": null,
+          "source": "https://www.gamesradar.com/games/simulation/one-of-steams-hottest-top-sellers-is-the-zombie-apocalypse-sim-that-previously-dominated-steam-next-fest-and-its-celebrating-with-a-dead-by-daylight-collab/",
+          "evidence": "Editorial coverage",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3419520/charts/",
+        "https://store.steampowered.com/app/3419520/",
+        "https://www.reddit.com/r/indiegames/comments/1kssqtg/quarantine_zone_the_last_check_demo_is_out_now/",
+        "https://www.gamesradar.com/games/simulation/the-zombie-apocalypse-simulator-where-youre-a-last-of-us-style-fed-deciding-who-gets-to-live-in-the-quarantine-zone-hits-1-million-wishlists-as-indie-powerhouse-devolver-digital-signs-on-as-publisher/",
+        "https://www.gamesradar.com/games/simulation/one-of-steams-hottest-top-sellers-is-the-zombie-apocalypse-sim-that-previously-dominated-steam-next-fest-and-its-celebrating-with-a-dead-by-daylight-collab/"
+      ],
+      "caveat": "Social view counts are self-reported and may include repeat views; spend and conversion were not disclosed. The post-launch collaboration cannot explain prelaunch demand. Full logistics and character systems are much larger than a three-week inspection demo.",
+      "depth": "Prelaunch-demand case"
+    },
+    {
+      "id": "shift-at-midnight",
+      "title": "Shift At Midnight",
+      "appId": 3722330,
+      "releaseDate": "2026-07-22",
+      "genre": "Co-op horror / simulation",
+      "subgenre": "Doppelganger gas-station inspection",
+      "tropes": [
+        "night shift",
+        "impostor customers",
+        "barricade and hide",
+        "proximity-chat panic"
+      ],
+      "mode": "1–3 players online co-op",
+      "scopeFit": "Medium",
+      "team": "Bun Muen: solo developer; published by Kwalee with marketing, project-management and QA support",
+      "devTime": null,
+      "hook": "Run a night-shift gas station, inspect suspicious customers and barricade the store when a mistake exposes a monster.",
+      "whyDemand": "The current review and CCU signals indicate strong demand for cooperative inspection with an escalating consequence loop. Combining routine service, shared suspicion and sudden defensive panic gives a group multiple reasons to talk.",
+      "spin": "One tiny late-night workplace, two inspection tools and one breach event. A local or tightly controlled multiplayer prototype can test the social loop before promising robust public matchmaking.",
+      "observedMetrics": {
+        "reviews": 10981,
+        "peakCCU": 37590,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "All-time peak concurrent players",
+        "value": 37590,
+        "unit": "concurrent Steam players",
+        "date": "2026-07-26",
+        "scope": "SteamDB observation; not units sold",
+        "source": "https://steamdb.info/app/3722330/charts/",
+        "evidence": "Observed"
+      },
+      "estimatedOwners": {
+        "VGI": 1440000,
+        "PlayTracker": 817400,
+        "Gamalytic": 1600000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-09-09",
+          "channel": "Steam development update",
+          "action": "Developer explained a demo delay associated with legal processes after rapid project growth.",
+          "outcome": "Demo target moved to September 29; a reminder that publishing readiness can constrain launch timing.",
+          "source": "https://store.steampowered.com/news/app/3722330/view/525353325860751552",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-09-26",
+          "channel": "Publisher announcement",
+          "action": "Announced Kwalee's publishing support for marketing, project management and QA.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/news/app/3722330/view/511844430570848713",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-09-29",
+          "channel": "Steam demo launch",
+          "action": "Released a three-player demo with revised Night 2 and added Night 3. The developer explicitly excluded randomly generated nights from this demo.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/news/app/3722330/view/511844430570848917",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-09-29",
+          "channel": "Prerecorded Steam training broadcast",
+          "action": "Promoted a prerecorded training stream with Kwalee alongside the co-op demo.",
+          "outcome": "No viewership or conversion figure disclosed.",
+          "source": "https://store.steampowered.com/news/app/3722330/view/511844430570848973",
+          "evidence": "Developer/publisher campaign artifact",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3722330/charts/",
+        "https://store.steampowered.com/app/3722330/",
+        "https://steamdb.info/app/4050060/history/",
+        "https://twistedvoxel.com/kwalee-signs-publishing-deals-for-shift-at-midnight-lilys-world-xd-and-welcome-to-elderfield/",
+        "https://store.steampowered.com/news/app/3722330/view/525353325860751552",
+        "https://store.steampowered.com/news/app/3722330/view/511844430570848713",
+        "https://store.steampowered.com/news/app/3722330/view/511844430570848917",
+        "https://store.steampowered.com/news/app/3722330/view/511844430570848973"
+      ],
+      "caveat": "No official paid-sales milestone was verified. Owner models disagree widely. The demo's detected Unity/Mirror/Dissonance stack is implementation evidence, not a guarantee of easy networking; NPC state, voice, lobbies and horror timing must remain synchronized.",
+      "depth": "Prelaunch-process and demand case"
+    },
+    {
+      "id": "mage-arena",
+      "title": "Mage Arena",
+      "appId": 3716600,
+      "releaseDate": "2025-07-24",
+      "genre": "Multiplayer action",
+      "subgenre": "Voice-command spellcasting PvP",
+      "tropes": [
+        "shouting spells",
+        "wizard rivalry",
+        "proximity chat",
+        "low-price party play"
+      ],
+      "mode": "Online multiplayer PvP",
+      "scopeFit": "Medium",
+      "team": "jrsjams: solo developer",
+      "devTime": null,
+      "hook": "Cast spells by speaking their names aloud while fighting other players.",
+      "whyDemand": "Strong player/review signals support voice as a marketable mechanic rather than a background chat feature. The spoken action, misrecognition and reactions are easily legible in creator footage, although no source-level acquisition split was verified.",
+      "spin": "Apply a small vocabulary of voice commands to a different shared activity, such as exorcism or competitive cooking. Test accents, noise and fallback controls before building the multiplayer game around speech.",
+      "observedMetrics": {
+        "reviews": 20440,
+        "peakCCU": 17404,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Additional August 2025 Steam units",
+        "value": 1200000,
+        "unit": "estimated units",
+        "date": "2025-08",
+        "scope": "GameDiscoverCo estimate, NOT a developer-confirmed sales milestone",
+        "source": "https://newsletter.gamediscover.co/p/what-were-augusts-biggest-new-pc",
+        "evidence": "Estimated"
+      },
+      "estimatedOwners": {
+        "VGI": 2630000,
+        "PlayTracker": 2340000,
+        "Gamalytic": 2420000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-07-24",
+          "channel": "Steam Early Access",
+          "action": "Launched a low-priced voice-powered multiplayer game.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/3716600/",
+          "evidence": "Store record",
+          "spend": null
+        },
+        {
+          "date": "2025-07",
+          "channel": "Editorial coverage / rapid patches",
+          "action": "PC Gamer highlighted the voice hook, $3 price and six patches in four days.",
+          "outcome": null,
+          "source": "https://www.pcgamer.com/games/action/steams-latest-mini-hit-is-mage-arena-a-voice-powered-spellcasting-game-that-costs-usd3/",
+          "evidence": "Editorial report",
+          "spend": null
+        },
+        {
+          "date": "2025-09",
+          "channel": "Market analysis",
+          "action": "GameDiscoverCo included the game among August's leading unit sellers.",
+          "outcome": "Estimated 1.2m additional Steam units during August; not a marketing attribution result.",
+          "source": "https://newsletter.gamediscover.co/p/what-were-augusts-biggest-new-pc",
+          "evidence": "Third-party estimate",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3716600/charts/",
+        "https://store.steampowered.com/app/3716600/",
+        "https://www.pcgamer.com/games/action/steams-latest-mini-hit-is-mage-arena-a-voice-powered-spellcasting-game-that-costs-usd3/",
+        "https://newsletter.gamediscover.co/p/what-were-augusts-biggest-new-pc"
+      ],
+      "caveat": "The 1.2m monthly figure is modelled, not official. A low price changes gross-revenue economics. Speech reliability, accessibility, malicious inputs, anti-cheat and multiplayer infrastructure are significant production risks.",
+      "depth": "Demand-signal benchmark"
+    },
+    {
+      "id": "megabonk",
+      "title": "Megabonk",
+      "appId": 3405340,
+      "releaseDate": "2025-09-18",
+      "genre": "Action roguelike",
+      "subgenre": "3D survivors-like",
+      "tropes": [
+        "absurd characters",
+        "extreme build scaling",
+        "horde spectacle",
+        "movement mastery"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "Medium",
+      "team": "vedinad: solo developer with previous development experience",
+      "devTime": "Approximately one year, according to the developer's launch post.",
+      "hook": "A 3D survivors-like full of bizarre characters, movement tricks and screen-filling build escalation.",
+      "whyDemand": "The developer-confirmed million-copy result demonstrates room for a strong mechanical and visual reinterpretation of an established genre. It is a blockbuster outlier, not a reliable forecast for another survivors-like.",
+      "spin": "Choose one unusual movement rule and make the arena support it. A ten-minute demo with three weapons and a few genuinely distinct upgrades is more testable than a large character roster.",
+      "observedMetrics": {
+        "reviews": 106147,
+        "peakCCU": 117336,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold in two weeks",
+        "value": 1000000,
+        "unit": "copies",
+        "date": "2025-10-02",
+        "scope": "Developer milestone quoted by press",
+        "source": "https://www.pcgamer.com/games/roguelike/vampire-survivors-like-megabonk-makes-megabucks-selling-a-million-copies-in-2-weeks-and-currently-has-more-daily-players-than-borderlands-4-on-steam-ill-be-eating-spaghetti-with-extra-sauce-tonight/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 3970000,
+        "PlayTracker": 4870000,
+        "Gamalytic": 4400000,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-09-18",
+          "channel": "Genre Reddit / launch",
+          "action": "Developer posted the release to the survivors-like community and described a year of work.",
+          "outcome": null,
+          "source": "https://www.reddit.com/r/survivorslikes/comments/1nkfm37/started_working_on_megabonk_1_year_ago_and/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-09",
+          "channel": "Launch video",
+          "action": "A short video joked about being urged to delay because of other major releases.",
+          "outcome": "Coverage discussed the memorable launch framing; no attributable sales count was disclosed.",
+          "source": "https://www.gamingonlinux.com/2025/10/megabonk-is-a-mega-success-selling-1-million-in-2-weeks-after-being-repeatedly-told-to-delay-it/",
+          "evidence": "Editorial report",
+          "spend": null
+        },
+        {
+          "date": "2025-10-02",
+          "channel": "Developer milestone / press",
+          "action": "Developer announced the two-week sales result.",
+          "outcome": "One million copies sold.",
+          "source": "https://www.pcgamer.com/games/roguelike/vampire-survivors-like-megabonk-makes-megabucks-selling-a-million-copies-in-2-weeks-and-currently-has-more-daily-players-than-borderlands-4-on-steam-ill-be-eating-spaghetti-with-extra-sauce-tonight/",
+          "evidence": "Press quoting developer",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3405340/charts/",
+        "https://store.steampowered.com/app/3405340/",
+        "https://www.reddit.com/r/survivorslikes/comments/1nkfm37/started_working_on_megabonk_1_year_ago_and/",
+        "https://www.gamingonlinux.com/2025/10/megabonk-is-a-mega-success-selling-1-million-in-2-weeks-after-being-repeatedly-told-to-delay-it/",
+        "https://www.pcgamer.com/games/roguelike/vampire-survivors-like-megabonk-makes-megabucks-selling-a-million-copies-in-2-weeks-and-currently-has-more-daily-players-than-borderlands-4-on-steam-ill-be-eating-spaghetti-with-extra-sauce-tonight/"
+      ],
+      "caveat": "Do not frame the creator as a first-time developer or use unverified identity rumours. Crowd performance, hit readability, build balance and content breadth create substantial costs even in a stylized game.",
+      "depth": "Blockbuster milestone benchmark"
+    },
+    {
+      "id": "tiny-bookshop",
+      "title": "Tiny Bookshop",
+      "appId": 2133760,
+      "releaseDate": "2025-08-07",
+      "genre": "Cozy / management",
+      "subgenre": "Narrative travelling bookshop",
+      "tropes": [
+        "bookish identity",
+        "small-town community",
+        "curation",
+        "mobile shop"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "Medium",
+      "team": "neoludic games; published by Skystone Games / 2P Games",
+      "devTime": "Multi-year project: idea in 2019, studio established in 2021, release in 2025.",
+      "hook": "Run a tiny travelling bookshop and recommend real books to a seaside community.",
+      "whyDemand": "The combined-platform 300k milestone suggests that a specific hobby identity can differentiate a cozy game from generic farming. Steam and Switch demand are both relevant but must not be conflated.",
+      "spin": "Pick an underserved enthusiast identity—repairable cameras, vintage maps or local records—and one compact shop. The demo should prove a satisfying recommendation/curation decision with a small cast.",
+      "observedMetrics": {
+        "reviews": 7724,
+        "peakCCU": 4748,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold",
+        "value": 300000,
+        "unit": "copies (more than)",
+        "date": "2025-09-03",
+        "scope": "Combined Steam and Nintendo Switch, according to developer Discord report relayed by The Cozy Gamers",
+        "source": "https://www.thecozygamers.com/news/tiny-bookshop-sells-over-300000-copies-as-developers-tease-future-content-updates/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 160500,
+        "PlayTracker": 231800,
+        "Gamalytic": 307900,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-08-07",
+          "channel": "Steam / console launch",
+          "action": "Released the bookshop management game.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/2133760/",
+          "evidence": "Store record",
+          "spend": null
+        },
+        {
+          "date": "2025-08-12",
+          "channel": "Editorial coverage",
+          "action": "GamesRadar highlighted its early Steam top-seller placement and positive reception.",
+          "outcome": "Reported a top-20 Steam best-seller position within four days; chart position is time-specific.",
+          "source": "https://www.gamesradar.com/games/the-sims/we-get-a-lot-of-cozy-life-sims-but-not-many-of-them-crack-steams-top-20-best-sellers-in-4-days-with-95-percent-positive-reviews-and-thank-goodness-this-adorable-bookshop-management-sim-has-nothing-to-do-with-a-farm/",
+          "evidence": "Editorial observation",
+          "spend": null
+        },
+        {
+          "date": "2025-09-03",
+          "channel": "Community milestone / future-content communication",
+          "action": "Developer shared a cross-platform milestone and plans for further content.",
+          "outcome": "Over 300k copies across Steam and Switch, as reported from Discord.",
+          "source": "https://www.thecozygamers.com/news/tiny-bookshop-sells-over-300000-copies-as-developers-tease-future-content-updates/",
+          "evidence": "Press relaying developer Discord",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/2133760/charts/",
+        "https://store.steampowered.com/app/2133760/",
+        "https://www.thecozygamers.com/news/tiny-bookshop-sells-over-300000-copies-as-developers-tease-future-content-updates/",
+        "https://www.deutschland.de/en/topic/careers-and-work/cosy-games-tiny-bookshop-video-games",
+        "https://www.gamesradar.com/games/the-sims/we-get-a-lot-of-cozy-life-sims-but-not-many-of-them-crack-steams-top-20-best-sellers-in-4-days-with-95-percent-positive-reviews-and-thank-goodness-this-adorable-bookshop-management-sim-has-nothing-to-do-with-a-farm/"
+      ],
+      "caveat": "The 300k figure is not Steam-only; some secondary coverage describes it inconsistently. This was a multi-year, content-rich project. A three-week demo can test curation and tone, not reproduce its narrative world.",
+      "depth": "Cross-platform niche benchmark"
+    },
+    {
+      "id": "is-this-seat-taken",
+      "title": "Is This Seat Taken?",
+      "appId": 3035120,
+      "releaseDate": "2025-08-07",
+      "genre": "Puzzle / cozy",
+      "subgenre": "Character-constraint seating logic",
+      "tropes": [
+        "social preferences",
+        "everyday settings",
+        "fussy characters",
+        "gentle humour"
+      ],
+      "mode": "Single-player",
+      "scopeFit": "High",
+      "team": "Poti Poti: Ausiàs Dalmau and Sergi Pérez; published by Wholesome Games",
+      "devTime": "Idea/prototype in 2023; release August 2025. Full-time duration not verified.",
+      "hook": "Seat eccentric characters so everybody's overlapping preferences are satisfied.",
+      "whyDemand": "Strong reviews and modest concurrency illustrate how a low-pressure single-player puzzle can develop a substantial audience. Its familiar social constraints create an immediately understandable puzzle vocabulary without combat, dexterity or extensive 3D content.",
+      "spin": "Move the constraint puzzle into another relatable arrangement problem—wedding tables, shared desks or a chaotic elevator—with a visually clear, novel rule set and ten tightly tested levels.",
+      "observedMetrics": {
+        "reviews": 9572,
+        "peakCCU": 1713,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Steam units sold during August 2025",
+        "value": 100000,
+        "unit": "estimated units (more than)",
+        "date": "2025-08",
+        "scope": "GameDiscoverCo model estimate, not official sales",
+        "source": "https://newsletter.gamediscover.co/p/what-were-augusts-biggest-new-pc",
+        "evidence": "Estimated"
+      },
+      "estimatedOwners": {
+        "VGI": 310500,
+        "PlayTracker": 384000,
+        "Gamalytic": 419400,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2023",
+          "channel": "Prototype / external playtests",
+          "action": "Developers tested the seating idea and removed bus-driving elements when players preferred the seating puzzles.",
+          "outcome": "Interview documents scope reduction based on feedback, not a quantitative acquisition result.",
+          "source": "https://developer.apple.com/news/?id=z12xq8fa",
+          "evidence": "Developer interview by Apple",
+          "spend": null
+        },
+        {
+          "date": "2025-08-07",
+          "channel": "Steam launch",
+          "action": "Released the character-seating puzzle.",
+          "outcome": null,
+          "source": "https://store.steampowered.com/app/3035120/",
+          "evidence": "Store record",
+          "spend": null
+        },
+        {
+          "date": "2026-05-16",
+          "channel": "Developer interview",
+          "action": "Apple profiled the two-person team and the prototype-to-release design process.",
+          "outcome": null,
+          "source": "https://developer.apple.com/news/?id=z12xq8fa",
+          "evidence": "Primary developer interview",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/3035120/charts/",
+        "https://store.steampowered.com/app/3035120/",
+        "https://developer.apple.com/news/?id=z12xq8fa",
+        "https://newsletter.gamediscover.co/p/what-were-augusts-biggest-new-pc"
+      ],
+      "caveat": "The monthly unit figure is estimated. A small team and simple presentation do not imply a short production: careful puzzle authoring, accessibility and iteration took time. The later Apple profile is not evidence for launch acquisition.",
+      "depth": "Design-process and demand benchmark"
+    },
+    {
+      "id": "my-little-life",
+      "title": "My Little Life",
+      "appId": 2834600,
+      "releaseDate": "2025-01-31",
+      "genre": "Idle / life simulation",
+      "subgenre": "Desktop-bottom ambient life sim",
+      "tropes": [
+        "desktop companion",
+        "tiny home",
+        "background progress",
+        "miniature people"
+      ],
+      "mode": "Single-player desktop companion",
+      "scopeFit": "High",
+      "team": "9FingerGames; current store also lists Gamersky Games as publisher",
+      "devTime": null,
+      "hook": "Tiny people live, work and build their lives along the bottom of your desktop while you do something else.",
+      "whyDemand": "The developer's 30k-copy early milestone and current roughly 69k–136k owner models provide a smaller, relevant desktop-companion benchmark. Demand centres on unobtrusive parallel activity rather than conventional full-screen sessions.",
+      "spin": "Choose one ambient fantasy—tiny maintenance workers, a miniature night market or a window-side wildlife refuge—and demonstrate pleasing background progression without interrupting real work.",
+      "observedMetrics": {
+        "reviews": 1159,
+        "peakCCU": 1525,
+        "asOf": "2026-09-02"
+      },
+      "reportedOutcome": {
+        "metric": "Copies sold after launch",
+        "value": 30000,
+        "unit": "copies",
+        "date": "2025-02-12",
+        "scope": "Developer self-report on the life-simulation community",
+        "source": "https://www.reddit.com/r/LifeSimulators/comments/1inp6uc/my_mini_lifesim_that_lives_on_the_bottom_of_your/",
+        "evidence": "Reported"
+      },
+      "estimatedOwners": {
+        "VGI": 68600,
+        "PlayTracker": 136000,
+        "Gamalytic": 70900,
+        "asOf": "2026-09-02"
+      },
+      "marketingEvents": [
+        {
+          "date": "2025-01",
+          "channel": "Genre community announcement",
+          "action": "Introduced the desktop life-sim concept and January 31 release to life-simulation players.",
+          "outcome": null,
+          "source": "https://www.reddit.com/r/LifeSimulators/comments/1hwo550",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        },
+        {
+          "date": "2025-02-12",
+          "channel": "Genre community follow-up",
+          "action": "Developer returned to the community with the release result and thanks for support.",
+          "outcome": "30,000 copies sold and roughly 90% positive reviews, according to the developer.",
+          "source": "https://www.reddit.com/r/LifeSimulators/comments/1inp6uc/my_mini_lifesim_that_lives_on_the_bottom_of_your/",
+          "evidence": "Developer/publisher report",
+          "spend": null
+        }
+      ],
+      "sourceUrls": [
+        "https://steamdb.info/app/2834600/charts/",
+        "https://store.steampowered.com/app/2834600/",
+        "https://www.reddit.com/r/LifeSimulators/comments/1hwo550",
+        "https://www.reddit.com/r/LifeSimulators/comments/1inp6uc/my_mini_lifesim_that_lives_on_the_bottom_of_your/"
+      ],
+      "caveat": "The milestone is self-reported and the current model interval crosses 100k; it is not a confirmed 100k–200k seller. Multi-monitor layouts, window focus, performance and unobtrusive notifications are real technical requirements.",
+      "depth": "Mid-market milestone benchmark"
+    }
+  ]
+}

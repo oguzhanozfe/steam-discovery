@@ -1,0 +1,101 @@
+{
+  "id": "fps-zombie-survival",
+  "title": "Last House on the Block",
+  "asOf": "2026-09-02",
+  "status": "Proposed concept · not market-validated · working title not cleared",
+  "pitch": "Scavenge the neighbourhood. Every shortcut you make brings it closer to your home.",
+  "positioning": "First-person zombie survival with Project Zomboid’s ordinary-person vulnerability: familiar homes, scarce supplies, wounds that matter and a safehouse worth returning to. Firearms are a noisy last resort, not the main attraction.",
+  "differentiation": "The testable angle is concentrated, visible cause and consequence: the route that makes a supply run easier also gives infected a way home. Noise, persistence and building are established mechanics—not inventions. The question is whether a short neighbourhood loop makes those trade-offs unusually readable and compelling.",
+  "demandLimit": "These are selected comparables, not a market census. Their audiences demonstrate interest in survival games, not an unfilled gap, low acquisition cost or demand for this unbuilt concept. No paid-sales or organic-attribution claim is made.",
+  "comparables": [
+    {
+      "appId": "108600",
+      "title": "Project Zomboid",
+      "role": "The emotional reference",
+      "status": "Isometric · Early Access since 8 November 2013",
+      "observation": "Looting, barricading, wounds and dangerous encounters support an ordinary survivor fantasy. It is not a first-person game.",
+      "source": "https://store.steampowered.com/app/108600/Project_Zomboid/",
+      "peakCCU": 124995,
+      "peakDate": "2026-08-09",
+      "metricSource": "https://steamdb.info/app/108600/charts/",
+      "metricCaveat": "A 2026 peak for an established 2013 game—not evidence about a new launch’s odds.",
+      "borrow": "Vulnerability and domestic detail—not its enormous accumulated simulation scope.",
+      "difference": "A first-person view and a compact, legible route dilemma; neither is evidence of a market gap."
+    },
+    {
+      "appId": "1857950",
+      "title": "VEIN",
+      "role": "The direct competitor",
+      "status": "First person · Early Access since 24 October 2025",
+      "observation": "Already combines looting, crafting, base building, multiplayer and simulated power/water. Its Early Access notes separate playable systems from planned NPCs and settlements.",
+      "source": "https://store.steampowered.com/app/1857950/VEIN/",
+      "peakCCU": 11073,
+      "peakDate": "2025-11-02",
+      "metricSource": "https://steamdb.info/app/1857950/charts/",
+      "metricCaveat": "A launch-era concurrency signal, not paid copies, profitability or proof of unpaid reach.",
+      "borrow": "An immediate, grounded survival perspective—not a promise to match its sandbox breadth.",
+      "difference": "Prove a short, authored shortcut-versus-safehouse loop. “Zomboid, but FPS” is already occupied."
+    },
+    {
+      "appId": "251570",
+      "title": "7 Days to Die",
+      "role": "The scavenging / defence reference",
+      "status": "First person · 1.0 released 25 July 2024",
+      "observation": "Combines first-person combat, resource gathering, crafting, building and zombie survival.",
+      "source": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+      "peakCCU": 125419,
+      "peakDate": "2024-07-28",
+      "metricSource": "https://steamdb.info/app/251570/charts/",
+      "metricCaveat": "A historical 2024 full-release-period peak, not a 2026 new-release result.",
+      "borrow": "A reason to scavenge now and prepare for danger later—not a vast destructible world.",
+      "difference": "Ordinary-person scarcity and route consequences in a small neighbourhood, instead of escalating combat and construction scale."
+    }
+  ],
+  "demo": "One small street, one safehouse and one scavenging interior. Two supply runs and one night, roughly 10–15 minutes. Single-player first; a second looting building is stretch scope.",
+  "fullGameDirection": "If the loop earns repeat play, the full-game direction is a continuous, walkable neighbourhood: depleting houses, persistent access routes and a refuge improved with scavenged materials. Add adjacent streets and deeper survival choices only after validating the small loop. That larger open-world game is outside this sprint.",
+  "capacity": "15 working days × 2 senior developers + 1 artist = 45 maker-days. The PM and marketing manager add 30 person-days for scope, testing, research and communication—not extra programming capacity. This is a planning estimate, not a delivery guarantee.",
+  "loop": [
+    "Leave home for food, scrap or cloth for bandages.",
+    "Choose a slower safe route or create a convenient shortcut.",
+    "Bring supplies back; craft a barricade repair or a bandage.",
+    "Survive the night through the routes you left open. Reconsider the next trip."
+  ],
+  "tradeoffs": [
+    { "choice": "Open a fence", "benefit": "A faster carrying route", "consequence": "Infected can cross the same opening", "implementation": "One persistent flag switches a navigation connection; no destructible fence simulation." },
+    { "choice": "Restore a garage motor", "benefit": "A convenient covered passage", "consequence": "An authored motion-sensor event opens it noisily at night", "implementation": "One powered flag, a trigger and a door animation; no electricity network." },
+    { "choice": "Prop a door", "benefit": "An easy escape on the return trip", "consequence": "The opening leaves a direct approach to your barricade", "implementation": "A fixed doorway and navigation link; no physics-based door AI." }
+  ],
+  "scope": [
+    "Four inventory slots and three useful resource families: food restores stamina, scrap repairs a barricade, cloth crafts a bandage. Two recipes and one barricade socket; no physical inventory simulation.",
+    "One enemy archetype, at most six active infected and fixed navigation with switchable links. A simple noise event changes the investigation target.",
+    "One melee tool; one pistol with scarce ammunition only if basic combat is stable. Gun noise raises a simple threat state. Cut the pistol before cutting the route-consequence loop.",
+    "One wound consequence: a lost carrying slot until treated. No nutrition, infection or detailed medical simulation.",
+    "Persist only explicit door, fence, power, loot, inventory and wound state across the two trips and night. A minimal local save is stretch scope; no simulated off-screen world."
+  ],
+  "cuts": "No multiplayer, procedural map, vehicles, NPC survivors, weather, climbing, freeform construction, structural destruction, crafting tree or large weapon catalogue. Do not advertise the prototype as a complete open world.",
+  "pros": [
+    "One reusable domestic environment puts limited art time into recognisable, lived-in spaces.",
+    "A visible shortcut → consequence chain can communicate the hook without explaining a large simulation.",
+    "The same street supports different route choices, allowing replay tests before adding more content."
+  ],
+  "cons": [
+    "VEIN is a direct substitute. Perspective, zombies and crafting alone are not enough to distinguish this game.",
+    "First-person animation, hit feedback and enemy navigation can consume the entire sprint.",
+    "The shortcut dilemma could feel scripted, unfair or trivial. It needs clear warning cues and a meaningful alternative route.",
+    "A tiny solo demo will not satisfy the breadth or co-op expectations set by mature survival sandboxes."
+  ],
+  "weeks": [
+    { "label": "Days 1–5", "title": "Prove the consequence", "work": "Developer A owns movement, interaction and inventory. Developer B owns enemy navigation and route flags. The artist builds one modular interior and street kit. PM runs scope and daily playtests. By day 4, a rough trip → consequence → night loop must work." },
+    { "label": "Days 6–10", "title": "Make the choice readable", "work": "Add the second run, two recipes, wound cost and the powered-garage event. Use light, sound and sightlines to foreshadow danger. Marketing recruits appropriate survival players; PM records unprompted explanations. Finish content by day 10." },
+    { "label": "Days 11–15", "title": "Stabilise and show it", "work": "Fix navigation, interaction failures and feedback. Record genuine prototype footage: a short consequence clip and an unedited full loop. Ship a labelled prototype/demo only if stable and Steam timing permits; otherwise deliver the playable build and honest video." }
+  ],
+  "gates": [
+    "Day 4: a complete rough loop works. If not, cut the garage event and pistol; keep one route choice with a clear consequence.",
+    "Day 7: changing the route visibly changes the night approach. If both choices play alike, revise the mechanic before producing more art.",
+    "Day 10: a proposed directional test is 4 of 5 unfamiliar testers explaining their own choice’s consequence without prompting. This tiny sample is a usability gate, not market validation.",
+    "Before expansion: compare hook comprehension, demo completion and voluntary replay between the shortcut version and a basic scavenging version. Set the success criteria before testing; no universal wishlist or view benchmark is assumed."
+  ],
+  "clip": "Proposed 15-second prototype clip: 0–4s, carry supplies through the garage shortcut you proudly opened; 4–9s, show the motion sensor and noisy door activating at night; 9–15s, infected take that same route while you scramble to close your neglected barricade. The joke is your recognisable mistake—not a scripted marketing scene presented as gameplay.",
+  "marketing": "Start with a few small creators who already cover grounded survival. Offer an unedited 10–15-minute build and ask whether the choice produces a story they want to tell. Compare the cause-and-consequence clip with ordinary scavenging footage. Label recruitment source, impressions, clicks and demo behaviour separately; views are not sales and public activity cannot establish organic attribution.",
+  "brief": "Last House on the Block — first-person, solo zombie survival. Hypothesis: survival players value a readable dilemma where shortcuts for scavenging become infected routes to their safehouse. Compare Project Zomboid (vulnerability), VEIN (direct first-person substitute) and 7 Days to Die (scavenge/defend rhythm). Demo: one street, safehouse + one interior, two trips + one night, 10–15 minutes; 15 workdays / 45 maker-days. Test whether unfamiliar players can explain their own route choice’s consequence and choose to replay. Not proven: unmet demand, organic reach or sales. Scope risk: first-person feel and navigation; cut multiplayer, procedural worlds and freeform building. Evidence: https://store.steampowered.com/app/108600/ https://store.steampowered.com/app/1857950/ https://store.steampowered.com/app/251570/"
+}

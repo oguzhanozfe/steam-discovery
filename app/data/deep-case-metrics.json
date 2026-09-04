@@ -1,0 +1,178 @@
+[
+  {
+    "appId": 2881650,
+    "title": "Content Warning",
+    "reviews": 163100,
+    "peakCCU": 204439,
+    "peakCCUDate": "2024-04-02",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/2881650/charts/",
+    "releaseDate": "2024-04-01",
+    "owners": {
+      "VGI": 10740000,
+      "PlayTracker": 9130000,
+      "Gamalytic": 5750000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales. Free launch claims make owners especially unsuitable as a paid-sales proxy."
+  },
+  {
+    "appId": 3241660,
+    "title": "R.E.P.O.",
+    "reviews": 422242,
+    "peakCCU": 271571,
+    "peakCCUDate": "2025-03-23",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/3241660/charts/",
+    "releaseDate": "2025-02-26",
+    "owners": {
+      "VGI": 19330000,
+      "PlayTracker": 15310000,
+      "Gamalytic": 20070000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales. Release date is the Early Access launch."
+  },
+  {
+    "appId": 3527290,
+    "title": "PEAK",
+    "reviews": 366939,
+    "peakCCU": 170759,
+    "peakCCUDate": "2025-08-17",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/3527290/charts/",
+    "releaseDate": "2025-06-16",
+    "owners": {
+      "VGI": 17840000,
+      "PlayTracker": 14940000,
+      "Gamalytic": 18820000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  },
+  {
+    "appId": 3949040,
+    "title": "RV There Yet?",
+    "reviews": 84548,
+    "peakCCU": 100002,
+    "peakCCUDate": "2025-10-25",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/3949040/charts/",
+    "releaseDate": "2025-10-21",
+    "owners": {
+      "VGI": 7110000,
+      "PlayTracker": 5740000,
+      "Gamalytic": 6870000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  },
+  {
+    "appId": 4594150,
+    "title": "Sir, We Have an Orc Problem",
+    "reviews": 3791,
+    "peakCCU": 7684,
+    "peakCCUDate": "2026-07-28",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/4594150/charts/",
+    "releaseDate": "2026-07-28",
+    "owners": {
+      "VGI": 208400,
+      "PlayTracker": 226000,
+      "Gamalytic": 255300
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  },
+  {
+    "appId": 4421010,
+    "title": "Bills Must Be Paid",
+    "reviews": 8885,
+    "peakCCU": 8143,
+    "peakCCUDate": "2026-08-01",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/4421010/charts/",
+    "releaseDate": "2026-07-29",
+    "owners": {
+      "VGI": 369200,
+      "PlayTracker": 390600,
+      "Gamalytic": 446100
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  },
+  {
+    "appId": 3934270,
+    "title": "How Many Dudes?",
+    "reviews": 2903,
+    "peakCCU": 9818,
+    "peakCCUDate": "2026-08-02",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/3934270/charts/",
+    "releaseDate": "2026-07-30",
+    "owners": {
+      "VGI": 230600,
+      "PlayTracker": 215500,
+      "Gamalytic": 296200
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  },
+  {
+    "appId": 3834090,
+    "title": "YAPYAP",
+    "reviews": 9815,
+    "peakCCU": 14775,
+    "peakCCUDate": "2026-02-08",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/3834090/charts/",
+    "releaseDate": "2026-02-03",
+    "owners": {
+      "VGI": 1270000,
+      "PlayTracker": 1040000,
+      "Gamalytic": 1470000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  },
+  {
+    "appId": 3643170,
+    "title": "Roadside Research",
+    "reviews": 4753,
+    "peakCCU": 9348,
+    "peakCCUDate": "2026-02-15",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/3643170/charts/",
+    "releaseDate": "2026-02-12",
+    "owners": {
+      "VGI": 637900,
+      "PlayTracker": 573600,
+      "Gamalytic": 696000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales. Release date is the Early Access launch."
+  },
+  {
+    "appId": 4001890,
+    "title": "How to Fish",
+    "reviews": 47909,
+    "peakCCU": 373971,
+    "peakCCUDate": "2026-08-26",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/4001890/charts/",
+    "releaseDate": "2026-08-20",
+    "owners": {
+      "VGI": 5510000,
+      "PlayTracker": 2940000,
+      "Gamalytic": 6260000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  },
+  {
+    "appId": 3059070,
+    "title": "The Headliners",
+    "reviews": 10433,
+    "peakCCU": 6315,
+    "peakCCUDate": "2025-02-02",
+    "asOf": "2026-09-02",
+    "source": "https://steamdb.info/app/3059070/charts/",
+    "releaseDate": "2025-01-30",
+    "owners": {
+      "VGI": 1220000,
+      "PlayTracker": 1170000,
+      "Gamalytic": 1210000
+    },
+    "ownersNote": "Rounded third-party owner estimates displayed by SteamDB; not verified paid sales."
+  }
+]

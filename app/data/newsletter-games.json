@@ -1,0 +1,403 @@
+[
+  {
+    "id": "iron-nest",
+    "name": "IRON NEST: Heavy Turret Simulator",
+    "appId": 2950790,
+    "releaseDate": "2026-08-06",
+    "genre": "Simulation",
+    "subgenre": "First-person tactile machinery / artillery procedure simulator",
+    "tropes": [
+      "One room, many controls",
+      "Dieselpunk",
+      "Obey or question orders",
+      "Satisfying mechanical procedure"
+    ],
+    "mode": "Single-player",
+    "scopeFit": "High",
+    "scopeFitReason": "Our assessment: one compact machine, one input puzzle and a dramatic output can form a three-week vertical slice. The complete game's mission and equipment breadth cannot.",
+    "team": "Two people: Nick Nieuwoudt / Nick Talmers and Dominik Latos; Steam page reports 20+ years of combined experience.",
+    "devTime": "Just over one year, according to the developer interview; not a three-week production.",
+    "hook": "Operate a colossal gun through physical maps, levers and machinery from inside its control room.",
+    "whyDemand": "The interview links early short-video traction to tactile controls and sound; the later demo showed sustained engagement.",
+    "spin": "Our hypothesis: a tiny emergency-services control room where satisfying procedures trigger absurd visible consequences. Test one machine and three escalating jobs before expanding.",
+    "observedMetrics": {
+      "reviews": 13193,
+      "peakCCU": 17599,
+      "peakCCUDate": "2026-08-09",
+      "asOf": "2026-09-02",
+      "scope": "Steam base game, all-language review total",
+      "source": "https://steamdb.info/app/2950790/charts/"
+    },
+    "reportedOutcome": {
+      "metric": ">365,000 Steam copies and $4.7m gross revenue by day five; 4% refunds",
+      "date": "2026-08-11",
+      "source": "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+      "evidenceType": "Developer-disclosed figures in analyst interview",
+      "evidence": "Developer-disclosed figures in analyst interview",
+      "scope": "Developer-disclosed figures in analyst interview"
+    },
+    "marketingEvents": [
+      {
+        "date": "Before June 2026 demo; exact dates not disclosed",
+        "channel": "Short-form video",
+        "action": "Show tactile machine operation",
+        "result": ">400k wishlists before demo; no isolated channel attribution",
+        "source": "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+        "evidenceType": "Developer interview",
+        "spend": "Not disclosed"
+      },
+      {
+        "date": "2026-06-15 to 2026-06-22",
+        "channel": "Steam Next Fest / demo",
+        "action": "Playable demo backed by prior audience",
+        "result": ">700k festival demo players; #2 most-played demo",
+        "source": "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+        "evidenceType": "Developer-disclosed data and event ranking",
+        "spend": "Not disclosed"
+      },
+      {
+        "date": "2026-08-06",
+        "channel": "Steam launch",
+        "action": "$19.99 list price with 25% launch discount",
+        "result": ">250k copies within three days",
+        "source": "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+        "evidenceType": "Developer milestone",
+        "spend": "Discount disclosed; campaign spend unknown"
+      }
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/2950790/IRON_NEST_Heavy_Turret_Simulator/",
+      "https://steamdb.info/app/2950790/charts/",
+      "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in"
+    ],
+    "caveat": "A successful experienced team, not a typical outcome. PVKK is an acknowledged inspiration. Gross revenue is not developer profit or organic-attributed revenue.",
+    "depth": "Demand benchmark",
+    "title": "IRON NEST: Heavy Turret Simulator",
+    "estimatedOwners": null
+  },
+  {
+    "id": "guildrun",
+    "name": "Guildrun",
+    "appId": 3669200,
+    "demoAppId": 4425970,
+    "releaseDate": "To be announced on Steam; July 2026 interview targeted first half of 2027",
+    "genre": "Strategy",
+    "subgenre": "Single-player PvE autochess / roguelike autobattler",
+    "tropes": [
+      "Break the build",
+      "Heroes escape class roles",
+      "Fantasy guild",
+      "PvP format reworked for solo play"
+    ],
+    "mode": "Single-player",
+    "scopeFit": "Medium",
+    "scopeFitReason": "Our assessment: a six-unit, one-arena synergy prototype fits three weeks; matching the released demo's content, balance and UI quality does not.",
+    "team": "Leyline: six full-time people alongside two founders, freelancers and outreach support, per the interview; partly grant-funded.",
+    "devTime": "Full production duration not disclosed. Community tests began December 2025; weekly alpha iteration from January 2026.",
+    "hook": "Build absurdly powerful autochess teams without queues, time pressure or a PvP meta.",
+    "whyDemand": "Players asking for PvE autochess became an initial target; specialist long-form creators reached this systems-focused audience.",
+    "spin": "Our hypothesis: a comic workplace autobattler with six readable employee archetypes and one dramatic rule-breaking synergy. Validate replay interest, not just clip views.",
+    "observedMetrics": {
+      "reviews": null,
+      "peakCCU": null,
+      "asOf": "2026-09-02",
+      "scope": "Base game unreleased; do not substitute demo statistics",
+      "source": "https://store.steampowered.com/app/3669200/Guildrun/"
+    },
+    "demoObservedMetrics": {
+      "appId": 4425970,
+      "reviews": 1990,
+      "peakCCU": 14283,
+      "peakCCUDate": "2026-07-26",
+      "asOf": "2026-09-02",
+      "scope": "Steam demo only",
+      "source": "https://steamdb.info/app/4425970/charts/"
+    },
+    "reportedOutcome": {
+      "metric": ">275k demo players, 3h55 median playtime, approximately 230k base-game wishlists",
+      "date": "2026-07-27",
+      "source": "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+      "evidenceType": "Developer-disclosed demo and wishlist data",
+      "evidence": "Developer-disclosed demo and wishlist data",
+      "scope": "Developer-disclosed demo and wishlist data"
+    },
+    "marketingEvents": [
+      {
+        "date": "2025-12 to 2026-07",
+        "channel": "Reddit / Discord / playable alpha",
+        "action": "Recruit niche testers; iterate weekly from January",
+        "result": "Community grew from 250 to 3k at demo launch",
+        "source": "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+        "evidenceType": "Developer interview",
+        "spend": "Ads used; amount undisclosed"
+      },
+      {
+        "date": "2026-07-15 to 2026-07-16",
+        "channel": "Reveal / Steam demo",
+        "action": "Concentrate reveal and demo traffic",
+        "result": ">275k demo players by July 27",
+        "source": "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+        "evidenceType": "Interview; Steam demo lists July 16",
+        "spend": "Not disclosed"
+      },
+      {
+        "date": "July 2026 demo campaign",
+        "channel": "Specialist long-form creators",
+        "action": "Organic outreach plus selected sponsored coverage",
+        "result": "Developer says organic coverage exceeded paid floor; short-form was not a major driver",
+        "source": "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+        "evidenceType": "Developer assessment, not audited attribution",
+        "spend": "Some paid creators, including first Northernlion video; amount undisclosed"
+      }
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/3669200/Guildrun/",
+      "https://store.steampowered.com/app/4425970/Guildrun_Demo/",
+      "https://steamdb.info/app/4425970/charts/",
+      "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way"
+    ],
+    "caveat": "Demand benchmark, not a released-game sales case. Demo and base game have different AppIDs. Paid and organic activity both contributed; exact attribution is unknown.",
+    "depth": "Demand benchmark",
+    "title": "Guildrun",
+    "estimatedOwners": null
+  },
+  {
+    "id": "hearth-and-hamlet",
+    "name": "Hearth and Hamlet",
+    "appId": 4315040,
+    "releaseDate": "2026-08-19",
+    "genre": "Incremental",
+    "subgenre": "Finite city-themed clicker / idle resource progression",
+    "tropes": [
+      "Campfire to kingdom",
+      "Visible transformation",
+      "Cozy medieval diorama",
+      "Number-go-up progression"
+    ],
+    "mode": "Single-player",
+    "scopeFit": "High",
+    "scopeFitReason": "Our assessment: one authored diorama, three resources and a short upgrade tree are feasible. Scope out free placement, deep city simulation and large content trees.",
+    "team": "Solo Australian developer at Phorust Studios, also working as a teacher; publishers Runic Forge and Gamersky Games.",
+    "devTime": "Not disclosed in accessible interview; began as a classroom incremental project.",
+    "hook": "Watch a tiny settlement visibly grow through accessible upgrades and resource accumulation.",
+    "whyDemand": "Strong launch intent and long median playtime support finite progression demand; mismatched city-building expectations also created negative reviews.",
+    "spin": "Our hypothesis: a visually escalating miniature workplace that becomes comically over-automated. Make each unlock alter the diorama, and show the fixed-layout rule upfront.",
+    "observedMetrics": {
+      "reviews": 1868,
+      "peakCCU": 8873,
+      "peakCCUDate": "2026-08-20",
+      "asOf": "2026-09-02",
+      "scope": "Steam base game, all-language review total",
+      "source": "https://steamdb.info/app/4315040/charts/"
+    },
+    "reportedOutcome": {
+      "metric": "Approximately 100k copies in the article headline; publisher supplied 7h20 median playtime",
+      "date": "2026-08-28",
+      "source": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+      "evidenceType": "Analyst headline with publisher-supplied case data; approximate units",
+      "evidence": "Analyst headline with publisher-supplied case data; approximate units",
+      "scope": "Analyst headline with publisher-supplied case data; approximate units"
+    },
+    "estimatedOwners": {
+      "asOf": "2026-09-02",
+      "scope": "Steam owner estimates, not confirmed sales",
+      "values": [
+        {
+          "provider": "VG Insights",
+          "owners": 93400
+        },
+        {
+          "provider": "Gamalytic",
+          "owners": 103600
+        },
+        {
+          "provider": "PlayTracker",
+          "owners": 108400
+        }
+      ],
+      "source": "https://steamdb.info/app/4315040/charts/",
+      "VGI": 93400,
+      "PlayTracker": 108400,
+      "Gamalytic": 103600
+    },
+    "marketingEvents": [
+      {
+        "date": "Before 2026-08-19; exact demo date not verified",
+        "channel": "Steam demo",
+        "action": "Publish a playable progression loop",
+        "result": ">200k launch wishlists, aided by the demo; incremental attribution unavailable",
+        "source": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+        "evidenceType": "Publisher account",
+        "spend": "Not disclosed"
+      },
+      {
+        "date": "2026-08-19",
+        "channel": "Steam launch",
+        "action": "Release at $7.99 list price",
+        "result": "Approximately 100k copies by the nine-day article",
+        "source": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+        "evidenceType": "Published case study; approximate units",
+        "spend": "Marketing spend not disclosed"
+      },
+      {
+        "date": "By 2026-08-28",
+        "channel": "Store positioning / player feedback",
+        "action": "Clarify that city layout is predetermined",
+        "result": "Publisher identifies city-builder expectation mismatch among negative reviews",
+        "source": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+        "evidenceType": "Publisher interview",
+        "spend": "Not disclosed"
+      }
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      "https://steamdb.info/app/4315040/charts/",
+      "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise"
+    ],
+    "caveat": "Estimated owners differ by model. Publisher and regional support mean this is not proof of zero-cost acquisition. Do not advertise a full city-builder if the mechanic is an authored incremental.",
+    "depth": "Demand benchmark",
+    "title": "Hearth and Hamlet"
+  },
+  {
+    "id": "big-walk",
+    "name": "Big Walk",
+    "appId": 1478500,
+    "releaseDate": "2026-08-04",
+    "genre": "Co-op adventure",
+    "subgenre": "Communication-driven exploration and puzzle journey",
+    "tropes": [
+      "Hang out with friends",
+      "Communication breakdown",
+      "Tools as toys",
+      "Mystery in a shared landscape"
+    ],
+    "mode": "Online co-op only, 2–12 players; cross-platform multiplayer",
+    "scopeFit": "Low",
+    "scopeFitReason": "Our assessment: authored exploration, social tools, puzzles and networking compound scope. A single-room communication toy is feasible, not a comparable journey demo.",
+    "team": "House House with publisher Panic; exact project headcount not verified.",
+    "devTime": "Development began around 2020, according to the interview cited by GameDiscoverCo.",
+    "hook": "Explore together when talking, gesturing and miscommunication are the actual mechanics.",
+    "whyDemand": "GDCo estimates show strong overlap with PEAK and Lethal Company, supporting a social audience beyond the developer's previous game.",
+    "spin": "Our hypothesis: a short office escape where each colleague loses a different communication channel. Build one cooperative puzzle with funny misunderstandings, not an open world.",
+    "observedMetrics": {
+      "reviews": 30857,
+      "peakCCU": 46409,
+      "peakCCUDate": "2026-08-05",
+      "asOf": "2026-09-02",
+      "scope": "Steam base game, all-language review total",
+      "source": "https://steamdb.info/app/1478500/charts/"
+    },
+    "reportedOutcome": {
+      "metric": "Panic confirmed 1m paid copies across platforms in approximately six days, excluding PS Plus free access",
+      "date": "By approximately 2026-08-10; reported 2026-08-21",
+      "source": "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in",
+      "evidenceType": "Publisher milestone relayed by analyst; multi-platform, not Steam-only",
+      "evidence": "Publisher milestone relayed by analyst; multi-platform, not Steam-only",
+      "scope": "Publisher milestone relayed by analyst; multi-platform, not Steam-only"
+    },
+    "marketingEvents": [
+      {
+        "date": "2023-12",
+        "channel": "The Game Awards reveal trailer",
+        "action": "Reveal distinctive characters and shared exploration",
+        "result": "Rapidly exceeded 100k estimated Steam wishlists",
+        "source": "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in",
+        "evidenceType": "GDCo wishlist estimate",
+        "spend": "Not disclosed"
+      },
+      {
+        "date": "2025-06",
+        "channel": "Day of the Devs / Summer Game Fest",
+        "action": "Show longer gameplay",
+        "result": "Renewed interest; isolated uplift not quantified",
+        "source": "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in",
+        "evidenceType": "Analyst timeline interpretation",
+        "spend": "Not disclosed"
+      },
+      {
+        "date": "2026-08-04",
+        "channel": "Multi-platform launch",
+        "action": "Launch without a public prerelease demo; $20 list / $15 launch price cited",
+        "result": "Almost 1m estimated Steam launch wishlists",
+        "source": "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in",
+        "evidenceType": "Analyst estimate and observed campaign",
+        "spend": "Campaign and subscription deal terms undisclosed"
+      }
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1478500/Big_Walk/",
+      "https://steamdb.info/app/1478500/charts/",
+      "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in"
+    ],
+    "caveat": "Established studio, major showcases, publisher and multi-platform/subscription distribution. This is neither a zero-marketing case nor evidence that a new team should skip a demo.",
+    "depth": "Demand benchmark",
+    "title": "Big Walk",
+    "estimatedOwners": null
+  },
+  {
+    "id": "dear-passengers",
+    "name": "Dear Passengers",
+    "appId": 4534960,
+    "releaseDate": "2026, planned; unreleased as of 2026-09-02",
+    "genre": "Co-op simulation",
+    "subgenre": "Physics-driven airline crew / cascading-crisis comedy",
+    "tropes": [
+      "World's worst workplace",
+      "Shared blame",
+      "Fragile cargo",
+      "One failure causes another"
+    ],
+    "mode": "Online co-op; Steam also lists single-player",
+    "scopeFit": "Low",
+    "scopeFitReason": "Our assessment: flight, loose-object physics and replicated co-op multiply risk. A stationary cabin with scripted turbulence is a realistic three-week slice only with an existing networking stack.",
+    "team": "FLEXUS: roughly 70-person studio according to Alinea; this game's dedicated team size is not disclosed.",
+    "devTime": "Not disclosed in the accessible source; studio has prior mobile development experience.",
+    "hook": "Run a failing airline together as passengers, luggage and disasters collide inside the plane.",
+    "whyDemand": "Alinea reports >1m wishlists and strong overlap with existing co-op buyers; the familiar job plus absurd failure is easy to understand in a clip.",
+    "spin": "Our hypothesis: crew a disastrous cruise buffet or hotel elevator with one shared fragile objective. Preserve cascading blame but change the task, environment and interaction language.",
+    "observedMetrics": {
+      "reviews": null,
+      "peakCCU": null,
+      "asOf": "2026-09-02",
+      "scope": "Unreleased base game; no public sales/CCU outcome verified",
+      "source": "https://store.steampowered.com/app/4534960/Dear_Passengers/"
+    },
+    "reportedOutcome": {
+      "metric": ">1m Steam wishlists; not sales",
+      "date": "2026-07-17",
+      "source": "https://alineaanalytics.substack.com/p/another-friendslop-challenger-enters",
+      "evidenceType": "Alinea analyst report; proprietary estimation context",
+      "evidence": "Alinea analyst report; proprietary estimation context",
+      "scope": "Alinea analyst report; proprietary estimation context"
+    },
+    "marketingEvents": [
+      {
+        "date": "Before 2026-07-17; exact reveal date not verified",
+        "channel": "Announcement trailer / TikTok / X",
+        "action": "Show readable physics-driven airline disasters",
+        "result": "Millions of views reported; channel-by-channel totals unavailable",
+        "source": "https://alineaanalytics.substack.com/p/another-friendslop-challenger-enters",
+        "evidenceType": "Analyst report",
+        "spend": "No paid marketing, creators or ads reported through July 17; not audited"
+      },
+      {
+        "date": "2026-07-17 snapshot",
+        "channel": "Steam wishlist funnel",
+        "action": "Convert social interest to a coming-soon page",
+        "result": ">1m wishlists; estimated owner overlap R.E.P.O. 48%, PEAK 47%",
+        "source": "https://alineaanalytics.substack.com/p/another-friendslop-challenger-enters",
+        "evidenceType": "Analyst estimates; correlation rather than attribution",
+        "spend": "No paid spend reported to this date; labor cost excluded"
+      }
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/4534960/Dear_Passengers/",
+      "https://steamdb.info/app/4534960/",
+      "https://alineaanalytics.substack.com/p/another-friendslop-challenger-enters"
+    ],
+    "caveat": "Pre-release demand only. No final price or sales verified. The July analyst's pricing recommendation is not the game's announced price; Steam user tags are not reliable price evidence.",
+    "depth": "Demand benchmark",
+    "title": "Dear Passengers",
+    "estimatedOwners": null
+  }
+]

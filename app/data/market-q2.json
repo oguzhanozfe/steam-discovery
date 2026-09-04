@@ -1,0 +1,2156 @@
+{
+  "status": "Partial; June-only",
+  "period": "2026 Q2",
+  "title": "Q2 evidence gap + June-only public-store subcohort",
+  "cutoff": "2026-09-02",
+  "scope": "Full Q2 (April 1–June 30) supply, >=1,000-review hit counts and rates are unavailable. The separate June-only panel is a September public-store snapshot of apps with displayed June release dates, not a Chris/HTMAG cohort extension.",
+  "methodology": [
+    "Searched and read the public HTMAG 2026 archive and relevant Q2/Summer posts. No complete public Q2 genre supply/hit table or underlying public cohort sheet was located by September 2.",
+    "WN Hub's first-half report uses a different time period and revenue metric; its detailed genre analysis is subscription-gated. It cannot safely supply Q2 review-based rates or be differenced against HTMAG Q1.",
+    "A bounded anonymous US/English public Steam catalogue retrieval saved 30 contiguous 100-result pages, then stopped after an HTTP error. The saved dates bracket June, but do not cover April and most of May.",
+    "Filter saved responses to app item keys with displayed dates June 1–30, exclude packages, deduplicate app IDs, and retain every app regardless of review count, price, studio size, or tags. No-title/no-review exclusions are applied.",
+    "Assign each app to any selected tag present in its search-response tag IDs (up to seven). This is overlapping tag classification, not the manual single-genre method used by Chris. The Indie tag is not used as a studio-size filter.",
+    "A numerical displayed review-score count >=1,000 establishes a confirmed minimum across languages, even if the displayed count is English-only. A non-language-specific numerical count below 1,000 is below this scored-review threshold. Language-specific sub-1,000 counts and absent numerical tooltips remain unresolved, not zero.",
+    "No per-game all-language review API batch was run after the catalogue fetch stopped. Therefore exact hit rates remain null. Lower/upper bounds are only arithmetic bounds within the included June-tagged rows, not statistical confidence intervals or full-Q2 probabilities."
+  ],
+  "sources": [
+    {
+      "title": "HTMAG: 2026 Q1 Games — published cohort and promised Q2 follow-up",
+      "url": "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+    },
+    {
+      "title": "HTMAG 2026 archive — no public Q2 cohort table located as of September 2",
+      "url": "https://howtomarketagame.com/2026/"
+    },
+    {
+      "title": "HTMAG 2026 archive, page 2",
+      "url": "https://howtomarketagame.com/2026/page/2/"
+    },
+    {
+      "title": "HTMAG: Is friendslop saturated? — selected games, not a complete genre denominator",
+      "url": "https://howtomarketagame.com/2026/07/30/is-friendslop-saturated/"
+    },
+    {
+      "title": "HTMAG: June 2026 Steam Next Fest start — demo festival, not a release cohort",
+      "url": "https://howtomarketagame.com/2026/06/16/june-2026-steam-next-fest-start/"
+    },
+    {
+      "title": "HTMAG: Most people will play your demo and not wishlist it and that is ok — demo survey, not genre supply",
+      "url": "https://howtomarketagame.com/2026/06/30/nobody-plays-demos-and-that-is-ok/"
+    },
+    {
+      "title": "WN Hub: Steam first-half 2026 analysis — public lead only; detailed genre analysis subscription-gated",
+      "url": "https://wnhub.io/news/stores-and-publishing/item-51469"
+    },
+    {
+      "title": "Steam public search — anonymous US, English, games filter",
+      "url": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us"
+    },
+    {
+      "title": "Steamworks: user-review score and purchase-type definitions",
+      "url": "https://partner.steamgames.com/doc/store/reviews"
+    },
+    {
+      "title": "Steamworks: documented review API, available for a future verified expansion",
+      "url": "https://partner.steamgames.com/doc/store/getreviews"
+    },
+    {
+      "title": "Steamworks: tag ordering, overlap and visibility",
+      "url": "https://partner.steamgames.com/doc/store/tags"
+    },
+    {
+      "title": "Steamilar open-source tag-name/ID lookup; names only, not demand or supply data",
+      "url": "https://github.com/PaulRenvoise/steamilar/blob/main/tags.json"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Full Q2 supply",
+      "value": null,
+      "note": "Not verified; April and most May missing."
+    },
+    {
+      "label": "Full Q2 >=1,000-review hits",
+      "value": null,
+      "note": "No complete published or collected cohort."
+    },
+    {
+      "label": "Full Q2 hit rate",
+      "value": null,
+      "note": "Do not infer from selected hits or the June subset."
+    },
+    {
+      "label": "June-only included app rows",
+      "value": 2102,
+      "note": "Unique date-filtered app IDs in captured anonymous US catalogue."
+    },
+    {
+      "label": "June-only confirmed minimum >=1,000 scored-review games",
+      "value": 45,
+      "note": "Current September display-count minimum, not June-end or full-quarter result."
+    },
+    {
+      "label": "June-only unresolved review counts",
+      "value": 1380,
+      "note": "Missing numerical tooltip or language-specific sub-threshold count; included in supply."
+    }
+  ],
+  "rows": [
+    {
+      "name": "Open World Survival Craft",
+      "tagId": 1100689,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Farming Sim",
+      "tagId": 87918,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Roguelike Deckbuilder",
+      "tagId": 1091588,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Simulation",
+      "tagId": 599,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Management",
+      "tagId": 12472,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Horror",
+      "tagId": 1667,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Psychological Horror",
+      "tagId": 1721,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Idler",
+      "tagId": 615955,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Tower Defense",
+      "tagId": 1645,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Puzzle",
+      "tagId": 1664,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "2D Platformer",
+      "tagId": 5379,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "City Builder",
+      "tagId": 4328,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Life Sim",
+      "tagId": 10235,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Job Simulator",
+      "tagId": 35079,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Party Game",
+      "tagId": 7178,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Online Co-Op",
+      "tagId": 3843,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Cozy",
+      "tagId": 97376,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Metroidvania",
+      "tagId": 1628,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Action Roguelike",
+      "tagId": 42804,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Bullet Hell",
+      "tagId": 4885,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Gambling",
+      "tagId": 16250,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Automation",
+      "tagId": 255534,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "RPG",
+      "tagId": 122,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    },
+    {
+      "name": "Fishing",
+      "tagId": 15564,
+      "hits": null,
+      "supply": null,
+      "rate": null,
+      "evidence": "Full-Q2 cohort unavailable. See explicitly separate June-only tagged subcohort; do not substitute its counts.",
+      "source": "https://howtomarketagame.com/2026/",
+      "direction": "Unavailable — no comparable Q2 trend"
+    }
+  ],
+  "caveats": [
+    "Not a full-Q2 table. June cannot be scaled to April–June and should not be shown as a quarter-over-quarter trend against HTMAG 2025 or Q1 2026.",
+    "June is bracketed within the saved search sequence, but anonymous US visibility, removed/restricted products, content preferences and live pagination can omit games. Complete Steam coverage is not claimed.",
+    "Displayed release dates may reflect full release after earlier Early Access. Lifetime reviews can predate June. This is not a cohort of first-ever commercial releases or reviews earned during June.",
+    "Reviews were observed September 2, 64–93 days after June dates. HTMAG Q1 used an April 2 snapshot; the observation windows and maturity differ.",
+    "Review-score counts are not all review posts, units, revenue, wishlists, or organic reach. Steam excludes nonqualifying purchase types and some off-topic activity from the score. Marketing spend is not observed.",
+    "No numerical tooltip is not proven to mean zero reviews. These rows stay in the denominator and their review-threshold status remains unresolved; consequently the bounds can be too wide to rank genres usefully.",
+    "Tag assignment uses only the up-to-seven returned IDs, not all visible tags or a single best-fit genre. Rows overlap and must not be added together. Idler is not the entire incremental category; Bullet Hell is not synonymous with bullet heaven; Online Co-Op is not friendslop.",
+    "Paid and free games, indies and large studios are mixed. A low count is not proof of commercial failure, and a high count is not evidence of profit, affordable scope, or causal organic marketing.",
+    "Exact full-quarter data needs a legitimately available complete export plus consistent release/EA, purchase-type, language, tag and snapshot rules. No paywall, authentication, CAPTCHA or rate-limit workaround was used."
+  ],
+  "juneSubcohort": {
+    "title": "June-only public-store snapshot / tagged cohort",
+    "period": "2026-06-01 to 2026-06-30",
+    "cutoff": "2026-09-02",
+    "rows": [
+      {
+        "name": "Open World Survival Craft",
+        "tagId": 1100689,
+        "supply": 5,
+        "hits": null,
+        "hitsConfirmed": 2,
+        "hitsLowerBound": 2,
+        "hitsUpperBound": 3,
+        "unresolved": 1,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 1,
+        "knownBelowThreshold": 2,
+        "rate": null,
+        "rateLowerBound": 40,
+        "rateUpperBound": 60,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 1805110,
+              "title": "Solarpunk™",
+              "releaseDate": "2026-06-08",
+              "displayedReviews": 1844,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/1805110/"
+            },
+            {
+              "appId": 2679100,
+              "title": "Witchspire",
+              "releaseDate": "2026-06-10",
+              "displayedReviews": 1774,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/2679100/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 2649860,
+              "title": "Gombo",
+              "releaseDate": "2026-06-02",
+              "displayedReviews": 40,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/2649860/"
+            },
+            {
+              "appId": 2776630,
+              "title": "Skillwood",
+              "releaseDate": "2026-06-21",
+              "displayedReviews": 254,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/2776630/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Farming Sim",
+        "tagId": 87918,
+        "supply": 21,
+        "hits": null,
+        "hitsConfirmed": 1,
+        "hitsLowerBound": 1,
+        "hitsUpperBound": 15,
+        "unresolved": 14,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 14,
+        "knownBelowThreshold": 6,
+        "rate": null,
+        "rateLowerBound": 4.762,
+        "rateUpperBound": 71.429,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 2340520,
+              "title": "Tales of Seikyu",
+              "releaseDate": "2026-06-11",
+              "displayedReviews": 1457,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/2340520/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 4448700,
+              "title": "Agraria",
+              "releaseDate": "2026-06-21",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4448700/"
+            },
+            {
+              "appId": 4685210,
+              "title": "ROCKS.EXE",
+              "releaseDate": "2026-06-30",
+              "displayedReviews": 13,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4685210/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Roguelike Deckbuilder",
+        "tagId": 1091588,
+        "supply": 18,
+        "hits": null,
+        "hitsConfirmed": 1,
+        "hitsLowerBound": 1,
+        "hitsUpperBound": 11,
+        "unresolved": 10,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 10,
+        "knownBelowThreshold": 7,
+        "rate": null,
+        "rateLowerBound": 5.556,
+        "rateUpperBound": 61.111,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 3709430,
+              "title": "Witch's Apocalyptic Journey",
+              "releaseDate": "2026-06-04",
+              "displayedReviews": 1252,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/3709430/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 2975040,
+              "title": "Gate Guardian",
+              "releaseDate": "2026-06-04",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/2975040/"
+            },
+            {
+              "appId": 3316960,
+              "title": "Ashes of Morgravia",
+              "releaseDate": "2026-06-22",
+              "displayedReviews": 43,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3316960/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Simulation",
+        "tagId": 599,
+        "supply": 411,
+        "hits": null,
+        "hitsConfirmed": 9,
+        "hitsLowerBound": 9,
+        "hitsUpperBound": 245,
+        "unresolved": 236,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 236,
+        "knownBelowThreshold": 166,
+        "rate": null,
+        "rateLowerBound": 2.19,
+        "rateUpperBound": 59.611,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4064510,
+              "title": "MOLE",
+              "releaseDate": "2026-06-15",
+              "displayedReviews": 2195,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4064510/"
+            },
+            {
+              "appId": 4731620,
+              "title": "Fortune Mill",
+              "releaseDate": "2026-06-02",
+              "displayedReviews": 2105,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4731620/"
+            },
+            {
+              "appId": 3700980,
+              "title": "How to Make an Atomic Bomb in Your Garden",
+              "releaseDate": "2026-06-09",
+              "displayedReviews": 1931,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/3700980/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 4105080,
+              "title": "贝如塔按摩店模拟器 Beta Massage Parlor Simulator",
+              "releaseDate": "2026-06-27",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4105080/"
+            },
+            {
+              "appId": 4198590,
+              "title": "Age of Resistance",
+              "releaseDate": "2026-06-22",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4198590/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Management",
+        "tagId": 12472,
+        "supply": 74,
+        "hits": null,
+        "hitsConfirmed": 2,
+        "hitsLowerBound": 2,
+        "hitsUpperBound": 33,
+        "unresolved": 31,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 31,
+        "knownBelowThreshold": 41,
+        "rate": null,
+        "rateLowerBound": 2.703,
+        "rateUpperBound": 44.595,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 1001270,
+              "title": "Kebab Chefs! - Restaurant Simulator",
+              "releaseDate": "2026-06-11",
+              "displayedReviews": 1583,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/1001270/"
+            },
+            {
+              "appId": 4304930,
+              "title": "Chef Knight",
+              "releaseDate": "2026-06-01",
+              "displayedReviews": 1260,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4304930/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 4606220,
+              "title": "Blacksmith Idle",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4606220/"
+            },
+            {
+              "appId": 4610760,
+              "title": "Cart by Cart: Supermarket Simulator",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4610760/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Horror",
+        "tagId": 1667,
+        "supply": 143,
+        "hits": null,
+        "hitsConfirmed": 3,
+        "hitsLowerBound": 3,
+        "hitsUpperBound": 86,
+        "unresolved": 83,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 83,
+        "knownBelowThreshold": 57,
+        "rate": null,
+        "rateLowerBound": 2.098,
+        "rateUpperBound": 60.14,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4121170,
+              "title": "Fears to Fathom® - Scratch Creek",
+              "releaseDate": "2026-06-10",
+              "displayedReviews": 3326,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4121170/"
+            },
+            {
+              "appId": 4064510,
+              "title": "MOLE",
+              "releaseDate": "2026-06-15",
+              "displayedReviews": 2195,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4064510/"
+            },
+            {
+              "appId": 3979330,
+              "title": "nophenia",
+              "releaseDate": "2026-06-26",
+              "displayedReviews": 1456,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/3979330/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 3569560,
+              "title": "The Escape to the Afterlife",
+              "releaseDate": "2026-06-17",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3569560/"
+            },
+            {
+              "appId": 4766300,
+              "title": "Neverwood",
+              "releaseDate": "2026-06-22",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4766300/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Psychological Horror",
+        "tagId": 1721,
+        "supply": 90,
+        "hits": null,
+        "hitsConfirmed": 3,
+        "hitsLowerBound": 3,
+        "hitsUpperBound": 58,
+        "unresolved": 55,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 55,
+        "knownBelowThreshold": 32,
+        "rate": null,
+        "rateLowerBound": 3.333,
+        "rateUpperBound": 64.444,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4121170,
+              "title": "Fears to Fathom® - Scratch Creek",
+              "releaseDate": "2026-06-10",
+              "displayedReviews": 3326,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4121170/"
+            },
+            {
+              "appId": 4064510,
+              "title": "MOLE",
+              "releaseDate": "2026-06-15",
+              "displayedReviews": 2195,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4064510/"
+            },
+            {
+              "appId": 3946810,
+              "title": "The seven days i spent with you",
+              "releaseDate": "2026-06-16",
+              "displayedReviews": 1129,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/3946810/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 3979840,
+              "title": "Bedtime Nightmare",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3979840/"
+            },
+            {
+              "appId": 4692700,
+              "title": "Monologin",
+              "releaseDate": "2026-06-19",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4692700/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Idler",
+        "tagId": 615955,
+        "supply": 130,
+        "hits": null,
+        "hitsConfirmed": 1,
+        "hitsLowerBound": 1,
+        "hitsUpperBound": 65,
+        "unresolved": 64,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 64,
+        "knownBelowThreshold": 65,
+        "rate": null,
+        "rateLowerBound": 0.769,
+        "rateUpperBound": 50,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4731620,
+              "title": "Fortune Mill",
+              "releaseDate": "2026-06-02",
+              "displayedReviews": 2105,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4731620/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 3658030,
+              "title": "Desktop Hellfarmer",
+              "releaseDate": "2026-06-30",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3658030/"
+            },
+            {
+              "appId": 3868760,
+              "title": "Exofinity Clicker",
+              "releaseDate": "2026-06-25",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3868760/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Tower Defense",
+        "tagId": 1645,
+        "supply": 60,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 34,
+        "unresolved": 34,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 34,
+        "knownBelowThreshold": 26,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 56.667,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 4727880,
+              "title": "Hold The Line",
+              "releaseDate": "2026-06-18",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4727880/"
+            },
+            {
+              "appId": 2258380,
+              "title": "Pact of Steel",
+              "releaseDate": "2026-06-13",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/2258380/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Puzzle",
+        "tagId": 1664,
+        "supply": 287,
+        "hits": null,
+        "hitsConfirmed": 6,
+        "hitsLowerBound": 6,
+        "hitsUpperBound": 214,
+        "unresolved": 208,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 208,
+        "knownBelowThreshold": 73,
+        "rate": null,
+        "rateLowerBound": 2.091,
+        "rateUpperBound": 74.564,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4064510,
+              "title": "MOLE",
+              "releaseDate": "2026-06-15",
+              "displayedReviews": 2195,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4064510/"
+            },
+            {
+              "appId": 1910680,
+              "title": "Orb of Creation",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 1900,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/1910680/"
+            },
+            {
+              "appId": 4800590,
+              "title": "Supermarket Chaos",
+              "releaseDate": "2026-06-29",
+              "displayedReviews": 1356,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4800590/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 752290,
+              "title": "Scientific project: Optic",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/752290/"
+            },
+            {
+              "appId": 3983090,
+              "title": "Soap Slide",
+              "releaseDate": "2026-06-02",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3983090/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "2D Platformer",
+        "tagId": 5379,
+        "supply": 161,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 130,
+        "unresolved": 130,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 130,
+        "knownBelowThreshold": 31,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 80.745,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 2080890,
+              "title": "Gem Venture",
+              "releaseDate": "2026-06-11",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/2080890/"
+            },
+            {
+              "appId": 4128450,
+              "title": "Ming Dynasty: Cards & Court",
+              "releaseDate": "2026-06-30",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4128450/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "City Builder",
+        "tagId": 4328,
+        "supply": 22,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 13,
+        "unresolved": 13,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 13,
+        "knownBelowThreshold": 9,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 59.091,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 4633600,
+              "title": "MEGACITY",
+              "releaseDate": "2026-06-28",
+              "displayedReviews": 12,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4633600/"
+            },
+            {
+              "appId": 4514650,
+              "title": "Jewels of the Wild West: Match 3 to Build Your City",
+              "releaseDate": "2026-06-18",
+              "displayedReviews": 20,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4514650/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Life Sim",
+        "tagId": 10235,
+        "supply": 59,
+        "hits": null,
+        "hitsConfirmed": 1,
+        "hitsLowerBound": 1,
+        "hitsUpperBound": 34,
+        "unresolved": 33,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 33,
+        "knownBelowThreshold": 25,
+        "rate": null,
+        "rateLowerBound": 1.695,
+        "rateUpperBound": 57.627,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 2340520,
+              "title": "Tales of Seikyu",
+              "releaseDate": "2026-06-11",
+              "displayedReviews": 1457,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/2340520/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 3860890,
+              "title": "Condemned to Clean",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3860890/"
+            },
+            {
+              "appId": 4081170,
+              "title": "Phone Flipper Simulator",
+              "releaseDate": "2026-06-12",
+              "displayedReviews": 14,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4081170/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Job Simulator",
+        "tagId": 35079,
+        "supply": 12,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 3,
+        "unresolved": 3,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 3,
+        "knownBelowThreshold": 9,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 25,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 4610760,
+              "title": "Cart by Cart: Supermarket Simulator",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4610760/"
+            },
+            {
+              "appId": 4590400,
+              "title": "Raccoon Packer: A Cozy Puzzle Game",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 12,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4590400/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Party Game",
+        "tagId": 7178,
+        "supply": 57,
+        "hits": null,
+        "hitsConfirmed": 1,
+        "hitsLowerBound": 1,
+        "hitsUpperBound": 43,
+        "unresolved": 42,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 42,
+        "knownBelowThreshold": 14,
+        "rate": null,
+        "rateLowerBound": 1.754,
+        "rateUpperBound": 75.439,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4704690,
+              "title": "MECCHA CHAMELEON",
+              "releaseDate": "2026-06-09",
+              "displayedReviews": 42428,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4704690/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 4335270,
+              "title": "SHED",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4335270/"
+            },
+            {
+              "appId": 3753790,
+              "title": "Hunters In The Dark",
+              "releaseDate": "2026-06-19",
+              "displayedReviews": 14,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3753790/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Online Co-Op",
+        "tagId": 3843,
+        "supply": 63,
+        "hits": null,
+        "hitsConfirmed": 7,
+        "hitsLowerBound": 7,
+        "hitsUpperBound": 30,
+        "unresolved": 23,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 23,
+        "knownBelowThreshold": 33,
+        "rate": null,
+        "rateLowerBound": 11.111,
+        "rateUpperBound": 47.619,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4704690,
+              "title": "MECCHA CHAMELEON",
+              "releaseDate": "2026-06-09",
+              "displayedReviews": 42428,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4704690/"
+            },
+            {
+              "appId": 1805110,
+              "title": "Solarpunk™",
+              "releaseDate": "2026-06-08",
+              "displayedReviews": 1844,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/1805110/"
+            },
+            {
+              "appId": 2679100,
+              "title": "Witchspire",
+              "releaseDate": "2026-06-10",
+              "displayedReviews": 1774,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/2679100/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 3948910,
+              "title": "Sloop",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3948910/"
+            },
+            {
+              "appId": 4313610,
+              "title": "Chopping Together🌲",
+              "releaseDate": "2026-06-19",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4313610/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cozy",
+        "tagId": 97376,
+        "supply": 49,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 17,
+        "unresolved": 17,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 17,
+        "knownBelowThreshold": 32,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 34.694,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 4272830,
+              "title": "Haven Restored",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4272830/"
+            },
+            {
+              "appId": 4313610,
+              "title": "Chopping Together🌲",
+              "releaseDate": "2026-06-19",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4313610/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Metroidvania",
+        "tagId": 1628,
+        "supply": 14,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 6,
+        "unresolved": 6,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 6,
+        "knownBelowThreshold": 8,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 42.857,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 3121810,
+              "title": "ALARIC",
+              "releaseDate": "2026-06-15",
+              "displayedReviews": 14,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3121810/"
+            },
+            {
+              "appId": 3976150,
+              "title": "Sonki's Lagoon",
+              "releaseDate": "2026-06-04",
+              "displayedReviews": 20,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3976150/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Action Roguelike",
+        "tagId": 42804,
+        "supply": 147,
+        "hits": null,
+        "hitsConfirmed": 3,
+        "hitsLowerBound": 3,
+        "hitsUpperBound": 106,
+        "unresolved": 103,
+        "unresolvedLanguageCount": 1,
+        "missingReviewCountCount": 102,
+        "knownBelowThreshold": 41,
+        "rate": null,
+        "rateLowerBound": 2.041,
+        "rateUpperBound": 72.109,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 3100310,
+              "title": "Arms of God",
+              "releaseDate": "2026-06-08",
+              "displayedReviews": 1841,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/3100310/"
+            },
+            {
+              "appId": 2211170,
+              "title": "Unrailed 2: Back on Track",
+              "releaseDate": "2026-06-11",
+              "displayedReviews": 1774,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/2211170/"
+            },
+            {
+              "appId": 4227400,
+              "title": "Sineus Arena Survivors",
+              "releaseDate": "2026-06-22",
+              "displayedReviews": 1069,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4227400/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 4653920,
+              "title": "ComboChain Pulse",
+              "releaseDate": "2026-06-19",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4653920/"
+            },
+            {
+              "appId": 3455320,
+              "title": "Supre-Immune",
+              "releaseDate": "2026-06-30",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3455320/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Bullet Hell",
+        "tagId": 4885,
+        "supply": 133,
+        "hits": null,
+        "hitsConfirmed": 2,
+        "hitsLowerBound": 2,
+        "hitsUpperBound": 95,
+        "unresolved": 93,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 93,
+        "knownBelowThreshold": 38,
+        "rate": null,
+        "rateLowerBound": 1.504,
+        "rateUpperBound": 71.429,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 3100310,
+              "title": "Arms of God",
+              "releaseDate": "2026-06-08",
+              "displayedReviews": 1841,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/3100310/"
+            },
+            {
+              "appId": 4227400,
+              "title": "Sineus Arena Survivors",
+              "releaseDate": "2026-06-22",
+              "displayedReviews": 1069,
+              "languageSpecific": false,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4227400/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 4653920,
+              "title": "ComboChain Pulse",
+              "releaseDate": "2026-06-19",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4653920/"
+            },
+            {
+              "appId": 3990560,
+              "title": "Wanted Shadows: Unchained",
+              "releaseDate": "2026-06-08",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3990560/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Gambling",
+        "tagId": 16250,
+        "supply": 21,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 16,
+        "unresolved": 16,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 16,
+        "knownBelowThreshold": 5,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 76.19,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 4553140,
+              "title": "Scratch Off!",
+              "releaseDate": "2026-06-23",
+              "displayedReviews": 17,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4553140/"
+            },
+            {
+              "appId": 4754800,
+              "title": "Aura Farming",
+              "releaseDate": "2026-06-24",
+              "displayedReviews": 114,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4754800/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Automation",
+        "tagId": 255534,
+        "supply": 29,
+        "hits": null,
+        "hitsConfirmed": 2,
+        "hitsLowerBound": 2,
+        "hitsUpperBound": 12,
+        "unresolved": 10,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 10,
+        "knownBelowThreshold": 17,
+        "rate": null,
+        "rateLowerBound": 6.897,
+        "rateUpperBound": 41.379,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 4731620,
+              "title": "Fortune Mill",
+              "releaseDate": "2026-06-02",
+              "displayedReviews": 2105,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/4731620/"
+            },
+            {
+              "appId": 1614550,
+              "title": "Astro Colony",
+              "releaseDate": "2026-06-02",
+              "displayedReviews": 1351,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/1614550/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 4613470,
+              "title": "GlowCore",
+              "releaseDate": "2026-06-05",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4613470/"
+            },
+            {
+              "appId": 4738550,
+              "title": "Dig into the core",
+              "releaseDate": "2026-06-08",
+              "displayedReviews": 11,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4738550/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "RPG",
+        "tagId": 122,
+        "supply": 243,
+        "hits": null,
+        "hitsConfirmed": 8,
+        "hitsLowerBound": 8,
+        "hitsUpperBound": 162,
+        "unresolved": 154,
+        "unresolvedLanguageCount": 1,
+        "missingReviewCountCount": 153,
+        "knownBelowThreshold": 81,
+        "rate": null,
+        "rateLowerBound": 3.292,
+        "rateUpperBound": 66.667,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [
+            {
+              "appId": 1297900,
+              "title": "Gothic 1 Remake",
+              "releaseDate": "2026-06-05",
+              "displayedReviews": 7627,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/1297900/"
+            },
+            {
+              "appId": 2186990,
+              "title": "Fatekeeper",
+              "releaseDate": "2026-06-02",
+              "displayedReviews": 6745,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/2186990/"
+            },
+            {
+              "appId": 327070,
+              "title": "Gloria Victis: Medieval MMORPG",
+              "releaseDate": "2026-06-17",
+              "displayedReviews": 6107,
+              "languageSpecific": true,
+              "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+              "source": "https://store.steampowered.com/app/327070/"
+            }
+          ],
+          "low": [
+            {
+              "appId": 3658030,
+              "title": "Desktop Hellfarmer",
+              "releaseDate": "2026-06-30",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3658030/"
+            },
+            {
+              "appId": 4774160,
+              "title": "Visual Novel: Chernobog's Seal",
+              "releaseDate": "2026-06-15",
+              "displayedReviews": 10,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4774160/"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fishing",
+        "tagId": 15564,
+        "supply": 9,
+        "hits": null,
+        "hitsConfirmed": 0,
+        "hitsLowerBound": 0,
+        "hitsUpperBound": 6,
+        "unresolved": 6,
+        "unresolvedLanguageCount": 0,
+        "missingReviewCountCount": 6,
+        "knownBelowThreshold": 3,
+        "rate": null,
+        "rateLowerBound": 0,
+        "rateUpperBound": 66.667,
+        "evidence": "Original count of unique June-dated app rows carrying this tag among the up-to-seven tag IDs returned by the saved public search response. Missing and ambiguous review counts remain unresolved; hits are a confirmed minimum.",
+        "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+        "direction": "No comparable trend claim; June-only, selected public catalogue and current review maturity.",
+        "examples": {
+          "high": [],
+          "low": [
+            {
+              "appId": 3326670,
+              "title": "Dreamstranded",
+              "releaseDate": "2026-06-10",
+              "displayedReviews": 15,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/3326670/"
+            },
+            {
+              "appId": 4143100,
+              "title": "Fish & Hike",
+              "releaseDate": "2026-06-04",
+              "displayedReviews": 15,
+              "languageSpecific": false,
+              "reviewStatus": "Below threshold in non-language-specific score count",
+              "source": "https://store.steampowered.com/app/4143100/"
+            }
+          ]
+        }
+      }
+    ],
+    "counts": {
+      "supply": 2102,
+      "hits": null,
+      "hitsConfirmed": 45,
+      "hitsLowerBound": 45,
+      "hitsUpperBound": 1425,
+      "unresolved": 1380,
+      "unresolvedLanguageCount": 3,
+      "missingReviewCountCount": 1377,
+      "knownBelowThreshold": 677,
+      "rate": null,
+      "rateLowerBound": 2.141,
+      "rateUpperBound": 67.793
+    },
+    "coverage": {
+      "capturedAt": "2026-09-02T17:40:34.577743+00:00",
+      "completedAt": "2026-09-02T17:40:48.475732+00:00",
+      "savedPages": 30,
+      "fetchedRows": 3000,
+      "offsets": [
+        5000,
+        7900
+      ],
+      "requestedOffsetEnd": 12500,
+      "capturedDisplayedDateBounds": [
+        "2026-05-29",
+        "2026-07-12"
+      ],
+      "analysisDisplayedDateRange": [
+        "2026-06-01",
+        "2026-06-30"
+      ],
+      "contiguousSavedPages": true,
+      "monthDateBracketsObserved": true,
+      "fullQ2Coverage": false,
+      "completeSteamCoverageClaim": false,
+      "excludedNonAppRows": [
+        "Sub_1587339",
+        "Sub_1587333"
+      ],
+      "excludedOutsideJune": 896,
+      "duplicateJuneAppIds": [],
+      "unparsedDates": 0,
+      "tagIdCountRange": [
+        1,
+        7
+      ],
+      "reviewApiRequestsMade": 0,
+      "requestParameters": {
+        "sort_by": "Released_DESC",
+        "category1": 998,
+        "infinite": 1,
+        "l": "english",
+        "cc": "us",
+        "count": 100
+      },
+      "stopReason": "HTTP error at offset 8000; subsequent enumeration stopped. HTTP status was not retained, so rate-limit versus other server failure is not asserted."
+    },
+    "manifestFile": "/data/steam-june-2026-cohort.json",
+    "manifestSha256": "6371e544572da69b6e3e96cb1f52d5bdef133135baac42188ae1650f0df171c0",
+    "rawSourceManifestSha256": "a7c95d237e876a37de5be0a283157fa074c271308126d40d73975299498c1c5f",
+    "allConfirmedExamples": [
+      {
+        "appId": 4704690,
+        "title": "MECCHA CHAMELEON",
+        "releaseDate": "2026-06-09",
+        "displayedReviews": 42428,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4704690/"
+      },
+      {
+        "appId": 1431300,
+        "title": "SAND: Raiders of Sophie",
+        "releaseDate": "2026-06-22",
+        "displayedReviews": 7797,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1431300/"
+      },
+      {
+        "appId": 1297900,
+        "title": "Gothic 1 Remake",
+        "releaseDate": "2026-06-05",
+        "displayedReviews": 7627,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1297900/"
+      },
+      {
+        "appId": 2186990,
+        "title": "Fatekeeper",
+        "releaseDate": "2026-06-02",
+        "displayedReviews": 6745,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2186990/"
+      },
+      {
+        "appId": 4162040,
+        "title": "Zenless Zone Zero",
+        "releaseDate": "2026-06-16",
+        "displayedReviews": 6499,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4162040/"
+      },
+      {
+        "appId": 327070,
+        "title": "Gloria Victis: Medieval MMORPG",
+        "releaseDate": "2026-06-17",
+        "displayedReviews": 6107,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/327070/"
+      },
+      {
+        "appId": 4121170,
+        "title": "Fears to Fathom® - Scratch Creek",
+        "releaseDate": "2026-06-10",
+        "displayedReviews": 3326,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4121170/"
+      },
+      {
+        "appId": 2753000,
+        "title": "GOALS",
+        "releaseDate": "2026-06-04",
+        "displayedReviews": 2500,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2753000/"
+      },
+      {
+        "appId": 3844970,
+        "title": "Burglin' Gnomes",
+        "releaseDate": "2026-06-10",
+        "displayedReviews": 2351,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3844970/"
+      },
+      {
+        "appId": 4064510,
+        "title": "MOLE",
+        "releaseDate": "2026-06-15",
+        "displayedReviews": 2195,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4064510/"
+      },
+      {
+        "appId": 2004680,
+        "title": "Voidling Bound",
+        "releaseDate": "2026-06-09",
+        "displayedReviews": 2106,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2004680/"
+      },
+      {
+        "appId": 4731620,
+        "title": "Fortune Mill",
+        "releaseDate": "2026-06-02",
+        "displayedReviews": 2105,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4731620/"
+      },
+      {
+        "appId": 3337380,
+        "title": "Tabletop Tavern",
+        "releaseDate": "2026-06-11",
+        "displayedReviews": 1961,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3337380/"
+      },
+      {
+        "appId": 3700980,
+        "title": "How to Make an Atomic Bomb in Your Garden",
+        "releaseDate": "2026-06-09",
+        "displayedReviews": 1931,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3700980/"
+      },
+      {
+        "appId": 1578390,
+        "title": "My Garage",
+        "releaseDate": "2026-06-02",
+        "displayedReviews": 1911,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1578390/"
+      },
+      {
+        "appId": 1910680,
+        "title": "Orb of Creation",
+        "releaseDate": "2026-06-23",
+        "displayedReviews": 1900,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1910680/"
+      },
+      {
+        "appId": 1805110,
+        "title": "Solarpunk™",
+        "releaseDate": "2026-06-08",
+        "displayedReviews": 1844,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1805110/"
+      },
+      {
+        "appId": 3100310,
+        "title": "Arms of God",
+        "releaseDate": "2026-06-08",
+        "displayedReviews": 1841,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3100310/"
+      },
+      {
+        "appId": 2679100,
+        "title": "Witchspire",
+        "releaseDate": "2026-06-10",
+        "displayedReviews": 1774,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2679100/"
+      },
+      {
+        "appId": 2211170,
+        "title": "Unrailed 2: Back on Track",
+        "releaseDate": "2026-06-11",
+        "displayedReviews": 1774,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2211170/"
+      },
+      {
+        "appId": 1451480,
+        "title": "The Greatest Penguin Heist of All Time",
+        "releaseDate": "2026-06-03",
+        "displayedReviews": 1721,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1451480/"
+      },
+      {
+        "appId": 3483510,
+        "title": "The Adventures of Elliot: The Millennium Tales",
+        "releaseDate": "2026-06-18",
+        "displayedReviews": 1658,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3483510/"
+      },
+      {
+        "appId": 4323990,
+        "title": "EMPULSE",
+        "releaseDate": "2026-06-24",
+        "displayedReviews": 1638,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4323990/"
+      },
+      {
+        "appId": 1597080,
+        "title": "Killer Bean",
+        "releaseDate": "2026-06-08",
+        "displayedReviews": 1628,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1597080/"
+      },
+      {
+        "appId": 1001270,
+        "title": "Kebab Chefs! - Restaurant Simulator",
+        "releaseDate": "2026-06-11",
+        "displayedReviews": 1583,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1001270/"
+      },
+      {
+        "appId": 3559510,
+        "title": "Capsule Lover",
+        "releaseDate": "2026-06-11",
+        "displayedReviews": 1520,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3559510/"
+      },
+      {
+        "appId": 2340520,
+        "title": "Tales of Seikyu",
+        "releaseDate": "2026-06-11",
+        "displayedReviews": 1457,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2340520/"
+      },
+      {
+        "appId": 3979330,
+        "title": "nophenia",
+        "releaseDate": "2026-06-26",
+        "displayedReviews": 1456,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3979330/"
+      },
+      {
+        "appId": 2144600,
+        "title": "Eterspire",
+        "releaseDate": "2026-06-04",
+        "displayedReviews": 1408,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2144600/"
+      },
+      {
+        "appId": 4800590,
+        "title": "Supermarket Chaos",
+        "releaseDate": "2026-06-29",
+        "displayedReviews": 1356,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4800590/"
+      },
+      {
+        "appId": 1614550,
+        "title": "Astro Colony",
+        "releaseDate": "2026-06-02",
+        "displayedReviews": 1351,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1614550/"
+      },
+      {
+        "appId": 4080030,
+        "title": "The Message from Deep Space",
+        "releaseDate": "2026-06-29",
+        "displayedReviews": 1275,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4080030/"
+      },
+      {
+        "appId": 4304930,
+        "title": "Chef Knight",
+        "releaseDate": "2026-06-01",
+        "displayedReviews": 1260,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4304930/"
+      },
+      {
+        "appId": 3276050,
+        "title": "SpaceCraft",
+        "releaseDate": "2026-06-11",
+        "displayedReviews": 1257,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3276050/"
+      },
+      {
+        "appId": 3709430,
+        "title": "Witch's Apocalyptic Journey",
+        "releaseDate": "2026-06-04",
+        "displayedReviews": 1252,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3709430/"
+      },
+      {
+        "appId": 3858650,
+        "title": "Crushed In Time",
+        "releaseDate": "2026-06-10",
+        "displayedReviews": 1212,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3858650/"
+      },
+      {
+        "appId": 3618850,
+        "title": "Pronoun Palace",
+        "releaseDate": "2026-06-04",
+        "displayedReviews": 1180,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3618850/"
+      },
+      {
+        "appId": 3144230,
+        "title": "Modern Warships",
+        "releaseDate": "2026-06-04",
+        "displayedReviews": 1151,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3144230/"
+      },
+      {
+        "appId": 2327720,
+        "title": "City Car Driving 2.0",
+        "releaseDate": "2026-06-16",
+        "displayedReviews": 1135,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2327720/"
+      },
+      {
+        "appId": 3946810,
+        "title": "The seven days i spent with you",
+        "releaseDate": "2026-06-16",
+        "displayedReviews": 1129,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/3946810/"
+      },
+      {
+        "appId": 2445690,
+        "title": "Lost Castle 2",
+        "releaseDate": "2026-06-10",
+        "displayedReviews": 1120,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/2445690/"
+      },
+      {
+        "appId": 4517460,
+        "title": "Total Football Online",
+        "releaseDate": "2026-06-10",
+        "displayedReviews": 1069,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4517460/"
+      },
+      {
+        "appId": 4227400,
+        "title": "Sineus Arena Survivors",
+        "releaseDate": "2026-06-22",
+        "displayedReviews": 1069,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/4227400/"
+      },
+      {
+        "appId": 1092590,
+        "title": "沙雕之路",
+        "releaseDate": "2026-06-09",
+        "displayedReviews": 1038,
+        "languageSpecific": false,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/1092590/"
+      },
+      {
+        "appId": 673560,
+        "title": "IOSoccer",
+        "releaseDate": "2026-06-12",
+        "displayedReviews": 1008,
+        "languageSpecific": true,
+        "reviewStatus": "Confirmed minimum: displayed score count is already >=1000",
+        "source": "https://store.steampowered.com/app/673560/"
+      }
+    ]
+  }
+}

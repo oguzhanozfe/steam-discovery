@@ -1,0 +1,604 @@
+{
+  "id": "open-world-survival-craft",
+  "title": "Open-world survival craft: borrow the promise, constrain the world",
+  "asOf": "2026-09-02",
+  "language": "en",
+  "status": "Public-source research; eight selected cases, not a complete market cohort",
+  "summary": "Survival crafting has demonstrated substantial demand, including new 2026 releases. The opportunity for this team is a small, distinctive survival-crafting slice: a home to improve, a reason to leave it, a tangible resource transformation, and one memorable threat or environmental change. A credible three-week demo is possible; a competitive open-world product is a different undertaking.",
+  "definitions": {
+    "playerLoop": [
+      "Leave a safe place to seek a needed resource.",
+      "Gather under a legible constraint or threat.",
+      "Return and turn resources into tools, shelter or automation.",
+      "See the home or environment improve.",
+      "Unlock a reason to venture farther."
+    ],
+    "classification": "OWSC is a useful player-promise family, not one rigid map format. Raft constrains movement around a mobile home; Abiotic Factor moves the loop into an interconnected facility. The comparisons below are design and market references, not claims that all belong to the same manually coded statistical category.",
+    "metricPolicy": "SteamDB reviews are its observed aggregate review counts, not the English-language score counts shown in the June search snapshot. CCU is simultaneous Steam activity, not units. Reported sales retain their original platform, gross/net and date scope. No sales-to-reviews conversion or causal organic attribution is made.",
+    "scopePolicy": "Demo ideas, technical cuts, team allocations and validation gates are our proposed design judgments. They are not developer statements or proven demand for an unbuilt game."
+  },
+  "marketEvidence": [
+    {
+      "period": "2025 releases; January 2026 analysis",
+      "claim": "HTMAG reports 15 qualifying OWSC hits against an estimated 72 releases: 20.8% in the published table (15 / 72 = 20.83%).",
+      "hits": 15,
+      "supply": 72,
+      "ratePercent": 20.83,
+      "source": "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+      "evidenceType": "Published analyst cohort",
+      "caveat": "The qualifying numerator is manually classified after article filters; the supply denominator is a Steam-tag approximation. This is not a representative startup success probability, a profitability rate, or evidence that a three-week project has a one-in-five chance."
+    },
+    {
+      "period": "2026 Q1 releases, sampled April 2",
+      "claim": "HTMAG's embedded chart reports four OWSC games with at least 1,000 reviews, versus three in Q1 2025 and six in Q1 2024.",
+      "hits": 4,
+      "supply": null,
+      "ratePercent": null,
+      "source": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "evidenceType": "Published analyst chart, checked against existing site data",
+      "caveat": "Genre supply is unavailable. Four rather than three qualifying games does not establish demand growth, lower competition or a higher hit rate. The young April snapshot is not comparable to September-observed June games."
+    },
+    {
+      "period": "June 2026 displayed release dates, observed September 2",
+      "claim": "The site's bounded public-store subcohort contains five apps with OWSC among the returned tags: Solarpunk and Witchspire have confirmed 1,000-plus displayed-review minimums; Gombo and Skillwood are below that scored-review threshold; MAK: Survival has no numerical tooltip and is unresolved.",
+      "includedApps": 5,
+      "confirmedHitMinimum": 2,
+      "unresolved": 1,
+      "fullQ2Supply": null,
+      "fullQ2RatePercent": null,
+      "source": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+      "evidenceType": "Original partial public-store snapshot, not HTMAG",
+      "manifest": "/data/steam-june-2026-cohort.json",
+      "caveat": "June only; anonymous US visibility; only up-to-seven returned tag IDs; overlapping classification; displayed release dates can include older Early Access games. Do not turn two of five into a full-Q2 40% success headline."
+    }
+  ],
+  "demandVersusSupply": [
+    {
+      "claim": "New interpretations still find large audiences.",
+      "basis": "StarRupture's issuer reports 905,000 gross PC/Steam copies during H1 2026; Witchspire's issuer reports 100,000 Steam copies in its first week. These are distinct factory-survival and magical-survival promises.",
+      "sources": [
+        "https://creepyjar.com/raport-24_2026/",
+        "https://view.news.eu.nasdaq.com/view?id=b0b32aa6556a4dc2d323e47b7b1d5de00&lang=en&src=micro"
+      ],
+      "caveat": "Selected successes show demand exists, not the probability of reproducing it. Neither discloses a clean organic-attribution experiment."
+    },
+    {
+      "claim": "Low release supply can reflect high production barriers.",
+      "basis": "Windrose's store describes three biomes, roughly 30 islands and more than 90 crafted points of interest in Early Access, with a stated 1.5–2.5-year route to full release. Witchspire expects at least a year in Early Access.",
+      "sources": [
+        "https://store.steampowered.com/app/3041230/Windrose/",
+        "https://store.steampowered.com/app/2679100/Witchspire/"
+      ],
+      "caveat": "Our inference: a high observed genre ratio is not evidence of an easy gap. These are developer plans, not guarantees of delivery dates."
+    },
+    {
+      "claim": "Small starting teams do not imply small finished games or free acquisition.",
+      "basis": "Planet Crafter began as a two-person project; the studio's current press kit describes seven people. Its founder's 2024 interview reports a €200,000 paid-streamer budget for the 1.0 push, alongside unpaid creator coverage and Steam featuring.",
+      "sources": [
+        "https://mijugames.com/pages/planetcrafter/presskit.html",
+        "https://newsletter.gamediscover.co/p/how-the-planet-crafter-hit-1-million"
+      ],
+      "caveat": "The campaign spend is not total development cost or total lifetime marketing spend. The interview does not isolate incremental sales caused by any one channel."
+    }
+  ],
+  "recognizablePromises": [
+    {
+      "promise": "This place becomes ours",
+      "visibleProof": "An empty platform becomes a recognizable home in one camera angle.",
+      "cases": [
+        "Raft",
+        "Solarpunk",
+        "Valheim"
+      ],
+      "demoTest": "Can a viewer distinguish the starting and upgraded home without reading UI?"
+    },
+    {
+      "promise": "Our work changes the world",
+      "visibleProof": "Dust becomes grass, power restores a dead machine, or a sterile room becomes habitable.",
+      "cases": [
+        "The Planet Crafter",
+        "Solarpunk"
+      ],
+      "demoTest": "Does the change result from a player-built system rather than only a cinematic trigger?"
+    },
+    {
+      "promise": "One more supply run",
+      "visibleProof": "A specific locked improvement makes the next destination desirable.",
+      "cases": [
+        "Abiotic Factor",
+        "Valheim",
+        "StarRupture"
+      ],
+      "demoTest": "After the first upgrade, does the player voluntarily plan the next trip?"
+    },
+    {
+      "promise": "The familiar loop has a new rule",
+      "visibleProof": "Resources float past a raft, tools harvest by magic, or a catastrophe interrupts production.",
+      "cases": [
+        "Raft",
+        "Witchspire",
+        "StarRupture"
+      ],
+      "demoTest": "Can a new viewer explain the rule from a ten-second gameplay clip?"
+    },
+    {
+      "promise": "We made this story together",
+      "visibleProof": "A rescue, building disagreement, failed expedition or shared return home.",
+      "cases": [
+        "Valheim",
+        "Windrose",
+        "Abiotic Factor"
+      ],
+      "demoTest": "Does a real two-player session create a useful moment without a scripted actor?"
+    }
+  ],
+  "cases": [
+    {
+      "id": "starrupture",
+      "title": "StarRupture",
+      "appId": 1631270,
+      "developer": "Creepy Jar",
+      "publisher": "Creepy Jar",
+      "earlyAccessDate": "2026-01-06",
+      "fullReleaseDate": null,
+      "positioning": "Factory building under planetary catastrophe and alien pressure.",
+      "playerPromise": "Build a productive machine network, then make it survive a hostile world.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 13376,
+        "peakCCU": 42864,
+        "peakDate": "2026-01-11",
+        "source": "https://steamdb.info/app/1631270/charts/"
+      },
+      "reportedMilestone": {
+        "metric": "Gross copies sold on PC/Steam",
+        "value": 905000,
+        "periodEnd": "2026-06-30",
+        "publicationDate": null,
+        "evidence": "Issuer preliminary H1 2026 report 24/2026, read September 2",
+        "source": "https://creepyjar.com/raport-24_2026/",
+        "caveat": "Preliminary gross units, not net after refunds. The issuer also reports a later 930,000 estimate; do not label that H1 sales. Company-wide revenue also includes Green Hell and is not StarRupture revenue."
+      },
+      "marketingMechanism": {
+        "observed": "The current Steam page demonstrates industrial progression and recurring cataclysms; it also offers a Satisfactory cross-game bundle.",
+        "inference": "Production-before/disaster-after is an easily readable trailer contrast with recognizable factory-game adjacency.",
+        "spend": "Undisclosed",
+        "source": "https://store.steampowered.com/app/1631270/StarRupture/"
+      },
+      "threeWeekSpin": {
+        "title": "Last Shift Before the Solar Flare",
+        "scope": "One exposed mining pad, three machines, two resources and one predictable incoming flare. Build a shield or choose which machine to sacrifice.",
+        "technicalCut": "Use a fixed machine graph and scripted hazard pass. No giant conveyor simulation, terrain deformation or open-world streaming.",
+        "clip": "A nearly completed production line meets the flare; the player's last improvised shield either works or visibly fails."
+      },
+      "fullGameRisk": "Factory dependency graphs, pathing, combat, saving and persistent co-op multiply one another. The source game's existing audience and studio history are not part of a new team's starting position.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1631270/StarRupture/",
+        "https://steamdb.info/app/1631270/charts/",
+        "https://creepyjar.com/raport-24_2026/"
+      ]
+    },
+    {
+      "id": "windrose",
+      "title": "Windrose",
+      "appId": 3041230,
+      "developer": "Kraken Express",
+      "publisher": "Kraken Express; Pocketpair Publishing (Japan)",
+      "earlyAccessDate": "2026-04-14",
+      "fullReleaseDate": null,
+      "positioning": "Pirate survival across a shared settlement, ship and shore.",
+      "playerPromise": "Build a crew's home and ship, then sail toward dangerous treasure.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 52661,
+        "peakCCU": 222134,
+        "peakDate": "2026-04-19",
+        "source": "https://steamdb.info/app/3041230/charts/"
+      },
+      "reportedMilestone": {
+        "metric": "Copies sold; PC-store scope not Steam-only",
+        "value": 1000000,
+        "publicationDate": "2026-04-20",
+        "source": "https://prtimes.jp/main/html/rd/p/000000110.000071410.html",
+        "caveat": "The publisher's release lists Steam, Epic Games Store and Stove; the million-copy statement does not break down stores. Do not report it as one million Steam sales."
+      },
+      "marketingMechanism": {
+        "observed": "The same publisher release reports more than 800,000 demo players, a demo peak above 22,000, and first place for wishlist additions during February 2026 Next Fest.",
+        "inference": "A substantial playable demo made the combined pirate fantasy testable before purchase.",
+        "spend": "Undisclosed",
+        "source": "https://prtimes.jp/main/html/rd/p/000000110.000071410.html",
+        "caveat": "Publisher-reported festival outcomes are not an independently controlled attribution study or a forecast for a small demo."
+      },
+      "threeWeekSpin": {
+        "title": "Shipwreck Salvage Crew",
+        "scope": "A grounded ship, one beach and a short tide cycle. Salvage three hull parts and install one upgrade before the tide returns.",
+        "technicalCut": "Keep the ship stationary during play; let the final repaired launch be a short in-engine ending. No boarding combat, free sailing or procedural archipelago.",
+        "clip": "An absurd improvised repair keeps the ship afloat—or the sea removes exactly the part players ignored."
+      },
+      "fullGameRisk": "The live game's Early Access page already promises roughly 30 islands, over 90 authored points of interest and several interacting progression systems. Shipping a single beach does not validate the cost of the broader pirate adventure.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3041230/Windrose/",
+        "https://steamdb.info/app/3041230/charts/",
+        "https://prtimes.jp/main/html/rd/p/000000110.000071410.html"
+      ]
+    },
+    {
+      "id": "solarpunk",
+      "title": "Solarpunk",
+      "appId": 1805110,
+      "developer": "Cyberwave",
+      "publisher": "rokaplay; Metaroot",
+      "earlyAccessDate": null,
+      "fullReleaseDate": "2026-06-08",
+      "positioning": "Sky-island homesteading, renewable power and light automation.",
+      "playerPromise": "Build a pleasant self-sufficient home and use an airship to reach the next island.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 4452,
+        "peakCCU": 10192,
+        "peakDate": "2026-06-08",
+        "source": "https://steamdb.info/app/1805110/charts/"
+      },
+      "reportedMilestone": null,
+      "marketingMechanism": {
+        "observed": "The store uses community demo builds as examples and includes a prominent suitability warning: no story campaign, narrative quest progression, dedicated servers or deep combat.",
+        "inference": "Build showcases communicate the desired outcome; explicit exclusions help prevent a cozy sandbox from being sold as an action survival epic.",
+        "spend": "Undisclosed",
+        "source": "https://store.steampowered.com/app/1805110/Solarpunk/"
+      },
+      "threeWeekSpin": {
+        "title": "Tiny Storm Station",
+        "scope": "One floating garden platform, solar panel, battery, pump and greenhouse. Redirect limited power through a brief storm to save an oversized vegetable.",
+        "technicalCut": "Socket-based placement, one crop and a small deterministic power simulation. An unreachable second island can imply possibility, but the store must clearly describe the actual demo boundary.",
+        "clip": "A bare platform becomes a humming garden, then a silly giant crop pushes the roof off."
+      },
+      "fullGameRisk": "Cozy removes some combat burden, not construction, persistence, onboarding, exploration rewards or networking. A pleasant screenshot alone does not prove repeat play or purchase demand.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1805110/Solarpunk/",
+        "https://steamdb.info/app/1805110/charts/"
+      ]
+    },
+    {
+      "id": "witchspire",
+      "title": "Witchspire",
+      "appId": 2679100,
+      "developer": "Envar Games",
+      "publisher": "Envar Games; Envar Publishing",
+      "earlyAccessDate": "2026-06-10",
+      "fullReleaseDate": null,
+      "positioning": "Survival-crafting tasks transformed by witch magic and familiars.",
+      "playerPromise": "Conjure a home, move freely while building and replace mundane gathering with magical tools.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 2032,
+        "peakCCU": 6629,
+        "peakDate": "2026-06-14",
+        "source": "https://steamdb.info/app/2679100/charts/"
+      },
+      "reportedMilestone": {
+        "metric": "Steam copies sold in the first week",
+        "value": 100000,
+        "publicationDate": "2026-06-18",
+        "source": "https://view.news.eu.nasdaq.com/view?id=b0b32aa6556a4dc2d323e47b7b1d5de00&lang=en&src=micro",
+        "caveat": "Issuer disclosure, not an owner-model estimate. The company describes several years of work and IPO-backed development; this is not evidence of a zero-budget microteam launch."
+      },
+      "marketingMechanism": {
+        "observed": "An issuer release dated December 10, 2025 reported 100,000 Steam wishlists and highlighted its December 4 gameplay trailer. June's issuer disclosure reports the later sales milestone.",
+        "inference": "The magic is most marketable when it visibly changes a familiar verb, such as growing timber or sending pickaxes to gather.",
+        "spend": "No isolated campaign amount verified",
+        "source": "https://storage.mfn.se/29d8f069-b694-4c6a-812a-54fa97f7e539/envar-games-internally-developed-game-witchspire-surpasses-100-000-wishlists-on-steam.pdf",
+        "caveat": "Wishlists and sales are separate dated stocks; do not calculate a conversion rate from these two announcements."
+      },
+      "threeWeekSpin": {
+        "title": "Cottage on Probation",
+        "scope": "Restore one cursed cottage with three spells: grow wood, move a beam and animate one cleaning tool. Each shortcut produces a funny side effect.",
+        "technicalCut": "One fixed plot and one familiar with a short state machine. No creature roster, breeding, RPG skill tree or general-purpose physics construction.",
+        "clip": "A helpful broom tidies the room by throwing the player's furniture out of the window."
+      },
+      "fullGameRisk": "Creature collection, progression, combat and construction create separate content demands. The developer expects at least one year in Early Access; preserve the magical-action hook without promising that breadth.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2679100/Witchspire/",
+        "https://steamdb.info/app/2679100/charts/",
+        "https://view.news.eu.nasdaq.com/view?id=b0b32aa6556a4dc2d323e47b7b1d5de00&lang=en&src=micro",
+        "https://storage.mfn.se/29d8f069-b694-4c6a-812a-54fa97f7e539/envar-games-internally-developed-game-witchspire-surpasses-100-000-wishlists-on-steam.pdf"
+      ]
+    },
+    {
+      "id": "planet-crafter",
+      "title": "The Planet Crafter",
+      "appId": 1284190,
+      "developer": "Miju Games",
+      "publisher": "Miju Games",
+      "earlyAccessDate": "2022-03-24",
+      "fullReleaseDate": "2024-04-10",
+      "positioning": "Environmental survival with visible planetary transformation.",
+      "playerPromise": "Every useful machine helps turn an inhospitable landscape into a living one.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 73417,
+        "peakCCU": 28416,
+        "peakDate": "2024-04-21",
+        "source": "https://steamdb.info/app/1284190/charts/"
+      },
+      "reportedMilestone": {
+        "metric": "Steam unit milestone reported in a founder data interview",
+        "value": 1000000,
+        "publicationDate": "2024-06-24",
+        "source": "https://newsletter.gamediscover.co/p/how-the-planet-crafter-hit-1-million",
+        "caveat": "Historical cumulative milestone, not 2026 sales."
+      },
+      "marketingMechanism": {
+        "observed": "The founder describes updates, discounts, Steam placement, paid streamers and unpaid creator coverage around 1.0.",
+        "inference": "The transformation supplies a before/after image; substantive updates give players reasons to return.",
+        "spend": "€200,000 paid-streamer budget for 1.0; total spend unknown",
+        "source": "https://newsletter.gamediscover.co/p/how-the-planet-crafter-hit-1-million"
+      },
+      "threeWeekSpin": {
+        "title": "Make This Crater Breathe",
+        "scope": "A single small crater with three resource patches, two machines and one visible transition from dust to moss to a tiny pond.",
+        "technicalCut": "Use authored stage swaps, material blending and a controlled water-plane reveal, not general terrain deformation or ecological simulation. Start solo.",
+        "clip": "The same camera angle shows a dead crater becoming an unexpectedly lush miniature oasis."
+      },
+      "fullGameRisk": "A compelling transformation needs exploration, pacing and resource economics behind it. The two-person origin should not erase subsequent staffing, more than two years in Early Access, or paid marketing.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1284190/The_Planet_Crafter/",
+        "https://steamdb.info/app/1284190/charts/",
+        "https://newsletter.gamediscover.co/p/how-the-planet-crafter-hit-1-million",
+        "https://mijugames.com/pages/planetcrafter/presskit.html"
+      ]
+    },
+    {
+      "id": "abiotic-factor",
+      "title": "Abiotic Factor",
+      "appId": 427410,
+      "developer": "Deep Field Games",
+      "publisher": "Playstack",
+      "earlyAccessDate": "2024-05-02",
+      "fullReleaseDate": "2025-07-22",
+      "positioning": "Scientists improvising a home inside a hostile research facility.",
+      "playerPromise": "Turn mundane workplace objects into survival equipment and make increasingly strange supply runs with friends.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 58740,
+        "peakCCU": 29278,
+        "peakDate": "2025-07-27",
+        "source": "https://steamdb.info/app/427410/charts/"
+      },
+      "reportedMilestone": {
+        "metric": "Steam copies sold, publisher statement in direct interview",
+        "value": 1400000,
+        "qualifier": "More than",
+        "publicationDate": "2025-09-02",
+        "source": "https://newsletter.gamediscover.co/p/how-abiotic-factor-rode-a-hot-steam",
+        "caveat": "Do not replace this dated source with unsourced 1.5-million claims. Console subscription players and estimated console audience in the article are separate, not Steam sales."
+      },
+      "marketingMechanism": {
+        "observed": "Developer/publisher interview describes substantial chapter-like updates, localized Chinese assets and regional promotion, plus cross-game bundles. One bundle reportedly moved over 80,000 units with an additional 10% discount.",
+        "inference": "A chapter ending creates a clear next-update invitation; the workplace premise provides comic crafting props without requiring a joke in every line.",
+        "spend": "Undisclosed",
+        "source": "https://newsletter.gamediscover.co/p/how-abiotic-factor-rode-a-hot-steam",
+        "caveat": "Bundle units are not incremental sales proven by a control group. The article's crossplay/word-of-mouth explanation is participant interpretation, not isolated attribution."
+      },
+      "threeWeekSpin": {
+        "title": "Facilities Department: Still Open",
+        "scope": "One safe break room and three dangerous office rooms. Rewire a kettle and scavenged desk parts to keep the room powered through one containment failure.",
+        "technicalCut": "Socket-built gadgets, one enemy, three room layouts and one ten-minute run. No giant persistent facility or dozens of crafting combinations.",
+        "clip": "A perfectly ordinary office appliance becomes an improbable rescue device during a panicked supply run."
+      },
+      "fullGameRisk": "The finished game's authored interconnected world, narrative discovery and broad crafting catalog are major costs. An office skin without useful systemic interactions will not reproduce its appeal.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/427410/Abiotic_Factor/",
+        "https://steamdb.info/app/427410/charts/",
+        "https://newsletter.gamediscover.co/p/how-abiotic-factor-rode-a-hot-steam"
+      ]
+    },
+    {
+      "id": "raft",
+      "title": "Raft",
+      "appId": 648800,
+      "developer": "Redbeet Interactive",
+      "publisher": "Axolot Games",
+      "earlyAccessDate": "2018-05-23",
+      "fullReleaseDate": "2022-06-20",
+      "positioning": "A tiny floating home with resources coming toward it.",
+      "playerPromise": "Turn a fragile platform into a home while the sea keeps demanding decisions.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 378032,
+        "peakCCU": 101096,
+        "peakDate": "2022-06-26",
+        "source": "https://steamdb.info/app/648800/charts/"
+      },
+      "reportedMilestone": null,
+      "marketingMechanism": {
+        "observed": "An April 27, 2017 developer interview describes a freely accessible/pay-what-you-want student prototype, frequent community feedback and deliberate restrictions on exploration and resource access.",
+        "inference": "The hook and tiny raft made the core constraint understandable before a huge world existed. This is the most useful prototype-shape precedent in the set.",
+        "spend": "No marketing total disclosed; prototype development benefited from student loans",
+        "source": "https://itch.io/blog/179/the-raft-developers-open-up-about-successes-and-school"
+      },
+      "threeWeekSpin": {
+        "title": "Rooftop Drift",
+        "scope": "A floating piece of suburban roof in a flood. Hook drifting furniture, choose whether to use it as shelter or a tool, and prepare for one wave.",
+        "technicalCut": "Keep the platform near a fixed origin and move scenery/resources around it. Use snapping modules and one threat. A real networked moving rigid-body world is out of scope.",
+        "clip": "The player's proudly installed sofa becomes either a life-saving float or the first object washed away."
+      },
+      "fullGameRisk": "Raft's four-year Early Access history separates prototype clarity from finished-product depth. Its mature survival, navigation and authored destinations are not a three-week benchmark.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/648800/Raft/",
+        "https://steamdb.info/app/648800/charts/",
+        "https://itch.io/blog/179/the-raft-developers-open-up-about-successes-and-school",
+        "https://raft.itch.io/raft"
+      ]
+    },
+    {
+      "id": "valheim",
+      "title": "Valheim",
+      "appId": 892970,
+      "developer": "Iron Gate AB",
+      "publisher": "Coffee Stain Publishing",
+      "earlyAccessDate": "2021-02-02",
+      "fullReleaseDate": null,
+      "positioning": "A shared Viking settlement that supports biome and boss expeditions.",
+      "playerPromise": "Our modest camp becomes a defended home, then a launch point for the next dangerous journey.",
+      "observedMetrics": {
+        "asOf": "2026-09-02",
+        "steamDbReviews": 541408,
+        "peakCCU": 502387,
+        "peakDate": "2021-02-21",
+        "source": "https://steamdb.info/app/892970/charts/"
+      },
+      "reportedMilestone": null,
+      "marketingMechanism": {
+        "observed": "The Steam page presents a recognizable Viking fantasy, longhouse construction, boss-driven progression and player-hosted co-op; its current Early Access description lists seven completed biomes and hundreds of items.",
+        "inference": "Settlement transformations and expedition mishaps offer shareable material, but the public store page cannot establish which acquisition channels caused its sales.",
+        "spend": "Undisclosed in the sources used here",
+        "source": "https://store.steampowered.com/app/892970/Valheim/"
+      },
+      "threeWeekSpin": {
+        "title": "One Night at the Longhouse",
+        "scope": "One clearing, six snapping building pieces, a food preparation station and a single approaching threat. Make shelter decisions that visibly affect the night.",
+        "technicalCut": "Avoid procedural biomes and simulated structural collapse. Use a small support graph and authored damage states; keep combat to one attack and one readable enemy behavior.",
+        "clip": "An overambitious extension either shelters the group or exposes a spectacularly obvious gap during the storm."
+      },
+      "fullGameRisk": "The February 2021 peak is historical, not 2026 demand. Valheim is an extreme winner whose progression depth, multiplayer persistence and years of content make it a poor effort or revenue baseline.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/892970/Valheim/",
+        "https://steamdb.info/app/892970/charts/"
+      ]
+    }
+  ],
+  "downsideControls": [
+    {
+      "title": "Gombo",
+      "appId": 2649860,
+      "displayedReleaseDate": "2026-06-02",
+      "displayedScoredReviews": 40,
+      "asOf": "2026-09-02",
+      "source": "https://store.steampowered.com/app/2649860/",
+      "lesson": "A June app with OWSC among its returned tags did not automatically reach the review threshold. Forty reviews are not enough to infer net sales, profitability or categorical failure."
+    },
+    {
+      "title": "Skillwood",
+      "appId": 2776630,
+      "displayedReleaseDate": "2026-06-21",
+      "displayedScoredReviews": 254,
+      "asOf": "2026-09-02",
+      "source": "https://store.steampowered.com/app/2776630/",
+      "lesson": "Cozy presentation plus an OWSC tag is not sufficient evidence of breakout demand. This is an observed lower-review comparator, not a verdict on the developer's goals or economics."
+    }
+  ],
+  "recommendedDemoDirections": [
+    {
+      "rank": 1,
+      "name": "Tiny Storm Station",
+      "comparables": [
+        "Solarpunk",
+        "The Planet Crafter",
+        "Raft"
+      ],
+      "whyThisTeam": "One compact environment and visible environmental feedback concentrate the artist's work. Solo-first avoids immediate network/save-state complexity.",
+      "demandHypothesis": "Cozy independence plus a clear environmental crisis could preserve the survival promise without combat breadth.",
+      "notProven": "The specific setting, comic crop payoff and short-session format have not been market-validated.",
+      "largestRisk": "If power allocation is trivial, this becomes a pretty scene instead of a game."
+    },
+    {
+      "rank": 2,
+      "name": "Facilities Department: Still Open",
+      "comparables": [
+        "Abiotic Factor",
+        "StarRupture",
+        "Witchspire"
+      ],
+      "whyThisTeam": "Reusable office props support recognizable functions and comedy; a few surprising gadgets can be the entire trailer.",
+      "demandHypothesis": "Players may like domestic improvisation under survival pressure more than generic chopping and mining.",
+      "notProven": "The workplace-survival audience is already served; a new gadget interaction must be visibly different.",
+      "largestRisk": "Reliable interactions and enemy timing can consume the entire engineering budget."
+    },
+    {
+      "rank": 3,
+      "name": "Rooftop Drift",
+      "comparables": [
+        "Raft",
+        "Windrose",
+        "Valheim"
+      ],
+      "whyThisTeam": "A single persistent platform makes progression legible and avoids producing a large traversable landmass.",
+      "demandHypothesis": "Salvaging familiar household objects creates a different visual vocabulary from wooden raft upgrades.",
+      "notProven": "This is a crowded mobile-base promise; flood dressing alone is not sufficient differentiation.",
+      "largestRisk": "Moving-platform physics, buoyancy and networking can overwhelm a short sprint. Use the fixed-origin cut."
+    },
+    {
+      "rank": 4,
+      "name": "Make This Crater Breathe",
+      "comparables": [
+        "The Planet Crafter",
+        "Solarpunk",
+        "Witchspire"
+      ],
+      "whyThisTeam": "One authored location with three transformation states gives a single artist a tightly bounded visual target. Two machines can demonstrate the complete resource-to-world-change loop.",
+      "demandHypothesis": "A satisfying ecological transformation could make progression understandable without combat, dialogue or a large tech tree.",
+      "notProven": "Before/after visuals establish clarity, not replayability or purchase intent. The specific crater setting is an untested concept.",
+      "largestRisk": "If transformation is merely a timer, players may see a short animation rather than an engaging survival-crafting game. Require an interesting resource-allocation choice."
+    }
+  ],
+  "threeWeekExecution": {
+    "capacityAssumption": "Assuming five workdays per week: 75 total person-days, but only 45 are the two developers plus one 3D artist. The PM and marketing manager contribute scope, testing, research, packaging and outreach; do not count them as extra implementation capacity.",
+    "deliverable": "One honest 8–12-minute playable slice and a 30–45-second gameplay video. The player gathers, builds one meaningful upgrade, handles one threat, sees a changed home/world and reaches a clear ending.",
+    "week1": "Choose one promise; greybox the full loop; define a five-resource/five-recipe ceiling; make the signature interaction functional by day three; test an unedited clip with target players before expanding content.",
+    "week2": "Replace only the camera-critical assets; add sound and feedback; complete the threat and ending; test save/restart; run cold playtests. If co-op is essential, it must already work end-to-end with object ownership and reconnect behavior—otherwise commit to solo.",
+    "week3": "Fix clarity and reliability; cut unused systems; capture real play; prepare the Steam page and press kit around demonstrated mechanics. Marketing work can proceed, but actual public release still depends on Steam onboarding, review and release timing.",
+    "roles": {
+      "developer1": "Core interactions, resource state and build/save graph",
+      "developer2": "Threat, progression, UI and performance; networking only if a proven foundation exists",
+      "artist": "One location, silhouette-defining props, upgrade states and capsule-ready composition",
+      "productManager": "Scope lock, tester recruitment, observation notes, QA and cut decisions",
+      "marketingManager": "Comparable analysis, three hook edits, creator list, attribution links and page copy"
+    },
+    "hardCuts": [
+      "No procedural continent or infinite world.",
+      "No PvP, public dedicated servers or live-service promise.",
+      "No freeform vehicle construction or realistic buoyancy.",
+      "No tech tree larger than the slice can demonstrate.",
+      "No creature collection or enemy roster.",
+      "No trailer implying unimplemented biomes, combat or co-op."
+    ],
+    "proposedValidationGates": [
+      "Understanding: show an unedited ten-second clip to ten target players; aim for at least seven to explain the action and goal. This is an internal decision rule, not a published industry benchmark.",
+      "Progression: observe whether cold testers choose the next improvement after the first payoff without coaching. Record behavior rather than asking only whether the game looks fun.",
+      "Distinctiveness: ask what this adds beyond its nearest reference. If most answers are only a different skin, replace the signature interaction before adding content.",
+      "Acquisition: keep social views, qualified Steam visits, wishlist changes and demo behavior separate. Public competitor data cannot replace the team's own attribution.",
+      "Scope: if the complete loop is not playable by the end of week one, remove a subsystem; do not expand the map."
+    ]
+  },
+  "editorialWarnings": [
+    "Replace the absolute label 'scope impossible' with 'Full-game scope: very high; constrained three-week slice: possible'. Distinguish prototype feasibility from a polished commercial release.",
+    "The 2025 20.83% figure is a mixed-method historical cohort ratio, not a validated probability for the proposed team or ideas.",
+    "Do not combine the Q1 four-hit statistic and June two-of-five subset into a 2026 hit rate.",
+    "Do not silently compare SteamDB aggregate reviews with the existing June English/scored review counts.",
+    "Windrose's million-copy disclosure is not Steam-only. StarRupture's H1 number is preliminary gross units. Planet Crafter's campaign included paid creators. Abiotic Factor's console subscription audience is separate.",
+    "Use the issuer/Nasdaq Witchspire disclosure dated June 18, not fan-guide pages claiming a June 24 announcement. Several look-alike Witchspire and Solarpunk guide domains are not verified official sources.",
+    "No case here proves that spending was zero or that organic discovery caused the reported commercial result."
+  ],
+  "furtherReading": [
+    {
+      "title": "What the hell happened in 2025?",
+      "url": "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+      "why": "Read the filtering and denominator notes before using the attractive OWSC ratio."
+    },
+    {
+      "title": "How The Planet Crafter hit 1 million sold, post-1.0!",
+      "url": "https://newsletter.gamediscover.co/p/how-the-planet-crafter-hit-1-million",
+      "why": "Small-team scope, founder-provided launch data, Steam placement, paid creators and unpaid coverage in one direct interview."
+    },
+    {
+      "title": "How Abiotic Factor rode a hot Steam 1.0 release to 1.4m sold",
+      "url": "https://newsletter.gamediscover.co/p/how-abiotic-factor-rode-a-hot-steam",
+      "why": "Updates, bundles, localization and the difference between Steam purchases and subscription players."
+    },
+    {
+      "title": "The Raft Developers Open up About Successes and School",
+      "url": "https://itch.io/blog/179/the-raft-developers-open-up-about-successes-and-school",
+      "why": "A primary developer interview showing why limiting space and changing resource acquisition can make a prototype distinctive."
+    }
+  ]
+}

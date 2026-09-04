@@ -1,0 +1,1480 @@
+{
+  "id": "city-escape-demo",
+  "title": "City Escape — First Outbreak",
+  "subtitle": "Playable demo GDD · home breach to first camp",
+  "version": "0.2",
+  "updatedAt": "2026-09-03",
+  "status": "Production proposal built around the team's reported existing systems. Working scenario title, not a cleared product name. Durations and encounter counts are initial tuning targets, not measured playtest results.",
+  "pitch": "The first shot saves your life. It also brings the street to your door. Survive the city, drive out, and defend the first place you build.",
+  "decision": "A continuous first-person survival introduction: home breach, first kill, two street herds, vehicle escape, resource-built camp, horde and boss. This replaces the earlier one-block shortcut concept.",
+  "premise": "Movement, shooting and enemy AI already exist, as reported by the team. The sprint focuses on integrating, staging, balancing and communicating a complete playable journey—not rebuilding those systems.",
+  "sourceUrls": [
+    "https://store.steampowered.com/app/108600/Project_Zomboid/",
+    "https://store.steampowered.com/app/1857950/VEIN/",
+    "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+    "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+    "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+    "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+    "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+    "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+    "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+    "https://gameifyouare.com/case-study-design-and-conjure/",
+    "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+    "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+    "https://partner.steamgames.com/doc/store/application/demos?language=english",
+    "https://partner.steamgames.com/doc/store/Review_Process",
+    "https://partner.steamgames.com/doc/marketing/utm_analytics",
+    "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+    "https://partner.steamgames.com/doc/store/review_process",
+    "https://partner.steamgames.com/doc/store/application/demos",
+    "https://www.sidefx.com/docs/houdini/unreal/install_houdiniengine.html",
+    "https://docs.gaea.app/guides/use-in/bridges/gaea2unreal/index.html",
+    "https://docs.gaea.app/guides/use-in/engines/unreal.html",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine",
+    "https://dev.epicgames.com/documentation/unreal-engine/landscape-technical-guide-in-unreal-engine?lang=en-US",
+    "https://www.sidefx.com/products/houdini-engine/plug-ins/unreal-plug-in/",
+    "https://www.sidefx.com/docs/houdini/unreal/packaging.html",
+    "https://www.sidefx.com/docs/houdini/unreal/meshes.html",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-collisions-with-static-meshes-in-unreal-engine",
+    "https://dev.epicgames.com/documentation/unreal-engine/navigation-system-in-unreal-engine?lang=en-US",
+    "https://dev.epicgames.com/documentation/metahuman/assembly?lang=en-US",
+    "https://dev.epicgames.com/documentation/en-us/metahuman/lodsync-component-for-unreal-engine",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine",
+    "https://dev.epicgames.com/documentation/unreal-engine/world-partitioned-navigation-mesh?lang=en-US",
+    "https://dev.epicgames.com/documentation/unreal-engine/how-to-set-up-vehicles-in-unreal-engine",
+    "https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine",
+    "https://dev.epicgames.com/documentation/unreal-engine/API/Runtime/Engine/AController",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/introduction-to-performance-profiling-and-configuration-in-unreal-engine",
+    "https://steamdb.info/app/108600/charts/",
+    "https://steamdb.info/app/1857950/charts/",
+    "https://steamdb.info/app/251570/charts/",
+    "https://store.steampowered.com/app/1012790/Into_the_Radius_VR/",
+    "https://www.cm-immersive.com/",
+    "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+    "https://store.steampowered.com/app/3629430/DREADMOOR/",
+    "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093",
+    "https://www.cbgamedev.com/blog/2026/3/10/freerunners-flow-update",
+    "https://store.steampowered.com/app/1430330/Freerunners/",
+    "https://steamcommunity.com/games/3006280/announcements/detail/607550464526909455",
+    "https://store.steampowered.com/app/3006280/Sheepherds/",
+    "https://store.steampowered.com/app/1062810/Inkbound/"
+  ],
+  "target": "Proposed active-play pacing: 18–23 minutes for a first successful run; 14–18 for a practiced run. The beat timeline excludes paused menus and retries. Record active-play, menu, retry and total session time separately; preparation may take longer.",
+  "audience": "Solo PC players who want vulnerable first-person zombie survival, a recognizable home, a believable escape and the beginnings of a refuge. Record solo/co-op preference when recruiting; do not sell this slice as multiplayer.",
+  "playerPromise": "An outbreak becomes your problem: what you shoot, carry and build affects the next encounter. The demo proves the escape-to-camp loop, not the size of a future open world.",
+  "nonGoals": "No reconstruction of the already-working controller, weapon or AI foundations. No multiplayer, new engine, complete simulated city, quest network, arbitrary looting of every building, extensive survival meters or multi-phase raid boss in this sprint.",
+  "changeNote": "Supersedes the one-block, no-gun shortcut concept. Guns, two herd defeats, driving, resource-built camp and a killed boss are now committed scenario beats. The prior document is retained only as a local version history; old editorial essays are dated context, not this scope contract.",
+  "pillars": [
+    {
+      "name": "The first shot has a consequence",
+      "rule": "The home kill is followed by answering cries and approaching infected. Script this first teaching moment; use the same implemented noise rule in later combat.",
+      "proof": "A player connects the shot with the street reaction without a narrator explaining the whole mechanic."
+    },
+    {
+      "name": "Combat is part of survival",
+      "rule": "Each herd asks a different positioning or resource question. Fighting through the city changes what the player can spend at camp.",
+      "proof": "A useful carried item or ammunition choice visibly affects the finale; this is more than disconnected shooting arenas."
+    },
+    {
+      "name": "The city feels larger than the route",
+      "rule": "Use Gaea terrain, modular city assets and generated interiors to create context around a carefully tested playable escape corridor.",
+      "proof": "Players understand where they came from and where the exit lies. Visual density never hides the critical path."
+    },
+    {
+      "name": "The first camp earns its screen time",
+      "rule": "Give the player a quiet building interval and let one constructed defense change enemy or boss behavior.",
+      "proof": "The defense functions during the final fight, and the boss dies before the demo ends."
+    }
+  ],
+  "assumptions": [
+    {
+      "system": "Unreal project, player movement and shooting",
+      "status": "Team-reported existing foundation",
+      "work": "Reuse current controller, weapons, damage and input. Integrate scenario objectives and UI without swapping the foundation.",
+      "proof": "Play in a packaged build using the actual target assets, not only isolated test maps.",
+      "owner": "Developer A"
+    },
+    {
+      "system": "Enemy AI",
+      "status": "Team-reported existing foundation",
+      "work": "Reuse perception, chase and attack; verify hearing events, target handoff, door passage and group navigation.",
+      "proof": "Existing AI works through the home breach and street route at the proposed simultaneous count.",
+      "owner": "Developer B"
+    },
+    {
+      "system": "Inventory / pickup / resource accounting",
+      "status": "Use existing implementation if present; its readiness was not specifically demonstrated",
+      "work": "Audit pickup, stacking, ammo, consumables and construction costs. Adapt UI; do not install a second inventory framework by default.",
+      "proof": "One picked-up item survives checkpoint, vehicle entry and crafting exactly once.",
+      "owner": "Developer A"
+    },
+    {
+      "system": "Vehicle and possession",
+      "status": "Confirm day one",
+      "work": "Use one existing or licensed ready-made drivable vehicle. Connect enter/exit, camera, inputs, carried items and checkpoint restoration.",
+      "proof": "Walk → enter → drive → exit → shoot works repeatedly without duplicated input or lost inventory.",
+      "owner": "Developer A"
+    },
+    {
+      "system": "Crafting / camp placement",
+      "status": "Confirm day one",
+      "work": "Reuse available placement and resource code; constrain this demo to validated camp sockets if free placement is not already dependable.",
+      "proof": "Preview, confirm, consume once, checkpoint and reload one camp object.",
+      "owner": "Developer A"
+    },
+    {
+      "system": "Art content",
+      "status": "Planned asset-led pipeline; specific packs, versions and rights not supplied",
+      "work": "Gaea terrain; kitbash/Unreal city assets; Houdini interiors; MetaHuman or other ready characters; store props and inventory items.",
+      "proof": "One representative house, enemy, vehicle and prop set passes collision, scale, material, licence and packaged-build checks.",
+      "owner": "3D artist + PM"
+    }
+  ],
+  "scope": [
+    {
+      "priority": "Committed",
+      "item": "Home opening",
+      "boundary": "One home interior, visible gun, one door breach, player yell response, one first zombie kill and a go-bag. Player keeps camera and aiming control."
+    },
+    {
+      "priority": "Committed",
+      "item": "Two separate street herds",
+      "boundary": "First group teaches combat space; second guards the vehicle approach. Both finite groups are defeated. No endless spawn loop or hidden last enemy."
+    },
+    {
+      "priority": "Committed",
+      "item": "Vehicle escape",
+      "boundary": "One drivable vehicle and one authored exit road. No fuel economy, repair tree, traffic AI or garage customization unless already stable and genuinely needed."
+    },
+    {
+      "priority": "Committed",
+      "item": "First camp",
+      "boundary": "Critical-path supplies plus local gathering; construct a campfire and a defensive barricade. A bedroll/ownership marker completes the refuge visually without introducing a sleep simulation."
+    },
+    {
+      "priority": "Committed",
+      "item": "Horde and boss finale",
+      "boundary": "A finite final group and one readable brute variant. The barricade helps, the player kills the boss, then a short completion card ends the demo."
+    },
+    {
+      "priority": "Visual scope",
+      "item": "City district and rural edge",
+      "boundary": "A convincing surrounding city made from asset instances. Three tested interior spaces: starting home, small supply shop and garage/vehicle yard. Other buildings are explicit shells or inaccessible set dressing for this slice."
+    },
+    {
+      "priority": "Reuse if proven",
+      "item": "Existing melee, stamina and free construction",
+      "boundary": "Keep them only if they already work with this project and improve the scenario. No new parallel combat or survival subsystem to satisfy a genre checklist."
+    },
+    {
+      "priority": "Outside this sprint",
+      "item": "Full-world simulation and additional content",
+      "boundary": "No every-house interiors, roaming NPC society, broad crafting tree, multiplayer, multiple cars, additional bosses or new character-generation system. These require estimates after the demo."
+    }
+  ],
+  "sequence": [
+    {
+      "id": "home",
+      "time": "00:00–01:30",
+      "beat": "An ordinary home stops feeling safe",
+      "objective": "Find out what is happening. Get your gun.",
+      "actions": "Wake or regain control in the living space. Hear voices outside, walk to a familiar gun location and pick it up. Keep the path readable without collectible errands.",
+      "staging": "Use a view to the street, distant shouting, a dropped household object and one practical light. Ambient voices do not imply interactive NPCs.",
+      "trigger": "Start sequence → player reaches gun cue → weapon pickup confirms ownership. Door pressure waits until pickup or provides a clear re-cue; it never kills an unarmed player during onboarding.",
+      "ui": "One objective; sound subtitles with source/direction; contextual pickup prompt. No ammo counter until the weapon is equipped.",
+      "audio": "Separate frightened human voices from later infected calls. Captions convey important off-screen sound information; not color alone.",
+      "failSafe": "Gun has a fixed, reachable fallback placement. Reloading or interacting twice cannot duplicate it. Player cannot leave this intro space before receiving the intended equipment.",
+      "checkpoint": "C0: before the door confrontation, with the weapon available and the encounter untriggered."
+    },
+    {
+      "id": "breach",
+      "time": "01:30–03:00",
+      "beat": "Knock, yell, breach, first kill",
+      "objective": "Stay back from the door. Survive the intruder.",
+      "actions": "Respond through a prompted yell, then prepare. Door damage escalates; the infected breaks in. The player aims and shoots the first zombie.",
+      "staging": "Yell uses a recorded line plus subtitle and an input prompt—not microphone recognition. If the player does not press it, a clearly timed character line advances after the preparation window. Enemy breach leaves a walkable opening.",
+      "trigger": "First door hit → 5–8-second proposed preparation window → breach → confirmed enemy death. First fired shot starts the street-response cue once; objective transition waits for the actual kill.",
+      "ui": "Health, current magazine/reserve and reload prompt. Keep subtitles away from the crosshair. Avoid a tutorial popup covering the attacker.",
+      "audio": "Knock becomes impacts; the first gunshot produces immediate echo, a short quiet beat, distant answering cries and then approaching footsteps.",
+      "failSafe": "Initial enemy damage and attack wind-up tolerate a learning mistake. Corpse and door debris never block movement; no scripted auto-kill.",
+      "checkpoint": "C0 reload restores enemy, door, ammunition, cues and objective, not only player position."
+    },
+    {
+      "id": "bag",
+      "time": "03:00–04:30",
+      "beat": "Take what you can carry",
+      "objective": "Take the go-bag. Get to the vehicle route.",
+      "actions": "Pick up the bag, inspect ammunition, bandage and materials, then leave. Show why the bag matters before demanding fast inventory management.",
+      "staging": "Provide a sheltered 30–45-second learning interval after the kill. Threat is heard or seen outside, but no enemy attacks through a full-screen tutorial.",
+      "trigger": "Bag pickup transaction succeeds → inventory tutorial acknowledged or closed → escape route activates. Reopening the inventory does not replay the story.",
+      "ui": "Inventory item name, quantity and action; equip/use/drop where valid. Key scenario items cannot be accidentally destroyed. Escape objective persists after closing.",
+      "audio": "Approaching sounds maintain pressure, then fade to a readable exterior threat as control returns.",
+      "failSafe": "The bag cannot be skipped, dropped behind geometry or repeatedly awarded. Required camp kit is flagged before departure; no unexplained item must be remembered later.",
+      "checkpoint": "C1: leaving home with the intended inventory snapshot."
+    },
+    {
+      "id": "herd-one",
+      "time": "04:30–07:00",
+      "beat": "First herd: make room to move",
+      "objective": "Clear the blocked street.",
+      "actions": "Defeat a finite six-infected group using space, cover and existing weapon mechanics. Let the player reposition rather than hold one doorway.",
+      "staging": "Introduce the group in two visible approach lanes. Reuse one base infected with appearance variants. Corpses and prop clutter must not create untested pathing.",
+      "trigger": "Cross street threshold → activate this roster → all six confirmed defeated → street-clear objective. Group is finite; noise can change approach timing, not create unbounded extra kills.",
+      "ui": "Ammo, health, healing quick slot and one destination cue. A zombie-count checklist is optional accessibility feedback, not the main presentation.",
+      "audio": "Calls answer loud actions. Enemy footsteps and attack tells take priority over music.",
+      "failSafe": "A straggler detector checks alive, reachable and engaged state. Reposition the same stuck enemy ID at a tested off-camera approach while preserving its current HP; do not create a fresh full-health replacement or silently count it as killed.",
+      "checkpoint": "C2: herd one cleared; pre-fight cache uncollected. Preserve health, resources and the dead first-herd roster. C3 is created only after collecting that next cache."
+    },
+    {
+      "id": "herd-two",
+      "time": "07:00–10:30",
+      "beat": "Second herd: reach the vehicle",
+      "objective": "Clear the garage approach. Take the supplies and enter the car.",
+      "actions": "Collect the clearly marked 40-round pre-fight cache outside the encounter trigger, then defeat ten infected around the shop/garage approach. After the ten kills, take the separate 40-round vehicle-box supply and enter the car. The two caches are distinct.",
+      "staging": "The vehicle is visible before the fight, making the goal concrete. Cover, retreat space and cache are legible; no new weapon tutorial is required.",
+      "trigger": "Second encounter entry → activate finite roster → all ten defeated → enable calm vehicle-entry tutorial. A contextual blocked-entry message explains any temporary restriction.",
+      "ui": "Quick heal, reload, loot capacity feedback and vehicle-entry prompt. Never simultaneously demand a crafting tutorial.",
+      "audio": "Vehicle alarm or engine noise can frame the escape, but does not secretly add an infinite third street herd.",
+      "failSafe": "Cache remains reachable and supply amounts are checkpointed. Car, doors and enemy capsules must not overlap the entry socket.",
+      "checkpoint": "C3: pre-fight cache collected, immediately before herd two, with a viable loadout. C4: post-fight vehicle box collected, player seated safely, route ready. C2 remains the earlier herd-one-clear state with the pre-fight cache uncollected."
+    },
+    {
+      "id": "drive",
+      "time": "10:30–12:30",
+      "beat": "Leave the city behind",
+      "objective": "Drive to the marked rural turnout.",
+      "actions": "Drive one short authored road out of the district, navigate a single readable obstruction and park near the camp area. Allow genuine steering and acceleration.",
+      "staging": "Skyline recedes into Gaea terrain. Use a bend or underpass as the streaming seam if needed. A disclosed brief transition is preferable to a broken claim of seamless travel.",
+      "trigger": "Possession succeeds → checkpointed route → arrival volume → safe dismount point and camp objective. Do not spawn the finale while driving controls remain active.",
+      "ui": "Speed only if needed, steer/throttle/brake prompts, route marker and hold-to-reset vehicle. Hide shooting HUD while driving; show carried supplies again after exit.",
+      "audio": "Engine and environmental transition provide a deliberate drop in intensity; do not fill the entire drive with another combat wave.",
+      "failSafe": "Reset overturned/stuck vehicle to the latest safe road anchor with inventory intact. Exit trace prevents dismounting inside a wall or under terrain.",
+      "checkpoint": "C4 restores vehicle position and possession. C5: parked, safely outside the vehicle with carried items."
+    },
+    {
+      "id": "camp",
+      "time": "12:30–16:30",
+      "beat": "Build the first place that is yours",
+      "objective": "Gather missing materials. Place the campfire and barricade.",
+      "actions": "Use carried supplies plus nearby branches/scrap. Build at two readable sockets, then use a brief quiet moment to heal, reload and inspect the completed camp.",
+      "staging": "Camp has a clear front, flank and retreat lane. Placement previews reveal which lane the barricade protects. A bedroll marks ownership without adding sleep mechanics.",
+      "trigger": "Gather transactions → confirm campfire → confirm barricade → preparation objective → player starts defense when ready. After the explanation, a countdown may follow; never begin while a required menu is open.",
+      "ui": "Recipe costs and owned amounts on the preview; green/invalid-state shapes plus text; confirm/cancel; remaining task list. Full-screen inventory pauses this solo slice.",
+      "audio": "Gathering and placement feedback; a quiet 30–60-second minimum refuge window. Approaching calls forecast the final attack instead of surprising the player during a menu.",
+      "failSafe": "All mandatory ingredients are guaranteed within the camp bounds. Invalid placement consumes nothing. Destroyed or missing essential pieces can be reset via checkpoint.",
+      "checkpoint": "C6: completed camp, outside menus, before triggering defense; stores construction and resource state."
+    },
+    {
+      "id": "finale",
+      "time": "16:30–22:30",
+      "beat": "Defend the camp, then kill the brute",
+      "objective": "Hold your camp. Kill the brute.",
+      "actions": "Defeat eighteen regular infected delivered in controlled batches, then one boss-like brute. Use the constructed defense to manage its telegraphed charge and shoot the exposed recovery window. Kill it, recover control and reach the completion card.",
+      "staging": "All eighteen regular infected are confirmed dead before the boss appears alone. No residual group, additional spawn or surprise second phase. Preserve a retreat lane if the barricade is damaged.",
+      "trigger": "Defense start → finite horde roster defeated → boss reveal and readable tell → player-inflicted boss death confirmed → 5–8-second aftermath → demo-complete card.",
+      "ui": "Boss health appears only when identified; tell text/icon if enabled; ammunition and healing remain unobscured. Final card offers wishlist, replay and quit. No fake live-player or countdown claims.",
+      "audio": "Boss call is distinct from normal infected. Telegraph has an audible and visible warning; death music resolves after confirmed death, not during a lethal animation.",
+      "failSafe": "Boss takes damage during every recovery, with no mandatory consumable. Fixed cover preserves a fallback after barricade damage. Reposition a stuck/out-of-bounds boss using the same ID and current HP. Checkpoint reload restores the matching player and enemy snapshots together.",
+      "checkpoint": "C6: completed camp and viable defense loadout before the whole horde. Optional C7: normal horde dead, boss not spawned, at least 24 total rounds available. If C7 readiness cannot be restored, offer C6 instead of trapping the player in an unwinnable retry."
+    }
+  ],
+  "spaces": [
+    {
+      "name": "Starting home",
+      "content": "One authored interior using the selected kit's dimensions, dressing and lighting. Door frame, gun, bag and escape exit are deliberately placed.",
+      "boundary": "Houdini variation may supply walls/rooms; the actual playable home is hand-reviewed for staging and navigation."
+    },
+    {
+      "name": "Street + supply shop",
+      "content": "A short connected district with two combat spaces and one small shop interior. Background city instances add depth.",
+      "boundary": "Suggested on-foot critical path: roughly 250–400 m, tuned to pacing. This is a design target, not a Gaea or engine limit."
+    },
+    {
+      "name": "Garage / vehicle yard",
+      "content": "Visible destination, second herd, supply cache and a safe entry/exit socket.",
+      "boundary": "One hero vehicle. Static parked cars can be separate low-cost assets; do not simulate a traffic fleet."
+    },
+    {
+      "name": "City exit road",
+      "content": "Approximately 0.8–1.2 km of authored driving through a bend/underpass to rural terrain, tuned for about two minutes.",
+      "boundary": "Route length is adjustable. Backdrop scale does not imply unrestricted access to the whole city."
+    },
+    {
+      "name": "Campsite",
+      "content": "One build area, guaranteed gathering points, defense sockets, enemy approaches and a boss retreat loop.",
+      "boundary": "Visible boundaries and reachable resources. No procedural campsite search before the finale."
+    }
+  ],
+  "uiPrinciples": [
+    "Use existing input mappings and inventory data; do not introduce a second interface framework simply for this demo.",
+    "Teach one task at a time. Show objective → world cue → contextual control, then remove the tutorial when the action succeeds.",
+    "Keep normal HUD minimal; health, ammo, quick heal and current goal are enough unless an existing meter changes a meaningful decision.",
+    "Audio-critical information also has readable captions or visual cues. Support subtitle size, background and speaker/source labels.",
+    "No microphone or speech recognition requirement for the yell. It is an authored character response activated by a prompt or timed fallback.",
+    "Single-player full-screen inventory and pause menus pause this demo. Record that choice; multiplayer behavior is a later design decision."
+  ],
+  "uiScreens": [
+    {
+      "id": "hud",
+      "screen": "On-foot HUD",
+      "placement": "Top-left: one-line goal. Center: interaction/crosshair. Bottom-left: health and quick heal. Bottom-right: loaded / reserve ammunition. Lower-center safe area: captions.",
+      "content": "Goal changes only on confirmed stage transitions. Ammo reads live weapon state. Damage direction and low-health cue use shape/text as well as color.",
+      "states": "Unarmed → armed → hurt → healing → reload → no ammunition. Hide unneeded weapon widgets before pickup.",
+      "interaction": "Use the existing input-action labels; remapped keys must update prompts.",
+      "acceptance": "No aim target, boss tell or subtitle is hidden at 16:9 and a supported wider aspect. Test 100–150% HUD scale on the agreed resolution."
+    },
+    {
+      "id": "interaction",
+      "screen": "World interaction",
+      "placement": "Near the target, offset from the center so the object remains visible.",
+      "content": "Verb + item/object name + current binding; show blocked reason such as Inventory full or Clear the approach.",
+      "states": "Available, out of range, blocked, hold progress, completed. No false prompt through solid walls.",
+      "interaction": "Pickup, open, enter vehicle, gather and confirm construction share consistent verbs.",
+      "acceptance": "Rapid repeated input creates one transaction; prompt disappears or updates immediately after success."
+    },
+    {
+      "id": "inventory",
+      "screen": "Inventory / go-bag",
+      "placement": "Full-screen paused panel. Existing item grid/list left, selected-item details right, quick-use row below.",
+      "content": "Name, icon, quantity, relevant effect, equip/use/drop controls and available capacity. Flag required scenario kit as protected.",
+      "states": "Empty, full, selected, usable, protected, insufficient space. No item rotation or weight model unless already working.",
+      "interaction": "Existing inventory key opens/closes; Escape closes one layer. Focus returns to the game without firing the gun.",
+      "acceptance": "Mouse and supported controller navigation can complete pickup → equip → bandage → close; all icons match actual items."
+    },
+    {
+      "id": "loot",
+      "screen": "Loot container",
+      "placement": "Small container panel beside bag contents; suspend local threat during the first lesson.",
+      "content": "Transfer one, transfer stack or take available items. Show partial transfers honestly.",
+      "states": "Empty container, bag full, remaining stack, protected supply.",
+      "interaction": "Confirm transfers through the same authoritative inventory code used by pickups.",
+      "acceptance": "Open/close and checkpoint load never duplicate the vehicle or camp ammunition."
+    },
+    {
+      "id": "vehicle",
+      "screen": "Driving HUD",
+      "placement": "Goal/route at top; minimal speed and controls below. A hold-reset prompt appears only when useful.",
+      "content": "Throttle, brake, steering, exit and recover vehicle. Do not show fake fuel or damage gauges.",
+      "states": "Entering, possessed, driving, parked, exit blocked, reset in progress.",
+      "interaction": "Switch input context once; prevent firing/crafting while driving and prevent accidental immediate exit from the enter input.",
+      "acceptance": "Five consecutive entry/drive/reset/exit cycles preserve camera, controls and inventory."
+    },
+    {
+      "id": "camp-build",
+      "screen": "Camp building",
+      "placement": "World-space preview at a valid socket; compact recipe panel at side; confirm/cancel at bottom.",
+      "content": "Campfire and barricade only. Show owned / required materials, function and blocked-placement reason.",
+      "states": "Locked until arrival, affordable, missing resources, obstructed, confirming, built.",
+      "interaction": "Preview is free; final confirm validates position and cost before consuming. Cancel is lossless.",
+      "acceptance": "Invalid placement and double confirmation consume zero or one recipe respectively; never two."
+    },
+    {
+      "id": "objectives",
+      "screen": "Objectives / tutorial guidance",
+      "placement": "Short goal at top-left, optional expandable reminder in pause.",
+      "content": "Hear disturbance → arm → survive → bag → herd one → herd two → drive → camp → defense → boss.",
+      "states": "Current, completed, waiting for readiness, recovering after checkpoint.",
+      "interaction": "Tutorials can be dismissed and re-read. Interruption cannot advance the scenario twice.",
+      "acceptance": "A cold player knows the next destination without developer narration; reminders do not disappear before their first use."
+    },
+    {
+      "id": "boss",
+      "screen": "Boss encounter overlay",
+      "placement": "Top-center: health/name after reveal; world/caption channel: charge cue. Keep aiming and ammo area free.",
+      "content": "A simple brute health bar, readable wind-up, recovery cue and visible effect of defense.",
+      "states": "Reveal, charge wind-up, attack, recovery, stagger if supported, dead.",
+      "interaction": "No quick-time event. Use movement and shooting already taught.",
+      "acceptance": "Players identify one way to avoid the charge and one safe damage opportunity without reading a long tutorial."
+    },
+    {
+      "id": "pause",
+      "screen": "Pause / settings",
+      "placement": "Full-screen or modal layer; game simulation paused.",
+      "content": "Resume, restart checkpoint, controls, audio, subtitle options, sensitivity, invert-Y, field of view if supported, HUD scale, quit confirmation.",
+      "states": "In game, nested settings, unsaved setting change, return to play.",
+      "interaction": "Keep settings persistent only through the existing profile/config flow. Do not invent cloud storage.",
+      "acceptance": "No input leaks to shooting; focus is visible; changing volume does not disable mandatory captions."
+    },
+    {
+      "id": "death",
+      "screen": "Death / recovery",
+      "placement": "Clear overlay after safe death handling.",
+      "content": "Retry checkpoint, restart demo, quit. Short cause if known, not a fabricated diagnosis.",
+      "states": "Dying, checkpoint loading, ready; suppress duplicate death UI.",
+      "interaction": "Require a deliberate retry input and ignore the input that caused death.",
+      "acceptance": "Door, enemies, vehicle, materials, camp and objective return to one coherent snapshot."
+    },
+    {
+      "id": "completion",
+      "screen": "Demo complete",
+      "placement": "After boss death and short aftermath, not in the middle of combat.",
+      "content": "Thank-you, what this demo contains, wishlist/open actual Steam page when available, replay and quit. Optional feedback link with consent.",
+      "states": "Completed, external link confirmation, replay reset.",
+      "interaction": "Wishlist opens the real game page once an App ID is configured; hide the control until then.",
+      "acceptance": "Completion fires once only after the boss is dead. Replay resets all scene state; no invented release date or missing-link CTA."
+    }
+  ],
+  "resourcePlan": {
+    "principle": "Scarcity should create choices without making the required two herd kills or boss kill mathematically impossible. This first demo uses generous guaranteed combat ammunition; survival differentiation comes from preparation, healing and defense, not a surprise ammo softlock.",
+    "ammo": {
+      "label": "Initial balance example only—replace with the actual weapon's damage, magazine and hit-rate measurements.",
+      "ordinaryEnemies": 35,
+      "idealRoundsPerOrdinary": 2,
+      "bossIdealRounds": 12,
+      "idealHitBudget": 82,
+      "assumedHitRate": 0.6,
+      "requiredRoundsAtAssumedHitRate": 137,
+      "guaranteedRounds": 160,
+      "allocations": [
+        {
+          "where": "Gun + home go-bag",
+          "rounds": 40
+        },
+        {
+          "where": "Visible cache before herd two",
+          "rounds": 40
+        },
+        {
+          "where": "Vehicle supply box",
+          "rounds": 40
+        },
+        {
+          "where": "Camp preparation cache",
+          "rounds": 40
+        }
+      ],
+      "caveat": "One opening infected + six + ten + eighteen = 35 ordinary enemies. 35×2 +12 =82 ideal hit rounds; ceil(82/0.60)=137. Sixty percent accuracy is a tuning assumption, not observed behavior. The nominal route supplies 160 rounds, plus explicitly logged emergency readiness top-ups if needed. The gun starts with 8 total rounds: min(actual magazine capacity, 8) loaded and the remainder in reserve; the bag adds 32. Adjust weapon damage, losses and supplies from tests."
+    },
+    "materials": [
+      {
+        "item": "Dry branches / wood",
+        "required": 4,
+        "source": "Guaranteed camp gathering points; optional city pickups may reduce gathering time.",
+        "purpose": "Two for the campfire, two for the barricade."
+      },
+      {
+        "item": "Scrap / fasteners",
+        "required": 2,
+        "source": "Marked go-bag or garage kit, with a camp fallback if a legitimate state transition loses access.",
+        "purpose": "Two for the barricade."
+      },
+      {
+        "item": "Bandages",
+        "required": 3,
+        "source": "One in the bag, one before the second herd, one at camp.",
+        "purpose": "Generous learning buffer. Never a requirement to advance a trigger."
+      }
+    ],
+    "recipes": [
+      {
+        "name": "Campfire",
+        "cost": "2 dry branches / wood",
+        "effect": "Claims the refuge and establishes the preparation point; no hunger, warmth or cooking subsystem required."
+      },
+      {
+        "name": "Barricade",
+        "cost": "2 wood + 2 scrap",
+        "effect": "Slows or funnels normal infected and changes the brute's charge/recovery interaction."
+      }
+    ],
+    "rules": [
+      "Scenario-critical kit is protected or recoverable; optional valuable items remain optional.",
+      "No material is consumed until successful construction confirmation. Checkpoint restore uses a snapshot, not repeated pickup grants.",
+      "Place guaranteed supplies before the encounter that needs them. Do not hide mandatory ammunition after the enemies that block it.",
+      "If the build already has a reliable melee fallback, support it. Otherwise supply/restart design must prevent empty-gun softlocks; do not silently promise new melee work.",
+      "Scene timings measure active play only. Paused inventory, readiness preparation, deaths and retries are reported separately."
+    ],
+    "inventoryRules": [
+      "Adapt the existing capacity model if already fixed; baseline for this demo is eight item slots. Weapon equipment is separate. Ammunition may use the existing separate reserve pool (capacity at least 200); if it must occupy an item slot, use one 200-round stack. Do not migrate frameworks solely to force this layout.",
+      "Minimum stack limits for the example: wood 8, scrap 8, bandages 5; one protected scenario-kit slot. Required stack totals must fit together, with at least one usable spare slot for the demonstration.",
+      "Overflow never destroys or silently rejects mandatory supplies. Show the blocked reason and leave the remaining stack in its reachable container. Protected kit cannot be dropped; checkpoint restores preserve its identity.",
+      "Exactly one campfire and one barricade are required. Each recipe is bound to its intended socket and can consume once; completed sockets reject duplicate construction. Rebuilding or relocation is outside this baseline unless already reliable."
+    ],
+    "readiness": [
+      "C0: eight total rounds supplied with the gun, before breach. Bag's 32 rounds are separate and arrive only after the kill. If the player wastes the first loadout, Restart checkpoint restores the gun supply; no unimplemented melee is assumed.",
+      "C3: at least 40 total rounds available before herd two, including the reachable pre-fight cache. Twenty ideal hits / 0.60 ≈34 rounds before margin. Cache state and player state restore together.",
+      "C6: at least 100 total rounds available across player reserve and one reachable, non-respawning preparation crate before defense starts. Forty-eight ideal hits / 0.60 =80 before margin. If nominal supplies leave less, this clearly visible emergency crate tops up the deficit; record extra rounds separately from the nominal 160.",
+      "C7, if enabled: at least 24 total rounds available before the boss; 12 / 0.60 =20 before margin. A checkpoint-local supply snapshot restores alongside the boss. If this cannot be guaranteed, use C6 instead.",
+      "Checkpoint restoration rolls the entire local snapshot back; supplies are not added repeatedly onto a surviving inventory. Readiness checks include a reachable heal, valid weapon and intact starting defense. Restore paused, then let the player trigger the fight. Restart earlier remains available."
+    ]
+  },
+  "encounters": [
+    {
+      "name": "Opening infected",
+      "count": "1 normal infected",
+      "active": "1",
+      "purpose": "A controlled first kill with a readable wind-up and room to aim.",
+      "rule": "Initial tuning: two center-mass hits with the selected weapon. First shot starts street reaction; kill finishes the stage."
+    },
+    {
+      "name": "Herd one",
+      "count": "6 normal infected",
+      "active": "Up to 6",
+      "purpose": "Teach distance, cover, reload and hearing response.",
+      "rule": "Two approach lanes. All six are defeated; no reinforcement loop."
+    },
+    {
+      "name": "Herd two",
+      "count": "10 normal infected",
+      "active": "Up to 8 initially, then the remaining 2",
+      "purpose": "Protect or contest the route to the car; introduce a flank.",
+      "rule": "Distinct staging, same understandable damage rules. A visible pre-fight cache supports accuracy mistakes."
+    },
+    {
+      "name": "Camp horde",
+      "count": "18 normal infected",
+      "active": "Up to 8 at once as an initial cap",
+      "purpose": "Make prepared space and carried supplies useful.",
+      "rule": "Spawn from tested off-camera approaches in finite batches. Raise simultaneous count only if profiled on target hardware."
+    },
+    {
+      "name": "Brute",
+      "count": "1 boss-like infected",
+      "active": "Boss alone for the teaching window",
+      "purpose": "Test the defense and one telegraphed response; end with a confirmed kill.",
+      "rule": "Reuse the normal enemy foundation with one charge/wind-up and recovery state. Appearance variants are not additional mechanics."
+    }
+  ],
+  "boss": {
+    "identity": "A larger infected brute using a compatible existing or licensed character/animation set. It is not a separate multi-phase combat system.",
+    "loop": [
+      "Readable roar / pose → committed charge toward the last indicated line.",
+      "Every charge ends after a maximum time/distance and always enters recovery, even if it hits nothing. Barricade contact creates a longer recovery window; fixed cover remains a fallback.",
+      "Player shoots during recovery; normal damage feedback makes progress legible.",
+      "Repeat with the same rule until health reaches zero; corpse, score/loot if present and completion trigger happen once."
+    ],
+    "defense": "The built barricade buys a safer recovery window or redirects the charge. If its destructible integration is not proven, change between intact/damaged/broken mesh states at an authored socket. Do not add physics destruction as a new dependency.",
+    "fallback": "Every missed charge still ends in a damageable recovery state. Fixed environmental cover and a retreat lane preserve the encounter after barricade loss. No mandatory grenade, rare drop, perfect headshot or consumable; checkpoint readiness supplies prevent an empty-gun retry trap.",
+    "killContract": "The user kills the boss before the cut. Never substitute a chase escape, a fake death cinematic or a cliffhanger before the fight is resolved.",
+    "tuning": "Start with 2–3-second readable wind-up, a capped charge distance/time, about 1.5 seconds of recovery after an empty charge and about 2.5 seconds after barricade contact. Tune with the actual movement speed and gun. Twelve ideal hit rounds remains only an initial boss-damage target."
+  },
+  "systems": [
+    {
+      "name": "Scenario director",
+      "owner": "Developer B",
+      "implementation": "A checkpointable state machine owns the eight beats, finite encounter rosters and objective transitions. Subscribe to confirmed pickup/death/possession/build events; event IDs prevent duplicate progression.",
+      "acceptance": "A full run and a retry from every checkpoint advance each beat exactly once. Walking backward or reopening a menu never re-awards supplies."
+    },
+    {
+      "name": "Noise and perception",
+      "owner": "Developer B",
+      "implementation": "Connect gunshot events to existing enemy hearing/perception. Use a once-only authored opening response; later events share the implemented rule with cooldowns and range tuning.",
+      "acceptance": "Player sees/hears cause before escalation. No invisible unlimited reinforcements or hearing through every part of the city without a design reason."
+    },
+    {
+      "name": "Combat and animation",
+      "owner": "Developer A + artist",
+      "implementation": "Preserve existing weapon/controller. Confirm rig retargeting, muzzle location, hit reaction, damage, reload and hands for the chosen character. Use normal infected variants plus the one brute state extension.",
+      "acceptance": "Hands, weapon and camera align. A kill fires once; animation does not delay objective completion indefinitely."
+    },
+    {
+      "name": "Inventory and construction",
+      "owner": "Developer A",
+      "implementation": "One inventory data model supplies bag UI, ammo, bandages, loot, recipe costs and checkpoint serialization. Use explicit placement validation and atomic consumption.",
+      "acceptance": "Items survive the vehicle handoff, invalid placement and death/retry without duplication or loss."
+    },
+    {
+      "name": "Vehicle handoff",
+      "owner": "Developer A",
+      "implementation": "Connect possession, enhanced/input contexts if used, camera, parked-state checkpoint and safe dismount. Add hold-to-recover at tested route anchors.",
+      "acceptance": "Five complete enter/drive/exit cycles and an overturned-car recovery pass in a packaged build."
+    },
+    {
+      "name": "Navigation and scene continuity",
+      "owner": "Developer B + artist",
+      "implementation": "Author tested enemy approaches around doors, shops, cars and camp defense. Ensure the navigation/streaming strategy matches the actual engine version and existing AI.",
+      "acceptance": "Every encounter completes; no required enemy is stranded in an unloaded area or blocked by cosmetic debris."
+    },
+    {
+      "name": "Checkpoint snapshots",
+      "owner": "Developer B",
+      "implementation": "Snapshot player condition, weapon/magazine/reserve, item/container state, scenario stage, stable enemy IDs/HP/deaths, pending spawns/timers, door, processed event IDs and once-only yell/shot cues, vehicle transform/possession, camp construction and readiness supplies. Restore while paused: geometry → inventory/containers → encounters → player/vehicle/input → objectives/cues → unpause.",
+      "acceptance": "C0–C6 reload into coherent, viable states; C2 and C3 differ by pre-fight cache collection. Repeated reloads neither duplicate rewards nor preserve spent ammo against a fresh enemy. Optional C7 must pass the same readiness rules."
+    },
+    {
+      "name": "UI / sound integration",
+      "owner": "Developer A + artist + PM",
+      "implementation": "Drive goals and prompts from scenario state; audio/captions from explicit events. Separate menu/game/vehicle input ownership and expose settings through existing systems.",
+      "acceptance": "No menu input shoots the gun; no key prompt disagrees with remapping; important off-screen danger remains understandable without sound."
+    }
+  ],
+  "capacity": {
+    "assumption": "15 working days × two senior developers = 30 developer-days; one artist = 15 artist-days; PM and marketing contribute 30 additional person-days. Existing systems reduce new feature construction, but integration and content verification still consume time.",
+    "roles": [
+      {
+        "role": "Developer A",
+        "days": 15,
+        "allocation": "Reuse audit/input 1; inventory/UI adaptation 3; vehicle handoff 2; crafting integration 2; combat/character integration 2; fixes and packaging 5."
+      },
+      {
+        "role": "Developer B",
+        "days": 15,
+        "allocation": "Scenario/checkpoints 3; encounters/noise 3; boss extension 2; navigation/streaming 2; integration/performance/fixes 5."
+      },
+      {
+        "role": "3D artist",
+        "days": 15,
+        "allocation": "Asset/style audit 1; terrain and route dressing 3; interiors 3; character/animation adaptation 2; camp/feedback 2; lighting/optimization 2; capture/fixes 2."
+      },
+      {
+        "role": "Product manager",
+        "days": 15,
+        "allocation": "Acceptance matrix, dependencies, build reviews, tester recruitment, checkpoints and blocker triage, Steam and rights checklist."
+      },
+      {
+        "role": "Marketing manager",
+        "days": 15,
+        "allocation": "Comparable analysis, positioning, capture plan, real footage, source-tagged creator shortlist, store copy and test evidence memo."
+      }
+    ],
+    "reserve": "Ten of 30 developer-days remain for integration, performance and fixes. Do not spend them on more buildings, another weapon or a second boss.",
+    "budget": "Actual day rates, paid asset costs, software licences, engine version and target hardware are not supplied. Insert them during the day-one audit; no revenue forecast follows from this GDD.",
+    "dependencies": [
+      "The existing playable project and its actual engine/plugin versions.",
+      "The chosen inventory, vehicle and crafting implementation—or a day-one decision to use a compatible ready-made module.",
+      "One representative shipping-target PC and an agreed resolution/frame-rate goal.",
+      "Rights and redistribution checks for every purchased/free pack, character, animation, audio and generated output.",
+      "A packaged-build pipeline and enough cold testers for two distinct rounds."
+    ]
+  },
+  "roadmap": [
+    {
+      "days": "1–2",
+      "outcome": "Prove the existing stack together",
+      "devA": "Audit controller/weapon; prove bag → vehicle enter/exit → shoot, and one camp placement.",
+      "devB": "Create scenario states and checkpoint schema; run one infected through the broken doorway.",
+      "artist": "Import one representative house, vehicle and character; terrain/scale test; choose a coherent material palette.",
+      "pm": "Confirm versions, asset rights, target PC and ownership of unproven systems. Freeze the encounter sequence.",
+      "marketing": "Write a one-sentence survival promise; map direct comparables and plan the three honest clip moments.",
+      "gate": "Reuse verified. Any missing vehicle/crafting integration gets an explicit owner and bounded adapter, not a silent assumption."
+    },
+    {
+      "days": "3–4",
+      "outcome": "One complete greybox run",
+      "devA": "Connect inventory, driving and two crafting sockets; placeholder HUD.",
+      "devB": "Complete home → two finite herds → car → camp → boss death → end, including retries.",
+      "artist": "Block route, home and camp; placeholder-compatible enemy/boss appearances.",
+      "pm": "Test C0–C6; identify progression blockers. Do not accept isolated system demos as a full run.",
+      "marketing": "Record an internal unedited run; check whether the first shot and camp consequence are visible.",
+      "gate": "All requested beats complete on the same build. If not, cut backdrop, optional loot and cinematic polish; preserve the sequence or explicitly renegotiate it."
+    },
+    {
+      "days": "5–7",
+      "outcome": "Make the escape readable",
+      "devA": "Finalize first-kill feel, go-bag UI, vehicle prompts and safe input transitions.",
+      "devB": "Tune finite herds, gunshot hearing, boss telegraph and navigation failsafes.",
+      "artist": "Bake/review playable interiors; dress critical sightlines; unify characters, sound cues and props.",
+      "pm": "Five fresh target-player usability sessions; separate combat difficulty from unclear goals.",
+      "marketing": "Produce rough home-noise, driving-transition and camp-defense clips from actual gameplay.",
+      "gate": "Proposed: 4/5 understand that the shot attracted danger; 4/5 can reach the car without verbal direction. Repair clarity before adding content."
+    },
+    {
+      "days": "8–10",
+      "outcome": "Freeze the complete candidate",
+      "devA": "Inventory/build/settings polish; ammo/resource continuity; packaged build and controller coverage only if supported.",
+      "devB": "Checkpoint matrix, worst-case horde performance, vehicle streaming seam and boss recovery tests.",
+      "artist": "Lighting and material consistency; reduce costly character/geometry settings after profiling; finish core UI icons.",
+      "pm": "Content freeze; create a separate near-final Steam submission candidate if aiming for public release during the sprint.",
+      "marketing": "Prepare accurate store media, controls, build caveats and audience-matched creator packet.",
+      "gate": "No new city district, weapon, recipe or boss phase. Steam review timing remains conditional; content-ready and release-approved are different."
+    },
+    {
+      "days": "11–12",
+      "outcome": "Measure the intended experience",
+      "devA": "Fix input, UI, inventory and weapon blockers only.",
+      "devB": "Fix progression, enemy stalls, snapshots and performance spikes.",
+      "artist": "Resolve misleading prompts, attack cues and navigable-area readability.",
+      "pm": "Run 15 fresh target-player starts on one measurement build; retain failures and split materially changed builds.",
+      "marketing": "Use separate fresh viewers for clip comprehension; do not prime gameplay testers with the designed answer.",
+      "gate": "Evaluate the actual escape-to-camp loop and boss kill. Record missed expectations: sandbox freedom, driving, survival depth or co-op."
+    },
+    {
+      "days": "13–15",
+      "outcome": "Deliver the scenario and evidence",
+      "devA": "Final build, repeat-play regression and settings/package handoff.",
+      "devB": "All checkpoint replays, final horde/boss regression and technical handoff.",
+      "artist": "Final real-game captures and asset consistency check.",
+      "pm": "Publish continue/revise/stop decision, known issues and actual completion results.",
+      "marketing": "Publish only approved truthful materials; start a small supported creator test if authorized and the build is ready.",
+      "gate": "Stable private build + honest unedited run + short trailer + decision memo are committed. Live Steam demo requires approved materials and confirmed eligibility."
+    }
+  ],
+  "metrics": [
+    {
+      "metric": "First-shot causality",
+      "definition": "Players who independently connect the gunshot to the approaching zombies / all first-time players started.",
+      "collection": "Ask after a safe natural pause, without explaining the intended rule. Clip-viewer comprehension is a separate cohort.",
+      "decision": "If unclear, repair sound staging and visible response before increasing horde size."
+    },
+    {
+      "metric": "Stage completion",
+      "definition": "For each beat, show starts, completions, deaths, quits, crashes and checkpoint retries. Full completion means boss killed and completion card shown.",
+      "collection": "Record elapsed time, stage ID, build ID and end reason. A video view or car arrival is not demo completion.",
+      "decision": "Find the precise point that blocks or loses players."
+    },
+    {
+      "metric": "Car-to-camp continuity",
+      "definition": "Runs where carried inventory, weapon state and objectives remain valid after entering, driving and exiting / handoffs attempted.",
+      "collection": "Automated or manual snapshot comparisons plus player-facing checks.",
+      "decision": "Any repeatable loss, duplication or stuck input is a release blocker."
+    },
+    {
+      "metric": "Camp usefulness",
+      "definition": "Players who explain one concrete benefit of their constructed defense after experiencing the finale / players who reached the finale.",
+      "collection": "Ask before showing an explanatory result card. Record whether the defense was used, damaged or bypassed.",
+      "decision": "If the camp is decorative, change the encounter before adding more recipes."
+    },
+    {
+      "metric": "Boss readability",
+      "definition": "Finale entrants who identify the charge tell and a damage window / finale entrants, with first-attempt deaths reported separately.",
+      "collection": "Record attacks, successful avoidance, barricade interactions and time to kill. Do not infer understanding from survival alone.",
+      "decision": "Revise tells and recovery, not only health, when deaths feel arbitrary."
+    },
+    {
+      "metric": "Demand signal",
+      "definition": "Voluntary replay, willingness to continue, player-described genre expectation and measured Steam store actions are separate signals.",
+      "collection": "Ask who wants another expedition and why. Keep source-tagged visits, wishlist actions and feedback consent separate from gameplay logs.",
+      "decision": "Small recruited cohorts support the next experiment, not a sales forecast or proof of organic reach."
+    }
+  ],
+  "events": [
+    "demo_start",
+    "gun_picked_up",
+    "yell_triggered",
+    "door_breached",
+    "first_shot",
+    "first_kill",
+    "street_response_started",
+    "bag_taken",
+    "herd_started",
+    "herd_defeated",
+    "vehicle_entered",
+    "vehicle_reset",
+    "vehicle_exited",
+    "material_gathered",
+    "camp_object_built",
+    "defense_started",
+    "boss_charge",
+    "defense_used",
+    "boss_killed",
+    "checkpoint_loaded",
+    "player_died",
+    "demo_completed",
+    "retry_started"
+  ],
+  "instrumentation": "Minimal consented telemetry: random session ID, build ID, elapsed time, stage, checkpoint, inventory counts and event outcome. Do not collect voice, names or account identifiers. Record script failures locally when consent is off; do not transmit personal data. No universal hit-rate, wishlist or retention benchmark is assumed.",
+  "gates": [
+    {
+      "when": "Day 4 · integration",
+      "pass": "One uninterrupted rough run reaches a player-killed boss and completion screen; each critical transition also works after reload.",
+      "revise": "Cut nonessential background coverage, optional interiors, loot variants and cosmetic complexity first.",
+      "stop": "If a committed beat cannot be integrated, report the exact missing dependency. Do not replace driving or boss death with a cinematic and call the requested demo complete."
+    },
+    {
+      "when": "Day 7 · usability",
+      "pass": "Proposed gate: 4/5 fresh target players identify the shot-to-horde consequence and 4/5 find the car without verbal navigation help.",
+      "revise": "Improve cues, enemy timing, objective copy and sightlines. Keep this cohort separate from the final fifteen.",
+      "stop": "If the build is only understandable when coached, do not spend remaining time expanding the city."
+    },
+    {
+      "when": "Day 15 · directional product test",
+      "pass": "Proposed gate on one measurement build: 15 fresh starts; at least 10 kill the boss and reach the end; at least 10 explain the shot consequence; at least 8 finale entrants explain how camp construction helped. Report the exact denominators, deaths, retries and time range.",
+      "revise": "Fewer than 15 starts is incomplete. A small recruited sample is not market validation. If fewer than eight reach the finale, camp usefulness cannot pass this gate.",
+      "stop": "If players complete it but describe only a generic zombie shooter and do not want another survival expedition, revise the promise before funding the open world."
+    },
+    {
+      "when": "Before public release",
+      "pass": "No known progression softlocks or state-loss bugs; agreed hardware performance target met; store/build reviewed and eligibility confirmed.",
+      "revise": "Deliver the clearly labeled private test build and real footage while fixing or awaiting review.",
+      "stop": "Do not call a video, cinematic substitute or unreviewed build a live Steam demo."
+    }
+  ],
+  "gateCaveat": "All quantities and thresholds are predeclared editorial proposals—not Steam benchmarks or statistically powered demand evidence. Actual rates, timing and costs must come from this project and its tests.",
+  "marketing": [
+    {
+      "when": "Days 1–3",
+      "action": "State the real promise",
+      "deliverable": "A first-person escape-to-refuge survival demo. Position around gunfire attracting trouble and city supplies becoming camp defenses.",
+      "avoid": "Do not lead only with 'Project Zomboid but FPS'; the occupied market requires a more specific reason to choose this experience."
+    },
+    {
+      "when": "Days 4–7",
+      "action": "Capture three causal moments",
+      "deliverable": "A: shot → answering street. B: bag supplies survive the car handoff → build camp. C: barricade changes a charge → player kills the boss.",
+      "avoid": "Do not edit unrelated crowds behind a gunshot to imply an AI system that does not exist."
+    },
+    {
+      "when": "Days 8–10",
+      "action": "Build the trailer and creator packet",
+      "deliverable": "Proposed 35–45-second trailer: 0–8s home/first shot/reaction; 8–17s two street fights; 17–23s actual driving; 23–33s resource placement and useful camp; 33–40s boss tell/response and truthful demo CTA. Include an unedited complete run and clear access instructions.",
+      "avoid": "Do not spend the opening on a logo, a skyline fly-through or backstory while hiding the player action. These are editorial pacing choices, not a universal trailer formula."
+    },
+    {
+      "when": "Days 11–15",
+      "action": "Small audience-matched trial",
+      "deliverable": "Start with a short list of creators who actually cover solo survival, zombie systems or survival FPS. Record contacted/replied/played/published counts, date and paid/unpaid/unknown status.",
+      "avoid": "No outreach, payment or publication is performed by this GDD. Paid work needs a real budget and authorization."
+    },
+    {
+      "when": "After the test",
+      "action": "Use the evidence",
+      "deliverable": "Compare expectation with behavior. Keep or revise the promise; show one real change or player story with permission. Use Steamworks source-tagged visits when the page exists.",
+      "avoid": "Do not add platform views as unique reach or convert reviews/CCU into an invented revenue forecast."
+    }
+  ],
+  "risks": [
+    {
+      "risk": "An asset-rich city feels incoherent",
+      "response": "Select one architectural era, scale, roughness/color range and lighting direction; audit one house/car/character set before bulk placement.",
+      "owner": "Artist + PM",
+      "cut": "Reduce background variety and material variants before reducing readable gameplay."
+    },
+    {
+      "risk": "Existing systems do not share state",
+      "response": "Prove weapon/inventory/vehicle/camp/checkpoint together by day four.",
+      "owner": "Both developers",
+      "cut": "Use a bounded adapter or authored camp sockets; do not replace the entire player framework."
+    },
+    {
+      "risk": "The sequence reads as generic shooting",
+      "response": "Make gunshot response and constructed defense visibly functional. Carry meaningful resources across the escape.",
+      "owner": "PM + design + marketing",
+      "cut": "Cut redundant kills or spectacle-only dressing before cutting preparation and camp payoff."
+    },
+    {
+      "risk": "Two herds become a pacing wall",
+      "response": "Finite rosters, distinct spaces, generous ammo and straggler recovery. Defeat remains required, but searching for the final stuck zombie does not.",
+      "owner": "Developer B",
+      "cut": "Reduce counts within each herd while preserving both encounters."
+    },
+    {
+      "risk": "MetaHuman / asset detail overwhelms the target PC",
+      "response": "Profile the representative crowd early; use lower-cost character variants/LODs and simpler hair/materials where appropriate.",
+      "owner": "Artist + Developer B",
+      "cut": "Reserve highest-fidelity characters for close hero moments, not every distant infected."
+    },
+    {
+      "risk": "Driving or boss integration overruns",
+      "response": "One route and one boss rule; make these day-one dependency checks.",
+      "owner": "Both developers",
+      "cut": "Remove optional road obstacles, cosmetic animation and boss phases. Any removal of actual driving or the boss kill requires a scope decision with the user."
+    },
+    {
+      "risk": "Public release misses the sprint",
+      "response": "Check the actual Steamworks account/app checklist and review buffers on day one.",
+      "owner": "PM",
+      "cut": "Ship private prototype and truthful footage as the sprint deliverable; do not invent approval."
+    }
+  ],
+  "nextSteps": [
+    {
+      "stage": "If integrated and wanted",
+      "decision": "Estimate an additional expedition and a persistent refuge loop using measured production costs. Test whether repeat trips sustain interest before expanding city access."
+    },
+    {
+      "stage": "If clear but shallow",
+      "decision": "Add one consequential survival choice to the current route—resource trade-off, preparation or safer/noisier solution—before adding kilometers."
+    },
+    {
+      "stage": "If technically unstable",
+      "decision": "Use a short, explicitly budgeted integration repair pass. Preserve the requested beat list and report any trade-off."
+    },
+    {
+      "stage": "Before full open world",
+      "decision": "Make separate decisions on world persistence, streaming, free construction, vehicles at scale and multiplayer. The demo's visual skyline is not proof these systems are finished."
+    }
+  ],
+  "distribution": {
+    "committedDeliverable": "By day fifteen: the full city-escape test build, an unedited playable run, an honest short trailer and a decision memo. Public Steam demo is conditional on actual eligibility and review.",
+    "candidate": "If targeting public release during the sprint, prepare the base page immediately and an eligible near-final build around day eight. Valve's planning buffer is not guaranteed approval.",
+    "constraints": [
+      {
+        "id": "initial-title-wait",
+        "claim": "Steam onboarding lists a 30-day interval between paying the app fee and releasing a game for a partner's first few titles.",
+        "sourceURL": "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+        "checkedAt": "2026-09-03",
+        "definition": "Game-release eligibility measured from fee payment, not 30 development workdays.",
+        "caveat": "The docs phrase this for the first few titles, not every app forever. The provided sources do not explicitly resolve a new partner's demo eligibility under this interval; verify the actual Steamworks checklist or ask Steam support before promising a date.",
+        "planningImplication": "A new full-game release cannot be promised inside a three-calendar-week sprint if this wait starts on day one."
+      },
+      {
+        "id": "full-game-coming-soon",
+        "claim": "The full game's public Coming Soon page must be visible for at least two weeks before its release.",
+        "sourceURL": "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+        "checkedAt": "2026-09-03",
+        "definition": "A public store-presence interval, separate from fee payment and review time.",
+        "caveat": "Do not add 30 days and 14 days automatically; requirements can overlap. Do not transfer this rule to a demo's own optional upcoming page."
+      },
+      {
+        "id": "review-buffer",
+        "claim": "Store-page and product-build review each typically take 3–5 business days; Valve asks for at least 7 business days of planning allowance for each.",
+        "sourceURL": "https://partner.steamgames.com/doc/store/review_process",
+        "checkedAt": "2026-09-03",
+        "definition": "Typical review duration and recommended buffer, not a guaranteed service deadline.",
+        "caveat": "Submit a near-final build. Rework may be required. The dedicated Review Process page specifies business days; it is more precise than the shorter onboarding summary.",
+        "planningImplication": "For a day-15 Steam demo target, plan the near-final candidate and store preparation early, not on day 15. Day 8 is a proposed latest candidate target, not a Valve guarantee."
+      },
+      {
+        "id": "demo-is-separate",
+        "claim": "A demo has a separate App ID linked to its base game, its own configuration and review checklist. Before a pre-release demo goes live, the base game's store page must be public as Coming Soon.",
+        "sourceURL": "https://partner.steamgames.com/doc/store/application/demos",
+        "checkedAt": "2026-09-03",
+        "definition": "A Steam demo is not releasing the commercial base app.",
+        "caveat": "The demo's own upcoming phase is explicitly optional: a fully reviewed demo can release directly to playable. This is not evidence that all new-partner onboarding constraints are waived."
+      },
+      {
+        "id": "demo-notification",
+        "claim": "After the first playable demo release, its owner can trigger one wishlist notification to base-game wishlisters within the first two weeks.",
+        "sourceURL": "https://partner.steamgames.com/doc/store/application/demos",
+        "checkedAt": "2026-09-03",
+        "definition": "An optional once-only action, not automatic notification on every update.",
+        "caveat": "The documentation also describes a two-week wishlist-notification cooldown. An early rough public demo can consume a useful launch moment; a private prototype handoff is a separate deliverable."
+      },
+      {
+        "id": "store-truthfulness",
+        "claim": "Review checks require store screenshots to show gameplay and listed supported features to exist in the current build; future content must be clearly distinguished.",
+        "sourceURL": "https://partner.steamgames.com/doc/store/review_process",
+        "checkedAt": "2026-09-03",
+        "definition": "Product representation rules, not evidence that a prototype will pass review.",
+        "caveat": "Label one-street prototype footage honestly. Do not present a mockup, cinematic or unbuilt open world as shipped gameplay."
+      },
+      {
+        "id": "utm-counts",
+        "claim": "UTM Total Visits count visits with tagged URLs. Trusted Visits exclude bots/crawlers. Tracked Visits are signed-in visits with abnormal repeated traffic excluded.",
+        "sourceURL": "https://partner.steamgames.com/doc/marketing/utm_analytics",
+        "checkedAt": "2026-09-03",
+        "definition": "Visits, not unique people or impressions.",
+        "caveat": "Report these denominators separately. Small campaign rows may be hidden by privacy thresholds; absence of a row is not zero demand."
+      },
+      {
+        "id": "utm-conversions",
+        "claim": "Steam attributes wishlists, purchases and free-game/key activations to tracked UTM visits when the action occurs within 72 hours of the click.",
+        "sourceURL": "https://partner.steamgames.com/doc/marketing/utm_analytics",
+        "checkedAt": "2026-09-03",
+        "definition": "Attributed store action within a fixed window, not proof that the link caused the action.",
+        "caveat": "Browser, device and app transitions can break attribution, although Steam's supported open-in-client/app banners can preserve it. UTM Analytics does not measure demo completion, route comprehension or voluntary replay; collect those separately with consent."
+      }
+    ]
+  },
+  "pipeline": {
+    "checkedAt": "2026-09-03",
+    "versionCaveat": "Official live documentation was checked on this date. Several Epic pages resolved to UE 5.8 and SideFX pages to Houdini 22.0. These are documentation versions, not a recommendation to upgrade the user's project. Validate every integration against the actual pinned project versions.",
+    "checks": [
+      {
+        "id": "compatible-authoring-chain",
+        "priority": "P0",
+        "title": "Pin versions and prove the import-to-package chain before producing assets",
+        "documentedFacts": [
+          {
+            "text": "SideFX's installation troubleshooting explicitly checks that the Houdini version the plug-in was built with matches the running Houdini version; it also provides a Start Session verification step.",
+            "sourceURL": "https://www.sidefx.com/docs/houdini/unreal/install_houdiniengine.html",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "Gaea2Unreal reads Gaea's exported terrain files and scale/size metadata to create an Unreal Landscape; the documented workflow exports heightfield, optional weight maps and JSON metadata together.",
+            "sourceURL": "https://docs.gaea.app/guides/use-in/bridges/gaea2unreal/index.html",
+            "checkedAt": "2026-09-03"
+          }
+        ],
+        "recommendedAcceptanceCheck": "Record actual Unreal, Gaea, Gaea2Unreal, Houdini and Houdini Engine versions plus target OS. In the existing project or a protected working copy, import one small terrain, one HDA output, one city module, one character, one item and the candidate vehicle. Produce and launch a packaged smoke-test build. A successful Editor import alone does not pass.",
+        "passEvidence": "Version manifest, repeatable import/bake steps and a packaged build that opens the test level with its referenced meshes, materials and input working.",
+        "fallback": "Keep the current working engine version. If a bridge is incompatible, use supported baked/static exports or a simpler asset that already works in that version; do not make a project-wide engine upgrade an implicit three-week requirement.",
+        "caveat": "No claim is made that the user's existing tools or purchased assets already satisfy this check."
+      },
+      {
+        "id": "terrain-scale-and-landscape-cost",
+        "priority": "P0",
+        "title": "Validate real-world terrain scale and landscape cost on the escape corridor",
+        "documentedFacts": [
+          {
+            "text": "Gaea's Unreal guide documents automatic metadata-based import or manual Z scale of height in metres × 100 × 0.001953125. Its bridge workflow recommends PNG for compatibility and carries import metadata in the JSON definition file.",
+            "sourceURL": "https://docs.gaea.app/guides/use-in/engines/unreal.html",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "Epic documents heightmap import formats and separate Landscape scale settings. A heightmap's pixel dimensions are not themselves a declaration of the world's dimensions in metres.",
+            "sourceURL": "https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine",
+            "checkedAt": "2026-09-03",
+            "caveat": "The distinction between samples and world extent is an explanation of the documented import/scale settings, not a claim about the user's current terrain."
+          },
+          {
+            "text": "Each Landscape component has a render-thread CPU cost and each section is a draw call. More, smaller components trade cost against finer culling and LOD behavior.",
+            "sourceURL": "https://dev.epicgames.com/documentation/unreal-engine/landscape-technical-guide-in-unreal-engine?lang=en-US",
+            "checkedAt": "2026-09-03"
+          }
+        ],
+        "recommendedAcceptanceCheck": "Before exporting a city-sized landscape, measure a known distance and elevation in Unreal, align one building pad to one road, and walk and drive that road using the actual player and vehicle. Record XY scale, elevation range, heightmap dimensions, component/section counts and terrain material settings. Check weight-map layer mapping where used. Select the smallest terrain extent and resolution that support this route.",
+        "passEvidence": "Recorded scale values, aligned house/road, no traversal-blocking terrain seams or unexpected grade, and measured landscape cost inside the agreed target-hardware budget.",
+        "fallback": "Ship a compact terrain or an authored road corridor with distant non-playable scenery. Do not treat a high-resolution Gaea export or a large kilometre count as a demo requirement.",
+        "caveat": "No particular map size, resolution, component count or frame rate is guaranteed by these documents."
+      },
+      {
+        "id": "houdini-authoring-not-runtime",
+        "priority": "P0",
+        "title": "Make Houdini an authoring-time interior generator with a verified baked output",
+        "documentedFacts": [
+          {
+            "text": "SideFX describes Houdini Engine for Unreal as a content-creation/editor workflow and explicitly says it is not a runtime solution.",
+            "sourceURL": "https://www.sidefx.com/products/houdini-engine/plug-ins/unreal-plug-in/",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "HoudiniAssetActors can be packaged as output/data holders if the Houdini Engine plug-in is built into the game. Alternatively, baking to Unreal-native actors and removing Houdini actors before cooking removes that plug-in dependency. This is not live procedural HDA cooking in a shipped game.",
+            "sourceURL": "https://www.sidefx.com/docs/houdini/unreal/packaging.html",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "The Houdini Unreal mesh workflow supports sockets, colliders, material assignments and LOD groups through its output conventions; those properties must be authored in the generator/output, not assumed from procedural geometry alone.",
+            "sourceURL": "https://www.sidefx.com/docs/houdini/unreal/meshes.html",
+            "checkedAt": "2026-09-03",
+            "caveat": "The requirement to validate the generated output is an engineering recommendation. The source documents supported output mechanisms, not the user's HDA quality."
+          }
+        ],
+        "recommendedAcceptanceCheck": "Time-box a pilot interior early: generate one house layout, verify doors/stairs/player clearance, assign stable material slots and pickup/interaction anchors, bake native assets, then package and play it without relying on an authoring session. Preserve a separate editable HDA/source copy. Inspect that baked and cooked copies are not both left visible.",
+        "passEvidence": "One packaged, traversable baked house with its collision, materials and interaction anchors intact. A documented regeneration-to-rebake workflow exists, and the demo makes no promise of live HDA generation.",
+        "fallback": "Use one or two manually authored or purchased interior layouts. Generating an entire city's unique interiors is optional scope, especially if the generator itself still has to be built.",
+        "caveat": "This does not forbid other runtime procedural systems in Unreal. It describes the standard Houdini Engine plug-in boundary. Baked-native output is the recommended demo route, not the only supported packaging method."
+      },
+      {
+        "id": "assets-to-gameplay-contract",
+        "priority": "P0",
+        "title": "Test city modules and purchased props as gameplay assets, not only visuals",
+        "documentedFacts": [
+          {
+            "text": "Epic's static-mesh collision guide demonstrates that a mesh without collision can be walked through, while collision shapes and presets determine blocking/overlap behavior. Visual geometry alone does not establish the needed collision behavior.",
+            "sourceURL": "https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-collisions-with-static-meshes-in-unreal-engine",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "Unreal's Navigation System builds a navigation mesh from collision geometry and supports Static, Dynamic and Dynamic Modifiers Only generation modes; navigation links connect otherwise disconnected regions.",
+            "sourceURL": "https://dev.epicgames.com/documentation/unreal-engine/navigation-system-in-unreal-engine?lang=en-US",
+            "checkedAt": "2026-09-03"
+          }
+        ],
+        "recommendedAcceptanceCheck": "Run the existing player capsule and existing enemy through a representative street → doorway → furnished room → exit route after the interior is baked. Check stairs, furniture gaps, doors, projectile traces and camera clearance. For each critical purchased inventory prop, verify the project's item identity, interaction prompt, pickup/use behavior and mission dependency—not just the model. Rebuild or update navigation using the selected mode after geometry changes.",
+        "passEvidence": "Player and enemy can complete the intended route without collision/nav dead ends; required items can be collected and used exactly once as designed; screenshots or a short recording show the actual integrated setup.",
+        "fallback": "Simplify collision, widen critical passages, remove nonessential clutter, replace a failing prop or keep noncritical buildings closed. Do not rebuild all movement or AI unless the local integration failure actually requires it.",
+        "caveat": "This is a proposed interface checklist, not a finding that the existing code is broken. Asset source, included functionality and license status remain unverified."
+      },
+      {
+        "id": "character-quality-and-density",
+        "priority": "P1",
+        "title": "Choose character quality from measured gameplay cost, not cinematic defaults",
+        "documentedFacts": [
+          {
+            "text": "Epic separates UE Cine assembly from UE Optimized High/Medium/Low. Optimized assemblies use cheaper materials/textures, more aggressive LODs, LOD-dependent animation correctives and optimized groom settings.",
+            "sourceURL": "https://dev.epicgames.com/documentation/metahuman/assembly?lang=en-US",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "MetaHuman LODSync coordinates face, body, hair and related components. Automatic LOD uses screen size; minimum/forced LOD can restrict quality for performance or a distant crowd. Epic's documented Min LOD 1 example also changes animation, hair and material features.",
+            "sourceURL": "https://dev.epicgames.com/documentation/en-us/metahuman/lodsync-component-for-unreal-engine",
+            "checkedAt": "2026-09-03"
+          }
+        ],
+        "recommendedAcceptanceCheck": "Use a gameplay-oriented assembly supported by the actual project version. Test the nearest visible character, a representative distant group, and the worst intended combat crowd in the actual street lighting. Measure CPU animation/AI and GPU hair/shadow/material cost while moving and shooting. Check LOD transitions and retargeted animations. Set the active crowd cap from this measurement, with a cheaper purchased or simplified character as a comparison.",
+        "passEvidence": "A recorded quality preset, hair approach, LOD settings, active-character cap and target-machine trace showing that the worst intended scene fits the chosen budget without broken animation or conspicuous LOD changes.",
+        "fallback": "Reserve detailed MetaHumans for a small number of close characters and use cheaper rigs/materials/hair for enemies or background groups; reduce visible density if the encounter remains readable.",
+        "caveat": "There is no universal safe MetaHuman crowd count. Epic's assembly size examples are not a per-character runtime VRAM budget and must not be multiplied into a claimed crowd capacity. Store character assets need their own measurements."
+      },
+      {
+        "id": "vehicle-speed-streaming-and-nav",
+        "priority": "P0",
+        "title": "Prove streaming, collision and navigation at vehicle speed",
+        "documentedFacts": [
+          {
+            "text": "World Partition streams cells around streaming sources. Player Controllers are default sources, additional source components can preload regions, and Is Streaming Completed checks relevant cells. References between actors can cause them to be loaded together. Some game templates use World Partition with streaming disabled by default.",
+            "sourceURL": "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "Epic's current World Partitioned Navigation Mesh page labels the feature Experimental. Navigation chunks load/unload with the world; Dynamic generation is limited to loaded space. The entire partitioned navigation mesh needs the documented full-world build process, not merely an assumption that the visible editor region is sufficient.",
+            "sourceURL": "https://dev.epicgames.com/documentation/unreal-engine/world-partitioned-navigation-mesh?lang=en-US",
+            "checkedAt": "2026-09-03",
+            "caveat": "The Experimental designation belongs to the world-partitioned navigation feature, not to every use of Unreal navigation or World Partition. Verify the status and behavior in the actual engine version."
+          }
+        ],
+        "recommendedAcceptanceCheck": "First decide whether this small demo needs runtime streaming at all. If it does, drive the actual escape route at its maximum intended speed in a cold-start packaged run, cross a cell boundary, reverse, stop and return on foot. Inspect cells, collision and nav availability before arrival. Verify required item/door/mission state after unload/reload under the intended design. Test the enemy's relevant pursuit across the same boundary. Tune loading distance from measured latency and speed, not a documentation example's sample grid size.",
+        "passEvidence": "No missing road/building collision, arrival into unloaded space, streaming-caused pursuit dead end or unintended reset of required state; a trace records loading behavior and transition hitches.",
+        "fallback": "Keep the small escape corridor loaded, shorten the route, reduce maximum vehicle speed or move the transition to a controlled boundary. Defer a large streaming city if it is not necessary to test the escape experience.",
+        "caveat": "Navigation support does not prove that the user's AI behavior or mission state automatically survives streaming. Persistent state is an explicit design/implementation check."
+      },
+      {
+        "id": "vehicle-gameplay-and-control-handoff",
+        "priority": "P0",
+        "title": "Verify a driveable vehicle and player-control handoff, not just a vehicle model",
+        "documentedFacts": [
+          {
+            "text": "Epic's Chaos Vehicle setup lists a skeletal mesh, physics asset, animation blueprint, vehicle blueprint, wheel blueprints and torque curve, together with controls. Wheel configuration includes dimensions, suspension, steering and brakes.",
+            "sourceURL": "https://dev.epicgames.com/documentation/unreal-engine/how-to-set-up-vehicles-in-unreal-engine",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "Enhanced Input mapping contexts can be added and removed at runtime and prioritized. Epic explicitly uses entering and exiting a vehicle as an example for changing input contexts.",
+            "sourceURL": "https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine",
+            "checkedAt": "2026-09-03"
+          },
+          {
+            "text": "Unreal's Controller API defines possession and unpossession of Pawns; possession is a control relationship, not an automatic guarantee of the game's camera, inventory or state-transfer behavior.",
+            "sourceURL": "https://dev.epicgames.com/documentation/unreal-engine/API/Runtime/Engine/AController",
+            "checkedAt": "2026-09-03",
+            "caveat": "The need to validate camera and state handoff is a recommendation based on these separate responsibilities."
+          }
+        ],
+        "recommendedAcceptanceCheck": "Select one vehicle implementation compatible with the project and prove acceleration, braking, steering, slopes, curb collision and recovery from a blocked route. Test on-foot → vehicle possession → drive → exit → on-foot using real inputs. Verify camera, UI, collision, inventory/mission state and streaming source behavior across the handoff. Ensure vehicle input does not also fire the on-foot weapon, and the player cannot exit into blocked geometry. If entry is intentionally one-way until escape, specify and test that restriction instead.",
+        "passEvidence": "The selected vehicle drives the imported road, repeated handoffs work without duplicate/missing inputs or state loss, and the escape trigger accepts the intended actor/state.",
+        "fallback": "Use one already functional vehicle/preset; remove customization, repair simulation and extra types. Keep a controlled drivable route in its required position between the second herd and the camp. Do not move driving to the ending or replace it with a cinematic.",
+        "caveat": "A purchased car mesh is not evidence that this functionality is included. Conversely, a complete purchased vehicle system may already provide much of it; its actual contents were not inspected."
+      },
+      {
+        "id": "packaged-golden-route-budget",
+        "priority": "P0",
+        "title": "Accept the combined packaged route on the declared target machine",
+        "documentedFacts": [
+          {
+            "text": "Epic defines performance in terms of frame rate and frame time on target hardware and provides Unreal Insights and Stat commands to inspect CPU, GPU, memory and other costs. Profiling itself adds overhead.",
+            "sourceURL": "https://dev.epicgames.com/documentation/en-us/unreal-engine/introduction-to-performance-profiling-and-configuration-in-unreal-engine",
+            "checkedAt": "2026-09-03"
+          }
+        ],
+        "recommendedAcceptanceCheck": "Before densifying the city, run the complete packaged golden route on a named target PC and quality/resolution preset. Include the heaviest intended encounter, driving/streaming boundary, pickup/use, escape, death and restart. Record frame-time distribution, transition hitches, memory/VRAM usage and any missing packaged assets. Compare a trace-enabled diagnostic run with normal play. Declare the project's own frame-time and memory targets before judging the run.",
+        "passEvidence": "Build identifier, machine specification, graphics settings, route recording, performance capture and an issue list with no remaining progression blocker. Repeat a cold-start route and a restart route; this is a smoke-test proposal, not a statistical reliability claim.",
+        "fallback": "Cut decoration, character fidelity/density, terrain complexity or optional traversal branches according to the measured bottleneck. Keep the core pickup → encounter → vehicle → escape sequence functional; do not use a quiet Editor screenshot as performance acceptance.",
+        "caveat": "No FPS promise or hardware specification has been inferred. All proposed dates, gates and fallbacks are editorial planning recommendations, not vendor guarantees or industry benchmarks."
+      }
+    ],
+    "unverifiedItemsToRecord": [
+      "Actual Unreal project version, installed plugin versions and target platform",
+      "Whether the Houdini house-interior generator already exists and produces usable collision/anchors",
+      "Character skeleton/animation compatibility and measured active-AI capacity",
+      "Purchased asset contents, provenance and applicable license terms; this research does not clear licenses",
+      "Whether the demo needs world-state persistence after streaming or only within a fixed loaded route",
+      "Target PC, resolution/quality preset, frame-time/memory targets and packaging environment"
+    ]
+  },
+  "lessons": [
+    {
+      "id": "pz-vein-noise-and-positioning",
+      "games": [
+        {
+          "title": "Project Zomboid",
+          "appId": 108600
+        },
+        {
+          "title": "VEIN",
+          "appId": 1857950
+        }
+      ],
+      "role": "Direct demand and competition; consequences of being detected",
+      "sourceFacts": "Project Zomboid advertises survival against zombies that respond to sight and sound. VEIN already combines first-person zombie survival, scavenging, fortification and vehicles; its current Early Access description distinguishes shipped systems from planned NPCs and settlements. This is an occupied proposition, not an empty first-person-Zomboid gap.",
+      "kpis": [
+        {
+          "label": "Project Zomboid historical peak",
+          "value": 124995,
+          "unit": "simultaneous Steam players",
+          "date": "2026-08-09",
+          "evidence": "Previously verified manual SteamDB observation, retained in the existing September 3 analysis",
+          "source": "https://steamdb.info/app/108600/charts/"
+        },
+        {
+          "label": "VEIN historical peak",
+          "value": 11073,
+          "unit": "simultaneous Steam players",
+          "date": "2025-11-02",
+          "evidence": "Previously verified manual SteamDB observation, retained in the existing September 3 analysis",
+          "source": "https://steamdb.info/app/1857950/charts/"
+        }
+      ],
+      "applyTo": [
+        "Home voices and door breach",
+        "First shot attracts zombies",
+        "Two street herds"
+      ],
+      "application": "Let the first mandatory shot teach a reliable rule: show or audibly localize nearby infected turning toward its sound. It is a lesson, not a punishment for an unavoidable tutorial action. Later encounters must let the player act on that lesson through firing position, timing or movement. Pitch an authored escape whose mistakes follow you, not simulation breadth the build does not contain.",
+      "successTest": "Without coaching, a new player links the approaching zombies to the shot and deliberately changes their next engagement. Ask what they expect the full game to contain; broad sandbox expectations reveal a positioning mismatch.",
+      "doNotInfer": "Historical concurrency is neither reachable marketing audience nor sales. Noise is an established mechanic; this sequence does not make it novel. Do not present off-screen scripted arrivals as proof of a city-wide simulation.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/108600/Project_Zomboid/",
+        "https://store.steampowered.com/app/1857950/VEIN/",
+        "https://steamdb.info/app/108600/charts/",
+        "https://steamdb.info/app/1857950/charts/"
+      ]
+    },
+    {
+      "id": "7days-camp-payoff",
+      "games": [
+        {
+          "title": "7 Days to Die",
+          "appId": 251570
+        }
+      ],
+      "role": "Why preparation belongs before the final horde",
+      "sourceFacts": "The official game promise joins first-person survival and combat to crafting and tower-defense-style base protection. Its construction, traps, vehicles and destruction belong to a much broader established product.",
+      "kpis": [
+        {
+          "label": "Historical peak",
+          "value": 125419,
+          "unit": "simultaneous Steam players",
+          "date": "2024-07-28",
+          "evidence": "Previously verified manual SteamDB observation, retained in the existing September 3 analysis",
+          "source": "https://steamdb.info/app/251570/charts/"
+        }
+      ],
+      "applyTo": [
+        "Resource gathering",
+        "First camp construction",
+        "Larger horde and boss"
+      ],
+      "application": "Give the required barricade a visible combat benefit, then let the final encounter test it. Reuse existing navigation and damage with one readable brute variation. The baseline has one barricade socket; alternate placements and richer building choices are later experiments. A boss climax makes the demo closer to action-survival defense than Zomboid's everyday simulation, so communicate that tone honestly.",
+      "successTest": "Compare the configured encounter with and without the barricade internally. In the public test, players should identify the benefit of what they built and use it at least once. If the defense makes no difference, the crafting beat is ceremony. Two player-selected configurations are not required in this version.",
+      "doNotInfer": "A mature game's audience does not validate a three-week production budget. The peak is historical, not September demand. This transfer does not require voxel destruction, free-form architecture or the competitor's full system catalogue.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+        "https://steamdb.info/app/251570/charts/"
+      ]
+    },
+    {
+      "id": "into-radius-preparation",
+      "games": [
+        {
+          "title": "Into the Radius VR",
+          "appId": 1012790
+        }
+      ],
+      "role": "Equipment handling that produces a decision; audience-matched distribution later",
+      "sourceFacts": "The official game emphasizes preparation and manual equipment handling during a hazardous expedition. Separately, CM Games' authored Lock & Load account reports a themed multi-developer VR sale and Steam homepage exposure; that is distribution evidence, not a test of inventory design.",
+      "kpis": [
+        {
+          "label": "Lock & Load homepage exposure",
+          "value": ">11,000,000",
+          "unit": "impressions, not unique viewers",
+          "date": "2024-05-10",
+          "window": "Retrospective publication date; exact historical sale dates absent",
+          "evidence": "CM Games self-report",
+          "source": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem"
+        }
+      ],
+      "applyTo": [
+        "Grab gun",
+        "Grab inventory after the first shot",
+        "Carry supplies into camp"
+      ],
+      "application": "For this baseline, make equipment continuity legible: take the gun and bag, understand the bandage and construction materials, carry them through the vehicle transition and use them at camp. Let the player see each resource's purpose, with a safe first inventory lesson. An ammo-versus-repair packing trade-off is a later experiment, not a committed requirement that can make this demo unwinnable. Recruit survival/preparation-focused creators before broad variety outreach.",
+      "successTest": "Ask what each carried item is for, then observe whether it survives the handoff and provides the expected use. Separate interface confusion from deliberate planning. This baseline does not claim to validate a full inventory-choice economy.",
+      "doNotInfer": "VR handling demand does not automatically transfer to mouse and keyboard. The sale involved established participants, discounts and featuring; spend and incremental sales are unknown. No inventory mechanism is proven to have generated those impressions.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1012790/Into_the_Radius_VR/",
+        "https://www.cm-immersive.com/",
+        "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem"
+      ]
+    },
+    {
+      "id": "dreadmoor-recognizable-fear",
+      "games": [
+        {
+          "title": "DREADMOOR",
+          "appId": 3629430
+        }
+      ],
+      "role": "A familiar action plus a frightening consequence; footage followed by playable proof",
+      "sourceFacts": "DREADMOOR combines familiar fishing and boat preparation with an unsettling survival setting. Its publisher describes a months-long mix of playtests, showcases, creator coverage, social activity and paid traffic. Official July news reported a later wishlist milestone.",
+      "kpis": [
+        {
+          "label": "Historical wishlist milestone",
+          "value": "200,000+",
+          "unit": "Steam wishlist stock",
+          "date": "2026-05-21",
+          "evidence": "Publisher CMO self-report",
+          "source": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from"
+        },
+        {
+          "label": "Later wishlist milestone",
+          "value": ">350,000",
+          "unit": "Steam wishlist stock",
+          "date": "2026-07-16",
+          "evidence": "Official developer/publisher announcement",
+          "source": "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093"
+        }
+      ],
+      "applyTo": [
+        "Voices outside the home",
+        "Breach and shot consequence",
+        "City-to-camp change in tension",
+        "Marketing capture"
+      ],
+      "application": "Use the home as the recognizable place and the gunshot as the understandable action that changes its safety. Let the drive and brief camp preparation provide contrast before the final threat; constant combat leaves no safety to lose. Capture one continuous, truthful clip from immediate danger through the sound consequence, then a longer run proving the camp payoff. Treat creator access and an understandable build as prerequisites, not as last-day tasks.",
+      "successTest": "Cold viewers can describe what the player did, why the next threat arrived and what they want to try. Demo players recognize the same interaction rather than discovering that the clip was only a staged vignette.",
+      "doNotInfer": "The two milestones are not sales, a three-week result or isolated organic acquisition. Total spend is unknown and campaign windows overlap. The account's February IGN appearance and claimed March first contact leave a chronology ambiguity; do not reproduce that sequence as a precise acquisition recipe.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3629430/DREADMOOR/",
+        "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+        "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093"
+      ]
+    },
+    {
+      "id": "freerunners-opening-feel",
+      "games": [
+        {
+          "title": "Freerunners",
+          "appId": 1430330
+        }
+      ],
+      "role": "Existing controls are not the same as a convincing first-time experience",
+      "sourceFacts": "The developer reported a six-minute median for a demo described as eight to ten minutes in its February 2024 Next Fest postmortem. On March 10, 2026, he documented camera stabilization and faster early movement after noticing the opening worked against the intended flow.",
+      "kpis": [
+        {
+          "label": "Median demo playtime",
+          "value": 6,
+          "unit": "minutes",
+          "date": "2024-02",
+          "window": "February 2024 Next Fest postmortem; day not asserted here",
+          "evidence": "Developer self-report",
+          "source": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem"
+        }
+      ],
+      "applyTo": [
+        "Gun pickup and first kill",
+        "Street traversal",
+        "Vehicle handoff",
+        "Whole-run QA"
+      ],
+      "application": "Test the actual packaged camera, aim response, hit feedback and door interaction before decorating the city. The first shot must feel like the advertised game. Avoid using slow walking, repeated empty looting or two equivalent herds to manufacture length. In the driving slice, camera, collisions, exit point and return-to-foot controls matter more than another street of props.",
+      "successTest": "Mark the first confusing input, camera disturbance and unproductive wait in each cold run. Compare their locations, not merely total session duration. Test the encoded promotional video on a phone as well as the live build on the declared target PC.",
+      "doNotInfer": "Six minutes is not a survival-demo target or a completion rate. The source has conflicting visit totals and a 420→755 wishlist endpoint difference of 335 versus a claimed 355; no conversion rate should be derived. A later feel patch does not establish its commercial effect.",
+      "sourceUrls": [
+        "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+        "https://www.cbgamedev.com/blog/2026/3/10/freerunners-flow-update",
+        "https://store.steampowered.com/app/1430330/Freerunners/"
+      ]
+    },
+    {
+      "id": "sheepherds-lieu-causal-footage",
+      "games": [
+        {
+          "title": "Sheepherds!",
+          "appId": 3006280
+        }
+      ],
+      "role": "Trailer craft: show the rule, then its complication",
+      "sourceFacts": "Derek Lieu's August 8, 2026 retrospective explains showing basic herding before extra mechanics and allowing imperfect attempts to reveal challenge. He reports more than 100,000 IGN views for the resulting trailer; the trailer belonged to the November 2025 launch, not a new 2026 release.",
+      "kpis": [
+        {
+          "label": "Reported IGN trailer views",
+          "value": ">100,000",
+          "unit": "video views",
+          "date": "2026-08-08",
+          "window": "As reported in the retrospective; not launch-day views",
+          "evidence": "Trailer consultant's observation",
+          "source": "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds"
+        }
+      ],
+      "applyTo": [
+        "First shot → visible response",
+        "Packing choice → later use",
+        "Camp defense → boss payoff",
+        "Trailer edit"
+      ],
+      "application": "The playable opening may begin with voices and suspense; the trailer need not reproduce its waiting. Begin footage close to the breach, preserve enough of the shot-and-response action to understand it, then demonstrate a different survival decision. Show a recoverable mistake and response. Save inventory grids, weapons, scenery and boss montage until the viewer understands why those features matter.",
+      "successTest": "Show a short cut without explanatory narration to five target viewers. Ask them to describe the rule and one available response. Then test an audio-on version: sound is essential to this hook, so silent comprehension alone cannot validate the experience.",
+      "doNotInfer": "This is a practitioner's editing account, not a randomized conversion study. IGN views are not wishlists, sales or an attainable baseline. The URL contains August 4, but the displayed publication date is August 8.",
+      "sourceUrls": [
+        "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+        "https://steamcommunity.com/games/3006280/announcements/detail/607550464526909455",
+        "https://store.steampowered.com/app/3006280/Sheepherds/"
+      ]
+    },
+    {
+      "id": "inkbound-mode-contract",
+      "games": [
+        {
+          "title": "Inkbound",
+          "appId": 1062810
+        }
+      ],
+      "role": "Choose whose pacing and agency the sequence serves",
+      "sourceFacts": "Shiny Shoe's June 11, 2024 postmortem reports approximately 60% solo runs and 40% co-op, alongside different needs from those audiences. The statistic describes runs, not unique players or survival-genre preferences.",
+      "kpis": [
+        {
+          "label": "Reported solo/co-op run split",
+          "value": "approximately 60% / 40%",
+          "unit": "runs",
+          "date": "2024-06-11",
+          "window": "Historical post-launch observations; sample size and exact collection window undisclosed",
+          "evidence": "Studio self-report",
+          "source": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access"
+        }
+      ],
+      "applyTo": [
+        "Audio-led opening",
+        "Inventory under threat",
+        "Driving",
+        "Camp building and defense"
+      ],
+      "application": "For a solo slice, make every beat completable without a partner: inventory rules, driving and building cannot secretly assume another person watches the door. If co-op is already intended and supported, test pairs separately; who hears the cue, who triggers the breach, who owns the car and what an incapacitated player does all change the sequence. Do not add networking merely to make trailer incidents look social.",
+      "successTest": "Keep solo and group observations separate. In the chosen mode, no player loses agency through an unexplained scene transition, forced inventory interaction or vehicle handoff. Ask whether the ending resolves the experience they were promised.",
+      "doNotInfer": "Inkbound's run split cannot estimate the solo share of zombie survival demand. Its business-model and localization lessons are not evidence that this specific combat sequence will convert.",
+      "sourceUrls": [
+        "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+        "https://store.steampowered.com/app/1062810/Inkbound/"
+      ]
+    }
+  ],
+  "crucialLessons": [
+    "If players enjoy shooting but cannot explain a preparation consequence, the slice currently proves a linear zombie action game, not survival crafting.",
+    "If the second herd and boss only increase enemy durability, the sequence escalates duration rather than decisions.",
+    "If resource gathering is enjoyable only because the player anticipates a much broader sandbox, disclose the intended scope and retest.",
+    "If trailer viewers cannot identify a controllable action, the footage may advertise atmosphere while leaving the actual game unclear.",
+    "If the first-time completion problem is a camera, interface, collision or softlock issue, fix the test before interpreting abandonment as weak genre demand."
+  ],
+  "pipelineFlow": [
+    {
+      "stage": "Gaea → terrain",
+      "owner": "Artist",
+      "output": "Terrain shape, elevation and masks for city pad, exit road and rural camp.",
+      "gate": "Known distances/grades match the player and vehicle; preserve source plus export settings."
+    },
+    {
+      "stage": "Kitbash → city route",
+      "owner": "Artist + Developer B",
+      "output": "A coherent city kit with tested collision, scale, navigation and LOD/material policy.",
+      "gate": "Home, two encounter spaces and garage work before background district density expands."
+    },
+    {
+      "stage": "Houdini → baked interiors",
+      "owner": "Artist",
+      "output": "Reusable room/door/furniture generator outputs, baked to native assets for the demo.",
+      "gate": "Generate and package one playable house before three variants; preserve editable source separately."
+    },
+    {
+      "stage": "MetaHuman / store rigs → characters",
+      "owner": "Artist + Developer A",
+      "output": "First-person body/hands if supported, base infected variants and a brute using compatible rigs.",
+      "gate": "Weapon alignment, retargeting, hit reactions and measured crowd cost pass in the real scene."
+    },
+    {
+      "stage": "Store props → item definitions",
+      "owner": "Developer A",
+      "output": "Each critical model mapped to the existing inventory item's ID, icon, stack and use/recipe behavior.",
+      "gate": "A model being game-ready does not by itself prove pickup, UI or save behavior."
+    },
+    {
+      "stage": "Integrated route → packaged candidate",
+      "owner": "Both developers + PM",
+      "output": "Complete sequence with checkpoints, vehicle, camp, horde/boss and end screen.",
+      "gate": "Measured run on the named target PC, including cold start, retries and the heaviest encounter."
+    }
+  ],
+  "artDirection": {
+    "mood": "Grounded outbreak tension with brief relief after reaching the rural camp. Home feels inhabited, streets disrupted and camp modest but visibly player-made.",
+    "consistency": "Choose one architectural period, weather/time-of-day treatment and material palette across asset packs. Use a fixed lighting setup for the slice rather than building a day/night simulation.",
+    "readability": "Warm familiar home light, a distinct exit landmark and a readable camp silhouette. Contrast identifies paths and enemies; avoid relying only on color to communicate danger.",
+    "characters": "MetaHuman detail is most valuable at close range; choose actual gameplay assemblies and cheaper enemy variants based on profiling. Face detail is secondary to attack silhouette, rig compatibility and hit feedback.",
+    "interiors": "Treat Houdini as a repeatable authoring aid. Leave room for manual placement of the first gun, breach, pickups and sightlines; procedural variation must not scramble critical teaching moments."
+  },
+  "performance": {
+    "target": "On day one, name the target PC, resolution and graphics preset. If the chosen target is 60 FPS, its frame-time reference is 1000/60 ≈16.7 ms; that is a proposed product target, not a vendor or asset-pack guarantee.",
+    "measure": "Record CPU/GPU frame time, memory/VRAM, loading hitches and active-AI count during the heaviest street/finale and maximum-speed drive. Use packaged cold-start and repeat runs; distinguish profiler overhead from ordinary play.",
+    "priority": "Keep input response, enemy tells, collision and objective continuity before high-fidelity hair, decorative density or resolution. Existing engine features must be measured in this project; a rendering feature does not remove AI or animation cost.",
+    "qualityGate": "Choose numerical frame-time and memory acceptance targets after the representative day-one measurement. Until hardware and trace results exist, do not label the demo optimized or promise a crowd capacity."
+  }
+}

@@ -1,0 +1,55 @@
+'use client';
+
+import { ArrowRight, ArrowUpRight, BookOpen, CheckCircle2, Search, ShieldAlert } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { htmagePosts, sourceStack } from './research-data';
+import { gameLibrary, matchesReading, newsletterLibrary, newReadingCount, normalizeSearch, readingLibrary, readingStarterPath, readingTopics, readingUpdatedAt, type ReadingTopic } from './discovery-data';
+import { SourceLink } from './explorer';
+import { readingPath } from './site-routes';
+
+const publicationLabels: Record<string, string> = {
+  'How To Market A Game': 'HTMAG · Chris Zukowski',
+  'The GameDiscoverCo newsletter': 'GameDiscoverCo',
+  'The Alinea Insight newsletter': 'Alinea',
+  'Butterscotch Shenanigans development blog': 'Butterscotch',
+  'Derek Lieu — Game Trailer Editing': 'Derek Lieu',
+  'Game Developer — First-hand Postmortems': 'Game Developer',
+};
+const publications = Array.from(new Set(readingLibrary.map(article => article.publication)));
+const publicationLabel = (name: string) => publicationLabels[name] ?? name;
+
+export function ReadingRoom({ query, setQuery, topic, setTopic, explore, articleId }: { query: string; setQuery: (q: string) => void; topic: ReadingTopic; setTopic: (t: ReadingTopic) => void; explore: (q: string) => void; articleId?: string }) {
+  const readings = readingLibrary.filter(article => (!articleId || article.id === articleId) && matchesReading(article, query, topic));
+  const recentCount = readingLibrary.filter(article => article.date && article.date >= '2026-06-02' && article.date <= '2026-09-02').length;
+  return <section className="workbench content-view reading-view">
+    <div className="workspace-heading"><div><p className="section-kicker"><BookOpen /> THE PC MARKET READING ROOM</p><h1>{articleId ? readingLibrary.find(article => article.id === articleId)?.title : <>Read the evidence.<br />Keep the disagreement.</>}</h1></div><p className="workspace-note">{readingLibrary.length} article notes: {htmagePosts.length} HTMAG posts + {newsletterLibrary.articles.length} analyst, practitioner and developer readings. {recentCount} fall in the 2 June–2 September 2026 priority window. Historical and undated sources are labeled. Selected articles were read, not entire archives.</p></div>
+    {!articleId && <section className="reading-expansion" aria-labelledby="reading-expansion-heading"><div><p className="section-kicker">ADDED {readingUpdatedAt} · FIVE MORE PERSPECTIVES</p><h2 id="reading-expansion-heading">{newReadingCount} new readings. From a clear hook to a credible test.</h2><p>Game World Observer, Derek Lieu, Game If You Are, IMPRESS and Game Developer—with 26 proposed actions for your five-person, 15-workday demo team. These are editorial plans, not proven recipes.</p></div><ol>{readingStarterPath.map(step => <li key={step.articleId}><a href={readingPath(step.articleId)}>{step.label}<ArrowUpRight /></a><span>{step.detail}</span></li>)}</ol></section>}
+    {articleId && <p className="reading-back"><a href="/reading/">← All research notes</a></p>}{!articleId && <><div className="reading-curriculum"><div><span>START HERE · 20–30 MINUTES</span><h3>From headlines to a build decision</h3><p>These are editorial reading times, not measured averages.</p></div><ol><li><button onClick={() => { setQuery('genres of hit'); setTopic('All topics'); }}>1. Market shape <ArrowRight /></button><span>What grew—and what the winner-only cohort cannot tell you.</span></li><li><button onClick={() => { setQuery('Iron Nest'); setTopic('All topics'); }}>2. One contained product <ArrowRight /></button><span>How tactile controls became short clips, then engaged demo players.</span></li><li><button onClick={() => { setQuery('Guildrun'); setTopic('All topics'); }}>3. A channel counterexample <ArrowRight /></button><span>Why specialist long-form worked when short-form did not.</span></li><li><button onClick={() => { setQuery('Arco'); setTopic('All topics'); }}>4. Read the downside <ArrowRight /></button><span>Good reviews, unclear positioning and difficult launch economics.</span></li></ol></div>
+    <div className="control-row reading-controls"><label className="searchbox"><Search /><span className="sr-only">Search publications, authors, games or topics</span><Input maxLength={120} value={query} onChange={event => setQuery(event.target.value)} placeholder="Search Chris, Substack, game, niche or channel…" /></label><div className="reading-topic"><label htmlFor="reading-topic">Topic</label><select id="reading-topic" value={topic} onChange={event => setTopic(event.target.value as ReadingTopic)}>{readingTopics.map(value => <option key={value}>{value}</option>)}</select><span>{readings.length} readings</span></div></div>
+    <div className="publication-pills" aria-label="Filter by publication"><button className={!query && topic === 'All topics' ? 'active' : ''} onClick={() => { setQuery(''); setTopic('All topics'); }}>All publications</button>{publications.map(name => <button key={name} className={query === name ? 'active' : ''} aria-pressed={query === name} onClick={() => { setQuery(name); setTopic('All topics'); }}>{publicationLabel(name)} <span>({readingLibrary.filter(article => article.publication === name).length})</span></button>)}</div>
+    </>}<div className="article-grid">{readings.map(article => <article className="reading-card" key={article.id}>
+      <div className="reading-meta"><span>{article.publication}</span>{article.date ? <time dateTime={article.date}>{article.date}</time> : <span>Undated source</span>}</div><h3><a href={readingPath(article.id)}>{article.title}<ArrowRight /></a></h3><p className="reading-author">{article.author} · {!article.date ? 'Publication date not displayed' : article.date < '2026-06-02' || article.date > '2026-09-02' ? 'Outside original priority window' : 'Priority window'}{article.checkedAt && <> · Checked <time dateTime={article.checkedAt}>{article.checkedAt}</time></>}</p><p className="reading-evidence">{article.evidenceType}</p><p className="reading-summary">{article.summary}</p>
+      {article.hardData.length > 0 && <div className="reading-data"><span>NUMBERS, WITH THEIR DEFINITIONS</span><ul>{article.hardData.map(datum => <li key={datum}>{datum}</li>)}</ul></div>}
+      <div className="reading-lesson"><CheckCircle2 /><p><strong>Use it for</strong>{article.actionableLesson}</p></div><div className="reading-limit"><ShieldAlert /><p><strong>Do not conclude</strong>{article.limitations}</p></div>
+      {article.applicationSteps && <details className="reading-application" open={!!articleId}><summary>Apply to our 15-day demo · {article.applicationSteps.length} steps</summary><p>Our proposed experiment—not a result measured by this article.</p><ol>{article.applicationSteps.map(step => <li key={step}>{step}</li>)}</ol></details>}
+      <div className="card-tags">{article.relatedGames.slice(0, 4).map(game => {
+        const knownGame = gameLibrary.find(entry => normalizeSearch(entry.title) === normalizeSearch(game));
+        const officialUrl = article.gameSources?.[game];
+        return knownGame ? <button key={game} onClick={() => explore(knownGame.title)} title={`Find ${game} in the game library`}>{game} <ArrowRight /></button> : officialUrl ? <a key={game} href={officialUrl} target="_blank" rel="noreferrer">{game} · Steam <ArrowUpRight /></a> : <span key={game}>{game}</span>;
+      })}</div>
+      <div className="reading-bottom"><a className="source-link" href={readingPath(article.id)}>Research note ↗</a><SourceLink url={article.url} label="Read original" /></div>
+      {!!article.sourceUrls?.filter(url => url !== article.url).length && <div className="reading-supporting"><span>Supporting sources</span>{article.sourceUrls.filter(url => url !== article.url).map(url => <SourceLink key={url} url={url} label={new URL(url).hostname.replace(/^www\./, '')} />)}</div>}
+      <p className="reading-access">{article.access}</p>
+    </article>)}</div>
+    {!readings.length && <div className="empty-state"><BookOpen /><strong>No article note matches</strong><span>The game’s Explorer record may still have source links. Try a genre or author.</span><Button variant="outline" onClick={() => { setQuery(''); setTopic('All topics'); }}>Show all readings</Button></div>}
+
+    {!articleId && <><section className="surface-panel disagreement-panel"><div className="surface-heading"><div><ShieldAlert /><span><small>DO NOT TURN OPINION INTO AN ALGORITHM RULE</small><strong>Where good sources disagree</strong></span></div></div><div className="disagreement-grid">{newsletterLibrary.crossSourceSynthesis.disagreementsAndResolution.map(item => <article key={item.topic}><h3>{item.topic}</h3><p>{item.positions}</p><div><strong>Decision rule</strong><p>{item.resolution}</p></div><span>{item.articleIds.map(id => { const article = readingLibrary.find(entry => entry.id === id); return article ? <SourceLink key={id} url={article.url} label={article.publication.replace('The ', '')} /> : null; })}{'additionalSource' in item && typeof item.additionalSource === 'string' && <SourceLink url={item.additionalSource} label="Chris Zukowski" />}</span></article>)}</div></section>
+
+    <section className="surface-panel sources-panel"><div className="surface-heading"><div><BookOpen /><span><small>{newsletterLibrary.sources.length} RESOURCES BEYOND HTMAG</small><strong>Who is talking—and what can they actually know?</strong></span></div></div><div className="publication-grid">{newsletterLibrary.sources.map(source => {
+      const notes = readingLibrary.filter(article => new URL(article.url).hostname === new URL(source.url).hostname);
+      return <article key={source.id}><span>{source.priority} · {source.kind}</span><h3><a href={source.url} target="_blank" rel="noreferrer">{source.name}<ArrowUpRight /></a></h3><strong>{source.author}</strong><p>{source.strongestUse}</p><div className="reading-limit"><ShieldAlert /><p>{source.blindSpots}</p></div><small>{source.access}</small>{notes.length > 0 && <a className="source-link" href={readingPath(notes[0].id)}>Start with {publicationLabel(notes[0].publication)} · {notes.length} notes ↗</a>}</article>;
+    })}</div></section>
+    <section className="surface-panel sources-panel"><div className="surface-heading"><div><Search /><span><small>THE DATA STACK</small><strong>Use the right source for the question</strong></span></div></div><div className="source-grid">{sourceStack.map(source => <article key={source.name}><span>{source.tier}</span><h3><a href={source.url} target="_blank" rel="noreferrer">{source.name}<ArrowUpRight /></a></h3><div><CheckCircle2 /><p>{source.good}</p></div><div className="limit"><ShieldAlert /><p>{source.limit}</p></div></article>)}</div></section>
+  </>}</section>;
+}

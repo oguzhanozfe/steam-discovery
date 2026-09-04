@@ -1,0 +1,3025 @@
+{
+  "checkedAt": "2026-09-03",
+  "methodology": "Public unauthenticated availability checks and targeted claim-source review. No access-control bypass. SteamDB excluded from bulk requests. A working URL does not verify every underlying claim; sources may change after this snapshot. Baseline: 2 September 2026. Selected game stories, original analysis, survival evidence and source notes checked 3 September 2026; this is not a full recheck of the baseline. Entry dates distinguish the passes. Agency and developer campaign figures remain attributed self-reports, not audited acquisition accounts.",
+  "entries": [
+    {
+      "url": "https://www.sidefx.com/docs/houdini/unreal/install_houdiniengine.html",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "SideFX's installation troubleshooting explicitly checks that the Houdini version the plug-in was built with matches the running Houdini version; it also provides a Start Session verification step. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://docs.gaea.app/guides/use-in/bridges/gaea2unreal/index.html",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Gaea2Unreal reads Gaea's exported terrain files and scale/size metadata to create an Unreal Landscape; the documented workflow exports heightfield, optional weight maps and JSON metadata together. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://docs.gaea.app/guides/use-in/engines/unreal.html",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Gaea's Unreal guide documents automatic metadata-based import or manual Z scale of height in metres × 100 × 0.001953125. Its bridge workflow recommends PNG for compatibility and carries import metadata in the JSON definition file. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Epic documents heightmap import formats and separate Landscape scale settings. A heightmap's pixel dimensions are not themselves a declaration of the world's dimensions in metres. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/landscape-technical-guide-in-unreal-engine?lang=en-US",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Each Landscape component has a render-thread CPU cost and each section is a draw call. More, smaller components trade cost against finer culling and LOD behavior. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://www.sidefx.com/products/houdini-engine/plug-ins/unreal-plug-in/",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "SideFX describes Houdini Engine for Unreal as a content-creation/editor workflow and explicitly says it is not a runtime solution. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://www.sidefx.com/docs/houdini/unreal/packaging.html",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "HoudiniAssetActors can be packaged as output/data holders if the Houdini Engine plug-in is built into the game. Alternatively, baking to Unreal-native actors and removing Houdini actors before cooking removes that plug-in dependency. This is not live procedural HDA cooking in a shipped game. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://www.sidefx.com/docs/houdini/unreal/meshes.html",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "The Houdini Unreal mesh workflow supports sockets, colliders, material assignments and LOD groups through its output conventions; those properties must be authored in the generator/output, not assumed from procedural geometry alone. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-collisions-with-static-meshes-in-unreal-engine",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Epic's static-mesh collision guide demonstrates that a mesh without collision can be walked through, while collision shapes and presets determine blocking/overlap behavior. Visual geometry alone does not establish the needed collision behavior. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/navigation-system-in-unreal-engine?lang=en-US",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Unreal's Navigation System builds a navigation mesh from collision geometry and supports Static, Dynamic and Dynamic Modifiers Only generation modes; navigation links connect otherwise disconnected regions. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/metahuman/assembly?lang=en-US",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Epic separates UE Cine assembly from UE Optimized High/Medium/Low. Optimized assemblies use cheaper materials/textures, more aggressive LODs, LOD-dependent animation correctives and optimized groom settings. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/metahuman/lodsync-component-for-unreal-engine",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "MetaHuman LODSync coordinates face, body, hair and related components. Automatic LOD uses screen size; minimum/forced LOD can restrict quality for performance or a distant crowd. Epic's documented Min LOD 1 example also changes animation, hair and material features. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "World Partition streams cells around streaming sources. Player Controllers are default sources, additional source components can preload regions, and Is Streaming Completed checks relevant cells. References between actors can cause them to be loaded together. Some game templates use World Partition with streaming disabled by default. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partitioned-navigation-mesh?lang=en-US",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Epic's current World Partitioned Navigation Mesh page labels the feature Experimental. Navigation chunks load/unload with the world; Dynamic generation is limited to loaded space. The entire partitioned navigation mesh needs the documented full-world build process, not merely an assumption that the visible editor region is sufficient. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/how-to-set-up-vehicles-in-unreal-engine",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Epic's Chaos Vehicle setup lists a skeletal mesh, physics asset, animation blueprint, vehicle blueprint, wheel blueprints and torque curve, together with controls. Wheel configuration includes dimensions, suspension, steering and brakes. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Enhanced Input mapping contexts can be added and removed at runtime and prioritized. Epic explicitly uses entering and exiting a vehicle as an example for changing input contexts. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/API/Runtime/Engine/AController",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Unreal's Controller API defines possession and unpossession of Pawns; possession is a control relationship, not an automatic guarantee of the game's camera, inventory or state-transfer behavior. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/introduction-to-performance-profiling-and-configuration-in-unreal-engine",
+      "status": "Official technical documentation read",
+      "checkedAt": "2026-09-03",
+      "note": "Epic defines performance in terms of frame rate and frame time on target hardware and provides Unreal Insights and Stat commands to inspect CPU, GPU, memory and other costs. Profiling itself adds overhead. Live documentation version may differ from the team's project. This is a documented capability/constraint, not proof the project passes its integration test."
+    },
+    {
+      "url": "https://store.steampowered.com/app/3629430/DREADMOOR/",
+      "status": "Official Steam content read; HTTP 200",
+      "note": "App 3629430; Q4 2026 is a planned release window, not a completed release.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2390130/Design_and_Conjure/",
+      "status": "Official Steam content read; HTTP 200",
+      "note": "App 2390130 remains coming soon; no paid-launch outcome inferred.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3641540/Design_and_Conjure_Demo/",
+      "status": "Official Steam demo page read",
+      "note": "Separate app 3641540: released August 3, 2025; 109 scored reviews displayed. Does not date the agency campaign.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2060790/Hauntii/",
+      "status": "Official Steam content read; HTTP 200",
+      "note": "App 2060790; May 23, 2024 release; current publisher field Balor Games, historical legal text Firestoke. No ownership explanation inferred.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1012790/Into_the_Radius_VR/",
+      "status": "Official Steam content read; HTTP 200",
+      "note": "App 1012790; current developer/publisher CM IMMERSIVE. Full/EA dates separately verified; VR-only.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.moonloop.games/hauntii",
+      "status": "Official developer content read",
+      "note": "Current developer description verifies possession, exploration and contemplative pacing.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.cm-immersive.com/",
+      "status": "Official developer content read",
+      "note": "Verified manual equipment/inventory promise, multiple VR storefronts and current giveaway-collaboration invitation.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/2060790/charts/",
+      "status": "Manual web read; no automated SteamDB retrieval",
+      "note": "418 aggregate reviews, 3 displayed current CCU, 63 historical peak May 24, 2024. Page may be cached.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/1012790/charts/",
+      "status": "Manual web read; no automated SteamDB retrieval",
+      "note": "11,302 aggregate reviews, 28 displayed current CCU, 496 historical peak January 22, 2023. Steam only.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/games/3629430/announcements/detail/671748851902710093",
+      "status": "Official announcement content verified; HTTP 200",
+      "note": "July 16, 2026 title/date/full text verified through the public Steam News API and matching community feed. Original gid permalink redirects here; direct request confirmed title and 350,000 statement. Web extractor failed.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3629430&count=10&maxlength=0&feeds=steam_community_announcements",
+      "status": "Public official API read",
+      "note": "One bounded ten-item news request, no key or login. Used article date and complete authored text, not estimated statistics.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/app/3629430/allnews/",
+      "status": "Public official feed read; HTTP 200",
+      "note": "Used matching title and content to discover precise July announcement permalink. Not itself a frozen historical dataset.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.dream-dock.com",
+      "status": "Web retrieval error",
+      "note": "Official link from Steam, but readable body unavailable in this research. Not used to support claims.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.moonloop.games/home/hauntii-in-2023",
+      "status": "Web retrieval error",
+      "note": "Attempted path did not yield readable content. Excluded from all claims.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3629430/132411f9af108c43fd75c8b3c9fd730ebdb62c89/capsule_616x353.jpg?t=1787930956",
+      "status": "HTTP 200; JPEG decoded",
+      "note": "Official Steam capsule extracted from that game's page; 616×353. Source asset, not generated imagery or a license grant.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2390130/99b1a017cd5c8aac6eb7a53001cb434ee3190112/capsule_616x353.jpg?t=1785396653",
+      "status": "HTTP 200; JPEG decoded",
+      "note": "Official Steam capsule extracted from that game's page; 616×353. Source asset, not generated imagery or a license grant.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2060790/capsule_616x353.jpg?t=1776970975",
+      "status": "HTTP 200; JPEG decoded",
+      "note": "Official Steam capsule extracted from that game's page; 616×353. Source asset, not generated imagery or a license grant.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1012790/0e4b4adb8e89ae7174312a43d57c53502b14604a/capsule_616x353.jpg?t=1773504670",
+      "status": "HTTP 200; JPEG decoded",
+      "note": "Official Steam capsule extracted from that game's page; 616×353. Source asset, not generated imagery or a license grant.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://dearpassengers.game/",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/games/4534960/announcements/detail/698770449667981855",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/games/4534960/announcements/detail/692016318956701189",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/app/4534960/allnews/",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/4534960/charts/",
+      "status": "verified",
+      "note": "Public page manually inspected through web research on the checked date. Review aggregates and peaks are observations, not sales or guaranteed real-time counters.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://ultimodiscogames.com/",
+      "status": "verified",
+      "note": "Developer homepage identifies a studio founded by five industry professionals. Its wishlist-era wording appears old, so it supports founding headcount only, not current release status.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/games/3006280/announcements/detail/607550464526909455",
+      "status": "verified",
+      "note": "Web reader refused this URL; public Valve news-feed text was read in full and its external-post redirect independently returned HTTP 200 at this canonical URL.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/games/3006280/announcements/detail/678501715215912993",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/app/3006280/allnews/",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/3006280/charts/",
+      "status": "verified",
+      "note": "Public page manually inspected through web research on the checked date. Review aggregates and peaks are observations, not sales or guaranteed real-time counters.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://outerloopgames.com/dosa",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://outerloopgames.com/dosa_presskit",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/games/2950710/announcements/detail/506232053082096293",
+      "status": "verified",
+      "note": "Web reader refused this URL; public Valve news-feed text was read in full and its external-post redirect independently returned HTTP 200 at this canonical URL.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/2950710/charts/",
+      "status": "verified",
+      "note": "Public page manually inspected through web research on the checked date. Review aggregates and peaks are observations, not sales or guaranteed real-time counters.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.cbgamedev.com/games/freerunners-steam",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.cbgamedev.com/blog/2026/3/10/freerunners-flow-update",
+      "status": "verified",
+      "note": "Full article body read. Historical facts and author interpretations are distinguished.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.cbgamedev.com/blog/the-reality-of-solo-game-development-lessons-from-freerunners",
+      "status": "verified",
+      "note": "Full article body read. Historical facts and author interpretations are distinguished.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.cbgamedev.com/blog",
+      "status": "verified",
+      "note": "Developer archive checked to corroborate the 2026 year for April 4 and March 10 posts.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/1430330/charts/",
+      "status": "verified",
+      "note": "Public page manually inspected through web research on the checked date. Review aggregates and peaks are observations, not sales or guaranteed real-time counters.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shinyshoe.com/games/inkbound/",
+      "status": "verified",
+      "note": "Developer page read, but its old feature copy conflicts with the later postmortem about solo rewards. Excluded from gameplay claims; current Steam page takes precedence.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shinyshoe.com/news/inkbound-two-years-of-adventure/",
+      "status": "verified",
+      "note": "Public primary page read or checked for the specific facts cited.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/1062810/charts/",
+      "status": "verified",
+      "note": "Public page manually inspected through web research on the checked date. Review aggregates and peaks are observations, not sales or guaranteed real-time counters.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=4534960&count=100&feeds=steam_community_announcements&maxlength=0",
+      "status": "verified",
+      "note": "Public, unauthenticated Valve news feed read. UTC publication timestamps and announcement bodies verified; redirects resolved to canonical Steam Community announcement URLs.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3006280&count=100&feeds=steam_community_announcements&maxlength=0",
+      "status": "verified",
+      "note": "Public, unauthenticated Valve news feed read. UTC publication timestamps and announcement bodies verified; redirects resolved to canonical Steam Community announcement URLs.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=2950710&count=100&feeds=steam_community_announcements&maxlength=0",
+      "status": "verified",
+      "note": "Public, unauthenticated Valve news feed read. UTC publication timestamps and announcement bodies verified; redirects resolved to canonical Steam Community announcement URLs.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4534960/7ddef53346afe3e3d4d479dbed740cdb38cfe09a/header.jpg?t=1787132605",
+      "status": "verified",
+      "note": "Official Steam header returned HTTP 200 image/jpeg and fully decoded to 460×215 pixels.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3006280/8c29be5a10992c5165c3d114d45de334179ebf42/header.jpg?t=1787654499",
+      "status": "verified",
+      "note": "Official Steam header returned HTTP 200 image/jpeg and fully decoded to 460×215 pixels.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950710/c0c89ccd2e684e6b89fd0fc2130be4a1030ea3ce/header.jpg?t=1776172270",
+      "status": "verified",
+      "note": "Official Steam header returned HTTP 200 image/jpeg and fully decoded to 460×215 pixels.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1430330/ce99ad6e7dbf311c4982c4151ff1ce8cd7ab300f/header.jpg?t=1772662291",
+      "status": "verified",
+      "note": "Official Steam header returned HTTP 200 image/jpeg and fully decoded to 460×215 pixels.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062810/header.jpg?t=1780422654",
+      "status": "verified",
+      "note": "Official Steam header returned HTTP 200 image/jpeg and fully decoded to 460×215 pixels.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1963610/Road_to_Vostok/",
+      "status": "Primary store",
+      "note": "EA date, English reviews, solo FPS and map-to-map positioning. Some EA explanatory prose predates launch and is not a current feature audit.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/1963610/charts/",
+      "status": "Independent measurement source",
+      "note": "Peak CCU/date and aggregate raw reviews. Non-zombie adjacent comparison.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamcommunity.com/app/1963610/allnews/",
+      "status": "Primary developer announcement",
+      "note": "Over 250,000 copies on Steam as of the announcement. Full text read in official feed; permalink reader returned no body. Gross/net unspecified.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1766060/humanitz?l=english",
+      "status": "Primary store",
+      "note": "EA/full dates, isometric positioning, English reviews and features. Initial capitalized URL returned an age gate; English URL read successfully and refreshed.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://steamdb.info/app/1766060/charts/",
+      "status": "Independent measurement source",
+      "note": "Peak CCU/date and aggregate raw reviews. Full release follows years of Early Access.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+      "status": "Primary platform documentation",
+      "note": "Initial title fee wait and public Coming Soon interval. Does not explicitly settle demo eligibility for a newly onboarded partner.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/review_process",
+      "status": "Primary platform documentation",
+      "note": "Typical 3–5 business days, at least 7-business-day planning allowance, truthful assets/features. Typical timing is not an approval guarantee.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/application/demos",
+      "status": "Primary platform documentation",
+      "note": "Separate demo app/review, base Coming Soon, optional demo upcoming phase and notifications. Do not equate commercial app launch with demo launch.",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "url": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Publisher self-reported campaign column. Published 2026-05-21. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Developer-authored historical postmortem. Published 2024-05-10. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://gameifyouare.com/case-study-design-and-conjure/",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Agency self-reported client campaign. Publication date not displayed. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://gameifyouare.com/2025/03/25/video-game-marketing-what-actually-works-in-2025/",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Agency practitioner guidance, not a measured market study. Published 2025-03-25. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://gameifyouare.com/case-study-hauntii/",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Agency self-reported positioning and funding case. Publication date not displayed. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Practitioner analysis of public trailers; historical view claims. Published 2026-08-23. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://store.steampowered.com/app/4835560/Banana_Airways/",
+      "status": "Primary artifact read",
+      "checkedAt": "2026-09-03",
+      "note": "Official Steam store linked for game identity, not revenue or organic attribution."
+    },
+    {
+      "url": "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. First-person trailer consultation case; historical reported views. Published 2026-08-08. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://store.steampowered.com/app/3006280/Sheepherds/",
+      "status": "Primary artifact read",
+      "checkedAt": "2026-09-03",
+      "note": "Official Steam store linked for game identity, not revenue or organic attribution."
+    },
+    {
+      "url": "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. First-person trailer consultation case; qualitative historical account. Published 2026-04-13. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://store.steampowered.com/app/2950710/Dosa_Divas/",
+      "status": "Primary artifact read",
+      "checkedAt": "2026-09-03",
+      "note": "Official Steam store linked for game identity, not revenue or organic attribution."
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. First-person developer postmortem; historical self-reported figures. Published 2024-02-22. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://store.steampowered.com/app/1430330/Freerunners/",
+      "status": "Primary artifact read",
+      "checkedAt": "2026-09-03",
+      "note": "Official Steam store linked for game identity, not revenue or organic attribution."
+    },
+    {
+      "url": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. First-person studio postmortem; historical internal observations. Published 2024-06-11. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://store.steampowered.com/app/1062810/Inkbound/",
+      "status": "Primary artifact read",
+      "checkedAt": "2026-09-03",
+      "note": "Official Steam store linked for game identity, not revenue or organic attribution."
+    },
+    {
+      "url": "https://impress.games/blog/how-to-get-content-creators-attention",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Vendor practitioner guidance; no measured campaign result. Published 2025-02-27. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://impress.games/blog/indie-game-marketing-examples-impact-2024",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Event-organizer recap of practitioner panel; secondary case claims. Published 2025-05-12. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://impress.games/blog/steam-benchmarks-and-estimates-analysis",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Selected full public text read. Historical proxy compilation; definition checked against original survey. Published 2023-10-18. Source figures are attributed, not independently audited; see the research note for limitations."
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/steam-the-new-wishlists-to-first",
+      "status": "Public article read",
+      "checkedAt": "2026-09-03",
+      "note": "Original historical GameDiscoverCo survey read to check the definition of total first-week sales per launch wishlist; distinct from wishlist-cohort conversion."
+    },
+    {
+      "url": "https://gameworldobserver.com/",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://gameworldobserver.com/category/marketing",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://gameifyouare.com/",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://gameifyouare.com/projects-case-studies/",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://www.derek-lieu.com/blog",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://www.derek-lieu.com/about/",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://www.gamedeveloper.com/contact-game-developer",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://impress.games/blog",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://impress.games/steam-marketing-guides",
+      "status": "Publication directory checked",
+      "checkedAt": "2026-09-03",
+      "note": "Publication identity and selected public material checked. This does not mean the complete archive was read or that all access tiers are free."
+    },
+    {
+      "url": "https://store.steampowered.com/app/108600/Project_Zomboid/",
+      "status": "Primary artifact read",
+      "note": "Official store read 2 September 2026 for perspective, Early Access status and survival mechanics. Not a source for sales or organic attribution.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1857950/VEIN/",
+      "status": "Primary artifact read",
+      "note": "Official store read 2 September 2026; current Early Access systems separated from planned NPCs and settlements. Not a verified market-gap or zero-spend claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+      "status": "Primary artifact read",
+      "note": "Official store read 2 September 2026 for 25 July 2024 full release and gameplay features. The broad undated copies claim is not used as a Steam-only sales figure.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/108600/charts/",
+      "status": "Public page readable",
+      "note": "Manually read 2 September 2026: 124,995 all-time concurrent-player peak on 9 August 2026. Historical public observation, not unit sales or channel attribution; no bulk SteamDB requests.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/1857950/charts/",
+      "status": "Public page readable",
+      "note": "Manually read 2 September 2026: 11,073 all-time concurrent-player peak on 2 November 2025. Not unit sales, profitability or organic attribution; no bulk SteamDB requests.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/251570/charts/",
+      "status": "Public page readable",
+      "note": "Manually read 2 September 2026: 125,419 all-time concurrent-player peak on 28 July 2024. Not a 2026 launch outcome or unit-sales estimate; no bulk SteamDB requests.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/archive",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/p/another-friendslop-challenger-enters",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/p/mortal-shell-2-passed-half-a-million",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/p/steam-next-fests-winners-and-why",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://allthebees.de/duck-detective-2-postmortem/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://app.pressengine.net/newsdesk/bastion/stories/news-chained-together-links-up-with-secret-mode-for-future-development",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://app.sensortower.com/vgi/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://arco.game/presskit/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://automaton-media.com/en/news/20231106-22831/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://automaton-media.com/en/news/20231201-23610/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://blog.bscotch.net/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://blog.bscotch.net/post/indie-game-dev-timeline-for-how-many-dudes/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://blog.photonengine.com/r-e-p-o-multiplayer-success-powered-by-photon/",
+      "status": "Public page readable",
+      "note": "Read during the publication pass; claims remain attributed to the original author.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://cayplay.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://cayplay.com/news/winter-extravaganza-event---have-you-been-naughty-or-nice-",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://creepyjar.com/raport-24_2026/",
+      "status": "Responded",
+      "note": "Original Polish issuer report read directly: 905,000 preliminary gross PC/Steam copies in H1; later 930,000 estimate is a different cutoff. Publication date was not verified. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://developer.apple.com/news/?id=z12xq8fa",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamalytic.com/",
+      "status": "Access limited",
+      "note": "Security/rate-limit response, not a confirmed missing website.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamedev.net/news/4042-you-just-look-at-the-number-and-go-what-happened-the-developers-of-rv-there-yet/",
+      "status": "Public page readable",
+      "note": "Article exists. Secondary briefing of GamesIndustry.biz; see SA-10.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamedevreports.substack.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamedevreports.substack.com/about",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamedevreports.substack.com/p/games-and-numbers-august-12-august",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamedevreports.substack.com/p/newzoo-the-gaming-market-in-2026",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamemakers.jp/article/2024_02_14_60602/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamemarketing.substack.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamemarketing.substack.com/about",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamemarketing.substack.com/p/heres-what-actually-predicts-next",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamemarketing.substack.com/p/how-many-of-the-4000-games-in-next",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://gamemarketing.substack.com/p/steam-just-released-an-update-that",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://github.com/PaulRenvoise/steamilar/blob/main/tags.json",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2025/10/20/steam-next-fest-october-2025-checking-in-on-the-games-that-broke-through/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+      "status": "Responded",
+      "note": "Published 2025 cohort and methodological caveats read; the 15/72 OWSC ratio mixes manually classified qualifying hits with tag-based supply. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "status": "Responded",
+      "note": "Published Q1 article read alongside the site's extracted Q1 dataset: four OWSC qualifying hits; no genre supply denominator verified. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/06/16/june-2026-steam-next-fest-start/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/06/25/how-the-steam-personal-calendar-affects-your-launch/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/06/30/nobody-plays-demos-and-that-is-ok/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/07/09/you-cannot-over-expose-your-game/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/07/13/did-ai-slop-ruin-steam-next-fest-june-2026/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/07/14/games-that-used-momentum-for-steam-next-fest-success/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/07/30/is-friendslop-saturated/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/08/11/the-state-of-virtual-3rd-party-festivals-2026/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/08/18/the-week-of-the-golden-age/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/08/20/part-2-the-week-of-the-golden-age/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/08/21/part-3-the-week-of-the-golden-age-how-many-dudes/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/page/2/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://itch.io/blog/179/the-raft-developers-open-up-about-successes-and-school",
+      "status": "Responded",
+      "note": "Public April 27, 2017 direct developer interview read; student prototype, funding context and design constraints supported. No sales milestone inferred. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://knowyourmeme.com/memes/subcultures/chained-together",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://knowyourmeme.com/memes/subcultures/content-warning-video-game",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://knowyourmeme.com/memes/subcultures/repo",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://landfall.se/content-warning-press-kit",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://lulop.com/en_EN/post/show/337722/cloverpit-1m-copies-sold-hard-.html",
+      "status": "Public page readable",
+      "note": "Publisher/PR CloverPit million-copy milestone matched; not a hard-dead URL.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://medal.tv/blog/posts/how-to-get-a-free-copy-of-yapyap-from-medal",
+      "status": "Public page readable",
+      "note": "Read during the publication pass; claims remain attributed to the original author.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://mijugames.com/pages/planetcrafter/presskit.html",
+      "status": "Responded",
+      "note": "Official studio press kit read: two-person origin, later team growth and dated release history. Current material, not a frozen 2024 staffing record. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://mikeklubnika.itch.io/buckshot-roulette",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/archive",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-abiotic-factor-rode-a-hot-steam",
+      "status": "Responded",
+      "note": "The substantive public September 2, 2025 developer/publisher interview was readable, not metadata-only. Steam unit milestone and bundle/localization discussion read; console subscription audience kept separate. No paywall bypass. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-have-the-genres-of-hit-pc-games",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-the-planet-crafter-hit-1-million",
+      "status": "Responded",
+      "note": "The substantive public June 24, 2024 founder interview was readable, not metadata-only. Historical Steam unit milestone and EUR 200,000 paid-streamer campaign read. No paywall bypass. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-yapyap-jammed-its-way-to-1-million",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/putting-your-game-in-a-showcase-5",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/revealed-new-data-on-steam-wishlist",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/schedule-is-solo-smash-hit-and-the?open=false",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/what-were-augusts-biggest-new-pc",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://opgamemarketing.substack.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://opgamemarketing.substack.com/p/how-tavern-games-are-quietly-printing",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://opgamemarketing.substack.com/p/how-well-do-turn-based-combat-games",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://opgamemarketing.substack.com/p/how-wyldheart-secured-over-200k-wishlists",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://opgamemarketing.substack.com/p/the-rise-of-productivity-games-on",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/home",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/marketing/branding",
+      "status": "Public page readable",
+      "note": "Read during the publication pass; claims remain attributed to the original author.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/marketing/upcoming_events",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/marketing/utm_analytics",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/application/demos?language=english",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/getreviews",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/Review_Process",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/reviews",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/tags",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://playism.com/en/news/2024/0417/1559/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://press.ukiyostudios.com/exorcist-hotline-leads-7-announcements-from-black-lantern-collective-in-the-inaugural-second-wind-games-showcase",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000110.000071410.html",
+      "status": "Responded",
+      "note": "Original April 20, 2026 Pocketpair publisher announcement read in Japanese. Million-copy outcome is not Steam-only; listed PC stores include Steam, Epic and Stove. Demo outcomes are publisher-reported. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://raft.itch.io/raft",
+      "status": "Responded",
+      "note": "Official prototype reference included for context. The article's historical claims are sourced to the separate itch.io developer interview; no independent sales or reach claim relies on this page. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://rogueliker.com/cloverpit-hard-mode/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://sketbordcat.itch.io/horse-magnifier",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://sketbordcat.itch.io/horse-magnifier-the-full-horse",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamcommunity.com/app/1285670/allnews/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamcommunity.com/app/2835570/announcements/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamcommunity.com/app/3525970?l=german",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamcommunity.com/app/3527290/discussions/0/592900729836930200/#c592900729836933748",
+      "status": "Primary artifact read",
+      "note": "Developer-tagged reply, 22 June 2025. Supports the baked-map pipeline, not a blanket network-authority claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamcommunity.com/app/3631290/announcements/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamcommunity.com/app/3722330/announcements/?l=german",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamcommunity.com/ogg/2835570/announcements/detail/4168718495664315447",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/1284190/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/1478500/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/1631270/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/1805110/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/1966720/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2133760/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2366970/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2379780/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2543510/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2567870/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2567870/info/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2637990/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2653790/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2679100/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2756920/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2834600/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2835570/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2881650/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2881650/info/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/2950790/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3035120/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3041230/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3059070/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3097300/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3164500/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3180070/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3241660/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3244220/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3293260/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3311740/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3314790/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3405340/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3419520/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3525970/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3527290/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3618390/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3631290/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3643170/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3667390/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3716600/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3722330/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3767740/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3771400/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3784030/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3834090/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3934270/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3948120/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3949040/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/3949040/history/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4001890/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4050060/history/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4069520/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/427410/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4315040/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4421010/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4425970/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4534960/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4585340/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4585340/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/4594150/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/648800/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/app/892970/charts/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated requests as instructed. Aggregate review count, all-time CCU peak and peak date were read through direct web research on September 2. No fresh reachability or availability claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/patchnotes/16252076/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/patchnotes/21257975/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdb.info/stats/releases/",
+      "status": "Not rechecked (SteamDB)",
+      "note": "Excluded from automated checks. Prior attributed public observations are not independently refreshed in this audit.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://steamdeckhq.com/news/keep-driving-road-trip-rpg-feb-6/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://storage.mfn.se/29d8f069-b694-4c6a-812a-54fa97f7e539/envar-games-internally-developed-game-witchspire-surpasses-100-000-wishlists-on-steam.pdf",
+      "status": "Responded",
+      "note": "Original December 10, 2025 issuer PDF read: 100,000 Steam wishlists and December 4 gameplay trailer. This is not the June sales announcement or a conversion denominator. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1001270/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1092590/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1284190/The_Planet_Crafter/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1297900/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1431300/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1451480/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1478500/Big_Walk/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1578390/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1597080/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1614550/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1631270/StarRupture/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1805110/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1805110/Solarpunk/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1910680/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/1966720/Lethal_Company/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2004680/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2080890/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2133760/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2144600/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2186990/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2211170/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2258380/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2327720/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2340520/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2366970/Arco/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2379780/Balatro/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2445690/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2543510/GUNTOUCHABLES/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2567870/Chained_Together/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2637990/Duck_Detective_The_Secret_Salami/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2649860/",
+      "status": "Responded",
+      "note": "Gombo's June date and 40 scored reviews came from the earlier bounded anonymous Steam search snapshot, not a refreshed app-page review total. This app page is checked for reachability only. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2653790/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2653790/The_Exit_8/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2679100/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2679100/Witchspire/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2753000/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2756920/Keep_Driving/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2776630/",
+      "status": "Responded",
+      "note": "Skillwood's June date and 254 scored reviews came from the earlier bounded anonymous Steam search snapshot, not a refreshed app-page review total. This app page is checked for reachability only. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2834600/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2835570/BuckshotRoulette/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2950790/IRON_NEST_Heavy_Turret_Simulator/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2975040/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3035120/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3041230/Windrose/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3059070/The_Headliners/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3097300/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3100310/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3121810/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3144230/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3164500/Schedule_I/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3180070/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3205720/Schedule_I_Free_Sample/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3241660/REPO/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3244220/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/327070/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3276050/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3293260/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3311740/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3314790/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3316960/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3326670/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3337380/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3405340/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3419520/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3455320/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3483510/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3525970/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3559510/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3569560/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3618390/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3618850/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3631290/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3643170/Roadside_Research/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3658030/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3667390/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3669200/Guildrun/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3700980/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3709430/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3716600/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3722330/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3753790/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3767740/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3784030/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3844970/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3858650/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3860890/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3868760/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3946810/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3948120/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3948910/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3976150/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3979330/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3979840/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3983090/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/3990560/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4064510/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4069520/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4080030/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4081170/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4105080/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4121170/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4128450/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4143100/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4162040/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4198590/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4227400/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4272830/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/427410/Abiotic_Factor/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4304930/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4313610/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4323990/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4335270/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4425970/Guildrun_Demo/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4448700/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4514650/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4517460/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4534960/Dear_Passengers/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4553140/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4585340/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4590400/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4606220/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4610760/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4613470/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4633600/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4653920/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4685210/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4692700/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4704690/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4727880/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4731620/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4738550/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4754800/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4766300/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4774160/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/4800590/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/648800/Raft/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/673560/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/752290/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/app/892970/Valheim/",
+      "status": "Responded",
+      "note": "Official Steam product page read for player promise, release information and stated feature or Early Access scope. Commercial figures use separate dated sources; current page contents can change. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/1285670/view/4552667757460764174",
+      "status": "Primary artifact read",
+      "note": "KEEP DRIVING DEMO · 2024-10-14. First-party qualitative report and demo artifact. No historical impression, wishlist or sales attribution total is supplied.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/1285670/view/4693404340616224961",
+      "status": "Primary artifact read",
+      "note": "Keep Driving Reveal · 2024-10-02. Correctly a different game's community: direct evidence of owned-audience cross-promotion, not an app-ID error. No conversion count.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/1887840/view/644691200809369614",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/2756920/view/4692278440715512636",
+      "status": "Primary artifact read",
+      "note": "Keep Driving Reveal · 2024-10-02. Announcement, no attributed wishlist or sales figure.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/2756920/view/538852710067208317",
+      "status": "Primary artifact read",
+      "note": "LudoNarraCon x Keep Driving Sale · 2025-05-01. Developer-reported buyers, not demo downloads or estimated owners. Preserve 'people who bought the game' wording rather than claiming an audited unique-account or net-unit definition. This was a Steam-era milestone before the future console plans described in the post.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/2835570/view/496069147391688786",
+      "status": "Primary artifact read",
+      "note": "6 Million High Rollers and counting, new games by Mike Klubnika and… a movie? · 2025-05-08. Explicitly Steam copies sold; not combined-platform players or concurrent users. This milestone predates the promotional items discussed in the same post and cannot measure their incremental lift.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/2881650/view/4188984060585127097",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3525970/view/492719985750181073",
+      "status": "Primary artifact read",
+      "note": "50k players · 2026-03-22. Developer-reported copies sold, not demo downloads, concurrent players or modeled owners. Published to the game's Steam community before console/mobile ports; the body does not independently itemize storefront accounting or refunds.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3527290?emclan=103582791475178324&emgid=498325386812195119",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3631290/view/538868565209514436",
+      "status": "Primary artifact read",
+      "note": "Slots & Daggers is OUT NOW! · 2025-10-24. Developer's retrospective report of demo recognition, not a measured attribution model. The October 24 publication is not automatically the award date. Award social-post contents/date were not separately verified in this bounded follow-up.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3631290/view/687488077158942074",
+      "status": "Primary artifact read",
+      "note": "100K Copies Sold & What's Next · 2025-11-03. Developer-reported copies sold before subsequent console/mobile releases. The later 300K milestone is separate and must not inherit this Steam-era platform scope.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3722330/view/511844430570848713",
+      "status": "Primary artifact read",
+      "note": "Position Filled: Publisher 📋 · 2025-09-26. First-party partnership announcement. Budget, deal terms and campaign conversion are not disclosed.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3722330/view/511844430570848917",
+      "status": "Primary artifact read",
+      "note": "MULTIPLAYER DEMO OUT NOW! · 2025-09-29. Historical demo scope, not current full-game scope. For proximity-chat details pair with the September 9 developer update. For the prerecorded stream use the separate September 29 event below.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3722330/view/511844430570848973",
+      "status": "Primary artifact read",
+      "note": "Shift At Midnight Livestream 📋 · 2025-09-29. Campaign artifact, not live-viewership or conversion evidence. The title says Livestream but the body explicitly calls the content prerecorded.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/app/3722330/view/525353325860751552",
+      "status": "Primary artifact read",
+      "note": "MULTIPLAYER DEMO SEP 29TH · 2025-09-09. First-party account of a production/publishing constraint. It does not disclose audience or financial totals, the specific legal issue, or its cause beyond the developer's wording.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/posts/?enddate=1707249783&feed=steam_community_announcements",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/posts/?enddate=1708445842&feed=steam_community_announcements",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/news/posts/?enddate=1746118851&feed=steam_community_announcements",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&l=english&cc=us",
+      "status": "Responded",
+      "note": "Earlier anonymous public search results yielded a June-only subcohort. This generic live search URL is provenance, not an immutable replay or proof of full-Q2 completeness. Today's first page is not the historical June subset. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://studio.youtube.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://tellusgames.itch.io/outhold/devlog/1141147/outhold-is-out-now-on-steam",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://twistedvoxel.com/kwalee-signs-publishing-deals-for-shift-at-midnight-lilys-world-xd-and-welcome-to-elderfield/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://twitter.com/NOTOKEKE/status/1720416995613819391",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://vginsights.com/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://view.news.eu.nasdaq.com/view?id=b0b32aa6556a4dc2d323e47b7b1d5de00&lang=en&src=micro",
+      "status": "Responded",
+      "note": "Original Envar issuer announcement on Nasdaq read: June 18, 2026, 100,000 Steam copies sold in the first week after June 10. Several years of development and financing context retained. Reachability check was one anonymous GET with no retries or authentication; an HTTP success is not independent confirmation of every claim.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://wnhub.io/news/finance/item-50376",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://wnhub.io/news/stores-and-publishing/item-51469",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.deutschland.de/en/topic/careers-and-work/cosy-games-tiny-bookshop-video-games",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.dlh.net/en/news/87507/no-i-m-not-a-human-receives-fresh-visitors.html",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.dlh.net/en/news/88152/roadside-research-surpasses-300k-sales-in-two-weeks.html",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/aggro-crab-side-hustle-peak-has-sold-100-000-copies-in-24-hours",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/arco-breaks-even-after-topping-100-000-sales",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/content-warning-sells-2-2-million-copies-nets-8-8m-players-in-two-months",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/rv-there-yet-has-cruised-towards-1-3-million-sales-in-just-one-week",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamefile.news/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamefile.news/about",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamespew.com/2026/04/raccoin-sold-100000-copies/",
+      "status": "Public page readable",
+      "note": "RACCOIN 100K story matched; retain reported-sales classification.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/co-op/amid-the-friendslop-renaissance-usd5-co-op-fishing-game-hits-370-000-peak-players-on-steam-in-5-days/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/co-op/latest-steam-lottery-winner-how-to-fish-sells-1-million-copies-in-2-days-yes-well-be-adding-more-content/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/horror/he-made-a-viral-horror-game-in-2-months-it-sold-6-million-copies-and-now-he-can-make-whatever-he-wants-for-the-rest-of-his-life-my-final-theory-is-that-gambling-is-very-fun/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/roguelike/another-roguelike-success-story-has-hit-steam-d-and-d-flavored-slot-machine-slots-and-daggers-sells-100-000-copies-in-10-days-a-surreal-number-for-a-solo-dev-like-me/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/simulation/one-of-steams-hottest-top-sellers-is-the-zombie-apocalypse-sim-that-previously-dominated-steam-next-fest-and-its-celebrating-with-a-dead-by-daylight-collab/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/simulation/the-zombie-apocalypse-simulator-where-youre-a-last-of-us-style-fed-deciding-who-gets-to-live-in-the-quarantine-zone-hits-1-million-wishlists-as-indie-powerhouse-devolver-digital-signs-on-as-publisher/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/sports/pvp-indie-golf-game-with-93-percent-very-positive-reviews-hits-1-million-copies-sold-on-steam-in-just-over-a-month-so-many-friendships-ended/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/the-sims/we-get-a-lot-of-cozy-life-sims-but-not-many-of-them-crack-steams-top-20-best-sellers-in-4-days-with-95-percent-positive-reviews-and-thank-goodness-this-adorable-bookshop-management-sim-has-nothing-to-do-with-a-farm/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.gamingonlinux.com/2025/10/megabonk-is-a-mega-success-selling-1-million-in-2-weeks-after-being-repeatedly-told-to-delay-it/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/fundaygames_250000-copies-sold-what-a-week-its-activity-7442472993777287168-ZnMD",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/fundaygames_we-like-big-round-numbers-in-just-activity-7464940921948811264-1OHm",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/thomas-reisenegger-32571766_our-indie-horror-game-went-viral-on-social-activity-7269302450770137088-5zfS",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/wangjintao_raccoin-hit-100k-units-sold-in-less-than-activity-7445078418062385152-_kK1",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.mynewsdesk.com/uk/swipe-right/pressreleases/guntouchables-hits-over-2m-downloads-in-the-first-24-hours-3398663",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.patreon.com/posts/why-multiplayer-68901403",
+      "status": "Public page readable",
+      "note": "Public Zeekerss development post; supports multiplayer-design discussion. Prefer the author-qualified canonical URL.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.patreon.com/zeekerss/posts/end-of-first-of-68118367",
+      "status": "Public page readable",
+      "note": "Public Zeekerss post supports development being underway in June 2022.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.patreon.com/zeekerss/posts/game-is-out-91793147",
+      "status": "Public page readable",
+      "note": "Public Zeekerss launch post; first-week response and design-cut discussion accessible.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/action/steams-latest-mini-hit-is-mage-arena-a-voice-powered-spellcasting-game-that-costs-usd3/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/horror/steam-smash-hit-content-warning-has-sold-over-700000-copies-after-giving-away-6-million-free-copies/",
+      "status": "Public page readable",
+      "note": "Read during the publication pass; claims remain attributed to the original author.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/puzzle/this-weeks-most-compelling-new-steam-game-is-horse-magnifier-which-is-about-magnifying-horses/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/roguelike/playstack-not-content-with-obliterating-my-free-time-via-balatro-is-publishing-another-roguelike-about-coin-pusher-machines/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/roguelike/vampire-survivors-like-megabonk-makes-megabucks-selling-a-million-copies-in-2-weeks-and-currently-has-more-daily-players-than-borderlands-4-on-steam-ill-be-eating-spaghetti-with-extra-sauce-tonight/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/sim/one-of-the-best-reviewed-new-games-on-steam-right-now-is-about-feeding-raccoons-and-cryptids-with-the-cosmic-lynchian-oven-of-your-eerie-woodland-house/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/sports/that-golf-game-with-orbital-death-lasers-sold-100k-copies-in-two-days-we-made-super-battle-golf-together-in-4-5-months-and-are-so-happy/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pushtotalk.gg/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pushtotalk.gg/about",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.pushtotalk.gg/p/are-old-games-killing-new-games",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/gamedev/comments/1cwlf2s/we_got_over_60k_wishlists_in_6_months_this_is_how/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/gamedev/comments/1i1zazy/how_we_managed_to_reach_82000_wishlists_in_4/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/gamedev/comments/1kowjz4/update_our_game_blew_up_on_itch_but_we_were_not/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/gamedev/comments/1v9z4vi/we_made_361657_gross_revenue_in_the_first_24/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/gamedev/comments/1va2gtb/releasing_with_61000_wishlists_2_person_what_we/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/incremental_games/comments/1mcz4iz/i_made_25_septillion_fish_for_my_game_also_the/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/incremental_games/comments/1q9vrft/gamblers_table_is_out_now/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/IndieDev/comments/1kir2vb",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/indiegames/comments/1kssqtg/quarantine_zone_the_last_check_demo_is_out_now/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/LifeSimulators/comments/1hwo550",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/LifeSimulators/comments/1inp6uc/my_mini_lifesim_that_lives_on_the_bottom_of_your/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/pcgaming/comments/1mjx108",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/playmygame/comments/1pec3on/the_wildlife_feeding_simulator_ive_been_working/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/survivorslikes/comments/1nkfm37/started_working_on_megabonk_1_year_ago_and/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.reddit.com/r/u_PlaystackGames/comments/1mtfa9e",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.scheduleonegame.com/presskit/schedule-one/index.html",
+      "status": "Public page readable",
+      "note": "Official factsheet: 24 March 2025, Steam Windows, $19.99, Tyler's development roles and additional music/graffiti credits. Not a dead source.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.thecozygamers.com/news/tiny-bookshop-sells-over-300000-copies-as-developers-tease-future-content-updates/",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-vDmFnNNnoI",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=C3IVB0Wnk1s",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Vt08pWqO6Og",
+      "status": "Responded",
+      "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "baselineCheckedAt": "2026-09-02"
+}

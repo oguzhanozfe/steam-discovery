@@ -1,0 +1,798 @@
+{
+  "asOf": "2026-09-02",
+  "priorityWindow": {
+    "from": "2026-06-02",
+    "to": "2026-09-02"
+  },
+  "methodology": "Publicly accessible article text was read. No paywalls were bypassed. A paid label does not necessarily mean the lead case study is inaccessible; these records distinguish accessible lead sections from locked material. Numerical claims retain their original unit, time window, and evidence type. Newsletter analysis is not Valve telemetry or a causal experiment.",
+  "sources": [
+    {
+      "id": "gdc",
+      "name": "The GameDiscoverCo newsletter",
+      "author": "Simon Carless",
+      "url": "https://newsletter.gamediscover.co/",
+      "verificationUrl": "https://newsletter.gamediscover.co/archive",
+      "kind": "Analyst newsletter and developer interviews",
+      "strongestUse": "Game-by-game launch timelines, creator and showcase discovery, player overlap, and estimated wishlist trajectories; frequent direct developer data.",
+      "blindSpots": "Mixes disclosed numbers with proprietary estimates. Hit-focused case selection. Some charts and full analyses require Plus or Pro; newsletter access is not a dataset license.",
+      "access": "Free articles and public lead sections; paid newsletter and Pro platform also offered",
+      "priority": "Core"
+    },
+    {
+      "id": "gmi",
+      "name": "Game Marketing Intel",
+      "author": "Cole",
+      "url": "https://gamemarketing.substack.com/",
+      "verificationUrl": "https://gamemarketing.substack.com/about",
+      "kind": "Independent practitioner analysis",
+      "strongestUse": "Readable Next Fest cohort comparisons, follower-based wishlist estimates, small-game marketing tactics, and templates.",
+      "blindSpots": "Author describes himself as a solo developer/pharmacist rather than a Valve insider. Wishlist proxies, incomplete polling and excluded age-gated titles can alter conclusions. Treat algorithm explanations as hypotheses.",
+      "access": "Public articles and audio",
+      "priority": "Core"
+    },
+    {
+      "id": "alinea",
+      "name": "The Alinea Insight newsletter",
+      "author": "Rhys Elliott / Alinea Analytics",
+      "url": "https://alineaanalytics.substack.com/",
+      "verificationUrl": "https://alineaanalytics.substack.com/archive",
+      "kind": "Commercial market-data analyst",
+      "strongestUse": "Cross-platform unit/revenue estimates, wishlist-to-buyer cohorts, regional distribution, audience overlap, and pricing context.",
+      "blindSpots": "Estimates are not publisher accounts. Overlap is not incremental attribution. Public articles show selected outputs rather than the complete model or dataset; rhetoric can be stronger than evidence.",
+      "access": "Free newsletter; commercial analytics platform and client material",
+      "priority": "Core"
+    },
+    {
+      "id": "opgm",
+      "name": "OP Game Marketing",
+      "author": "Jordan Brown, Frostbloom co-founder",
+      "url": "https://opgamemarketing.substack.com/",
+      "verificationUrl": "https://opgamemarketing.substack.com/p/how-well-do-turn-based-combat-games",
+      "kind": "Publisher/practitioner newsletter",
+      "strongestUse": "Niche scans with downloadable cohorts and marketing mini-cases, especially taverns, productivity games and turn-based hybrids.",
+      "blindSpots": "Often uses Gamalytic estimates and handpicked cohorts. Filtering out low-revenue or 'non-serious' games inflates apparent hit rates; publisher relationships are relevant context.",
+      "access": "Public articles and linked research sheets",
+      "priority": "Core"
+    },
+    {
+      "id": "gdr",
+      "name": "GameDev Reports",
+      "author": "Dmitriy Byshonkov",
+      "url": "https://gamedevreports.substack.com/",
+      "verificationUrl": "https://gamedevreports.substack.com/about",
+      "kind": "Research and milestone aggregator",
+      "strongestUse": "Finding original industry reports, regional market data and newly announced game milestones; a high-coverage research inbox.",
+      "blindSpots": "Not independent confirmation of its upstream sources. Forecasts, publisher announcements and model estimates have different definitions. Follow original links before using a number in a decision.",
+      "access": "Public summaries; paid reports archive and premium updates",
+      "priority": "Core"
+    },
+    {
+      "id": "bscotch",
+      "name": "Butterscotch Shenanigans development blog",
+      "author": "Sam, Seth and Adam Coster / studio team",
+      "url": "https://blog.bscotch.net/",
+      "verificationUrl": "https://blog.bscotch.net/post/indie-game-dev-timeline-for-how-many-dudes/",
+      "kind": "First-party developer postmortems",
+      "strongestUse": "Actual project chronology, experiments, wishlist CSVs, production constraints, unsuccessful channels and commercial results.",
+      "blindSpots": "A 14-year studio's accumulated team and pipeline advantages do not transfer to a new team. First-party attribution remains observational. Irregular publication; not a market-wide panel.",
+      "access": "Public blog; not a Substack",
+      "priority": "Core"
+    },
+    {
+      "id": "ptt",
+      "name": "Push to Talk",
+      "author": "Ryan K. Rigney",
+      "url": "https://www.pushtotalk.gg/",
+      "verificationUrl": "https://www.pushtotalk.gg/about",
+      "kind": "Practitioner essays and developer interviews",
+      "strongestUse": "Positioning, audience psychology, marketing craft and candid creator interviews, including commercial disappointments.",
+      "blindSpots": "Irregular schedule; not a current Steam sales database. Historical market figures must retain their year. Author's current a16z marketing role and earlier live-service background are context.",
+      "access": "Public archive; some subscription content may vary",
+      "priority": "Context"
+    },
+    {
+      "id": "gamefile",
+      "name": "Game File",
+      "author": "Stephen Totilo",
+      "url": "https://www.gamefile.news/",
+      "verificationUrl": "https://www.gamefile.news/about",
+      "kind": "Original games-industry journalism",
+      "strongestUse": "Developer interviews, platform changes, business reporting and checking the circumstances behind headline successes or failures.",
+      "blindSpots": "Not a Steam niche-demand estimator. Many reports require subscription. Archive checked; no inaccessible article was treated as read.",
+      "access": "Free and paid tiers",
+      "priority": "Context"
+    }
+  ],
+  "articles": [
+    {
+      "id": "gdc-hearth-hamlet",
+      "title": "Hearth & Hamlet’s ~100k & the rise of the bite-sized clicker...",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-08-28",
+      "url": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+      "topics": [
+        "Incremental",
+        "Small games",
+        "Pricing",
+        "Expectation management"
+      ],
+      "relatedGames": [
+        "Hearth & Hamlet",
+        "Sir, We Have an Orc Problem",
+        "Bills Must Be Paid"
+      ],
+      "summary": "A solo teacher's compact city-themed incremental illustrates demand for finite, low-friction progression. The city-builder appearance also attracted players expecting manual construction, which the fixed-layout design did not provide.",
+      "hardData": [
+        "Headline reports approximately 100k copies; game was nine days old.",
+        "Publisher supplied >200k launch wishlists and 7h20 median playtime.",
+        "Price cited: $8; Steam review sentiment: 79% positive.",
+        "Publisher region split: US 23%, China 14.5%, Germany 13%."
+      ],
+      "evidenceType": "Publisher-disclosed case data plus analyst interpretation",
+      "actionableLesson": "Make the upgrade fantasy visually obvious, keep scope finite, and explicitly show whether construction is authored or player-directed.",
+      "limitations": "No full cost disclosure or controlled channel attribution. Forecast revenue is not earned revenue; omitted here.",
+      "access": "Public lead case study; later weekly charts are paywalled"
+    },
+    {
+      "id": "gdc-genre-shift",
+      "title": "How have the genres of hit PC games changed since 2021?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-08-25",
+      "url": "https://newsletter.gamediscover.co/p/how-have-the-genres-of-hit-pc-games",
+      "topics": [
+        "Genre demand",
+        "Pricing",
+        "Roguelite",
+        "Incremental",
+        "Market methodology"
+      ],
+      "relatedGames": [
+        "R.E.P.O.",
+        "PEAK",
+        "RV There Yet?"
+      ],
+      "summary": "A comparison of top-five genre tags among commercially successful 2021 and 2025 releases shows a shift toward run-based hybrids, life simulation and idlers. Both unit- and revenue-based views are provided.",
+      "hardData": [
+        ">50k-unit cohorts: 261 games in 2021 versus 469 in 2025.",
+        "Their median current US prices: $19.99 versus $16.99.",
+        ">$1m-gross cohorts: 196 versus 311 games.",
+        "2025 unit-cohort rank changes: Roguelite +39 to #1; Life Sim +31 to #6; Idler +46 to #15."
+      ],
+      "evidenceType": "GameDiscoverCo model estimates and tag analysis",
+      "actionableLesson": "Compare both copies and revenue; use a rising tag to locate comparables, not as a design brief.",
+      "limitations": "Winner-only cohorts do not measure success probability or supply. Tags overlap; prices are current, not necessarily launch prices.",
+      "access": "Public full article"
+    },
+    {
+      "id": "gdc-big-walk",
+      "title": "Will Big Walk’s 1m+ sales usher in a ‘co-op only’ game era?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-08-21",
+      "url": "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in",
+      "topics": [
+        "Co-op",
+        "Audience overlap",
+        "Showcases",
+        "No-demo launch"
+      ],
+      "relatedGames": [
+        "Big Walk",
+        "PEAK",
+        "Lethal Company",
+        "Untitled Goose Game"
+      ],
+      "summary": "Big Walk expands social co-op beyond chaos into a shared journey of communication and discovery. A strong reveal and later gameplay showcase generated interest without a public demo.",
+      "hardData": [
+        "Panic confirmed 1m paid copies across platforms in approximately six days.",
+        "Steam peak cited: 46k CCU; estimated launch wishlists: almost 1m.",
+        "2023 Game Awards reveal rapidly passed 100k estimated wishlists.",
+        "GDCo Steam overlap estimates: PEAK 75%, Lethal Company 67%, Untitled Goose Game 6%."
+      ],
+      "evidenceType": "Publisher milestone plus analyst estimates",
+      "actionableLesson": "Design moments that require friends to talk; target the social co-op audience rather than assuming the studio's previous audience transfers.",
+      "limitations": "Development began around 2020; established developer and publisher. Multi-platform sales and subscription players are separate measures.",
+      "access": "Public lead case study; later weekly charts are paywalled"
+    },
+    {
+      "id": "gdc-iron-nest",
+      "title": "How Iron Nest sold >250k copies in less than 3 days...",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-08-14",
+      "url": "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+      "topics": [
+        "Simulation",
+        "One-room scope",
+        "Short video",
+        "Demo",
+        "Next Fest"
+      ],
+      "relatedGames": [
+        "Iron Nest: Heavy Turret Simulator",
+        "PVKK"
+      ],
+      "summary": "Tactile controls, mechanical sound and a confined artillery fantasy made raw clips compelling. Mission variety reused one environment. Short video created early attention; playtests, longer videos and the demo broadened the funnel.",
+      "hardData": [
+        "Two developers; just over one year of development.",
+        "Developer data as of day five: >365k copies, $4.7m gross, 4% refunds.",
+        ">400k wishlists before the demo; >700k Next Fest demo players.",
+        "Demo later reached 876k players with 2h19 median playtime."
+      ],
+      "evidenceType": "Developer-disclosed results and interview",
+      "actionableLesson": "Concentrate art and audio on one satisfying machine, then create missions by recombining procedures instead of building more maps.",
+      "limitations": "Not a three-week completed-game comparator. Inspired by PVKK; the article discusses differentiation and shipping-speed concerns.",
+      "access": "Public lead case study; later weekly charts are paywalled"
+    },
+    {
+      "id": "gdc-showcases",
+      "title": "Putting your game in a showcase? 5 key Qs to ask...",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-08-11",
+      "url": "https://newsletter.gamediscover.co/p/putting-your-game-in-a-showcase-5",
+      "topics": [
+        "Showcases",
+        "Marketing ROI",
+        "Wishlists",
+        "Audience fit"
+      ],
+      "relatedGames": [
+        "Tears of Metal",
+        "Dodo Derby"
+      ],
+      "summary": "Showcase selection should consider lineup size, co-streaming, reveal density, cost, duration and audience fit. The article links event appearances to estimated wishlist movement rather than claiming every showcase works.",
+      "hardData": [
+        "GDCo tracked 385 showcases overall, including 68 in its leading-event group since July 2024.",
+        "Typical lineups cited: 35–40 games at Triple-I versus roughly 60–70 at some large shows.",
+        "Tears of Metal: estimated >150k units since July 22; demo ranked #9 of 2,966 in October 2025 Next Fest."
+      ],
+      "evidenceType": "Analyst estimates and event inventory",
+      "actionableLesson": "Before paying, request audience, co-streaming and comparable-game results; use a genuinely new reveal and a ready Steam page.",
+      "limitations": "Seven-day wishlist gains are estimated, confounded by other campaigns and unavailable for games lacking a Steam page.",
+      "access": "Public full article"
+    },
+    {
+      "id": "gdc-guildrun",
+      "title": "How Guildrun genre-mashed its way to ~300k demo players in 10 days",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-07-28",
+      "url": "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+      "topics": [
+        "Autobattler",
+        "Roguelike",
+        "Long-form creators",
+        "Playtesting",
+        "Genre hybrid"
+      ],
+      "relatedGames": [
+        "Guildrun",
+        "Teamfight Tactics",
+        "Balatro"
+      ],
+      "summary": "A PvE autochess/roguelike hybrid found players asking for that exact combination. Months of weekly balance iteration and specialist creator coverage preceded a same-day reveal and demo launch. Short-form was not a major driver.",
+      "hardData": [
+        ">275k demo players; 3h55 median playtime; 25% exceeded ten hours.",
+        "Approximately 230k wishlists by July 27; demo peak 14k CCU.",
+        "Discord grew from 250 early testers to 3k at demo launch.",
+        "Team included six full-time staff alongside founders, freelancers and outreach support."
+      ],
+      "evidenceType": "Developer-disclosed data and interview",
+      "actionableLesson": "Search niche communities for an unmet mode request, then validate with specialists and balance telemetry before mass promotion.",
+      "limitations": "Paid creators and ads were also used. Strong craft, experience and funding; not evidence that all acquisition was organic.",
+      "access": "Public full article"
+    },
+    {
+      "id": "gmi-nextfest-prediction",
+      "title": "What actually predicts Next Fest success?",
+      "author": "Cole",
+      "publication": "Game Marketing Intel",
+      "date": "2026-06-30",
+      "url": "https://gamemarketing.substack.com/p/heres-what-actually-predicts-next",
+      "topics": [
+        "Next Fest",
+        "CCU",
+        "Wishlist estimates",
+        "Demo feedback"
+      ],
+      "relatedGames": [
+        "Iron Nest: Heavy Turret Simulator",
+        "Dust Front RTS",
+        "Mistfall Hunter"
+      ],
+      "summary": "A broad June Next Fest scrape finds pre-existing interest and real demo engagement associated with better results. Starting wishlist totals were more correlated with gains than recent velocity in this dataset.",
+      "hardData": [
+        "Approximately 279 games lacked wishlist estimates and were excluded.",
+        "80% of demos did not reach ten concurrent players.",
+        "Estimated median wishlist gain rose from 224 in the 1–9 CCU bucket to 1,284 in the next bucket.",
+        "The 2k–5k starting-wishlist cohort was the first with median gains above 1k."
+      ],
+      "evidenceType": "Follower-derived estimates and observational cohort analysis",
+      "actionableLesson": "Release the demo early enough to fix feedback; monitor natural engagement, not manufactured concurrent sessions.",
+      "limitations": "Wishlist proxy was adjusted during the event; pre-event CCU polling was incomplete. Correlation is not an algorithm threshold.",
+      "access": "Public full article"
+    },
+    {
+      "id": "gmi-nextfest-competition",
+      "title": "How many of the 4,000+ games in Next Fest are you actually competing with?",
+      "author": "Cole",
+      "publication": "Game Marketing Intel",
+      "date": "2026-06-16",
+      "url": "https://gamemarketing.substack.com/p/how-many-of-the-4000-games-in-next",
+      "topics": [
+        "Next Fest",
+        "Competition",
+        "Subgenres",
+        "Market methodology"
+      ],
+      "relatedGames": [],
+      "summary": "The relevant competitive set is narrower than the total festival catalog. Filtering by genre and evidence of existing interest reveals a more useful comparison group, while weak demand in a small genre remains a warning.",
+      "hardData": [
+        "4,350 participating games at the initial snapshot; 175 excluded for inaccessible follower data.",
+        "1,241 of 4,175 had <100 estimated wishlists; 2,146 had 100–2k; 788 exceeded 2k.",
+        "Point-and-click cohort: 272 games, only 27 above 2k estimated wishlists.",
+        "General wishlist proxy used: followers ×12."
+      ],
+      "evidenceType": "Steam API scrape plus wishlist proxy",
+      "actionableLesson": "Benchmark against comparable games with a real audience, while retaining the low-performing cohort to understand risk.",
+      "limitations": "Calling only high-interest games competition is an interpretation. Proxy and age-gate exclusions affect counts; tags are non-exclusive.",
+      "access": "Public full article"
+    },
+    {
+      "id": "gmi-personal-calendar",
+      "title": "Steam completely changed Popular Upcoming - here's what you need to know",
+      "author": "Cole",
+      "publication": "Game Marketing Intel",
+      "date": "2026-06-09",
+      "url": "https://gamemarketing.substack.com/p/steam-just-released-an-update-that",
+      "topics": [
+        "Steam visibility",
+        "Personal Calendar",
+        "Launch timing"
+      ],
+      "relatedGames": [],
+      "summary": "Early analysis of the June storefront redesign distinguishes the more selective Popular Upcoming widget from personalized calendar discovery. Historical wishlist rules of thumb no longer describe the same placement.",
+      "hardData": [
+        "Homepage beta began April 1; public rollout cited as June 4, 2026.",
+        "Article reports the Personal Calendar can surface games approximately two months before launch."
+      ],
+      "evidenceType": "Observed platform change plus analyst interpretation",
+      "actionableLesson": "Use current Steamworks documentation and actual traffic-source reports; do not plan launch around an old 7k-wishlist promise.",
+      "limitations": "Early observations, not Valve's ranking specification. Reported entry ranges are not fixed or guaranteed thresholds.",
+      "access": "Public full article"
+    },
+    {
+      "id": "alinea-dear-passengers",
+      "title": "Another ''friendslop'' challenger enters the Steam arena",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-07-17",
+      "url": "https://alineaanalytics.substack.com/p/another-friendslop-challenger-enters",
+      "topics": [
+        "Co-op",
+        "Pricing",
+        "Organic reach",
+        "Audience overlap"
+      ],
+      "relatedGames": [
+        "Dear Passengers",
+        "R.E.P.O.",
+        "Meccha Chameleon",
+        "RV There Yet?"
+      ],
+      "summary": "A failing-airline co-op fantasy generated substantial pre-release demand through short social clips. The analyst connects low price friction and audience circulation among co-op games, while warning about incoming clones.",
+      "hardData": [
+        "Article reports >1m Dear Passengers wishlists and no paid marketing, creators or ads to that point.",
+        "Alinea estimates: 48% of wishlisters own R.E.P.O.; 47% PEAK.",
+        "Estimated R.E.P.O. prelaunch-wishlist conversion: 38% by day seven, 64% by day thirty.",
+        "Developer Flexus is a roughly 70-person studio, not a tiny new team."
+      ],
+      "evidenceType": "Analyst estimates and reported campaign information",
+      "actionableLesson": "Test a shared everyday role under absurd pressure; evaluate group purchase friction and regional pricing before choosing a price.",
+      "limitations": "Pre-release demand is not sales. Selected successful co-op conversions do not establish a universal rate; studio resources matter.",
+      "access": "Public full article"
+    },
+    {
+      "id": "alinea-aug24-breakouts",
+      "title": "Mortal Shell 2 passed half-a-million sold in its first weekend",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-08-24",
+      "url": "https://alineaanalytics.substack.com/p/mortal-shell-2-passed-half-a-million",
+      "topics": [
+        "Demo",
+        "Co-op",
+        "Regional pricing",
+        "Audience overlap"
+      ],
+      "relatedGames": [
+        "Mortal Shell 2",
+        "How to Fish",
+        "PEAK",
+        "Content Warning"
+      ],
+      "summary": "Two very different releases show the need to separate audience fit, pricing and demo evidence. How to Fish combined inexpensive co-op with familiar social audiences; Mortal Shell 2 attracted many players new to the original.",
+      "hardData": [
+        "Alinea estimate: How to Fish 1.9m units, approaching $8m revenue; launch price $4.95.",
+        "How to Fish overlap: PEAK 53%, Content Warning 27%.",
+        "Mortal Shell 2: estimated 510k multi-platform units and $23m revenue; 57.6% of units on Steam.",
+        "Approximately 600k Steam demo players; 9% of Steam buyers had played the original."
+      ],
+      "evidenceType": "Alinea model estimates",
+      "actionableLesson": "Keep platform and regional splits explicit; investigate demo engagement and relevant audience overlap instead of relying on franchise familiarity.",
+      "limitations": "No causal proof that demos drove purchases. Landfall financially supported How to Fish; it is not an unsupported zero-budget comparator.",
+      "access": "Public full article"
+    },
+    {
+      "id": "alinea-nextfest-june",
+      "title": "Steam Next Fest's winners, and why the event might matter less than you think",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-06-23",
+      "url": "https://alineaanalytics.substack.com/p/steam-next-fests-winners-and-why",
+      "topics": [
+        "Next Fest",
+        "Organic creators",
+        "Cross-promotion",
+        "Wishlists"
+      ],
+      "relatedGames": [
+        "Bombanana",
+        "Over the Hill",
+        "XenoFeels",
+        "Nightwater",
+        "Bongo Cat"
+      ],
+      "summary": "The piece argues Next Fest amplifies demand rather than creating it. Bombanana's legible asymmetric co-op premise snowballed through creators; Nightwater used an incentivized Bongo Cat collaboration, a distinctly different acquisition route.",
+      "hardData": [
+        "Bombanana page launched 25 days before Next Fest after approximately five months' development.",
+        "A creator tweet reached approximately 650k views; 60% of demo players exceeded one hour.",
+        "Over the Hill: estimated >400k demo players, roughly 100k event wishlists.",
+        "Nightwater: approximately 75k event wishlists; 73% of wishlisters played Bongo Cat that month."
+      ],
+      "evidenceType": "Analyst estimates plus developer campaign account",
+      "actionableLesson": "Label incentive-driven wishlists separately. Prepare an independently attractive demo and creator campaign rather than relying on festival inclusion.",
+      "limitations": "Wishlist conversion uses different cohorts and time windows. Strong claims about event causality are interpretation, not controlled evidence.",
+      "access": "Public full article"
+    },
+    {
+      "id": "gdr-newzoo-2026",
+      "title": "Newzoo: The Gaming Market in 2026 - powered by Mellow",
+      "author": "Dmitriy Byshonkov",
+      "publication": "GameDev Reports",
+      "date": "2026-08-25",
+      "url": "https://gamedevreports.substack.com/p/newzoo-the-gaming-market-in-2026",
+      "topics": [
+        "PC market",
+        "Forecasts",
+        "Regional demand",
+        "Definitions"
+      ],
+      "relatedGames": [],
+      "summary": "A digest of Newzoo's updated global forecast places PC growth in context. It explicitly explains why estimates from providers can disagree when off-store spending and geographic coverage differ.",
+      "hardData": [
+        "Newzoo forecast: global software/services spending $213.9bn in 2026, +6.1% year on year.",
+        "PC forecast: $45.9bn, +5.3%; 977m PC players.",
+        "2025 PC growth was revised to 12%.",
+        "Full Newzoo report was scheduled for September 10, after this research cutoff."
+      ],
+      "evidenceType": "Secondary summary of analyst forecast",
+      "actionableLesson": "Use PC-specific and region-specific measures; never treat global games spending as the addressable market for a Steam niche.",
+      "limitations": "Forecast, not final 2026 actuals. Covers software/services beyond Steam and excludes tax, hardware, advertising and gambling.",
+      "access": "Public digest; upstream report availability varies"
+    },
+    {
+      "id": "gdr-august-milestones",
+      "title": "Games and Numbers (August 12 — August 25, 2026) - powered by Mellow",
+      "author": "Dmitriy Byshonkov",
+      "publication": "GameDev Reports",
+      "date": "2026-08-25",
+      "url": "https://gamedevreports.substack.com/p/games-and-numbers-august-12-august",
+      "topics": [
+        "Milestones",
+        "Co-op",
+        "Simulation",
+        "Long tail",
+        "Counter-cases"
+      ],
+      "relatedGames": [
+        "Machine Party",
+        "ReStory",
+        "Arco",
+        "Big Walk",
+        "Moonlighter"
+      ],
+      "summary": "A useful index of original milestone announcements across platforms. It puts fast breakout stories beside Arco's much slower recovery, and distinguishes free player acquisition from paid unit sales.",
+      "hardData": [
+        "Machine Party: >1m copies in two weeks, linked to its Steam announcement.",
+        "ReStory: >300k copies in a week and $3m gross by August 10, linked to Steam.",
+        "Arco: >100k worldwide copies across platforms and development-cost breakeven after two years, confirmed to Game Developer on August 18, 2026. Available on Steam, Nintendo Switch, Mac App Store and Epic Games Store; most sales came through Steam, but no exact Steam unit count was disclosed.",
+        "Moonlighter: >7m free additions in five days; these are not paid sales."
+      ],
+      "evidenceType": "Aggregator linking publisher disclosures and reporting",
+      "actionableLesson": "Use this as a lead finder, then open the original announcement and record paid/free, platform scope and elapsed time.",
+      "limitations": "Different underlying evidence types; these figures are not independently audited by the newsletter. Milestones overrepresent winners. Arco's cross-platform milestone must not be labeled Steam-only.",
+      "sourceUrls": [
+        "https://gamedevreports.substack.com/p/games-and-numbers-august-12-august",
+        "https://www.gamedeveloper.com/business/arco-breaks-even-after-topping-100-000-sales",
+        "https://arco.game/presskit/"
+      ],
+      "access": "Public full article"
+    },
+    {
+      "id": "opgm-turnbased",
+      "title": "How Well Do Turn Based Combat Games Perform on Steam?",
+      "author": "Jordan Brown",
+      "publication": "OP Game Marketing",
+      "date": "2026-08-14",
+      "url": "https://opgamemarketing.substack.com/p/how-well-do-turn-based-combat-games",
+      "topics": [
+        "Turn-based",
+        "Genre hybrids",
+        "Revenue concentration",
+        "Supply"
+      ],
+      "relatedGames": [
+        "Lootbound",
+        "Tabletop Tavern"
+      ],
+      "summary": "A large turn-based-combat cohort shows a severe mean/median gap. The author studies hybrid loops, presentation, pricing and co-op, but the filtered observational sample cannot identify which design choice causes success.",
+      "hardData": [
+        "1,542 games released since January 2023; snapshot August 13, 2026.",
+        "Estimated median gross revenue $7,744 versus average $776,940.",
+        "Top 1% took 69.4% of revenue; top 10% took 95.8%.",
+        "Games under $500 estimated revenue and NSFW/unreleased titles were excluded."
+      ],
+      "evidenceType": "Steam/Gamalytic estimated cohort analysis",
+      "actionableLesson": "Look at median and downside cases before adding a strategy genre to the shortlist; identify a second appealing loop and production cost.",
+      "limitations": "Co-op, price and art correlations are confounded by budget and team quality. Exclusions make the apparent success rate optimistic.",
+      "access": "Public article and linked full cohort sheet"
+    },
+    {
+      "id": "opgm-taverns",
+      "title": "How Tavern Games Are Quietly Printing Money on Steam",
+      "author": "Jordan Brown",
+      "publication": "OP Game Marketing",
+      "date": "2026-05-07",
+      "url": "https://opgamemarketing.substack.com/p/how-tavern-games-are-quietly-printing",
+      "topics": [
+        "Tavern",
+        "Management",
+        "Co-op",
+        "Theme",
+        "Creator marketing"
+      ],
+      "relatedGames": [
+        "Bronzebeard's Tavern",
+        "Restaurats",
+        "Ale & Tale Tavern",
+        "Tavern Talk",
+        "Ravenous Devils"
+      ],
+      "summary": "A tavern theme supports several distinct audiences: cozy management, chaotic co-op, narrative and horror. Mini-cases describe free entry, demos, creator outreach, paid short-form testing and post-launch content.",
+      "hardData": [
+        "Handpicked sample: 38 titles, 22 released.",
+        "12/22 released games estimated above $100k gross; 7/22 above $1m.",
+        "Median price $14.99.",
+        "Bronzebeard's Tavern was a five-person student project and free; Ale & Tale had a four-person developer team."
+      ],
+      "evidenceType": "Gamalytic estimates and selected campaign mini-cases",
+      "actionableLesson": "Choose the player fantasy within the theme, then validate with the corresponding creators; do not mistake 'tavern' for a single genre.",
+      "limitations": "Outside priority window. Excludes NSFW and subjectively weak contenders; 12/22 is not the probability a new tavern game succeeds.",
+      "access": "Public article and linked cohort sheet"
+    },
+    {
+      "id": "opgm-productivity",
+      "title": "The Rise of Productivity Games on Steam",
+      "author": "Jordan Brown",
+      "publication": "OP Game Marketing",
+      "date": "2026-02-13",
+      "url": "https://opgamemarketing.substack.com/p/the-rise-of-productivity-games-on",
+      "topics": [
+        "Productivity",
+        "Cozy",
+        "Social co-working",
+        "Niche positioning"
+      ],
+      "relatedGames": [
+        "Spirit City: Lofi Sessions",
+        "Virtual Cottage 2",
+        "On-Together: Virtual Co-Working",
+        "Chill with You: Lo-Fi Story"
+      ],
+      "summary": "A narrow productivity cohort separates focus companions, customization-driven work rewards, social accountability and parasocial companionship. Marketing sells the feeling of getting work done, not just a timer and a feature list.",
+      "hardData": [
+        "34 selected games; data collected February 5–6, 2026.",
+        "Nine had >500 reviews; three had estimated gross revenue >$1m.",
+        "Virtual Cottage 2 had 58,026 estimated wishlists.",
+        "Pure idle and bottom-of-screen games were excluded."
+      ],
+      "evidenceType": "Steam/Gamalytic estimates and qualitative positioning analysis",
+      "actionableLesson": "Define a specific work ritual and audience; test cozy lifestyle creators, customization sharing and relevant cross-promotions.",
+      "limitations": "Outside priority window; small handpicked cohort and estimated numbers. Review counts alone do not establish profitability.",
+      "access": "Public article and linked cohort sheet"
+    },
+    {
+      "id": "opgm-wyldheart",
+      "title": "How Wyldheart Secured Over 200k Wishlists in 1 Month.",
+      "author": "Jordan Brown",
+      "publication": "OP Game Marketing",
+      "date": "2026-05-15",
+      "url": "https://opgamemarketing.substack.com/p/how-wyldheart-secured-over-200k-wishlists",
+      "topics": [
+        "Reveal campaign",
+        "Kickstarter",
+        "Co-op RPG",
+        "Showcases",
+        "Scope caution"
+      ],
+      "relatedGames": [
+        "Wyldheart",
+        "Tiny Glade"
+      ],
+      "summary": "A coordinated reveal combined a PAX East presentation, press embargo, creators, trailer and Kickstarter. The lesson is orchestration, not that unknown teams should hide their work for years.",
+      "hardData": [
+        "March 27 reveal; >200k wishlists and >4k Discord members within one month.",
+        "Kickstarter raised €272,214 from 5,869 backers against a €150k goal.",
+        "Studio was founded in 2020 with industry veterans; article cites >$7.9m funding.",
+        "Closed backer beta began May 15."
+      ],
+      "evidenceType": "Public campaign records and practitioner analysis",
+      "actionableLesson": "Coordinate genuinely complementary announcement assets and embargoes; only use a late reveal when a strong playable and distribution relationships already exist.",
+      "limitations": "Outside priority window. Veteran, funded team is unlike a three-week micro-team. Campaign spending and attribution are not fully disclosed.",
+      "access": "Public full article"
+    },
+    {
+      "id": "bscotch-hmd-timeline",
+      "title": "Indie Dev Timeline for How Many Dudes",
+      "author": "Sam Coster and Seth Coster",
+      "publication": "Butterscotch Shenanigans",
+      "date": "2026-08-20",
+      "url": "https://blog.bscotch.net/post/indie-game-dev-timeline-for-how-many-dudes/",
+      "topics": [
+        "Developer postmortem",
+        "Short video",
+        "Demo",
+        "Wishlists",
+        "Production"
+      ],
+      "relatedGames": [
+        "How Many Dudes?",
+        "Crashlands 2"
+      ],
+      "summary": "A first-party timeline contrasts an expensive, long project with a fast-to-understand, replayable game. It exposes experiments and actual wishlist history rather than retroactively reducing success to a single viral moment.",
+      "hardData": [
+        "July 30, 2026 launch, exactly one year after the idea.",
+        "173k Steam units sold in the first week.",
+        "The studio had fourteen years of prior experience.",
+        "A downloadable annotated wishlist CSV accompanies the article."
+      ],
+      "evidenceType": "First-party developer account and underlying CSV",
+      "actionableLesson": "Keep your own dated experiment log: hook, asset, channel, cost, baseline, observed change, and alternative explanations.",
+      "limitations": "One successful studio case, not a typical outcome. Accumulated experience and pipeline matter; not a one-year beginner benchmark.",
+      "access": "Public full developer blog and linked CSV; not a Substack"
+    },
+    {
+      "id": "ptt-arco-countercase",
+      "title": "Are Old Games Killing New Games?",
+      "author": "Ryan K. Rigney, interview with Antonio Uribe",
+      "publication": "Push to Talk",
+      "date": "2024-09-20",
+      "url": "https://www.pushtotalk.gg/p/are-old-games-killing-new-games",
+      "topics": [
+        "Counter-case",
+        "Positioning",
+        "Tactics",
+        "Attention scarcity",
+        "Developer interview"
+      ],
+      "relatedGames": [
+        "Arco"
+      ],
+      "summary": "An interview with Arco's co-creator demonstrates that strong reviews and a respected publisher do not guarantee sufficient launch revenue. The marketer also describes initially misreading its visual presentation as a slow narrative game.",
+      "hardData": [
+        "Arco had 98% positive Steam reviews at the article's snapshot.",
+        "The developer said first-month income did not fund six months of team work.",
+        "Interview describes 197 main encounters plus sixteen arena encounters."
+      ],
+      "evidenceType": "Direct developer interview; historical snapshot",
+      "actionableLesson": "Check whether screenshots and the first seconds of a trailer communicate the actual play experience; include admired commercial underperformers in comparisons.",
+      "limitations": "Historical counter-case, not 2026 market data. Playtime-share figures in the original concern 2023 and are not used as current estimates.",
+      "access": "Public full article"
+    }
+  ],
+  "crossSourceSynthesis": {
+    "agreements": [
+      {
+        "point": "A familiar loop plus a legible fantasy or visible twist is easier to communicate than a feature list.",
+        "articleIds": [
+          "gdc-iron-nest",
+          "gdc-guildrun",
+          "alinea-nextfest-june",
+          "opgm-productivity"
+        ]
+      },
+      {
+        "point": "A festival is one amplification moment in a longer funnel. Preparing a playable demo and attracting the right people beforehand are repeatedly present in successful cases.",
+        "articleIds": [
+          "gmi-nextfest-prediction",
+          "alinea-nextfest-june",
+          "gdc-iron-nest"
+        ]
+      },
+      {
+        "point": "Low-priced social co-op and finite incrementals show strong demand signals, but the same success stories frequently involve experienced teams, publishers, funding or months of iteration.",
+        "articleIds": [
+          "gdc-hearth-hamlet",
+          "alinea-dear-passengers",
+          "alinea-aug24-breakouts",
+          "gdc-big-walk"
+        ]
+      },
+      {
+        "point": "Niche audiences matter more than broad platform labels: PvE autochess, tactile machinery, social co-working and tavern management have different creators and reasons to buy.",
+        "articleIds": [
+          "gdc-guildrun",
+          "gdc-iron-nest",
+          "opgm-productivity",
+          "opgm-taverns"
+        ]
+      }
+    ],
+    "disagreementsAndResolution": [
+      {
+        "topic": "Wishlist stock versus recent momentum",
+        "positions": "Game Marketing Intel's broad proxy-based June sample finds starting wishlist stock more correlated with gains; Chris Zukowski's July 14 self-reported sample finds momentum modestly stronger.",
+        "resolution": "Different samples and estimation methods can produce both findings. Track both; neither proves Steam's ranking formula. Do not delay all marketing to manufacture a last-minute spike.",
+        "articleIds": [
+          "gmi-nextfest-prediction"
+        ],
+        "additionalSource": "https://howtomarketagame.com/2026/07/14/games-that-used-momentum-for-steam-next-fest-success/"
+      },
+      {
+        "topic": "Are wishlists a vanity metric?",
+        "positions": "Alinea's June article is skeptical about wishlist-to-sale conversion, yet its July co-op analysis shows strong conversion for selected inexpensive games. Other practitioners use wishlists as intent benchmarks.",
+        "resolution": "Keep cohort, price, acquisition source and conversion window. Intent matters, but a wishlist is not a purchase and no universal conversion factor is justified.",
+        "articleIds": [
+          "alinea-nextfest-june",
+          "alinea-dear-passengers",
+          "gmi-nextfest-prediction"
+        ]
+      },
+      {
+        "topic": "Is short-form always the best channel?",
+        "positions": "Iron Nest and Dear Passengers gained early short-form traction; Guildrun explicitly did not.",
+        "resolution": "Use visual spectacle and immediately readable social failure for short-form; use specialist long-form for strategy depth. Test channel fit per game.",
+        "articleIds": [
+          "gdc-iron-nest",
+          "alinea-dear-passengers",
+          "gdc-guildrun"
+        ]
+      },
+      {
+        "topic": "Should all indies charge under $10?",
+        "positions": "Cheap co-op/incremental cases convert well; the turn-based analysis favors longer, higher-priced games.",
+        "resolution": "Price is part of positioning and production scope. Cross-genre correlations are not a pricing experiment; use relevant comparables and a viable budget.",
+        "articleIds": [
+          "gdc-hearth-hamlet",
+          "alinea-dear-passengers",
+          "opgm-turnbased"
+        ]
+      },
+      {
+        "topic": "Do high niche hit rates establish an opportunity?",
+        "positions": "Selected tavern and productivity cohorts look encouraging; the broader turn-based cohort shows extreme concentration.",
+        "resolution": "Retain denominator and exclusions. Use curated success cases to generate hypotheses, then add weak launches, unreleased supply and production costs before committing.",
+        "articleIds": [
+          "opgm-taverns",
+          "opgm-productivity",
+          "opgm-turnbased",
+          "ptt-arco-countercase"
+        ]
+      }
+    ]
+  }
+}

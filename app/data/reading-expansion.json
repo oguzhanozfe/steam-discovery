@@ -1,0 +1,601 @@
+{
+  "checkedAt": "2026-09-03",
+  "methodology": "Thirteen selected public articles read across five additional resources, not their entire archives. Publication dates retain displayed dates or stay null. Application steps are our proposals for two senior developers, one artist, one product manager and one marketing manager over fifteen workdays; they are not outcomes validated by the articles. Historical numbers, self-reports, secondary claims and unresolved inconsistencies are labeled.",
+  "sources": [
+    {
+      "id": "game-world-observer",
+      "name": "Game World Observer",
+      "author": "Editorial team and named guest contributors",
+      "url": "https://gameworldobserver.com/",
+      "verificationUrl": "https://gameworldobserver.com/category/marketing",
+      "kind": "Industry publication; developer interviews and guest columns",
+      "strongestUse": "Campaign timelines and first-person operational breakdowns, especially when the studio or publisher supplies the numbers.",
+      "blindSpots": "Mixes original columns with secondary recaps and commercially interested contributors. Check bylines, original sources, dates, spend and metric definitions before treating a case as market-wide evidence.",
+      "access": "Selected articles publicly readable in full; no paywall bypass used.",
+      "priority": "Core",
+      "searchTerm": "Game World Observer developer postmortem Steam marketing wishlists"
+    },
+    {
+      "id": "game-if-you-are",
+      "name": "Game If You Are",
+      "author": "Agency team; individual case-study authors often unnamed",
+      "url": "https://gameifyouare.com/",
+      "verificationUrl": "https://gameifyouare.com/projects-case-studies/",
+      "kind": "Game-marketing agency; client case studies and practitioner guidance",
+      "strongestUse": "Concrete creator-outreach, positioning, asset preparation and publisher-pitch workflows.",
+      "blindSpots": "Selected client successes are agency self-reports, not independent experiments. Case dates, spend and channel attribution may be absent; funding and reach are not sales.",
+      "access": "Selected case studies and guidance publicly readable in full.",
+      "priority": "Core",
+      "searchTerm": "Game If You Are Steam case study influencer positioning"
+    },
+    {
+      "id": "derek-lieu",
+      "name": "Derek Lieu — Game Trailer Editing",
+      "author": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog",
+      "verificationUrl": "https://www.derek-lieu.com/about/",
+      "kind": "Practitioner blog and newsletter",
+      "strongestUse": "Shot-level trailer critiques and first-person consultation breakdowns: communicating the playable hook, structuring footage, and making goals and consequences legible.",
+      "blindSpots": "Craft judgment is not controlled attribution. Selected trailers and consulting cases do not provide genre demand denominators, reliable sales forecasts, or proof that editing caused reach.",
+      "access": "The selected full articles and biography were publicly readable without login. Newsletter signup is available at https://www.derek-lieu.com/subscribe; paid consultation and a separate course are also advertised.",
+      "priority": "Core",
+      "searchTerm": "Derek Lieu trailer makeover gameplay hook"
+    },
+    {
+      "id": "game-developer-postmortems",
+      "name": "Game Developer — First-hand Postmortems",
+      "author": "Individual developer contributors; verify each byline",
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "verificationUrl": "https://www.gamedeveloper.com/contact-game-developer",
+      "kind": "Trade publication with developer-written postmortems and case studies",
+      "strongestUse": "First-person production trade-offs, campaign retrospectives, disappointing outcomes, and the operational context behind public numbers.",
+      "blindSpots": "The wider publication also contains journalism and commentary; not every piece is first-party. Contributor data can contain inconsistencies, and older Steam procedures must not be treated as current rules.",
+      "access": "Both selected full articles and the case-study directory were publicly readable without login. Newsletter signup is linked; access to other products or articles was not assessed.",
+      "priority": "Core",
+      "searchTerm": "Game Developer first-person Steam postmortem"
+    },
+    {
+      "id": "impress-academy",
+      "name": "IMPRESS Academy",
+      "author": "Ashley Gwinnell, Alessandro Cossidente, Tammy Seno and contributors",
+      "url": "https://impress.games/blog",
+      "verificationUrl": "https://impress.games/steam-marketing-guides",
+      "kind": "Practitioner guides and industry-panel recaps",
+      "strongestUse": "Creator outreach, press-kit preparation and campaign examples; useful for turning a marketing plan into a repeatable workflow.",
+      "blindSpots": "A commercial marketing-tool vendor, not an independent market census. Panel anecdotes and historical multipliers need original-source checks; advice is not a measured guarantee.",
+      "access": "Selected public guides read in full; paid tools are separate.",
+      "priority": "Core",
+      "searchTerm": "IMPRESS"
+    }
+  ],
+  "articles": [
+    {
+      "id": "gwo-dreadmoor-200k-campaign",
+      "title": "Case Study: How DREADMOOR Reached 200,000+ Wishlists and Where They Came From",
+      "author": "Irene Borodina, Digital Vortex CMO; page byline Alexander Semenov",
+      "publication": "Game World Observer",
+      "date": "2026-05-21",
+      "url": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+      "topics": [
+        "Wishlists",
+        "Creator outreach",
+        "Vertical video",
+        "Showcases",
+        "Paid and earned attribution"
+      ],
+      "relatedGames": [
+        "DREADMOOR"
+      ],
+      "summary": "The publisher describes repeated wishlist spikes from playtesting, a showcase, creator outreach and vertical video, with paid traffic also used.",
+      "hardData": [
+        "200,000+ Steam wishlists reported May 21, 2026; approximately 70,000 when the publisher joined in autumn 2025.",
+        "February 2026: >44,000 additions in one month during IGN Fan Fest plus simultaneous outreach, social and paid traffic.",
+        "April 2026: >25,000 additions in the IndieGameJoe posting week; the publisher says those posts were unpaid."
+      ],
+      "evidenceType": "Publisher self-reported campaign column",
+      "actionableLesson": "Package each real build milestone for several audience-matched channels.",
+      "limitations": "Not an attribution audit. 'Tripled' is approximate, not exact accounting. February IGN Fan Fest precedes claimed first IGN contact in March; sequence unresolved. Total spend unknown.",
+      "access": "Full public authored text read",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Days 1–5: the PM and marketer select one demonstrable hook; the two developers make it reliable and the artist supplies a readable before/after state. Capture three short variations from real play.",
+        "Days 6–15: the marketer targets creators who recently covered comparable mechanics; the PM records posting dates, any agreed cost, qualified visits and wishlist changes separately. Do not promise a viral result or buy coverage without a budget decision."
+      ],
+      "sourceUrls": [
+        "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from"
+      ],
+      "gameSources": {}
+    },
+    {
+      "id": "gwo-cm-games-lock-and-load",
+      "title": "How to host custom Steam Sale for VR games with over 20 participants and 2 million event impressions — postmortem by CM Games",
+      "author": "Serg Kharchenko, Evangelist at CM Games; guest writer",
+      "publication": "Game World Observer",
+      "date": "2024-05-10",
+      "url": "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem",
+      "topics": [
+        "Steam events",
+        "Developer collaboration",
+        "Cross-promotion",
+        "VR",
+        "Attribution limits"
+      ],
+      "relatedGames": [
+        "Into the Radius"
+      ],
+      "summary": "CM Games assembled a genre-matched sale, supplied shared promotional assets and coordinated participating communities. Steam placement amplified the event.",
+      "hardData": [
+        "Reported event: >20 participants and 96 hours of Steam-homepage featuring.",
+        "Reported exposure: >11 million homepage impressions and 2 million sale-event impressions.",
+        "Steam developer-page subscribers reportedly rose from 100 to >3,000."
+      ],
+      "evidenceType": "Developer-authored historical postmortem",
+      "actionableLesson": "Make collaboration easy with relevant partners and ready-to-use assets.",
+      "limitations": "Published in 2024; planning began in 2022, but exact sale dates are absent. Impression surfaces are not unique audiences and should not be summed as reach. Discounts, platform featuring and promotion were mixed; costs and incremental revenue are undisclosed. A new demo cannot assume equivalent placement.",
+      "access": "Full public authored text read",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Days 1–5: the marketer lists eight closely related games and existing community events; the PM screens audience fit and dates. Do not spend the sprint organizing a multi-studio Steam sale.",
+        "Days 6–15: the developers freeze a stable demo path while the artist and marketer prepare one small shared-asset kit. Approach two plausible partners about future cross-promotion; the PM keeps this separate from the demo's delivery-critical work."
+      ],
+      "sourceUrls": [
+        "https://gameworldobserver.com/2024/05/10/custom-steam-sale-vr-cm-games-lock-and-load-postmortem"
+      ],
+      "gameSources": {}
+    },
+    {
+      "id": "giya-design-and-conjure",
+      "title": "Case Study: Design and Conjure",
+      "author": "Game If You Are; individual author not named",
+      "publication": "Game If You Are",
+      "date": null,
+      "url": "https://gameifyouare.com/case-study-design-and-conjure/",
+      "topics": [
+        "Creator outreach",
+        "Sponsored content",
+        "Steam Next Fest",
+        "Cozy games",
+        "Short lead times"
+      ],
+      "relatedGames": [
+        "Design and Conjure"
+      ],
+      "summary": "An urgent Next Fest campaign selected cozy-game creators and prepared rates, briefs, contracts and assets before rapid outreach.",
+      "hardData": [
+        "Fifteen creators approached; four produced five sponsored content pieces.",
+        "Almost 25,000 combined YouTube/Twitch views.",
+        "Over 4,000 wishlist additions by week-end, alongside Steam Next Fest promotion."
+      ],
+      "evidenceType": "Agency self-reported client campaign",
+      "actionableLesson": "Audience fit and operational readiness matter more than a long generic creator list.",
+      "limitations": "Publication date and event edition are not displayed. Total budget is undisclosed. The wishlist result combines sponsored content and festival promotion, not isolated creator lift; views are not unique people. Do not calculate cost per wishlist or infer sales.",
+      "access": "Full public case study read; undated",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Days 1–3: the marketer builds a fifteen-creator shortlist from recent comparable-game coverage; the PM prepares the brief, response tracker and a clear unpaid-versus-sponsored distinction. Any paid work needs an explicit budget.",
+        "Days 4–10: the developers stabilize one short demo route and the artist delivers approved screenshots. The marketer sends a clear access window and honest build limitations; the PM tracks replies, published pieces and measured traffic without assuming a Next Fest falls inside the sprint."
+      ],
+      "sourceUrls": [
+        "https://gameifyouare.com/case-study-design-and-conjure/"
+      ],
+      "gameSources": {}
+    },
+    {
+      "id": "giya-marketing-works-2025",
+      "title": "Video Game Marketing: What Actually Works in 2025?",
+      "author": "Game If You Are; displayed byline: admin",
+      "publication": "Game If You Are",
+      "date": "2025-03-25",
+      "url": "https://gameifyouare.com/2025/03/25/video-game-marketing-what-actually-works-in-2025/",
+      "topics": [
+        "Positioning",
+        "Press outreach",
+        "Creator selection",
+        "Events",
+        "Paid advertising"
+      ],
+      "relatedGames": [],
+      "summary": "Practitioner guidance argues for purposeful channel selection: a distinct product promise, compelling footage, relevant creators, planned events and disciplined advertising tests.",
+      "hardData": [],
+      "evidenceType": "Agency practitioner guidance, not a measured market study",
+      "actionableLesson": "Choose a channel because its audience and format fit the demonstrable game.",
+      "limitations": "No campaign sample or underlying dataset is provided. Illustrative $1 cost-per-wishlist and creator-price examples are not benchmarks. Its three-to-four-week prerelease review-code advice is not a same-sprint review promise; plan previews. These are dated 2025 opinions, not verified 2026 platform guarantees.",
+      "access": "Full public authored text read",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Days 1–3: the PM and marketer write one target-player promise and select one primary channel, with a measurable action such as a qualified Steam visit. Ask the two developers and artist which promised interaction can be shown honestly by day five.",
+        "Days 5–15: capture a short playable preview and pitch only relevant preview-friendly creators or press. Keep ads optional and separately budgeted; the PM protects build time from broad event travel or an untestable multi-channel campaign."
+      ],
+      "sourceUrls": [
+        "https://gameifyouare.com/2025/03/25/video-game-marketing-what-actually-works-in-2025/"
+      ],
+      "gameSources": {}
+    },
+    {
+      "id": "giya-hauntii-positioning",
+      "title": "Case Study: Hauntii",
+      "author": "Game If You Are; individual author not named",
+      "publication": "Game If You Are",
+      "date": null,
+      "url": "https://gameifyouare.com/case-study-hauntii/",
+      "topics": [
+        "Positioning",
+        "Audience research",
+        "Publisher pitching",
+        "Funding",
+        "Failed crowdfunding"
+      ],
+      "relatedGames": [
+        "Hauntii"
+      ],
+      "summary": "After a failed Kickstarter, the agency repositioned Hauntii beyond its twin-stick-shooter label around atmosphere, audiovisual identity and possession mechanics, then supported publisher pitching.",
+      "hardData": [
+        "Three audience personas developed.",
+        "Agency reports a Firestoke publishing agreement and the requested funding/support; amounts are undisclosed."
+      ],
+      "evidenceType": "Agency self-reported positioning and funding case",
+      "actionableLesson": "Lead with the distinctive player experience, then support it with a credible production plan.",
+      "limitations": "Undated case; no quantified wishlist, sales or reach results. Funding is not revenue or proof of profitable demand. Organic activity described by the agency does not mean zero total cost or establish causal campaign impact.",
+      "access": "Full public case study read; undated",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Days 1–3: the PM and marketer write two alternative descriptions of the same prototype: genre-led and signature-interaction-led. Ask five target players what experience each promises; let the developers and artist flag anything the slice cannot support.",
+        "Days 10–15: use the proven demo loop, captured footage and a realistic role-by-role cost/scope sheet to build a concise pitch. The PM separates the current slice from future production; the marketer records evidence without inventing forecast returns."
+      ],
+      "sourceUrls": [
+        "https://gameifyouare.com/case-study-hauntii/"
+      ],
+      "gameSources": {}
+    },
+    {
+      "id": "derek-lieu-dear-passengers-banana-airways-2026",
+      "title": "Dear Passengers vs Banana Airways",
+      "author": "Derek Lieu",
+      "publication": "Derek Lieu — Game Trailer Editing",
+      "date": "2026-08-23",
+      "url": "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways",
+      "topics": [
+        "Trailer craft",
+        "Co-op comedy",
+        "Friendslop",
+        "Emergent gameplay",
+        "Attribution limits"
+      ],
+      "relatedGames": [
+        "Dear Passengers",
+        "Banana Airways"
+      ],
+      "summary": "Lieu contrasts playful, player-controlled incidents with staged comedy, slow framing, and visibly rough capture. He finds Dear Passengers appealing as a space for friends to experiment, while questioning whether its montage communicates a coherent loop. The comparison is a craft critique, not an explanation of the campaigns' different reach.",
+      "hardData": [
+        "At publication, Lieu reported more than 2 million trailer views for Dear Passengers versus roughly 5,000 across multiple channels for Banana Airways; these are not matched campaign measurements."
+      ],
+      "evidenceType": "Practitioner analysis of public trailers; historical view claims",
+      "actionableLesson": "Show genuine player agency and readable comic consequences; capture quality remains important even when the tone is deliberately chaotic.",
+      "limitations": "Lieu explicitly says he does not know what caused the view gap. Promotion, distribution, art direction, and game content differ. Neither organic attribution nor paid-sales conversion is established.",
+      "access": "Full public article read; no login or payment required during this check.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "by day 5, capture one playable choice-to-comic-consequence sequence in the actual prototype; label any scripted demonstration honestly and avoid building extra features solely to fill a montage.",
+        "by day 12, have the marketing manager cut two openings from the same captured session, test comprehension with fresh viewers, and log distribution separately from creative differences."
+      ],
+      "sourceUrls": [
+        "https://www.derek-lieu.com/blog/2026/8/23/dear-passengers-vs-banana-airways",
+        "https://store.steampowered.com/app/4835560/Banana_Airways/"
+      ],
+      "gameSources": {
+        "Banana Airways": "https://store.steampowered.com/app/4835560/Banana_Airways/"
+      }
+    },
+    {
+      "id": "derek-lieu-sheepherds-makeover-2026",
+      "title": "Game Trailer Makeover - Sheepherds",
+      "author": "Derek Lieu",
+      "publication": "Derek Lieu — Game Trailer Editing",
+      "date": "2026-08-08",
+      "url": "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+      "topics": [
+        "Trailer craft",
+        "Mechanic readability",
+        "Co-op",
+        "Before and after",
+        "Capture planning"
+      ],
+      "relatedGames": [
+        "Sheepherds!"
+      ],
+      "summary": "Lieu's consultation moved the basic herding action ahead of the logo, cosmetics, and bonus modes. Longer demonstrations then introduce recoloring, washing, and environmental complications. Imperfect herding shows that player judgment matters. The revised sequence builds understanding before introducing variety.",
+      "hardData": [
+        "The revised opening demonstrates herding for 10 seconds.",
+        "Lieu reported over 100,000 IGN views for the revised trailer at publication; no controlled uplift or sales result is supplied."
+      ],
+      "evidenceType": "First-person trailer consultation case; historical reported views",
+      "actionableLesson": "Present the basic action, one complication, and a recoverable mistake before cosmetics or secondary modes.",
+      "limitations": "The consultant evaluates his own recommendations. There is no matched exposure experiment. The displayed publication date is August 8 despite August 4 in the URL.",
+      "access": "Full public article read; no login or payment required during this check.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "on day 4, the PM and artist storyboard three shots using one existing mechanic: successful action, complication, and visible recovery; defer customization assets until these shots are readable.",
+        "on day 10, show a silent rough cut to five unfamiliar viewers and ask what the player controls and what makes the task difficult; revise confusing footage before polishing titles."
+      ],
+      "sourceUrls": [
+        "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+        "https://store.steampowered.com/app/3006280/Sheepherds/"
+      ],
+      "gameSources": {
+        "Sheepherds!": "https://store.steampowered.com/app/3006280/Sheepherds/"
+      }
+    },
+    {
+      "id": "derek-lieu-dosa-divas-makeover-2026",
+      "title": "Game Trailer Makeover - Dosa Divas",
+      "author": "Derek Lieu",
+      "publication": "Derek Lieu — Game Trailer Editing",
+      "date": "2026-04-13",
+      "url": "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+      "topics": [
+        "Trailer craft",
+        "Narrative positioning",
+        "Player motivation",
+        "Title cards",
+        "Before and after"
+      ],
+      "relatedGames": [
+        "Dosa Divas"
+      ],
+      "summary": "The initial cut communicated cooking and turn-based battles but not their purpose. Lieu's consultation clarified the sisters' conflict and the fast-food empire they oppose, linking cooking to restoring villages and advancing the quest. Revised dialogue and title cards gave existing footage a clearer objective without rebuilding the entire trailer.",
+      "hardData": [],
+      "evidenceType": "First-person trailer consultation case; qualitative historical account",
+      "actionableLesson": "Connect the advertised actions to a concrete goal; remove title cards whose meaning requires insider knowledge.",
+      "limitations": "No wishlist, retention, sales, or experiment result is reported. Lieu acknowledges his involvement and subjective judgment. The displayed date is April 13 despite April 12 in the URL.",
+      "access": "Full public article read; no login or payment required during this check.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "on day 2, the PM writes one sentence linking the demo's action to its goal, then assigns one existing gameplay shot to prove each half; cut unsupported promises from the brief.",
+        "on day 11, the marketing manager reviews every title card alongside its footage and removes cards that a cold viewer cannot explain; test whether viewers can state why the character takes the action."
+      ],
+      "sourceUrls": [
+        "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+        "https://store.steampowered.com/app/2950710/Dosa_Divas/"
+      ],
+      "gameSources": {
+        "Dosa Divas": "https://store.steampowered.com/app/2950710/Dosa_Divas/"
+      }
+    },
+    {
+      "id": "game-developer-freerunners-next-fest-2024",
+      "title": "Freerunners Steam Next Fest Postmortem",
+      "author": "James Rowbotham",
+      "publication": "Game Developer — First-hand Postmortems",
+      "date": "2024-02-22",
+      "url": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+      "topics": [
+        "Steam Next Fest",
+        "Demo onboarding",
+        "Small outcomes",
+        "Campaign preparation",
+        "Measurement integrity"
+      ],
+      "relatedGames": [
+        "Freerunners"
+      ],
+      "summary": "Historical February 2024 case: a spare-time solo developer refined an introductory demo but left marketing and media preparation late. Feedback exposed compressed GIFs that misrepresented the game's movement. The result illustrates useful learning and modest traction, not automatic festival success.",
+      "hardData": [
+        "Reported impressions: 154,724; conflicting store-visit totals: 2,261 or 2,430; external visits: 564.",
+        "Reported wishlist endpoints: 420 to 755. Demo-play endpoints: 194 to 691. Median playtime: 6 minutes for an 8–10-minute demo."
+      ],
+      "evidenceType": "First-person developer postmortem; historical self-reported figures",
+      "actionableLesson": "Prepare onboarding, promotional assets, and a measurement plan before the event begins.",
+      "limitations": "Wishlist endpoints imply +335, not the claimed +355; a gross/net distinction is unverified. Do not reuse the claimed conversion rates or infer sales. Channel attribution is unproven; historical Steam procedures are not current guidance.",
+      "access": "Full public article read; no login or payment required during this check.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "by day 8, have the PM run cold tests of the opening and the artist review the actual compressed promotional files; address onboarding failures and misleading motion before capturing final assets.",
+        "by day 12, prepare the announcement, short clips, and outreach list; maintain separate fields for impressions, visits, gross wishlist additions, removals, net totals, demo starts, time windows, and source definitions."
+      ],
+      "sourceUrls": [
+        "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+        "https://store.steampowered.com/app/1430330/Freerunners/"
+      ],
+      "gameSources": {
+        "Freerunners": "https://store.steampowered.com/app/1430330/Freerunners/"
+      }
+    },
+    {
+      "id": "game-developer-inkbound-early-access-2024",
+      "title": "Postmortem: The journey of Inkbound through Early Access",
+      "author": "Mark Cooke",
+      "publication": "Game Developer — First-hand Postmortems",
+      "date": "2024-06-11",
+      "url": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+      "topics": [
+        "Early Access",
+        "Co-op scope",
+        "Feedback systems",
+        "Localization",
+        "Monetization expectations"
+      ],
+      "relatedGames": [
+        "Inkbound"
+      ],
+      "summary": "Historical account by Shiny Shoe's CEO: integrated feedback and technical testing helped iteration, but free testers did not anticipate paying customers' objections to cosmetic monetization. Supporting solo and co-op created conflicting design demands. English-only Early Access simplified iteration while leaving a significant localization problem.",
+      "hardData": [
+        "Early Access began in May 2023; a few hundred people tested before release.",
+        "Approximately 60% of runs were solo and 40% co-op; these are runs, not players.",
+        "Cooke reports missing Chinese support as the leading Early Access refund reason; no count or rate is provided."
+      ],
+      "evidenceType": "First-person studio postmortem; historical internal observations",
+      "actionableLesson": "Choose the supported play mode deliberately and collect contextual feedback; free playtests cannot validate willingness to pay.",
+      "limitations": "No sales lift, refund denominator, or lost-localization revenue is quantified. This established studio's online infrastructure is not evidence of 15-day feasibility.",
+      "access": "Full public article read; no login or payment required during this check.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "on day 1, select one primary demo play mode and write its acceptance criteria; exclude a second mode, matchmaking hub, and live-service monetization unless they are essential to the tested hook.",
+        "by day 6, add a simple feedback link with an optional build ID and consented reproduction details; have the PM separate repeated gameplay issues, language requests, and price expectations rather than merging them into one approval score."
+      ],
+      "sourceUrls": [
+        "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+        "https://store.steampowered.com/app/1062810/Inkbound/"
+      ],
+      "gameSources": {
+        "Inkbound": "https://store.steampowered.com/app/1062810/Inkbound/"
+      }
+    },
+    {
+      "id": "impress-content-creator-attention",
+      "title": "How To Get Content Creators’ Attention!",
+      "author": "Alessandro Cossidente",
+      "publication": "IMPRESS Academy",
+      "date": "2025-02-27",
+      "url": "https://impress.games/blog/how-to-get-content-creators-attention",
+      "topics": [
+        "Creator outreach",
+        "Press kits",
+        "Campaign execution"
+      ],
+      "relatedGames": [],
+      "summary": "A useful outreach checklist: make the game and the request clear, supply usable assets and access instructions, and approach creators in relevant batches. Different key-distribution approaches suit trusted contacts and unfamiliar recipients.",
+      "hardData": [],
+      "evidenceType": "Vendor practitioner guidance; no measured campaign result",
+      "actionableLesson": "Make an interested creator's next step easy: understand the hook, inspect the footage, and access a reliable build.",
+      "limitations": "No measured conversion or campaign outcome is supplied. Suggested timing is a heuristic. The text mixes words and characters in its email-length guidance; those numerical limits are not reproduced here.",
+      "access": "Full public article read; vendor product promotion is present.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Days 1–3: the marketer selects ten creators who recently covered the closest three comparable games. Record why their viewers would enjoy our playable hook, not just follower counts.",
+        "Days 6–12: the PM and developers prepare a stable ten-minute build, an honest 15-second gameplay clip and a small press kit. Track replies, published coverage and measured Steam visits separately."
+      ],
+      "sourceUrls": [
+        "https://impress.games/blog/how-to-get-content-creators-attention"
+      ],
+      "gameSources": {}
+    },
+    {
+      "id": "impress-impact-indie-campaigns",
+      "title": "Indie Game Marketing Examples: Campaigns We Loved",
+      "author": "Tammy Seno",
+      "publication": "IMPRESS Academy",
+      "date": "2025-05-12",
+      "url": "https://impress.games/blog/indie-game-marketing-examples-impact-2024",
+      "topics": [
+        "Creator outreach",
+        "Game-specific humor",
+        "Co-op",
+        "Campaign execution",
+        "Attribution limits"
+      ],
+      "relatedGames": [
+        "Another Crab’s Treasure",
+        "Content Warning",
+        "The Ouroboros King"
+      ],
+      "summary": "This recap of the IMPACT! 2024 panel highlights game-specific humor in Another Crab’s Treasure, entertaining patch communication in Content Warning, and creator outreach for The Ouroboros King.",
+      "hardData": [
+        "The panel recap reports The Ouroboros King moving from 500 to 20,000 wishlists. It describes a two-month outreach phase and a two-week surge; the exact timeline is ambiguous and raw data is not supplied."
+      ],
+      "evidenceType": "Event-organizer recap of practitioner panel; secondary case claims",
+      "actionableLesson": "Make the game's actual systems the material for its jokes and creator pitch; reserve developer time for useful capture.",
+      "limitations": "These are selected successes, not a controlled campaign comparison. Spend and attribution are incomplete; the wishlist claim is not independently audited. Platform views, followers and wishlists are different measures.",
+      "access": "Full public panel recap read; not the complete panel transcript.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Days 3–7: for the FPS survival slice, capture one real shortcut that backfires—for example, a noisy appliance drawing danger. Show the setup and consequence; do not imply systems the build lacks.",
+        "Days 8–15: the artist and marketer turn one genuine playtest incident into a short clip and a readable update. The PM logs channel, date, spending and wishlist changes without treating coincident spikes as proof of attribution."
+      ],
+      "sourceUrls": [
+        "https://impress.games/blog/indie-game-marketing-examples-impact-2024"
+      ],
+      "gameSources": {}
+    },
+    {
+      "id": "impress-steam-benchmarks-definition-check",
+      "title": "Steam Benchmarks & Estimates: The Other Side of Market Analysis",
+      "author": "Ashley Gwinnell",
+      "publication": "IMPRESS Academy",
+      "date": "2023-10-18",
+      "url": "https://impress.games/blog/steam-benchmarks-and-estimates-analysis",
+      "topics": [
+        "Market estimates",
+        "Wishlists",
+        "Revenue & pricing",
+        "Measurement integrity",
+        "Counter-cases"
+      ],
+      "relatedGames": [],
+      "summary": "A historical catalogue of Steam estimation shortcuts—and a useful example of why metric definitions must be checked against the original research before forecasting.",
+      "hardData": [
+        "Definition correction: the cited 2020 survey's 0.2 median is total first-week units divided by prelaunch wishlists. It is not a measured 20% conversion of wishlisters into buyers.",
+        "The original GameDiscoverCo survey received 50 responses before outlier exclusions; it asked actual wishlist conversion and total first-week sales as separate questions."
+      ],
+      "evidenceType": "Historical proxy compilation; definition checked against original survey",
+      "actionableLesson": "Separate wishlist-cohort conversion from all sales relative to a wishlist baseline. Label estimates with model, cohort and year.",
+      "limitations": "The guide conflates those measures. Its historical ratios are not verified 2026 benchmarks; the small, selected survey mixes release contexts. No universal revenue or profit forecast follows.",
+      "access": "Full public guide and original linked GameDiscoverCo survey article read.",
+      "checkedAt": "2026-09-03",
+      "applicationSteps": [
+        "Day 1: the PM defines separate fields for wishlist additions, removals, net wishlists, wishlist-cohort purchases and total units. Record the time window and source beside each number.",
+        "Days 10–15: the marketer reports measured prototype signals, not projected copies from a universal multiplier. Use weak, base and strong scenarios only as labeled planning assumptions."
+      ],
+      "sourceUrls": [
+        "https://impress.games/blog/steam-benchmarks-and-estimates-analysis",
+        "https://newsletter.gamediscover.co/p/steam-the-new-wishlists-to-first"
+      ],
+      "gameSources": {}
+    }
+  ],
+  "starterPath": [
+    {
+      "label": "Define the promise",
+      "detail": "Dosa Divas: explain why the player acts.",
+      "articleId": "derek-lieu-dosa-divas-makeover-2026"
+    },
+    {
+      "label": "Show the playable hook",
+      "detail": "Sheepherds: action before decoration.",
+      "articleId": "derek-lieu-sheepherds-makeover-2026"
+    },
+    {
+      "label": "Plan the campaign",
+      "detail": "DREADMOOR: milestones and mixed channels.",
+      "articleId": "gwo-dreadmoor-200k-campaign"
+    },
+    {
+      "label": "Prepare creator outreach",
+      "detail": "Design and Conjure: fit, briefs and access.",
+      "articleId": "giya-design-and-conjure"
+    },
+    {
+      "label": "Check the downside",
+      "detail": "Freerunners: small results and messy numbers.",
+      "articleId": "game-developer-freerunners-next-fest-2024"
+    }
+  ],
+  "disagreementsAndResolution": [
+    {
+      "topic": "Clear footage is not proof of organic reach",
+      "positions": "Trailer critiques diagnose communication; campaign accounts describe distribution. Neither establishes that an edit caused a particular reach or sales result.",
+      "resolution": "Test whether cold viewers understand the mechanic, then measure distribution separately. For our demo, keep the footage consistent when comparing channels.",
+      "articleIds": [
+        "derek-lieu-dear-passengers-banana-airways-2026",
+        "gwo-dreadmoor-200k-campaign"
+      ]
+    },
+    {
+      "topic": "A combined campaign is not a free channel",
+      "positions": "The DREADMOOR and Design and Conjure accounts combine several activities. Unpaid individual posts can coexist with paid work elsewhere in the campaign.",
+      "resolution": "Maintain a channel-by-date log with explicit paid, unpaid and unknown labels. Without spend and attributable outcomes, do not report a cost per wishlist or organic-only success.",
+      "articleIds": [
+        "gwo-dreadmoor-200k-campaign",
+        "giya-design-and-conjure"
+      ]
+    },
+    {
+      "topic": "Check the denominator before the benchmark",
+      "positions": "One historical guide blurs wishlist conversion with total sales per wishlist; a developer postmortem contains inconsistent totals. A precise-looking number can still have an unclear definition.",
+      "resolution": "Keep original endpoints and definitions beside every derived number. Show unresolved contradictions; do not smooth them into a forecast or reuse disputed conversion rates.",
+      "articleIds": [
+        "impress-steam-benchmarks-definition-check",
+        "game-developer-freerunners-next-fest-2024"
+      ]
+    }
+  ]
+}
