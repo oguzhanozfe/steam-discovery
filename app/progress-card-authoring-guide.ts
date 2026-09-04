@@ -3,6 +3,21 @@ export const progressCardAuthoringGuide = {
   purpose:
     'Repository contract for agents that create or update cards on the Progress page.',
   sourceOfTruth: 'app/data/progress-tracker.json',
+  runtimeDelivery: {
+    browserEndpoint: '/api/progress',
+    refreshBehavior:
+      'The browser requests the current board once when the Progress page loads. There is no polling.',
+    publication:
+      'Commit and push a valid progress-tracker.json update to main. After the runtime reader has been deployed once, card-only changes do not require a Vercel build or deployment.',
+    fallback:
+      'If the live source cannot be read or validated, the page keeps the last deployed JSON snapshot.',
+    infrastructure:
+      'The Vercel project must define GITHUB_PROGRESS_TOKEN before its one manual infrastructure deployment. Use a fine-grained GitHub token restricted to oguzhanozfe/steam-discovery with Contents: Read only.',
+    freshness:
+      'Each page load requests the current GitHub JSON without browser or Vercel CDN caching. There is no background polling.',
+    maximumFileSize:
+      'Keep progress-tracker.json below 4 MB, the safe ceiling for this Vercel Function response.',
+  },
   schemaValidator: 'app/progress-data.ts',
   editScope: {
     ordinaryCardChanges: ['app/data/progress-tracker.json'],

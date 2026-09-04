@@ -83,6 +83,8 @@ function assertProgressBoard(value: unknown): asserts value is ProgressBoard {
     throw new Error('Progress board metadata is invalid.');
   }
 
+  const taskIds = new Set<string>();
+
   for (const [index, task] of value.tasks.entries()) {
     const taskName = `Progress task ${index + 1}`;
 
@@ -95,6 +97,7 @@ function assertProgressBoard(value: unknown): asserts value is ProgressBoard {
       !priorities.has(task.priority as ProgressPriority) ||
       !states.has(task.state as ProgressState) ||
       typeof task.progress !== 'number' ||
+      !Number.isFinite(task.progress) ||
       task.progress < 0 ||
       task.progress > 100 ||
       !Array.isArray(task.milestones) ||
@@ -102,6 +105,11 @@ function assertProgressBoard(value: unknown): asserts value is ProgressBoard {
     ) {
       throw new Error(`${taskName} has invalid core fields.`);
     }
+
+    if (taskIds.has(task.id)) {
+      throw new Error(`${taskName} reuses the task ID ${task.id}.`);
+    }
+    taskIds.add(task.id);
 
     if (
       !isRecord(task.lastUpdate) ||
@@ -141,6 +149,7 @@ function assertProgressBoard(value: unknown): asserts value is ProgressBoard {
     }
 
     let previousPosition = 0;
+    const milestoneIds = new Set<string>();
     for (const milestone of task.milestones) {
       if (
         !isRecord(milestone) ||
@@ -149,17 +158,27 @@ function assertProgressBoard(value: unknown): asserts value is ProgressBoard {
         !isNonEmptyString(milestone.description) ||
         !milestoneStates.has(milestone.state as MilestoneState) ||
         typeof milestone.position !== 'number' ||
+        !Number.isFinite(milestone.position) ||
         milestone.position <= previousPosition ||
         milestone.position > 100
       ) {
         throw new Error(`${taskName} has invalid or unsorted milestones.`);
       }
+
+      if (milestoneIds.has(milestone.id)) {
+        throw new Error(`${taskName} reuses the milestone ID ${milestone.id}.`);
+      }
+      milestoneIds.add(milestone.id);
       previousPosition = milestone.position;
     }
   }
 }
 
 const rawProgressData: unknown = progressData;
-assertProgressBoard(rawProgressData);
 
-export const progressBoard = rawProgressData;
+export function parseProgressBoard(value: unknown): ProgressBoard {
+  assertProgressBoard(value);
+  return value;
+}
+
+export const progressBoard = parseProgressBoard(rawProgressData);

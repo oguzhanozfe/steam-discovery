@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useSyncExternalStore } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import {
   Archive,
   Check,
@@ -15,6 +15,7 @@ import {
 import { Slider } from '@/components/ui/slider';
 import {
   progressBoard,
+  parseProgressBoard,
   type ProgressMilestone,
   type ProgressState,
   type ProgressTask,
@@ -43,6 +44,9 @@ const filterLabels: Record<ProgressFilter, string> = {
 };
 
 const archiveStorageKey = 'steam-discovery.progress.archive.v1';
+const progressDataEndpoint = '/api/progress';
+const progressDataTimeoutMs = 8_000;
+const progressDataMaxCharacters = 4_000_000;
 
 type ArchivePreferences = {
   archivedTaskIds: string[];
@@ -79,15 +83,16 @@ function parseArchivePreferences(storedValue: string | null) {
       return defaultArchivePreferences;
     }
 
-    const validTaskIds = new Set(progressBoard.tasks.map((task) => task.id));
     const archivedTaskIds = [
       ...new Set(
         parsedValue.archivedTaskIds.filter(
           (taskId): taskId is string =>
-            typeof taskId === 'string' && validTaskIds.has(taskId),
+            typeof taskId === 'string' &&
+            taskId.length > 0 &&
+            taskId.length <= 128,
         ),
       ),
-    ];
+    ].slice(0, 1_000);
     const activeFilter =
       'activeFilter' in parsedValue &&
       isProgressFilter(parsedValue.activeFilter)
@@ -377,6 +382,8 @@ function ProgressCard({
 }
 
 export function ProgressTracker() {
+  const [board, setBoard] = useState(progressBoard);
+  const [remoteLoadFailed, setRemoteLoadFailed] = useState(false);
   const { activeFilter, archivedTaskIds } = useSyncExternalStore(
     subscribeToArchivePreferences,
     getArchivePreferenceSnapshot,
@@ -385,11 +392,66 @@ export function ProgressTracker() {
   const [archiveMessage, setArchiveMessage] = useState('');
   const activeFilterButtonRef = useRef<HTMLButtonElement | null>(null);
 
+  useEffect(() => {
+    const isLocalPreview =
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1';
+    const forceRemoteData = new URLSearchParams(window.location.search).has(
+      'live-progress',
+    );
+    if (isLocalPreview && !forceRemoteData) {
+      return;
+    }
+
+    const controller = new AbortController();
+    const timeout = window.setTimeout(
+      () => controller.abort(),
+      progressDataTimeoutMs,
+    );
+    let disposed = false;
+
+    async function loadProgressBoard() {
+      try {
+        const response = await fetch(progressDataEndpoint, {
+          headers: { Accept: 'application/json' },
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`Progress data request failed: ${response.status}`);
+        }
+
+        const payload = await response.text();
+        if (payload.length > progressDataMaxCharacters) {
+          throw new Error('Progress data response is too large.');
+        }
+
+        const nextBoard = parseProgressBoard(JSON.parse(payload));
+        if (!disposed) {
+          setBoard(nextBoard);
+          setRemoteLoadFailed(false);
+        }
+      } catch {
+        if (!disposed) setRemoteLoadFailed(true);
+      } finally {
+        window.clearTimeout(timeout);
+      }
+    }
+
+    void loadProgressBoard();
+
+    return () => {
+      disposed = true;
+      window.clearTimeout(timeout);
+      controller.abort();
+    };
+  }, []);
+
   const archivedTaskIdSet = new Set(archivedTaskIds);
-  const activeTasks = progressBoard.tasks.filter(
+  const activeTasks = board.tasks.filter(
     (task) => !archivedTaskIdSet.has(task.id),
   );
-  const archivedTasks = progressBoard.tasks.filter((task) =>
+  const archivedTasks = board.tasks.filter((task) =>
     archivedTaskIdSet.has(task.id),
   );
   const ongoingCount = activeTasks.filter(
@@ -429,6 +491,12 @@ export function ProgressTracker() {
   return (
     <section className="workbench content-view progress-view">
       <h1 className="sr-only">Progress</h1>
+
+      {remoteLoadFailed && (
+        <output className="progress-source-warning">
+          Live data is unavailable. Showing the deployed snapshot.
+        </output>
+      )}
 
       <div className="progress-filter-bar">
         <fieldset className="progress-filter-options">
