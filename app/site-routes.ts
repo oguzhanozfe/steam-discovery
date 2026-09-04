@@ -2,12 +2,13 @@ import { gameLibrary, readingLibrary, readingUpdatedAt } from './discovery-data'
 import type { ResearchView } from './research-data';
 import { steamImageUrl, steamImageManifest } from './steam-image-url';
 import { gameStories, originalAnalysis, editorialUpdatedAt, storyPath, analysisPath, survivalDemoGdd } from './editorial-data';
+import { progressBoard } from './progress-data';
 
 export const siteUrl = 'https://steam-discovery.vercel.app';
 export type InitialRoute = { view?: ResearchView; marketPeriod?: '2025' | '2026-q1' | '2026-q2'; gameId?: string; readingId?: string; storyId?: string; analysisId?: string };
 export type SiteRoute = { path: string; title: string; description: string; initial: InitialRoute; image?: string; imageWidth?: number; imageHeight?: number; citations?: string[]; modifiedAt?: string };
 export const viewPaths: Record<ResearchView, string> = {
-  stories: '/', analysis: '/analysis/', gdd: '/survival-demo/', explorer: '/games/', cases: '/case-studies/', market: '/market/2025/', ideas: '/build-lab/', reading: '/reading/', playbook: '/sprint-plan/', survival: '/research/open-world-survival-craft/', methodology: '/about/',
+  stories: '/', analysis: '/analysis/', gdd: '/survival-demo/', explorer: '/games/', cases: '/case-studies/', market: '/market/2025/', ideas: '/build-lab/', reading: '/reading/', playbook: '/sprint-plan/', progress: '/progress/', survival: '/research/open-world-survival-craft/', methodology: '/about/',
 };
 export const gamePath = (id: string) => `/games/${id}/`;
 export const readingPath = (id: string) => `/reading/${id}/`;
@@ -23,6 +24,7 @@ export const sectionRoutes: SiteRoute[] = [
   { path: viewPaths.ideas, title: 'Three-Week Indie Game Demo Ideas — Steam Discovery', description: 'Five scoped game concepts with comparable games, technical tradeoffs, pros, cons and marketing experiments for a five-person indie team.', initial: { view: 'ideas' } },
   { path: viewPaths.reading, title: 'PC Game Market Reading Room — Steam Discovery', description: 'Read annotated Steam marketing cases, trailer breakdowns and developer postmortems. HTMAG, Derek Lieu, Game World Observer, IMPRESS and more, with practical demo actions and evidence limits.', initial: { view: 'reading' }, modifiedAt: readingUpdatedAt },
   { path: viewPaths.playbook, title: '15-Day Indie Demo & Marketing Plan — Steam Discovery', description: 'A practical research-to-demo sprint, measurement ladder and official Steam release constraints for small indie teams.', initial: { view: 'playbook' } },
+  { path: viewPaths.progress, title: 'Delivery Progress & Milestones — Steam Discovery', description: 'A focused view of delivery tasks, owners, priorities, working state, current progress and milestone details.', initial: { view: 'progress' }, modifiedAt: progressBoard.updatedAt },
   { path: viewPaths.survival, title: 'Open-World Survival Craft: Demand, Cases & Demo Scope — Steam Discovery', description: 'OWSC market evidence across 2025 and 2026, sourced game cases, player promises and tightly bounded prototype ideas for small teams.', initial: { view: 'survival' } },
   { path: viewPaths.methodology, title: 'Sources, Methodology & Editorial Disclosure — Steam Discovery', description: 'How Steam Discovery labels reported sales, public observations, model estimates and hypotheses. Source access, image credits and independence disclosure.', initial: { view: 'methodology' }, modifiedAt: readingUpdatedAt },
 ];

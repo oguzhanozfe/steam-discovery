@@ -1,6 +1,6 @@
 export type EvidenceLevel = 'Primary' | 'Observed' | 'Reported' | 'Estimated';
 export type SignalLevel = 'Breakout' | 'Viral' | 'Strong' | 'Control';
-export type ResearchView = 'stories' | 'analysis' | 'gdd' | 'explorer' | 'cases' | 'market' | 'ideas' | 'reading' | 'playbook' | 'survival' | 'methodology';
+export type ResearchView = 'stories' | 'analysis' | 'gdd' | 'explorer' | 'cases' | 'market' | 'ideas' | 'reading' | 'playbook' | 'progress' | 'survival' | 'methodology';
 
 export type TimelineEvent = {
   date: string;

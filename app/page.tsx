@@ -31,6 +31,9 @@ import { Methodology } from './methodology';
 import { SurvivalResearch } from './survival-research';
 import { GameStories, OriginalAnalysis, SurvivalDemoGdd } from './editorial';
 import { gameStories, findStories, originalAnalysis, survivalDemoGdd, survivalEvidence, editorialUpdatedAt } from './editorial-data';
+import { ProgressTracker } from './progress-tracker';
+import { progressBoard } from './progress-data';
+import { progressCardAuthoringGuide } from './progress-card-authoring-guide';
 
 type ModelTool = {
   name: string; title?: string; description: string;
@@ -55,6 +58,7 @@ const navItems: { id: ResearchView; label: string; caption: string; icon: typeof
   { id: 'survival', label: 'Survival Craft', caption: 'Demand meets scope', icon: Trees },
   { id: 'ideas', label: 'Build Lab', caption: '5 concepts + your brief', icon: Lightbulb },
   { id: 'playbook', label: 'Sprint Plan', caption: 'How to execute', icon: CalendarDays },
+  { id: 'progress', label: 'Progress', caption: 'Status & milestones', icon: CheckCircle2 },
 ];
 const signalClasses: Record<GameCase['signal'], string> = {
   Viral: 'signal signal-viral', Breakout: 'signal signal-breakout',
@@ -67,7 +71,7 @@ function downloadDataset() {
     readingUpdatedAt: newsletterLibrary.readingUpdatedAt,
     editorialUpdatedAt, gameStories, originalAnalysis, survivalDemoGdd, survivalEvidence,
     methodology: 'Reported sales, observed public metrics and third-party estimates are stored separately. Correlation is not labeled as attribution.',
-    gameLibrary, cases, marketStats, reachDictionary, niches, quarterlyEvidence: { q1: q1MarketData, q2: q2MarketData }, survivalCraft: { ...survivalData, firstPersonConcept: { id: survivalDemoGdd.id, title: survivalDemoGdd.title, pitch: survivalDemoGdd.pitch, gddPath: '/survival-demo/' }, archivedEarlierConcept: { ...fpsSurvivalConcept, status: 'Superseded by city-escape-demo v0.2; retained as historical context only.' } }, marketPatterns, ideas, readingLibrary, newsletterLibrary, sources: sourceStack,
+    gameLibrary, cases, marketStats, reachDictionary, niches, quarterlyEvidence: { q1: q1MarketData, q2: q2MarketData }, survivalCraft: { ...survivalData, firstPersonConcept: { id: survivalDemoGdd.id, title: survivalDemoGdd.title, pitch: survivalDemoGdd.pitch, gddPath: '/survival-demo/' }, archivedEarlierConcept: { ...fpsSurvivalConcept, status: 'Superseded by city-escape-demo v0.2; retained as historical context only.' } }, marketPatterns, ideas, readingLibrary, newsletterLibrary, progressBoard, sources: sourceStack,
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
   const anchor = document.createElement('a');
@@ -172,6 +176,16 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
     };
     const tools: ModelTool[] = [
       {
+        name: 'read_progress_card_authoring_guide', title: 'Read the Progress card authoring guide',
+        description: 'Read the repository contract for creating or updating Progress cards without changing the page or its data.',
+        inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+        annotations: { readOnlyHint: true, untrustedContentHint: false },
+        execute(input) {
+          objectInput(input, []);
+          return progressCardAuthoringGuide;
+        },
+      },
+      {
         name: 'open_game_story', title: 'Read a digested game story',
         description: 'Open a full game narrative with KPIs, timeline, demand structure and a proposed demo transfer. Does not open an external source.',
         inputSchema: { type: 'object', properties: { storyId: { type: 'string', enum: gameStories.map(story => story.id) } }, required: ['storyId'], additionalProperties: false },
@@ -209,7 +223,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       },
       {
         name: 'navigate_research_view', title: 'Open research section',
-        description: 'Navigate the visible workspace to digested game stories, original analysis, the survival demo GDD, game explorer, campaign timelines, market pulse, survival research, build lab, source notes, sprint plan or methodology.',
+        description: 'Navigate the visible workspace to digested game stories, original analysis, the survival demo GDD, game explorer, campaign timelines, market pulse, survival research, build lab, source notes, sprint plan, delivery progress or methodology.',
         inputSchema: { type: 'object', properties: { view: { type: 'string', enum: Object.keys(viewPaths) } }, required: ['view'], additionalProperties: false },
         annotations: { readOnlyHint: false, untrustedContentHint: false },
         execute(input) {
@@ -453,6 +467,8 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
           </article>
         </section>
       )}
+
+      {view === 'progress' && <ProgressTracker />}
 
       {view === 'playbook' && (
         <section className="workbench content-view">
