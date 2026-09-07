@@ -24,6 +24,7 @@ import q2MarketData from './data/market-q2.json';
 import { ResearchBrief, defaultBrief, type BriefInput } from './research-brief';
 import { categories, defaultExplorerFilters, filterGames, gameLibrary, marketPatterns, newsletterLibrary, readingLibrary, readingUpdatedAt, readingTopics, type ExplorerFilters, type ReadingTopic } from './discovery-data';
 import { viewPaths, publicRoutes, siteUrl, type InitialRoute } from './site-routes';
+import { structuredData } from './research-metadata';
 import survivalData from './data/survival-research.json';
 import fpsSurvivalConcept from './data/fps-survival-concept.json';
 import { SteamArtwork } from './steam-artwork';
@@ -122,12 +123,10 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', url);
     const values: Record<string, string> = { description: route.description, 'og:title': route.title, 'twitter:title': route.title, 'og:description': route.description, 'twitter:description': route.description, 'og:url': url, 'og:image': image, 'twitter:image': image, 'og:image:width': route.image ? String(route.imageWidth ?? 460) : '1200', 'og:image:height': route.image ? String(route.imageHeight ?? 215) : '630' };
     for (const [name, value] of Object.entries(values)) document.querySelector(`meta[name="${name}"], meta[property="${name}"]`)?.setAttribute('content', value);
+    document.querySelector('meta[name="robots"]')?.setAttribute('content', route.noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large');
+    document.querySelector('meta[property="og:type"]')?.setAttribute('content', route.initial.readingId || route.initial.storyId || route.initial.analysisId ? 'article' : 'website');
     const structured = document.querySelector('script[type="application/ld+json"]');
-    if (structured?.textContent) {
-      const schema = JSON.parse(structured.textContent);
-      const webpage = schema['@graph']?.find((node: Record<string, unknown>) => node['@type'] === 'WebPage');
-      if (webpage) { Object.assign(webpage, { '@id': `${url}#webpage`, url, name: route.title, description: route.description, citation: route.citations ?? [] }); structured.textContent = JSON.stringify(schema); }
-    }
+    if (structured) structured.textContent = JSON.stringify(structuredData(route));
   }, [view, marketPeriod, explorerSelectedId, readingId, storyId, analysisId, initial.gameId]);
   useEffect(() => {
     const restoreRoute = () => window.location.reload();
