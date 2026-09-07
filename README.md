@@ -18,6 +18,8 @@ Steam Discovery is independent and is not affiliated with Valve. Editorial notes
 
 ## Run locally
 
+The interface defaults to dark mode on every route, independent of the device's theme preference. Keep readable text contrast, body copy at 15–18px, metadata at 13–14px, and form fields at 16px. Use the shared semantic colors in `app/globals.css`; keep charts, evidence labels and lime action buttons distinguishable. Avoid introducing white cards or tiny explanatory text in new research views.
+
 Use Node.js 24 LTS and pnpm 11.19.0.
 
 ```sh
