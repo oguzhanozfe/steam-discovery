@@ -1,6 +1,7 @@
 import { readingLibrary, readingUpdatedAt } from './discovery-data';
 import { gameStories, originalAnalysis } from './editorial-data';
 import { publicRoutes, siteUrl, type SiteRoute } from './site-routes';
+import hubArticles from './data/hub-articles.json';
 
 const publisher = { '@type': 'Organization', '@id': `${siteUrl}/#publisher`, name: 'Steam Discovery Research', url: `${siteUrl}/about/`, sameAs: ['https://github.com/oguzhanozfe/steam-discovery'] };
 
@@ -9,8 +10,9 @@ export function structuredData(route: SiteRoute) {
   const article = readingLibrary.find(item => item.id === route.initial.readingId);
   const story = gameStories.find(item => item.id === route.initial.storyId);
   const analysis = originalAnalysis.articles.find(item => item.id === route.initial.analysisId);
-  const editorial = !!(article || story || analysis);
-  const parentPath = article ? '/reading/' : analysis ? '/analysis/' : route.initial.gameId ? '/games/' : '/';
+  const guide = hubArticles.articles.find(item => item.id === route.initial.guideId);
+  const editorial = !!(article || story || analysis || guide);
+  const parentPath = guide ? '/playbooks/' : article ? '/reading/' : analysis ? '/analysis/' : story ? '/stories/' : route.initial.gameId ? '/games/' : '/';
   const parent = publicRoutes.find(item => item.path === parentPath);
   const graph: Record<string, unknown>[] = [publisher,
     { '@type': 'WebSite', '@id': `${siteUrl}/#website`, url: `${siteUrl}/`, name: 'Steam Discovery', inLanguage: 'en', publisher: { '@id': publisher['@id'] }, description: 'Independent Steam marketing and indie game market research. Not affiliated with Valve.' },
@@ -22,11 +24,11 @@ export function structuredData(route: SiteRoute) {
   }
   if (editorial) graph.push({
     '@type': 'Article', '@id': `${url}#article`, mainEntityOfPage: { '@id': `${url}#webpage` }, url,
-    headline: article ? `Research note: ${article.title}` : story?.headline ?? analysis?.title,
-    description: article?.summary ?? story?.deck ?? analysis?.deck,
+    headline: article ? `Research note: ${article.title}` : story?.headline ?? analysis?.title ?? guide?.title,
+    description: article?.summary ?? story?.deck ?? analysis?.deck ?? guide?.synopsis,
     author: { '@id': publisher['@id'] }, publisher: { '@id': publisher['@id'] },
     inLanguage: 'en', ...(route.modifiedAt ? { dateModified: route.modifiedAt } : {}), citation: route.citations ?? [],
-    ...(article ? { isBasedOn: { '@type': 'Article', url: article.url, headline: article.title, author: { '@type': 'Person', name: article.author }, ...(article.date ? { datePublished: article.date } : {}) }, articleSection: 'Research notes' } : { articleSection: story ? 'Game stories' : 'Original analysis' }),
+    ...(article ? { isBasedOn: { '@type': 'Article', url: article.url, headline: article.title, author: { '@type': 'Person', name: article.author }, ...(article.date ? { datePublished: article.date } : {}) }, articleSection: 'Research notes' } : guide ? { isBasedOn: { '@type': 'Article', url: guide.url, headline: guide.title, ...(guide.publishDate ? { datePublished: guide.publishDate } : {}) }, articleSection: 'Developer playbooks' } : { articleSection: story ? 'Game stories' : 'Original analysis' }),
   });
   if (route.path === '/reading/' || route.path === '/games/') graph.push({ '@type': 'CollectionPage', '@id': `${url}#collection`, url, name: route.title, hasPart: publicRoutes.filter(item => route.path === '/reading/' ? !!item.initial.readingId : !!item.initial.gameId).map(item => ({ '@type': 'WebPage', url: siteUrl + item.path, name: item.title })) });
   return { '@context': 'https://schema.org', '@graph': graph };

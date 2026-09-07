@@ -35,6 +35,11 @@ import { gameStories, findStories, originalAnalysis, survivalDemoGdd, survivalEv
 import { ProgressTracker } from './progress-tracker';
 import { progressBoard } from './progress-data';
 import { progressCardAuthoringGuide } from './progress-card-authoring-guide';
+import { SmallTeamHub, SteamRadar, SoloLab, DeveloperPlaybooks } from './small-team-hub';
+import radarSnapshot from './data/radar-snapshot.json';
+import hubConcepts from './data/solo-concepts.json';
+import hubNiches from './data/hub-niches.json';
+import hubArticles from './data/hub-articles.json';
 
 type ModelTool = {
   name: string; title?: string; description: string;
@@ -51,12 +56,12 @@ declare global {
 const filters = ['All', 'Co-op', 'Solo', '2026', 'Incremental', 'Control'] as const;
 type CaseFilter = (typeof filters)[number];
 const navItems: { id: ResearchView; label: string; caption: string; icon: typeof Radar }[] = [
+  { id: 'hub', label: 'Dev Hub', caption: 'Niches & next steps', icon: Compass },
+  { id: 'radar', label: 'Steam Radar', caption: 'Search & compare games', icon: Radar },
+  { id: 'solo', label: 'Solo Lab', caption: 'AI-assisted · two weeks', icon: Code2 },
   { id: 'stories', label: 'Game Stories', caption: 'Digested cases & lessons', icon: BookOpen },
-  { id: 'analysis', label: 'Original Analysis', caption: 'Evidence into decisions', icon: Radar },
-  { id: 'reading', label: 'Sources & Reading', caption: 'New research & references', icon: BookOpen },
-  { id: 'explorer', label: 'Game Explorer', caption: 'Find your comparables', icon: Compass },
+  { id: 'guides', label: 'Playbooks', caption: 'Read, decide, execute', icon: BookOpen },
   { id: 'market', label: 'Market Pulse', caption: '2025 + 2026 quarters', icon: BarChart3 },
-  { id: 'survival', label: 'Survival Craft', caption: 'Demand meets scope', icon: Trees },
 ];
 const signalClasses: Record<GameCase['signal'], string> = {
   Viral: 'signal signal-viral', Breakout: 'signal signal-breakout',
@@ -66,14 +71,15 @@ const signalClasses: Record<GameCase['signal'], string> = {
 function downloadDataset() {
   const payload = {
     asOf: '2026-09-02',
-    readingUpdatedAt: newsletterLibrary.readingUpdatedAt,
+    readingUpdatedAt,
     editorialUpdatedAt, gameStories, originalAnalysis, survivalDemoGdd, survivalEvidence,
+    smallTeamHub: { radarSnapshot, catalogUrl: `${siteUrl}/data/radar-catalog.json`, soloConcepts: hubConcepts, nicheBriefs: hubNiches, playbooks: hubArticles },
     methodology: 'Reported sales, observed public metrics and third-party estimates are stored separately. Correlation is not labeled as attribution.',
     gameLibrary, cases, marketStats, reachDictionary, niches, quarterlyEvidence: { q1: q1MarketData, q2: q2MarketData }, survivalCraft: { ...survivalData, firstPersonConcept: { id: survivalDemoGdd.id, title: survivalDemoGdd.title, pitch: survivalDemoGdd.pitch, gddPath: '/survival-demo/' }, archivedEarlierConcept: { ...fpsSurvivalConcept, status: 'Superseded by city-escape-demo v0.2; retained as historical context only.' } }, marketPatterns, ideas, readingLibrary, newsletterLibrary, progressBoard, sources: sourceStack,
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
   const anchor = document.createElement('a');
-  anchor.href = url; anchor.download = `steam-discovery-${newsletterLibrary.readingUpdatedAt}.json`; anchor.click();
+  anchor.href = url; anchor.download = `steam-discovery-${readingUpdatedAt}.json`; anchor.click();
   URL.revokeObjectURL(url);
 }
 
@@ -83,7 +89,7 @@ function Score({ label, value }: { label: string; value: number }) {
 
 export default function Home({ initial = {} }: { initial?: InitialRoute }) {
   const initialGame = gameLibrary.find(game => game.id === initial.gameId);
-  const [view, setView] = useState<ResearchView>(initial.view ?? 'stories');
+  const [view, setView] = useState<ResearchView>(initial.view ?? 'hub');
   const [storyId, setStoryId] = useState<string | undefined>(initial.storyId);
   const [analysisId, setAnalysisId] = useState<string | undefined>(initial.analysisId);
   const [storyQuery, setStoryQuery] = useState('');
@@ -114,6 +120,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       view === 'explorer' && initial.gameId ? candidate.initial.gameId === explorerSelectedId :
       view === 'reading' && readingId ? candidate.initial.readingId === readingId :
       view === 'stories' && storyId ? candidate.initial.storyId === storyId :
+      view === 'guides' && initial.guideId ? candidate.initial.guideId === initial.guideId :
       view === 'analysis' && analysisId ? candidate.initial.analysisId === analysisId : candidate.path === viewPaths[view]);
     if (!route) return;
     const url = siteUrl + route.path;
@@ -124,10 +131,10 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
     const values: Record<string, string> = { description: route.description, 'og:title': route.title, 'twitter:title': route.title, 'og:description': route.description, 'twitter:description': route.description, 'og:url': url, 'og:image': image, 'twitter:image': image, 'og:image:width': route.image ? String(route.imageWidth ?? 460) : '1200', 'og:image:height': route.image ? String(route.imageHeight ?? 215) : '630' };
     for (const [name, value] of Object.entries(values)) document.querySelector(`meta[name="${name}"], meta[property="${name}"]`)?.setAttribute('content', value);
     document.querySelector('meta[name="robots"]')?.setAttribute('content', route.noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large');
-    document.querySelector('meta[property="og:type"]')?.setAttribute('content', route.initial.readingId || route.initial.storyId || route.initial.analysisId ? 'article' : 'website');
+    document.querySelector('meta[property="og:type"]')?.setAttribute('content', route.initial.readingId || route.initial.storyId || route.initial.analysisId || route.initial.guideId ? 'article' : 'website');
     const structured = document.querySelector('script[type="application/ld+json"]');
     if (structured) structured.textContent = JSON.stringify(structuredData(route));
-  }, [view, marketPeriod, explorerSelectedId, readingId, storyId, analysisId, initial.gameId]);
+  }, [view, marketPeriod, explorerSelectedId, readingId, storyId, analysisId, initial.gameId, initial.guideId]);
   useEffect(() => {
     const restoreRoute = () => window.location.reload();
     window.addEventListener('popstate', restoreRoute);
@@ -367,7 +374,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       <header className="topbar">
         <a className="brand-lockup" href="/"><span className="brand-mark"><Radar aria-hidden="true" /></span><div><p className="eyebrow">INDEPENDENT INDIE INTELLIGENCE</p><strong className="brand-name">Steam Discovery</strong></div></a>
         <div className="top-metrics" aria-label="Dataset summary">
-          <div><strong>{gameLibrary.length}</strong><span>game records</span></div>
+          <div><strong>{radarSnapshot.catalogCount.toLocaleString('en-US')}</strong><span>catalog apps</span></div>
           <div><strong>{gameStories.length}</strong><span>digested stories</span></div>
           <div className="freshness"><span className="live-dot" /><strong>{readingUpdatedAt}</strong><span>source check</span></div>
         </div>
@@ -377,9 +384,13 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         <div className="view-tabs">{navItems.map((item) => { const Icon = item.icon; return <a key={item.id} href={item.id === 'market' ? `/market/${marketPeriod}/` : viewPaths[item.id]} className={view === item.id ? 'is-active' : ''} aria-current={view === item.id ? 'page' : undefined}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.caption}</small></span></a>; })}</div>
         <Button variant="outline" size="sm" onClick={downloadDataset}><ArrowDownToLine aria-hidden="true" /> Export JSON</Button>
       </nav>
-      <nav className="research-secondary" aria-label="Supporting research"><a href="/case-studies/">Campaign timelines</a><a href="/about/#sources">Reference library</a><a href="/about/">Methodology</a><details className="project-menu"><summary>Project workspace</summary><div><a href="/survival-demo/">Demo GDD</a><a href="/progress/">Progress & milestones</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a></div></details></nav>
+      <nav className="research-secondary" aria-label="Supporting research"><a href="/reading/">Sources &amp; Reading</a><a href="/games/">Researched benchmarks</a><a href="/analysis/">Original analysis</a><a href="/research/open-world-survival-craft/">Survival craft</a><a href="/case-studies/">Campaign timelines</a><a href="/about/">Methodology</a><details className="project-menu"><summary>Project workspace</summary><div><a href="/survival-demo/">Demo GDD</a><a href="/progress/">Progress & milestones</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a></div></details></nav>
 
       <div id="research-content" tabIndex={-1} />
+      {view === 'hub' && <SmallTeamHub />}
+      {view === 'radar' && <SteamRadar />}
+      {view === 'solo' && <SoloLab />}
+      {view === 'guides' && <DeveloperPlaybooks articleId={initial.guideId} />}
       {view === 'stories' && <GameStories storyId={storyId} query={storyQuery} setQuery={setStoryQuery} />}
       {view === 'analysis' && <OriginalAnalysis articleId={analysisId} />}
       {view === 'gdd' && <SurvivalDemoGdd />}

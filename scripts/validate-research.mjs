@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { publicRoutes, readingMetadata } from '../.prerender/entry-prerender.js';
+import './validate-hub.mjs';
 
 const read = path => readFile(new URL(`../dist-static/${path}`, import.meta.url), 'utf8');
 const sitemap = await read('sitemap.xml');

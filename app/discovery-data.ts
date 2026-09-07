@@ -8,6 +8,7 @@ import deepMetrics from './data/deep-case-metrics.json';
 import countercaseData from './data/countercases.json';
 import { cases, htmagePosts } from './research-data';
 import { gameStories } from './editorial-data';
+import hubArticles from './data/hub-articles.json';
 
 export const snapshot = '2026-09-02';
 export const categories = ['All genres', 'Co-op & party', 'Incremental', 'Horror & inspection', 'Survival & crafting', 'Simulation', 'Strategy & roguelike', 'Cozy & puzzle'] as const;
@@ -111,17 +112,17 @@ const earlierGames: GameRecord[] = [
 
 const storyReleaseDates: Record<string, string> = { dreadmoor: 'Unreleased · Q4 2026 planned', 'design-and-conjure': 'Unreleased · Coming soon', hauntii: '2024-05-23', 'into-the-radius': '2020-07-20', sheepherds: '2025-11-17', 'dosa-divas': '2026-04-14', freerunners: '2026-03-04', inkbound: '2024-04-09' };
 const storyGames: GameRecord[] = gameStories.filter(story => !earlierGames.some(game => game.appId === String(story.appId))).map(story => {
-  const review = story.kpis.find(kpi => /total reviews|aggregate Steam reviews/i.test(kpi.label));
+  const review = story.kpis.find(kpi => /total reviews|aggregate Steam reviews|^Steam reviews$/i.test(kpi.label));
   const peak = story.kpis.find(kpi => /all-time Steam peak/i.test(kpi.label));
-  const milestone = story.kpis.find(kpi => kpi.value !== null && /self-report|announcement/.test(kpi.evidence) && !/review/i.test(kpi.label));
+  const milestone = story.kpis.find(kpi => kpi.value !== null && /self-report|announcement|developer/i.test(kpi.evidence) && !/review/i.test(kpi.label));
   return {
-    ...normalizeGame({ id: story.id, title: story.title, appId: story.appId, releaseDate: storyReleaseDates[story.id], genre: story.genre, subgenre: story.playerPromise, tropes: [story.hook], mode: story.id === 'inkbound' || story.id === 'sheepherds' ? 'Solo / co-op' : 'Solo', scopeFit: 'Low', team: 'Team size not established in this record', devTime: null, hook: story.hook, whyDemand: `Analysis: ${story.demand.opening}`, spin: story.buildTransfer.miniDemo, caveat: `${story.demand.notProven} Full reference-game scope is not a three-week commitment; the story proposes a much smaller experiment.`, depth: 'Digested game story', observedMetrics: { reviews: typeof review?.value === 'number' ? review.value : null, peakCCU: typeof peak?.value === 'number' ? peak.value : null, asOf: story.checkedAt }, reportedOutcome: milestone ? { metric: `${milestone.label}: ${milestone.value} ${milestone.unit}`, date: milestone.window, source: milestone.source, evidence: milestone.evidence, scope: milestone.caveat } : null, marketingEvents: story.timeline.map(event => ({ date: event.when, channel: event.channel, action: event.action, outcome: event.outcome, source: event.source, evidence: 'Sourced timeline; see story caveats', spend: event.spend })), sourceUrls: story.sourceUrls }),
+    ...normalizeGame({ id: story.id, title: story.title, appId: story.appId, releaseDate: 'releaseDate' in story ? story.releaseDate : storyReleaseDates[story.id] ?? story.releaseStatus, genre: story.genre, subgenre: story.playerPromise, tropes: [story.hook], mode: story.id === 'inkbound' || story.id === 'sheepherds' ? 'Solo / co-op' : 'Solo', scopeFit: 'Low', team: 'team' in story ? story.team : 'Team size not established in this record', devTime: null, hook: story.hook, whyDemand: `Analysis: ${story.demand.opening}`, spin: story.buildTransfer.miniDemo, caveat: `${story.demand.notProven} The Low scope-fit label applies to reproducing the full reference game, not the bounded prototype proposed in its story.`, depth: 'Digested game story', observedMetrics: { reviews: typeof review?.value === 'number' ? review.value : null, peakCCU: typeof peak?.value === 'number' ? peak.value : null, asOf: story.checkedAt, source: review?.source }, reportedOutcome: milestone ? { metric: `${milestone.label}: ${milestone.value} ${milestone.unit}`, date: milestone.window, source: milestone.source, evidence: milestone.evidence, scope: milestone.caveat } : null, marketingEvents: story.timeline.map(event => ({ date: event.when, channel: event.channel, action: event.action, outcome: event.outcome, source: event.source, evidence: 'Sourced timeline; see story caveats', spend: event.spend })), sourceUrls: story.sourceUrls }),
     storyId: story.id,
   };
 });
 export const gameLibrary: GameRecord[] = [...earlierGames.map(game => ({ ...game, storyId: gameStories.find(story => String(story.appId) === game.appId)?.id })), ...storyGames];
 
-export const readingUpdatedAt = readingUpdates.checkedAt;
+export const readingUpdatedAt = hubArticles.checkedAt > readingUpdates.checkedAt ? hubArticles.checkedAt : readingUpdates.checkedAt;
 export const latestReadingUpdates = readingUpdates;
 export const readingStarterPath = readingExpansion.starterPath;
 export const newReadingCount = readingExpansion.articles.length;
@@ -144,7 +145,7 @@ export type ReadingArticle = Omit<typeof newsletterData.articles[number], 'date'
   gameSources?: Partial<Record<string, string>>;
 };
 const monthIndex: Record<string, string> = { Jun: '06', Jul: '07', Aug: '08', Sep: '09' };
-export const readingLibrary: ReadingArticle[] = [
+const baseReadings: ReadingArticle[] = [
   ...newsletterLibrary.articles,
   ...htmagePosts.map((post, index) => {
     const [day, month] = post.date.split(' ');
@@ -158,7 +159,21 @@ export const readingLibrary: ReadingArticle[] = [
       access: 'Public full article · priority three-month window',
     };
   }),
-].sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
+];
+const hubReadings: ReadingArticle[] = hubArticles.articles.map(article => ({
+  id: article.id, title: article.title, author: article.author ?? article.publisher, publication: article.publisher,
+  date: article.publishDate, checkedAt: article.checkedAt, url: article.url, topics: article.topics,
+  relatedGames: article.relatedGames.map(game => game.name), summary: article.synopsis, hardData: [],
+  evidenceType: article.evidenceClassification, actionableLesson: article.takeaways.join(' '),
+  limitations: article.cannotProve, access: article.access,
+  applicationSteps: [...article.soloChecklist.map(step => 'Solo: ' + step), ...article.smallTeamChecklist.map(step => '2–5 people: ' + step)],
+  sourceUrls: [article.url, ...article.supportingSources.map(source => source.url)],
+  gameSources: Object.fromEntries(article.relatedGames.map(game => [game.name,game.url])),
+}));
+export const readingLibrary: ReadingArticle[] = [
+  ...baseReadings.map(note => { const expanded = hubReadings.find(article => article.url === note.url); return expanded ? { ...note, ...expanded, id: note.id, hardData: note.hardData, sourceUrls: [...new Set([...(note.sourceUrls ?? []), ...(expanded.sourceUrls ?? [])])], applicationSteps: [...new Set([...(note.applicationSteps ?? []), ...(expanded.applicationSteps ?? [])])] } : note; }),
+  ...hubReadings.filter(note => !baseReadings.some(article => article.url === note.url)),
+].sort((a,b) => (b.date ?? '').localeCompare(a.date ?? ''));
 
 export const readingTopics = ['All topics', 'Co-op', 'Incremental', 'Next Fest', 'Creators', 'Trailers & positioning', 'Campaign execution', 'Measurement integrity', 'Niche demand', 'Revenue & pricing', 'Counter-cases'] as const;
 export type ReadingTopic = typeof readingTopics[number];

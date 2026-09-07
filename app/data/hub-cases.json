@@ -1,0 +1,1571 @@
+{
+  "updatedAt": "2026-09-08",
+  "stories": [
+    {
+      "id": "gnorp-apologue",
+      "title": "(the) Gnorp Apologue",
+      "appId": 1473350,
+      "headline": "Make increasing power something viewers can see",
+      "deck": "The game converts abstract accumulation into a visible crowd attacking a rock, collecting shards and changing the scene. Our interpretation: a viewer can recognize an upgrade before reading a number.",
+      "genre": "incremental / automation",
+      "releaseStatus": "Released · 2023-12-14",
+      "releaseDate": "2023-12-14",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "gnorp.dev"
+      ],
+      "marketQuestion": "Make increasing power something viewers can see — what transfers to a small team?",
+      "playerPromise": "The game converts abstract accumulation into a visible crowd attacking a rock, collecting shards and changing the scene. Our interpretation: a viewer can recognize an upgrade before reading a number.",
+      "hook": "Give each upgrade a visible consequence and a meaningful tradeoff. Test whether players describe the new behavior in their own words; a larger damage number alone may conceal an unchanged decision.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "The game converts abstract accumulation into a visible crowd attacking a rock, collecting shards and changing the scene. Our interpretation: a viewer can recognize an upgrade before reading a number.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/1473350/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "Myco describes sharing a short clip with the incremental-games subreddit after positive private tests. That community's response encouraged full development. The launch account supports a sequence of validation, not a measured acquisition funnel.",
+          "sourceUrls": [
+            "https://gnorp.dev/news/8-The-Release/",
+            "https://gnorp.dev/news/11-100k-Players/"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The 100,000-copy announcement does not isolate Reddit, creators or Steam exposure. It also describes fatigue from feedback and support. A small production footprint can still create substantial maintenance work after release.",
+          "sourceUrls": [
+            "https://gnorp.dev/news/8-The-Release/",
+            "https://gnorp.dev/news/11-100k-Players/"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Give each upgrade a visible consequence and a meaningful tradeoff. Test whether players describe the new behavior in their own words; a larger damage number alone may conceal an unchanged decision.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam copies sold",
+          "value": "> 100000",
+          "unit": "Steam copies sold",
+          "window": "2024-01-06",
+          "evidence": "Developer-reported",
+          "source": "https://gnorp.dev/news/11-100k-Players/",
+          "caveat": "Cumulative paid Steam copies, as stated by the developer; not current lifetime sales."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2023-11-25",
+          "channel": "Documented product / campaign event",
+          "action": "External playtest held; thanked in the developer's launch account.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://gnorp.dev/news/8-The-Release/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2023-12-14",
+          "channel": "Documented product / campaign event",
+          "action": "Steam release; the December 16 account described more than 48 hours live.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://gnorp.dev/news/8-The-Release/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-01-06",
+          "channel": "Documented product / campaign event",
+          "action": "Developer announced more than 100,000 Steam copies.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://gnorp.dev/news/11-100k-Players/",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "incremental, automation players",
+        "job": "The game converts abstract accumulation into a visible crowd attacking a rock, collecting shards and changing the scene. Our interpretation: a viewer can recognize an upgrade before reading a number.",
+        "trigger": "Myco describes sharing a short clip with the incremental-games subreddit after positive private tests. That community's response encouraged full development. The launch account supports a sequence of validation, not a measured acquisition funnel.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Raincatch: one roof collects droplets into two competing machines. Days 1–4 establish collection; 5–8 add six upgrades and a bottleneck; 9–11 polish effects; 12–14 test a ten-minute progression and record real outcomes.",
+        "notProven": "The 100,000-copy announcement does not isolate Reddit, creators or Steam exposure. It also describes fatigue from feedback and support. A small production footprint can still create substantial maintenance work after release.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1473350/",
+          "https://gnorp.dev/news/8-The-Release/",
+          "https://gnorp.dev/news/11-100k-Players/"
+        ]
+      },
+      "mechanism": {
+        "observed": "Myco describes sharing a short clip with the incremental-games subreddit after positive private tests. That community's response encouraged full development. The launch account supports a sequence of validation, not a measured acquisition funnel.",
+        "inference": "Give each upgrade a visible consequence and a meaningful tradeoff. Test whether players describe the new behavior in their own words; a larger damage number alone may conceal an unchanged decision.",
+        "confounds": "The 100,000-copy announcement does not isolate Reddit, creators or Steam exposure. It also describes fatigue from feedback and support. A small production footprint can still create substantial maintenance work after release.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1473350/",
+          "https://gnorp.dev/news/8-The-Release/",
+          "https://gnorp.dev/news/11-100k-Players/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Give each upgrade a visible consequence and a meaningful tradeoff. Test whether players describe the new behavior in their own words; a larger damage number alone may conceal an unchanged decision.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Raincatch: one roof collects droplets into two competing machines. Days 1–4 establish collection; 5–8 add six upgrades and a bottleneck; 9–11 polish effects; 12–14 test a ten-minute progression and record real outcomes.",
+        "technicalCut": "Hundreds of independently simulated particles, many worker classes and an endless prestige system multiply performance and balance work. Start with pooled visual droplets and one finite victory condition.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Show two ten-second clips, one emphasizing the crowd and one the machinery. Ask incremental players which behavior they want to control, then compare that preference with voluntary replay of the slice."
+      },
+      "risks": [
+        "Hundreds of independently simulated particles, many worker classes and an endless prestige system multiply performance and balance work. Start with pooled visual droplets and one finite victory condition.",
+        "The 100,000-copy announcement does not isolate Reddit, creators or Steam exposure. It also describes fatigue from feedback and support. A small production footprint can still create substantial maintenance work after release."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1473350/",
+        "https://gnorp.dev/news/8-The-Release/",
+        "https://gnorp.dev/news/11-100k-Players/"
+      ],
+      "team": "Myco; solo developer credited in the official press kit. Launch account describes personal prototype and friends' playtests.",
+      "outcomeBand": "breakout"
+    },
+    {
+      "id": "rustys-retirement",
+      "title": "Rusty's Retirement",
+      "appId": 2666510,
+      "headline": "Design for the amount of attention a player can spare",
+      "deck": "The farm occupies a strip of the desktop while crops and helpers continue working. The promise concerns a player's routine as much as farming: return briefly, make a choice and leave without punishment.",
+      "genre": "cozy / incremental / automation",
+      "releaseStatus": "Released · 2024-04-26",
+      "releaseDate": "2024-04-26",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "newsletter.gamediscover.co"
+      ],
+      "marketQuestion": "Design for the amount of attention a player can spare — what transfers to a small team?",
+      "playerPromise": "The farm occupies a strip of the desktop while crops and helpers continue working. The promise concerns a player's routine as much as farming: return briefly, make a choice and leave without punishment.",
+      "hook": "State the attention contract early. A background experience should tolerate interruptions and communicate what changed when the player returns. Making an ordinary game smaller on screen will not automatically satisfy that contract.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "The farm occupies a strip of the desktop while crops and helpers continue working. The promise concerns a player's routine as much as farming: return briefly, make a choice and leave without punishment.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2666510/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The developer reported successful social posts, creator attention and a launch deliberately aligned with Farming Fest. An existing commercial release and audience provided experience that a first-time solo developer cannot assume.",
+          "sourceUrls": [
+            "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The sales chart supports a launch and festival sequence, but does not independently attribute every purchase. Some streams appeared under Just Chatting, making game-category totals incomplete. Marketing spend is not comprehensively disclosed.",
+          "sourceUrls": [
+            "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "State the attention contract early. A background experience should tolerate interruptions and communicate what changed when the player returns. Making an ordinary game smaller on screen will not automatically satisfy that contract.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam copies sold",
+          "value": "almost 330000",
+          "unit": "Steam copies sold",
+          "window": "2024-08-28 report; supplied snapshot shortly before publication",
+          "evidence": "Developer data supplied to GameDiscoverCo",
+          "source": "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed",
+          "caveat": "Cumulative base-game Steam sales since April; supporter DLC is a separate product."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2024-04-26",
+          "channel": "Documented product / campaign event",
+          "action": "Released on the Friday before Steam Farming Fest.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-04-29",
+          "channel": "Documented product / campaign event",
+          "action": "Farming Fest began; developer associates a second sales peak with the event.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-08-28",
+          "channel": "Documented product / campaign event",
+          "action": "Interview published with almost 330,000 Steam base-game sales.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "cozy, incremental, automation players",
+        "job": "The farm occupies a strip of the desktop while crops and helpers continue working. The promise concerns a player's routine as much as farming: return briefly, make a choice and leave without punishment.",
+        "trigger": "The developer reported successful social posts, creator attention and a launch deliberately aligned with Farming Fest. An existing commercial release and audience provided experience that a first-time solo developer cannot assume.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Window Apiary: three hives and one worker in a desktop strip. Days 1–4 create timers and safe pause/resume; 5–8 add two automation choices; 9–11 handle window sizes; 12–14 test alongside a twenty-minute writing task.",
+        "notProven": "The sales chart supports a launch and festival sequence, but does not independently attribute every purchase. Some streams appeared under Just Chatting, making game-category totals incomplete. Marketing spend is not comprehensively disclosed.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2666510/",
+          "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed"
+        ]
+      },
+      "mechanism": {
+        "observed": "The developer reported successful social posts, creator attention and a launch deliberately aligned with Farming Fest. An existing commercial release and audience provided experience that a first-time solo developer cannot assume.",
+        "inference": "State the attention contract early. A background experience should tolerate interruptions and communicate what changed when the player returns. Making an ordinary game smaller on screen will not automatically satisfy that contract.",
+        "confounds": "The sales chart supports a launch and festival sequence, but does not independently attribute every purchase. Some streams appeared under Just Chatting, making game-category totals incomplete. Marketing spend is not comprehensively disclosed.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2666510/",
+          "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "State the attention contract early. A background experience should tolerate interruptions and communicate what changed when the player returns. Making an ordinary game smaller on screen will not automatically satisfy that contract.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Window Apiary: three hives and one worker in a desktop strip. Days 1–4 create timers and safe pause/resume; 5–8 add two automation choices; 9–11 handle window sizes; 12–14 test alongside a twenty-minute writing task.",
+        "technicalCut": "Twitch integration, elaborate pathfinding and a full farming economy distract from proving interruption tolerance. Use fixed worker routes and a short, finite upgrade track in the prototype.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Record how often five testers voluntarily return, whether progress interrupts their task, and whether they can explain the next decision. Compare a quiet notification against no notification before adding content."
+      },
+      "risks": [
+        "Twitch integration, elaborate pathfinding and a full farming economy distract from proving interruption tolerance. Use fixed worker routes and a short, finite upgrade track in the prototype.",
+        "The sales chart supports a launch and festival sequence, but does not independently attribute every purchase. Some streams appeared under Just Chatting, making game-category totals incomplete. Marketing spend is not comprehensively disclosed."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2666510/",
+        "https://newsletter.gamediscover.co/p/how-rustys-retirement-idle-farmed"
+      ],
+      "team": "Jordan Morris / Mister Morris Games; the developer interview identifies a solo developer with a prior commercial game, Haiku the Robot.",
+      "outcomeBand": "breakout"
+    },
+    {
+      "id": "shapez",
+      "title": "shapez",
+      "appId": 1318690,
+      "headline": "Use playable proof to expose where the factory becomes satisfying",
+      "deck": "Simple shapes turn factory processing into a legible sequence: extract, transform, combine and deliver. The absence of a combat survival layer focuses attention on recognizing bottlenecks and improving a working machine.",
+      "genre": "automation / management",
+      "releaseStatus": "Released · 2020-06-07",
+      "releaseDate": "2020-06-07",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "gamedeveloper.com"
+      ],
+      "marketQuestion": "Use playable proof to expose where the factory becomes satisfying — what transfers to a small team?",
+      "playerPromise": "Simple shapes turn factory processing into a legible sequence: extract, transform, combine and deliver. The absence of a combat survival layer focuses attention on recognizing bottlenecks and improving a working machine.",
+      "hook": "Instrument the first useful improvement. Watch when a player recognizes that a queue needs redesign and whether the tools make that improvement pleasant. Factory depth begins with an understandable problem, not an enormous map.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "Simple shapes turn factory processing into a legible sequence: extract, transform, combine and deliver. The absence of a combat survival layer focuses attention on recognizing bottlenecks and improving a working machine.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/1318690/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The developer's account connects a free web version, community posts, Steam visibility and creator coverage. It explicitly includes paid sponsorships. The low launch wishlist count therefore cannot stand alone as a discovery strategy.",
+          "sourceUrls": [
+            "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "This was not a cold start with 958 interested people. Earlier players and existing web-distribution experience mattered. Reported channel performance and platform explanations come from the developer rather than a controlled attribution study.",
+          "sourceUrls": [
+            "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Instrument the first useful improvement. Watch when a player recognizes that a queue needs redesign and whether the tools make that improvement pleasant. Factory depth begins with an understandable problem, not an enormous map.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam wishlists at launch",
+          "value": 958,
+          "unit": "Steam wishlists at launch",
+          "window": "2020-06-07; reported 2021-08-18",
+          "evidence": "Developer-reported in GameDiscoverCo article",
+          "source": "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit",
+          "caveat": "Historical prelaunch wishlist balance; the game already had web and itch.io players."
+        },
+        {
+          "label": "Median Steam playtime",
+          "value": "7h 11m",
+          "unit": "Median Steam playtime",
+          "window": "2021-08-18 article snapshot",
+          "evidence": "Developer data supplied to GameDiscoverCo",
+          "source": "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit",
+          "caveat": "Developer-supplied playtime snapshot; not demo retention, revenue or current playtime."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2020-05",
+          "channel": "Documented product / campaign event",
+          "action": "Free web version and itch.io version launched; feedback informed iteration.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2020-06-07",
+          "channel": "Documented product / campaign event",
+          "action": "Steam launch followed the web release, with 958 wishlists.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2020-07 onward",
+          "channel": "Documented product / campaign event",
+          "action": "Developer began sponsored creator outreach as launch sales slowed.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "automation, management players",
+        "job": "Simple shapes turn factory processing into a legible sequence: extract, transform, combine and deliver. The absence of a combat survival layer focuses attention on recognizing bottlenecks and improving a working machine.",
+        "trigger": "The developer's account connects a free web version, community posts, Steam visibility and creator coverage. It explicitly includes paid sponsorships. The low launch wishlist count therefore cannot stand alone as a discovery strategy.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Stampworks: a twelve-by-twelve desk routes paper through cutters and stampers. Days 1–4 implement belts; 5–8 add three orders and one bottleneck; 9–11 add undo and copy; 12–14 test a fifteen-minute session.",
+        "notProven": "This was not a cold start with 958 interested people. Earlier players and existing web-distribution experience mattered. Reported channel performance and platform explanations come from the developer rather than a controlled attribution study.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1318690/",
+          "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit"
+        ]
+      },
+      "mechanism": {
+        "observed": "The developer's account connects a free web version, community posts, Steam visibility and creator coverage. It explicitly includes paid sponsorships. The low launch wishlist count therefore cannot stand alone as a discovery strategy.",
+        "inference": "Instrument the first useful improvement. Watch when a player recognizes that a queue needs redesign and whether the tools make that improvement pleasant. Factory depth begins with an understandable problem, not an enormous map.",
+        "confounds": "This was not a cold start with 958 interested people. Earlier players and existing web-distribution experience mattered. Reported channel performance and platform explanations come from the developer rather than a controlled attribution study.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1318690/",
+          "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Instrument the first useful improvement. Watch when a player recognizes that a queue needs redesign and whether the tools make that improvement pleasant. Factory depth begins with an understandable problem, not an enormous map.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Stampworks: a twelve-by-twelve desk routes paper through cutters and stampers. Days 1–4 implement belts; 5–8 add three orders and one bottleneck; 9–11 add undo and copy; 12–14 test a fifteen-minute session.",
+        "technicalCut": "An infinite world, fluid simulation and generalized machine logic can consume the entire fortnight. Use bounded cells, discrete ticks, four machines and three fixed order patterns.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Give five automation players the same production target without a tutorial lecture. Measure time to the first independent redesign and whether they try a second layout after completing the target."
+      },
+      "risks": [
+        "An infinite world, fluid simulation and generalized machine logic can consume the entire fortnight. Use bounded cells, discrete ticks, four machines and three fixed order patterns.",
+        "This was not a cold start with 958 interested people. Earlier players and existing web-distribution experience mattered. Reported channel performance and platform explanations come from the developer rather than a controlled attribution study."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1318690/",
+        "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit"
+      ],
+      "team": "Tobias Springer began the game; later account names a second programmer and Chinese publishing partner.",
+      "outcomeBand": "breakout"
+    },
+    {
+      "id": "thronefall",
+      "title": "Thronefall",
+      "appId": 2239150,
+      "headline": "Keep strategic consequences while reducing command overhead",
+      "deck": "A small kingdom alternates preparation and attack. The attraction is a clear strategic responsibility with compact controls. Our interpretation: players can understand a defensive mistake without learning a full real-time strategy interface.",
+      "genre": "tactics / management / tower defense",
+      "releaseStatus": "Released; full version · 2024-10-11",
+      "releaseDate": "2024-10-11",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "newsletter.pragmaticengineer.com"
+      ],
+      "marketQuestion": "Keep strategic consequences while reducing command overhead — what transfers to a small team?",
+      "playerPromise": "A small kingdom alternates preparation and attack. The attraction is a clear strategic responsibility with compact controls. Our interpretation: players can understand a defensive mistake without learning a full real-time strategy interface.",
+      "hook": "Cut command overhead while preserving a consequential allocation decision. Test whether losing players name a different purchase or position they would try. Frustration without a credible alternative signals weak feedback rather than useful difficulty.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "A small kingdom alternates preparation and attack. The attraction is a clear strategic responsibility with compact controls. Our interpretation: players can understand a defensive mistake without learning a full real-time strategy interface.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2239150/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "Tyroller's interview describes repeated prototypes, external playtests and videos about development. It establishes an experienced two-person production process, while the reviewed sources provide no complete channel-by-channel explanation of sales.",
+          "sourceUrls": [
+            "https://newsletter.pragmaticengineer.com/p/thronefall",
+            "https://store.steampowered.com/appreviews/2239150?json=1&language=all&purchase_type=all&filter=all&num_per_page=0&filter_offtopic_activity=0"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The current review count establishes substantial reception, not unit sales. Headline million-copy claims in the interview are approximate and inconsistent in phrasing, so this card uses the directly observed review metric instead.",
+          "sourceUrls": [
+            "https://newsletter.pragmaticengineer.com/p/thronefall",
+            "https://store.steampowered.com/appreviews/2239150?json=1&language=all&purchase_type=all&filter=all&num_per_page=0&filter_offtopic_activity=0"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Cut command overhead while preserving a consequential allocation decision. Test whether losing players name a different purchase or position they would try. Frustration without a credible alternative signals weak feedback rather than useful difficulty.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam reviews",
+          "value": 23648,
+          "unit": "Steam reviews",
+          "window": "2026-09-08",
+          "evidence": "Observed",
+          "source": "https://store.steampowered.com/appreviews/2239150?json=1&language=all&purchase_type=all&filter=all&num_per_page=0&filter_offtopic_activity=0",
+          "caveat": "All languages and purchase types, including off-topic periods, returned by Steam's review API; 22,731 positive and 917 negative. Reviews are not paid copies."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2024-10-11",
+          "channel": "Documented product / campaign event",
+          "action": "Full Steam release; current store records this date.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://store.steampowered.com/app/2239150/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2025-01-29",
+          "channel": "Documented product / campaign event",
+          "action": "Jonas Tyroller interview detailed prototyping, playtesting and pathfinding work.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://newsletter.pragmaticengineer.com/p/thronefall",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2026-09-08",
+          "channel": "Documented product / campaign event",
+          "action": "Steam review API returned 23,648 reviews.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://store.steampowered.com/appreviews/2239150?json=1&language=all&purchase_type=all&filter=all&num_per_page=0&filter_offtopic_activity=0",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "tactics, management, tower defense players",
+        "job": "A small kingdom alternates preparation and attack. The attraction is a clear strategic responsibility with compact controls. Our interpretation: players can understand a defensive mistake without learning a full real-time strategy interface.",
+        "trigger": "Tyroller's interview describes repeated prototypes, external playtests and videos about development. It establishes an experienced two-person production process, while the reviewed sources provide no complete channel-by-channel explanation of sales.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Harbor Watch: one pier, three defense sockets and three dusk attacks. Days 1–4 create a lane and attacks; 5–8 add economy choices; 9–11 communicate incoming threats; 12–14 test retries with five newcomers.",
+        "notProven": "The current review count establishes substantial reception, not unit sales. Headline million-copy claims in the interview are approximate and inconsistent in phrasing, so this card uses the directly observed review metric instead.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2239150/",
+          "https://newsletter.pragmaticengineer.com/p/thronefall",
+          "https://store.steampowered.com/appreviews/2239150?json=1&language=all&purchase_type=all&filter=all&num_per_page=0&filter_offtopic_activity=0"
+        ]
+      },
+      "mechanism": {
+        "observed": "Tyroller's interview describes repeated prototypes, external playtests and videos about development. It establishes an experienced two-person production process, while the reviewed sources provide no complete channel-by-channel explanation of sales.",
+        "inference": "Cut command overhead while preserving a consequential allocation decision. Test whether losing players name a different purchase or position they would try. Frustration without a credible alternative signals weak feedback rather than useful difficulty.",
+        "confounds": "The current review count establishes substantial reception, not unit sales. Headline million-copy claims in the interview are approximate and inconsistent in phrasing, so this card uses the directly observed review metric instead.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2239150/",
+          "https://newsletter.pragmaticengineer.com/p/thronefall",
+          "https://store.steampowered.com/appreviews/2239150?json=1&language=all&purchase_type=all&filter=all&num_per_page=0&filter_offtopic_activity=0"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Cut command overhead while preserving a consequential allocation decision. Test whether losing players name a different purchase or position they would try. Frustration without a credible alternative signals weak feedback rather than useful difficulty.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Harbor Watch: one pier, three defense sockets and three dusk attacks. Days 1–4 create a lane and attacks; 5–8 add economy choices; 9–11 communicate incoming threats; 12–14 test retries with five newcomers.",
+        "technicalCut": "The developer identifies pathfinding as major work. Fixed lanes and a single controllable defender keep this slice bounded; free construction, flocking armies and a campaign would defeat its purpose.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Compare explicit wave previews with silhouette-only previews. Observe whether players change investments and whether failed runs produce voluntary retries. Keep the option that creates understandable planning rather than merely easier victories."
+      },
+      "risks": [
+        "The developer identifies pathfinding as major work. Fixed lanes and a single controllable defender keep this slice bounded; free construction, flocking armies and a campaign would defeat its purpose.",
+        "The current review count establishes substantial reception, not unit sales. Headline million-copy claims in the interview are approximate and inconsistent in phrasing, so this card uses the directly observed review metric instead."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2239150/",
+        "https://newsletter.pragmaticengineer.com/p/thronefall",
+        "https://store.steampowered.com/appreviews/2239150?json=1&language=all&purchase_type=all&filter=all&num_per_page=0&filter_offtopic_activity=0"
+      ],
+      "team": "Original core team: Paul Schnepf and Jonas Tyroller. Current Steam credits also list Mythwright; the two-person history must not describe all current production.",
+      "outcomeBand": "breakout"
+    },
+    {
+      "id": "stacklands",
+      "title": "Stacklands",
+      "appId": 1948280,
+      "headline": "Turn a management rule into a physical-looking action",
+      "deck": "Placing one card on another becomes work, crafting or discovery. Familiar tabletop handling makes a management system readable; the evolving arrangement gives players an external picture of what their village is doing.",
+      "genre": "management / cards / crafting",
+      "releaseStatus": "Released · 2022-04-08",
+      "releaseDate": "2022-04-08",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "newsletter.gamediscover.co"
+      ],
+      "marketQuestion": "Turn a management rule into a physical-looking action — what transfers to a small team?",
+      "playerPromise": "Placing one card on another becomes work, crafting or discovery. Familiar tabletop handling makes a management system readable; the evolving arrangement gives players an external picture of what their village is doing.",
+      "hook": "Make combinations communicate verbs. A player should predict at least some outcomes from the cards' meaning, while discoveries create surprise. An opaque recipe list will not inherit the appeal of a tactile interface.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "Placing one card on another becomes work, crafting or discovery. Familiar tabletop handling makes a management system readable; the evolving arrangement gives players an external picture of what their village is doing.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/1948280/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The interview documents a large existing Sokpop catalogue, Patreon subscribers, bundles and localization. China supplied the largest reported country share. These are distribution advantages surrounding the concept, not proof that card presentation alone drove purchases.",
+          "sourceUrls": [
+            "https://newsletter.gamediscover.co/p/how-one-of-sokpops-almost-100-steam"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The reported bundle figure may overlap base-game copies and should never be added. The source does not disclose a complete acquisition budget or experiment that separates localization, recommendations and audience carryover.",
+          "sourceUrls": [
+            "https://newsletter.gamediscover.co/p/how-one-of-sokpops-almost-100-steam"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Make combinations communicate verbs. A player should predict at least some outcomes from the cards' meaning, while discoveries create surprise. An opaque recipe list will not inherit the appeal of a tactile interface.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam copies sold",
+          "value": "approximately 450000",
+          "unit": "Steam copies sold",
+          "window": "2022-07-11 report",
+          "evidence": "Developer interview / GameDiscoverCo",
+          "source": "https://newsletter.gamediscover.co/p/how-one-of-sokpops-almost-100-steam",
+          "caveat": "Developer-reported cumulative Stacklands sales. The separately mentioned 50,000 bundle purchases must not be added; inclusion or overlap is not resolved."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2022-04-08",
+          "channel": "Documented product / campaign event",
+          "action": "Steam release of the card-based village builder.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://store.steampowered.com/app/1948280/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2022-07-11",
+          "channel": "Documented product / campaign event",
+          "action": "Aran Koning reported about 450,000 Steam copies and discussed localization and catalogue bundles.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://newsletter.gamediscover.co/p/how-one-of-sokpops-almost-100-steam",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "management, cards, crafting players",
+        "job": "Placing one card on another becomes work, crafting or discovery. Familiar tabletop handling makes a management system readable; the evolving arrangement gives players an external picture of what their village is doing.",
+        "trigger": "The interview documents a large existing Sokpop catalogue, Patreon subscribers, bundles and localization. China supplied the largest reported country share. These are distribution advantages surrounding the concept, not proof that card presentation alone drove purchases.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Night Market Ledger: stack stall, ingredient and worker cards to serve three orders. Days 1–4 implement stacking; 5–8 add twelve cards and six recipes; 9–11 add one scarcity event; 12–14 test a ten-minute market.",
+        "notProven": "The reported bundle figure may overlap base-game copies and should never be added. The source does not disclose a complete acquisition budget or experiment that separates localization, recommendations and audience carryover.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1948280/",
+          "https://newsletter.gamediscover.co/p/how-one-of-sokpops-almost-100-steam"
+        ]
+      },
+      "mechanism": {
+        "observed": "The interview documents a large existing Sokpop catalogue, Patreon subscribers, bundles and localization. China supplied the largest reported country share. These are distribution advantages surrounding the concept, not proof that card presentation alone drove purchases.",
+        "inference": "Make combinations communicate verbs. A player should predict at least some outcomes from the cards' meaning, while discoveries create surprise. An opaque recipe list will not inherit the appeal of a tactile interface.",
+        "confounds": "The reported bundle figure may overlap base-game copies and should never be added. The source does not disclose a complete acquisition budget or experiment that separates localization, recommendations and audience carryover.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1948280/",
+          "https://newsletter.gamediscover.co/p/how-one-of-sokpops-almost-100-steam"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Make combinations communicate verbs. A player should predict at least some outcomes from the cards' meaning, while discoveries create surprise. An opaque recipe list will not inherit the appeal of a tactile interface.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Night Market Ledger: stack stall, ingredient and worker cards to serve three orders. Days 1–4 implement stacking; 5–8 add twelve cards and six recipes; 9–11 add one scarcity event; 12–14 test a ten-minute market.",
+        "technicalCut": "Content combinations expand faster than the card count suggests. Exclude combat, procedural worlds, technology trees and multiplayer; ship a visible recipe notebook and a fixed ending.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Ask six management players to predict three combinations before interacting. Then observe which discoveries prompt another attempt. Revise card meanings when confusion repeatedly occurs at the same combination."
+      },
+      "risks": [
+        "Content combinations expand faster than the card count suggests. Exclude combat, procedural worlds, technology trees and multiplayer; ship a visible recipe notebook and a fixed ending.",
+        "The reported bundle figure may overlap base-game copies and should never be added. The source does not disclose a complete acquisition budget or experiment that separates localization, recommendations and audience carryover."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1948280/",
+        "https://newsletter.gamediscover.co/p/how-one-of-sokpops-almost-100-steam"
+      ],
+      "team": "Aran Koning with art by Lisa Mantel; part of the four-person Sokpop collective and its existing catalogue/subscriber model.",
+      "outcomeBand": "breakout"
+    },
+    {
+      "id": "dome-keeper",
+      "title": "Dome Keeper",
+      "appId": 1637320,
+      "headline": "Let one deadline connect gathering and defense",
+      "deck": "Mining farther from safety increases the reward and the risk of returning too late. That shared deadline connects two familiar activities, letting a viewer understand why a seemingly ordinary collection run becomes tense.",
+      "genre": "mining / management / defense",
+      "releaseStatus": "Released · 2022-09-27",
+      "releaseDate": "2022-09-27",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "howtomarketagame.com"
+      ],
+      "marketQuestion": "Let one deadline connect gathering and defense — what transfers to a small team?",
+      "playerPromise": "Mining farther from safety increases the reward and the risk of returning too late. That shared deadline connects two familiar activities, letting a viewer understand why a seemingly ordinary collection run becomes tense.",
+      "hook": "Build the decision that binds your systems before expanding either system. If resource collection and defense feel like unrelated minigames, more enemies or ore types will not repair their relationship.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "Mining farther from safety increases the reward and the risk of returning too late. That shared deadline connects two familiar activities, letting a viewer understand why a seemingly ordinary collection run becomes tense.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/1637320/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The case study places the public demo before a sequence of creator videos and rapid wishlist growth. Earlier jam reception had already encouraged the team to pursue the idea. Playable discovery arrived after months of limited visibility.",
+          "sourceUrls": [
+            "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "Raw Fury later supported promotion, including paid advertising. The article's demo date and million-dollar revenue window are internally inconsistent, so this card uses its clearly defined wishlist and playtime observations instead of revenue.",
+          "sourceUrls": [
+            "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Build the decision that binds your systems before expanding either system. If resource collection and defense feel like unrelated minigames, more enemies or ore types will not repair their relationship.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam wishlists before public demo",
+          "value": 1174,
+          "unit": "Steam wishlists before public demo",
+          "window": "2022-02; reported 2022-10-17",
+          "evidence": "Developer data in How To Market A Game",
+          "source": "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/",
+          "caveat": "Historical wishlist balance immediately before the demo, not launch wishlists or sales."
+        },
+        {
+          "label": "Median demo playtime",
+          "value": "1h 30m",
+          "unit": "Median demo playtime",
+          "window": "Soon after February 2022 demo; reported 2022-10-17",
+          "evidence": "Developer report in practitioner case study",
+          "source": "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/",
+          "caveat": "Historical demo engagement supplied in the case study; not paid-game retention."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2021-05-20",
+          "channel": "Documented product / campaign event",
+          "action": "Steam page went live under the earlier Dome Romantik identity.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2022-02-14/15",
+          "channel": "Documented product / campaign event",
+          "action": "Public demo appeared around Games of Germany; article differs by one day.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2022-09-27",
+          "channel": "Documented product / campaign event",
+          "action": "Full Steam release.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://store.steampowered.com/app/1637320/",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "mining, management, defense players",
+        "job": "Mining farther from safety increases the reward and the risk of returning too late. That shared deadline connects two familiar activities, letting a viewer understand why a seemingly ordinary collection run becomes tense.",
+        "trigger": "The case study places the public demo before a sequence of creator videos and rapid wishlist growth. Earlier jam reception had already encouraged the team to pursue the idea. Playable discovery arrived after months of limited visibility.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Storm Salvager: collect scrap beyond a lighthouse before three storms arrive. Days 1–4 create movement and hauling; 5–8 add one return deadline; 9–11 add two repairs; 12–14 test short runs and capture close decisions.",
+        "notProven": "Raw Fury later supported promotion, including paid advertising. The article's demo date and million-dollar revenue window are internally inconsistent, so this card uses its clearly defined wishlist and playtime observations instead of revenue.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1637320/",
+          "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/"
+        ]
+      },
+      "mechanism": {
+        "observed": "The case study places the public demo before a sequence of creator videos and rapid wishlist growth. Earlier jam reception had already encouraged the team to pursue the idea. Playable discovery arrived after months of limited visibility.",
+        "inference": "Build the decision that binds your systems before expanding either system. If resource collection and defense feel like unrelated minigames, more enemies or ore types will not repair their relationship.",
+        "confounds": "Raw Fury later supported promotion, including paid advertising. The article's demo date and million-dollar revenue window are internally inconsistent, so this card uses its clearly defined wishlist and playtime observations instead of revenue.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1637320/",
+          "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Build the decision that binds your systems before expanding either system. If resource collection and defense feel like unrelated minigames, more enemies or ore types will not repair their relationship.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Storm Salvager: collect scrap beyond a lighthouse before three storms arrive. Days 1–4 create movement and hauling; 5–8 add one return deadline; 9–11 add two repairs; 12–14 test short runs and capture close decisions.",
+        "technicalCut": "Procedural geology, destructible terrain, many weapons and an extensive upgrade tree are unnecessary for this test. Use one authored map, three resource deposits and a single defensive interaction.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Offer a safe short route and a richer distant route. Check whether newcomers notice the tradeoff, switch routes after a loss and can identify the moment they should have returned."
+      },
+      "risks": [
+        "Procedural geology, destructible terrain, many weapons and an extensive upgrade tree are unnecessary for this test. Use one authored map, three resource deposits and a single defensive interaction.",
+        "Raw Fury later supported promotion, including paid advertising. The article's demo date and million-dollar revenue window are internally inconsistent, so this card uses its clearly defined wishlist and playtime observations instead of revenue."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1637320/",
+        "https://howtomarketagame.com/2022/10/17/how-dome-keeper-achieved-a-million-dollar-launch/"
+      ],
+      "team": "Bippinbits: two full-time developers in the 2022 case study; Raw Fury supplied publishing and marketing support.",
+      "outcomeBand": "breakout"
+    },
+    {
+      "id": "prickle",
+      "title": "Prickle",
+      "appId": 2759760,
+      "headline": "A charming puzzle can delight a small audience",
+      "deck": "Hedgehogs stick together as a parent gathers the children, transforming collection into a spatial constraint. Cute presentation makes the situation approachable, while the growing shape creates a demanding planning puzzle.",
+      "genre": "puzzle / cozy",
+      "releaseStatus": "Released · 2024-11-22",
+      "releaseDate": "2024-11-22",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "sunbirdstudio.itch.io"
+      ],
+      "marketQuestion": "A charming puzzle can delight a small audience — what transfers to a small team?",
+      "playerPromise": "Hedgehogs stick together as a parent gathers the children, transforming collection into a spatial constraint. Cute presentation makes the situation approachable, while the growing shape creates a demanding planning puzzle.",
+      "hook": "Separate affection for characters from appetite for difficulty. Test with actual spatial-puzzle players and with viewers attracted by the cozy art; those groups may enjoy different versions of the same mechanic.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "Hedgehogs stick together as a parent gathers the children, transforming collection into a spatial constraint. Cute presentation makes the situation approachable, while the growing shape creates a demanding planning puzzle.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2759760/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The team reported its strongest wishlist flow around festivals and did not observe large spikes after streamer coverage. A well-received jam prototype preceded a much longer commercial production, including usability and accessibility work.",
+          "sourceUrls": [
+            "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The authors were pleased with approximately 500 early sales; calling the project a failure would overwrite their stated goals. Their belief that the audience is small is a useful hypothesis, not a census of puzzle demand.",
+          "sourceUrls": [
+            "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Separate affection for characters from appetite for difficulty. Test with actual spatial-puzzle players and with viewers attracted by the cozy art; those groups may enjoy different versions of the same mechanic.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam copies sold",
+          "value": "approximately 500",
+          "unit": "Steam copies sold",
+          "window": "2024-12-05 postmortem; approximately two weeks after launch",
+          "evidence": "Developer-reported",
+          "source": "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem",
+          "caveat": "Developer-reported early Steam sales, not current lifetime sales."
+        },
+        {
+          "label": "Prelaunch Steam wishlists",
+          "value": "approximately 2400",
+          "unit": "Prelaunch Steam wishlists",
+          "window": "2024-11-22",
+          "evidence": "Developer-reported",
+          "source": "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem",
+          "caveat": "Wishlist balance before release, not purchasers."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2023-09/10",
+          "channel": "Documented product / campaign event",
+          "action": "Ludum Dare 54 produced a twelve-level prototype; month range preserves the jam weekend.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-11-22",
+          "channel": "Documented product / campaign event",
+          "action": "Steam release after fourteen months of work.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-12-05",
+          "channel": "Documented product / campaign event",
+          "action": "Developer postmortem reported about 500 copies and 55 positive reviews.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "puzzle, cozy players",
+        "job": "Hedgehogs stick together as a parent gathers the children, transforming collection into a spatial constraint. Cute presentation makes the situation approachable, while the growing shape creates a demanding planning puzzle.",
+        "trigger": "The team reported its strongest wishlist flow around festivals and did not observe large spikes after streamer coverage. A well-received jam prototype preceded a much longer commercial production, including usability and accessibility work.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Parcel Train: attached delivery boxes must fit through changing doorways. Days 1–4 implement grid movement and undo; 5–8 author eight puzzles; 9–11 add two hint levels; 12–14 test difficulty and a concise store-style pitch.",
+        "notProven": "The authors were pleased with approximately 500 early sales; calling the project a failure would overwrite their stated goals. Their belief that the audience is small is a useful hypothesis, not a census of puzzle demand.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2759760/",
+          "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem"
+        ]
+      },
+      "mechanism": {
+        "observed": "The team reported its strongest wishlist flow around festivals and did not observe large spikes after streamer coverage. A well-received jam prototype preceded a much longer commercial production, including usability and accessibility work.",
+        "inference": "Separate affection for characters from appetite for difficulty. Test with actual spatial-puzzle players and with viewers attracted by the cozy art; those groups may enjoy different versions of the same mechanic.",
+        "confounds": "The authors were pleased with approximately 500 early sales; calling the project a failure would overwrite their stated goals. Their belief that the audience is small is a useful hypothesis, not a census of puzzle demand.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2759760/",
+          "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Separate affection for characters from appetite for difficulty. Test with actual spatial-puzzle players and with viewers attracted by the cozy art; those groups may enjoy different versions of the same mechanic.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Parcel Train: attached delivery boxes must fit through changing doorways. Days 1–4 implement grid movement and undo; 5–8 author eight puzzles; 9–11 add two hint levels; 12–14 test difficulty and a concise store-style pitch.",
+        "technicalCut": "A dozen jam levels do not imply that forty commercial levels take four times as long. Level sequencing, hints, undo correctness and clear teaching are substantial work.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Compare completion, hint use and voluntary continuation between puzzle enthusiasts and cozy-game players. Use the result to choose a precise audience promise before investing in more characters or languages."
+      },
+      "risks": [
+        "A dozen jam levels do not imply that forty commercial levels take four times as long. Level sequencing, hints, undo correctness and clear teaching are substantial work.",
+        "The authors were pleased with approximately 500 early sales; calling the project a failure would overwrite their stated goals. Their belief that the audience is small is a useful hypothesis, not a census of puzzle demand."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2759760/",
+        "https://sunbirdstudio.itch.io/prickle-jam/devlog/845342/steam-release-postmortem"
+      ],
+      "team": "Sunbird Studio: four developers, as stated in the original postmortem.",
+      "outcomeBand": "modest; developer pleased with initial result"
+    },
+    {
+      "id": "drop-it-block-paradise",
+      "title": "Drop It: Block Paradise!",
+      "appId": 2265520,
+      "headline": "A finished port still needs a new audience",
+      "deck": "Players manipulate a physical arrangement so a target reaches safety. Gravity supplies immediate visual consequences, but the commercial question remains whether the constraints feel distinctive enough to motivate purchase after the first amusing collapse.",
+      "genre": "physics / puzzle",
+      "releaseStatus": "Released · 2023-02-13",
+      "releaseDate": "2023-02-13",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "reddit.com"
+      ],
+      "marketQuestion": "A finished port still needs a new audience — what transfers to a small team?",
+      "playerPromise": "Players manipulate a physical arrangement so a target reaches safety. Gravity supplies immediate visual consequences, but the commercial question remains whether the constraints feel distinctive enough to motivate purchase after the first amusing collapse.",
+      "hook": "Validate the pitch for the destination platform even when the game already exists elsewhere. A port's technical completeness says little about whether a new audience recognizes the fantasy, difficulty and value.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "Players manipulate a physical arrangement so a target reaches safety. Gravity supplies immediate visual consequences, but the commercial question remains whether the constraints feel distinctive enough to motivate purchase after the first amusing collapse.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2265520/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The developer treated the Steam port like an already released product and reported little launch preparation. Later catalogue bundles and a delayed demo coincided with limited improvement; this was a small recovery, not a breakout.",
+          "sourceUrls": [
+            "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The postmortem documents 142 Steam units, but cannot show what a different launch would have sold. Its claim that other games rescued visibility is an informed personal attribution, not an experiment.",
+          "sourceUrls": [
+            "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Validate the pitch for the destination platform even when the game already exists elsewhere. A port's technical completeness says little about whether a new audience recognizes the fantasy, difficulty and value.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Lifetime Steam units",
+          "value": 142,
+          "unit": "Lifetime Steam units",
+          "window": "2024-04-02 developer postmortem",
+          "evidence": "Developer-reported",
+          "source": "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/",
+          "caveat": "Developer-reported cumulative Steam sales, about fourteen months after launch; separate Wii U sales excluded."
+        },
+        {
+          "label": "Steam wishlists at launch",
+          "value": 27,
+          "unit": "Steam wishlists at launch",
+          "window": "2023-02-13",
+          "evidence": "Developer-reported",
+          "source": "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/",
+          "caveat": "Historical prelaunch Steam wishlist balance."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2023-01",
+          "channel": "Documented product / campaign event",
+          "action": "Steam page made public approximately one month before release.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2023-02-13",
+          "channel": "Documented product / campaign event",
+          "action": "Steam port launched with 27 wishlists; developer reported 11 initial sales.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2023-08/09",
+          "channel": "Documented product / campaign event",
+          "action": "Another game enabled a catalogue bundle in August; a Drop It demo followed in mid-September.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "physics, puzzle players",
+        "job": "Players manipulate a physical arrangement so a target reaches safety. Gravity supplies immediate visual consequences, but the commercial question remains whether the constraints feel distinctive enough to motivate purchase after the first amusing collapse.",
+        "trigger": "The developer treated the Steam port like an already released product and reported little launch preparation. Later catalogue bundles and a delayed demo coincided with limited improvement; this was a small recovery, not a breakout.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Cargo Cradle: remove supports to settle fragile parcels onto a dock. Days 1–4 tune stable physics; 5–8 author six puzzles; 9–11 add instant reset and outcome feedback; 12–14 test one clear visual twist.",
+        "notProven": "The postmortem documents 142 Steam units, but cannot show what a different launch would have sold. Its claim that other games rescued visibility is an informed personal attribution, not an experiment.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2265520/",
+          "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/"
+        ]
+      },
+      "mechanism": {
+        "observed": "The developer treated the Steam port like an already released product and reported little launch preparation. Later catalogue bundles and a delayed demo coincided with limited improvement; this was a small recovery, not a breakout.",
+        "inference": "Validate the pitch for the destination platform even when the game already exists elsewhere. A port's technical completeness says little about whether a new audience recognizes the fantasy, difficulty and value.",
+        "confounds": "The postmortem documents 142 Steam units, but cannot show what a different launch would have sold. Its claim that other games rescued visibility is an informed personal attribution, not an experiment.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2265520/",
+          "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Validate the pitch for the destination platform even when the game already exists elsewhere. A port's technical completeness says little about whether a new audience recognizes the fantasy, difficulty and value.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Cargo Cradle: remove supports to settle fragile parcels onto a dock. Days 1–4 tune stable physics; 5–8 author six puzzles; 9–11 add instant reset and outcome feedback; 12–14 test one clear visual twist.",
+        "technicalCut": "An editor, online level sharing, versus play and hundreds of levels expand both interface and support obligations. None is required to discover whether six authored challenges hold attention.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Show the same gameplay with two truthful pitches: careful engineering and comic chain reactions. Observe which audience actually completes the slice and requests another level, rather than judging by clip views alone."
+      },
+      "risks": [
+        "An editor, online level sharing, versus play and hundreds of levels expand both interface and support obligations. None is required to discover whether six authored challenges hold attention.",
+        "The postmortem documents 142 Steam units, but cannot show what a different launch would have sold. Its claim that other games rescued visibility is an informed personal attribution, not an experiment."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2265520/",
+        "https://www.reddit.com/r/gamedev/comments/1bu7r3d/failed_puzzle_release_14_months_later_aka_no_idea/"
+      ],
+      "team": "ZeNfA Productions; developer describes doing programming and commissioning art/music.",
+      "outcomeBand": "weak commercial result at reported checkpoint"
+    },
+    {
+      "id": "beyond-your-fear",
+      "title": "Beyond your Fear",
+      "appId": 1913890,
+      "headline": "Atmosphere cannot substitute for a dependable playable experience",
+      "deck": "This psychological horror game combines investigation, riddles and consequential choices. The developer pursued realistic presentation and unsettling warm lighting. A clear atmosphere can attract curiosity, but players still need reliable actions and understandable objectives.",
+      "genre": "horror / puzzle",
+      "releaseStatus": "Released · 2023-05-12 · Steam records May 12; developer recalls May 13 in the postmortem, possibly timezone-related but unresolved.",
+      "releaseDate": "2023-05-12",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "reddit.com"
+      ],
+      "marketQuestion": "Atmosphere cannot substitute for a dependable playable experience — what transfers to a small team?",
+      "playerPromise": "This psychological horror game combines investigation, riddles and consequential choices. The developer pursued realistic presentation and unsettling warm lighting. A clear atmosphere can attract curiosity, but players still need reliable actions and understandable objectives.",
+      "hook": "Before planning multiple endings, make one short route dependable and test it with unfamiliar players. Watch whether uncertainty belongs to the fiction or comes from unclear controls, objectives and broken interactions.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "This psychological horror game combines investigation, riddles and consequential choices. The developer pursued realistic presentation and unsettling warm lighting. A clear atmosphere can attract curiosity, but players still need reliable actions and understandable objectives.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/1913890/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The postmortem describes minimal marketing and insufficient testing, alongside repeated delays. In a comment, the developer reports roughly 650–700 wishlists before launch. The account supplies no documented creator campaign that explains the sales.",
+          "sourceUrls": [
+            "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The first-week figures are retrospective self-report. Twenty-one returned units are a warning signal, but the source does not establish individual refund reasons. It would be unjustified to attribute all returns to technical problems.",
+          "sourceUrls": [
+            "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Before planning multiple endings, make one short route dependable and test it with unfamiliar players. Watch whether uncertainty belongs to the fiction or comes from unclear controls, objectives and broken interactions.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "First-week Steam copies sold",
+          "value": 100,
+          "unit": "First-week Steam copies sold",
+          "window": "First week after May 2023 launch; reported 2024-05-16",
+          "evidence": "Developer-reported in postmortem comment",
+          "source": "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/",
+          "caveat": "Developer's retrospective comment reports 100 purchases and 21 returned units. No net-sales subtraction or revenue extrapolation is supplied here."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2022-10",
+          "channel": "Documented product / campaign event",
+          "action": "Developer resumed production with story-driven puzzle horror and three endings planned.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2023-05-12",
+          "channel": "Documented product / campaign event",
+          "action": "Steam-recorded release after multiple delays; developer remembers the following day.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://store.steampowered.com/app/1913890/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-05-16",
+          "channel": "Documented product / campaign event",
+          "action": "Postmortem described a performance patch released the preceding day and reported early sales.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "horror, puzzle players",
+        "job": "This psychological horror game combines investigation, riddles and consequential choices. The developer pursued realistic presentation and unsettling warm lighting. A clear atmosphere can attract curiosity, but players still need reliable actions and understandable objectives.",
+        "trigger": "The postmortem describes minimal marketing and insufficient testing, alongside repeated delays. In a comment, the developer reports roughly 650–700 wishlists before launch. The account supplies no documented creator campaign that explains the sales.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Last Inspection: one apartment, three suspicious objects and one final judgment. Days 1–4 establish interactions; 5–8 script a ten-minute route; 9–11 tune sound and lighting; 12–14 test on modest hardware with five fresh players.",
+        "notProven": "The first-week figures are retrospective self-report. Twenty-one returned units are a warning signal, but the source does not establish individual refund reasons. It would be unjustified to attribute all returns to technical problems.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1913890/",
+          "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/"
+        ]
+      },
+      "mechanism": {
+        "observed": "The postmortem describes minimal marketing and insufficient testing, alongside repeated delays. In a comment, the developer reports roughly 650–700 wishlists before launch. The account supplies no documented creator campaign that explains the sales.",
+        "inference": "Before planning multiple endings, make one short route dependable and test it with unfamiliar players. Watch whether uncertainty belongs to the fiction or comes from unclear controls, objectives and broken interactions.",
+        "confounds": "The first-week figures are retrospective self-report. Twenty-one returned units are a warning signal, but the source does not establish individual refund reasons. It would be unjustified to attribute all returns to technical problems.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1913890/",
+          "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Before planning multiple endings, make one short route dependable and test it with unfamiliar players. Watch whether uncertainty belongs to the fiction or comes from unclear controls, objectives and broken interactions.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Last Inspection: one apartment, three suspicious objects and one final judgment. Days 1–4 establish interactions; 5–8 script a ten-minute route; 9–11 tune sound and lighting; 12–14 test on modest hardware with five fresh players.",
+        "technicalCut": "Photoreal assets, branching narrative and systemic consequences produce different workloads. Bound the experiment to one ending and one reversible environmental change; avoid rebuilding working systems late.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Run the slice without developer explanation. Record objective confusion, broken interactions, completion and voluntary interest in another case. Fix repeated usability failures before interpreting stronger lighting or more scares as a solution."
+      },
+      "risks": [
+        "Photoreal assets, branching narrative and systemic consequences produce different workloads. Bound the experiment to one ending and one reversible environmental change; avoid rebuilding working systems late.",
+        "The first-week figures are retrospective self-report. Twenty-one returned units are a warning signal, but the source does not establish individual refund reasons. It would be unjustified to attribute all returns to technical problems."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1913890/",
+        "https://www.reddit.com/r/gamedev/comments/1ctbdq8/beyond_your_fear_postmortem/"
+      ],
+      "team": "Vladyslav Fedorenko; developer-authored account under FerdinalEntert.",
+      "outcomeBand": "weak commercial result at reported checkpoint"
+    },
+    {
+      "id": "the-ouroboros-king",
+      "title": "The Ouroboros King",
+      "appId": 2096510,
+      "headline": "Find the audience for the new decision, not only the familiar rules",
+      "deck": "Chess provides recognizable movement and threat rules, while roguelike rewards change the army between encounters. The product promise is therefore partly tactical literacy and partly discovering a build that behaves differently from ordinary chess.",
+      "genre": "tactics / roguelike / chess",
+      "releaseStatus": "Released · 2023-02-27",
+      "releaseDate": "2023-02-27",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "oriolcosp.com"
+      ],
+      "marketQuestion": "Find the audience for the new decision, not only the familiar rules — what transfers to a small team?",
+      "playerPromise": "Chess provides recognizable movement and threat rules, while roguelike rewards change the army between encounters. The product promise is therefore partly tactical literacy and partly discovering a build that behaves differently from ordinary chess.",
+      "hook": "Market the new decision to players who enjoy making it. Borrowed rules reduce explanation, but the audience may come from the progression structure rather than the source game's established community.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "Chess provides recognizable movement and threat rules, while roguelike rewards change the army between encounters. The product promise is therefore partly tactical literacy and partly discovering a build that behaves differently from ordinary chess.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2096510/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "Cosp reported that roguelike-oriented creators covered the game while most chess streamers ignored outreach. Next Fest followed growing interest. The useful observation is audience overlap: familiarity with chess did not guarantee enthusiasm for this hybrid.",
+          "sourceUrls": [
+            "https://oriolcosp.com/the-ouroboros-king-development-post-mortem/",
+            "https://oriolcosp.com/the-ouroboros-king-1-year-post-mortem/"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The first-year report separates Steam units from mobile installs and purchases. Its assessments of post-launch content and localization are personal estimates, with overlapping events. These figures should not become a universal conversion or profitability model.",
+          "sourceUrls": [
+            "https://oriolcosp.com/the-ouroboros-king-development-post-mortem/",
+            "https://oriolcosp.com/the-ouroboros-king-1-year-post-mortem/"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Market the new decision to players who enjoy making it. Borrowed rules reduce explanation, but the audience may come from the progression structure rather than the source game's established community.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam copies sold in first year",
+          "value": 17630,
+          "unit": "Steam copies sold in first year",
+          "window": "2024-02-27 anniversary; report published 2024-03-29",
+          "evidence": "Developer-reported",
+          "source": "https://oriolcosp.com/the-ouroboros-king-1-year-post-mortem/",
+          "caveat": "Developer-reported Steam units; mobile installs, mobile purchases and console results are separate."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2022-06",
+          "channel": "Documented product / campaign event",
+          "action": "First public playable version appeared on itch.io.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://oriolcosp.com/the-ouroboros-king-development-post-mortem/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2023-01/02",
+          "channel": "Documented product / campaign event",
+          "action": "Streamer outreach, one chess-community post and Next Fest preceded launch with about 20,000 wishlists.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://oriolcosp.com/the-ouroboros-king-development-post-mortem/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-03-29",
+          "channel": "Documented product / campaign event",
+          "action": "First-year postmortem published, separating Steam and mobile results.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://oriolcosp.com/the-ouroboros-king-1-year-post-mortem/",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "tactics, roguelike, chess players",
+        "job": "Chess provides recognizable movement and threat rules, while roguelike rewards change the army between encounters. The product promise is therefore partly tactical literacy and partly discovering a build that behaves differently from ordinary chess.",
+        "trigger": "Cosp reported that roguelike-oriented creators covered the game while most chess streamers ignored outreach. Next Fest followed growing interest. The useful observation is audience overlap: familiarity with chess did not guarantee enthusiasm for this hybrid.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Siege Tokens: three distinct movement pieces defend a small board through five encounters. Days 1–4 implement deterministic turns; 5–8 add three upgrade choices; 9–11 add threat previews; 12–14 test a fifteen-minute run.",
+        "notProven": "The first-year report separates Steam units from mobile installs and purchases. Its assessments of post-launch content and localization are personal estimates, with overlapping events. These figures should not become a universal conversion or profitability model.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2096510/",
+          "https://oriolcosp.com/the-ouroboros-king-development-post-mortem/",
+          "https://oriolcosp.com/the-ouroboros-king-1-year-post-mortem/"
+        ]
+      },
+      "mechanism": {
+        "observed": "Cosp reported that roguelike-oriented creators covered the game while most chess streamers ignored outreach. Next Fest followed growing interest. The useful observation is audience overlap: familiarity with chess did not guarantee enthusiasm for this hybrid.",
+        "inference": "Market the new decision to players who enjoy making it. Borrowed rules reduce explanation, but the audience may come from the progression structure rather than the source game's established community.",
+        "confounds": "The first-year report separates Steam units from mobile installs and purchases. Its assessments of post-launch content and localization are personal estimates, with overlapping events. These figures should not become a universal conversion or profitability model.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2096510/",
+          "https://oriolcosp.com/the-ouroboros-king-development-post-mortem/",
+          "https://oriolcosp.com/the-ouroboros-king-1-year-post-mortem/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Market the new decision to players who enjoy making it. Borrowed rules reduce explanation, but the audience may come from the progression structure rather than the source game's established community.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Siege Tokens: three distinct movement pieces defend a small board through five encounters. Days 1–4 implement deterministic turns; 5–8 add three upgrade choices; 9–11 add threat previews; 12–14 test a fifteen-minute run.",
+        "technicalCut": "Strong AI, rewind, numerous relic interactions and procedural campaigns complicate correctness quickly. Use a tiny enemy rule set and authored encounters; make threat visibility reliable before adding content.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Give the same build to chess hobbyists and tactical-roguelike players. Compare rule comprehension, upgrade interest and repeat runs. Recruit future testers from the group whose behavior supports the intended experience."
+      },
+      "risks": [
+        "Strong AI, rewind, numerous relic interactions and procedural campaigns complicate correctness quickly. Use a tiny enemy rule set and authored encounters; make threat visibility reliable before adding content.",
+        "The first-year report separates Steam units from mobile installs and purchases. Its assessments of post-launch content and localization are personal estimates, with overlapping events. These figures should not become a universal conversion or profitability model."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2096510/",
+        "https://oriolcosp.com/the-ouroboros-king-development-post-mortem/",
+        "https://oriolcosp.com/the-ouroboros-king-1-year-post-mortem/"
+      ],
+      "team": "Oriol Cosp; twelve months of part-time development, with outside illustration and music contributions.",
+      "outcomeBand": "moderate commercial success"
+    },
+    {
+      "id": "tiny-glade",
+      "title": "Tiny Glade",
+      "appId": 2198150,
+      "headline": "Let a small gesture produce a beautiful, personal result",
+      "deck": "Dragging a wall or roof produces detailed architecture without requiring architectural expertise. The appeal is personal authorship with forgiving tools. This supports a creative toy whose reward is the evolving scene rather than victory.",
+      "genre": "cozy / building / creative toy",
+      "releaseStatus": "Released · 2024-09-23",
+      "releaseDate": "2024-09-23",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "newsletter.gamediscover.co",
+        "steamcommunity.com"
+      ],
+      "marketQuestion": "Let a small gesture produce a beautiful, personal result — what transfers to a small team?",
+      "playerPromise": "Dragging a wall or roof produces detailed architecture without requiring architectural expertise. The appeal is personal authorship with forgiving tools. This supports a creative toy whose reward is the evolving scene rather than victory.",
+      "hook": "Make a small action produce an immediately pleasing response, then test whether people keep adjusting it. Ease of expression can be a complete promise when the tool has enough satisfying variation.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "Dragging a wall or roof produces detailed architecture without requiring architectural expertise. The appeal is personal authorship with forgiving tools. This supports a creative toy whose reward is the evolving scene rather than victory.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2198150/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "The case study documents repeated public work, a strong demo, creator coverage and a Steam feature. The developers supplied sales data and described multiple tool prototypes and external playtests before the final interactions settled.",
+          "sourceUrls": [
+            "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+            "https://steamcommunity.com/app/2198150/discussions/0/4844274022647241858/"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The reported snapshot date is approximate. Visibility channels overlapped, and no source isolates a zero-spend pathway. A two-person credit also hides substantial specialized rendering and procedural-generation expertise accumulated before this release.",
+          "sourceUrls": [
+            "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+            "https://steamcommunity.com/app/2198150/discussions/0/4844274022647241858/"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Make a small action produce an immediately pleasing response, then test whether people keep adjusting it. Ease of expression can be a complete promise when the tool has enough satisfying variation.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam copies sold",
+          "value": 616000,
+          "unit": "Steam copies sold",
+          "window": "October 2024 snapshot, published 2024-10-29; exact capture date unspecified",
+          "evidence": "Developer data supplied to GameDiscoverCo",
+          "source": "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+          "caveat": "Developer-supplied cumulative Steam sales snapshot described as less than a month after launch; not a current total."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2024-06",
+          "channel": "Documented product / campaign event",
+          "action": "Demo appeared in Steam Next Fest's top ten, according to the case study.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-09-23",
+          "channel": "Documented product / campaign event",
+          "action": "Steam launch; developer publicly explained the fixed build-area performance tradeoff.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://steamcommunity.com/app/2198150/discussions/0/4844274022647241858/",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-10-29",
+          "channel": "Documented product / campaign event",
+          "action": "Interview published with 616,000 copies and an extensive iteration account.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "cozy, building, creative toy players",
+        "job": "Dragging a wall or roof produces detailed architecture without requiring architectural expertise. The appeal is personal authorship with forgiving tools. This supports a creative toy whose reward is the evolving scene rather than victory.",
+        "trigger": "The case study documents repeated public work, a strong demo, creator coverage and a Steam feature. The developers supplied sales data and described multiple tool prototypes and external playtests before the final interactions settled.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Courtyard Sketch: arrange three modular walls, one arch and climbing plants in a fixed diorama. Days 1–4 establish snapping; 5–8 add automatic decoration; 9–11 tune sound and camera; 12–14 test ten-minute free creation.",
+        "notProven": "The reported snapshot date is approximate. Visibility channels overlapped, and no source isolates a zero-spend pathway. A two-person credit also hides substantial specialized rendering and procedural-generation expertise accumulated before this release.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2198150/",
+          "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+          "https://steamcommunity.com/app/2198150/discussions/0/4844274022647241858/"
+        ]
+      },
+      "mechanism": {
+        "observed": "The case study documents repeated public work, a strong demo, creator coverage and a Steam feature. The developers supplied sales data and described multiple tool prototypes and external playtests before the final interactions settled.",
+        "inference": "Make a small action produce an immediately pleasing response, then test whether people keep adjusting it. Ease of expression can be a complete promise when the tool has enough satisfying variation.",
+        "confounds": "The reported snapshot date is approximate. Visibility channels overlapped, and no source isolates a zero-spend pathway. A two-person credit also hides substantial specialized rendering and procedural-generation expertise accumulated before this release.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2198150/",
+          "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+          "https://steamcommunity.com/app/2198150/discussions/0/4844274022647241858/"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Make a small action produce an immediately pleasing response, then test whether people keep adjusting it. Ease of expression can be a complete promise when the tool has enough satisfying variation.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Courtyard Sketch: arrange three modular walls, one arch and climbing plants in a fixed diorama. Days 1–4 establish snapping; 5–8 add automatic decoration; 9–11 tune sound and camera; 12–14 test ten-minute free creation.",
+        "technicalCut": "Seamless arbitrary geometry and unlimited construction are engineering projects. The original developer explicitly connected area limits to performance and team capacity. Use authored modules and a hard object cap.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Ask five testers to make a courtyard without reference art. Track unprompted revisions and whether they want a screenshot afterward. If every result looks identical, improve expressive choices before expanding the map."
+      },
+      "risks": [
+        "Seamless arbitrary geometry and unlimited construction are engineering projects. The original developer explicitly connected area limits to performance and team capacity. Use authored modules and a hard object cap.",
+        "The reported snapshot date is approximate. Visibility channels overlapped, and no source isolates a zero-spend pathway. A two-person credit also hides substantial specialized rendering and procedural-generation expertise accumulated before this release."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2198150/",
+        "https://newsletter.gamediscover.co/p/how-tiny-glade-built-its-way-to-600k",
+        "https://steamcommunity.com/app/2198150/discussions/0/4844274022647241858/"
+      ],
+      "team": "Pounce Light: Ana Opara and Tomasz Stachowiak; two-year development period reported in developer interview.",
+      "outcomeBand": "breakout"
+    },
+    {
+      "id": "buckshot-roulette",
+      "title": "Buckshot Roulette",
+      "appId": 2835570,
+      "headline": "Make a tense choice readable to the spectator",
+      "deck": "A familiar dangerous game becomes a sequence of visible probability decisions at a grimy table. Limited information and usable items give viewers reasons to anticipate a choice and argue about its consequences.",
+      "genre": "horror / tactics / tabletop",
+      "releaseStatus": "Released on Steam · 2024-04-04 · An earlier itch.io edition exists; Steam and itch.io features differ.",
+      "releaseDate": "2024-04-04",
+      "readingMinutes": 3,
+      "checkedAt": "2026-09-08",
+      "sourcePublications": [
+        "store.steampowered.com",
+        "mikeklubnika.itch.io",
+        "steamcommunity.com"
+      ],
+      "marketQuestion": "Make a tense choice readable to the spectator — what transfers to a small team?",
+      "playerPromise": "A familiar dangerous game becomes a sequence of visible probability decisions at a grimy table. Limited information and usable items give viewers reasons to anticipate a choice and argue about its consequences.",
+      "hook": "Build tension from information the audience can understand. A compact horror game benefits when observers can predict the stakes while the player still has a meaningful reason to choose differently.",
+      "story": [
+        {
+          "heading": "The product and the audience",
+          "body": "A familiar dangerous game becomes a sequence of visible probability decisions at a grimy table. Limited information and usable items give viewers reasons to anticipate a choice and argue about its consequences.",
+          "sourceUrls": [
+            "https://store.steampowered.com/app/2835570/"
+          ]
+        },
+        {
+          "heading": "Where the attention came from",
+          "body": "An itch.io edition and updates preceded the Steam release, so the million-copy checkpoint followed an existing public product. The publisher's announcement celebrates sales and further development; it does not supply a measured creator-acquisition breakdown.",
+          "sourceUrls": [
+            "https://mikeklubnika.itch.io/buckshot-roulette",
+            "https://steamcommunity.com/games/2835570/announcements/detail/4208126261051076400"
+          ]
+        },
+        {
+          "heading": "What the story cannot establish",
+          "body": "The Steam launch had CRITICAL REFLEX support. Neither development credits nor a short playthrough establish total production cost. Later announcements describing millions of players should not automatically replace this explicitly defined Steam-sales milestone.",
+          "sourceUrls": [
+            "https://mikeklubnika.itch.io/buckshot-roulette",
+            "https://steamcommunity.com/games/2835570/announcements/detail/4208126261051076400"
+          ]
+        },
+        {
+          "heading": "What to borrow",
+          "body": "Build tension from information the audience can understand. A compact horror game benefits when observers can predict the stakes while the player still has a meaningful reason to choose differently.",
+          "sourceUrls": []
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Steam copies sold",
+          "value": 1000000,
+          "unit": "Steam copies sold",
+          "window": "2024-04-17",
+          "evidence": "Developer/publisher-reported",
+          "source": "https://steamcommunity.com/games/2835570/announcements/detail/4208126261051076400",
+          "caveat": "Official announcement explicitly states one million copies sold on Steam; excludes an inferred addition of itch.io copies."
+        }
+      ],
+      "timeline": [
+        {
+          "when": "2024-01-12",
+          "channel": "Documented product / campaign event",
+          "action": "Developer's itch.io page records the v1.1 update before Steam launch.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://mikeklubnika.itch.io/buckshot-roulette",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-04-04",
+          "channel": "Documented product / campaign event",
+          "action": "v1.2 arrived on Steam; developer announced the separate itch.io update schedule.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://mikeklubnika.itch.io/buckshot-roulette",
+          "caveat": "Chronology is not causal attribution."
+        },
+        {
+          "when": "2024-04-17",
+          "channel": "Documented product / campaign event",
+          "action": "Official announcement reported one million Steam copies and multiplayer work in progress.",
+          "outcome": null,
+          "spend": "Not comprehensively disclosed; not assumed zero",
+          "source": "https://steamcommunity.com/games/2835570/announcements/detail/4208126261051076400",
+          "caveat": "Chronology is not causal attribution."
+        }
+      ],
+      "demand": {
+        "audience": "horror, tactics, tabletop players",
+        "job": "A familiar dangerous game becomes a sequence of visible probability decisions at a grimy table. Limited information and usable items give viewers reasons to anticipate a choice and argue about its consequences.",
+        "trigger": "An itch.io edition and updates preceded the Steam release, so the million-copy checkpoint followed an existing public product. The publisher's announcement celebrates sales and further development; it does not supply a measured creator-acquisition breakdown.",
+        "supply": "Selected comparator only. No supply denominator or unfilled-market claim is established by this story.",
+        "opening": "Build Midnight Customs: inspect five sealed parcels using two limited tools, then accept or reject each delivery. Days 1–4 establish decisions; 5–8 add interpretable clues; 9–11 tune one unsettling reaction; 12–14 test a twelve-minute sequence.",
+        "notProven": "The Steam launch had CRITICAL REFLEX support. Neither development credits nor a short playthrough establish total production cost. Later announcements describing millions of players should not automatically replace this explicitly defined Steam-sales milestone.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2835570/",
+          "https://mikeklubnika.itch.io/buckshot-roulette",
+          "https://steamcommunity.com/games/2835570/announcements/detail/4208126261051076400"
+        ]
+      },
+      "mechanism": {
+        "observed": "An itch.io edition and updates preceded the Steam release, so the million-copy checkpoint followed an existing public product. The publisher's announcement celebrates sales and further development; it does not supply a measured creator-acquisition breakdown.",
+        "inference": "Build tension from information the audience can understand. A compact horror game benefits when observers can predict the stakes while the player still has a meaningful reason to choose differently.",
+        "confounds": "The Steam launch had CRITICAL REFLEX support. Neither development credits nor a short playthrough establish total production cost. Later announcements describing millions of players should not automatically replace this explicitly defined Steam-sales milestone.",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2835570/",
+          "https://mikeklubnika.itch.io/buckshot-roulette",
+          "https://steamcommunity.com/games/2835570/announcements/detail/4208126261051076400"
+        ]
+      },
+      "buildTransfer": {
+        "borrow": "Build tension from information the audience can understand. A compact horror game benefits when observers can predict the stakes while the player still has a meaningful reason to choose differently.",
+        "change": "Use a new setting and decision structure, as proposed in the slice below.",
+        "miniDemo": "Build Midnight Customs: inspect five sealed parcels using two limited tools, then accept or reject each delivery. Days 1–4 establish decisions; 5–8 add interpretable clues; 9–11 tune one unsettling reaction; 12–14 test a twelve-minute sequence.",
+        "technicalCut": "Online multiplayer, bespoke cinematics and a large item set add substantial systems and content work. Keep one human player, one deterministic inspector response and five authored parcels for the slice.",
+        "doNotCopy": "Do not copy assets, identity or the complete feature list. The original team and development time are not a two-week benchmark.",
+        "successTest": "Record three tests with the player's reasoning spoken aloud. Check whether viewers can explain the stakes before the reveal and whether a second playthrough produces a different defensible decision, not merely a memorized answer."
+      },
+      "risks": [
+        "Online multiplayer, bespoke cinematics and a large item set add substantial systems and content work. Keep one human player, one deterministic inspector response and five authored parcels for the slice.",
+        "The Steam launch had CRITICAL REFLEX support. Neither development credits nor a short playthrough establish total production cost. Later announcements describing millions of players should not automatically replace this explicitly defined Steam-sales milestone."
+      ],
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2835570/",
+        "https://mikeklubnika.itch.io/buckshot-roulette",
+        "https://steamcommunity.com/games/2835570/announcements/detail/4208126261051076400"
+      ],
+      "team": "Mike Klubnika; Steam published by CRITICAL REFLEX, with credited external key art and other support.",
+      "outcomeBand": "breakout"
+    }
+  ]
+}

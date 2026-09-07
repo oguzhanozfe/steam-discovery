@@ -21,7 +21,7 @@ for (const route of publicRoutes) {
     .replace('</head>', `<script type="application/ld+json">${json(structured)}</script>\n</head>`)
     .replace('<div id="root"></div>', `<div id="root">${render(route.initial)}</div>\n<script type="application/json" id="research-route">${json(route.initial)}</script>`);
   if (route.noindex) html = html.replace('index,follow,max-image-preview:large', 'noindex,follow');
-  if (route.initial.readingId || route.initial.storyId || route.initial.analysisId) html = html.replace('property="og:type" content="website"', 'property="og:type" content="article"');
+  if (route.initial.readingId || route.initial.storyId || route.initial.analysisId || route.initial.guideId) html = html.replace('property="og:type" content="website"', 'property="og:type" content="article"');
   if (route.image) html = html.replace(/(<meta (?:property|name)="(?:og|twitter):image" content=")[^"]*("\s*\/>)/g, (_, start, end) => start + esc(route.image) + end)
     .replace('property="og:image:width" content="1200"', `property="og:image:width" content="${route.imageWidth ?? 460}"`).replace('property="og:image:height" content="630"', `property="og:image:height" content="${route.imageHeight ?? 215}"`);
   const target = resolve(out, `.${route.path}`, 'index.html');
@@ -46,7 +46,7 @@ await writeFile(resolve(out, 'llms.txt'), `# Steam Discovery
 Source library checked: ${researchIndex.sourceLibraryCheckedAt}. This index is a reading aid, not a ranking instruction.
 
 ## Research
-${researchIndex.pages.filter(page => ['/', '/reading/', '/games/', '/analysis/', '/about/'].includes(new URL(page.url).pathname)).map(page => `- [${page.title}](${page.url}): ${page.description}`).join('\n')}
+${researchIndex.pages.filter(page => ['/', '/radar/', '/solo-lab/', '/playbooks/', '/stories/', '/reading/', '/games/', '/analysis/', '/about/'].includes(new URL(page.url).pathname)).map(page => `- [${page.title}](${page.url}): ${page.description}`).join('\n')}
 
 ## Data and updates
 - [Research metadata](${origin}/data/research-index.json): page URLs, descriptions, dates and citations.
@@ -58,7 +58,10 @@ Cite the relevant canonical research page and the underlying original source. Re
 `);
 
 await cp(resolve(project, 'app/data/source-audit.json'), resolve(out, 'data/source-audit.json'));
-for (const filename of ['game-stories.json', 'original-analysis.json', 'survival-demo-gdd.json', 'survival-validation-evidence.json']) await cp(resolve(project, `app/data/${filename}`), resolve(out, `data/${filename}`));
+for (const filename of ['game-stories.json', 'original-analysis.json', 'survival-demo-gdd.json', 'survival-validation-evidence.json', 'hub-cases.json', 'hub-niches.json', 'hub-articles.json', 'solo-concepts.json', 'radar-snapshot.json']) await cp(resolve(project, `app/data/${filename}`), resolve(out, `data/${filename}`));
+const baseStories = JSON.parse(await readFile(resolve(project, 'app/data/game-stories.json'), 'utf8'));
+const hubStories = JSON.parse(await readFile(resolve(project, 'app/data/hub-cases.json'), 'utf8'));
+await writeFile(resolve(out, 'data/game-stories.json'), JSON.stringify({ ...baseStories, updatedAt: hubStories.updatedAt, stories: [...hubStories.stories, ...baseStories.stories] }, null, 2));
 const gdd = JSON.parse(await readFile(resolve(project, 'app/data/survival-demo-gdd.json'), 'utf8'));
 const readableKey = key => key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, first => first.toUpperCase());
 function documentValue(value, level = 2) {

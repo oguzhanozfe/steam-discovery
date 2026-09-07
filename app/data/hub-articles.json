@@ -1,0 +1,419 @@
+{
+  "checkedAt": "2026-09-08",
+  "methodology": "Ten sources read directly on 2026-09-08. Four articles were published in August 2026; older case studies and undated official documentation retain their actual dates. Summaries are original; action checklists are editorial applications, not tested prescriptions. Existing matching URLs identify enrichment candidates. No subscriber-only material was accessed. Related game IDs were verified through Steam store pages.",
+  "articles": [
+    {
+      "id": "steam-onboarding-release-clock",
+      "title": "Onboarding",
+      "publisher": "Valve Steamworks",
+      "author": "Valve",
+      "url": "https://partner.steamgames.com/doc/gettingstarted/onboarding",
+      "publishDate": null,
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Official platform requirements",
+      "access": "Public full documentation",
+      "topics": [
+        "Release planning",
+        "Solo development",
+        "Production scope"
+      ],
+      "synopsis": "Valve’s onboarding documentation makes the release calendar a production dependency. Developers must complete identity, banking and tax information, pay the per-product fee, prepare a store page and submit the game for review. For the first few titles, release requires at least 30 days after the app fee and a public Coming Soon page for at least two weeks. Tax verification can add waiting time. The separate review guide gives the more useful scheduling detail: store and build reviews typically take three to five business days, with at least seven business days recommended for each submission.",
+      "takeaways": [
+        "Paying the fee starts one release clock.",
+        "The public page starts another.",
+        "Review approval needs scheduling allowance."
+      ],
+      "soloChecklist": [
+        "Record fee date and earliest eligible release.",
+        "Prepare the store page before announcing a fixed launch."
+      ],
+      "smallTeamChecklist": [
+        "Assign one owner to onboarding and reviewer feedback.",
+        "Reserve revision time before public deadlines."
+      ],
+      "cannotProve": "Minimum eligibility does not guarantee timely approval, audience growth or commercial readiness.",
+      "relatedGames": [],
+      "supportingSources": [
+        {
+          "url": "https://partner.steamgames.com/doc/store/review_process",
+          "checkedAt": "2026-09-08"
+        }
+      ],
+      "existingMatch": "Already cited in original-analysis and survival evidence; add a dedicated reading digest."
+    },
+    {
+      "id": "steam-visibility-mechanisms",
+      "title": "Visibility on Steam",
+      "publisher": "Valve Steamworks",
+      "author": "Valve",
+      "url": "https://partner.steamgames.com/doc/marketing/visibility",
+      "publishDate": null,
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Official platform explanation",
+      "access": "Public full documentation",
+      "topics": [
+        "Discovery",
+        "Measurement integrity",
+        "Launch"
+      ],
+      "synopsis": "Valve describes visibility as a response to player interest, especially purchasing and playing, with tags and supported languages helping match games to people. Full releases receive baseline exposure through the New Releases queue, while prominent placements depend on response and individual preferences. The documentation separates useful business metrics from ranking inputs: page traffic and store conversion rate are not direct visibility factors, and wishlists mostly are not either, apart from exceptions such as Popular Upcoming. Wishlists still matter for notifications. This distinction helps small teams diagnose weak demand without inventing an algorithmic reward for every marketing metric.",
+      "takeaways": [
+        "Purchases and play indicate customer interest.",
+        "Tags and languages affect matching.",
+        "Traffic alone is not a ranking input."
+      ],
+      "soloChecklist": [
+        "Audit tags against actual player activities.",
+        "Compare traffic sources with purchases and play."
+      ],
+      "smallTeamChecklist": [
+        "Separate campaign metrics from platform ranking claims.",
+        "Review store traffic breakdown after each release beat."
+      ],
+      "cannotProve": "Valve does not disclose exact ranking weights or guarantee placement for a numerical target.",
+      "relatedGames": [],
+      "supportingSources": [],
+      "existingMatch": "No dedicated reading article found in the searched data."
+    },
+    {
+      "id": "steam-ai-content-survey",
+      "title": "Content Survey",
+      "publisher": "Valve Steamworks",
+      "author": "Valve",
+      "url": "https://partner.steamgames.com/doc/gettingstarted/contentsurvey",
+      "publishDate": null,
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Official platform policy",
+      "access": "Public full documentation",
+      "topics": [
+        "AI disclosure",
+        "Store readiness",
+        "Release planning"
+      ],
+      "synopsis": "The Steam Content Survey must be completed before review and covers general, mature and generative AI content. Its current AI wording focuses on content shipped to and consumed by players, including artwork, audio, narrative and localization. General efficiency gains from development tools are not the stated focus. Developers must describe relevant pre-generated content; live generation additionally requires an explanation of safeguards against illegal outputs. Valve compares survey answers with the build and store page. Disclosure is therefore an ongoing content inventory task for a small studio, and completing the form does not override Steam’s other content rules.",
+      "takeaways": [
+        "Inventory player-facing generated content.",
+        "Distinguish pre-generated from live-generated output.",
+        "Keep survey, build and marketing consistent."
+      ],
+      "soloChecklist": [
+        "List AI-assisted assets and localization before submission.",
+        "Describe live-generation safeguards if applicable."
+      ],
+      "smallTeamChecklist": [
+        "Ask every contributor to identify relevant shipped content.",
+        "Assign ownership for disclosure changes after approval."
+      ],
+      "cannotProve": "Disclosure does not establish asset rights, player acceptance, or guaranteed review approval.",
+      "relatedGames": [],
+      "supportingSources": [],
+      "existingMatch": "No dedicated reading article found in the searched data."
+    },
+    {
+      "id": "htmag-festivals-2026-channel-fit",
+      "title": "The state of virtual 3rd-party festivals 2026",
+      "publisher": "How To Market A Game",
+      "author": "Chris Zukowski",
+      "url": "https://howtomarketagame.com/2026/08/11/the-state-of-virtual-3rd-party-festivals-2026/",
+      "publishDate": "2026-08-11",
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Practitioner dataset and interpretation",
+      "access": "Public full article",
+      "topics": [
+        "Festivals",
+        "Channel selection",
+        "Counter-cases"
+      ],
+      "synopsis": "Zukowski reconstructs a history of third-party Steam festivals and finds highly uneven participation: some games repeatedly appear while many receive only a handful of placements. Cozy, narrative and building games are prominent among frequently featured titles. The article also presents a useful counterexample: Lost Twins 2 appeared in many festivals yet had comparatively few reviews when the author checked. This makes event access and commercial demand separate research questions. For a small team, the operational lesson is to maintain an application calendar and assess audience fit while measuring whether exposure leads to meaningful interest.",
+      "takeaways": [
+        "Festival selection has its own genre preferences.",
+        "Repeated inclusion does not establish strong sales.",
+        "Past participant lists help target applications."
+      ],
+      "soloChecklist": [
+        "Shortlist five events matching the player fantasy.",
+        "Reuse a concise pitch and current demo assets."
+      ],
+      "smallTeamChecklist": [
+        "Assign deadlines and post-event measurement owners.",
+        "Compare wishlist gains with the normal daily baseline."
+      ],
+      "cannotProve": "Incomplete archives and selected participants prevent population-wide success rates; reviews are not verified sales.",
+      "relatedGames": [
+        {
+          "name": "Lost Twins 2",
+          "steamAppId": 1752540,
+          "url": "https://store.steampowered.com/app/1752540/",
+          "checkedAt": "2026-09-08"
+        }
+      ],
+      "supportingSources": [],
+      "existingMatch": "Existing HTMAG/newsletter citation; enrich the matching URL."
+    },
+    {
+      "id": "gdc-hearth-hamlet-compact-incrementals",
+      "title": "Hearth & Hamlet’s ~100k & the rise of the bite-sized clicker...",
+      "publisher": "The GameDiscoverCo newsletter",
+      "author": "Simon Carless",
+      "url": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+      "publishDate": "2026-08-28",
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Publisher account with analyst interpretation",
+      "access": "Public case-study section read; paid remainder excluded",
+      "topics": [
+        "Incremental games",
+        "Niche demand",
+        "Positioning",
+        "Solo development"
+      ],
+      "synopsis": "Carless uses Hearth and Hamlet to examine compact incremental games that emphasize accessible progression and a finite experience. The public section describes a solo developer working alongside a teaching job and publisher support, including regional distribution. It also exposes a positioning problem: the attractive settlement suggests freeform city building, but the layout is predetermined. Some negative feedback came from players expecting a deeper city builder. The useful opportunity is a focused progression loop with a clear fantasy, while the practical warning is to show exactly what players control before a persuasive screenshot creates broader expectations.",
+      "takeaways": [
+        "Finite progression can support a compact game.",
+        "Visuals can imply nonexistent control.",
+        "Solo creation may still involve publishing support."
+      ],
+      "soloChecklist": [
+        "Prototype one satisfying upgrade chain.",
+        "Show predetermined construction honestly in gameplay footage."
+      ],
+      "smallTeamChecklist": [
+        "Test the pitch with city-builder and incremental players.",
+        "Record expectation mismatches before expanding content."
+      ],
+      "cannotProve": "One selected success cannot establish genre hit rates, causal marketing effects, or independent verification of reported sales.",
+      "relatedGames": [
+        {
+          "name": "Hearth and Hamlet",
+          "steamAppId": 4315040,
+          "url": "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+          "checkedAt": "2026-09-08"
+        }
+      ],
+      "supportingSources": [],
+      "existingMatch": "Existing newsletters article and newsletter-games record; enrich the matching URL."
+    },
+    {
+      "id": "gdc-showcase-due-diligence-2026",
+      "title": "Putting your game in a showcase? 5 key Qs to ask...",
+      "publisher": "The GameDiscoverCo newsletter",
+      "author": "Simon Carless",
+      "url": "https://newsletter.gamediscover.co/p/putting-your-game-in-a-showcase-5",
+      "publishDate": "2026-08-11",
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Analyst guidance using estimated campaign data",
+      "access": "Public full article",
+      "topics": [
+        "Showcases",
+        "Campaign execution",
+        "Budget allocation"
+      ],
+      "synopsis": "Carless proposes evaluating a streaming showcase before committing scarce marketing resources. The key questions concern how many games compete for attention, whether creators can co-stream, how much of the lineup contains new reveals, participation costs and total runtime. GameDiscoverCo compares shows through estimated wishlist changes, but explicitly notes omissions for games without Steam pages, released titles and console wishlists. The article recommends matching the game’s character to the event audience rather than chasing the highest headline ranking. For small teams, this becomes a practical briefing document for evaluating a reveal opportunity and its production cost.",
+      "takeaways": [
+        "Audience fit matters alongside reach.",
+        "Co-streaming can extend distribution.",
+        "Estimated wishlist rankings have coverage gaps."
+      ],
+      "soloChecklist": [
+        "Request cost, runtime, lineup size and co-streaming details.",
+        "Check whether the audience already likes comparable games."
+      ],
+      "smallTeamChecklist": [
+        "Budget trailer work alongside placement fees.",
+        "Prepare a live store page and measurement plan."
+      ],
+      "cannotProve": "Before-and-after wishlist estimates do not isolate an event’s effect or guarantee return on spending.",
+      "relatedGames": [
+        {
+          "name": "Tears of Metal",
+          "steamAppId": 1913120,
+          "url": "https://store.steampowered.com/app/1913120/Tears_of_Metal/",
+          "checkedAt": "2026-09-08"
+        }
+      ],
+      "supportingSources": [],
+      "existingMatch": "Existing newsletters article; enrich the matching URL."
+    },
+    {
+      "id": "lieu-sheepherds-gameplay-trailer",
+      "title": "Game Trailer Makeover - Sheepherds",
+      "publisher": "Derek Lieu Creative",
+      "author": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+      "publishDate": "2026-08-08",
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "First-person professional trailer critique",
+      "access": "Public full article",
+      "topics": [
+        "Trailers",
+        "Communication",
+        "Co-op"
+      ],
+      "synopsis": "Lieu explains how the Sheepherds trailer improved by giving the basic herding action room to communicate before introducing decoration and extra modes. The early version interrupted action with a title reveal, moved rapidly to customization and showed uniformly successful play, obscuring both the challenge and the game’s depth. The revised sequence demonstrates herding first, then coloring sheep, environmental complications and visible mistakes. This is useful for small teams because the improvement depends on footage selection and sequencing rather than adding features. A trailer can make a modest system understandable by showing its cause, result and variation.",
+      "takeaways": [
+        "Demonstrate the main action immediately.",
+        "Show difficulty through authentic imperfect play.",
+        "Introduce extras after the core is understood."
+      ],
+      "soloChecklist": [
+        "Capture one uninterrupted action and its result.",
+        "Remove title cards that require insider knowledge."
+      ],
+      "smallTeamChecklist": [
+        "Ask unfamiliar viewers to explain the objective.",
+        "Sequence basic action, complication and variation before cosmetics."
+      ],
+      "cannotProve": "Reported views and craft judgments do not establish that the revision increased sales.",
+      "relatedGames": [
+        {
+          "name": "Sheepherds!",
+          "steamAppId": 3006280,
+          "url": "https://store.steampowered.com/app/3006280/Sheepherds/",
+          "checkedAt": "2026-09-08"
+        }
+      ],
+      "supportingSources": [],
+      "existingMatch": "Existing reading-expansion article and game-stories entry; enrich the matching URL.",
+      "dateNote": "Visible byline is August 8; the URL contains August 4."
+    },
+    {
+      "id": "gwo-urban-jungle-three-person-discovery",
+      "title": "How indie decorating sim Urban Jungle generated 90k wishlists on Steam thanks to fests, demos, and some luck",
+      "publisher": "Game World Observer",
+      "author": "Evgeny Obedkov",
+      "url": "https://gameworldobserver.com/?p=27699",
+      "publishDate": "2025-01-20",
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Reporting based on developer self-report",
+      "access": "Public full article",
+      "topics": [
+        "Small teams",
+        "Cozy games",
+        "Demos",
+        "Campaign execution"
+      ],
+      "synopsis": "This report follows three developers who turned a spare-time plant-decorating game into a full-time project. Urban Jungle combined a readily understood domestic fantasy with repeated demo updates, feedback, relevant showcases and unexpected social sharing. The team had mobile-game experience, and the account distinguishes wishlists accumulated before signing a publisher from later support. That context matters when assessing what another three-person team can reproduce. The repeatable work is building a legible game, improving its demo and finding compatible audiences. The viral Thai Facebook post is a reminder that individual discovery events remain difficult to schedule.",
+      "takeaways": [
+        "Prior experience and publisher support affect comparisons.",
+        "Repeated demos create feedback opportunities.",
+        "Unexpected sharing is not a reliable plan."
+      ],
+      "soloChecklist": [
+        "Choose a fantasy visible in one screenshot.",
+        "Test a small playable loop before expanding."
+      ],
+      "smallTeamChecklist": [
+        "Divide demo improvement, capture and applications.",
+        "Log pre-publisher and post-publisher campaign results separately."
+      ],
+      "cannotProve": "Developer recollection does not isolate channel effects or establish final sales, profit or repeatable virality.",
+      "relatedGames": [
+        {
+          "name": "Urban Jungle",
+          "steamAppId": 2744010,
+          "url": "https://store.steampowered.com/app/2744010/Urban_Jungle/",
+          "checkedAt": "2026-09-08"
+        }
+      ],
+      "supportingSources": [],
+      "existingMatch": "No dedicated reading article found in the searched data."
+    },
+    {
+      "id": "gamedeveloper-power-of-ten-wishlist-countercase",
+      "title": "When Steam wishlists don't convert: a case study",
+      "publisher": "Game Developer",
+      "author": "Simon Carless",
+      "url": "https://www.gamedeveloper.com/business/when-steam-wishlists-don-t-convert-a-case-study",
+      "publishDate": "2021-07-26",
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "Historical developer report with analyst interpretation",
+      "access": "Public full article",
+      "topics": [
+        "Counter-cases",
+        "Wishlists",
+        "Early Access",
+        "Measurement integrity"
+      ],
+      "synopsis": "Power of Ten entered Early Access with roughly twelve thousand wishlists but its developer reported only about three hundred launch-day sales. Carless examines where interest came from: quiet periods produced little daily growth, while festival exposure contributed a large share of the total. The account also includes a player who wished to wait for the finished game. Its value is as a counterexample to treating accumulated wishlists as guaranteed immediate buyers. Teams can use the case to examine baseline demand, campaign cohorts and release expectations while retaining uncertainty about why any particular person did not purchase.",
+      "takeaways": [
+        "Wishlist totals do not guarantee launch purchases.",
+        "Campaign spikes need contextual interpretation.",
+        "Early Access changes some buyers’ timing."
+      ],
+      "soloChecklist": [
+        "Track normal daily growth between promotional spikes.",
+        "Ask target players whether they buy Early Access."
+      ],
+      "smallTeamChecklist": [
+        "Prepare low, middle and high launch scenarios.",
+        "Separate reported conversion from inferred causes."
+      ],
+      "cannotProve": "A 2021 anecdote is not a current conversion benchmark or proof that festival wishlists are worthless.",
+      "relatedGames": [
+        {
+          "name": "Power of Ten",
+          "steamAppId": 1319550,
+          "url": "https://store.steampowered.com/app/1319550/Power_of_Ten/",
+          "checkedAt": "2026-09-08"
+        }
+      ],
+      "supportingSources": [],
+      "existingMatch": "No dedicated reading article found in the searched data."
+    },
+    {
+      "id": "gamalytic-methodology-metric-definitions",
+      "title": "About",
+      "publisher": "Gamalytic",
+      "author": null,
+      "url": "https://gamalytic.com/about",
+      "publishDate": null,
+      "checkedAt": "2026-09-08",
+      "evidenceClassification": "First-party estimation methodology disclosure",
+      "access": "Public full documentation",
+      "topics": [
+        "Market research",
+        "Measurement integrity",
+        "Revenue estimates"
+      ],
+      "synopsis": "Gamalytic explains that its estimates combine Steam seller rankings, concurrent players, adjusted review-based modeling and publicly disclosed sales. Its glossary distinguishes owners, players and estimated copies purchased directly on Steam; these quantities are not interchangeable. Gross revenue for paid games covers base-game sales before Steam’s share, with regional prices and discounts considered. The provider warns that smaller games and free-to-play titles are harder to estimate, bundles may be mishandled and bugs can create large errors. These definitions make the page essential reading before turning comparison-game statistics into a small studio’s revenue assumptions.",
+      "takeaways": [
+        "Owners and Steam purchases are different metrics.",
+        "Gross revenue is not developer take-home income.",
+        "Small-game estimates need extra skepticism."
+      ],
+      "soloChecklist": [
+        "Record metric definition, provider and retrieval date.",
+        "Use ranges when planning around estimated outcomes."
+      ],
+      "smallTeamChecklist": [
+        "Separate reported sales from modeled figures.",
+        "Sanity-check comparables against disclosed results and release history."
+      ],
+      "cannotProve": "Provider accuracy claims are self-reported; this page does not validate an individual estimate or reveal development costs.",
+      "relatedGames": [],
+      "supportingSources": [],
+      "existingMatch": "Gamalytic appears in datasets; no dedicated methodology digest found."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://howtomarketagame.com/blog/",
+      "checkedAt": "2026-09-08",
+      "result": "Latest visible post dated 2026-08-21; no later post asserted."
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/sitemap/2026",
+      "checkedAt": "2026-09-08",
+      "result": "Archive contained September 4 roundup already in reading-updates; selected August articles have substantive public sections."
+    },
+    {
+      "url": "https://vginsights.com/insights/article/steam-sales-estimation-methodology-and-accuracy",
+      "checkedAt": "2026-09-08",
+      "result": "Redirected to the general Sensor Tower blog. Do not present the old URL as a freshly read methodology article."
+    },
+    {
+      "url": "https://steamspy.com/about",
+      "checkedAt": "2026-09-08",
+      "result": "Accessible legacy methodology page. Not selected because it has no current revision date and describes historical sampling behavior."
+    }
+  ]
+}

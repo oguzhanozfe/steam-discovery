@@ -1,0 +1,798 @@
+{
+  "checkedAt": "2026-09-08",
+  "methodology": {
+    "observed": "Steam appdetails identity and description fields plus appreviews query_summary, fetched directly during this session.",
+    "calculated": "Positive percentages are positive / total reviews, rounded to one decimal. These are calculations from observations, not market estimates.",
+    "estimated": "No sales, owner or revenue estimates are supplied. External analytical sources describe methodology and historical cohorts only.",
+    "judgment": "Niche boundaries, ranking, competitive interpretation, proposed concepts, scope and AI suitability are editorial judgments.",
+    "notImplemented": "Watch criteria describe future observable checks. This research did not schedule monitoring or implement live refresh.",
+    "sampling": "The 24 titles were deliberately chosen as legible design comparables, with a mix of direct and adjacent examples. The set is not random, complete or representative. It is especially exposed to selection and survivorship bias; no niche supply counts, saturation scores or hit probabilities can be inferred."
+  },
+  "niches": [
+    {
+      "id": "desktop-companions",
+      "title": "Desktop companions with a visible care loop",
+      "scopeFit": "Conditional prototype",
+      "playerJob": "Test only with a distinctive interaction or useful spatial behavior. Reject the concept if its appeal depends entirely on producing many collectible sprites.",
+      "demand": "Rusty's Retirement, Tiny Pasture and Ropuka's Idle Island show 14,835, 8,606 and 4,286 reviews in the same public query. Three distinct products demonstrate attention around persistent desktop companions, without proving incremental demand for another entrant.",
+      "supply": "Rusty's store page already includes a seventeen-title desktop bundle. This is a visible competitive cluster, not an empty category; cute animals and passive currency alone provide little differentiation.",
+      "watch": "Compare fixed-filter review deltas, newly released companion pages, display-related complaints and whether testers willingly reopen the demo on a second workday.",
+      "opening": "A tiny night station where moth couriers sort luminous parcels; the player rearranges three lamps to change their routes.",
+      "limitation": "Moderate; strong comparables, unmeasured niche denominator. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 2666510,
+          "title": "Rusty's Retirement",
+          "reviews": 14835,
+          "positive": 14347,
+          "negative": 488,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/2666510?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 3167550,
+          "title": "Tiny Pasture",
+          "reviews": 8606,
+          "positive": 7959,
+          "negative": 647,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/3167550?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 3416070,
+          "title": "Ropuka's Idle Island",
+          "reviews": 4286,
+          "positive": 4081,
+          "negative": 205,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/3416070?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/2666510?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/2666510/",
+        "https://store.steampowered.com/appreviews/3167550?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/3167550/",
+        "https://store.steampowered.com/appreviews/3416070?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/3416070/",
+        "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+      ],
+      "prototype": "One resizable scene, three courier types, six upgrades, save/load and a twenty-minute discovery arc. Ship Windows first after testing focus, scaling and multiple monitors.",
+      "ai": "AI can draft state machines, persistence code, test cases and consistent placeholder variants.",
+      "bottleneck": "Animation charm, interruption tolerance and desktop integration need hands-on judgment; background CPU usage matters."
+    },
+    {
+      "id": "inventory-roguelites",
+      "title": "Inventory placement roguelites with readable synergies",
+      "scopeFit": "Conditional prototype",
+      "playerJob": "Promising when one new spatial rule changes decisions immediately. Reject a plan requiring online opponents, hundreds of items or extensive metaprogression before the first interesting choice.",
+      "demand": "Backpack Battles has 20,676 queried reviews, Backpack Hero 8,511 and Megaloot 4,011. Placement and equipment combinations clearly support substantial player attention, across both solo runs and competitive formats.",
+      "supply": "These are established benchmarks rather than evidence of low supply. Megaloot's 2,880 positive versus 1,131 negative reviews also show that an appealing system can receive divided reception.",
+      "watch": "Read recent negative reviews for repeated usability and balance issues, compare new releases in the same cohort, and record which combinations testers discover without explanation.",
+      "opening": "Pack a rescue drone: adjacent batteries overheat, insulating cargo blocks heat, and each rescue changes the available grid.",
+      "limitation": "Moderate; demand visible, balance risk high. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 1970580,
+          "title": "Backpack Hero",
+          "reviews": 8511,
+          "positive": 7354,
+          "negative": 1157,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1970580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 2427700,
+          "title": "Backpack Battles",
+          "reviews": 20676,
+          "positive": 18861,
+          "negative": 1815,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/2427700?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 2440380,
+          "title": "Megaloot",
+          "reviews": 4011,
+          "positive": 2880,
+          "negative": 1131,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/2440380?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/1970580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1970580/",
+        "https://store.steampowered.com/appreviews/2427700?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/2427700/",
+        "https://store.steampowered.com/appreviews/2440380?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/2440380/"
+      ],
+      "prototype": "A deterministic solo encounter sequence, eighteen items, three enemy behaviors, two distinctive loadouts and a fifteen-minute run with immediate restart.",
+      "ai": "AI can implement item schemas, simulate seeded encounters and generate balance reports.",
+      "bottleneck": "A designer must tune readable interactions, eliminate dominant strategies and make dragging pieces feel effortless under repeated use."
+    },
+    {
+      "id": "bounded-incrementals",
+      "title": "Short incremental games with a visible transformation",
+      "scopeFit": "Prioritize a small test",
+      "playerJob": "A visible before-and-after result is easy to communicate and prototype. Reject progression that merely inflates numbers while preserving the same decision and visual state.",
+      "demand": "Nodebuster records 14,053 queried reviews, Gnorp Apologue 9,952 and A Game About Digging A Hole 20,080. Their different presentations support testing a concise progression fantasy rather than assuming one setting explains demand.",
+      "supply": "HTMAG's 2025 cohort lists 965 idle releases and 27 crossing its review threshold. That broad, historical classification is not this niche's current supply count or an individual probability.",
+      "watch": "Track fresh incremental releases, consistent review deltas and complaints about repetition or duration; ask testers when they anticipated versus merely waited for an upgrade.",
+      "opening": "Restore one abandoned orbital greenhouse: vacuum debris, route recovered energy and watch a dead cross-section bloom into a functioning habitat.",
+      "limitation": "Moderate; good scope fit, crowded broader genre. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 3107330,
+          "title": "Nodebuster",
+          "reviews": 14053,
+          "positive": 13689,
+          "negative": 364,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/3107330?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 1473350,
+          "title": "(the) Gnorp Apologue",
+          "reviews": 9952,
+          "positive": 9435,
+          "negative": 517,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1473350?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 3244220,
+          "title": "A Game About Digging A Hole™",
+          "reviews": 20080,
+          "positive": 17935,
+          "negative": 2145,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/3244220?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/3107330?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/3107330/",
+        "https://store.steampowered.com/appreviews/1473350?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1473350/",
+        "https://store.steampowered.com/appreviews/3244220?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/3244220/",
+        "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+        "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+      ],
+      "prototype": "One screen, twelve upgrades, three transformation milestones, two branching choices, save/load and a satisfying twenty-minute ending.",
+      "ai": "AI can produce economy simulations, upgrade graphs, data validation and basic effects code.",
+      "bottleneck": "Reward timing and audiovisual escalation require direct playtesting; generated content cannot establish satisfying pacing."
+    },
+    {
+      "id": "shop-micro-sims",
+      "title": "Tactile micro-shops built around one trade",
+      "scopeFit": "Conditional prototype",
+      "playerJob": "Test a distinctive physical transaction with a clear customer payoff. Reject a feature list that starts with a town, employees, vehicles and a complete economic simulation.",
+      "demand": "Supermarket Simulator has 83,947 queried reviews, TCG Card Shop Simulator 49,425 and Tiny Bookshop 7,730. These support demand for running a legible business, while differing sharply in production scale and audience.",
+      "supply": "Large retail games already offer staffing, stock systems and expansion. Their popularity does not imply that a smaller shop can compete through fewer versions of identical chores.",
+      "watch": "Compare new trade-specific releases, identify repeated complaints in recent reviews, and measure whether testers enjoy the core transaction before upgrades or narrative rewards appear.",
+      "opening": "Run a tiny umbrella repair booth during a storm: diagnose bent ribs, patch fabric and match repairs to customers' changing weather needs.",
+      "limitation": "Moderate; large comparables, scope needs discipline. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 2670630,
+          "title": "Supermarket Simulator",
+          "reviews": 83947,
+          "positive": 77269,
+          "negative": 6678,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/2670630?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 3070070,
+          "title": "TCG Card Shop Simulator",
+          "reviews": 49425,
+          "positive": 47709,
+          "negative": 1716,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/3070070?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 2133760,
+          "title": "Tiny Bookshop",
+          "reviews": 7730,
+          "positive": 7440,
+          "negative": 290,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/2133760?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/2670630?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/2670630/",
+        "https://store.steampowered.com/appreviews/3070070?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/3070070/",
+        "https://store.steampowered.com/appreviews/2133760?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/2133760/",
+        "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/"
+      ],
+      "prototype": "One counter, three repair operations, eight customer orders, a small stock decision and a complete fifteen-minute shift.",
+      "ai": "AI can scaffold interaction code, order schemas, dialogue alternatives and save validation.",
+      "bottleneck": "Tactile feedback, believable tool use and a coherent visual identity determine whether repetitive work becomes satisfying."
+    },
+    {
+      "id": "workplace-horror",
+      "title": "Short workplace horror with one reliable routine",
+      "scopeFit": "Conditional on staging skill",
+      "playerJob": "Promising for someone who can direct tension in a small environment. Deprioritize it if the plan relies on procedural story generation or numerous creature animations.",
+      "demand": "The Mortuary Assistant shows 8,751 queried reviews, The Closing Shift 3,206 and Mouthwashing 38,632. Familiar jobs can support horror attention, although Mouthwashing is an adjacent narrative benchmark rather than a routine simulator.",
+      "supply": "A successful comparator's storytelling, audio and recognizable identity are part of its offer. Reusing a generic shop and random jump scares does not reproduce that value.",
+      "watch": "Inspect recent short-horror releases, changes in sentiment and player descriptions of pacing; test whether an ordinary task becomes uneasy before the first explicit scare.",
+      "opening": "Operate a late-night parcel locker whose labels begin naming rooms inside the supposedly empty building.",
+      "limitation": "Moderate; authored presentation is the main constraint. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 1295920,
+          "title": "The Mortuary Assistant",
+          "reviews": 8751,
+          "positive": 8040,
+          "negative": 711,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1295920?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 2475490,
+          "title": "Mouthwashing",
+          "reviews": 38632,
+          "positive": 36787,
+          "negative": 1845,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/2475490?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 1843090,
+          "title": "[Chilla's Art] The Closing Shift | 閉店事件",
+          "reviews": 3206,
+          "positive": 2809,
+          "negative": 397,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1843090?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/1295920?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1295920/",
+        "https://store.steampowered.com/appreviews/2475490?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/2475490/",
+        "https://store.steampowered.com/appreviews/1843090?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1843090/",
+        "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+        "https://howtomarketagame.com/2026/05/14/2026-q1-games/"
+      ],
+      "prototype": "One room, a six-step delivery routine, four authored disruptions, accessible interaction prompts and a twelve-minute sequence with one complete ending.",
+      "ai": "AI can scaffold event sequencing, interaction logic, subtitle timing and regression checklists.",
+      "bottleneck": "Sound placement, suspense, environmental composition and the emotional meaning of the ending remain directorial work."
+    },
+    {
+      "id": "microcase-deduction",
+      "title": "Document deduction through compact authored cases",
+      "scopeFit": "Prioritize if writing is a strength",
+      "playerJob": "Useful for a solo developer with strong editing skills and limited animation capacity. Reject an elaborate branching conspiracy before one case survives blind testing.",
+      "demand": "Golden Idol has 10,970 queried reviews, The Roottrees are Dead 10,060 and Strange Horticulture 16,098. These provide distinct examples of players enjoying evidence interpretation, relationship reconstruction and contextual identification.",
+      "supply": "They are authored experiences with strong presentation. Three successful cases do not count competing mysteries or establish that generic document puzzles are underserved.",
+      "watch": "Follow new deduction demos and recent reviews for fairness or hinting complaints; observe incorrect theories in playtests and whether every correction follows visible evidence.",
+      "opening": "Reconstruct a ferry's final lost-property exchange using baggage tags, tide notices and contradictory handwritten receipts.",
+      "limitation": "Moderate; content validity is expensive. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 1677770,
+          "title": "The Case of the Golden Idol",
+          "reviews": 10970,
+          "positive": 10727,
+          "negative": 243,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1677770?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 2754380,
+          "title": "The Roottrees are Dead",
+          "reviews": 10060,
+          "positive": 9699,
+          "negative": 361,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/2754380?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 1574580,
+          "title": "Strange Horticulture",
+          "reviews": 16098,
+          "positive": 15204,
+          "negative": 894,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1574580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/1677770?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1677770/",
+        "https://store.steampowered.com/appreviews/2754380?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/2754380/",
+        "https://store.steampowered.com/appreviews/1574580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1574580/",
+        "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/"
+      ],
+      "prototype": "One twenty-minute case, twelve evidence objects, six people, a small deduction board, two hint tiers and an explanation of the solution.",
+      "ai": "AI can enumerate contradictions, draft alternate clue wording and implement evidence interfaces.",
+      "bottleneck": "A human must verify every inference, control ambiguity and ensure the solution feels earned; plausible generated prose can conceal broken logic."
+    },
+    {
+      "id": "photo-exploration",
+      "title": "Compact photography exploration with reactive subjects",
+      "scopeFit": "Keep on watch; validate appeal first",
+      "playerJob": "Test when a tiny space can support multiple surprising observations. Deprioritize a broad island or dozens of creatures until a single subject is enjoyable to photograph.",
+      "demand": "TOEM records 12,098 queried reviews, compared with 671 for Penko Park and 553 for Pupperazzi. All have positive reception, but the large attention spread is evidence against treating photography as automatic commercial demand.",
+      "supply": "The small curated set does not establish low supply. Subject animation, distinctive locations and camera interactions are substantial content costs, even when combat and complex progression are absent.",
+      "watch": "Compare new photography releases, review counts alongside sentiment and player requests for interaction; test whether players take optional photographs after completing the required list.",
+      "opening": "Document a rooftop's nocturnal visitors by moving colored lanterns, revealing different behaviors through shadows and reflections.",
+      "limitation": "Low to moderate; comparable performance varies. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 1307580,
+          "title": "TOEM: A Photo Adventure",
+          "reviews": 12098,
+          "positive": 11987,
+          "negative": 111,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1307580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 852090,
+          "title": "Penko Park",
+          "reviews": 671,
+          "positive": 663,
+          "negative": 8,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/852090?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 1028350,
+          "title": "Pupperazzi: The Dog Photography Game",
+          "reviews": 553,
+          "positive": 528,
+          "negative": 25,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1028350?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/1307580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1307580/",
+        "https://store.steampowered.com/appreviews/852090?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/852090/",
+        "https://store.steampowered.com/appreviews/1028350?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1028350/"
+      ],
+      "prototype": "One compact rooftop, four subjects, eight photo objectives, three light interactions and a fifteen-minute album-building loop.",
+      "ai": "AI can implement objective detection, camera controls, catalog UI and localization placeholders.",
+      "bottleneck": "Art direction, character behavior and framing must create memorable moments; a checklist alone is unlikely to carry the experience."
+    },
+    {
+      "id": "minimal-logistics",
+      "title": "Minimal logistics puzzles with one changing constraint",
+      "scopeFit": "Conditional; demand proof before expansion",
+      "playerJob": "A good prototype choice when one constraint creates understandable tradeoffs. Reject the project if adding more node colors is the only planned source of depth.",
+      "demand": "Mini Motorways shows 24,401 queried reviews, Mini Metro 16,741 and Railbound 1,931. Network design and connection puzzles have clear audiences, but these mature products are benchmarks rather than comparable new-launch forecasts.",
+      "supply": "Their visual clarity hides extensive tuning and level work. A few enduring successes cannot establish an underserved minimalist puzzle niche, particularly without counting low-visibility recent releases.",
+      "watch": "Review recent connection-puzzle launches and player complaints about ambiguity; observe whether testers can predict failures and explain why their revised network works.",
+      "opening": "Route a hillside mail service where a single movable counterweight powers lifts and every parcel changes the balance.",
+      "limitation": "Low to moderate; classics are imperfect launch peers. Selected examples; no market-wide demand/supply ratio is established.",
+      "comparables": [
+        {
+          "appId": 1127500,
+          "title": "Mini Motorways",
+          "reviews": 24401,
+          "positive": 23491,
+          "negative": 910,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1127500?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 287980,
+          "title": "Mini Metro",
+          "reviews": 16741,
+          "positive": 16074,
+          "negative": 667,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/287980?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        },
+        {
+          "appId": 1967510,
+          "title": "Railbound",
+          "reviews": 1931,
+          "positive": 1823,
+          "negative": 108,
+          "asOf": "2026-09-08",
+          "checkedAtUtc": "2026-09-07T22:05:58Z",
+          "source": "https://store.steampowered.com/appreviews/1967510?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*"
+        }
+      ],
+      "sources": [
+        "https://store.steampowered.com/appreviews/1127500?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1127500/",
+        "https://store.steampowered.com/appreviews/287980?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/287980/",
+        "https://store.steampowered.com/appreviews/1967510?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+        "https://store.steampowered.com/app/1967510/"
+      ],
+      "prototype": "Twelve authored puzzles, one new rule introduced halfway through, undo, restart, readable simulation feedback and a twenty-minute demo.",
+      "ai": "AI can build a solver, validate level solvability and generate candidate layouts for manual selection.",
+      "bottleneck": "Puzzle quality, instructional sequencing and unmistakable visual causality require thoughtful human selection and repeated blind tests."
+    }
+  ],
+  "sources": [
+    {
+      "id": "steam-reviews-doc",
+      "label": "Valve: User Reviews — Get List",
+      "url": "https://partner.steamgames.com/doc/store/getreviews",
+      "type": "primary_documentation",
+      "note": "Documents review filters, query_summary and cursor pagination. Reviews measure published recommendations, not sales."
+    },
+    {
+      "id": "steam-current-players-doc",
+      "label": "Valve: ISteamUserStats Web API",
+      "url": "https://partner.steamgames.com/doc/webapi/ISteamUserStats",
+      "type": "primary_documentation",
+      "note": "Current-player endpoint reports players connected to Steam in the specified app, not unique owners or sales."
+    },
+    {
+      "id": "steam-applist-doc",
+      "label": "Valve: IStoreService",
+      "url": "https://partner.steamgames.com/doc/webapi/IStoreService",
+      "type": "primary_documentation",
+      "note": "GetAppList supplies catalog metadata and filtering; documented service requires a Web API key. A catalog is not a niche classification."
+    },
+    {
+      "id": "htmag-2025",
+      "label": "How To Market A Game: What the hell happened in 2025?",
+      "url": "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+      "type": "analyst_methodology",
+      "note": "January 4, 2026 snapshot using VGInsights; genre classification and a 1,000-review threshold. Reports 20,282 releases and 608 reaching that threshold. Treat as a historical cohort and attention proxy, not a profit rate."
+    },
+    {
+      "id": "htmag-2026-q1",
+      "label": "How To Market A Game: 2026 Q1 Games",
+      "url": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "type": "analyst_methodology",
+      "note": "A newer cohort check notes increasing idle supply and changes in genre counts. Its selected review threshold and author's classification do not estimate a particular prototype's chances."
+    },
+    {
+      "id": "gamediscover-method",
+      "label": "GameDiscoverCo: How that game sold on Steam, using the NB number",
+      "url": "https://newsletter.gamediscover.co/p/how-that-game-sold-on-steam-using",
+      "type": "analyst_methodology",
+      "note": "A 2020 developer survey illustrates wide variation in review-to-sale ratios and warns against multiplying estimated copies by current list price to infer proceeds. Historical ratios are not applied to these snapshots."
+    },
+    {
+      "id": "steamdb-method",
+      "label": "SteamDB FAQ",
+      "url": "https://steamdb.info/faq/",
+      "type": "data_provider_methodology",
+      "note": "SteamDB describes collecting Steam information, distinguishes third-party owner estimates and prohibits automated scraping. Use its public pages for manual historical context; obtain reproducible snapshots directly from Steam."
+    },
+    {
+      "id": "steamspy-method",
+      "label": "SteamSpy: About",
+      "url": "https://steamspy.com/about",
+      "type": "data_provider_methodology",
+      "note": "SteamSpy describes extrapolation from profile samples, warns about small or recent games and distinguishes ownership from purchases. Ownership can include bundles, gifts and promotions; estimates are not audited sales."
+    },
+    {
+      "id": "steam-reviews-2666510",
+      "label": "Rusty's Retirement: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/2666510?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-2666510",
+      "label": "Rusty's Retirement: Steam store",
+      "url": "https://store.steampowered.com/app/2666510/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-3167550",
+      "label": "Tiny Pasture: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/3167550?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-3167550",
+      "label": "Tiny Pasture: Steam store",
+      "url": "https://store.steampowered.com/app/3167550/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-3416070",
+      "label": "Ropuka's Idle Island: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/3416070?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-3416070",
+      "label": "Ropuka's Idle Island: Steam store",
+      "url": "https://store.steampowered.com/app/3416070/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1970580",
+      "label": "Backpack Hero: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1970580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1970580",
+      "label": "Backpack Hero: Steam store",
+      "url": "https://store.steampowered.com/app/1970580/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-2427700",
+      "label": "Backpack Battles: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/2427700?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-2427700",
+      "label": "Backpack Battles: Steam store",
+      "url": "https://store.steampowered.com/app/2427700/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-2440380",
+      "label": "Megaloot: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/2440380?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-2440380",
+      "label": "Megaloot: Steam store",
+      "url": "https://store.steampowered.com/app/2440380/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-3107330",
+      "label": "Nodebuster: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/3107330?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-3107330",
+      "label": "Nodebuster: Steam store",
+      "url": "https://store.steampowered.com/app/3107330/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1473350",
+      "label": "(the) Gnorp Apologue: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1473350?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1473350",
+      "label": "(the) Gnorp Apologue: Steam store",
+      "url": "https://store.steampowered.com/app/1473350/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-3244220",
+      "label": "A Game About Digging A Hole™: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/3244220?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-3244220",
+      "label": "A Game About Digging A Hole™: Steam store",
+      "url": "https://store.steampowered.com/app/3244220/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-2670630",
+      "label": "Supermarket Simulator: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/2670630?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-2670630",
+      "label": "Supermarket Simulator: Steam store",
+      "url": "https://store.steampowered.com/app/2670630/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-3070070",
+      "label": "TCG Card Shop Simulator: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/3070070?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-3070070",
+      "label": "TCG Card Shop Simulator: Steam store",
+      "url": "https://store.steampowered.com/app/3070070/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-2133760",
+      "label": "Tiny Bookshop: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/2133760?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-2133760",
+      "label": "Tiny Bookshop: Steam store",
+      "url": "https://store.steampowered.com/app/2133760/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1295920",
+      "label": "The Mortuary Assistant: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1295920?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1295920",
+      "label": "The Mortuary Assistant: Steam store",
+      "url": "https://store.steampowered.com/app/1295920/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-2475490",
+      "label": "Mouthwashing: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/2475490?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-2475490",
+      "label": "Mouthwashing: Steam store",
+      "url": "https://store.steampowered.com/app/2475490/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1843090",
+      "label": "[Chilla's Art] The Closing Shift | 閉店事件: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1843090?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1843090",
+      "label": "[Chilla's Art] The Closing Shift | 閉店事件: Steam store",
+      "url": "https://store.steampowered.com/app/1843090/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1677770",
+      "label": "The Case of the Golden Idol: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1677770?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1677770",
+      "label": "The Case of the Golden Idol: Steam store",
+      "url": "https://store.steampowered.com/app/1677770/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-2754380",
+      "label": "The Roottrees are Dead: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/2754380?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-2754380",
+      "label": "The Roottrees are Dead: Steam store",
+      "url": "https://store.steampowered.com/app/2754380/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1574580",
+      "label": "Strange Horticulture: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1574580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1574580",
+      "label": "Strange Horticulture: Steam store",
+      "url": "https://store.steampowered.com/app/1574580/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1307580",
+      "label": "TOEM: A Photo Adventure: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1307580?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1307580",
+      "label": "TOEM: A Photo Adventure: Steam store",
+      "url": "https://store.steampowered.com/app/1307580/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-852090",
+      "label": "Penko Park: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/852090?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-852090",
+      "label": "Penko Park: Steam store",
+      "url": "https://store.steampowered.com/app/852090/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1028350",
+      "label": "Pupperazzi: The Dog Photography Game: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1028350?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1028350",
+      "label": "Pupperazzi: The Dog Photography Game: Steam store",
+      "url": "https://store.steampowered.com/app/1028350/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1127500",
+      "label": "Mini Motorways: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1127500?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1127500",
+      "label": "Mini Motorways: Steam store",
+      "url": "https://store.steampowered.com/app/1127500/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-287980",
+      "label": "Mini Metro: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/287980?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-287980",
+      "label": "Mini Metro: Steam store",
+      "url": "https://store.steampowered.com/app/287980/",
+      "type": "primary_developer_store_description"
+    },
+    {
+      "id": "steam-reviews-1967510",
+      "label": "Railbound: Steam review JSON",
+      "url": "https://store.steampowered.com/appreviews/1967510?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=*",
+      "type": "primary_observed_snapshot"
+    },
+    {
+      "id": "steam-app-1967510",
+      "label": "Railbound: Steam store",
+      "url": "https://store.steampowered.com/app/1967510/",
+      "type": "primary_developer_store_description"
+    }
+  ]
+}
