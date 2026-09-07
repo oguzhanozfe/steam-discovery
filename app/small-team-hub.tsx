@@ -230,7 +230,9 @@ export function SmallTeamHub() {
       <section className="hub-section">
         <div className="hub-section-heading">
           <div>
-            <p className="section-kicker">NEWLY DIGESTED · HISTORICAL & RECENT CASES</p>
+            <p className="section-kicker">
+              NEWLY DIGESTED · HISTORICAL & RECENT CASES
+            </p>
             <h2>More stories. Different routes to an audience.</h2>
           </div>
           <a href="/stories/">All {gameStories.length} stories →</a>
@@ -754,121 +756,130 @@ export function SteamRadar() {
           </div>
         </section>
       )}
-      <Table className="radar-table">
-        <TableHeader>
-          <TableRow>
-            {[
-              'Game / research coverage',
-              'Release state',
-              'Reviews',
-              'Positive',
-              'Owner estimate',
-              'US price',
-              'Save / compare',
-            ].map((label) => (
-              <TableHead key={label} scope="col">
-                {label}
-              </TableHead>
-            ))}
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {visible.map((game) => (
-            <TableRow key={game.appId}>
-              <TableCell>
-                <button
-                  className="radar-game-title"
-                  onClick={() => setSelected(game.appId)}
-                >
-                  {game.title}
-                </button>
-                <span className="radar-cell-note">
-                  {game.genre ||
-                    game.tags.slice(0, 3).join(' · ') ||
-                    game.cohort}
-                </span>
-                <span className="radar-cell-note">
-                  {game.cohort} · checked {day(game.checkedAt)}
-                </span>
-              </TableCell>
-              <TableCell>
-                {game.status}
-                <span className="radar-cell-note">
-                  {game.releaseDate ?? 'Date unverified'}
-                </span>
-              </TableCell>
-              <TableCell>
-                {number(game.reviews)}
-                <span className="radar-cell-note">
-                  {game.cohort === 'Curated research'
-                    ? 'Steam API'
-                    : game.cohort === 'June 2026 release subset'
-                      ? 'Historical store count'
-                      : 'SteamSpy snapshot'}
-                </span>
-              </TableCell>
-              <TableCell>
-                {positiveShare(game) == null ? '—' : `${positiveShare(game)}%`}
-              </TableCell>
-              <TableCell>
-                {game.owners?.replace(' .. ', '–') ?? 'Unknown'}
-                {game.owners && (
-                  <span className="radar-cell-note">
-                    SteamSpy model ·{' '}
-                    {day(game.ownerCheckedAt ?? game.checkedAt)}
-                  </span>
-                )}
-              </TableCell>
-              <TableCell>
-                {game.priceUsd == null
-                  ? '—'
-                  : game.priceUsd === 0
-                    ? 'Free'
-                    : `$${game.priceUsd.toFixed(2)}`}
-              </TableCell>
-              <TableCell>
-                <div className="radar-row-actions">
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    onClick={() => toggleSaved(game.appId)}
-                    aria-pressed={saved.includes(game.appId)}
-                    aria-label={`${saved.includes(game.appId) ? 'Unsave' : 'Save'} ${game.title}`}
-                  >
-                    <Bookmark
-                      fill={
-                        saved.includes(game.appId) ? 'currentColor' : 'none'
-                      }
-                      size={16}
-                    />
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    disabled={
-                      compare.length >= 3 && !compare.includes(game.appId)
-                    }
-                    aria-pressed={compare.includes(game.appId)}
-                    onClick={() =>
-                      setCompare(
-                        compare.includes(game.appId)
-                          ? compare.filter((id) => id !== game.appId)
-                          : [...compare, game.appId],
-                      )
-                    }
-                  >
-                    {compare.includes(game.appId) ? (
-                      <Check size={16} />
-                    ) : (
-                      'Compare'
-                    )}
-                  </Button>
-                </div>
-              </TableCell>
+      <div
+        className="radar-scroll-region"
+        tabIndex={0}
+        role="region"
+        aria-label="Steam Radar game results — scroll horizontally for all columns"
+      >
+        <Table className="radar-table">
+          <TableHeader>
+            <TableRow>
+              {[
+                'Game / research coverage',
+                'Release state',
+                'Reviews',
+                'Positive',
+                'Owner estimate',
+                'US price',
+                'Save / compare',
+              ].map((label) => (
+                <TableHead key={label} scope="col">
+                  {label}
+                </TableHead>
+              ))}
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+          </TableHeader>
+          <TableBody>
+            {visible.map((game) => (
+              <TableRow key={game.appId}>
+                <TableCell>
+                  <button
+                    className="radar-game-title"
+                    onClick={() => setSelected(game.appId)}
+                  >
+                    {game.title}
+                  </button>
+                  <span className="radar-cell-note">
+                    {game.genre ||
+                      game.tags.slice(0, 3).join(' · ') ||
+                      game.cohort}
+                  </span>
+                  <span className="radar-cell-note">
+                    {game.cohort} · checked {day(game.checkedAt)}
+                  </span>
+                </TableCell>
+                <TableCell>
+                  {game.status}
+                  <span className="radar-cell-note">
+                    {game.releaseDate ?? 'Date unverified'}
+                  </span>
+                </TableCell>
+                <TableCell>
+                  {number(game.reviews)}
+                  <span className="radar-cell-note">
+                    {game.cohort === 'Curated research'
+                      ? 'Steam API'
+                      : game.cohort === 'June 2026 release subset'
+                        ? 'Historical store count'
+                        : 'SteamSpy snapshot'}
+                  </span>
+                </TableCell>
+                <TableCell>
+                  {positiveShare(game) == null
+                    ? '—'
+                    : `${positiveShare(game)}%`}
+                </TableCell>
+                <TableCell>
+                  {game.owners?.replace(' .. ', '–') ?? 'Unknown'}
+                  {game.owners && (
+                    <span className="radar-cell-note">
+                      SteamSpy model ·{' '}
+                      {day(game.ownerCheckedAt ?? game.checkedAt)}
+                    </span>
+                  )}
+                </TableCell>
+                <TableCell>
+                  {game.priceUsd == null
+                    ? '—'
+                    : game.priceUsd === 0
+                      ? 'Free'
+                      : `$${game.priceUsd.toFixed(2)}`}
+                </TableCell>
+                <TableCell>
+                  <div className="radar-row-actions">
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      onClick={() => toggleSaved(game.appId)}
+                      aria-pressed={saved.includes(game.appId)}
+                      aria-label={`${saved.includes(game.appId) ? 'Unsave' : 'Save'} ${game.title}`}
+                    >
+                      <Bookmark
+                        fill={
+                          saved.includes(game.appId) ? 'currentColor' : 'none'
+                        }
+                        size={16}
+                      />
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      disabled={
+                        compare.length >= 3 && !compare.includes(game.appId)
+                      }
+                      aria-pressed={compare.includes(game.appId)}
+                      onClick={() =>
+                        setCompare(
+                          compare.includes(game.appId)
+                            ? compare.filter((id) => id !== game.appId)
+                            : [...compare, game.appId],
+                        )
+                      }
+                    >
+                      {compare.includes(game.appId) ? (
+                        <Check size={16} />
+                      ) : (
+                        'Compare'
+                      )}
+                    </Button>
+                  </div>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
       {!visible.length && (
         <div className="hub-empty">
           <h2>No games match these filters</h2>

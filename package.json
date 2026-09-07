@@ -12,7 +12,8 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
-    "validate:research": "node scripts/validate-research.mjs"
+    "validate:research": "node scripts/validate-research.mjs",
+    "validate:readability": "node scripts/validate-readability.mjs"
   },
   "dependencies": {
     "react": "19.2.8",

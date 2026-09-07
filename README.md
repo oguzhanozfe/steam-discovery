@@ -18,7 +18,7 @@ Steam Discovery is independent and is not affiliated with Valve. Editorial notes
 
 ## Run locally
 
-The interface defaults to dark mode on every route, independent of the device's theme preference. Keep readable text contrast, body copy at 15–18px, metadata at 13–14px, and form fields at 16px. Use the shared semantic colors in `app/globals.css`; keep charts, evidence labels and lime action buttons distinguishable. Avoid introducing white cards or tiny explanatory text in new research views.
+The interface defaults to dark mode on every route, independent of the device's theme preference. Body copy uses 17–18px-equivalent rem sizes, evidence labels and source links at least 14px, and form fields 16px. Long prose uses a 68ch maximum line width; dense tables keep readable text and scroll inside keyboard-accessible regions. Use the shared semantic colors and typography tokens in `app/globals.css`; keep charts, evidence labels and lime action buttons distinguishable. Avoid introducing white cards or tiny explanatory text in new research views.
 
 Use Node.js 24 LTS and pnpm 11.19.0.
 
@@ -33,6 +33,7 @@ pnpm dev
 pnpm build:vercel
 pnpm exec tsc --noEmit
 pnpm validate:research
+pnpm validate:readability
 pnpm audit
 ```
 
