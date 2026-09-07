@@ -40,6 +40,7 @@ for (const file of [
   'deep-case-metrics',
   'game-stories',
   'hub-cases',
+  'story-expansion',
   'hub-niches',
   'hub-articles',
 ]) {

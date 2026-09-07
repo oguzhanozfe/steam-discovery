@@ -230,8 +230,8 @@ export function SmallTeamHub() {
       <section className="hub-section">
         <div className="hub-section-heading">
           <div>
-            <p className="section-kicker">READ THE MECHANISM, THEN APPLY IT</p>
-            <h2>Stories with decisions attached</h2>
+            <p className="section-kicker">NEWLY DIGESTED · HISTORICAL & RECENT CASES</p>
+            <h2>More stories. Different routes to an audience.</h2>
           </div>
           <a href="/stories/">All {gameStories.length} stories →</a>
         </div>
@@ -239,12 +239,12 @@ export function SmallTeamHub() {
           {gameStories
             .filter((story) =>
               [
-                'gnorp-apologue',
-                'rustys-retirement',
-                'prickle',
-                'drop-it-block-paradise',
-                'beyond-your-fear',
-                'the-ouroboros-king',
+                'balatro',
+                'repo',
+                'minami-lane',
+                'a-game-about-digging-a-hole',
+                'arco',
+                'power-of-ten',
               ].includes(story.id),
             )
             .map((story) => (

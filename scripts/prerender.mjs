@@ -58,10 +58,11 @@ Cite the relevant canonical research page and the underlying original source. Re
 `);
 
 await cp(resolve(project, 'app/data/source-audit.json'), resolve(out, 'data/source-audit.json'));
-for (const filename of ['game-stories.json', 'original-analysis.json', 'survival-demo-gdd.json', 'survival-validation-evidence.json', 'hub-cases.json', 'hub-niches.json', 'hub-articles.json', 'solo-concepts.json', 'radar-snapshot.json']) await cp(resolve(project, `app/data/${filename}`), resolve(out, `data/${filename}`));
+for (const filename of ['game-stories.json', 'original-analysis.json', 'survival-demo-gdd.json', 'survival-validation-evidence.json', 'hub-cases.json', 'story-expansion.json', 'hub-niches.json', 'hub-articles.json', 'solo-concepts.json', 'radar-snapshot.json']) await cp(resolve(project, `app/data/${filename}`), resolve(out, `data/${filename}`));
 const baseStories = JSON.parse(await readFile(resolve(project, 'app/data/game-stories.json'), 'utf8'));
 const hubStories = JSON.parse(await readFile(resolve(project, 'app/data/hub-cases.json'), 'utf8'));
-await writeFile(resolve(out, 'data/game-stories.json'), JSON.stringify({ ...baseStories, updatedAt: hubStories.updatedAt, stories: [...hubStories.stories, ...baseStories.stories] }, null, 2));
+const storyExpansion = JSON.parse(await readFile(resolve(project, 'app/data/story-expansion.json'), 'utf8'));
+await writeFile(resolve(out, 'data/game-stories.json'), JSON.stringify({ ...baseStories, updatedAt: storyExpansion.updatedAt, expansionMethodology: storyExpansion.methodology, stories: [...storyExpansion.stories, ...hubStories.stories, ...baseStories.stories] }, null, 2));
 const gdd = JSON.parse(await readFile(resolve(project, 'app/data/survival-demo-gdd.json'), 'utf8'));
 const readableKey = key => key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, first => first.toUpperCase());
 function documentValue(value, level = 2) {

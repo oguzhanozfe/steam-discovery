@@ -48,7 +48,7 @@ The source data lives in `app/data/`. `app/data/reading-updates.json` holds the 
 
 This union is not a complete Steam or indie-only census. The June release subset retains its original September 2 check, SteamSpy records retain their provider definitions, and curated rows use all-language/all-purchase Steam reviews with off-topic filtering. Owners are estimates, not paid sales; a price or review count does not establish revenue. Growth appears only after comparable review queries on two snapshots. Commit snapshots to retain their history.
 
-The curated snapshot is in `app/data/radar-snapshot.json`; the full client-loaded catalog is in `public/data/radar-catalog.json`. The new editorial files are `hub-cases.json`, `hub-niches.json`, `hub-articles.json` and `solo-concepts.json`. Preserve dates and access limits when editing. `pnpm validate:research` also validates hub filters, unknown values, links, citations, comparables and exported data. Watchlists live only in local browser storage; export them to keep a copy. There is no scheduled refresh or notification service.
+The curated snapshot is in `app/data/radar-snapshot.json`; the full client-loaded catalog is in `public/data/radar-catalog.json`. The new editorial files are `hub-cases.json`, `story-expansion.json`, `hub-niches.json`, `hub-articles.json` and `solo-concepts.json`. Preserve dates and access limits when editing. `pnpm validate:research` also validates hub filters, unknown values, links, citations, comparables and exported data. Watchlists live only in local browser storage; export them to keep a copy. There is no scheduled refresh or notification service.
 
 ## Deploy to the existing host
 

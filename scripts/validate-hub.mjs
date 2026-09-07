@@ -5,7 +5,7 @@ import {
   defaultRadarFilters,
   positiveShare,
 } from '../app/hub-model.ts';
-import { publicRoutes } from '../.prerender/entry-prerender.js';
+import { publicRoutes, findStories } from '../.prerender/entry-prerender.js';
 
 const read = async (path) =>
   JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'));
@@ -13,7 +13,10 @@ const catalog = await read('public/data/radar-catalog.json');
 const snapshot = await read('app/data/radar-snapshot.json');
 const concepts = await read('app/data/solo-concepts.json');
 const niches = await read('app/data/hub-niches.json');
-const stories = await read('app/data/hub-cases.json');
+const baseStories = await read('app/data/hub-cases.json');
+const earlierStories = await read('app/data/game-stories.json');
+const expandedStories = await read('app/data/story-expansion.json');
+const stories = { stories: [...earlierStories.stories, ...baseStories.stories, ...expandedStories.stories] };
 const articles = await read('app/data/hub-articles.json');
 const images = await read('app/data/game-images.json');
 const rows = catalog.games;
@@ -80,6 +83,23 @@ for (const story of stories.stories) {
   assert(publicRoutes.some((route) => route.initial.storyId === story.id));
   for (const kpi of story.kpis)
     assert(kpi.source && kpi.window && kpi.evidence && kpi.caveat);
+}
+for (const story of expandedStories.stories) {
+  assert(story.story.length >= 4 && story.timeline.length >= 3, 'Incomplete story: ' + story.title);
+  assert(story.story.reduce((n, section) => n + section.body.split(/\s+/).length, 0) >= 180, 'Narrative too thin: ' + story.title);
+  assert(story.sourceAccess.length >= 2, 'Missing source access ledger: ' + story.title);
+  assert(new Set(story.story.map(section => section.body)).size === story.story.length, 'Recycled narrative sections');
+  assert(story.playMode, 'Missing verified play mode: ' + story.title);
+  const sources = new Set(story.sourceUrls);
+  const accessed = new Set(story.sourceAccess.map(source => source.url));
+  assert.equal(sources.size, story.sourceUrls.length, 'Duplicate source: ' + story.title);
+  for (const url of sources) {
+    assert.equal(new URL(url).protocol, 'https:');
+    assert(accessed.has(url), 'Missing source access entry: ' + story.title + ' ' + url);
+  }
+  for (const source of story.sourceAccess) assert(source.url && source.checkedAt && source.access);
+  const citations = [...story.story.flatMap(section => section.sourceUrls), ...story.kpis.map(kpi => kpi.source), ...story.timeline.map(event => event.source), ...story.demand.sourceUrls, ...story.mechanism.sourceUrls];
+  for (const citation of citations) assert(sources.has(citation), 'Unregistered citation: ' + story.title + ' ' + citation);
 }
 for (const article of articles.articles) {
   assert(publicRoutes.some((route) => route.initial.guideId === article.id));
@@ -214,6 +234,13 @@ assert.equal(
   exportedStories.stories.length,
   publicRoutes.filter((route) => route.initial.storyId).length,
 );
+assert.equal(findStories('').length, exportedStories.stories.length);
+assert.equal(findStories('unmatched-story-query-789432').length, 0);
+assert(findStories('Gamer Girl Gale').some(story => story.id === 'minami-lane'), 'Search includes campaign channels');
+for (const story of expandedStories.stories.filter(story => story.kpis.length === 0)) {
+  const html = await readFile(new URL('../dist-static/case-studies/' + story.id + '/index.html', import.meta.url), 'utf8');
+  assert(html.includes('Commercial KPIs not disclosed in the consulted sources'), 'Missing KPI empty state');
+}
 console.log(
   'Validated hub: ' +
     rows.length +
@@ -223,7 +250,7 @@ console.log(
     niches.niches.length +
     ' niche briefs, ' +
     stories.stories.length +
-    ' new stories, ' +
+    ' total stories, ' +
     articles.articles.length +
     ' playbooks and rendered links.',
 );
