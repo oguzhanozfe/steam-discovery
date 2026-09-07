@@ -34,6 +34,7 @@ pnpm build:vercel
 pnpm exec tsc --noEmit
 pnpm validate:research
 pnpm validate:readability
+pnpm validate:citations
 pnpm audit
 ```
 
@@ -44,6 +45,8 @@ The production build prerenders research pages into `dist-static/`. Every page h
 Follow [CONTENT_MAINTENANCE.md](CONTENT_MAINTENANCE.md) to add research. Suggest a source or correction through [Issues](https://github.com/oguzhanozfe/steam-discovery/issues), including the canonical page, original source and date. Do not paste private analytics or credentials into an issue.
 
 The source data lives in `app/data/`. `app/data/reading-updates.json` holds the latest collection of notes and archive checks. Older observations keep their original dates. The Progress board remains in `app/data/progress-tracker.json` and is fetched from the public repository on page load without a token.
+
+References use the shared `app/source-references.tsx` renderer. Original article metadata, contextual source-use mappings, access limits and editorial contribution appear on the research pages. Targeted fresh checks and public corrections are recorded in `app/data/reference-checks.json`; older metadata is explicitly distinguished from fresh verification. `/about/#attribution` explains the policy. `validate:citations` checks citation coverage and export consistency, not plagiarism or factual truth.
 
 ## Refreshing the small-team hub
 

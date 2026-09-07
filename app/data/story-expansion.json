@@ -3554,7 +3554,7 @@
         },
         {
           "heading": "A launch preceded by repeated public testing",
-          "body": "HTMAG's launch breakdown traces a 2019 jam prototype, a 2020 Steam page, festival appearances and creator coverage before April 2022 Early Access. One early festival generated fewer wishlists than the preceding week. That uneven history is valuable: a long campaign contains weak beats as well as strong ones, not an uninterrupted rise.",
+          "body": "HTMAG's launch breakdown traces a 2019 jam prototype, a 2020 Steam page, festival appearances and creator coverage before April 2022 Early Access. It reports 485 wishlist additions across roughly six months before the first Autumn Steam Game Festival, followed by 384 during the festival week. These are different-length periods; they do not support our earlier interpretation of a weak festival. Later events, continued demo availability and creator coverage extended the campaign.",
           "sourceUrls": [
             "https://howtomarketagame.com/2022/05/04/how-peglin-made-1049413-in-1-week/"
           ]
@@ -3606,7 +3606,7 @@
           "when": "2020-10 (exact start day inconsistent in source)",
           "channel": "Steam Autumn Game Festival",
           "action": "Participated with a demo.",
-          "outcome": "384 wishlists during the festival week versus 485 in the preceding week.",
+          "outcome": "384 wishlist additions during the festival week, following 485 accumulated across roughly six earlier months.",
           "source": "https://howtomarketagame.com/2022/05/04/how-peglin-made-1049413-in-1-week/",
           "spend": "Not comprehensively disclosed; not assumed zero.",
           "caveat": "Documented chronology; no isolated channel-level sales attribution."

@@ -40,6 +40,8 @@ import radarSnapshot from './data/radar-snapshot.json';
 import hubConcepts from './data/solo-concepts.json';
 import hubNiches from './data/hub-niches.json';
 import hubArticles from './data/hub-articles.json';
+import referenceChecks from './data/reference-checks.json';
+import { ReferenceLink, ReferenceRegister, EditorialCredit, referenceMetadata, ideaReferences } from './source-references';
 
 type ModelTool = {
   name: string; title?: string; description: string;
@@ -75,6 +77,7 @@ function downloadDataset() {
     editorialUpdatedAt, gameStories, originalAnalysis, survivalDemoGdd, survivalEvidence,
     smallTeamHub: { radarSnapshot, catalogUrl: `${siteUrl}/data/radar-catalog.json`, soloConcepts: hubConcepts, nicheBriefs: hubNiches, playbooks: hubArticles },
     methodology: 'Reported sales, observed public metrics and third-party estimates are stored separately. Correlation is not labeled as attribution.',
+    referenceChecks, referenceMetadata,
     gameLibrary, cases, marketStats, reachDictionary, niches, quarterlyEvidence: { q1: q1MarketData, q2: q2MarketData }, survivalCraft: { ...survivalData, firstPersonConcept: { id: survivalDemoGdd.id, title: survivalDemoGdd.title, pitch: survivalDemoGdd.pitch, gddPath: '/survival-demo/' }, archivedEarlierConcept: { ...fpsSurvivalConcept, status: 'Superseded by city-escape-demo v0.2; retained as historical context only.' } }, marketPatterns, ideas, readingLibrary, newsletterLibrary, progressBoard, sources: sourceStack,
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
@@ -427,16 +430,18 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
               <div className="detail-columns">
                 <section className="timeline-panel">
                   <div className="panel-heading"><div><CalendarDays aria-hidden="true" /><span><small>CAMPAIGN TRACE</small><strong>Dated timeline</strong></span></div><span>{selected.events.length} sourced events</span></div>
-                  <ol className="timeline">{selected.events.map((event,index) => <li key={`${event.date}-${event.title}`}><div className="timeline-node"><span>{String(index + 1).padStart(2,'0')}</span></div><div className="event-card"><div className="event-meta"><time>{event.date}</time><span>{event.channel}</span></div><h4>{event.title}</h4><p>{event.action}</p><div className="event-result"><Zap aria-hidden="true" /><strong>{event.result}</strong></div><div className="event-footer"><div><CircleDollarSign aria-hidden="true" /><span><small>SPEND</small>{event.spend}</span></div><div className="evidence-row"><span className={`evidence evidence-${event.evidence.toLowerCase()}`}>{event.evidence}</span><a href={event.source} target="_blank" rel="noreferrer">{event.sourceLabel} <ArrowUpRight aria-hidden="true" /></a></div></div>{event.attribution && <p className="attribution"><AlertTriangle aria-hidden="true" /> {event.attribution}</p>}</div></li>)}</ol>
+                  <ol className="timeline">{selected.events.map((event,index) => <li key={`${event.date}-${event.title}`}><div className="timeline-node"><span>{String(index + 1).padStart(2,'0')}</span></div><div className="event-card"><div className="event-meta"><time>{event.date}</time><span>{event.channel}</span></div><h4>{event.title}</h4><p>{event.action}</p><div className="event-result"><Zap aria-hidden="true" /><strong>{event.result}</strong></div><div className="event-footer"><div><CircleDollarSign aria-hidden="true" /><span><small>SPEND</small>{event.spend}</span></div><div className="evidence-row"><span className={`evidence evidence-${event.evidence.toLowerCase()}`}>{event.evidence}</span><ReferenceLink url={event.source} label={event.sourceLabel} /></div></div>{event.attribution && <p className="attribution"><AlertTriangle aria-hidden="true" /> {event.attribution}</p>}</div></li>)}</ol>
                 </section>
                 <aside className="insight-panel">
-                  <div className="insight-title"><Target aria-hidden="true" /><span><small>SUCCESS MECHANISM</small><strong>Why it worked</strong></span></div>
+                  <div className="insight-title"><Target aria-hidden="true" /><span><small>EDITORIAL INTERPRETATION</small><strong>Our explanation to test</strong></span></div>
                   <ul>{selected.why.map((item) => <li key={item}><CheckCircle2 aria-hidden="true" /><span>{item}</span></li>)}</ul>
                   <div className="takeaway"><span>PORTABLE LESSON</span><p>{selected.lesson}</p></div>
                   <div className="caveat"><AlertTriangle aria-hidden="true" /><span><strong>Scope / causality caveat</strong><p>{selected.caveat}</p></span></div>
                   <p className="method-note"><strong>Evidence standard:</strong> Primary = developer/platform statement. Observed = public behavior metric. Reported = reputable source carrying a claim. Estimated = third-party model.</p>
                 </aside>
               </div>
+              <EditorialCredit />
+              <ReferenceRegister references={[...selected.events.map(event => ({ url: event.source, uses: [`Dated event: ${event.date} — ${event.title}`] })), ...(selected.technicalSource ? [{ url: selected.technicalSource, uses: ['Technical features and context; see inline limitations'] }] : [])]} />
             </article>}
           </div>
         </section>
@@ -464,6 +469,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
           <article className="idea-detail" key={selectedIdea.id}>
             <header className="idea-hero"><div><p>RECOMMENDATION #{selectedIdea.rank}</p><h3>{selectedIdea.name}</h3><span>{selectedIdea.tagline}</span></div><div className="idea-meta"><span>{selectedIdea.mode}</span><span>Delivery risk: {selectedIdea.risk}</span></div></header>
             <div className="idea-score-grid"><Score label="Market signal" value={selectedIdea.score.market} /><Score label="3-week build" value={selectedIdea.score.build} /><Score label="Clip potential" value={selectedIdea.score.clip} /><Score label="Differentiation" value={selectedIdea.score.differentiation} /></div>
+            <EditorialCredit kind="proposal" />
             <div className="idea-body"><div className="idea-main">
               <section className="thesis-block"><div><Target /><span><small>WHY THIS BET</small><strong>{selectedIdea.thesis}</strong></span></div><p>{selectedIdea.gap}</p></section>
               <section><div className="section-title"><Play /><span><small>CORE LOOP</small><strong>The smallest complete promise</strong></span></div><ol className="loop-list">{selectedIdea.loop.map((step,index) => <li key={step}><span>{index + 1}</span><p>{step}</p></li>)}</ol></section>
@@ -471,6 +477,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
               <div className="dual-panels"><section><div className="section-title"><Gamepad2 /><span><small>15-DAY DEMO</small><strong>Feature envelope</strong></span></div><ul className="check-list">{selectedIdea.mvp.map((item) => <li key={item}><CheckCircle2 />{item}</li>)}</ul></section><section><div className="section-title"><Code2 /><span><small>TECHNICAL PLAN</small><strong>Where to simplify</strong></span></div><ul className="check-list">{selectedIdea.tech.map((item) => <li key={item}><CheckCircle2 />{item}</li>)}</ul></section></div>
               <section><div className="section-title"><Megaphone /><span><small>MARKETING TEST</small><strong>Evidence before polish</strong></span></div><div className="marketing-list">{selectedIdea.marketing.map((item,index) => <div key={item}><span>{String(index + 1).padStart(2,'0')}</span><p>{item}</p></div>)}</div></section>
             </div><aside className="idea-aside"><section className="pros"><h4><CheckCircle2 /> Pros</h4><ul>{selectedIdea.pros.map((item) => <li key={item}>{item}</li>)}</ul></section><section className="cons"><h4><XCircle /> Cons</h4><ul>{selectedIdea.cons.map((item) => <li key={item}>{item}</li>)}</ul></section><section className="kill-gate"><span>KILL / PIVOT GATE</span><p>{selectedIdea.kill}</p></section></aside></div>
+            <ReferenceRegister references={ideaReferences(selectedIdea)} />
           </article>
         </section>
       )}
@@ -486,7 +493,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
           <div className="inline-note"><BookOpen /><p>Continue in the <button className="inline-link" onClick={() => openReading()}>Reading Room</button> for all {readingLibrary.length} article notes, publication profiles, original sources and disagreements.</p></div>
         </section>
       )}
-      <footer className="site-footer"><div><Radar /><strong>Steam Discovery</strong></div><p>Independent research · Not affiliated with Valve · Source library checked {readingUpdatedAt}; game snapshots retain their dates.<br />Game artwork belongs to its respective rights holders. Public evidence cannot prove organic attribution.</p><div className="footer-links"><a href="/about/">Sources & disclosures</a><a href="/feed.xml">Research feed</a><a href="https://github.com/oguzhanozfe/steam-discovery">GitHub</a><a href="/sitemap.xml">Sitemap</a><button onClick={downloadDataset}>Download research <ArrowRight /></button></div></footer>
+      <footer className="site-footer"><div><Radar /><strong>Steam Discovery</strong></div><p>Independent research · Not affiliated with Valve · Source library checked {readingUpdatedAt}; game snapshots retain their dates.<br />Game artwork belongs to its respective rights holders. Public evidence cannot prove organic attribution.</p><div className="footer-links"><a href="/about/#article-sources">Original articles & references</a><a href="/about/#attribution">Attribution & corrections</a><a href="/feed.xml">Research feed</a><a href="https://github.com/oguzhanozfe/steam-discovery">GitHub</a><a href="/sitemap.xml">Sitemap</a><button onClick={downloadDataset}>Download research <ArrowRight /></button></div></footer>
     </main>
   );
 }

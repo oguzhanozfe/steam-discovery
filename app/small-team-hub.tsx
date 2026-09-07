@@ -37,6 +37,7 @@ import {
   type RadarGame,
 } from './hub-model';
 import { SteamArtwork } from './steam-artwork';
+import { ReferenceLinks, ReferenceRegister, EditorialCredit, nicheReferences, conceptReferences, playbookReferences } from './source-references';
 
 const initialGames = snapshot.games as RadarGame[];
 const day = (value: string) =>
@@ -50,19 +51,7 @@ const number = (value: number | null | undefined) =>
 const niches = nicheData.niches;
 const date = '2026-09-08';
 function Links({ urls }: { urls: string[] }) {
-  return (
-    <div className="hub-sources">
-      {[...new Set(urls)].map((url) => (
-        <a key={url} href={url} target="_blank" rel="noreferrer">
-          {new URL(url, 'https://steam-discovery.vercel.app').hostname.replace(
-            /^www\./,
-            '',
-          )}
-          <ArrowUpRight size={14} />
-        </a>
-      ))}
-    </div>
-  );
+  return <ReferenceLinks urls={urls} className="hub-sources" />;
 }
 function Items({ items }: { items: string[] }) {
   return (
@@ -211,7 +200,7 @@ export function SmallTeamHub() {
               ))}
             </div>
             <p className="hub-caution">{niche.limitation}</p>
-            <Links urls={niche.sources} />
+            <ReferenceRegister references={nicheReferences(niche)} />
             <a
               className="hub-action"
               href={`/solo-lab/#${conceptData.concepts.find((concept) => concept.nicheId === niche.id)?.id ?? 'concepts'}`}
@@ -980,6 +969,7 @@ export function SoloLab() {
               {String(i + 1).padStart(2, '0')}
             </span>
             <h2>{concept.title}</h2>
+            <EditorialCredit kind="proposal" />
             <p className="solo-pitch">{concept.pitch}</p>
             <p>
               <strong>The spin:</strong> {concept.spin}
@@ -1043,6 +1033,7 @@ export function SoloLab() {
             <a className="hub-action" href={`/#${concept.nicheId}`}>
               Read the demand and competition brief →
             </a>
+            <ReferenceRegister references={conceptReferences(concept)} />
           </article>
         ))}
       </div>
@@ -1165,7 +1156,7 @@ export function DeveloperPlaybooks({ articleId }: { articleId?: string }) {
               {article.publishDate ?? 'date not displayed'} · Checked{' '}
               {article.checkedAt}
             </p>
-            <p className="hub-synopsis">{article.synopsis}</p>
+            <EditorialCredit sourceUrls={[article.url]} /><p className="hub-synopsis">{article.synopsis}</p>
             <h3>Key takeaways</h3>
             <Items items={article.takeaways} />
             <div className="hub-task-box">
@@ -1206,7 +1197,7 @@ export function DeveloperPlaybooks({ articleId }: { articleId?: string }) {
                 ...article.supportingSources.map((source) => source.url),
               ]}
             />
-            <p className="hub-muted">{article.access}</p>
+            <ReferenceRegister references={playbookReferences(article)} /><p className="hub-muted">{article.access}</p>
           </article>
         ))}
       </div>

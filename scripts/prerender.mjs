@@ -1,7 +1,7 @@
 import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { render, publicRoutes, structuredData, researchIndex, readingMetadata } from '../.prerender/entry-prerender.js';
+import { render, publicRoutes, structuredData, researchIndex, readingMetadata, referenceMetadata, gddReferences, sourceMetadata } from '../.prerender/entry-prerender.js';
 
 const project = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const out = resolve(project, 'dist-static');
@@ -34,6 +34,7 @@ await writeFile(resolve(out, 'robots.txt'), `User-agent: *\nAllow: /\n\nUser-age
 await mkdir(resolve(out, 'data'), { recursive: true });
 await writeFile(resolve(out, 'data/research-index.json'), JSON.stringify(researchIndex, null, 2));
 await writeFile(resolve(out, 'data/readings.json'), JSON.stringify(readingMetadata, null, 2));
+await writeFile(resolve(out, 'data/reference-metadata.json'), JSON.stringify({ sourceCheckDate: '2026-09-08', warning: 'Usage records aggregate editorial locations, not independent verification of every claim. Missing metadata is explicitly unknown.', sources: referenceMetadata }, null, 2));
 await cp(resolve(project, 'app/data/reading-updates.json'), resolve(out, 'data/reading-updates.json'));
 const notes = [...readingMetadata].sort((a, b) => (b.sourceCheckedAt ?? '').localeCompare(a.sourceCheckedAt ?? '') || (b.date ?? '').localeCompare(a.date ?? '')).slice(0, 30);
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
@@ -58,6 +59,7 @@ Cite the relevant canonical research page and the underlying original source. Re
 `);
 
 await cp(resolve(project, 'app/data/source-audit.json'), resolve(out, 'data/source-audit.json'));
+await cp(resolve(project, 'app/data/reference-checks.json'), resolve(out, 'data/reference-checks.json'));
 for (const filename of ['game-stories.json', 'original-analysis.json', 'survival-demo-gdd.json', 'survival-validation-evidence.json', 'hub-cases.json', 'story-expansion.json', 'hub-niches.json', 'hub-articles.json', 'solo-concepts.json', 'radar-snapshot.json']) await cp(resolve(project, `app/data/${filename}`), resolve(out, `data/${filename}`));
 const baseStories = JSON.parse(await readFile(resolve(project, 'app/data/game-stories.json'), 'utf8'));
 const hubStories = JSON.parse(await readFile(resolve(project, 'app/data/hub-cases.json'), 'utf8'));
@@ -66,13 +68,14 @@ await writeFile(resolve(out, 'data/game-stories.json'), JSON.stringify({ ...base
 const gdd = JSON.parse(await readFile(resolve(project, 'app/data/survival-demo-gdd.json'), 'utf8'));
 const readableKey = key => key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, first => first.toUpperCase());
 function documentValue(value, level = 2) {
+  if (value == null) return 'Not recorded.\n\n';
   if (typeof value === 'string') return `${value}\n\n`;
   if (typeof value === 'number') return `${value}\n\n`;
   if (Array.isArray(value)) return value.map((item, index) => typeof item === 'object' ? `${'#'.repeat(Math.min(level, 5))} ${item.name ?? item.title ?? item.screen ?? item.system ?? item.role ?? item.metric ?? item.days ?? item.when ?? item.item ?? item.stage ?? item.beat ?? item.label ?? item.where ?? `Item ${index + 1}`}\n\n${documentValue(item, Math.min(level + 1, 5))}` : `- ${item}\n`).join('') + '\n';
   return Object.entries(value).map(([key, item]) => `${'#'.repeat(Math.min(level, 4))} ${readableKey(key)}\n\n${documentValue(item, level + 1)}`).join('');
 }
 const { title, subtitle, sourceUrls, ...mainDocumentFields } = gdd;
-const documentFields = { ...mainDocumentFields, sourceUrls };
+const documentFields = { ...mainDocumentFields, sourceUrls, referencesAndUsage: gddReferences().map(ref => ({ ...sourceMetadata(ref.url), usedFor: ref.uses })) };
 await writeFile(resolve(out, 'data/survival-demo-gdd.md'), `# ${title}\n\n${subtitle}\n\nSource: ${origin}/survival-demo/\n\n${documentValue(documentFields)}`);
 await writeFile(resolve(out, '404.html'), '<!doctype html><html lang="en" class="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0e151e"><meta name="robots" content="noindex"><title>Page not found — Steam Discovery</title><style>html{color-scheme:dark;background:#0e151e;color:#e8eef3;font:16px/1.7 system-ui}body{max-width:42rem;margin:12vh auto;padding:24px}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.2}p{color:#adbbc6}a{display:inline-block;color:#c6e780;padding:12px 0;text-underline-offset:4px}a:focus-visible{outline:2px solid #c6e780;outline-offset:4px}</style></head><body><main><h1>Page not found</h1><p>This research page does not exist.</p><a href="/">Return to Steam Discovery</a></main></body></html>');
 console.log(`Pre-rendered ${publicRoutes.length} public research pages; sitemap, robots and true 404 ready.`);

@@ -10,6 +10,15 @@ Check the publication archives already listed in `app/data/newsletters.json`, `r
 6. Update existing claims only when new evidence supports the change, preserving earlier snapshots and recording the correction. Never fabricate dates, authors, metrics, endorsements, ranking guarantees or source access.
 7. Build, type-check, validate research metadata and run the dependency audit. Inspect the changed files before committing. Publish the validated version to the existing Vercel project, then check the live home, new note, feed, sitemap, metadata and progress endpoint.
 
+## Attribution is required for every update
+
+- Cite the exact original article or data query beside every factual claim, metric and timeline event. Keep original titles distinct from Steam Discovery headlines; preserve author, publication date, observation date and access limits.
+- Use the shared `ReferenceLink`, `ReferenceLinks` and `ReferenceRegister` components. Pass explicit per-source usage from the source-bearing record, not an inferred association by domain. Include every inline citation in the page register and structured metadata.
+- Original reporting, quotes and source arguments remain credited to the original creator. Our synthesis, comparisons, concepts, technical scope and test thresholds must be labeled as editorial interpretation or proposals. Do not imply a cited author endorsed them.
+- Write independent, concise analysis. Do not copy or translate entire articles, closely paraphrase their sequence, reproduce paywalled sections, or treat attribution as permission to republish. Mark any necessary short quotation visibly and link it immediately.
+- Only record a freshly verified title/author/date/access in `reference-checks.json` after checking the original. Do not guess titles from URL slugs, assign authors from domains, or present preview access as full reading.
+- Document substantive corrections publicly. Static citation checks detect omissions, not plagiarism or factual truth; compare new prose with the consulted sources before publication. Do not claim a blanket originality certification.
+
 No content or ranking instructions should be hidden for crawlers. Visible text and structured data must agree. The llms.txt file is an optional reading aid; it does not guarantee inclusion in AI answers. GDD and Progress remain secondary, accessible project tools with noindex metadata.
 
 Keep dependency security fixes narrowly scoped and preserve the lockfile. `pnpm-workspace.yaml` documents temporary patched transitive versions. Remove overrides only after upstream packages provide the fixes and the audit, production build and local development smoke checks pass.

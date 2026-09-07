@@ -7,6 +7,7 @@ import { htmagePosts, sourceStack } from './research-data';
 import { gameLibrary, latestReadingUpdates, matchesReading, newsletterLibrary, newReadingCount, normalizeSearch, readingLibrary, readingStarterPath, readingTopics, readingUpdatedAt, type ReadingTopic } from './discovery-data';
 import { SourceLink } from './explorer';
 import { readingPath } from './site-routes';
+import { ReferenceRegister, readingReferences } from './source-references';
 
 const publicationLabels: Record<string, string> = {
   'How To Market A Game': 'HTMAG · Chris Zukowski',
@@ -41,6 +42,7 @@ export function ReadingRoom({ query, setQuery, topic, setTopic, explore, article
         const officialUrl = article.gameSources?.[game];
         return knownGame ? <button key={game} onClick={() => explore(knownGame.title)} title={`Find ${game} in the game library`}>{game} <ArrowRight /></button> : officialUrl ? <a key={game} href={officialUrl} target="_blank" rel="noreferrer">{game} · Steam <ArrowUpRight /></a> : <span key={game}>{game}</span>;
       })}</div>
+      {articleId && <ReferenceRegister references={readingReferences(article)} />}
       <div className="reading-bottom"><a className="source-link" href={readingPath(article.id)}>Research note ↗</a><SourceLink url={article.url} label="Read original" /></div>
       {!!article.sourceUrls?.filter(url => url !== article.url).length && <div className="reading-supporting"><span>Supporting sources</span>{article.sourceUrls.filter(url => url !== article.url).map(url => <SourceLink key={url} url={url} label={new URL(url).hostname.replace(/^www\./, '')} />)}</div>}
       <p className="reading-access">{article.access}</p>

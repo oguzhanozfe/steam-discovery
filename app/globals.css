@@ -1579,6 +1579,29 @@ textarea::placeholder{ color:var(--muted-foreground); opacity:1; }
 .hub-caution{ background:#30291e; color:#efcd93; border-color:#8d7046; }
 .hub-view p.hub-caution{ background:#30291e; color:#efcd93; border-color:#8d7046; }
 
+/* Attribution remains part of the readable page, not a hover-only footnote. */
+.reference-register { margin-block:2.5rem; padding:clamp(1.25rem,2vw,2rem); border:1px solid var(--border); border-radius:.75rem; background:var(--card); min-width:0; }
+.reference-register h2,.hub-view .reference-register h2 { margin:0 0 1rem; font-size:1.375rem; line-height:1.4; }
+.reference-register>ol { margin:1.5rem 0 0; padding-left:1.5rem; list-style:decimal; }
+.reference-register>ol>li { padding:1.25rem 0; border-top:1px solid var(--border); overflow-wrap:anywhere; }
+.reference-register>ol>li::marker { color:var(--text-link); font-variant-numeric:tabular-nums; }
+.reference-register p,.hub-view .reference-register p { margin:.6rem 0; font-size:1rem; line-height:1.75; max-width:75ch; color:var(--text-secondary); }
+.reference-register .reference-byline,.reference-register .reference-access,
+.hub-view .reference-register .reference-byline,.hub-view .reference-register .reference-access { font-size:.875rem; line-height:1.65; color:var(--muted-foreground); }
+.reference-register .source-link { font-size:1rem; line-height:1.6; font-weight:650; color:var(--text-link); }
+.reference-url { display:block; margin-top:.75rem; font-size:.875rem; line-height:1.6; color:var(--muted-foreground); overflow-wrap:anywhere; text-decoration:underline; text-underline-offset:.2em; }
+.reference-register strong { color:var(--foreground); }
+.editorial-credit { padding:1.25rem 1.5rem; margin-block:1.5rem; border-left:3px solid var(--text-link); background:var(--surface-raised); border-radius:0 .5rem .5rem 0; font-size:1rem; }
+.editorial-credit>strong { display:block; margin-bottom:.5rem; color:var(--foreground); }
+.editorial-credit p { margin:0 0 .75rem; max-width:78ch; font-size:1rem; line-height:1.75; color:var(--text-secondary); }
+.editorial-credit>a { font-size:.875rem; color:var(--text-link); text-decoration:underline; }
+.editorial-citations,.hub-sources { align-items:flex-start; }
+.source-link,.editorial-citations a,.hub-sources a { max-width:100%; white-space:normal; overflow-wrap:anywhere; line-height:1.6; align-items:flex-start; }
+.source-link>svg,.editorial-citations a>svg,.hub-sources a>svg { flex-shrink:0; margin-top:.25em; }
+.benchmark-detail .reference-register { margin:1.25rem; padding:1rem; }
+.hub-niche .reference-register,.solo-card .reference-register,.hub-playbook .reference-register { padding:1rem; }
+@media(max-width:760px) { .editorial-credit { padding:1rem; } .reference-register>ol { padding-left:1.2rem; } .reference-register { padding:1rem; } }
+
 /* Comfortable research reading: prose, evidence and controls have distinct scales. */
 .hub-view,.editorial-view { font-size:var(--text-body); line-height:1.75; }
 .editorial-prose { max-width:var(--reading-measure); font-size:var(--text-reading); line-height:1.85; }

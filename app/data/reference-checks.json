@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-09-08",
+  "method": "Targeted source and wording checks, not a site-wide plagiarism certification. Original publication dates and historical metric windows are separate from this check date.",
+  "sources": [
+    {
+      "url": "https://howtomarketagame.com/2026/01/27/what-the-hell-happened-in-2025/",
+      "title": "What the hell happened in 2025?",
+      "author": null,
+      "publishedAt": "2026-01-27",
+      "publication": "How To Market A Game",
+      "access": "Public article text reviewed; linked premium talk not reviewed",
+      "checkedAt": "2026-09-08",
+      "scope": "2025 genre cohort counts, review threshold and tag-based denominator limitations. Demo-fit ratings and production recommendations are our interpretation."
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/05/14/2026-q1-games/",
+      "title": "2026 Q1 Games",
+      "author": null,
+      "publishedAt": "2026-05-14",
+      "publication": "How To Market A Game",
+      "access": "Public article text reviewed",
+      "checkedAt": "2026-09-08",
+      "scope": "Published Q1 hit counts and cohort methodology. Missing genre-supply denominators are not supplied by this source."
+    },
+    {
+      "url": "https://howtomarketagame.com/2022/06/14/20-minutes-till-dawn/",
+      "title": "20 Minutes Till Dawn’s half-million-dollar week",
+      "author": "Chris Zukowski",
+      "publishedAt": "2022-06-14",
+      "publication": "How To Market A Game",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Developer-supplied launch data and chronology; returns remain separate from reported units.",
+      "wordingCompared": true,
+      "authorNote": "Author identified from publisher credits/About page and named analysis, not a visible byline on every article."
+    },
+    {
+      "url": "https://howtomarketagame.com/2022/05/04/how-peglin-made-1049413-in-1-week/",
+      "title": "How Peglin Made $1,049,413 in 1 week.",
+      "author": "Chris Zukowski",
+      "publishedAt": "2022-05-04",
+      "publication": "How To Market A Game",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Launch interview, early wishlist periods, demo availability and regional publishing. The 485 earlier wishlists cover roughly six months, not one week.",
+      "wordingCompared": true,
+      "authorNote": "Author identified from publisher credits/About page and named analysis, not a visible byline on every article."
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/tcg-card-shop-simulator-the-second",
+      "title": "TCG Card Shop Simulator: the second 'surprise hit' Steam sim of 2024?",
+      "author": "Simon Carless",
+      "publishedAt": "2024-09-24",
+      "publication": "GameDiscoverCo",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Analyst estimates and prologue chronology, not audited developer financial statements.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-peak-sold-45m-copies-in-less",
+      "title": "How Peak sold 4.5m copies in less than a month...",
+      "author": "Simon Carless",
+      "publishedAt": "2025-07-08",
+      "publication": "GameDiscoverCo",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Interview with Nick Kaman; launch wishlists, reveal timing, pricing and production context. Channel effects are not isolated.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/the-mysterious-world-of-diy-indie-marketing",
+      "title": "The Mysterious World of DIY Indie Marketing",
+      "author": "David Wehle",
+      "publishedAt": "2017-09-18",
+      "publication": "Game Developer",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "First-person marketing account: Reddit, website visits, signups and launch interest. Not evidence of later sales.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/deep-dive-how-shapez-io-went-from-web-game-to-1-million-steam-hit",
+      "title": "Deep dive: how Shapez.io went from web game to $1 million Steam hit",
+      "author": "Simon Carless",
+      "publishedAt": "2021-08-18",
+      "publication": "Game Developer / GameDiscoverCo",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Reporting based on Tobias Springer’s supplied data; web-to-Steam chronology, creator sponsorship and engagement.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://howtomarketagame.com/2024/12/18/minami-lane-6-months-of-development-750k-revenue/",
+      "title": "Minami Lane: 6 months of development, $750K revenue",
+      "author": "Chris Zukowski",
+      "publishedAt": "2024-12-18",
+      "publication": "How To Market A Game",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Developer interview on six months of production, launch interest, Steam gross and marketing revenue share. Gross is not profit.",
+      "wordingCompared": true,
+      "authorNote": "Author identified from publisher credits/About page and named analysis, not a visible byline on every article."
+    },
+    {
+      "url": "https://howtomarketagame.com/2022/08/04/inspiration-thursday-august-4th/",
+      "title": "Inspiration Thursday August 4th",
+      "author": "Chris Zukowski",
+      "publishedAt": "2022-08-04",
+      "publication": "How To Market A Game",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Soulstone Survivors section: reused code, demo-month wishlist additions and demo playtime. Prelaunch interest, not commercial returns.",
+      "wordingCompared": true,
+      "authorNote": "Author identified from publisher credits/About page and named analysis, not a visible byline on every article."
+    },
+    {
+      "url": "https://howtomarketagame.com/2021/10/17/how-choo-choo-charles-earned-wishlists/",
+      "title": "How Choo-Choo Charles earned 90,000 wishlists in 2 weeks",
+      "author": "Chris Zukowski",
+      "publishedAt": "2021-10-17",
+      "publication": "How To Market A Game",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Developer-supplied prelaunch campaign chronology with overlapping social channels. Not channel-attributed sales.",
+      "wordingCompared": true,
+      "authorNote": "Author identified from publisher credits/About page and named analysis, not a visible byline on every article."
+    },
+    {
+      "url": "https://www.inverse.com/input/gaming/mukul-negi-rayll-fears-to-fathom-home-alone-norwood-hitchhike",
+      "title": "Meet the teen game developer crowdsourcing fans’ IRL horror stories",
+      "author": "Jack Needham",
+      "publishedAt": "2021-10-27",
+      "publication": "Input / Inverse",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Reporting on Fears to Fathom free downloads and community-submitted stories; free downloads are not paid sales.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://gameworldobserver.com/2026/05/21/case-study-how-dreadmoor-reached-200000-wishlists-and-where-they-came-from",
+      "title": "Case Study: How DREADMOOR Reached 200,000+ Wishlists and Where They Came From",
+      "author": "Irene Borodina (guest author); Alexander Semenov (page byline)",
+      "publishedAt": "2026-05-21",
+      "publication": "Game World Observer",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Publisher-authored campaign account combining paid and unpaid activity. Includes a preexisting wishlist base; not a controlled attribution study.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://gameifyouare.com/case-study-design-and-conjure/",
+      "title": "Case Study: Design and Conjure",
+      "author": "Game If You Are; no individual author displayed",
+      "publishedAt": null,
+      "publication": "Game If You Are",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Agency case study on combined sponsored content and festival activity. Publication date and exact festival edition are undisclosed.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://www.derek-lieu.com/blog/2026/8/4/game-trailer-makeover-sheepherds",
+      "title": "Game Trailer Makeover - Sheepherds",
+      "author": "Derek Lieu",
+      "publishedAt": "2026-08-08",
+      "publication": "Derek Lieu",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Trailer communication critique; our production checklist is a separate application. Date follows displayed byline, not URL.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://www.derek-lieu.com/blog/2026/4/12/game-trailer-makeover-dosa-divas",
+      "title": "Game Trailer Makeover - Dosa Divas",
+      "author": "Derek Lieu",
+      "publishedAt": "2026-04-13",
+      "publication": "Derek Lieu",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Trailer messaging and player-motivation critique; not measured sales lift. Date follows displayed byline, not URL.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://www.gamedeveloper.com/production/postmortem-inkbound-s-journey-in-early-access",
+      "title": "Postmortem: The journey of Inkbound through Early Access",
+      "author": "Mark Cooke",
+      "publishedAt": "2024-06-11",
+      "publication": "Game Developer",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Developer postmortem on Early Access changes and play patterns. Solo/co-op percentages refer to runs, not unique players.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/freerunners-steam-next-fest-postmortem",
+      "title": "Freerunners Steam Next Fest Postmortem",
+      "author": "James Rowbotham",
+      "publishedAt": "2024-02-22",
+      "publication": "Game Developer",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Developer festival account. Its written wishlist delta differs from subtraction of the endpoints; our note preserves this discrepancy.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/putting-your-game-in-a-showcase-5",
+      "title": "Putting your game in a showcase? 5 key Qs to ask...",
+      "author": "Simon Carless",
+      "publishedAt": "2026-08-11",
+      "publication": "GameDiscoverCo",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Analyst framework for evaluating showcases and coverage limits. Does not guarantee a showcase placement or conversion rate.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://gameworldobserver.com/?p=27699",
+      "title": "How indie decorating sim Urban Jungle generated 90k wishlists on Steam thanks to fests, demos, and some luck",
+      "author": "Evgeny Obedkov",
+      "publishedAt": "2025-01-20",
+      "publication": "Game World Observer",
+      "access": "Public article text reviewed; linked paid datasets and external announcements not independently audited",
+      "checkedAt": "2026-09-08",
+      "scope": "Report based on developer posts; festival/demo history and prior team experience. It does not isolate the effect of one channel.",
+      "wordingCompared": true
+    }
+  ],
+  "corrections": [
+    {
+      "id": "peglin-wishlist-window",
+      "correctedAt": "2026-09-08",
+      "page": "/case-studies/peglin/",
+      "source": "https://howtomarketagame.com/2022/05/04/how-peglin-made-1049413-in-1-week/",
+      "previous": "Compared 384 festival-week wishlists against 485 in the preceding week and inferred a weak festival.",
+      "correction": "The earlier 485 accumulated across roughly six months. Corrected the narrative and event outcome; removed the unsupported weak-festival inference."
+    }
+  ],
+  "wordingReviewCount": 18
+}

@@ -3,6 +3,7 @@ import { ArrowRight, Download } from 'lucide-react';
 import { survivalDemoGdd as gdd, gameStories, storyPath } from './editorial-data';
 import { EvidenceLinks } from './editorial';
 import { SteamArtwork } from './steam-artwork';
+import { ReferenceRegister, EditorialCredit, gddReferences } from './source-references';
 
 function Section({ id, number, title, children }: { id: string; number: string; title: string; children: ReactNode }) {
   return <section id={id} className="editorial-section"><p className="section-kicker">{number} · CITY ESCAPE GDD</p><h2>{title}</h2>{children}</section>;
@@ -82,6 +83,6 @@ export function CityEscapeGdd() {
       <p className="editorial-lead">{gdd.distribution.committedDeliverable}</p><p>{gdd.distribution.candidate}</p><div className="city-checks">{gdd.distribution.constraints.map(rule=><details className="city-check" key={rule.id}><summary>{rule.claim}</summary><div><p>{rule.definition}</p><p>{rule.caveat}</p><EvidenceLinks urls={[rule.sourceURL]} /></div></details>)}</div>
       <h3>Risk register</h3><dl className="editorial-facts">{gdd.risks.map(risk=><div key={risk.risk}><dt>{risk.risk}<br /><span className="editorial-meta">{risk.owner}</span></dt><dd>{risk.response}<p><b>First cut:</b> {risk.cut}</p></dd></div>)}</dl><h3>After this demo</h3><Facts rows={gdd.nextSteps.map(step=>[step.stage,step.decision])} />
     </Section>
-    <p className="editorial-method">{gdd.status} Vendor facts and game metrics carry citations; the scenario, UI, balance and test plan are our proposed application to the team's brief.</p><details className="editorial-sources"><summary>Full source register · {gdd.sourceUrls.length} references</summary><ol>{gdd.sourceUrls.map(url=><li key={url}><a href={url} target="_blank" rel="noreferrer">{url}</a></li>)}</ol></details><div className="editorial-next"><a href="/data/survival-demo-gdd.md" download>Download complete GDD <Download /></a><a href="/">Back to game stories <ArrowRight /></a></div>
+    <p className="editorial-method">{gdd.status} Vendor facts and game metrics carry citations; the scenario, UI, balance and test plan are our proposed application to the team's brief.</p><EditorialCredit kind="proposal" /><ReferenceRegister references={gddReferences()} /><div className="editorial-next"><a href="/data/survival-demo-gdd.md" download>Download complete GDD <Download /></a><a href="/">Back to game stories <ArrowRight /></a></div>
   </section>;
 }

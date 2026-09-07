@@ -6,9 +6,10 @@ import { Input } from '@/components/ui/input';
 import { categories, compactNumber, defaultExplorerFilters, gameLibrary, type ExplorerFilters, type GameRecord } from './discovery-data';
 import { SteamArtwork } from './steam-artwork';
 import { gamePath } from './site-routes';
+import { ReferenceLink, ReferenceRegister, gameReferences } from './source-references';
 
 export function SourceLink({ url, label = 'Source' }: { url: string; label?: string }) {
-  return <a className="source-link" href={url} target="_blank" rel="noreferrer">{label}<ArrowUpRight aria-hidden="true" /></a>;
+  return <ReferenceLink url={url} label={label} />;
 }
 export function EvidenceBadge({ value }: { value: string }) {
   const kind = /estimat|model/i.test(value) ? 'Estimated' : /observ|store|SteamDB/i.test(value) ? 'Observed' : /primary|first.party|developer milestone|developer report/i.test(value) ? 'Primary' : 'Reported';
@@ -75,7 +76,7 @@ export function Explorer({ filters, setFilters, visible, selectedId, select, sho
         {selected.storyId && <div className="deep-case-link"><a className="editorial-primary-link" href={`/case-studies/${selected.storyId}/`}>Read the full game story, KPIs & build transfer <ArrowRight /></a></div>}
         {selected.caseId && <div className="deep-case-link"><Button onClick={() => openCase(selected.caseId!)}>Open the technical + marketing deep dive <ArrowRight /></Button></div>}
         <section className="compact-timeline"><h4><Clock3 /> What happened, when and where</h4>{selected.events.map((event, index) => <article key={`${event.date}-${index}`}><div className="compact-event-meta"><span>{String(index + 1).padStart(2, '0')}</span><time>{event.date}</time></div><strong>{event.channel}</strong><p>{event.action}</p><p className="compact-result">{event.result}</p><small>Spend: {event.spend}</small><div><EvidenceBadge value={event.evidence} /><SourceLink url={event.source} /></div></article>)}</section>
-        <details className="all-sources"><summary><ExternalLink /> All sources for this record ({selected.sources.length})</summary><ol>{selected.sources.map((source, index) => <li key={source}><SourceLink url={source} label={`${index + 1}. ${new URL(source).hostname.replace('www.', '')}`} /></li>)}</ol></details>
+        <ReferenceRegister references={gameReferences(selected)} />
       </aside>}
     </div>
   </section>;
