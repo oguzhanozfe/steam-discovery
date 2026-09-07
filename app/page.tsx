@@ -22,7 +22,7 @@ import { MarketPeriods, marketPeriods, type MarketPeriod } from './market-period
 import q1MarketData from './data/market-q1.json';
 import q2MarketData from './data/market-q2.json';
 import { ResearchBrief, defaultBrief, type BriefInput } from './research-brief';
-import { categories, defaultExplorerFilters, filterGames, gameLibrary, marketPatterns, newsletterLibrary, readingLibrary, readingTopics, type ExplorerFilters, type ReadingTopic } from './discovery-data';
+import { categories, defaultExplorerFilters, filterGames, gameLibrary, marketPatterns, newsletterLibrary, readingLibrary, readingUpdatedAt, readingTopics, type ExplorerFilters, type ReadingTopic } from './discovery-data';
 import { viewPaths, publicRoutes, siteUrl, type InitialRoute } from './site-routes';
 import survivalData from './data/survival-research.json';
 import fpsSurvivalConcept from './data/fps-survival-concept.json';
@@ -52,13 +52,10 @@ type CaseFilter = (typeof filters)[number];
 const navItems: { id: ResearchView; label: string; caption: string; icon: typeof Radar }[] = [
   { id: 'stories', label: 'Game Stories', caption: 'Digested cases & lessons', icon: BookOpen },
   { id: 'analysis', label: 'Original Analysis', caption: 'Evidence into decisions', icon: Radar },
-  { id: 'gdd', label: 'Demo GDD', caption: 'Our survival sprint', icon: Code2 },
+  { id: 'reading', label: 'Sources & Reading', caption: 'New research & references', icon: BookOpen },
   { id: 'explorer', label: 'Game Explorer', caption: 'Find your comparables', icon: Compass },
   { id: 'market', label: 'Market Pulse', caption: '2025 + 2026 quarters', icon: BarChart3 },
   { id: 'survival', label: 'Survival Craft', caption: 'Demand meets scope', icon: Trees },
-  { id: 'ideas', label: 'Build Lab', caption: '5 concepts + your brief', icon: Lightbulb },
-  { id: 'playbook', label: 'Sprint Plan', caption: 'How to execute', icon: CalendarDays },
-  { id: 'progress', label: 'Progress', caption: 'Status & milestones', icon: CheckCircle2 },
 ];
 const signalClasses: Record<GameCase['signal'], string> = {
   Viral: 'signal signal-viral', Breakout: 'signal signal-breakout',
@@ -373,7 +370,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         <div className="top-metrics" aria-label="Dataset summary">
           <div><strong>{gameLibrary.length}</strong><span>game records</span></div>
           <div><strong>{gameStories.length}</strong><span>digested stories</span></div>
-          <div className="freshness"><span className="live-dot" /><strong>03 SEP 26</strong><span>latest research</span></div>
+          <div className="freshness"><span className="live-dot" /><strong>{readingUpdatedAt}</strong><span>source check</span></div>
         </div>
       </header>
 
@@ -381,7 +378,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         <div className="view-tabs">{navItems.map((item) => { const Icon = item.icon; return <a key={item.id} href={item.id === 'market' ? `/market/${marketPeriod}/` : viewPaths[item.id]} className={view === item.id ? 'is-active' : ''} aria-current={view === item.id ? 'page' : undefined}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.caption}</small></span></a>; })}</div>
         <Button variant="outline" size="sm" onClick={downloadDataset}><ArrowDownToLine aria-hidden="true" /> Export JSON</Button>
       </nav>
-      <nav className="research-secondary" aria-label="Supporting research"><a href="/case-studies/">Earlier campaign timelines</a><a href="/reading/">Source notes & reading archive</a><a href="/about/">Methodology & disclosures</a></nav>
+      <nav className="research-secondary" aria-label="Supporting research"><a href="/case-studies/">Campaign timelines</a><a href="/about/#sources">Reference library</a><a href="/about/">Methodology</a><details className="project-menu"><summary>Project workspace</summary><div><a href="/survival-demo/">Demo GDD</a><a href="/progress/">Progress & milestones</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a></div></details></nav>
 
       <div id="research-content" tabIndex={-1} />
       {view === 'stories' && <GameStories storyId={storyId} query={storyQuery} setQuery={setStoryQuery} />}
@@ -476,10 +473,10 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
           <section className="timing-grid">{steamTiming.map((item) => <div key={item.title}><span>{item.status}</span><strong>{item.title}</strong><p>{item.detail}</p><SourceLink url={item.url} label="Official source" /></div>)}</section>
           <div className="playbook-layout"><section className="surface-panel sprint-panel"><div className="surface-heading"><div><CalendarDays /><span><small>EXECUTION</small><strong>15 working days</strong></span></div></div><ol>{sprint.map((item,index) => <li key={item.days}><span className="sprint-num">{String(index + 1).padStart(2,'0')}</span><div><time>Days {item.days} · {item.owner}</time><strong>{item.title}</strong><p>{item.exit}</p></div></li>)}</ol><div className="scope-ban"><ShieldAlert /><div><strong>Do not build in this sprint</strong><p>Public matchmaking, dedicated servers, crossplay, runtime procgen, an open world, a meta tree, Content Warning-grade video/audio encoding, R.E.P.O.-grade multi-object network physics, or more than one map.</p></div></div></section><aside className="surface-panel measurement-panel"><div className="surface-heading"><div><Target /><span><small>VALIDATION LADDER</small><strong>Measure the next decision</strong></span></div></div><ol><li><b>01</b><span><strong>Awareness</strong><p>Short views, hold rate, comments that restate the hook.</p></span></li><li><b>02</b><span><strong>Intent</strong><p>Tagged store visits, follows, wishlists and 7-day baseline lift.</p></span></li><li><b>03</b><span><strong>Trial</strong><p>Unique demo users, CCU, median session, completion, replay.</p></span></li><li><b>04</b><span><strong>Launch</strong><p>Units, gross revenue, reviews, refund rate and peak CCU.</p></span></li></ol><div className="inline-note"><AlertTriangle /><p>A 100K-view clip is evidence for the hook only. It becomes marketing evidence when tagged traffic or the wishlist baseline moves with it.</p></div></aside></div>
           <div className="report-download"><div><h3>The complete decision report</h3><p>Market definitions, deep cases, five concept briefs, technical scope, source curriculum and quarterly methodology.</p></div><a href="/Steam-Indie-2026-Decision-Report.md" download><ArrowDownToLine /> Download report</a></div>
-          <div className="inline-note"><BookOpen /><p>Continue in the <button className="inline-link" onClick={() => openReading()}>Reading Room</button> for all 31 article notes, publication profiles, original sources and disagreements.</p></div>
+          <div className="inline-note"><BookOpen /><p>Continue in the <button className="inline-link" onClick={() => openReading()}>Reading Room</button> for all {readingLibrary.length} article notes, publication profiles, original sources and disagreements.</p></div>
         </section>
       )}
-      <footer className="site-footer"><div><Radar /><strong>Steam Discovery</strong></div><p>Independent research · Not affiliated with Valve · New stories checked 3 September 2026; older snapshots retain their dates.<br />Game artwork belongs to its respective rights holders. Public evidence cannot prove organic attribution.</p><div className="footer-links"><a href="/about/">Sources & disclosures</a><a href="/sitemap.xml">Sitemap</a><button onClick={downloadDataset}>Download research <ArrowRight /></button></div></footer>
+      <footer className="site-footer"><div><Radar /><strong>Steam Discovery</strong></div><p>Independent research · Not affiliated with Valve · Source library checked {readingUpdatedAt}; game snapshots retain their dates.<br />Game artwork belongs to its respective rights holders. Public evidence cannot prove organic attribution.</p><div className="footer-links"><a href="/about/">Sources & disclosures</a><a href="/feed.xml">Research feed</a><a href="https://github.com/oguzhanozfe/steam-discovery">GitHub</a><a href="/sitemap.xml">Sitemap</a><button onClick={downloadDataset}>Download research <ArrowRight /></button></div></footer>
     </main>
   );
 }

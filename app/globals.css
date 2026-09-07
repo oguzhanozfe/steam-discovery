@@ -1352,3 +1352,12 @@ textarea { resize: vertical; }
   .progress-card,.progress-card-toggle>svg { transition:none; }
   .progress-milestone-panel { animation:none; }
 }
+
+/* Secondary project tools leave the research navigation focused. */
+.project-menu { position: relative; margin-left: auto; font-size: .875rem; }
+.project-menu summary { cursor: pointer; padding: .35rem .6rem; }
+.project-menu > div { position: absolute; right: 0; top: 100%; z-index: 30; min-width: 13rem; padding: .75rem; display: grid; gap: .8rem; background: var(--background, #fff); border: 1px solid var(--border, #d5dde2); border-radius: .5rem; box-shadow: 0 8px 24px #10212d22; }
+.research-byline { font-size: .875rem; color: var(--muted-foreground); }
+.reading-freshness { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; margin: 1rem 0; font-size: .875rem; }
+.reading-freshness a { text-decoration: underline; text-underline-offset: .2em; }
+@media (max-width: 640px) { .project-menu { margin-left: 0; } .project-menu > div { right: auto; left: 0; } }

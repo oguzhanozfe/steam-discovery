@@ -2,6 +2,7 @@ import benchmarkData from './data/game-benchmarks.json';
 import referenceData from './data/reference-cases.json';
 import newsletterData from './data/newsletters.json';
 import readingExpansion from './data/reading-expansion.json';
+import readingUpdates from './data/reading-updates.json';
 import newsletterGames from './data/newsletter-games.json';
 import deepMetrics from './data/deep-case-metrics.json';
 import countercaseData from './data/countercases.json';
@@ -120,7 +121,8 @@ const storyGames: GameRecord[] = gameStories.filter(story => !earlierGames.some(
 });
 export const gameLibrary: GameRecord[] = [...earlierGames.map(game => ({ ...game, storyId: gameStories.find(story => String(story.appId) === game.appId)?.id })), ...storyGames];
 
-export const readingUpdatedAt = readingExpansion.checkedAt;
+export const readingUpdatedAt = readingUpdates.checkedAt;
+export const latestReadingUpdates = readingUpdates;
 export const readingStarterPath = readingExpansion.starterPath;
 export const newReadingCount = readingExpansion.articles.length;
 export const newsletterLibrary = {
@@ -128,7 +130,7 @@ export const newsletterLibrary = {
   readingUpdatedAt,
   expansionMethodology: readingExpansion.methodology,
   sources: [...newsletterData.sources, ...readingExpansion.sources],
-  articles: [...newsletterData.articles, ...readingExpansion.articles],
+  articles: [...newsletterData.articles, ...readingExpansion.articles, ...readingUpdates.articles],
   crossSourceSynthesis: {
     ...newsletterData.crossSourceSynthesis,
     disagreementsAndResolution: [...newsletterData.crossSourceSynthesis.disagreementsAndResolution, ...readingExpansion.disagreementsAndResolution],

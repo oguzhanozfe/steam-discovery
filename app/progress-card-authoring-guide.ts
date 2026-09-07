@@ -12,7 +12,7 @@ export const progressCardAuthoringGuide = {
     fallback:
       'If the live source cannot be read or validated, the page keeps the last deployed JSON snapshot.',
     infrastructure:
-      'The Vercel project must define GITHUB_PROGRESS_TOKEN before its one manual infrastructure deployment. Use a fine-grained GitHub token restricted to oguzhanozfe/steam-discovery with Contents: Read only.',
+      'The repository is public. The Vercel function reads its public raw JSON without a GitHub credential. Deploy function changes once; never include credentials in client code or content files.',
     freshness:
       'Each page load requests the current GitHub JSON without browser or Vercel CDN caching. There is no background polling.',
     maximumFileSize:

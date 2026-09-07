@@ -1,0 +1,241 @@
+{
+  "checkedAt": "2026-09-07",
+  "methodology": "Read the existing ReadingArticle schema, newsletter sources, reading expansion and HTMAG list. Opened the publishers' current archives and candidate articles using web browsing. Two selected records were published in the requested window. Three are older, newly curated additions; their original publication dates remain unchanged. Summaries are short original editorial digests, not reproductions. A dated archive check is evidence of what was visible, not proof that no unindexed article exists.",
+  "articles": [
+    {
+      "id": "gdc-august-2026-public-discovery-roundup",
+      "title": "August 2026’s top new PC & console games, revealed...",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-04",
+      "checkedAt": "2026-09-07",
+      "url": "https://newsletter.gamediscover.co/p/august-2026s-top-new-pc-and-console",
+      "topics": [
+        "Discovery",
+        "Measurement integrity",
+        "Co-op",
+        "Campaign execution"
+      ],
+      "relatedGames": [
+        "How Many Dudes?",
+        "Wheelmates"
+      ],
+      "summary": "The accessible news section connects discovery reporting with original developer accounts and platform-documentation changes. It points back to the How Many Dudes? retrospective and flags that creating a third-party Steam event does not guarantee promotion.",
+      "hardData": [],
+      "evidenceType": "Public newsletter preview linking developer reports and platform documentation",
+      "actionableLesson": "Follow the original evidence behind each campaign claim; record event eligibility separately from promised visibility.",
+      "applicationSteps": [
+        "Keep a dated log of the original developer or platform source.",
+        "Check current Steamworks event guidance before committing campaign resources."
+      ],
+      "limitations": "This is a digest of the accessible preview. The post is marked Paid; its subscriber-only remainder was not reviewed. No paid ranking table or sales estimate is reproduced here.",
+      "access": "Public preview read; paid remainder not reviewed",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/august-2026s-top-new-pc-and-console",
+        "https://newsletter.gamediscover.co/archive"
+      ]
+    },
+    {
+      "id": "alinea-steam-2026-middle-market-definition",
+      "title": "Steam has already generated $15B in gross revenue this year",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-09-03",
+      "checkedAt": "2026-09-07",
+      "url": "https://alineaanalytics.substack.com/p/steam-has-already-generated-15b-in",
+      "topics": [
+        "Revenue & pricing",
+        "Measurement integrity",
+        "Counter-cases",
+        "Market"
+      ],
+      "relatedGames": [],
+      "summary": "Alinea challenges the idea that a middle revenue rank identifies a mid-budget game. Its analysis of ranks 101–1,000 finds a large catalogue presence, including former blockbusters, so current-year chart position alone is a poor production-budget comparison.",
+      "hardData": [
+        "Alinea estimates that 83% of the 900 games ranked 101–1,000 by 2026 Steam gross revenue launched before 2026."
+      ],
+      "evidenceType": "Commercial analyst estimates; original cohort analysis",
+      "actionableLesson": "Choose comparables by release age, genre, price and production scale before comparing their current revenue ranks.",
+      "applicationSteps": [
+        "Separate new releases from catalogue games in the comparison set.",
+        "Keep lifetime outcomes distinct from current-year estimates."
+      ],
+      "limitations": "Alinea's model is not Valve accounting. The selected revenue band is not a representative sample of all indie releases; chart rank does not establish a game's development budget.",
+      "access": "Public full article",
+      "sourceUrls": [
+        "https://alineaanalytics.substack.com/p/steam-has-already-generated-15b-in",
+        "https://alineaanalytics.substack.com/archive"
+      ]
+    },
+    {
+      "id": "gmi-development-time-proxy-2026",
+      "title": "How long is too long to spend on your indie game?",
+      "author": "Cole",
+      "publication": "Game Marketing Intel",
+      "date": "2026-07-15",
+      "checkedAt": "2026-09-07",
+      "url": "https://gamemarketing.substack.com/p/how-long-is-too-long-to-spend-on",
+      "topics": [
+        "Small games",
+        "Measurement integrity",
+        "Counter-cases",
+        "Production scope"
+      ],
+      "relatedGames": [],
+      "summary": "Cole argues for smaller projects using a Steam release-history analysis. The useful methodological question is whether time between a studio's releases measures development time: overlapping projects, ports and different teams can break that assumption.",
+      "hardData": [],
+      "evidenceType": "Practitioner analysis using release intervals as a proxy",
+      "actionableLesson": "Use actual team schedules and staffing when estimating scope; treat release intervals as a research lead, not a verified production duration.",
+      "applicationSteps": [
+        "Record development start, team changes and overlapping projects where disclosed.",
+        "Preserve the article's review-count and release-date filters when discussing its sample."
+      ],
+      "limitations": "The cohort excludes low-review games and first-project durations are unknown. A single observed release does not establish that a developer quit. The article's review-threshold claim is not adopted here as an official Steam rule.",
+      "access": "Public full article; older article newly added to the library",
+      "sourceUrls": [
+        "https://gamemarketing.substack.com/p/how-long-is-too-long-to-spend-on",
+        "https://gamemarketing.substack.com/archive"
+      ]
+    },
+    {
+      "id": "derek-lieu-mandrake-announce-2026",
+      "title": "Mandrake - Announce Trailer",
+      "author": "Derek Lieu",
+      "publication": "Derek Lieu — Game Trailer Editing",
+      "date": "2026-04-04",
+      "checkedAt": "2026-09-07",
+      "url": "https://www.derek-lieu.com/blog/2026/4/3/mandrake-announce-trailer",
+      "topics": [
+        "Trailers & positioning",
+        "Capture planning",
+        "Niche demand",
+        "Campaign execution"
+      ],
+      "relatedGames": [
+        "Mandrake"
+      ],
+      "summary": "Lieu describes planning Mandrake's reveal before full trailer production: select recognizable life-sim actions, pair them with the game's darker character, and prioritize the footage and art needed to communicate that combination.",
+      "hardData": [],
+      "evidenceType": "First-person trailer-production account",
+      "actionableLesson": "Plan a reveal around a few playable genre anchors and one distinctive feeling; each narration line should have a clear visual purpose.",
+      "applicationSteps": [
+        "List the familiar actions that identify the genre.",
+        "Capture those actions with the game's distinctive tone visible.",
+        "Test whether a viewer can describe both the activity and its twist."
+      ],
+      "limitations": "Craft guidance from one selected client project, not controlled evidence that editing caused reach or sales. Publication date follows the visible April 4 byline; the URL contains April 3.",
+      "access": "Public full article; older article newly added to the library",
+      "sourceUrls": [
+        "https://www.derek-lieu.com/blog/2026/4/3/mandrake-announce-trailer",
+        "https://www.derek-lieu.com/blog"
+      ]
+    },
+    {
+      "id": "impress-pitch-up-2025-takeaways",
+      "title": "10 Key Takeaways from IMPACT! Indie Games Pitch Up 2025",
+      "author": "Ashley Gwinnell",
+      "publication": "IMPRESS Academy",
+      "date": "2025-11-13",
+      "checkedAt": "2026-09-07",
+      "url": "https://impress.games/blog/10-key-takeaways-from-impact-pitch-up-2025",
+      "topics": [
+        "Publisher pitching",
+        "Trailers & positioning",
+        "Campaign execution",
+        "Production scope"
+      ],
+      "relatedGames": [],
+      "summary": "An event recap turns publisher feedback into practical pitch improvements: put the game's identity, working footage, schedule and financial needs early, then make the build easy for different decision-makers to assess.",
+      "hardData": [],
+      "evidenceType": "First-party event notes summarizing publisher-panel feedback",
+      "actionableLesson": "Prepare a concise fact sheet and short gameplay demonstration that explain the player promise and the concrete support being requested.",
+      "applicationSteps": [
+        "Show actual footage alongside the premise.",
+        "State the budget, schedule, current evidence and remaining needs.",
+        "Adapt the pitch to the publisher's relevant portfolio."
+      ],
+      "limitations": "Selected panel feedback from 2025, not a universal publisher policy or a measured chance of securing a deal. No acceptance-rate or sales-conversion claim is adopted.",
+      "access": "Public full article; older article newly added to the library",
+      "sourceUrls": [
+        "https://impress.games/blog/10-key-takeaways-from-impact-pitch-up-2025",
+        "https://impress.games/blog"
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "source": "How To Market A Game",
+      "checkedAt": "2026-09-07",
+      "url": "https://howtomarketagame.com/blog/",
+      "latestVisiblePublicationDate": "2026-08-21",
+      "result": "No September 3–7 article visible. Latest post is already represented in htmagePosts."
+    },
+    {
+      "source": "Derek Lieu",
+      "checkedAt": "2026-09-07",
+      "url": "https://www.derek-lieu.com/blog",
+      "latestVisiblePublicationDate": "2026-08-23",
+      "result": "No September 3–7 article visible. Latest three posts are already in reading-expansion; Mandrake is the next most recent missing article."
+    },
+    {
+      "source": "Game World Observer — Marketing",
+      "checkedAt": "2026-09-07",
+      "url": "https://gameworldobserver.com/category/marketing",
+      "latestVisiblePublicationDate": "2026-05-21",
+      "result": "No September 3–7 marketing post visible. DREADMOOR is already in the library. General homepage has September 3–4 industry news, but those articles are not added solely for recency."
+    },
+    {
+      "source": "IMPRESS Academy",
+      "checkedAt": "2026-09-07",
+      "url": "https://impress.games/blog",
+      "latestVisiblePublicationDate": "2025-11-13",
+      "result": "No September 3–7 article visible. Latest visible article is missing from the library and is included as a dated archive addition."
+    },
+    {
+      "source": "The GameDiscoverCo newsletter",
+      "checkedAt": "2026-09-07",
+      "url": "https://newsletter.gamediscover.co/archive",
+      "latestVisiblePublicationDate": "2026-09-04",
+      "result": "September 4 article found. Only the accessible public news preview is digested."
+    },
+    {
+      "source": "The Alinea Insight newsletter",
+      "checkedAt": "2026-09-07",
+      "url": "https://alineaanalytics.substack.com/archive",
+      "latestVisiblePublicationDate": "2026-09-03",
+      "result": "September 3 article found and read; estimation labels retained."
+    },
+    {
+      "source": "Game Marketing Intel",
+      "checkedAt": "2026-09-07",
+      "url": "https://gamemarketing.substack.com/archive",
+      "latestVisiblePublicationDate": "2026-07-19",
+      "result": "No September 3–7 post visible. July 19 is an audio variant of the July 15 article; only one article record is proposed."
+    },
+    {
+      "source": "OP Game Marketing",
+      "checkedAt": "2026-09-07",
+      "url": "https://opgamemarketing.substack.com/archive",
+      "latestVisiblePublicationDate": "2026-08-14",
+      "result": "No September 3–7 article visible; latest substantive analysis is already represented."
+    },
+    {
+      "source": "GameDev Reports",
+      "checkedAt": "2026-09-07",
+      "url": "https://gamedevreports.substack.com/archive",
+      "latestVisiblePublicationDate": "2026-09-07",
+      "result": "September 3 mobile-Japan report, September 4 weekly recap, September 5 premium update and September 7 mobile ranking visible. Not selected for the narrow Steam-discovery refresh; premium content not treated as read."
+    }
+  ],
+  "latestBatch": {
+    "addedAt": "2026-09-07",
+    "publishedSince": "2026-09-03",
+    "articleIds": [
+      "gdc-august-2026-public-discovery-roundup",
+      "alinea-steam-2026-middle-market-definition",
+      "gmi-development-time-proxy-2026",
+      "derek-lieu-mandrake-announce-2026",
+      "impress-pitch-up-2025-takeaways"
+    ]
+  }
+}
