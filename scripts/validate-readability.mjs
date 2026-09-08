@@ -49,10 +49,10 @@ for (const bg of [
   '--card',
   '--surface-raised',
   '--surface-hover',
-  '--surface-green',
+  '--surface-accent',
   '--surface-amber',
 ]) {
-  for (const fg of ['--foreground', '--text-secondary', '--muted-foreground'])
+  for (const fg of ['--foreground', '--text-secondary', '--muted-foreground', '--text-link'])
     assert(
       contrast(tokens[fg], tokens[bg]) >= 7,
       `${fg} on ${bg}: readable research text`,
@@ -60,13 +60,44 @@ for (const bg of [
 }
 assert(contrast(tokens['--accent'], tokens['--accent-foreground']) >= 7);
 assert(
-  contrast(tokens['--accent'], tokens['--input']) >= 3,
-  'Visible chart fill',
+  contrast(tokens['--accent'], tokens['--chart-track']) >= 3,
+  'Chart fill is distinct from its actual track',
 );
 assert(
   contrast(tokens['--input'], tokens['--card']) >= 3,
   'Visible form border',
 );
+// These are targeted static declaration checks, not a browser cascade audit.
+// Check the specific component rules; a generic input rule loses to these.
+for (const selector of ['.hub-search', '.editorial-search', '.radar-filters select']) {
+  assert.equal(value(selector, 'background'), tokens['--field'], selector);
+  assert.equal(value(selector, 'border'), '1px solid ' + tokens['--input'], selector);
+}
+assert.equal(value('.searchbox input', 'border-color'), tokens['--input']);
+for (const selector of ['.brief-form input', '.brief-form textarea', '.brief-form select']) {
+  assert.equal(value(selector, 'border-color'), tokens['--input'], selector);
+  assert.equal(value(selector, 'background'), tokens['--field'], selector);
+}
+for (const bg of ['--background', '--card', '--surface-raised', '--surface-hover', '--surface-accent'])
+  assert(contrast(tokens['--input'], tokens[bg]) >= 3, `Control/track outline on ${bg}`);
+for (const selector of ['.current-quarter i', '.rate-cell i', '.score-track']) {
+  assert.equal(value(selector, 'background'), tokens['--chart-track'], selector);
+  assert.equal(value(selector, 'box-shadow'), '0 0 0 1px ' + tokens['--input'], selector);
+}
+assert.equal(value('.timeline li:not(:last-child)::before', 'background'), tokens['--input']);
+assert.equal(value('.case-hero-copy', 'background'), tokens['--card'], 'Opaque hero text backing');
+assert.equal(value('.case-hero-copy', 'color'), tokens['--foreground']);
+for (const selector of ['.evidence-row a', '.surface-heading > a', '.hub-sources a', '.source-link']) {
+  assert.equal(value(selector, 'color'), tokens['--text-link'], selector);
+  assert.equal(value(selector, 'font-size'), '.875rem', selector);
+  assert.equal(value(selector, 'text-decoration'), 'underline', selector);
+}
+for (const [fg, bg] of [['--text-success', '--surface-success'], ['--text-amber', '--surface-amber'], ['--destructive', '--surface-danger'], ['--foreground', '--selection']])
+  assert(contrast(tokens[fg], tokens[bg]) >= 4.5, `${fg} on ${bg}`);
+ast.walkDecls((declaration) => {
+  if (declaration.parent.selector === ':root' || /shadow/.test(declaration.prop)) return;
+  assert(!/#[0-9a-f]{3,8}\b/i.test(declaration.value), `Use a semantic color token: ${declaration.parent.selector} / ${declaration.prop}`);
+});
 for (const selector of [
   'body',
   '.hub-view',
@@ -141,5 +172,5 @@ for (const [path, name] of [
   );
 }
 console.log(
-  `Readability validated: scalable text, 68ch prose, 7:1 core text contrast, table reflow and dark theme across ${publicRoutes.length} routes.`,
+  `Static readability checks passed: 7:1 core text/link token pairs, targeted control/hero/chart/source-link declarations, scalable text and dark styles across ${publicRoutes.length} routes. This is not a full rendered accessibility audit.`,
 );

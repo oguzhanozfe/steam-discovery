@@ -18,7 +18,7 @@ Steam Discovery is independent and is not affiliated with Valve. Editorial notes
 
 ## Run locally
 
-The interface defaults to dark mode on every route, independent of the device's theme preference. Body copy uses 17–18px-equivalent rem sizes, evidence labels and source links at least 14px, and form fields 16px. Long prose uses a 68ch maximum line width; dense tables keep readable text and scroll inside keyboard-accessible regions. Use the shared semantic colors and typography tokens in `app/globals.css`; keep charts, evidence labels and lime action buttons distinguishable. Avoid introducing white cards or tiny explanatory text in new research views.
+The interface defaults to dark mode on every route, independent of the device's theme preference. Body copy uses 17–18px-equivalent rem sizes, evidence labels and source links at least 14px, and form fields 16px. Long prose uses a 68ch maximum line width; dense tables keep readable text and scroll inside keyboard-accessible regions. Use the shared semantic colors and typography tokens in `app/globals.css`; keep charts, evidence labels and blue action buttons distinguishable. Avoid introducing white cards or tiny explanatory text in new research views.
 
 Use Node.js 24 LTS and pnpm 11.19.0.
 
@@ -64,3 +64,9 @@ The curated snapshot is in `app/data/radar-snapshot.json`; the full client-loade
 ## Deploy to the existing host
 
 The existing production host is Vercel at `steam-discovery.vercel.app`. Git auto-deploy is intentionally disabled. Run `vercel build --prod` followed by `vercel deploy --prebuilt --prod` after checks pass, using the existing linked project and authorized account. Never commit local environment files, Vercel credentials or generated builds. Use the current validated build; do not deploy stale output directories.
+
+## Interface palette
+
+The charcoal-and-blue palette adapts [GitHub Primer’s semantic color guidance](https://primer.style/product/getting-started/foundations/color-usage/) and [theme tokens](https://primer.style/product/primitives/color/), reviewed September 8, 2026. [SteamDB charts](https://steamdb.info/charts/) and [Gamalytic](https://gamalytic.com/) informed the data-directory comparison; their exact palettes were not copied. Our secondary text and link colors are intentionally brighter for long research reading.
+
+Use charcoal surfaces (`#0d1117`, `#151b23`), near-white headings (`#f0f6fc`), readable secondary text (`#d1d9e0`, `#b6c2cf`) and blue links/actions (`#79c0ff`). Green means positive evidence/status, amber marks estimates/cautions, and coral is reserved for exceptional signals/errors. All in-page colors must use semantic tokens; do not add one-off hex colors to component rules. Image overlays need an opaque text backing. `validate:readability` checks core palette pairs and selected component declarations, not a complete rendered accessibility audit.
