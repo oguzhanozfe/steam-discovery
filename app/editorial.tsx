@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, ArrowUpRight, BookOpen, Search } from 'lucide-react';
+import { ArrowRight, BookOpen, Search } from 'lucide-react';
 import { SteamArtwork } from './steam-artwork';
 import { Fragment } from 'react';
 import { AdSlot } from './ad-slot';

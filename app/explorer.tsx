@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, ArrowUpRight, Check, Clock3, ExternalLink, Gamepad2, Plus, Search, ShieldAlert, SlidersHorizontal, X } from 'lucide-react';
+import { ArrowRight, Check, Clock3, Gamepad2, Plus, Search, ShieldAlert, SlidersHorizontal, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { categories, compactNumber, defaultExplorerFilters, gameLibrary, type ExplorerFilters, type GameRecord } from './discovery-data';
@@ -42,7 +42,7 @@ export function Explorer({ filters, setFilters, visible, selectedId, select, sho
     <div className="journey-strip"><button onClick={() => setFilters({ ...defaultExplorerFilters, fit: 'High', sort: 'Demo fit' })}><b>01</b><span><strong>Find a feasible loop</strong><small>Start with high demo fit</small></span><ArrowRight /></button><button onClick={() => setFilters({ ...defaultExplorerFilters, band: '100–200K owner models' })}><b>02</b><span><strong>Check smaller benchmarks</strong><small>100–200K owner estimates</small></span><ArrowRight /></button><button onClick={() => openReading('')}><b>03</b><span><strong>Understand the channel</strong><small>Read cases and disagreements</small></span><ArrowRight /></button><button onClick={openBuild}><b>04</b><span><strong>Design the test</strong><small>Build a three-week brief</small></span><ArrowRight /></button></div>
 
     <div className="explorer-controls">
-      <label className="searchbox"><Search aria-hidden="true" /><span className="sr-only">Search all games, tropes and marketing channels</span><Input maxLength={120} value={filters.query} onChange={event => update('query', event.target.value)} placeholder="Search games, tropes, mechanics or channels…" /></label>
+      <label className="searchbox" htmlFor="game-search"><Search aria-hidden="true" /><span className="sr-only">Search all games, tropes and marketing channels</span><Input id="game-search" maxLength={120} value={filters.query} onChange={event => update('query', event.target.value)} placeholder="Search games, tropes, mechanics or channels…" /></label>
       <div className="select-filters">
         <label>Genre<select value={filters.category} onChange={event => update('category', event.target.value as ExplorerFilters['category'])}>{categories.map(value => <option key={value}>{value}</option>)}</select></label>
         <label>Demo fit<select value={filters.fit} onChange={event => update('fit', event.target.value as ExplorerFilters['fit'])}>{['All scope', 'High', 'Medium', 'Low'].map(value => <option key={value}>{value}</option>)}</select></label>

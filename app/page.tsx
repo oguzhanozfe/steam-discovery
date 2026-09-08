@@ -3,16 +3,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import {
-  AlertTriangle, ArrowDownToLine, ArrowRight, ArrowUpRight, BarChart3,
+  AlertTriangle, ArrowDownToLine, ArrowRight, BarChart3,
   CalendarDays, CheckCircle2, ChevronRight, CircleDollarSign, Clock3,
   Code2, Database, Eye, Filter, Gamepad2, Gauge, Lightbulb, Link2,
   Megaphone, Play, Radar, Search, ShieldAlert, Sparkles, Target,
-  Users, XCircle, Zap, BookOpen, Compass, Trees,
+  Users, XCircle, Zap, BookOpen, Compass,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
-  cases, htmagePosts, ideas, marketStats, niches, reachDictionary,
+  cases, ideas, marketStats, niches, reachDictionary,
   sourceStack, sprint, steamTiming, type GameCase, type ResearchView,
 } from './research-data';
 import { Explorer, SourceLink } from './explorer';
@@ -44,7 +44,7 @@ type ModelTool = {
   name: string; title?: string; description: string;
   inputSchema: Record<string, unknown>;
   annotations?: { readOnlyHint?: boolean; untrustedContentHint?: boolean };
-  execute: (input: unknown) => unknown | Promise<unknown>;
+  execute: (input: unknown) => unknown;
 };
 declare global {
   interface Document {
@@ -113,11 +113,16 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
   const [brief, setBrief] = useState<BriefInput>(defaultBrief);
   const [marketPeriod, setMarketPeriod] = useState<MarketPeriod>(initial.marketPeriod ?? '2025');
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const requestedView = params.get('view');
-    const requestedPeriod = params.get('period');
-    if (requestedView && Object.hasOwn(viewPaths, requestedView)) setView(requestedView as ResearchView);
-    if (marketPeriods.includes(requestedPeriod as MarketPeriod)) setMarketPeriod(requestedPeriod as MarketPeriod);
+    let active = true;
+    queueMicrotask(() => {
+      if (!active) return;
+      const params = new URLSearchParams(window.location.search);
+      const requestedView = params.get('view');
+      const requestedPeriod = params.get('period');
+      if (requestedView && Object.hasOwn(viewPaths, requestedView)) setView(requestedView as ResearchView);
+      if (marketPeriods.includes(requestedPeriod as MarketPeriod)) setMarketPeriod(requestedPeriod as MarketPeriod);
+    });
+    return () => { active = false; };
   }, []);
   const visibleGames = useMemo(() => filterGames(explorerFilters), [explorerFilters]);
 
@@ -171,7 +176,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
   const selectedIdea = ideas.find((item) => item.id === selectedIdeaId) ?? ideas[0];
   const currentState = { view, storyId: storyId ?? null, storyQuery, visibleStoryIds: findStories(storyQuery).map(story => story.id), query, filter, selectedId: visibleCases.length ? selected.id : null, selectedIdeaId, visibleCaseIds: visibleCases.map(item => item.id), explorerFilters, explorerSelectedId: visibleGames.find(game => game.id === explorerSelectedId)?.id ?? visibleGames[0]?.id ?? null, visibleGameIds: visibleGames.map(game => game.id), comparisonIds, readingQuery, readingTopic, brief, marketPeriod };
   const stateRef = useRef(currentState);
-  stateRef.current = currentState;
+  useEffect(() => { stateRef.current = currentState; });
 
   useEffect(() => {
     const context = document.modelContext;
@@ -386,7 +391,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         <section className="workbench">
           <div className="workspace-heading"><div><p className="section-kicker"><Sparkles aria-hidden="true" /> WHAT WORKED, WHEN, WHERE—AND WHY?</p><h1>Trace each game’s path to visibility event by event.</h1></div><p className="workspace-note">Every number carries an evidence type. Developer-reported sales, observed public metrics and model estimates are never silently blended.</p></div>
           <div className="control-row">
-            <label className="searchbox"><Search aria-hidden="true" /><span className="sr-only">Search games, channels or tactics</span><Input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search game, genre, channel or tactic…" /></label>
+            <label className="searchbox" htmlFor="case-search"><Search aria-hidden="true" /><span className="sr-only">Search games, channels or tactics</span><Input id="case-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search game, genre, channel or tactic…" /></label>
             <div className="filter-set" aria-label="Case filters"><Filter aria-hidden="true" />{filters.map((item) => <Button key={item} size="sm" variant={filter === item ? 'default' : 'ghost'} onClick={() => setFilter(item)}>{item}</Button>)}</div>
           </div>
           <div className="signal-grid">

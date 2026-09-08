@@ -4,7 +4,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
   ArrowRight,
-  ArrowUpRight,
   Bookmark,
   Check,
   Compass,

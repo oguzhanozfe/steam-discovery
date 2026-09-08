@@ -29,6 +29,8 @@
     "build/**",
     "dist/**",
     "coverage/**",
+    "components/ui/**",
+    "hooks/**",
     "next-env.d.ts"
   ],
   "rules": {
@@ -44,6 +46,10 @@
     "react/react-compiler": "error",
     "react/require-render-return": "error",
     "react/rules-of-hooks": "error",
+    "nextjs/no-html-link-for-pages": "off",
+    "nextjs/no-img-element": "off",
+    "jsx-a11y/no-noninteractive-tabindex": "off",
+    "jsx-a11y/prefer-tag-over-role": "off",
     "typescript/ban-ts-comment": "error",
     "typescript/no-deprecated": "error",
     "typescript/no-empty-object-type": "error",

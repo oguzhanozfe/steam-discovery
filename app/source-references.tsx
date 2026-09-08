@@ -33,7 +33,7 @@ const publications: Record<string, string> = {
 export function referenceKey(value: string) {
   const url = new URL(value, origin);
   url.hash = '';
-  for (const key of [...url.searchParams.keys()])
+  for (const key of url.searchParams.keys())
     if (key.startsWith('utm_')) url.searchParams.delete(key);
   return url.href.replace(/\/$/, '');
 }

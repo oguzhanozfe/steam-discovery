@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { ArrowDownToLine, ArrowUpRight, BarChart3, ShieldAlert } from 'lucide-react';
+import { ArrowDownToLine, BarChart3, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import q1Data from './data/market-q1.json';
 import q2Data from './data/market-q2.json';
