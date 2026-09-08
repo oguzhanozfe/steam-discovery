@@ -3,10 +3,8 @@ import { readFile } from 'node:fs/promises';
 import {
   publicRoutes,
   storyReferences,
-  analysisReferences,
   sourceMetadata,
   citationUrls,
-  gddReferences,
 } from '../.prerender/entry-prerender.js';
 
 const read = (path) => readFile(new URL('../' + path, import.meta.url), 'utf8');
@@ -24,7 +22,6 @@ const escape = (text) =>
       })[c],
   );
 const stories = (await json('dist-static/data/game-stories.json')).stories;
-const analysis = (await json('app/data/original-analysis.json')).articles;
 const checks = await json('app/data/reference-checks.json');
 const about = await read('dist-static/about/index.html');
 let mappedReferences = 0;
@@ -69,15 +66,6 @@ for (const story of stories) {
       html.includes('Steam Discovery interpretation / proposed experiment'),
     );
   mappedReferences += references.length;
-}
-for (const article of analysis) {
-  const html = await read(`dist-static/analysis/${article.id}/index.html`);
-  assert(html.includes('Research synthesis by Steam Discovery'));
-  for (const ref of analysisReferences(article))
-    assert(
-      html.includes(`data-source-record="${escape(ref.url)}"`),
-      article.id,
-    );
 }
 for (const route of publicRoutes.filter(
   (route) =>
@@ -130,7 +118,7 @@ const dataset = await json('dist-static/data/reference-metadata.json');
 assert(dataset.sources.length >= checks.sources.length);
 assert.deepEqual(await json('dist-static/data/reference-checks.json'), checks);
 const researchIndex = await json('dist-static/data/research-index.json');
-for (const path of ['/', '/solo-lab/', '/case-studies/', '/survival-demo/', '/build-lab/', '/playbooks/']) {
+for (const path of ['/', '/solo-lab/', '/case-studies/', '/build-lab/', '/playbooks/']) {
   const route = publicRoutes.find(route => route.path === path);
   assert(route, path);
   const urls = citationUrls(route);
@@ -147,23 +135,11 @@ for (const page of researchIndex.pages) {
 for (const article of (await json('app/data/hub-articles.json')).articles) {
   assert(dataset.sources.find(source => source.url === article.url)?.uses.some(use => use.includes(article.title)), `Missing playbook source usage: ${article.title}`);
 }
-const gddMarkdown = await read('dist-static/data/survival-demo-gdd.md');
-assert(gddMarkdown.includes('References And Usage'));
-for (const ref of gddReferences()) {
-  const record = dataset.sources.find(source => source.url === ref.url);
-  assert(record, `GDD citation missing from metadata export: ${ref.url}`);
-  assert(gddMarkdown.includes(ref.url));
-  for (const use of ref.uses ?? []) {
-    assert(gddMarkdown.includes(use), `GDD usage missing from Markdown: ${use}`);
-    assert(record.uses.includes(`City-escape GDD: ${use}`));
-  }
-}
-assert(gddMarkdown.includes('Not recorded.'), 'Keep unknown metadata explicit');
-for (const path of ['solo-lab/', 'survival-demo/', 'build-lab/']) {
+for (const path of ['solo-lab/', 'build-lab/']) {
   const html = await read(`dist-static/${path}index.html`);
   assert(html.includes('Design proposal by Steam Discovery'));
   assert(html.includes('References &amp; how we used them'));
 }
 console.log(
-  `Validated ${stories.length} story registers (${mappedReferences} source mappings), ${analysis.length} analyses, all reading/playbook/game pages, ${checks.sources.length} freshly checked metadata records, export parity and correction disclosure. These checks do not detect plagiarism or certify source truth.`,
+  `Validated ${stories.length} story registers (${mappedReferences} source mappings), all reading/playbook/game pages, ${checks.sources.length} freshly checked metadata records, export parity and correction disclosure. These checks do not detect plagiarism or certify source truth.`,
 );

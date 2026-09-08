@@ -37,6 +37,7 @@ import {
   type RadarGame,
 } from './hub-model';
 import { SteamArtwork } from './steam-artwork';
+import { AdSlot } from './ad-slot';
 import { ReferenceLinks, ReferenceRegister, EditorialCredit, nicheReferences, conceptReferences, playbookReferences } from './source-references';
 
 const initialGames = snapshot.games as RadarGame[];
@@ -159,6 +160,7 @@ export function SmallTeamHub() {
         prove an empty market or predict your sales. These are research
         priorities, not live alerts.
       </p>
+      <AdSlot placement="hub-between-overview-and-niches" />
       <div className="hub-niche-grid">
         {choices.map((niche) => (
           <article className="hub-niche" key={niche.id} id={niche.id}>

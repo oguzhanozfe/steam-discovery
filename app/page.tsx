@@ -26,21 +26,18 @@ import { categories, defaultExplorerFilters, filterGames, gameLibrary, marketPat
 import { viewPaths, publicRoutes, siteUrl, type InitialRoute } from './site-routes';
 import { structuredData } from './research-metadata';
 import survivalData from './data/survival-research.json';
-import fpsSurvivalConcept from './data/fps-survival-concept.json';
 import { SteamArtwork } from './steam-artwork';
 import { Methodology } from './methodology';
 import { SurvivalResearch } from './survival-research';
-import { GameStories, OriginalAnalysis, SurvivalDemoGdd } from './editorial';
-import { gameStories, findStories, originalAnalysis, survivalDemoGdd, survivalEvidence, editorialUpdatedAt } from './editorial-data';
-import { ProgressTracker } from './progress-tracker';
-import { progressBoard } from './progress-data';
-import { progressCardAuthoringGuide } from './progress-card-authoring-guide';
+import { GameStories } from './editorial';
+import { gameStories, findStories, editorialUpdatedAt } from './editorial-data';
 import { SmallTeamHub, SteamRadar, SoloLab, DeveloperPlaybooks } from './small-team-hub';
 import radarSnapshot from './data/radar-snapshot.json';
 import hubConcepts from './data/solo-concepts.json';
 import hubNiches from './data/hub-niches.json';
 import hubArticles from './data/hub-articles.json';
 import referenceChecks from './data/reference-checks.json';
+import { AdSlot } from './ad-slot';
 import { ReferenceLink, ReferenceRegister, EditorialCredit, referenceMetadata, ideaReferences } from './source-references';
 
 type ModelTool = {
@@ -74,11 +71,11 @@ function downloadDataset() {
   const payload = {
     asOf: '2026-09-02',
     readingUpdatedAt,
-    editorialUpdatedAt, gameStories, originalAnalysis, survivalDemoGdd, survivalEvidence,
+    editorialUpdatedAt, gameStories,
     smallTeamHub: { radarSnapshot, catalogUrl: `${siteUrl}/data/radar-catalog.json`, soloConcepts: hubConcepts, nicheBriefs: hubNiches, playbooks: hubArticles },
     methodology: 'Reported sales, observed public metrics and third-party estimates are stored separately. Correlation is not labeled as attribution.',
     referenceChecks, referenceMetadata,
-    gameLibrary, cases, marketStats, reachDictionary, niches, quarterlyEvidence: { q1: q1MarketData, q2: q2MarketData }, survivalCraft: { ...survivalData, firstPersonConcept: { id: survivalDemoGdd.id, title: survivalDemoGdd.title, pitch: survivalDemoGdd.pitch, gddPath: '/survival-demo/' }, archivedEarlierConcept: { ...fpsSurvivalConcept, status: 'Superseded by city-escape-demo v0.2; retained as historical context only.' } }, marketPatterns, ideas, readingLibrary, newsletterLibrary, progressBoard, sources: sourceStack,
+    gameLibrary, cases, marketStats, reachDictionary, niches, quarterlyEvidence: { q1: q1MarketData, q2: q2MarketData }, survivalCraft: survivalData, marketPatterns, ideas, readingLibrary, newsletterLibrary, sources: sourceStack,
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
   const anchor = document.createElement('a');
@@ -94,7 +91,6 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
   const initialGame = gameLibrary.find(game => game.id === initial.gameId);
   const [view, setView] = useState<ResearchView>(initial.view ?? 'hub');
   const [storyId, setStoryId] = useState<string | undefined>(initial.storyId);
-  const [analysisId, setAnalysisId] = useState<string | undefined>(initial.analysisId);
   const [storyQuery, setStoryQuery] = useState('');
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<CaseFilter>('All');
@@ -124,7 +120,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       view === 'reading' && readingId ? candidate.initial.readingId === readingId :
       view === 'stories' && storyId ? candidate.initial.storyId === storyId :
       view === 'guides' && initial.guideId ? candidate.initial.guideId === initial.guideId :
-      view === 'analysis' && analysisId ? candidate.initial.analysisId === analysisId : candidate.path === viewPaths[view]);
+      candidate.path === viewPaths[view]);
     if (!route) return;
     const url = siteUrl + route.path;
     const image = route.image ?? `${siteUrl}/og.png`;
@@ -134,10 +130,10 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
     const values: Record<string, string> = { description: route.description, 'og:title': route.title, 'twitter:title': route.title, 'og:description': route.description, 'twitter:description': route.description, 'og:url': url, 'og:image': image, 'twitter:image': image, 'og:image:width': route.image ? String(route.imageWidth ?? 460) : '1200', 'og:image:height': route.image ? String(route.imageHeight ?? 215) : '630' };
     for (const [name, value] of Object.entries(values)) document.querySelector(`meta[name="${name}"], meta[property="${name}"]`)?.setAttribute('content', value);
     document.querySelector('meta[name="robots"]')?.setAttribute('content', route.noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large');
-    document.querySelector('meta[property="og:type"]')?.setAttribute('content', route.initial.readingId || route.initial.storyId || route.initial.analysisId || route.initial.guideId ? 'article' : 'website');
+    document.querySelector('meta[property="og:type"]')?.setAttribute('content', route.initial.readingId || route.initial.storyId || route.initial.guideId ? 'article' : 'website');
     const structured = document.querySelector('script[type="application/ld+json"]');
     if (structured) structured.textContent = JSON.stringify(structuredData(route));
-  }, [view, marketPeriod, explorerSelectedId, readingId, storyId, analysisId, initial.gameId, initial.guideId]);
+  }, [view, marketPeriod, explorerSelectedId, readingId, storyId, initial.gameId, initial.guideId]);
   useEffect(() => {
     const restoreRoute = () => window.location.reload();
     window.addEventListener('popstate', restoreRoute);
@@ -165,7 +161,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
 
   const selected = visibleCases.find((item) => item.id === selectedId) ?? visibleCases[0] ?? cases[0];
   const selectedIdea = ideas.find((item) => item.id === selectedIdeaId) ?? ideas[0];
-  const currentState = { view, storyId: storyId ?? null, analysisId: analysisId ?? null, storyQuery, visibleStoryIds: findStories(storyQuery).map(story => story.id), query, filter, selectedId: visibleCases.length ? selected.id : null, selectedIdeaId, visibleCaseIds: visibleCases.map(item => item.id), explorerFilters, explorerSelectedId: visibleGames.find(game => game.id === explorerSelectedId)?.id ?? visibleGames[0]?.id ?? null, visibleGameIds: visibleGames.map(game => game.id), comparisonIds, readingQuery, readingTopic, brief, marketPeriod };
+  const currentState = { view, storyId: storyId ?? null, storyQuery, visibleStoryIds: findStories(storyQuery).map(story => story.id), query, filter, selectedId: visibleCases.length ? selected.id : null, selectedIdeaId, visibleCaseIds: visibleCases.map(item => item.id), explorerFilters, explorerSelectedId: visibleGames.find(game => game.id === explorerSelectedId)?.id ?? visibleGames[0]?.id ?? null, visibleGameIds: visibleGames.map(game => game.id), comparisonIds, readingQuery, readingTopic, brief, marketPeriod };
   const stateRef = useRef(currentState);
   stateRef.current = currentState;
 
@@ -181,16 +177,6 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       return value;
     };
     const tools: ModelTool[] = [
-      {
-        name: 'read_progress_card_authoring_guide', title: 'Read the Progress card authoring guide',
-        description: 'Read the repository contract for creating or updating Progress cards without changing the page or its data.',
-        inputSchema: { type: 'object', properties: {}, additionalProperties: false },
-        annotations: { readOnlyHint: true, untrustedContentHint: false },
-        execute(input) {
-          objectInput(input, []);
-          return progressCardAuthoringGuide;
-        },
-      },
       {
         name: 'open_game_story', title: 'Read a digested game story',
         description: 'Open a full game narrative with KPIs, timeline, demand structure and a proposed demo transfer. Does not open an external source.',
@@ -216,26 +202,14 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         },
       },
       {
-        name: 'open_original_analysis', title: 'Read original market analysis',
-        description: 'Open one of the three Steam Discovery original essays, including citations and links to the relevant survival demo GDD section.',
-        inputSchema: { type: 'object', properties: { articleId: { type: 'string', enum: originalAnalysis.articles.map(article => article.id) } }, required: ['articleId'], additionalProperties: false },
-        annotations: { readOnlyHint: false, untrustedContentHint: false },
-        execute(input) {
-          const id = objectInput(input, ['articleId']).articleId;
-          if (!originalAnalysis.articles.some(article => article.id === id)) throw new Error('Unknown articleId.');
-          flushSync(() => { setAnalysisId(id as string); setView('analysis'); });
-          return { visibleView: 'analysis', articleId: stateRef.current.analysisId };
-        },
-      },
-      {
         name: 'navigate_research_view', title: 'Open research section',
-        description: 'Navigate the visible workspace to digested game stories, original analysis, the survival demo GDD, game explorer, campaign timelines, market pulse, survival research, build lab, source notes, sprint plan, delivery progress or methodology.',
+        description: 'Navigate public Steam research: game stories, game explorer, campaign timelines, market pulse, genre field guides, build lab, source notes, sprint templates and methodology.',
         inputSchema: { type: 'object', properties: { view: { type: 'string', enum: Object.keys(viewPaths) } }, required: ['view'], additionalProperties: false },
         annotations: { readOnlyHint: false, untrustedContentHint: false },
         execute(input) {
           const candidate = objectInput(input, ['view']).view;
           if (typeof candidate !== 'string' || !Object.hasOwn(viewPaths, candidate)) throw new Error('Unknown research view.');
-          flushSync(() => { setStoryId(undefined); setAnalysisId(undefined); setView(candidate as ResearchView); });
+          flushSync(() => { setStoryId(undefined); setView(candidate as ResearchView); });
           return { visibleView: candidate };
         },
       },
@@ -387,7 +361,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         <div className="view-tabs">{navItems.map((item) => { const Icon = item.icon; return <a key={item.id} href={item.id === 'market' ? `/market/${marketPeriod}/` : viewPaths[item.id]} className={view === item.id ? 'is-active' : ''} aria-current={view === item.id ? 'page' : undefined}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.caption}</small></span></a>; })}</div>
         <Button variant="outline" size="sm" onClick={downloadDataset}><ArrowDownToLine aria-hidden="true" /> Export JSON</Button>
       </nav>
-      <nav className="research-secondary" aria-label="Supporting research"><a href="/reading/">Sources &amp; Reading</a><a href="/games/">Researched benchmarks</a><a href="/analysis/">Original analysis</a><a href="/research/open-world-survival-craft/">Survival craft</a><a href="/case-studies/">Campaign timelines</a><a href="/about/">Methodology</a><details className="project-menu"><summary>Project workspace</summary><div><a href="/survival-demo/">Demo GDD</a><a href="/progress/">Progress & milestones</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a></div></details></nav>
+      <nav className="research-secondary" aria-label="Supporting research"><a href="/reading/">Sources &amp; Reading</a><a href="/games/">Researched benchmarks</a><a href="/research/open-world-survival-craft/">Survival craft</a><a href="/case-studies/">Campaign timelines</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a><a href="/about/">About &amp; sources</a></nav>
 
       <div id="research-content" tabIndex={-1} />
       {view === 'hub' && <SmallTeamHub />}
@@ -395,8 +369,6 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       {view === 'solo' && <SoloLab />}
       {view === 'guides' && <DeveloperPlaybooks articleId={initial.guideId} />}
       {view === 'stories' && <GameStories storyId={storyId} query={storyQuery} setQuery={setStoryQuery} />}
-      {view === 'analysis' && <OriginalAnalysis articleId={analysisId} />}
-      {view === 'gdd' && <SurvivalDemoGdd />}
       {view === 'explorer' && <Explorer landingId={initial.gameId} filters={explorerFilters} setFilters={setExplorerFilters} visible={visibleGames} selectedId={explorerSelectedId} select={setExplorerSelectedId} shortlist={comparisonIds} setShortlist={setComparisonIds} openCase={openCase} openBuild={() => openBrief()} openReading={openReading} />}
       {view === 'reading' && <ReadingRoom articleId={readingId} query={readingQuery} setQuery={setReadingQuery} topic={readingTopic} setTopic={setReadingTopic} explore={openExplorer} />}
       {view === 'methodology' && <Methodology />}
@@ -451,7 +423,6 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         <section className="workbench content-view">
           <div className="workspace-heading"><div><p className="section-kicker"><Gauge aria-hidden="true" /> MARKET PULSE · AS OF 2 SEP 2026</p><h1>Demand exists. Discoverability is the scarce resource.</h1></div><p className="workspace-note">{marketPeriod === '2025' ? '“Hit rate” means a 2025 launch reached 1,000+ reviews. It is a cohort outcome—not your probability of success.' : marketPeriod === '2026-q1' ? 'Q1 genre counts were measured on 2 April. Genre supply is unpublished; the hit-count discrepancy is retained, not guessed away.' : 'Q2 coverage is incomplete. June-only records use overlapping tags and September review observations—not the HTMAG annual methodology.'}</p></div>
           <div className="stat-grid">{marketStats.map((stat) => <div className="stat-card" key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span><small>{stat.note}</small><SourceLink url={stat.source} /></div>)}</div>
-          <div className="editorial-next"><a href="/analysis/fps-zomboid-is-not-an-empty-market/">New: the five-game survival demand comparison <ArrowRight /></a><a href="/survival-demo/">Turn the evidence into a 15-day GDD <ArrowRight /></a></div>
           <div className="market-layout">
             <MarketPeriods period={marketPeriod} setPeriod={setMarketPeriod} />
             <aside className="decision-panel"><p className="section-kicker"><Target aria-hidden="true" /> RISK-ADJUSTED OPENING</p><h3>Build where demand and demo scope overlap.</h3><div className="decision-card"><span>01</span><div><strong>Tactile 3D incremental</strong><p>One physical room, one pressure rule, one visibly multiplying variable.</p></div></div><div className="decision-card"><span>02</span><div><strong>Micro job-sim + contradiction</strong><p>One familiar task plus a secret, risky or absurd second objective.</p></div></div><div className="decision-warning"><AlertTriangle /><p>Open-world survival has the best observed rate here and the worst fit for a 15-day vertical slice. Never optimize genre demand without production reality.</p></div></aside>
@@ -482,18 +453,17 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         </section>
       )}
 
-      {view === 'progress' && <ProgressTracker />}
 
       {view === 'playbook' && (
         <section className="workbench content-view">
           <div className="workspace-heading"><div><p className="section-kicker"><Database aria-hidden="true" /> REPEATABLE RESEARCH + DELIVERY SYSTEM</p><h1>A source stack, a 15-day sprint and hard Steam constraints.</h1></div><p className="workspace-note">The practical system is a living event table: game, date, channel, spend, outcome, evidence type, source URL and attribution caveat.</p></div>
           <section className="timing-grid">{steamTiming.map((item) => <div key={item.title}><span>{item.status}</span><strong>{item.title}</strong><p>{item.detail}</p><SourceLink url={item.url} label="Official source" /></div>)}</section>
           <div className="playbook-layout"><section className="surface-panel sprint-panel"><div className="surface-heading"><div><CalendarDays /><span><small>EXECUTION</small><strong>15 working days</strong></span></div></div><ol>{sprint.map((item,index) => <li key={item.days}><span className="sprint-num">{String(index + 1).padStart(2,'0')}</span><div><time>Days {item.days} · {item.owner}</time><strong>{item.title}</strong><p>{item.exit}</p></div></li>)}</ol><div className="scope-ban"><ShieldAlert /><div><strong>Do not build in this sprint</strong><p>Public matchmaking, dedicated servers, crossplay, runtime procgen, an open world, a meta tree, Content Warning-grade video/audio encoding, R.E.P.O.-grade multi-object network physics, or more than one map.</p></div></div></section><aside className="surface-panel measurement-panel"><div className="surface-heading"><div><Target /><span><small>VALIDATION LADDER</small><strong>Measure the next decision</strong></span></div></div><ol><li><b>01</b><span><strong>Awareness</strong><p>Short views, hold rate, comments that restate the hook.</p></span></li><li><b>02</b><span><strong>Intent</strong><p>Tagged store visits, follows, wishlists and 7-day baseline lift.</p></span></li><li><b>03</b><span><strong>Trial</strong><p>Unique demo users, CCU, median session, completion, replay.</p></span></li><li><b>04</b><span><strong>Launch</strong><p>Units, gross revenue, reviews, refund rate and peak CCU.</p></span></li></ol><div className="inline-note"><AlertTriangle /><p>A 100K-view clip is evidence for the hook only. It becomes marketing evidence when tagged traffic or the wishlist baseline moves with it.</p></div></aside></div>
-          <div className="report-download"><div><h3>The complete decision report</h3><p>Market definitions, deep cases, five concept briefs, technical scope, source curriculum and quarterly methodology.</p></div><a href="/Steam-Indie-2026-Decision-Report.md" download><ArrowDownToLine /> Download report</a></div>
           <div className="inline-note"><BookOpen /><p>Continue in the <button className="inline-link" onClick={() => openReading()}>Reading Room</button> for all {readingLibrary.length} article notes, publication profiles, original sources and disagreements.</p></div>
         </section>
       )}
-      <footer className="site-footer"><div><Radar /><strong>Steam Discovery</strong></div><p>Independent research · Not affiliated with Valve · Source library checked {readingUpdatedAt}; game snapshots retain their dates.<br />Game artwork belongs to its respective rights holders. Public evidence cannot prove organic attribution.</p><div className="footer-links"><a href="/about/#article-sources">Original articles & references</a><a href="/about/#attribution">Attribution & corrections</a><a href="/feed.xml">Research feed</a><a href="https://github.com/oguzhanozfe/steam-discovery">GitHub</a><a href="/sitemap.xml">Sitemap</a><button onClick={downloadDataset}>Download research <ArrowRight /></button></div></footer>
+      {view !== 'methodology' && <div className="ad-slot--wide"><AdSlot placement={view + '-end'} /></div>}
+      <footer className="site-footer"><div><Radar /><strong>Steam Discovery</strong></div><p>Independent research · Not affiliated with Valve · Source library checked {readingUpdatedAt}; game snapshots retain their dates.<br />Game artwork belongs to its respective rights holders. Public evidence cannot prove organic attribution.</p><div className="footer-links"><a href="/about/#article-sources">Original articles & references</a><a href="/about/#attribution">Attribution & corrections</a><a href="/about/#advertising">Advertising policy</a><a href="/feed.xml">Research feed</a><a href="https://github.com/oguzhanozfe/steam-discovery">GitHub</a><a href="/sitemap.xml">Sitemap</a><button onClick={downloadDataset}>Download research <ArrowRight /></button></div></footer>
     </main>
   );
 }

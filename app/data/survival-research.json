@@ -4,7 +4,7 @@
   "asOf": "2026-09-02",
   "language": "en",
   "status": "Public-source research; eight selected cases, not a complete market cohort",
-  "summary": "Survival crafting has demonstrated substantial demand, including new 2026 releases. The opportunity for this team is a small, distinctive survival-crafting slice: a home to improve, a reason to leave it, a tangible resource transformation, and one memorable threat or environmental change. A credible three-week demo is possible; a competitive open-world product is a different undertaking.",
+  "summary": "Survival crafting has demonstrated substantial demand across the selected cases, including 2026 releases. This guide compares player promises, reported milestones and production tradeoffs. A small prototype can test one interaction; it does not establish the feasibility or commercial demand for a competitive open-world game.",
   "definitions": {
     "playerLoop": [
       "Leave a safe place to seek a needed resource.",
@@ -15,7 +15,7 @@
     ],
     "classification": "OWSC is a useful player-promise family, not one rigid map format. Raft constrains movement around a mobile home; Abiotic Factor moves the loop into an interconnected facility. The comparisons below are design and market references, not claims that all belong to the same manually coded statistical category.",
     "metricPolicy": "SteamDB reviews are its observed aggregate review counts, not the English-language score counts shown in the June search snapshot. CCU is simultaneous Steam activity, not units. Reported sales retain their original platform, gross/net and date scope. No sales-to-reviews conversion or causal organic attribution is made.",
-    "scopePolicy": "Demo ideas, technical cuts, team allocations and validation gates are our proposed design judgments. They are not developer statements or proven demand for an unbuilt game."
+    "scopePolicy": "Prototype ideas, technical cuts and validation gates are editorial examples, not developer statements, a team's production commitment or proven demand for an unbuilt game."
   },
   "marketEvidence": [
     {
@@ -496,10 +496,10 @@
         "The Planet Crafter",
         "Raft"
       ],
-      "whyThisTeam": "One compact environment and visible environmental feedback concentrate the artist's work. Solo-first avoids immediate network/save-state complexity.",
       "demandHypothesis": "Cozy independence plus a clear environmental crisis could preserve the survival promise without combat breadth.",
       "notProven": "The specific setting, comic crop payoff and short-session format have not been market-validated.",
-      "largestRisk": "If power allocation is trivial, this becomes a pretty scene instead of a game."
+      "largestRisk": "If power allocation is trivial, this becomes a pretty scene instead of a game.",
+      "scopeRationale": "One compact environment and visible environmental feedback concentrate the artist's work. Solo-first avoids immediate network/save-state complexity."
     },
     {
       "rank": 2,
@@ -509,10 +509,10 @@
         "StarRupture",
         "Witchspire"
       ],
-      "whyThisTeam": "Reusable office props support recognizable functions and comedy; a few surprising gadgets can be the entire trailer.",
       "demandHypothesis": "Players may like domestic improvisation under survival pressure more than generic chopping and mining.",
       "notProven": "The workplace-survival audience is already served; a new gadget interaction must be visibly different.",
-      "largestRisk": "Reliable interactions and enemy timing can consume the entire engineering budget."
+      "largestRisk": "Reliable interactions and enemy timing can consume the entire engineering budget.",
+      "scopeRationale": "Reusable office props support recognizable functions and comedy; a few surprising gadgets can be the entire trailer."
     },
     {
       "rank": 3,
@@ -522,10 +522,10 @@
         "Windrose",
         "Valheim"
       ],
-      "whyThisTeam": "A single persistent platform makes progression legible and avoids producing a large traversable landmass.",
       "demandHypothesis": "Salvaging familiar household objects creates a different visual vocabulary from wooden raft upgrades.",
       "notProven": "This is a crowded mobile-base promise; flood dressing alone is not sufficient differentiation.",
-      "largestRisk": "Moving-platform physics, buoyancy and networking can overwhelm a short sprint. Use the fixed-origin cut."
+      "largestRisk": "Moving-platform physics, buoyancy and networking can overwhelm a short sprint. Use the fixed-origin cut.",
+      "scopeRationale": "A single persistent platform makes progression legible and avoids producing a large traversable landmass."
     },
     {
       "rank": 4,
@@ -535,25 +535,18 @@
         "Solarpunk",
         "Witchspire"
       ],
-      "whyThisTeam": "One authored location with three transformation states gives a single artist a tightly bounded visual target. Two machines can demonstrate the complete resource-to-world-change loop.",
       "demandHypothesis": "A satisfying ecological transformation could make progression understandable without combat, dialogue or a large tech tree.",
       "notProven": "Before/after visuals establish clarity, not replayability or purchase intent. The specific crater setting is an untested concept.",
-      "largestRisk": "If transformation is merely a timer, players may see a short animation rather than an engaging survival-crafting game. Require an interesting resource-allocation choice."
+      "largestRisk": "If transformation is merely a timer, players may see a short animation rather than an engaging survival-crafting game. Require an interesting resource-allocation choice.",
+      "scopeRationale": "One authored location with three transformation states gives a single artist a tightly bounded visual target. Two machines can demonstrate the complete resource-to-world-change loop."
     }
   ],
   "threeWeekExecution": {
-    "capacityAssumption": "Assuming five workdays per week: 75 total person-days, but only 45 are the two developers plus one 3D artist. The PM and marketing manager contribute scope, testing, research, packaging and outreach; do not count them as extra implementation capacity.",
+    "capacityAssumption": "Illustrative three-week prototype template, not a committed project schedule. Estimate implementation, art, testing and outreach separately for the people and systems actually available. Scope and staffing must be validated before committing to a deadline.",
     "deliverable": "One honest 8–12-minute playable slice and a 30–45-second gameplay video. The player gathers, builds one meaningful upgrade, handles one threat, sees a changed home/world and reaches a clear ending.",
     "week1": "Choose one promise; greybox the full loop; define a five-resource/five-recipe ceiling; make the signature interaction functional by day three; test an unedited clip with target players before expanding content.",
     "week2": "Replace only the camera-critical assets; add sound and feedback; complete the threat and ending; test save/restart; run cold playtests. If co-op is essential, it must already work end-to-end with object ownership and reconnect behavior—otherwise commit to solo.",
     "week3": "Fix clarity and reliability; cut unused systems; capture real play; prepare the Steam page and press kit around demonstrated mechanics. Marketing work can proceed, but actual public release still depends on Steam onboarding, review and release timing.",
-    "roles": {
-      "developer1": "Core interactions, resource state and build/save graph",
-      "developer2": "Threat, progression, UI and performance; networking only if a proven foundation exists",
-      "artist": "One location, silhouette-defining props, upgrade states and capsule-ready composition",
-      "productManager": "Scope lock, tester recruitment, observation notes, QA and cut decisions",
-      "marketingManager": "Comparable analysis, three hook edits, creator list, attribution links and page copy"
-    },
     "hardCuts": [
       "No procedural continent or infinite world.",
       "No PvP, public dedicated servers or live-service promise.",
@@ -572,7 +565,6 @@
   },
   "editorialWarnings": [
     "Replace the absolute label 'scope impossible' with 'Full-game scope: very high; constrained three-week slice: possible'. Distinguish prototype feasibility from a polished commercial release.",
-    "The 2025 20.83% figure is a mixed-method historical cohort ratio, not a validated probability for the proposed team or ideas.",
     "Do not combine the Q1 four-hit statistic and June two-of-five subset into a 2026 hit rate.",
     "Do not silently compare SteamDB aggregate reviews with the existing June English/scored review counts.",
     "Windrose's million-copy disclosure is not Steam-only. StarRupture's H1 number is preliminary gross units. Planet Crafter's campaign included paid creators. Abiotic Factor's console subscription audience is separate.",

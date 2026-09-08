@@ -2,8 +2,6 @@ import { ArrowUpRight } from 'lucide-react';
 import { readingLibrary, gameLibrary, type GameRecord, type ReadingArticle } from './discovery-data';
 import {
   gameStories,
-  originalAnalysis,
-  survivalDemoGdd,
   type GameStory,
 } from './editorial-data';
 import checks from './data/reference-checks.json';
@@ -11,6 +9,7 @@ import { ideas, type Idea } from './research-data';
 import nicheData from './data/hub-niches.json';
 import conceptData from './data/solo-concepts.json';
 import articleData from './data/hub-articles.json';
+import advertisingReferences from './data/advertising-sources.json';
 
 export type ReferenceUse = { url: string; uses?: string[] };
 export type SourceAccess = {
@@ -290,30 +289,6 @@ export function storyReferences(story: GameStory): ReferenceUse[] {
     })),
   ]);
 }
-export function analysisReferences(
-  article: (typeof originalAnalysis.articles)[number],
-): ReferenceUse[] {
-  return mergeReferenceUses([
-    ...article.sourceUrls.map((url) => ({ url })),
-    ...article.sections.flatMap((section) =>
-      section.sourceUrls.map((url) => ({
-        url,
-        uses: [`Evidence discussed in: ${section.heading}`],
-      })),
-    ),
-    ...article.evidenceCards.flatMap((card) =>
-      card.sourceUrl
-        ? [{ url: card.sourceUrl, uses: [`Evidence card: ${card.label}`] }]
-        : [],
-    ),
-    ...(article.comparison?.rows.flatMap((row) =>
-      row.sourceUrls.map((url) => ({
-        url,
-        uses: [`Comparison row: ${row.cells[0]}`],
-      })),
-    ) ?? []),
-  ]);
-}
 export function ArticleSourceCatalog() {
   const urls = [
     ...new Set([
@@ -363,32 +338,6 @@ export function gameReferences(game: GameRecord): ReferenceUse[] {
     })),
   ]);
 }
-export function gddReferences(): ReferenceUse[] {
-  const gdd = survivalDemoGdd;
-  return mergeReferenceUses([
-    ...gdd.sourceUrls.map((url) => ({ url })),
-    ...gdd.pipeline.checks.flatMap((check) =>
-      check.documentedFacts.map((fact) => ({
-        url: fact.sourceURL,
-        uses: [`Vendor documentation: ${check.title}`],
-      })),
-    ),
-    ...gdd.lessons.flatMap((lesson) => [
-      ...lesson.sourceUrls.map((url) => ({
-        url,
-        uses: [`Game lesson: ${lesson.role}`],
-      })),
-      ...lesson.kpis.map((kpi) => ({
-        url: kpi.source,
-        uses: [`KPI: ${kpi.label} (${kpi.date})`],
-      })),
-    ]),
-    ...gdd.distribution.constraints.map((rule) => ({
-      url: rule.sourceURL,
-      uses: [`Distribution constraint: ${rule.claim}`],
-    })),
-  ]);
-}
 export function ideaReferences(idea: Idea): ReferenceUse[] {
   const normalize = (title: string) => title.toLowerCase().replace(/[^a-z0-9]/g, '');
   return mergeReferenceUses(idea.comparables.flatMap(comparable => {
@@ -421,6 +370,7 @@ export function readingReferences(article: ReadingArticle): ReferenceUse[] {
   ]);
 }
 export const referenceMetadata = mergeReferenceUses([
+  ...advertisingReferences.map(ref => ({ ...ref, uses: ref.uses.map(use => `Advertising policy: ${use}`) })),
   ...checks.sources.map((source) => ({ url: source.url })),
   ...readingLibrary.flatMap(note => readingReferences(note).map(ref => ({ ...ref, uses: ref.uses?.map(use => `${note.title}: ${use}`) }))),
   ...articleData.articles.flatMap(article => playbookReferences(article).map(ref => ({ ...ref, uses: ref.uses?.map(use => `${article.title}: ${use}`) }))),
@@ -432,22 +382,12 @@ export const referenceMetadata = mergeReferenceUses([
       uses: ref.uses?.map((use) => `${story.title}: ${use}`),
     })),
   ),
-  ...originalAnalysis.articles.flatMap((article) =>
-    analysisReferences(article).map((ref) => ({
-      ...ref,
-      uses: ref.uses?.map((use) => `${article.title}: ${use}`),
-    })),
-  ),
   ...gameLibrary.flatMap((game) =>
     gameReferences(game).map((ref) => ({
       ...ref,
       uses: ref.uses?.map((use) => `${game.title}: ${use}`),
     })),
   ),
-  ...gddReferences().map((ref) => ({
-    ...ref,
-    uses: ref.uses?.map((use) => `City-escape GDD: ${use}`),
-  })),
   ...ideas.flatMap(idea => ideaReferences(idea).map(ref => ({ ...ref, uses: ref.uses?.map(use => `${idea.name}: ${use}`) }))),
 ]).map((reference) => ({
   ...sourceMetadata(reference.url),

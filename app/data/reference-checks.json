@@ -224,6 +224,36 @@
       "checkedAt": "2026-09-08",
       "scope": "Report based on developer posts; festival/demo history and prior team experience. It does not isolate the effect of one channel.",
       "wordingCompared": true
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/1346295?hl=en",
+      "title": "Ad placement policies",
+      "author": "Google",
+      "publishedAt": null,
+      "publication": "Google AdSense",
+      "access": "Public documentation reviewed",
+      "checkedAt": "2026-09-08",
+      "scope": "Distinguishable ad placements and permitted labels. Our editorial-independence pledge is our policy, not Google approval."
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/12171612?hl=en",
+      "title": "Ads.txt guide",
+      "author": "Google",
+      "publishedAt": null,
+      "publication": "Google AdSense",
+      "access": "Public documentation reviewed",
+      "checkedAt": "2026-09-08",
+      "scope": "Future seller authorization setup with a real publisher ID. Ads.txt authorization and site-review approval are separate."
+    },
+    {
+      "url": "https://www.google.com/about/company/user-consent-policy-help/",
+      "title": "Help with the EU user consent policy",
+      "author": "Google",
+      "publishedAt": null,
+      "publication": "Google",
+      "access": "Public documentation reviewed",
+      "checkedAt": "2026-09-08",
+      "scope": "Consent planning for relevant Google advertising services before activating any ad network."
     }
   ],
   "corrections": [

@@ -4,6 +4,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Advertising stays separate from research, never styled as a recommendation. */
+.ad-slot { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; margin: 2rem 0; padding: 1.5rem; min-height: 8rem; border: 1px dashed #607382; border-radius: .75rem; background: #151e28; color: #e8eef3; }
+.ad-label { align-self: flex-start; font-size: .875rem; font-weight: 700; letter-spacing: .08em; color: #b9c7d2; }
+.ad-slot strong { font-size: 1.125rem; font-weight: 600; }
+.ad-slot p { margin: .35rem 0 0; font-size: 1rem; line-height: 1.6; color: #b9c7d2; }
+.ad-slot a { margin-left: auto; color: #c6e780; font-size: .9375rem; text-decoration: underline; text-underline-offset: .2em; }
+.ad-slot a:focus-visible { outline: 2px solid #c6e780; outline-offset: 5px; }
+.ad-slot--wide { margin: 2rem auto; max-width: 1440px; padding: 0 1.5rem; }
+.story-grid > .ad-slot { grid-column: 1 / -1; }
+@media (max-width: 600px) { .ad-slot { align-items: flex-start; flex-direction: column; padding: 1.25rem; } .ad-slot a { margin-left: 0; } }
+
 /* Small-team research surfaces use the default dark ink and lime palette. */
 .hub-view { max-width:1560px; margin:0 auto; font-size:16px; line-height:1.65; }
 .hub-view h1 { font-size:clamp(30px,3vw,46px); line-height:1.15; letter-spacing:-.035em; font-weight:650; margin:8px 0 16px; max-width:1050px; }

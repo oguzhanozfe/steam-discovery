@@ -34,7 +34,7 @@ for (const note of readingMetadata) {
 }
 const home = await read('index.html');
 assert(!home.includes('YOUR SURVIVAL PROJECT'));
-assert(home.includes('Sources &amp; Reading') && home.includes('Project workspace'));
+assert(home.includes('Sources &amp; Reading') && !home.includes('Project workspace'));
 assert((await read('feed.xml')).includes('Research note:'));
 assert((await read('robots.txt')).includes('OAI-SearchBot'));
-console.log(`Validated ${publicRoutes.length} pages, ${readingMetadata.length} source notes, canonical URLs, structured data, sitemap and project noindex rules.`);
+console.log(`Validated ${publicRoutes.length} pages, ${readingMetadata.length} source notes, canonical URLs, structured data, sitemap and public-only route rules.`);

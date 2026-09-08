@@ -12,7 +12,7 @@ Independent Steam marketing and indie game market research for game developers.
 - Developer Playbooks: source arguments converted into separate solo and 2–5-person action plans, with counterexamples and uncertainty retained.
 - Genre demand and comparable-game research, separating reports, observations and estimates.
 - Annotated expert readings with original links, publication dates and access disclosures.
-- Original analysis and a secondary project workspace for the demo GDD and delivery tracker.
+- Clearly labeled sponsorship availability spaces, separate from research and citations.
 
 Steam Discovery is independent and is not affiliated with Valve. Editorial notes are original, AI-assisted summaries. The linked publications and game artwork retain their respective rights; making this repository public does not grant rights to third-party material.
 
@@ -35,18 +35,23 @@ pnpm exec tsc --noEmit
 pnpm validate:research
 pnpm validate:readability
 pnpm validate:citations
+pnpm validate:public
 pnpm audit
 ```
 
-The production build prerenders research pages into `dist-static/`. Every page has a canonical URL, title and description; editorial pages include attributed Article metadata. The build also generates the sitemap, RSS feed, `llms.txt`, research index and source-note JSON. Project GDD and progress pages stay accessible under Project workspace and are excluded from indexing; this is not authentication.
+The production build prerenders research pages into `dist-static/`. Every page has a canonical URL, title and description; editorial pages include attributed Article metadata. The build also generates the sitemap, RSS feed, `llms.txt`, research index and source-note JSON. Only public research is included. Private project plans, task boards, their API and downloads have been removed from the current source and build. Historical Git commits and old deployments are separate retention surfaces; this change does not rewrite them.
 
 ## Sources and contributions
 
 Follow [CONTENT_MAINTENANCE.md](CONTENT_MAINTENANCE.md) to add research. Suggest a source or correction through [Issues](https://github.com/oguzhanozfe/steam-discovery/issues), including the canonical page, original source and date. Do not paste private analytics or credentials into an issue.
 
-The source data lives in `app/data/`. `app/data/reading-updates.json` holds the latest collection of notes and archive checks. Older observations keep their original dates. The Progress board remains in `app/data/progress-tracker.json` and is fetched from the public repository on page load without a token.
+The source data lives in `app/data/`. `app/data/reading-updates.json` holds the latest collection of notes and archive checks. Older observations keep their original dates. Do not add internal project plans, team assignments or credentials to this public repository or its export payload.
 
 References use the shared `app/source-references.tsx` renderer. Original article metadata, contextual source-use mappings, access limits and editorial contribution appear on the research pages. Targeted fresh checks and public corrections are recorded in `app/data/reference-checks.json`; older metadata is explicitly distinguished from fresh verification. `/about/#attribution` explains the policy. `validate:citations` checks citation coverage and export consistency, not plagiarism or factual truth.
+
+## Advertising
+
+`app/ad-slot.tsx` renders labeled availability notices, not paid campaigns or a connected ad network. Do not fabricate sponsors, publisher IDs or ads.txt entries. Connect a real publisher account only after confirming the provider, disclosures and applicable consent setup. Paid creative must identify the advertiser; paid links must use `rel="sponsored noopener noreferrer"`. Keep ads out of citations, KPI tables and research rankings. See `/about/#advertising` for the public policy and official references.
 
 ## Refreshing the small-team hub
 
@@ -58,4 +63,4 @@ The curated snapshot is in `app/data/radar-snapshot.json`; the full client-loade
 
 ## Deploy to the existing host
 
-The existing production host is Vercel at `steam-discovery.vercel.app`. Git auto-deploy is intentionally disabled. Run `vercel build --prod` followed by `vercel deploy --prebuilt --prod` after checks pass, using the existing linked project and authorized account. Never commit local environment files, Vercel credentials or generated builds. `scripts/stage-vercel.mjs` is a legacy static-only helper and must not be used for releases that include `/api/progress`.
+The existing production host is Vercel at `steam-discovery.vercel.app`. Git auto-deploy is intentionally disabled. Run `vercel build --prod` followed by `vercel deploy --prebuilt --prod` after checks pass, using the existing linked project and authorized account. Never commit local environment files, Vercel credentials or generated builds. Use the current validated build; do not deploy stale output directories.

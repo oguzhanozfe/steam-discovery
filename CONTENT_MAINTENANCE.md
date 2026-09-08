@@ -8,7 +8,7 @@ Check the publication archives already listed in `app/data/newsletters.json`, `r
 4. Add source-check results separately. Keep the latest checkedAt accurate and update the visible addition counts from the actual new batch. A source check does not refresh the underlying game metrics. Record unavailable sources as unavailable.
 5. Preserve evidence labels. Model revenue is not audited revenue; reviews are not units; event eligibility is not guaranteed visibility; a successful case is not a success probability. All numerical claims need scope, date and original evidence.
 6. Update existing claims only when new evidence supports the change, preserving earlier snapshots and recording the correction. Never fabricate dates, authors, metrics, endorsements, ranking guarantees or source access.
-7. Build, type-check, validate research metadata and run the dependency audit. Inspect the changed files before committing. Publish the validated version to the existing Vercel project, then check the live home, new note, feed, sitemap, metadata and progress endpoint.
+7. Build, type-check, validate research metadata and run the dependency audit. Inspect the changed files before committing. Publish the validated version to the existing Vercel project, then check the live home, new note, feed, sitemap, metadata, and confirm retired project paths return 404.
 
 ## Attribution is required for every update
 
@@ -19,6 +19,8 @@ Check the publication archives already listed in `app/data/newsletters.json`, `r
 - Only record a freshly verified title/author/date/access in `reference-checks.json` after checking the original. Do not guess titles from URL slugs, assign authors from domains, or present preview access as full reading.
 - Document substantive corrections publicly. Static citation checks detect omissions, not plagiarism or factual truth; compare new prose with the consulted sources before publication. Do not claim a blanket originality certification.
 
-No content or ranking instructions should be hidden for crawlers. Visible text and structured data must agree. The llms.txt file is an optional reading aid; it does not guarantee inclusion in AI answers. GDD and Progress remain secondary, accessible project tools with noindex metadata.
+No content or ranking instructions should be hidden for crawlers. Visible text and structured data must agree. The llms.txt file is an optional reading aid; it does not guarantee inclusion in AI answers. Internal project GDDs, task boards, team assignments and source payloads must not be included in public routes, JavaScript bundles, downloads or repository files. Noindex is not privacy.
+
+Advertising must be visibly separate from research. Availability notices must not imply a real sponsor. Do not enable network scripts, invent publisher credentials, publish placeholder seller records, or introduce tracking without the approved account and appropriate privacy/consent setup. References are never sold as advertising placements.
 
 Keep dependency security fixes narrowly scoped and preserve the lockfile. `pnpm-workspace.yaml` documents temporary patched transitive versions. Remove overrides only after upstream packages provide the fixes and the audit, production build and local development smoke checks pass.
