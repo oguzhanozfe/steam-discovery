@@ -67,6 +67,14 @@ const signalClasses: Record<GameCase['signal'], string> = {
   Strong: 'signal signal-strong', Control: 'signal signal-control',
 };
 
+function marketPeriodPath(period: MarketPeriod): string {
+  switch (period) {
+    case '2026-q1': return '/market/2026-q1/';
+    case '2026-q2': return '/market/2026-q2/';
+    default: return '/market/2025/';
+  }
+}
+
 function downloadDataset() {
   const payload = {
     asOf: '2026-09-02',
@@ -358,7 +366,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       </header>
 
       <nav className="nav-shell" aria-label="Research sections">
-        <div className="view-tabs">{navItems.map((item) => { const Icon = item.icon; return <a key={item.id} href={item.id === 'market' ? `/market/${marketPeriod}/` : viewPaths[item.id]} className={view === item.id ? 'is-active' : ''} aria-current={view === item.id ? 'page' : undefined}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.caption}</small></span></a>; })}</div>
+        <div className="view-tabs">{navItems.map((item) => { const Icon = item.icon; return <a key={item.id} href={item.id === 'market' ? marketPeriodPath(marketPeriod) : viewPaths[item.id]} className={view === item.id ? 'is-active' : ''} aria-current={view === item.id ? 'page' : undefined}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.caption}</small></span></a>; })}</div>
         <Button variant="outline" size="sm" onClick={downloadDataset}><ArrowDownToLine aria-hidden="true" /> Export JSON</Button>
       </nav>
       <nav className="research-secondary" aria-label="Supporting research"><a href="/reading/">Sources &amp; Reading</a><a href="/games/">Researched benchmarks</a><a href="/research/open-world-survival-craft/">Survival craft</a><a href="/case-studies/">Campaign timelines</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a><a href="/about/">About &amp; sources</a></nav>
