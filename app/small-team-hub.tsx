@@ -323,7 +323,7 @@ export function SteamRadar() {
   const [compare, setCompare] = useState<string[]>([]);
   const [storageNote, setStorageNote] = useState('');
   const [reload, setReload] = useState(0);
-  /* eslint-disable react/react-compiler -- One-time hydration of browser-only URL/storage after matching server-rendered defaults. */
+  /* eslint-disable react/set-state-in-effect -- One-time hydration of browser-only URL/storage after matching server-rendered defaults. */
   useEffect(() => {
     const query = new URLSearchParams(window.location.search).get('q');
     if (query)
@@ -340,7 +340,7 @@ export function SteamRadar() {
       );
     }
   }, []);
-  /* eslint-enable react/react-compiler */
+  /* eslint-enable react/set-state-in-effect */
   useEffect(() => {
     const controller = new AbortController();
     fetch('/data/radar-catalog.json', { signal: controller.signal })

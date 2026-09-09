@@ -5,11 +5,11 @@ updates:
     schedule:
       interval: weekly
       day: monday
-    open-pull-requests-limit: 5
+    # Keep automated security fixes active without filling the public repo with
+    # routine version-update pull requests. Compatible upgrades are reviewed in
+    # a deliberate maintenance pass instead.
+    open-pull-requests-limit: 0
     groups:
       security-patches:
         applies-to: security-updates
         patterns: ["*"]
-      compatible-updates:
-        patterns: ["*"]
-        update-types: [minor, patch]
