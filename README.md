@@ -4,6 +4,10 @@ Independent Steam marketing and indie game market research for game developers.
 
 **[Explore the site](https://steam-discovery.vercel.app/)** · [Source notes](https://steam-discovery.vercel.app/reading/) · [Methodology](https://steam-discovery.vercel.app/about/) · [RSS](https://steam-discovery.vercel.app/feed.xml)
 
+[![Verify research and dependencies](https://github.com/oguzhanozfe/steam-discovery/actions/workflows/research.yml/badge.svg?branch=main)](https://github.com/oguzhanozfe/steam-discovery/actions/workflows/research.yml)
+
+![Steam Signal Library: what worked, when, where and why](public/og.png)
+
 ## What is here
 
 - Game case studies with dated marketing events, KPIs and evidence limits.
@@ -15,6 +19,8 @@ Independent Steam marketing and indie game market research for game developers.
 - Clearly labeled sponsorship availability spaces, separate from research and citations.
 
 Steam Discovery is independent and is not affiliated with Valve. Editorial notes are original, AI-assisted summaries. The linked publications and game artwork retain their respective rights; making this repository public does not grant rights to third-party material.
+
+See [RIGHTS.md](RIGHTS.md) for the code, editorial and artwork boundaries.
 
 ## Run locally
 
