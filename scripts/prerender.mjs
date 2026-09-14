@@ -34,7 +34,8 @@ await writeFile(resolve(out, 'robots.txt'), `User-agent: *\nAllow: /\n\nUser-age
 await mkdir(resolve(out, 'data'), { recursive: true });
 await writeFile(resolve(out, 'data/research-index.json'), JSON.stringify(researchIndex, null, 2));
 await writeFile(resolve(out, 'data/readings.json'), JSON.stringify(readingMetadata, null, 2));
-await writeFile(resolve(out, 'data/reference-metadata.json'), JSON.stringify({ sourceCheckDate: '2026-09-08', warning: 'Usage records aggregate editorial locations, not independent verification of every claim. Missing metadata is explicitly unknown.', sources: referenceMetadata }, null, 2));
+const referenceChecks = JSON.parse(await readFile(resolve(project, 'app/data/reference-checks.json'), 'utf8'));
+await writeFile(resolve(out, 'data/reference-metadata.json'), JSON.stringify({ sourceCheckDate: referenceChecks.checkedAt, warning: 'Usage records aggregate editorial locations, not independent verification of every claim. Missing metadata is explicitly unknown.', sources: referenceMetadata }, null, 2));
 await cp(resolve(project, 'app/data/reading-updates.json'), resolve(out, 'data/reading-updates.json'));
 const notes = [...readingMetadata].sort((a, b) => (b.sourceCheckedAt ?? '').localeCompare(a.sourceCheckedAt ?? '') || (b.date ?? '').localeCompare(a.date ?? '')).slice(0, 30);
 const rss = `<?xml version="1.0" encoding="UTF-8"?>

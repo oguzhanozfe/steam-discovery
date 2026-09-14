@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-07",
-  "methodology": "Read the existing ReadingArticle schema, newsletter sources, reading expansion and HTMAG list. Opened the publishers' current archives and candidate articles using web browsing. Two selected records were published in the requested window. Three are older, newly curated additions; their original publication dates remain unchanged. Summaries are short original editorial digests, not reproductions. A dated archive check is evidence of what was visible, not proof that no unindexed article exists.",
+  "checkedAt": "2026-09-14",
+  "methodology": "Weekly September 14 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 8–11. Three article bodies and one publicly accessible lead case were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached or undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed.",
   "articles": [
     {
       "id": "gdc-august-2026-public-discovery-roundup",
@@ -160,6 +160,132 @@
         "https://impress.games/blog/10-key-takeaways-from-impact-pitch-up-2025",
         "https://impress.games/blog"
       ]
+    },
+    {
+      "id": "htmag-horror-release-month-2026",
+      "title": "You probably shouldn’t launch a horror game in October",
+      "author": "Chris Zukowski",
+      "publication": "How To Market A Game",
+      "date": "2026-09-08",
+      "checkedAt": "2026-09-14",
+      "url": "https://howtomarketagame.com/2026/09/08/horror-games-dont-need-to-launch-in-october/",
+      "topics": [
+        "Horror",
+        "Launch timing",
+        "Measurement integrity",
+        "Campaign execution"
+      ],
+      "relatedGames": [],
+      "summary": "Zukowski challenges the rush to finish horror games for Halloween. His monthly release comparison and selected catalogue examples separate the launch decision from later seasonal promotion.",
+      "hardData": [],
+      "evidenceType": "Practitioner analysis of commercial revenue estimates and selected examples",
+      "actionableLesson": "Choose a launch window around readiness and relevant competition; evaluate seasonal promotion separately.",
+      "applicationSteps": [
+        "Compare similarly scoped releases and retain their release years.",
+        "Record launch readiness and later promotional opportunities as separate decisions."
+      ],
+      "limitations": "Unequal release-age windows, a model revenue floor and a revenue-filtered subset limit the month comparison. It does not prove June causes better sales. The author also cautions against moving an already committed October launch because of this post.",
+      "access": "Public full article text read",
+      "sourceUrls": [
+        "https://howtomarketagame.com/2026/09/08/horror-games-dont-need-to-launch-in-october/",
+        "https://howtomarketagame.com/"
+      ]
+    },
+    {
+      "id": "gdc-demo-ccu-cohort-2026",
+      "title": "Does your Steam demo CCU ‘predict’ your game’s success?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-08",
+      "checkedAt": "2026-09-14",
+      "url": "https://newsletter.gamediscover.co/p/does-your-steam-demo-ccu-predict",
+      "topics": [
+        "Next Fest",
+        "Demo",
+        "Measurement integrity",
+        "Counter-cases"
+      ],
+      "relatedGames": [],
+      "summary": "Carless compares demo and full-game peak concurrent players across a filtered release cohort. The distribution makes demo engagement useful for scenario planning while showing why a median cannot forecast an individual launch.",
+      "hardData": [
+        "GameDiscoverCo reports a 3.01× median full-game/demo peak-CCU ratio for 2,569 Steam games released January 2024–August 2026 whose demos exceeded 50 peak concurrents."
+      ],
+      "evidenceType": "Analyst cohort analysis using proprietary Steam concurrency records",
+      "actionableLesson": "Compare a range of engagement outcomes for similar games before using demo results in a budget.",
+      "applicationSteps": [
+        "Keep the demo threshold, release window and peak-CCU definition with the comparison.",
+        "Separate concurrent players from purchases and revenue."
+      ],
+      "limitations": "The selected cohort excludes games without a qualifying demo. All-time peaks have unequal observation windows; pricing, promotion and game quality differ. The ratio is observational, and the article’s sales conversions are estimates.",
+      "access": "Public full article text read",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/does-your-steam-demo-ccu-predict"
+      ]
+    },
+    {
+      "id": "gdc-yazs-10-returning-players-2026",
+      "title": "When 1.0 goes nice: Yet Another Zombie Survivors edition",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-11",
+      "checkedAt": "2026-09-14",
+      "url": "https://newsletter.gamediscover.co/p/when-10-goes-nice-yet-another-zombie",
+      "topics": [
+        "Early Access",
+        "Creators",
+        "Campaign execution",
+        "Measurement integrity"
+      ],
+      "relatedGames": [
+        "Yet Another Zombie Survivors"
+      ],
+      "summary": "The public lead case describes a substantial update and more targeted outreach at Yet Another Zombie Survivors’ exit from Early Access. Returning owners explain why renewed activity must be measured separately from new purchases.",
+      "hardData": [
+        "Awesome Games Studio’s Diana Biszczanik reports 88,000 Steam copies sold in the first two weeks after the August 20, 2026 1.0 launch, compared with 93,000 in Early Access’s first two weeks."
+      ],
+      "evidenceType": "Developer figures reported in an analyst interview; accessible lead section",
+      "actionableLesson": "Give returning players a clear reason to revisit and explain the new content to relevant creators.",
+      "applicationSteps": [
+        "Measure returning owners, new players and purchases separately.",
+        "Show the update’s concrete additions in a focused outreach pitch."
+      ],
+      "limitations": "One successful studio’s self-report does not establish a typical 1.0 result or isolate outreach effects. Paid material after the lead case was not reviewed.",
+      "access": "Public lead case read; post marked Paid, subscriber-only remainder excluded",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/when-10-goes-nice-yet-another-zombie"
+      ]
+    },
+    {
+      "id": "alinea-demo-conversion-denominators-2026",
+      "title": "This year's top PlayStation Plus games (so far)",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-09-08",
+      "checkedAt": "2026-09-14",
+      "url": "https://alineaanalytics.substack.com/p/this-years-top-playstation-plus-games",
+      "topics": [
+        "Demo",
+        "Measurement integrity",
+        "Revenue & pricing"
+      ],
+      "relatedGames": [
+        "Onimusha: Way of the Sword"
+      ],
+      "summary": "The Steam section distinguishes two demo measures: the share of buyers who tried a demo and the share of demo players who purchased. Those denominators answer different questions.",
+      "hardData": [
+        "As published September 8, Alinea estimates that about 40% of Onimusha’s Steam players previously played its demo, while 25% of demo players bought the Steam game."
+      ],
+      "evidenceType": "Commercial analyst estimates for a selected major-publisher release",
+      "actionableLesson": "Name the denominator and observation date whenever reporting demo conversion.",
+      "applicationSteps": [
+        "Track demo-to-purchase conversion separately from prior-demo participation among buyers.",
+        "Compare matching platforms, regions and acquisition windows."
+      ],
+      "limitations": "These are model estimates for an established franchise, not audited sales or an indie benchmark. The figures do not isolate the demo’s incremental effect, and the exact conversion window is not disclosed.",
+      "access": "Public full article text read; note covers the Steam demo section",
+      "sourceUrls": [
+        "https://alineaanalytics.substack.com/p/this-years-top-playstation-plus-games"
+      ]
     }
   ],
   "sourceChecks": [
@@ -225,17 +351,128 @@
       "url": "https://gamedevreports.substack.com/archive",
       "latestVisiblePublicationDate": "2026-09-07",
       "result": "September 3 mobile-Japan report, September 4 weekly recap, September 5 premium update and September 7 mobile ranking visible. Not selected for the narrow Steam-discovery refresh; premium content not treated as read."
+    },
+    {
+      "source": "How To Market A Game",
+      "url": "https://howtomarketagame.com/blog/",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-09-08",
+      "result": "September 8 horror-launch article read and added; archive byline and publisher introduction checked."
+    },
+    {
+      "source": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-08-23",
+      "result": "No September 8–14 article visible. Latest article remains represented in the library."
+    },
+    {
+      "source": "Game World Observer — Marketing",
+      "url": "https://gameworldobserver.com/category/marketing",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-05-21",
+      "result": "No September 8–14 marketing article visible. Latest DREADMOOR case remains represented."
+    },
+    {
+      "source": "IMPRESS Academy",
+      "url": "https://impress.games/blog",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2025-11-13",
+      "result": "No September 8–14 article visible. Returned archive was cached; latest visible pitch recap is already represented."
+    },
+    {
+      "source": "The GameDiscoverCo newsletter",
+      "url": "https://newsletter.gamediscover.co/archive",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-09-11",
+      "result": "September 8 demo analysis and September 11 publicly accessible 1.0 lead case read and added. Subscriber-only remainder excluded."
+    },
+    {
+      "source": "The Alinea Insight newsletter",
+      "url": "https://alineaanalytics.substack.com/archive",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-09-10",
+      "result": "September 8 article read; Steam demo-denominator note added. September 10 console-focused headline was not selected."
+    },
+    {
+      "source": "Game Marketing Intel",
+      "url": "https://gamemarketing.substack.com/archive",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-07-19",
+      "result": "No September 8–14 post visible in the returned cached archive. July audio/article pair is already represented once."
+    },
+    {
+      "source": "OP Game Marketing",
+      "url": "https://opgamemarketing.substack.com/archive",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-08-14",
+      "result": "No September 8–14 post visible in the returned cached archive; latest analysis is already represented."
+    },
+    {
+      "source": "GameDev Reports",
+      "url": "https://gamedevreports.substack.com/archive",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": null,
+      "result": "September 8–12 reports and a newer relative-dated subscriber-tool announcement visible. Steam chart recap duplicates an upstream source already represented; no paid report treated as read."
+    },
+    {
+      "source": "Butterscotch Shenanigans development blog",
+      "url": "https://blog.bscotch.net/",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-08-20",
+      "result": "No September 8–14 post visible. Latest How Many Dudes timeline is already represented."
+    },
+    {
+      "source": "Push to Talk",
+      "url": "https://www.pushtotalk.gg/archive",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2026-07-20",
+      "result": "No September 8–14 post visible; latest archive entry concerns a print magazine."
+    },
+    {
+      "source": "Game File",
+      "url": "https://www.gamefile.news/archive",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": null,
+      "result": "September 8 fellowship reporting, September 10 console review and a newer relative-dated Nintendo article visible. None selected for this Steam-marketing pass; article bodies not reviewed."
+    },
+    {
+      "source": "Game If You Are",
+      "url": "https://gameifyouare.com/projects-case-studies/",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": null,
+      "result": "Public case-study directory checked. Publication dates are not displayed, so no listing is labeled a new September publication; campaign metrics were not refreshed."
+    },
+    {
+      "source": "Game Developer — First-hand Postmortems",
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "checkedAt": "2026-09-14",
+      "latestVisiblePublicationDate": "2025-05-07",
+      "result": "The designated case-study directory shows no September 8–14 entry. Its newest visible entry is dated May 7, 2025; this does not establish publication-wide inactivity."
     }
   ],
   "latestBatch": {
-    "addedAt": "2026-09-07",
-    "publishedSince": "2026-09-03",
+    "addedAt": "2026-09-14",
+    "publishedSince": "2026-09-08",
     "articleIds": [
-      "gdc-august-2026-public-discovery-roundup",
-      "alinea-steam-2026-middle-market-definition",
-      "gmi-development-time-proxy-2026",
-      "derek-lieu-mandrake-announce-2026",
-      "impress-pitch-up-2025-takeaways"
+      "htmag-horror-release-month-2026",
+      "gdc-demo-ccu-cohort-2026",
+      "gdc-yazs-10-returning-players-2026",
+      "alinea-demo-conversion-denominators-2026"
     ]
-  }
+  },
+  "previousBatches": [
+    {
+      "addedAt": "2026-09-07",
+      "publishedSince": "2026-09-03",
+      "articleIds": [
+        "gdc-august-2026-public-discovery-roundup",
+        "alinea-steam-2026-middle-market-definition",
+        "gmi-development-time-proxy-2026",
+        "derek-lieu-mandrake-announce-2026",
+        "impress-pitch-up-2025-takeaways"
+      ],
+      "methodology": "Read the existing ReadingArticle schema, newsletter sources, reading expansion and HTMAG list. Opened the publishers' current archives and candidate articles using web browsing. Two selected records were published in the requested window. Three are older, newly curated additions; their original publication dates remain unchanged. Summaries are short original editorial digests, not reproductions. A dated archive check is evidence of what was visible, not proof that no unindexed article exists."
+    }
+  ]
 }

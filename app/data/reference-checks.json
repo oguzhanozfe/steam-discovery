@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-08",
+  "checkedAt": "2026-09-14",
   "method": "Targeted source and wording checks, not a site-wide plagiarism certification. Original publication dates and historical metric windows are separate from this check date.",
   "sources": [
     {
@@ -254,6 +254,51 @@
       "access": "Public documentation reviewed",
       "checkedAt": "2026-09-08",
       "scope": "Consent planning for relevant Google advertising services before activating any ad network."
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/09/08/horror-games-dont-need-to-launch-in-october/",
+      "title": "You probably shouldn’t launch a horror game in October",
+      "author": "Chris Zukowski",
+      "publishedAt": "2026-09-08",
+      "publication": "How To Market A Game",
+      "access": "Public full article text read",
+      "checkedAt": "2026-09-14",
+      "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
+      "wordingCompared": true,
+      "authorNote": "Archive byline is zukalous; publisher homepage identifies Chris Zukowski as its author."
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/does-your-steam-demo-ccu-predict",
+      "title": "Does your Steam demo CCU ‘predict’ your game’s success?",
+      "author": "Simon Carless",
+      "publishedAt": "2026-09-08",
+      "publication": "The GameDiscoverCo newsletter",
+      "access": "Public full article text read",
+      "checkedAt": "2026-09-14",
+      "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/when-10-goes-nice-yet-another-zombie",
+      "title": "When 1.0 goes nice: Yet Another Zombie Survivors edition",
+      "author": "Simon Carless",
+      "publishedAt": "2026-09-11",
+      "publication": "The GameDiscoverCo newsletter",
+      "access": "Public lead case read; post marked Paid, subscriber-only remainder excluded",
+      "checkedAt": "2026-09-14",
+      "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/p/this-years-top-playstation-plus-games",
+      "title": "This year's top PlayStation Plus games (so far)",
+      "author": "Rhys Elliott",
+      "publishedAt": "2026-09-08",
+      "publication": "The Alinea Insight newsletter",
+      "access": "Public full article text read; note covers the Steam demo section",
+      "checkedAt": "2026-09-14",
+      "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
+      "wordingCompared": true
     }
   ],
   "corrections": [
@@ -266,5 +311,5 @@
       "correction": "The earlier 485 accumulated across roughly six months. Corrected the narrative and event outcome; removed the unsupported weak-festival inference."
     }
   ],
-  "wordingReviewCount": 18
+  "wordingReviewCount": 22
 }

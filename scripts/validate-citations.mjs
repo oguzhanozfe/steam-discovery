@@ -115,6 +115,7 @@ assert.equal(
   'Do not fabricate authors',
 );
 const dataset = await json('dist-static/data/reference-metadata.json');
+assert.equal(dataset.sourceCheckDate, checks.checkedAt, 'Export source-check date must match the dated ledger');
 assert(dataset.sources.length >= checks.sources.length);
 assert.deepEqual(await json('dist-static/data/reference-checks.json'), checks);
 const researchIndex = await json('dist-static/data/research-index.json');
