@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-14",
-  "methodology": "Weekly September 14 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 8–11. Three article bodies and one publicly accessible lead case were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached or undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed.",
+  "checkedAt": "2026-09-21",
+  "methodology": "Weekly September 21 pass: inspected fourteen original publisher archives or directories and read three selected articles published September 15–18. Two full public articles and one publicly accessible lead analysis were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached and undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed.",
   "articles": [
     {
       "id": "gdc-august-2026-public-discovery-roundup",
@@ -286,6 +286,101 @@
       "sourceUrls": [
         "https://alineaanalytics.substack.com/p/this-years-top-playstation-plus-games"
       ]
+    },
+    {
+      "id": "gdc-indie-budget-denominator-2026",
+      "title": "Is the game biz sustainable for the average indie dev?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-15",
+      "checkedAt": "2026-09-21",
+      "url": "https://newsletter.gamediscover.co/p/is-the-game-biz-sustainable-for-the",
+      "topics": [
+        "Production scope",
+        "Small games",
+        "Measurement integrity",
+        "Counter-cases"
+      ],
+      "relatedGames": [],
+      "summary": "Carless uses a monthly release cohort to examine how production costs and publishing terms change the revenue needed to sustain a studio. The analysis supplies a useful counterweight to individual breakout stories.",
+      "hardData": [
+        "In its September 15 snapshot, GameDiscoverCo estimates that 16 of 1,230 January 2026 Steam paid releases exceeded $1 million in lifetime gross revenue."
+      ],
+      "evidenceType": "Commercial analyst estimates with illustrative budget and recoup scenarios",
+      "actionableLesson": "Our interpretation: evaluate a production plan against several net-receipt scenarios and the time between releases.",
+      "applicationSteps": [
+        "Model costs and cash timing separately from gross sales.",
+        "Compare releases with similar scope and team circumstances."
+      ],
+      "limitations": "The cohort mixes budgets and experience levels. Cost and recoup assumptions are illustrative; estimated gross and hypothetical net are not audited profit or a particular studio’s success probability.",
+      "access": "Public full article text read",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/is-the-game-biz-sustainable-for-the"
+      ]
+    },
+    {
+      "id": "gdc-discovery-age-survey-2026",
+      "title": "The one ‘game discovery by player age’ chart you need to see",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-18",
+      "checkedAt": "2026-09-21",
+      "url": "https://newsletter.gamediscover.co/p/the-one-game-discovery-by-player",
+      "topics": [
+        "Discovery",
+        "Audience research",
+        "Campaign execution",
+        "Measurement integrity"
+      ],
+      "relatedGames": [],
+      "summary": "Carless compares reported discovery habits across age groups in GameDiscoverCo’s Steam Fan Snapshot panel. The practical value is a question for audience research: whether a planned channel matches the players being sought.",
+      "hardData": [
+        "The September 18 article describes a panel of over 16,000 worldwide Steam players recruited through online giveaways; respondents could select multiple discovery methods."
+      ],
+      "evidenceType": "Self-selected survey linked to Steam libraries; self-reported discovery methods",
+      "actionableLesson": "Our interpretation: test channel fit with the intended audience before allocating campaign effort.",
+      "applicationSteps": [
+        "Ask target players where they found recent games.",
+        "Separate reported discovery from tracked visits, wishlists and purchases."
+      ],
+      "limitations": "Giveaway recruitment is not random sampling. Age-group associations do not establish channel effectiveness, acquisition cost or incremental sales. Subgroup sample sizes are not supplied in the accessible text.",
+      "access": "Public lead analysis read; post marked Paid, subscriber-only remainder excluded",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/the-one-game-discovery-by-player"
+      ]
+    },
+    {
+      "id": "alinea-wardogs-wishlist-cohorts-2026",
+      "title": "Wardogs had a better Steam launch than Helldivers 2 and Arc Raiders",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-09-16",
+      "checkedAt": "2026-09-21",
+      "url": "https://alineaanalytics.substack.com/p/wardogs-had-a-better-steam-launch",
+      "topics": [
+        "Wishlist conversion",
+        "Launch timing",
+        "Measurement integrity",
+        "Audience research"
+      ],
+      "relatedGames": [
+        "Wardogs"
+      ],
+      "summary": "Elliott examines Wardogs’ launch through estimated wishlist conversion, acquisition timing and audience overlap. Its pre-order activity makes the distinction between total copies and conversions from the remaining launch wishlist pool especially relevant.",
+      "hardData": [
+        "Alinea’s September 16 article estimates an early-access launch pool of about 1.8 million Steam wishlists and 11% conversion after seven days."
+      ],
+      "evidenceType": "Commercial analyst estimates and observational launch analysis",
+      "actionableLesson": "Our interpretation: keep pre-orders, launch wishlists and post-launch conversions as separate measures.",
+      "applicationSteps": [
+        "Record the starting pool and conversion window.",
+        "Compare acquisition-age cohorts without treating timing as a causal explanation."
+      ],
+      "limitations": "These are Alinea estimates, not Valve or publisher accounts. A selected large shooter launch is not a small-team benchmark; price, community and wishlist recency are not isolated causes of performance.",
+      "access": "Public full article text read",
+      "sourceUrls": [
+        "https://alineaanalytics.substack.com/p/wardogs-had-a-better-steam-launch"
+      ]
     }
   ],
   "sourceChecks": [
@@ -449,16 +544,113 @@
       "checkedAt": "2026-09-14",
       "latestVisiblePublicationDate": "2025-05-07",
       "result": "The designated case-study directory shows no September 8–14 entry. Its newest visible entry is dated May 7, 2025; this does not establish publication-wide inactivity."
+    },
+    {
+      "source": "How To Market A Game",
+      "url": "https://howtomarketagame.com/blog/",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-09-08",
+      "result": "No September 15–21 entry visible in the returned blog listing. The September 8 horror-launch article is already represented."
+    },
+    {
+      "source": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-08-23",
+      "result": "No September 15–21 entry visible. The latest Dear Passengers vs Banana Airways article is already represented."
+    },
+    {
+      "source": "Game World Observer — Marketing",
+      "url": "https://gameworldobserver.com/category/marketing",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-05-21",
+      "result": "No September 15–21 entry visible in the designated marketing listing. The latest DREADMOOR case is already represented; this is not a publication-wide activity check."
+    },
+    {
+      "source": "IMPRESS Academy",
+      "url": "https://impress.games/blog",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2025-11-13",
+      "result": "No September 15–21 entry visible in the returned archive. The latest Pitch Up 2025 recap is already represented."
+    },
+    {
+      "source": "The GameDiscoverCo newsletter",
+      "url": "https://newsletter.gamediscover.co/archive",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-09-18",
+      "result": "September 15 budget analysis and September 18 publicly accessible discovery-survey lead read and added. The September 18 subscriber-only remainder was excluded."
+    },
+    {
+      "source": "The Alinea Insight newsletter",
+      "url": "https://alineaanalytics.substack.com/archive",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-09-18",
+      "result": "September 16 Wardogs analysis read and added with estimate and cohort caveats. September 18 console-launch headline was not selected for this Steam research pass."
+    },
+    {
+      "source": "Game Marketing Intel",
+      "url": "https://gamemarketing.substack.com/archive",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-07-19",
+      "result": "No September 15–21 entry visible in the returned archive. July audio/article variants remain represented once."
+    },
+    {
+      "source": "OP Game Marketing",
+      "url": "https://opgamemarketing.substack.com/archive",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-08-14",
+      "result": "No September 15–21 entry visible in the returned archive, reported cached from the previous day. Latest analysis remains represented."
+    },
+    {
+      "source": "GameDev Reports",
+      "url": "https://gamedevreports.substack.com/archive",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-09-19",
+      "result": "September 14–19 market, employment and premium-recap listings visible. None selected for narrow Steam discovery and small-team production evidence; paid bodies were not reviewed."
+    },
+    {
+      "source": "Butterscotch Shenanigans development blog",
+      "url": "https://blog.bscotch.net/",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-08-20",
+      "result": "No September 15–21 entry visible. Latest How Many Dudes timeline remains represented."
+    },
+    {
+      "source": "Push to Talk",
+      "url": "https://www.pushtotalk.gg/archive",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-07-20",
+      "result": "No September 15–21 entry visible in the returned archive, reported cached from two days earlier. Latest entry concerns a print magazine."
+    },
+    {
+      "source": "Game File",
+      "url": "https://www.gamefile.news/archive",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2026-09-18",
+      "result": "September 17–18 industry, legal and interview-announcement listings visible. None selected for this focused Steam-marketing pass; article bodies not reviewed."
+    },
+    {
+      "source": "Game If You Are",
+      "url": "https://gameifyouare.com/projects-case-studies/",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": null,
+      "result": "Public case-study directory checked. Listings lack publication dates, so none is labeled a new September publication. No agency campaign metrics were refreshed."
+    },
+    {
+      "source": "Game Developer — First-hand Postmortems",
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "checkedAt": "2026-09-21",
+      "latestVisiblePublicationDate": "2025-05-07",
+      "result": "The designated case-study listing shows no September 15–21 entry; its newest main card is dated May 7, 2025. The news sidebar contains newer items, so this is not a claim of publication-wide inactivity."
     }
   ],
   "latestBatch": {
-    "addedAt": "2026-09-14",
-    "publishedSince": "2026-09-08",
+    "addedAt": "2026-09-21",
+    "publishedSince": "2026-09-15",
     "articleIds": [
-      "htmag-horror-release-month-2026",
-      "gdc-demo-ccu-cohort-2026",
-      "gdc-yazs-10-returning-players-2026",
-      "alinea-demo-conversion-denominators-2026"
+      "gdc-indie-budget-denominator-2026",
+      "gdc-discovery-age-survey-2026",
+      "alinea-wardogs-wishlist-cohorts-2026"
     ]
   },
   "previousBatches": [
@@ -473,6 +665,17 @@
         "impress-pitch-up-2025-takeaways"
       ],
       "methodology": "Read the existing ReadingArticle schema, newsletter sources, reading expansion and HTMAG list. Opened the publishers' current archives and candidate articles using web browsing. Two selected records were published in the requested window. Three are older, newly curated additions; their original publication dates remain unchanged. Summaries are short original editorial digests, not reproductions. A dated archive check is evidence of what was visible, not proof that no unindexed article exists."
+    },
+    {
+      "addedAt": "2026-09-14",
+      "publishedSince": "2026-09-08",
+      "articleIds": [
+        "htmag-horror-release-month-2026",
+        "gdc-demo-ccu-cohort-2026",
+        "gdc-yazs-10-returning-players-2026",
+        "alinea-demo-conversion-denominators-2026"
+      ],
+      "methodology": "Weekly September 14 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 8–11. Three article bodies and one publicly accessible lead case were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached or undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed."
     }
   ]
 }

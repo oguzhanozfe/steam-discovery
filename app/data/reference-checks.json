@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-14",
+  "checkedAt": "2026-09-21",
   "method": "Targeted source and wording checks, not a site-wide plagiarism certification. Original publication dates and historical metric windows are separate from this check date.",
   "sources": [
     {
@@ -299,6 +299,39 @@
       "checkedAt": "2026-09-14",
       "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
       "wordingCompared": true
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/is-the-game-biz-sustainable-for-the",
+      "title": "Is the game biz sustainable for the average indie dev?",
+      "author": "Simon Carless",
+      "publishedAt": "2026-09-15",
+      "publication": "The GameDiscoverCo newsletter",
+      "access": "Public full article text read",
+      "checkedAt": "2026-09-21",
+      "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/the-one-game-discovery-by-player",
+      "title": "The one ‘game discovery by player age’ chart you need to see",
+      "author": "Simon Carless",
+      "publishedAt": "2026-09-18",
+      "publication": "The GameDiscoverCo newsletter",
+      "access": "Public lead analysis read; post marked Paid, subscriber-only remainder excluded",
+      "checkedAt": "2026-09-21",
+      "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/p/wardogs-had-a-better-steam-launch",
+      "title": "Wardogs had a better Steam launch than Helldivers 2 and Arc Raiders",
+      "author": "Rhys Elliott",
+      "publishedAt": "2026-09-16",
+      "publication": "The Alinea Insight newsletter",
+      "access": "Public full article text read",
+      "checkedAt": "2026-09-21",
+      "scope": "Selected research-note claims and limits; proposed experiments are Steam Discovery interpretation.",
+      "wordingCompared": true
     }
   ],
   "corrections": [
@@ -311,5 +344,5 @@
       "correction": "The earlier 485 accumulated across roughly six months. Corrected the narrative and event outcome; removed the unsupported weak-festival inference."
     }
   ],
-  "wordingReviewCount": 22
+  "wordingReviewCount": 25
 }
