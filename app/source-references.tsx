@@ -5,6 +5,7 @@ import {
   type GameStory,
 } from './editorial-data';
 import checks from './data/reference-checks.json';
+import fpsData from './data/indie-fps.json';
 import { ideas, type Idea } from './research-data';
 import nicheData from './data/hub-niches.json';
 import conceptData from './data/solo-concepts.json';
@@ -44,9 +45,11 @@ const readingByUrl = new Map(
   readingLibrary.map((source) => [referenceKey(source.url), source]),
 );
 const gameById = new Map(gameLibrary.map((game) => [String(game.appId), game]));
+const fpsSourceByUrl = new Map(fpsData.games.flatMap(game => game.sources.map(source => [referenceKey(source.url), { ...source, title: `${source.label} — ${game.title}` }] as const)));
 export function sourceMetadata(url: string) {
   const key = referenceKey(url);
   const fresh = checkedByUrl.get(key);
+  const fps = fpsSourceByUrl.get(key);
   const note = readingByUrl.get(key);
   const parsed = new URL(url, origin);
   const host = parsed.hostname.replace(/^www\./, '');
@@ -65,7 +68,7 @@ export function sourceMetadata(url: string) {
             ? 'Steam community / developer announcement'
             : null;
   const title =
-    fresh?.title ??
+    fresh?.title ?? fps?.title ??
     note?.title ??
     (pageType
       ? `${pageType}${game ? ` — ${game.title}` : appId ? ` — app ${appId}` : ''}`
@@ -77,12 +80,14 @@ export function sourceMetadata(url: string) {
       fresh?.publication ?? note?.publication ?? publications[host] ?? host,
     author: fresh?.author ?? note?.author ?? null,
     publishedAt: fresh?.publishedAt ?? note?.date ?? null,
-    checkedAt: fresh?.checkedAt ?? note?.checkedAt ?? null,
-    access: fresh?.access ?? note?.access ?? null,
-    scope: fresh?.scope ?? null,
+    checkedAt: fresh?.checkedAt ?? (fps ? fpsData.checkedAt : null) ?? note?.checkedAt ?? null,
+    access: fresh?.access ?? fps?.access ?? note?.access ?? null,
+    scope: fresh?.scope ?? fps?.uses.join('; ') ?? null,
     authorNote: fresh?.authorNote ?? null,
     metadataStatus: fresh
       ? 'Title and source access checked in this update'
+      : fps
+        ? 'Public source checked for the indie FPS list; release dates describe the game, not this page publication'
       : note
         ? 'Metadata from our earlier source note; not rechecked in this update'
         : pageType
@@ -370,6 +375,7 @@ export function readingReferences(article: ReadingArticle): ReferenceUse[] {
   ]);
 }
 export const referenceMetadata = mergeReferenceUses([
+  ...fpsData.games.flatMap(game => game.sources.map(source => ({ url: source.url, uses: source.uses.map(use => `${game.title}: ${use}`) }))),
   ...advertisingReferences.map(ref => ({ ...ref, uses: ref.uses.map(use => `Advertising policy: ${use}`) })),
   ...checks.sources.map((source) => ({ url: source.url })),
   ...readingLibrary.flatMap(note => readingReferences(note).map(ref => ({ ...ref, uses: ref.uses?.map(use => `${note.title}: ${use}`) }))),

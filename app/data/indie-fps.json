@@ -1,0 +1,827 @@
+{
+  "checkedAt": "2026-09-28",
+  "scope": "Selected Steam FPS releases from 1 January 2025 through 28 September 2026, plus a separate watchlist of older Early Access games and upcoming titles. Full releases and Early Access entries use different date labels. This is a checked snapshot, not an exhaustive catalog or a live release feed.",
+  "indieDefinition": "Independent and creator-led development is the editorial focus. External publishers are allowed and named. Studio statements or individual credits support each inclusion; the Steam Indie tag alone is not proof. We have not audited ownership, funding, budgets or total team sizes.",
+  "games": [
+    {
+      "appId": "783550",
+      "title": "Obscurity: Unknown Threat",
+      "developer": "Obscure Creations",
+      "publisher": "Obscure Creations",
+      "subgenre": "Tactical horror · asymmetric",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2026-09-23",
+      "releaseNote": "Steam Early Access launch. An older press-kit target of 22 September was superseded by the store and SteamDB timestamp.",
+      "hook": "Soldiers hunt an invisible opponent in asymmetric battles, cooperative missions and bot-supported matches.",
+      "indieContext": "The developer press kit identifies a two-person independent team.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/783550/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/783550/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.obscurecreations.com/press/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "3748520",
+      "title": "SPRAWL zero",
+      "developer": "MAETH",
+      "publisher": "Kwalee",
+      "subgenre": "Cyberpunk · physics action",
+      "status": "Released",
+      "cohort": "recent",
+      "releaseDate": "2026-09-08",
+      "releaseNote": "Steam full release; distinct from the original 2023 SPRAWL.",
+      "hook": "Use gravity-based abilities and bullet time to outmaneuver coordinated enemies in a cyberpunk campaign.",
+      "indieContext": "Developed by MAETH with external publisher Kwalee; the publisher’s announcement identifies MAETH as independent.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/3748520/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/3748520/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.capsulecomputers.com.au/2026/02/kwalee-and-maeth-reveal-sprawl-zero-a-brutal-cyberpunk-themed-fps-coming-to-pc-and-consoles/",
+          "label": "Publisher announcement",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public publisher announcement reproduced by Capsule Computers."
+        }
+      ]
+    },
+    {
+      "appId": "4092940",
+      "title": "Lucky Shot",
+      "developer": "Deliver Games",
+      "publisher": "Deliver Games",
+      "subgenre": "Shooting gallery · roguelite",
+      "status": "Released",
+      "cohort": "recent",
+      "releaseDate": "2026-08-07",
+      "releaseNote": "Steam full release.",
+      "hook": "Build a magazine of special bullets and stack upgrades around accurate shooting to chase a higher score.",
+      "indieContext": "The developer describes the project as independently made, self-funded and self-published.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/4092940/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/4092940/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.delivergames.dev/en/blog/lucky-shot-is-out-now",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "4149690",
+      "title": "Project RAZE: Fall of Terra",
+      "developer": "FearForge Studios",
+      "publisher": "FearForge Studios",
+      "subgenre": "Arena · score attack",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2026-07-16",
+      "releaseNote": "Steam Early Access launch; full-release date not confirmed here.",
+      "hook": "Race a survival timer instead of a health bar, tune a loadout and replay sci-fi combat runs for leaderboard scores.",
+      "indieContext": "Self-published by FearForge; the creator’s public profile describes solo development. The locked post was not read.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/4149690/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/4149690/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.patreon.com/FearForge_Studios/posts/exclusive-look-146686818",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public creator profile bio only; locked post excluded."
+        }
+      ]
+    },
+    {
+      "appId": "2510060",
+      "title": "FLAW",
+      "developer": "Plasmeo",
+      "publisher": "Plasmeo",
+      "subgenre": "Retro sci-fi · campaign",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2026-05-12",
+      "releaseNote": "Steam Early Access launch; full-release date not confirmed here.",
+      "hook": "Escape an alien prison while managing scarce ammunition and freeing other captives.",
+      "indieContext": "Self-published by Plasmeo; the developer’s French Early Access answers identify solo development.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2510060/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2510060/info/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://store.steampowered.com/app/2510060?l=french",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "2416450",
+      "title": "MOUSE: P.I. For Hire",
+      "developer": "Fumi Games",
+      "publisher": "PlaySide",
+      "subgenre": "Noir · cartoon action",
+      "status": "Released",
+      "cohort": "recent",
+      "releaseDate": "2026-04-16",
+      "releaseNote": "Steam full release.",
+      "hook": "Explore a noir mystery through rubber-hose animation, gunfights and movement upgrades.",
+      "indieContext": "Fumi describes itself as an independent studio; PlaySide is the external publisher.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2416450/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2416450/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.mousethegame.com/studio",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "2906070",
+      "title": "Blood Reaver",
+      "developer": "Hell Byte Studios",
+      "publisher": "Hell Byte Studios",
+      "subgenre": "Co-op · wave survival",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2026-04-15",
+      "releaseNote": "Steam Early Access launch; this is not the full release.",
+      "hook": "Combine firearms and blood magic against enemy waves, alone or with up to three other players.",
+      "indieContext": "Hell Byte describes itself as an indie studio and publishes the game itself.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2906070/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2906070/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.hellbytestudios.com/about-us",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "3519900",
+      "title": "Cyberscape",
+      "developer": "AtomicTorch Studio",
+      "publisher": "AtomicTorch Studio",
+      "subgenre": "Immersive sim · RPG",
+      "status": "Released",
+      "cohort": "recent",
+      "releaseDate": "2026-04-13",
+      "releaseNote": "Steam full release; Early Access began 23 March 2026.",
+      "hook": "Explore interconnected space-station areas, develop a character build and choose different routes through encounters.",
+      "indieContext": "AtomicTorch identifies itself as an independent team and is the listed publisher.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/3519900/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/3519900/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://atomictorch.com/Pages/FAQ",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "1963610",
+      "title": "Road to Vostok",
+      "developer": "Road to Vostok Ltd.",
+      "publisher": "Road to Vostok Ltd.",
+      "subgenre": "Survival · tactical",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2026-04-07",
+      "releaseNote": "Steam Early Access launch; 1.0 has no firm date.",
+      "hook": "Scavenge and prepare for a dangerous border crossing where the most valuable expeditions risk permanent loss.",
+      "indieContext": "The Steam developer FAQ explicitly describes a solo project and a plan to remain independent.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/1963610/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description",
+            "Developer context in the store description or FAQ"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/1963610/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        }
+      ]
+    },
+    {
+      "appId": "2896260",
+      "title": "ODDCORE",
+      "developer": "ODDCORP",
+      "publisher": "Scarecrow Arts, Korgi Digital",
+      "subgenre": "Arena · roguelite",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2026-01-07",
+      "releaseNote": "Steam Early Access launch; the FAQ’s development estimate is not a confirmed 1.0 date.",
+      "hook": "Race a five-minute limit through surreal combat spaces while assembling weapon and item combinations.",
+      "indieContext": "ODDCORP’s official site calls it an independent studio; two external publishers are credited.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2896260/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2896260/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://oddcorp.co/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "3341650",
+      "title": "PIGFACE",
+      "developer": "titolovesyou",
+      "publisher": "DreadXP",
+      "subgenre": "Assassination · sandbox",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2025-09-18",
+      "releaseNote": "Steam Early Access launch; 1.0 remains undated.",
+      "hook": "Choose equipment for replayable assassination contracts and switch between stealth and aggressive gunplay.",
+      "indieContext": "The publisher identifies Tito as a solo developer; DreadXP is the external publisher.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/3341650/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/3341650/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.terminals.io/games/pigface/news/4705",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "2615540",
+      "title": "VOID/BREAKER",
+      "developer": "Stubby Games",
+      "publisher": "Playstack",
+      "subgenre": "Roguelite · destruction",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2025-08-19",
+      "releaseNote": "Steam Early Access launch; 1.0 has no confirmed date.",
+      "hook": "Combine modular weapons with destructible environments across repeated fights against machines.",
+      "indieContext": "Steam identifies Daniel Stubbington as the solo developer; Playstack is the external publisher.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2615540/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description",
+            "Developer context in the store description or FAQ"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2615540/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        }
+      ]
+    },
+    {
+      "appId": "3228590",
+      "title": "Deadzone: Rogue",
+      "developer": "Prophecy Games",
+      "publisher": "Prophecy Games",
+      "subgenre": "Co-op · roguelite",
+      "status": "Released",
+      "cohort": "recent",
+      "releaseDate": "2025-08-11",
+      "releaseNote": "Steam full release; Early Access began 29 April 2025.",
+      "hook": "Build combinations of elemental weapons and augments across solo or cooperative sci-fi combat runs.",
+      "indieContext": "Prophecy states it became a fully independent studio after spinning out of Hi-Rez in 2020.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/3228590/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/3228590/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.prophecygames.com/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "1619310",
+      "title": "SWAT Commander",
+      "developer": "Red Mountain Games, Ritual Interactive",
+      "publisher": "Ritual Interactive",
+      "subgenre": "Tactical · squad command",
+      "status": "Early Access",
+      "cohort": "recent",
+      "releaseDate": "2025-07-31",
+      "releaseNote": "Steam Early Access launch; full-release date not confirmed here.",
+      "hook": "Prepare equipment, command AI officers and clear tense police operations alone or cooperatively.",
+      "indieContext": "Red Mountain describes itself as indie. Steam credits both developers and Ritual as publisher; this is not a solo-production claim.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/1619310/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/1619310/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://store.steampowered.com/developer/RMGames/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "301280",
+      "title": "Skin Deep",
+      "developer": "Blendo Games",
+      "publisher": "Annapurna Interactive",
+      "subgenre": "Immersive sim · stealth",
+      "status": "Released",
+      "cohort": "recent",
+      "releaseDate": "2025-04-30",
+      "releaseNote": "Steam full release.",
+      "hook": "Improvise with stealth, sabotage and environmental interactions to reclaim occupied starships.",
+      "indieContext": "Blendo’s creator identifies the studio as independent; Annapurna is the external publisher.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/301280/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/301280/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://blendogames.com/alltheworkivedone/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "2689470",
+      "title": "CRUEL",
+      "developer": "James Dornan",
+      "publisher": "James Dornan",
+      "subgenre": "Horror · roguelike",
+      "status": "Released",
+      "cohort": "recent",
+      "releaseDate": "2025-01-09",
+      "releaseNote": "Steam full release.",
+      "hook": "Keep moving through changing horror levels while balancing soda cans between recovery and upgrades.",
+      "indieContext": "Steam credits James Dornan as both developer and publisher; no larger ownership or budget claim is made.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2689470/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2689470/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        }
+      ]
+    },
+    {
+      "appId": "2124120",
+      "title": "SULFUR",
+      "developer": "Perfect Random",
+      "publisher": "Perfect Random",
+      "subgenre": "Extraction · roguelite",
+      "status": "Early Access",
+      "cohort": "watchlist",
+      "releaseDate": "2024-10-28",
+      "releaseNote": "Older Steam Early Access release, retained as a current comparator; 1.0 undated.",
+      "hook": "Build weapons, gather equipment and decide when to leave a dangerous expedition with your loot.",
+      "indieContext": "Perfect Random’s official site describes a small indie studio.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2124120/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2124120/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.sulfur.tv/about",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "3156770",
+      "title": "Witchfire",
+      "developer": "The Astronauts",
+      "publisher": "The Astronauts",
+      "subgenre": "Dark fantasy · extraction",
+      "status": "Early Access",
+      "cohort": "watchlist",
+      "releaseDate": "2024-09-23",
+      "releaseNote": "Steam Early Access date, not the earlier Epic launch. A full-release target is not a confirmed release.",
+      "hook": "Mix weapons and spells with persistent character progression to tackle increasingly dangerous expeditions.",
+      "indieContext": "The Astronauts describes itself as a small independent developer.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/3156770/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/3156770/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://www.theastronauts.com/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "1592280",
+      "title": "Selaco",
+      "developer": "Altered Orbit Studios",
+      "publisher": "Altered Orbit Studios",
+      "subgenre": "Sci-fi · tactical campaign",
+      "status": "Early Access",
+      "cohort": "watchlist",
+      "releaseDate": "2024-05-31",
+      "releaseNote": "Older Steam Early Access release; the announced Chapter 2 work is not a 1.0 release.",
+      "hook": "Fight coordinated squads through destructible environments and an interconnected sci-fi campaign.",
+      "indieContext": "The official site describes independent small-team development without a publisher partnership.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/1592280/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/1592280/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://selacogame.com/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    },
+    {
+      "appId": "2680280",
+      "title": "PAPERHEAD",
+      "developer": "Paperhead te4m",
+      "publisher": "HypeTrain Digital",
+      "subgenre": "Movement · horror",
+      "status": "Upcoming",
+      "cohort": "watchlist",
+      "releaseDate": "2026-10-09",
+      "releaseNote": "Planned Steam release; not yet available on the check date.",
+      "hook": "Combine fast movement, shotgun combat and a magical pencil inside a disturbing cardboard world.",
+      "indieContext": "Steam credits Paperhead te4m and external publisher HypeTrain. Inclusion is editorial, not an ownership or budget audit.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2680280/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2680280/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        }
+      ]
+    },
+    {
+      "appId": "2113270",
+      "title": "DISDAIN",
+      "developer": "Nash Muhandes, Mischief Donut",
+      "publisher": "Hellforge Studios",
+      "subgenre": "Retro · campaign",
+      "status": "Upcoming",
+      "cohort": "watchlist",
+      "releaseDate": null,
+      "releaseNote": "Steam says “Coming soon”; a demo is not the full-game release.",
+      "hook": "Fight through a retro campaign with fast gunplay and destructible scenery.",
+      "indieContext": "Steam credits two individual creators and Hellforge as publisher; no total team size or ownership claim is inferred.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2113270/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2113270/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        }
+      ]
+    },
+    {
+      "appId": "2381520",
+      "title": "Unrecord",
+      "developer": "Drama Studios",
+      "publisher": "Drama Studios",
+      "subgenre": "Bodycam · tactical",
+      "status": "Upcoming",
+      "cohort": "watchlist",
+      "releaseDate": null,
+      "releaseNote": "Steam says “To be announced”; no verified release year.",
+      "hook": "Investigate narrative encounters through a body-camera viewpoint and free-aim shooting.",
+      "indieContext": "Drama identifies itself as independent. That does not establish that the studio is unfunded.",
+      "sources": [
+        {
+          "url": "https://store.steampowered.com/app/2381520/",
+          "label": "Steam store",
+          "uses": [
+            "Current availability, release date, developer/publisher credits and gameplay description"
+          ],
+          "access": "Public store page checked; publisher-supplied description and dates may change."
+        },
+        {
+          "url": "https://steamdb.info/app/2381520/",
+          "label": "SteamDB",
+          "uses": [
+            "App identity and release-date cross-check; no sales or owner estimate used"
+          ],
+          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
+        },
+        {
+          "url": "https://studiosdrama.com/",
+          "label": "Developer context",
+          "uses": [
+            "Basis for the developer/publishing context stated on this card"
+          ],
+          "access": "Public page checked for developer context; not an ownership or budget audit."
+        }
+      ]
+    }
+  ]
+}

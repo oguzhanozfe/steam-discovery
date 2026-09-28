@@ -38,3 +38,30 @@ assert(home.includes('Sources &amp; Reading') && !home.includes('Project workspa
 assert((await read('feed.xml')).includes('Research note:'));
 assert((await read('robots.txt')).includes('OAI-SearchBot'));
 console.log(`Validated ${publicRoutes.length} pages, ${readingMetadata.length} source notes, canonical URLs, structured data, sitemap and public-only route rules.`);
+
+// Guard release-state semantics and the public FPS data/HTML contract.
+const fps = JSON.parse(await readFile(new URL('../app/data/indie-fps.json', import.meta.url), 'utf8'));
+assert.deepEqual(JSON.parse(await read('data/indie-fps.json')), fps);
+const fpsHtml = await read('indie-fps/index.html');
+assert.equal(new Set(fps.games.map(game => game.appId)).size, fps.games.length);
+for (const game of fps.games) {
+  assert(['Released', 'Early Access', 'Upcoming'].includes(game.status));
+  assert(['recent', 'watchlist'].includes(game.cohort));
+  assert(game.hook && game.indieContext && game.releaseNote);
+  if (game.releaseDate) {
+    assert(/^\d{4}-\d{2}-\d{2}$/.test(game.releaseDate));
+    assert.equal(new Date(game.releaseDate).toISOString().slice(0, 10), game.releaseDate);
+  }
+  if (game.status !== 'Upcoming') assert(game.releaseDate && game.releaseDate <= fps.checkedAt, game.title);
+  if (game.status === 'Upcoming') assert.equal(game.cohort, 'watchlist');
+  if (game.cohort === 'recent') assert(game.releaseDate >= '2025-01-01' && game.releaseDate <= fps.checkedAt);
+  assert(game.sources.some(source => source.url === `https://store.steampowered.com/app/${game.appId}/`));
+  assert(game.sources.some(source => source.url.startsWith(`https://steamdb.info/app/${game.appId}/`)));
+  assert(fpsHtml.includes(`id="game-${game.appId}"`));
+  for (const source of game.sources) {
+    assert.equal(new URL(source.url).protocol, 'https:');
+    assert(source.uses.length && source.access);
+    assert(fpsHtml.includes(`data-source-record="${source.url.replaceAll('&', '&amp;')}"`));
+  }
+}
+console.log(`Validated ${fps.games.length} FPS entries, date/status semantics, source mappings and export parity.`);

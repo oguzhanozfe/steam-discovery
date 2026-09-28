@@ -3,16 +3,18 @@ import type { ResearchView } from './research-data';
 import { steamImageUrl, steamImageManifest } from './steam-image-url';
 import { gameStories, editorialUpdatedAt, storyPath } from './editorial-data';
 import hubArticles from './data/hub-articles.json';
+import fpsData from './data/indie-fps.json';
 
 export const siteUrl = 'https://steam-discovery.vercel.app';
 export type InitialRoute = { view?: ResearchView; marketPeriod?: '2025' | '2026-q1' | '2026-q2'; gameId?: string; readingId?: string; storyId?: string; guideId?: string };
 export type SiteRoute = { path: string; title: string; description: string; initial: InitialRoute; image?: string; imageWidth?: number; imageHeight?: number; citations?: string[]; modifiedAt?: string; noindex?: boolean };
 export const viewPaths: Record<ResearchView, string> = {
-  hub: '/', radar: '/radar/', solo: '/solo-lab/', guides: '/playbooks/', stories: '/stories/', explorer: '/games/', cases: '/case-studies/', market: '/market/2025/', ideas: '/build-lab/', reading: '/reading/', playbook: '/sprint-plan/', survival: '/research/open-world-survival-craft/', methodology: '/about/',
+  hub: '/', radar: '/radar/', fps: '/indie-fps/', solo: '/solo-lab/', guides: '/playbooks/', stories: '/stories/', explorer: '/games/', cases: '/case-studies/', market: '/market/2025/', ideas: '/build-lab/', reading: '/reading/', playbook: '/sprint-plan/', survival: '/research/open-world-survival-craft/', methodology: '/about/',
 };
 export const gamePath = (id: string) => `/games/${id}/`;
 export const readingPath = (id: string) => `/reading/${id}/`;
 export const sectionRoutes: SiteRoute[] = [
+  { path: viewPaths.fps, title: 'Recent Indie FPS Games — 2025–2026 Releases & Watchlist | Steam Discovery', description: 'Explore recent indie first-person shooters with official Steam artwork, release and Early Access dates, developer context and SteamDB cross-checks. Search releases and upcoming games.', initial: { view: 'fps' }, modifiedAt: fpsData.checkedAt, citations: fpsData.games.flatMap(game => game.sources.map(source => source.url)) },
   { path: '/', title: 'Steam Discovery — Small Team Game Dev Hub', description: 'Find game niches, compare Steam evidence, read developer stories and choose an AI-assisted two-week solo prototype. Practical research for small game teams.', initial: { view: 'hub' }, modifiedAt: '2026-09-08' },
   { path: '/stories/', title: 'Game Stories & Small-Team Build Lessons — Steam Discovery', description: 'Digested game stories from breakouts to modest launches, with dated KPIs, campaign chronology, caveats and proposed solo prototype transfers.', initial: { view: 'stories' }, modifiedAt: editorialUpdatedAt },
   { path: '/radar/', title: 'Steam Radar — Game Discovery & Comparable Evidence', description: 'Search a documented Steam and SteamSpy sample, compare reviews and owner estimates, and save a local watchlist. Dated snapshots, not verified sales or a complete market census.', initial: { view: 'radar' }, modifiedAt: '2026-09-08' },

@@ -97,6 +97,7 @@ export function SmallTeamHub() {
         into a test you can finish.
       </Header>
       <div className="hub-entry-grid">
+        <a className="hub-entry" href="/indie-fps/"><Radar /><span><strong>Recent indie FPS games</strong><p>2025–2026 releases, Early Access and upcoming shooters. Checked Steam and SteamDB sources.</p></span><ArrowRight /></a>
         <a className="hub-entry primary" href="/radar/">
           <Radar />
           <span>

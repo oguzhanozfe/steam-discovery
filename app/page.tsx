@@ -32,6 +32,8 @@ import { SurvivalResearch } from './survival-research';
 import { GameStories } from './editorial';
 import { gameStories, findStories, editorialUpdatedAt } from './editorial-data';
 import { SmallTeamHub, SteamRadar, SoloLab, DeveloperPlaybooks } from './small-team-hub';
+import { IndieFps } from './indie-fps';
+import fpsData from './data/indie-fps.json';
 import radarSnapshot from './data/radar-snapshot.json';
 import hubConcepts from './data/solo-concepts.json';
 import hubNiches from './data/hub-niches.json';
@@ -56,6 +58,7 @@ const filters = ['All', 'Co-op', 'Solo', '2026', 'Incremental', 'Control'] as co
 type CaseFilter = (typeof filters)[number];
 const navItems: { id: ResearchView; label: string; caption: string; icon: typeof Radar }[] = [
   { id: 'hub', label: 'Dev Hub', caption: 'Niches & next steps', icon: Compass },
+  { id: 'fps', label: 'Indie FPS', caption: 'Recent releases & watchlist', icon: Target },
   { id: 'radar', label: 'Steam Radar', caption: 'Search & compare games', icon: Radar },
   { id: 'solo', label: 'Solo Lab', caption: 'AI-assisted · two weeks', icon: Code2 },
   { id: 'stories', label: 'Game Stories', caption: 'Digested cases & lessons', icon: BookOpen },
@@ -78,7 +81,7 @@ function marketPeriodPath(period: MarketPeriod): string {
 function downloadDataset() {
   const payload = {
     asOf: '2026-09-02',
-    readingUpdatedAt,
+    readingUpdatedAt, indieFPS: fpsData,
     editorialUpdatedAt, gameStories,
     smallTeamHub: { radarSnapshot, catalogUrl: `${siteUrl}/data/radar-catalog.json`, soloConcepts: hubConcepts, nicheBriefs: hubNiches, playbooks: hubArticles },
     methodology: 'Reported sales, observed public metrics and third-party estimates are stored separately. Correlation is not labeled as attribution.',
@@ -379,6 +382,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       <div id="research-content" tabIndex={-1} />
       {view === 'hub' && <SmallTeamHub />}
       {view === 'radar' && <SteamRadar />}
+      {view === 'fps' && <IndieFps />}
       {view === 'solo' && <SoloLab />}
       {view === 'guides' && <DeveloperPlaybooks articleId={initial.guideId} />}
       {view === 'stories' && <GameStories storyId={storyId} query={storyQuery} setQuery={setStoryQuery} />}
