@@ -58,6 +58,7 @@ for (const game of data.games) {
         : null,
     errors,
   };
+  const priorSources = game.sources;
   game.sources = game.sources.filter(
     (source) =>
       ![storeUrl, reviewUrl, paidUrl, playersUrl].includes(source.url),
@@ -93,7 +94,12 @@ for (const game of data.games) {
     game.sources.push({
       url,
       label,
-      uses,
+      uses: [
+        ...new Set([
+          ...Array.from(uses),
+          ...(priorSources.find((source) => source.url === url)?.uses ?? []),
+        ]),
+      ],
       access:
         'Public Steam API; snapshot timestamp is recorded per game. A failed request is recorded as missing, not zero.',
     });

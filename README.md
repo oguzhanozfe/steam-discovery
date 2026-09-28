@@ -11,7 +11,7 @@ Independent Steam marketing and indie game market research for game developers.
 ## What is here
 
 - Game case studies with dated marketing events, KPIs and evidence limits.
-- A [co-op FPS market study](https://steam-discovery.vercel.app/indie-fps/) with 86 wave, run-based and mission shooters first available on Steam between September 28, 2023 and September 28, 2026; 19 solo comparisons and 10 context games sit alongside the original release directory. Per-game Steam observations and transparent revenue scenarios are downloadable.
+- A [co-op FPS market study](https://steam-discovery.vercel.app/indie-fps/) with 51 wave, run-based and mission shooters first available on Steam between September 28, 2023 and September 28, 2026; 18 solo comparisons and 25 context games sit alongside the original release directory. The visible sample has at least 30 total reviews per released game; 17 community case studies explain combat loops, progression and design lessons. Per-game Steam observations and transparent revenue scenarios are downloadable.
 - A Steam Radar sample with search, release-state/evidence filters, three-game comparison and a browser-local watchlist/export.
 - Eight niche briefs and eight original AI-assisted solo concepts, with explicit two-week scope, exclusions, validation gates and release constraints.
 - Developer Playbooks: source arguments converted into separate solo and 2–5-person action plans, with counterexamples and uncertainty retained.

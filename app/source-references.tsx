@@ -56,26 +56,24 @@ const fpsSourceByUrl = new Map<
     access: string;
     checkedAt: string;
   }
->(
-  [...fpsData.games, ...fpsMarket.games].flatMap((game) =>
-    game.sources.map(
-      (source) =>
-        [
-          referenceKey(source.url),
-          {
-            ...source,
-            title: `${source.label} — ${game.title}`,
-            checkedAt:
-              'metrics' in game
-                ? /\/api\/|\/appreviews\/|ISteamUserStats/.test(source.url)
-                  ? game.metrics.checkedAt
-                  : fpsMarket.researchCheckedAt
-                : fpsData.checkedAt,
-          },
-        ] as const,
-    ),
-  ),
-);
+>();
+for (const game of [...fpsData.games, ...fpsMarket.games]) {
+  for (const source of game.sources) {
+    const key = referenceKey(source.url);
+    const previous = fpsSourceByUrl.get(key);
+    const title = `${source.label} — ${game.title}`;
+    fpsSourceByUrl.set(key, {
+      ...source,
+      title: previous && previous.title !== title ? source.label : title,
+      uses: [...new Set([...(previous?.uses ?? []), ...source.uses])],
+      checkedAt: 'metrics' in game
+        ? /\/api\/|\/appreviews\/|ISteamUserStats/.test(source.url)
+          ? game.metrics.checkedAt
+          : fpsMarket.researchCheckedAt
+        : fpsData.checkedAt,
+    });
+  }
+}
 for (const source of fpsMarket.methodology.sources)
   fpsSourceByUrl.set(referenceKey(source.url), {
     ...source,

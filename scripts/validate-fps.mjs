@@ -43,7 +43,10 @@ for (const patch of [
     null,
   );
 assert.equal(positiveRate(game), 80);
-assert.equal(estimate({ ...game, revenueExclusion: 'Mixed free/paid history' }), null);
+assert.equal(
+  estimate({ ...game, revenueExclusion: 'Mixed free/paid history' }),
+  null,
+);
 assert.equal(
   positiveRate({ ...game, metrics: { ...game.metrics, reviews: 0 } }),
   null,
@@ -61,10 +64,35 @@ assert.equal(
   1,
 );
 const ids = new Set();
+assert.equal(data.minimumReviews, 30);
 for (const g of data.games) {
   assert.match(g.appId, /^\d+$/);
   assert(!ids.has(g.appId), `Duplicate ${g.appId}`);
   ids.add(g.appId);
+  assert(
+    g.metrics.reviews >= data.minimumReviews,
+    `${g.title}: below review floor`,
+  );
+  if (g.community) {
+    for (const field of [
+      'loop',
+      'progression',
+      'cooperativeDesign',
+      'lesson',
+      'limits',
+    ])
+      assert(
+        typeof g.caseStudy?.[field] === 'string' &&
+          g.caseStudy[field].trim().length > 20,
+        `${g.title}: missing case-study ${field}`,
+      );
+    assert(
+      g.sources.some((source) =>
+        source.url.startsWith('https://store.steampowered.com/'),
+      ),
+      `${g.title}: missing primary product source`,
+    );
+  }
   assert(['wave', 'roguelite', 'tactical', 'campaign'].includes(g.category));
   assert(['Released', 'Early Access'].includes(g.status));
   assert.equal(typeof g.cooperative, 'boolean');
@@ -100,6 +128,13 @@ for (const g of data.games) {
   if (revenue)
     assert(Number.isFinite(revenue.low) && revenue.low <= revenue.high);
 }
+assert(data.games.some((g) => g.community && g.cohort === 'study'));
+assert(data.games.some((g) => g.community && g.cohort === 'context'));
+for (const excluded of data.coverage.excluded)
+  assert(
+    !ids.has(excluded.appId),
+    `${excluded.title}: both included and excluded`,
+  );
 console.log(
   `FPS model + ${data.games.length} records passed (dates, sources, missing data, estimates and cohort bounds).`,
 );

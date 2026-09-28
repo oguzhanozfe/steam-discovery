@@ -1,47 +1,8 @@
 {
   "checkedAt": "2026-09-28",
-  "scope": "Selected Steam FPS releases from 1 January 2025 through 28 September 2026, plus a separate watchlist of older Early Access games and upcoming titles. Full releases and Early Access entries use different date labels. This is a checked snapshot, not an exhaustive catalog or a live release feed.",
+  "scope": "Selected Steam FPS releases from 1 January 2025 through 28 September 2026, plus a separate watchlist of older Early Access games and upcoming titles. Full releases and Early Access entries use different date labels. This is a checked snapshot, not an exhaustive catalog or a live release feed. Released games with fewer than 30 observed total Steam reviews are omitted; unreleased watchlist entries remain separately labeled.",
   "indieDefinition": "Independent and creator-led development is the editorial focus. External publishers are allowed and named. Studio statements or individual credits support each inclusion; the Steam Indie tag alone is not proof. We have not audited ownership, funding, budgets or total team sizes.",
   "games": [
-    {
-      "appId": "783550",
-      "title": "Obscurity: Unknown Threat",
-      "developer": "Obscure Creations",
-      "publisher": "Obscure Creations",
-      "subgenre": "Tactical horror · asymmetric",
-      "status": "Early Access",
-      "cohort": "recent",
-      "releaseDate": "2026-09-23",
-      "releaseNote": "Steam Early Access launch. An older press-kit target of 22 September was superseded by the store and SteamDB timestamp.",
-      "hook": "Soldiers hunt an invisible opponent in asymmetric battles, cooperative missions and bot-supported matches.",
-      "indieContext": "The developer press kit identifies a two-person independent team.",
-      "sources": [
-        {
-          "url": "https://store.steampowered.com/app/783550/",
-          "label": "Steam store",
-          "uses": [
-            "Current availability, release date, developer/publisher credits and gameplay description"
-          ],
-          "access": "Public store page checked; publisher-supplied description and dates may change."
-        },
-        {
-          "url": "https://steamdb.info/app/783550/",
-          "label": "SteamDB",
-          "uses": [
-            "App identity and release-date cross-check; no sales or owner estimate used"
-          ],
-          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
-        },
-        {
-          "url": "https://www.obscurecreations.com/press/",
-          "label": "Developer context",
-          "uses": [
-            "Basis for the developer/publishing context stated on this card"
-          ],
-          "access": "Public page checked for developer context; not an ownership or budget audit."
-        }
-      ]
-    },
     {
       "appId": "3748520",
       "title": "SPRAWL zero",
@@ -117,45 +78,6 @@
             "Basis for the developer/publishing context stated on this card"
           ],
           "access": "Public page checked for developer context; not an ownership or budget audit."
-        }
-      ]
-    },
-    {
-      "appId": "4149690",
-      "title": "Project RAZE: Fall of Terra",
-      "developer": "FearForge Studios",
-      "publisher": "FearForge Studios",
-      "subgenre": "Arena · score attack",
-      "status": "Early Access",
-      "cohort": "recent",
-      "releaseDate": "2026-07-16",
-      "releaseNote": "Steam Early Access launch; full-release date not confirmed here.",
-      "hook": "Race a survival timer instead of a health bar, tune a loadout and replay sci-fi combat runs for leaderboard scores.",
-      "indieContext": "Self-published by FearForge; the creator’s public profile describes solo development. The locked post was not read.",
-      "sources": [
-        {
-          "url": "https://store.steampowered.com/app/4149690/",
-          "label": "Steam store",
-          "uses": [
-            "Current availability, release date, developer/publisher credits and gameplay description"
-          ],
-          "access": "Public store page checked; publisher-supplied description and dates may change."
-        },
-        {
-          "url": "https://steamdb.info/app/4149690/",
-          "label": "SteamDB",
-          "uses": [
-            "App identity and release-date cross-check; no sales or owner estimate used"
-          ],
-          "access": "Public app metadata checked. This is a third-party observation, not Valve sales data."
-        },
-        {
-          "url": "https://www.patreon.com/FearForge_Studios/posts/exclusive-look-146686818",
-          "label": "Developer context",
-          "uses": [
-            "Basis for the developer/publishing context stated on this card"
-          ],
-          "access": "Public creator profile bio only; locked post excluded."
         }
       ]
     },

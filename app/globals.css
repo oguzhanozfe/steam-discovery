@@ -1874,6 +1874,15 @@ textarea::placeholder{ color:var(--muted-foreground); opacity:1; }
 .fps-view .fps-game-metrics small { color:var(--muted-foreground); font-size:.875rem; line-height:1.5; }
 .fps-view .fps-game-metrics .fps-revenue dd { color:var(--fps-accent); font-size:.9375rem; }
 .fps-game-evidence { border-top:1px solid var(--border); margin-inline:-1rem; }
+.fps-case-study { margin:0 0 1rem; border:1px solid var(--border); border-radius:.4rem; background:var(--background); }
+.fps-case-study>summary { padding:.8rem; color:var(--fps-accent); cursor:pointer; font-size:.875rem; line-height:1.6; }
+.fps-case-study[open]>summary { border-bottom:1px solid var(--border); }
+.fps-view .fps-case-study dl { margin:0; padding:0 .8rem; }
+.fps-view .fps-case-study dl>div { display:grid; grid-template-columns:1fr; gap:.3rem; padding:.8rem 0; }
+.fps-view .fps-case-study dt { font-size:.875rem; color:var(--foreground); }
+.fps-view .fps-case-study dd,.fps-view .fps-case-study p { font-size:.9375rem; line-height:1.7; color:var(--text-secondary); }
+.fps-view .fps-case-study p { padding:0 .8rem .8rem; margin:0; font-size:.875rem; }
+.fps-community-intro p { max-width:90ch; }
 .fps-game-evidence>summary { display:flex; align-items:center; justify-content:space-between; gap:.5rem; padding:.75rem 1rem; font-size:.875rem; color:var(--text-secondary); cursor:pointer; }
 .fps-game-evidence>summary::before { content:"+"; color:var(--fps-accent); font-size:1rem; }
 .fps-game-evidence[open]>summary::before { content:"−"; }

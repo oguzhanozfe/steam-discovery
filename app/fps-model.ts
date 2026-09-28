@@ -17,6 +17,14 @@ export type MarketGame = {
   status: 'Released' | 'Early Access';
   availability?: 'Delisted';
   revenueExclusion?: string;
+  community?: boolean;
+  caseStudy?: {
+    loop: string;
+    progression: string;
+    cooperativeDesign: string;
+    lesson: string;
+    limits: string;
+  };
   hook: string;
   scopeNote: string;
   indieContext: string;

@@ -30,6 +30,7 @@ type DirectoryGame = (typeof directory.games)[number];
 const marketGames = marketData.games as MarketGame[];
 const study = marketGames.filter((game) => game.cohort === 'study');
 const context = marketGames.filter((game) => game.cohort === 'context');
+const community = marketGames.filter((game) => game.community);
 const coOpCategories = categories
   .filter((category) => category.id !== 'campaign')
   .map((category) => ({
@@ -166,6 +167,37 @@ function MarketCard({ game }: { game: MarketGame }) {
         </div>
       </div>
       <p className="fps-game-hook">{game.hook}</p>
+      {game.caseStudy && (
+        <details className="fps-case-study">
+          <summary>Read case study · loop, progression & lessons</summary>
+          <dl>
+            <div>
+              <dt>Core loop</dt>
+              <dd>{game.caseStudy.loop}</dd>
+            </div>
+            <div>
+              <dt>Progression</dt>
+              <dd>{game.caseStudy.progression}</dd>
+            </div>
+            <div>
+              <dt>Co-op design</dt>
+              <dd>{game.caseStudy.cooperativeDesign}</dd>
+            </div>
+            <div>
+              <dt>Our design lesson</dt>
+              <dd>{game.caseStudy.lesson}</dd>
+            </div>
+            <div>
+              <dt>Limits</dt>
+              <dd>{game.caseStudy.limits}</dd>
+            </div>
+          </dl>
+          <p>
+            Product facts: official sources below. Design lessons are editorial
+            interpretation; no playtest or profit claim.
+          </p>
+        </details>
+      )}
       <dl className="fps-game-metrics">
         <div>
           <dt>Total reviews</dt>
@@ -195,12 +227,16 @@ function MarketCard({ game }: { game: MarketGame }) {
           <span>{game.sources.length} sources</span>
         </summary>
         <div className="fps-evidence-body">
-          {game.revenueExclusion && <p className="fps-data-gap"><strong>Revenue not estimated:</strong> {game.revenueExclusion}</p>}
+          {game.revenueExclusion && (
+            <p className="fps-data-gap">
+              <strong>Revenue not estimated:</strong> {game.revenueExclusion}
+            </p>
+          )}
           <p>
             <strong>Comparable because:</strong> {game.scopeNote}
           </p>
           <p>
-            <strong>Independent context:</strong> {game.indieContext}
+            <strong>Studio & market context:</strong> {game.indieContext}
           </p>
           <p>
             <strong>Credits:</strong> {game.developer} · Published by{' '}
@@ -310,10 +346,17 @@ export function IndieFps() {
   const [cohort, setCohort] = useState('all');
   const [sort, setSort] = useState('reviews');
   const search = query.trim().toLowerCase();
-  const selected = (category === 'context' ? context : study).filter(
+  const selected = (
+    category === 'community'
+      ? community
+      : category === 'context'
+        ? context
+        : study
+  ).filter(
     (game) =>
       category === 'all' ||
       category === 'context' ||
+      category === 'community' ||
       (category.startsWith('solo')
         ? !game.cooperative &&
           (category === 'solo' || game.category === category.slice(5))
@@ -374,19 +417,20 @@ export function IndieFps() {
   const reset = () => {
     setQuery('');
     setStatus('all');
-    setCategory('coop');
+    setCategory(category === 'community' ? 'community' : 'coop');
     setCohort('all');
     setSort('reviews');
   };
   const changeView = (next: 'market' | 'directory') => {
     setView(next);
     reset();
+    setCategory('coop');
   };
   const hasFilters =
     query !== '' ||
     status !== 'all' ||
     (view === 'market'
-      ? category !== 'coop' || sort !== 'reviews'
+      ? (category !== 'coop' && category !== 'community') || sort !== 'reviews'
       : cohort !== 'all');
 
   return (
@@ -440,11 +484,21 @@ export function IndieFps() {
       <div className="fps-view-switch" aria-label="Research collection">
         <button
           type="button"
-          aria-pressed={view === 'market'}
+          aria-pressed={view === 'market' && category !== 'community'}
           onClick={() => changeView('market')}
         >
           Co-op market study{' '}
           <span>{study.filter((game) => game.cooperative).length}</span>
+        </button>
+        <button
+          type="button"
+          aria-pressed={view === 'market' && category === 'community'}
+          onClick={() => {
+            changeView('market');
+            setCategory('community');
+          }}
+        >
+          Community case studies <span>{community.length}</span>
         </button>
         <button
           type="button"
@@ -463,7 +517,7 @@ export function IndieFps() {
         </a>
       </div>
 
-      {view === 'market' ? (
+      {view === 'market' && category !== 'community' ? (
         <>
           <div className="fps-section-top">
             <div>
@@ -472,7 +526,7 @@ export function IndieFps() {
             </div>
             <p>
               {category === 'context'
-                ? 'Older releases, VR and scope boundaries — outside the comparison sample'
+                ? 'Older releases and scope boundaries — outside the comparison sample'
                 : `First Steam release: ${date(marketData.windowStart)}–${date(marketData.windowEnd)}`}
             </p>
           </div>
@@ -575,12 +629,35 @@ export function IndieFps() {
             ))}
             <p>
               Solo categories are curated benchmarks, not representative market
-              samples. Comparisons use the study cohort only and differ in release
-              age; reviews and revenue scenarios are lifetime snapshots, not
-              age-adjusted outcomes. Select a row to explore that category.
+              samples. Comparisons use the study cohort only and differ in
+              release age; reviews and revenue scenarios are lifetime snapshots,
+              not age-adjusted outcomes. Select a row to explore that category.
             </p>
           </section>
         </>
+      ) : view === 'market' ? (
+        <div className="fps-directory-intro fps-community-intro">
+          <div>
+            <p className="fps-eyebrow">
+              COMMUNITY PICKS · PRIMARY-SOURCE RESEARCH
+            </p>
+            <h2>What makes a wave worth surviving?</h2>
+          </div>
+          <p>
+            Games from the{' '}
+            <a href={marketData.community.url} target="_blank" rel="noreferrer">
+              wave-survival discussion on Reddit
+            </a>
+            , checked against official product descriptions. Open a case study
+            for its combat loop, progression, co-op design and a lesson to test.
+          </p>
+          <p>{marketData.community.note}</p>
+          {marketData.community.unresolved.map((item) => (
+            <p key={item.title}>
+              <strong>{item.title}:</strong> {item.reason}
+            </p>
+          ))}
+        </div>
       ) : (
         <div className="fps-directory-intro">
           <div>
@@ -603,7 +680,9 @@ export function IndieFps() {
             </p>
             <h2 id="fps-games-heading">
               {view === 'market'
-                ? 'Look at the games behind the numbers.'
+                ? category === 'community'
+                  ? 'Community picks & case studies.'
+                  : 'Look at the games behind the numbers.'
                 : 'Find your next reference.'}
             </h2>
           </div>
@@ -638,6 +717,9 @@ export function IndieFps() {
                 onChange={(event) => setCategory(event.target.value)}
               >
                 <option value="coop">All co-op FPS</option>
+                <option value="community">
+                  Community picks · case studies
+                </option>
                 <option value="all">All games · including solo</option>
                 {coOpCategories.map((item) => (
                   <option key={item.id} value={item.id}>
@@ -653,7 +735,7 @@ export function IndieFps() {
                     </option>
                   ))}
                 <option value="context">
-                  Context · older / VR / boundaries
+                  Context · older / other perspectives
                 </option>
               </select>
             </label>
@@ -757,6 +839,15 @@ export function IndieFps() {
         <div className="fps-methodology-body">
           <h2>Scope and selection</h2>
           <p>{marketData.scope}</p>
+          <p>
+            Visible released games have at least {marketData.minimumReviews}{' '}
+            total Steam reviews. Removing the lowest-reach games raises sample
+            medians; these comparisons cannot estimate a market-wide success
+            rate. Community case studies also include older games, third-person
+            and top-down shooters, and major-publisher references. Only games
+            meeting the study’s date, FPS and independent-development criteria
+            enter its comparisons.
+          </p>
           <p>
             Independent and creator-led games are the focus. External publishers
             are allowed. Where only studio credits are available, indie status

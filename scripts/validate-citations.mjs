@@ -24,6 +24,14 @@ const escape = (text) =>
 const stories = (await json('dist-static/data/game-stories.json')).stories;
 const checks = await json('app/data/reference-checks.json');
 const about = await read('dist-static/about/index.html');
+const fps = await json('app/data/fps-market.json');
+const sharedFpsSource = 'https://www.embracer.com/releases/embracer-group-enters-into-agreement-to-acquire-tripwire-interactive/';
+assert(!/Killing Floor [23]/.test(sourceMetadata(sharedFpsSource).title), 'Shared source title must not name just one game');
+const fpsDirectory = await json('app/data/indie-fps.json');
+for (const game of fpsDirectory.games.filter(game => game.status !== 'Upcoming')) {
+  const observed = fps.games.find(candidate => candidate.appId === game.appId);
+  assert(observed && observed.metrics.reviews >= fps.minimumReviews, `${game.title}: release directory review floor needs a verified snapshot`);
+}
 let mappedReferences = 0;
 for (const story of stories) {
   const html = await read(`dist-static/case-studies/${story.id}/index.html`);
