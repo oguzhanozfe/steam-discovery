@@ -58,7 +58,7 @@ const filters = ['All', 'Co-op', 'Solo', '2026', 'Incremental', 'Control'] as co
 type CaseFilter = (typeof filters)[number];
 const navItems: { id: ResearchView; label: string; caption: string; icon: typeof Radar }[] = [
   { id: 'hub', label: 'Dev Hub', caption: 'Niches & next steps', icon: Compass },
-  { id: 'fps', label: 'Indie FPS', caption: 'Recent releases & watchlist', icon: Target },
+  { id: 'fps', label: 'Indie FPS', caption: 'Co-op market & comparisons', icon: Target },
   { id: 'radar', label: 'Steam Radar', caption: 'Search & compare games', icon: Radar },
   { id: 'solo', label: 'Solo Lab', caption: 'AI-assisted · two weeks', icon: Code2 },
   { id: 'stories', label: 'Game Stories', caption: 'Digested cases & lessons', icon: BookOpen },

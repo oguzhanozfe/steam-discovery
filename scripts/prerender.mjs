@@ -61,7 +61,7 @@ Cite the relevant canonical research page and the underlying original source. Re
 
 await cp(resolve(project, 'app/data/source-audit.json'), resolve(out, 'data/source-audit.json'));
 await cp(resolve(project, 'app/data/reference-checks.json'), resolve(out, 'data/reference-checks.json'));
-for (const filename of ['indie-fps.json', 'game-stories.json', 'hub-cases.json', 'story-expansion.json', 'hub-niches.json', 'hub-articles.json', 'solo-concepts.json', 'radar-snapshot.json']) await cp(resolve(project, `app/data/${filename}`), resolve(out, `data/${filename}`));
+for (const filename of ['fps-market.json', 'indie-fps.json', 'game-stories.json', 'hub-cases.json', 'story-expansion.json', 'hub-niches.json', 'hub-articles.json', 'solo-concepts.json', 'radar-snapshot.json']) await cp(resolve(project, `app/data/${filename}`), resolve(out, `data/${filename}`));
 const baseStories = JSON.parse(await readFile(resolve(project, 'app/data/game-stories.json'), 'utf8'));
 const hubStories = JSON.parse(await readFile(resolve(project, 'app/data/hub-cases.json'), 'utf8'));
 const storyExpansion = JSON.parse(await readFile(resolve(project, 'app/data/story-expansion.json'), 'utf8'));

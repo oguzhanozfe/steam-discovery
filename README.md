@@ -11,7 +11,7 @@ Independent Steam marketing and indie game market research for game developers.
 ## What is here
 
 - Game case studies with dated marketing events, KPIs and evidence limits.
-- A dated [indie FPS directory](https://steam-discovery.vercel.app/indie-fps/) with 2025–2026 releases, older Early Access games and upcoming titles, checked against Steam and SteamDB.
+- A [co-op FPS market study](https://steam-discovery.vercel.app/indie-fps/) with 86 wave, run-based and mission shooters first available on Steam between September 28, 2023 and September 28, 2026; 19 solo comparisons and 10 context games sit alongside the original release directory. Per-game Steam observations and transparent revenue scenarios are downloadable.
 - A Steam Radar sample with search, release-state/evidence filters, three-game comparison and a browser-local watchlist/export.
 - Eight niche briefs and eight original AI-assisted solo concepts, with explicit two-week scope, exclusions, validation gates and release constraints.
 - Developer Playbooks: source arguments converted into separate solo and 2–5-person action plans, with counterexamples and uncertainty retained.
@@ -43,6 +43,7 @@ pnpm validate:research
 pnpm validate:readability
 pnpm validate:citations
 pnpm validate:public
+pnpm validate:fps
 pnpm audit
 ```
 

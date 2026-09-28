@@ -57,7 +57,7 @@ for (const game of fps.games) {
   if (game.cohort === 'recent') assert(game.releaseDate >= '2025-01-01' && game.releaseDate <= fps.checkedAt);
   assert(game.sources.some(source => source.url === `https://store.steampowered.com/app/${game.appId}/`));
   assert(game.sources.some(source => source.url.startsWith(`https://steamdb.info/app/${game.appId}/`)));
-  assert(fpsHtml.includes(`id="game-${game.appId}"`));
+  assert(fpsHtml.includes(`https://store.steampowered.com/app/${game.appId}/`));
   for (const source of game.sources) {
     assert.equal(new URL(source.url).protocol, 'https:');
     assert(source.uses.length && source.access);
@@ -65,3 +65,10 @@ for (const game of fps.games) {
   }
 }
 console.log(`Validated ${fps.games.length} FPS entries, date/status semantics, source mappings and export parity.`);
+const market = JSON.parse(await readFile(new URL('../app/data/fps-market.json', import.meta.url), 'utf8'));
+assert.deepEqual(JSON.parse(await read('data/fps-market.json')), market);
+for (const game of market.games.filter(game => game.cohort === 'study' && game.cooperative)) {
+  assert(fpsHtml.includes(`id="game-${game.appId}"`), `${game.title}: default market card missing`);
+}
+assert(fpsHtml.includes('FPS release directory'));
+console.log(`Validated FPS market export and default co-op card coverage.`);

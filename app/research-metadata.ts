@@ -8,6 +8,7 @@ import hubNiches from './data/hub-niches.json';
 import hubConcepts from './data/solo-concepts.json';
 import advertisingReferences from './data/advertising-sources.json';
 import fpsData from './data/indie-fps.json';
+import fpsMarket from './data/fps-market.json';
 import { gameReferences, storyReferences, ideaReferences, playbookReferences } from './source-references';
 
 export function citationUrls(route: SiteRoute) {
@@ -47,7 +48,8 @@ export function structuredData(route: SiteRoute) {
     ...(article ? { isBasedOn: { '@type': 'Article', url: article.url, headline: article.title, author: { '@type': 'Person', name: article.author }, ...(article.date ? { datePublished: article.date } : {}) }, articleSection: 'Research notes' } : guide ? { isBasedOn: { '@type': 'Article', url: guide.url, headline: guide.title, ...(guide.publishDate ? { datePublished: guide.publishDate } : {}) }, articleSection: 'Developer playbooks' } : { articleSection: 'Game stories' }),
   });
   if (route.path === '/reading/' || route.path === '/games/') graph.push({ '@type': 'CollectionPage', '@id': `${url}#collection`, url, name: route.title, hasPart: publicRoutes.filter(item => route.path === '/reading/' ? !!item.initial.readingId : !!item.initial.gameId).map(item => ({ '@type': 'WebPage', url: siteUrl + item.path, name: item.title })) });
-  if (route.initial.view === 'fps') graph.push({ '@type': 'ItemList', '@id': `${url}#games`, name: 'Recent indie FPS games and watchlist', numberOfItems: fpsData.games.length, itemListOrder: 'https://schema.org/ItemListUnordered', itemListElement: fpsData.games.map((game, index) => ({ '@type': 'ListItem', position: index + 1, item: { '@type': 'VideoGame', name: game.title, url: `https://store.steampowered.com/app/${game.appId}/`, genre: game.subgenre, description: game.hook } })) });
+  const fpsGames = [...new Map([...fpsData.games.map(game => ({ ...game, genre: game.subgenre })), ...fpsMarket.games.map(game => ({ ...game, genre: game.category }))].map(game => [game.appId, game])).values()];
+  if (route.initial.view === 'fps') graph.push({ '@type': 'ItemList', '@id': `${url}#games`, name: 'Co-op FPS market study and indie FPS directory', numberOfItems: fpsGames.length, itemListOrder: 'https://schema.org/ItemListUnordered', itemListElement: fpsGames.map((game, index) => ({ '@type': 'ListItem', position: index + 1, item: { '@type': 'VideoGame', name: game.title, url: `https://store.steampowered.com/app/${game.appId}/`, genre: game.genre, description: game.hook } })) });
   return { '@context': 'https://schema.org', '@graph': graph };
 }
 

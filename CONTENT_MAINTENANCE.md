@@ -10,6 +10,12 @@ Check the publication archives already listed in `app/data/newsletters.json`, `r
 6. Update existing claims only when new evidence supports the change, preserving earlier snapshots and recording the correction. Never fabricate dates, authors, metrics, endorsements, ranking guarantees or source access.
 7. Build, type-check, validate research metadata and run the dependency audit. Inspect the changed files before committing. Publish the validated version to the existing Vercel project, then check the live home, new note, feed, sitemap, metadata, and confirm retired project paths return 404.
 
+## Co-op FPS study
+
+`app/data/fps-market.json` separates first Steam access (including Early Access), release milestones, classification evidence and metric timestamps. The initial three-year window is September 28, 2023–September 28, 2026. Keep older Early Access releases, VR-only titles and unresolved scope boundaries outside study comparisons. Discovery used 500 FPS + co-op search candidates plus targeted Steam/SteamDB and developer checks; this is not proof of exhaustive coverage. Keep excluded and unresolved candidates visible.
+
+Run `node scripts/refresh-fps-market.mjs` to refresh the four public Steam metric queries and official capsule images; `--missing-only` collects newly added, uncollected rows. This does not reverify release history, ownership or gameplay: update `researchCheckedAt` only after those checks. Missing observations remain null. Commit snapshots to preserve earlier observations. Revenue uses explicitly assumed review multipliers and average-price factors; it is neither reported revenue nor a calibrated confidence interval. Free games, missing prices and zero paid reviews have no estimate. Keep sample denominators, release age and the estimated subset visible. Solo comparisons are curated examples, not a category census. Run `pnpm validate:fps` along with the standard publication checks.
+
 ## Attribution is required for every update
 
 - Cite the exact original article or data query beside every factual claim, metric and timeline event. Keep original titles distinct from Steam Discovery headlines; preserve author, publication date, observation date and access limits.

@@ -15,7 +15,8 @@
     "validate:research": "node scripts/validate-research.mjs",
     "validate:readability": "node scripts/validate-readability.mjs",
     "validate:citations": "node scripts/validate-citations.mjs",
-    "validate:public": "node scripts/validate-public.mjs"
+    "validate:public": "node scripts/validate-public.mjs",
+    "validate:fps": "node --experimental-strip-types scripts/validate-fps.mjs"
   },
   "dependencies": {
     "react": "19.2.8",

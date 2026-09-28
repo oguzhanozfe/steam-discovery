@@ -4,6 +4,7 @@ import { steamImageUrl, steamImageManifest } from './steam-image-url';
 import { gameStories, editorialUpdatedAt, storyPath } from './editorial-data';
 import hubArticles from './data/hub-articles.json';
 import fpsData from './data/indie-fps.json';
+import fpsMarket from './data/fps-market.json';
 
 export const siteUrl = 'https://steam-discovery.vercel.app';
 export type InitialRoute = { view?: ResearchView; marketPeriod?: '2025' | '2026-q1' | '2026-q2'; gameId?: string; readingId?: string; storyId?: string; guideId?: string };
@@ -14,7 +15,7 @@ export const viewPaths: Record<ResearchView, string> = {
 export const gamePath = (id: string) => `/games/${id}/`;
 export const readingPath = (id: string) => `/reading/${id}/`;
 export const sectionRoutes: SiteRoute[] = [
-  { path: viewPaths.fps, title: 'Recent Indie FPS Games — 2025–2026 Releases & Watchlist | Steam Discovery', description: 'Explore recent indie first-person shooters with official Steam artwork, release and Early Access dates, developer context and SteamDB cross-checks. Search releases and upcoming games.', initial: { view: 'fps' }, modifiedAt: fpsData.checkedAt, citations: fpsData.games.flatMap(game => game.sources.map(source => source.url)) },
+  { path: viewPaths.fps, title: 'Co-op FPS Market Study — Revenue Scenarios & Genre Comparisons | Steam Discovery', description: 'Explore 2023–2026 co-op wave survival, roguelite and mission FPS games. Compare Steam review traction, sentiment and transparent revenue scenarios, with SteamDB and primary sources.', initial: { view: 'fps' }, modifiedAt: fpsMarket.checkedAt, citations: [...fpsData.games.flatMap(game => game.sources.map(source => source.url)), ...fpsMarket.games.flatMap(game => game.sources.map(source => source.url)), ...fpsMarket.methodology.sources.map(source => source.url), ...fpsMarket.coverage.searches.map(source => source.url), ...fpsMarket.coverage.excluded.map(source => source.url)] },
   { path: '/', title: 'Steam Discovery — Small Team Game Dev Hub', description: 'Find game niches, compare Steam evidence, read developer stories and choose an AI-assisted two-week solo prototype. Practical research for small game teams.', initial: { view: 'hub' }, modifiedAt: '2026-09-08' },
   { path: '/stories/', title: 'Game Stories & Small-Team Build Lessons — Steam Discovery', description: 'Digested game stories from breakouts to modest launches, with dated KPIs, campaign chronology, caveats and proposed solo prototype transfers.', initial: { view: 'stories' }, modifiedAt: editorialUpdatedAt },
   { path: '/radar/', title: 'Steam Radar — Game Discovery & Comparable Evidence', description: 'Search a documented Steam and SteamSpy sample, compare reviews and owner estimates, and save a local watchlist. Dated snapshots, not verified sales or a complete market census.', initial: { view: 'radar' }, modifiedAt: '2026-09-08' },

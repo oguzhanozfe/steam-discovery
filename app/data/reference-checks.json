@@ -354,6 +354,36 @@
       "checkedAt": "2026-09-28",
       "scope": "Selected research-note claims and limits; proposed tests are Steam Discovery interpretation.",
       "wordingCompared": true
+    },
+    {
+      "url": "https://gamalytic.com/blog/how-to-accurately-estimate-steam-sales",
+      "title": "How to accurately estimate Steam game sales",
+      "author": null,
+      "publishedAt": "2023-05-13",
+      "publication": "Gamalytic",
+      "access": "Public page reviewed",
+      "checkedAt": "2026-09-28",
+      "scope": "Review-multiple method and its substantial individual-game error; does not validate our scenario bounds"
+    },
+    {
+      "url": "https://gamalytic.com/blog/a-deep-dive-into-the-steam-review-ratio",
+      "title": "What makes people review your game? A deep dive into the Steam’s sales/review ratio",
+      "author": null,
+      "publishedAt": "2023-07-23",
+      "publication": "Gamalytic",
+      "access": "Public page reviewed",
+      "checkedAt": "2026-09-28",
+      "scope": "Why review-to-sales ratios vary; not an endorsement of this model"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/store/getreviews",
+      "title": "User Reviews — Steamworks Documentation",
+      "author": null,
+      "publishedAt": null,
+      "publication": "Valve Steamworks",
+      "access": "Public page reviewed",
+      "checkedAt": "2026-09-28",
+      "scope": "Language, purchase-type and off-topic filter definitions"
     }
   ],
   "corrections": [

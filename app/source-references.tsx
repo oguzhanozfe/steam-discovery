@@ -6,6 +6,7 @@ import {
 } from './editorial-data';
 import checks from './data/reference-checks.json';
 import fpsData from './data/indie-fps.json';
+import fpsMarket from './data/fps-market.json';
 import { ideas, type Idea } from './research-data';
 import nicheData from './data/hub-niches.json';
 import conceptData from './data/solo-concepts.json';
@@ -45,7 +46,61 @@ const readingByUrl = new Map(
   readingLibrary.map((source) => [referenceKey(source.url), source]),
 );
 const gameById = new Map(gameLibrary.map((game) => [String(game.appId), game]));
-const fpsSourceByUrl = new Map(fpsData.games.flatMap(game => game.sources.map(source => [referenceKey(source.url), { ...source, title: `${source.label} — ${game.title}` }] as const)));
+const fpsSourceByUrl = new Map<
+  string,
+  {
+    url: string;
+    title: string;
+    label: string;
+    uses: string[];
+    access: string;
+    checkedAt: string;
+  }
+>(
+  [...fpsData.games, ...fpsMarket.games].flatMap((game) =>
+    game.sources.map(
+      (source) =>
+        [
+          referenceKey(source.url),
+          {
+            ...source,
+            title: `${source.label} — ${game.title}`,
+            checkedAt:
+              'metrics' in game
+                ? /\/api\/|\/appreviews\/|ISteamUserStats/.test(source.url)
+                  ? game.metrics.checkedAt
+                  : fpsMarket.researchCheckedAt
+                : fpsData.checkedAt,
+          },
+        ] as const,
+    ),
+  ),
+);
+for (const source of fpsMarket.methodology.sources)
+  fpsSourceByUrl.set(referenceKey(source.url), {
+    ...source,
+    title: source.label,
+    checkedAt: fpsMarket.researchCheckedAt,
+  });
+for (const source of fpsMarket.coverage.searches)
+  fpsSourceByUrl.set(referenceKey(source.url), {
+    url: source.url,
+    title: source.label,
+    label: source.label,
+    access: 'Public discovery query; not a complete census.',
+    uses: [source.note],
+    checkedAt: fpsMarket.researchCheckedAt,
+  });
+for (const source of fpsMarket.coverage.excluded)
+  if (!fpsSourceByUrl.has(referenceKey(source.url)))
+    fpsSourceByUrl.set(referenceKey(source.url), {
+      url: source.url,
+      title: `Scope check — ${source.title}`,
+      label: 'Scope check',
+      access: 'Public source checked for inclusion criteria.',
+      uses: [source.reason],
+      checkedAt: fpsMarket.researchCheckedAt,
+    });
 export function sourceMetadata(url: string) {
   const key = referenceKey(url);
   const fresh = checkedByUrl.get(key);
@@ -80,7 +135,7 @@ export function sourceMetadata(url: string) {
       fresh?.publication ?? note?.publication ?? publications[host] ?? host,
     author: fresh?.author ?? note?.author ?? null,
     publishedAt: fresh?.publishedAt ?? note?.date ?? null,
-    checkedAt: fresh?.checkedAt ?? (fps ? fpsData.checkedAt : null) ?? note?.checkedAt ?? null,
+    checkedAt: fps?.checkedAt ?? fresh?.checkedAt ?? note?.checkedAt ?? null,
     access: fresh?.access ?? fps?.access ?? note?.access ?? null,
     scope: fresh?.scope ?? fps?.uses.join('; ') ?? null,
     authorNote: fresh?.authorNote ?? null,
@@ -375,7 +430,10 @@ export function readingReferences(article: ReadingArticle): ReferenceUse[] {
   ]);
 }
 export const referenceMetadata = mergeReferenceUses([
-  ...fpsData.games.flatMap(game => game.sources.map(source => ({ url: source.url, uses: source.uses.map(use => `${game.title}: ${use}`) }))),
+  ...[...fpsData.games, ...fpsMarket.games].flatMap(game => game.sources.map(source => ({ url: source.url, uses: source.uses.map(use => `${game.title}: ${use}`) }))),
+  ...fpsMarket.methodology.sources,
+  ...fpsMarket.coverage.searches.map(source => ({ url: source.url, uses: [source.note] })),
+  ...fpsMarket.coverage.excluded.map(source => ({ url: source.url, uses: [source.reason] })),
   ...advertisingReferences.map(ref => ({ ...ref, uses: ref.uses.map(use => `Advertising policy: ${use}`) })),
   ...checks.sources.map((source) => ({ url: source.url })),
   ...readingLibrary.flatMap(note => readingReferences(note).map(ref => ({ ...ref, uses: ref.uses?.map(use => `${note.title}: ${use}`) }))),
