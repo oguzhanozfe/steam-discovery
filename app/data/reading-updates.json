@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-21",
-  "methodology": "Weekly September 21 pass: inspected fourteen original publisher archives or directories and read three selected articles published September 15–18. Two full public articles and one publicly accessible lead analysis were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached and undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed.",
+  "checkedAt": "2026-09-28",
+  "methodology": "Weekly September 28 pass: inspected fourteen original publisher archives or directories and added two articles published September 22–25. One full public article and one publicly accessible lead analysis were reviewed; the paid remainder was excluded. No older articles were added. Earlier notes and checks are retained. Archive observations describe returned pages, including cached and undated listings, not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed.",
   "articles": [
     {
       "id": "gdc-august-2026-public-discovery-roundup",
@@ -381,6 +381,74 @@
       "sourceUrls": [
         "https://alineaanalytics.substack.com/p/wardogs-had-a-better-steam-launch"
       ]
+    },
+    {
+      "id": "gdc-beamng-creator-platform-2026",
+      "title": "BeamNG.drive - the biggest driving game hit nobody analyzes?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-22",
+      "checkedAt": "2026-09-28",
+      "url": "https://newsletter.gamediscover.co/p/beamngdrive-the-biggest-driving-game",
+      "topics": [
+        "Creator discovery",
+        "User-generated content",
+        "Long-tail sales",
+        "Production scope"
+      ],
+      "relatedGames": [
+        "BeamNG.drive"
+      ],
+      "summary": "Carless examines a vehicle sandbox whose community creates different reasons to play and watch. Developer comments connect its continuing audience growth with mods, creator videos and an established simulation technology.",
+      "hardData": [
+        "GameDiscoverCo estimates 1.3 million Steam copies sold in the twelve months preceding its September 22, 2026 article."
+      ],
+      "evidenceType": "Analyst sales estimates and named developer comments",
+      "actionableLesson": "Our proposal: test whether the same mechanic supports several understandable player-made situations before expanding content production.",
+      "applicationSteps": [
+        "Capture contrasting uses of one mechanic.",
+        "Record creator reach separately from attributable purchases."
+      ],
+      "limitations": "A mature technology business is not a short-development benchmark. Estimates are not audited sales; interview explanations do not isolate marketing effects. Mods also create support and rights-management obligations.",
+      "access": "Public full article; note covers the BeamNG case",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/beamngdrive-the-biggest-driving-game"
+      ]
+    },
+    {
+      "id": "gdc-steam-deck-review-denominator-2026",
+      "title": "What are Steam Deck’s biggest 2026 hits - and top genres?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-25",
+      "checkedAt": "2026-09-28",
+      "url": "https://newsletter.gamediscover.co/p/what-are-steam-decks-biggest-2026",
+      "topics": [
+        "Steam Deck",
+        "Audience fit",
+        "Measurement integrity",
+        "Platform strategy"
+      ],
+      "relatedGames": [
+        "UFO 50",
+        "Mina The Hollower",
+        "Rogue Prince of Persia"
+      ],
+      "summary": "Carless compares overall handheld popularity with reviews from people who played mostly on Steam Deck. Those measures answer different questions: a large audience and a high handheld share need not identify the same games.",
+      "hardData": [
+        "The September 25 comparison filters for games above $1m gross revenue and 100 Deck reviews; UFO 50 has a 19.2% majority-Deck review share."
+      ],
+      "evidenceType": "Analyst comparison using Steam review play-device indicators",
+      "actionableLesson": "Our proposal: use relevant handheld comparables to prioritize control and readability tests, then validate the experience on hardware.",
+      "applicationSteps": [
+        "Check controller navigation and small-screen text.",
+        "Keep device-specific review share separate from sales forecasts."
+      ],
+      "limitations": "The indicator concerns reviewers with over half their playtime on Deck, not all buyers or revenue. The filtered sample excludes smaller outcomes. Switch performance remains a hypothesis for any new game.",
+      "access": "Public lead analysis read; post marked Paid, subscriber-only weekly remainder excluded",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/what-are-steam-decks-biggest-2026"
+      ]
     }
   ],
   "sourceChecks": [
@@ -642,15 +710,112 @@
       "checkedAt": "2026-09-21",
       "latestVisiblePublicationDate": "2025-05-07",
       "result": "The designated case-study listing shows no September 15–21 entry; its newest main card is dated May 7, 2025. The news sidebar contains newer items, so this is not a claim of publication-wide inactivity."
+    },
+    {
+      "source": "How To Market A Game",
+      "url": "https://howtomarketagame.com/blog/",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-09-08",
+      "result": "No September 22–28 entry visible in the returned blog listing. The September 8 horror-launch article remains represented."
+    },
+    {
+      "source": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-08-23",
+      "result": "No September 22–28 entry visible. Latest Dear Passengers vs Banana Airways article remains represented."
+    },
+    {
+      "source": "Game World Observer — Marketing",
+      "url": "https://gameworldobserver.com/category/marketing",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-05-21",
+      "result": "No September 22–28 entry visible in the designated marketing listing. Latest DREADMOOR case remains represented; this is not a publication-wide activity check."
+    },
+    {
+      "source": "IMPRESS Academy",
+      "url": "https://impress.games/blog",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2025-11-13",
+      "result": "No September 22–28 article visible in the returned archive. Latest Pitch Up 2025 recap remains represented; a 2026 event navigation link is not a new dated article."
+    },
+    {
+      "source": "The GameDiscoverCo newsletter",
+      "url": "https://newsletter.gamediscover.co/archive",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-09-25",
+      "result": "September 22 BeamNG case read in full and September 25 public Steam Deck lead analysis read; both added. The latter subscriber-only weekly remainder was excluded."
+    },
+    {
+      "source": "The Alinea Insight newsletter",
+      "url": "https://alineaanalytics.substack.com/archive",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-09-25",
+      "result": "September 22 licensed-IP and September 25 Resident Evil franchise listings visible. Not selected for this narrow indie Steam-discovery pass; article bodies were not reviewed."
+    },
+    {
+      "source": "Game Marketing Intel",
+      "url": "https://gamemarketing.substack.com/archive",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-07-19",
+      "result": "No September 22–28 entry visible in the returned archive, reported cached from six days earlier. July audio/article variants remain represented once."
+    },
+    {
+      "source": "OP Game Marketing",
+      "url": "https://opgamemarketing.substack.com/archive",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-08-14",
+      "result": "No September 22–28 entry visible in the returned archive, reported cached from two days earlier. Latest analysis remains represented."
+    },
+    {
+      "source": "GameDev Reports",
+      "url": "https://gamedevreports.substack.com/archive",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-09-26",
+      "result": "September 21–26 report and recap listings checked. The September 24 Steam revenue headline references Alinea analysis already represented from its original September 3 article; no duplicate note added. Paid bodies were not reviewed."
+    },
+    {
+      "source": "Butterscotch Shenanigans development blog",
+      "url": "https://blog.bscotch.net/",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-08-20",
+      "result": "No September 22–28 entry visible. Latest How Many Dudes timeline remains represented."
+    },
+    {
+      "source": "Push to Talk",
+      "url": "https://www.pushtotalk.gg/archive",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-07-20",
+      "result": "No September 22–28 entry visible in the returned archive, reported cached from five days earlier. Latest entry concerns a print magazine."
+    },
+    {
+      "source": "Game File",
+      "url": "https://www.gamefile.news/archive",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2026-09-25",
+      "result": "September 22–25 restructuring, AI-tooling and franchise-sales listings visible in the archive, reported cached from the previous day. None selected for this narrow indie Steam-marketing pass; article bodies were not reviewed."
+    },
+    {
+      "source": "Game If You Are",
+      "url": "https://gameifyouare.com/projects-case-studies/",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": null,
+      "result": "Public case-study directory checked. Listings lack publication dates, so none is labeled a new September publication. No campaign metrics were refreshed."
+    },
+    {
+      "source": "Game Developer — First-hand Postmortems",
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "checkedAt": "2026-09-28",
+      "latestVisiblePublicationDate": "2025-05-07",
+      "result": "The designated case-study listing shows no September 22–28 entry; its newest main card is dated May 7, 2025. This does not establish publication-wide inactivity."
     }
   ],
   "latestBatch": {
-    "addedAt": "2026-09-21",
-    "publishedSince": "2026-09-15",
+    "addedAt": "2026-09-28",
+    "publishedSince": "2026-09-22",
     "articleIds": [
-      "gdc-indie-budget-denominator-2026",
-      "gdc-discovery-age-survey-2026",
-      "alinea-wardogs-wishlist-cohorts-2026"
+      "gdc-beamng-creator-platform-2026",
+      "gdc-steam-deck-review-denominator-2026"
     ]
   },
   "previousBatches": [
@@ -676,6 +841,16 @@
         "alinea-demo-conversion-denominators-2026"
       ],
       "methodology": "Weekly September 14 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 8–11. Three article bodies and one publicly accessible lead case were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached or undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed."
+    },
+    {
+      "addedAt": "2026-09-21",
+      "publishedSince": "2026-09-15",
+      "articleIds": [
+        "gdc-indie-budget-denominator-2026",
+        "gdc-discovery-age-survey-2026",
+        "alinea-wardogs-wishlist-cohorts-2026"
+      ],
+      "methodology": "Weekly September 21 pass: inspected fourteen original publisher archives or directories and read three selected articles published September 15–18. Two full public articles and one publicly accessible lead analysis were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached and undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed."
     }
   ]
 }
