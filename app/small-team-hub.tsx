@@ -695,6 +695,9 @@ export function SteamRadar() {
                   measured.
                 </p>
               )}
+              <a className="hub-action" href={`/steam/${detail.appId}/`}>
+                Full game page: review trend, revenue scenario, comparables
+              </a>
               <Links
                 urls={[
                   detail.steamUrl,

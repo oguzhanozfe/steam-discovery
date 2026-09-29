@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import {
@@ -210,8 +211,12 @@ for (const route of publicRoutes.filter((route) =>
     const path = match[1].split(/[?#]/)[0];
     if (!path || path.startsWith('/data/') || /\.[a-z0-9]+$/.test(path))
       continue;
+    // /steam/ pages are generated outside publicRoutes by generate-steam-pages.mjs.
+    const generated =
+      path.startsWith('/steam/') &&
+      existsSync(new URL('../dist-static' + path + 'index.html', import.meta.url));
     assert(
-      routePaths.has(path),
+      routePaths.has(path) || generated,
       'Broken internal link: ' + path + ' on ' + route.path,
     );
   }

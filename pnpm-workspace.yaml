@@ -6,7 +6,7 @@ allowBuilds:
 # Patched transitive dependencies; keep until upstream pins include these fixes.
 overrides:
   ws: 8.21.0
-  undici: 7.29.0
+  undici: 7.29.1
   sharp: 0.35.4
   esbuild: 0.28.1
   react-server-dom-webpack: 19.2.8

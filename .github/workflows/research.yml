@@ -21,3 +21,4 @@ jobs:
       - run: pnpm build:vercel
       - run: pnpm exec tsc --noEmit
       - run: pnpm validate:research
+      - run: pnpm validate:steam
