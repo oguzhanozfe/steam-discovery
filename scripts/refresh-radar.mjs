@@ -129,6 +129,22 @@ if (!onlyNew) {
     }
   }
 }
+if (!onlyNew && pages.length < 3) {
+  // A failed SteamSpy page must not silently drop its games from the catalog:
+  // keep the previous rows with their original check dates.
+  let kept = 0;
+  for (const game of catalogPrevious.games)
+    if (
+      game.cohort === 'SteamSpy owner-ranked sample' &&
+      !broad.has(game.appId)
+    ) {
+      broad.set(game.appId, game);
+      kept++;
+    }
+  console.log(
+    `Kept ${kept} earlier SteamSpy rows after ${3 - pages.length} failed page(s).`,
+  );
+}
 const games = [];
 for (const [appId, seed] of seeds) {
   const old = previous.games.find((game) => game.appId === appId);
@@ -139,6 +155,19 @@ for (const [appId, seed] of seeds) {
   const storeUrl = `https://store.steampowered.com/api/appdetails?appids=${appId}&cc=us&l=english`;
   const reviewUrl = `https://store.steampowered.com/appreviews/${appId}?json=1&language=all&purchase_type=all&num_per_page=1&filter=recent&filter_offtopic_activity=1`;
   const fetched = await Promise.allSettled([json(storeUrl), json(reviewUrl)]);
+  if (old && fetched.every((item) => item.status === 'rejected')) {
+    // Keep the last good observation (with its own date) when Steam is unreachable.
+    fetched.forEach((item, index) =>
+      errors.push({
+        appId,
+        source: [storeUrl, reviewUrl][index],
+        message: item.reason.message,
+      }),
+    );
+    games.push(old);
+    await pause(1100);
+    continue;
+  }
   const details =
     fetched[0].status === 'fulfilled' ? fetched[0].value[appId]?.data : null;
   const summary =
@@ -270,7 +299,9 @@ const metadata = {
   schemaVersion: 1,
   capturedAt: startedAt,
   completedAt: new Date().toISOString(),
-  mode: 'Manual snapshot, not a live feed',
+  mode: process.env.GITHUB_ACTIONS
+    ? 'Scheduled daily snapshot, not a live feed'
+    : 'Manual snapshot, not a live feed',
   reviewMethod:
     'Current curated rows: official Steam appreviews, all languages, all purchase types; off-topic filtering on. Reviews are not copies sold.',
   ownerMethod:
