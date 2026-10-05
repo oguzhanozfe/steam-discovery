@@ -2911,6 +2911,30 @@
       "status": "Responded",
       "note": "Availability checked; not independent verification of all claims or unrestricted article access.",
       "checkedAt": "2026-09-02"
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/no-more-universal-daily-deals-on",
+      "status": "Public article read",
+      "checkedAt": "2026-10-05",
+      "note": "Public lead analysis read; Paid post, subscriber-only weekly remainder excluded. Published 2026-10-02. Selected claims retain historical metric windows and evidence limits; no game metrics refreshed."
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/what-do-s-and-boxs-issues-so-far",
+      "status": "Public article read",
+      "checkedAt": "2026-10-05",
+      "note": "Public full article read; note covers the s&box analysis. Published 2026-09-29. Selected claims retain historical metric windows and evidence limits; no game metrics refreshed."
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/p/2026-games-to-watch-not-called-gta",
+      "status": "Public article read",
+      "checkedAt": "2026-10-05",
+      "note": "Public full article read; note covers the Guildrun section. Published 2026-09-29. Selected claims retain historical metric windows and evidence limits; no game metrics refreshed."
+    },
+    {
+      "url": "https://alineaanalytics.substack.com/p/steams-top-september-2026-games",
+      "status": "Public article read",
+      "checkedAt": "2026-10-05",
+      "note": "Public full article read; note covers the Bodycam example and sample denominator. Published 2026-10-01. Selected claims retain historical metric windows and evidence limits; no game metrics refreshed."
     }
   ],
   "baselineCheckedAt": "2026-09-02"

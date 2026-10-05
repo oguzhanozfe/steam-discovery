@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-28",
-  "methodology": "Weekly September 28 pass: inspected fourteen original publisher archives or directories and added two articles published September 22–25. One full public article and one publicly accessible lead analysis were reviewed; the paid remainder was excluded. No older articles were added. Earlier notes and checks are retained. Archive observations describe returned pages, including cached and undated listings, not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed.",
+  "checkedAt": "2026-10-05",
+  "methodology": "Weekly October 5 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 29–October 2. Three full public articles and one public lead analysis were reviewed; no subscription barrier was bypassed. Short notes separate source claims from our proposed tests. Earlier records remain intact. Returned archives, including cached and undated listings, are not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed.",
   "articles": [
     {
       "id": "gdc-august-2026-public-discovery-roundup",
@@ -449,6 +449,135 @@
       "sourceUrls": [
         "https://newsletter.gamediscover.co/p/what-are-steam-decks-biggest-2026"
       ]
+    },
+    {
+      "id": "gdc-personalized-discounts-2026",
+      "title": "No more universal Daily Deals on Steam - is that good?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-10-02",
+      "url": "https://newsletter.gamediscover.co/p/no-more-universal-daily-deals-on",
+      "topics": [
+        "Steam visibility",
+        "Discounts",
+        "Measurement integrity"
+      ],
+      "relatedGames": [],
+      "summary": "Carless examines planned personalization of Steam discount placements. His analysis suggests exposure may become more frequent and audience-specific, rather than concentrated in a scheduled store-wide promotion.",
+      "hardData": [
+        "The October 2 report places rollout in early 2027; that is a reported plan, not a completed change."
+      ],
+      "evidenceType": "Analyst interpretation of a platform announcement",
+      "actionableLesson": "Our proposal: compare discount periods using traffic-source reports and net receipts, keeping audience reach separate from purchase conversion.",
+      "applicationSteps": [
+        "Preserve a baseline before the rollout.",
+        "Recheck official Steamworks guidance before booking a campaign."
+      ],
+      "limitations": "No game-level revenue gain is established. The linked Valve announcement returned no readable body in this check, so its details remain attributed to Carless.",
+      "access": "Public lead analysis read; Paid post, subscriber-only weekly remainder excluded",
+      "checkedAt": "2026-10-05",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/no-more-universal-daily-deals-on"
+      ]
+    },
+    {
+      "id": "gdc-sbox-platform-hook-2026",
+      "title": "What do s&box’s issues (so far) tell us about launching platforms in 2026?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-09-29",
+      "url": "https://newsletter.gamediscover.co/p/what-do-s-and-boxs-issues-so-far",
+      "topics": [
+        "Counter-cases",
+        "Positioning",
+        "Production scope"
+      ],
+      "relatedGames": [
+        "s&box",
+        "Garry’s Mod"
+      ],
+      "summary": "Carless uses s&box to question whether capable creation tools supply a compelling reason to play. He identifies a gap between a broad platform promise and the experiences its inherited audience expected.",
+      "hardData": [
+        "The September 29 article estimates that 86% of s&box users also own Garry’s Mod; ownership overlap does not measure satisfaction or retention."
+      ],
+      "evidenceType": "Analyst audience estimate and qualitative counter-case",
+      "actionableLesson": "Our proposal: validate one repeatable player experience before expanding into a creator platform.",
+      "applicationSteps": [
+        "Test the playable hook with people outside the maker community.",
+        "Separate creator activity from returning-player activity."
+      ],
+      "limitations": "A well-funded platform is not a small-team cost benchmark. This account cannot isolate why users leave or predict the project’s final outcome.",
+      "access": "Public full article read; note covers the s&box analysis",
+      "checkedAt": "2026-10-05",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/what-do-s-and-boxs-issues-so-far"
+      ]
+    },
+    {
+      "id": "alinea-guildrun-demo-returners-2026",
+      "title": "Q4 games to watch NOT called GTA or Zelda",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-09-29",
+      "url": "https://alineaanalytics.substack.com/p/2026-games-to-watch-not-called-gta",
+      "topics": [
+        "Demo",
+        "Audience fit",
+        "Measurement integrity"
+      ],
+      "relatedGames": [
+        "Guildrun"
+      ],
+      "summary": "Elliott considers repeat demo use alongside pre-release interest. Guildrun provides an example of checking whether prospective buyers still engage after the initial reveal.",
+      "hardData": [
+        "Alinea’s September 29 estimates: 548k lifetime demo players, 437k wishlists and 6.7 hours median demo playtime.",
+        "For September to that point: fewer than 70k new demo players versus more than 150k total active players."
+      ],
+      "evidenceType": "Commercial analyst estimates; pre-release demo cohorts",
+      "actionableLesson": "Our proposal: track returning demo players separately from first visits and wishlists.",
+      "applicationSteps": [
+        "Compare the same observation windows.",
+        "Interview repeat players and early departures separately."
+      ],
+      "limitations": "These are model estimates, not developer telemetry. Activity does not establish paid conversion; subtracting rounded figures would imply false precision. No launch result is claimed.",
+      "access": "Public full article read; note covers the Guildrun section",
+      "checkedAt": "2026-10-05",
+      "sourceUrls": [
+        "https://alineaanalytics.substack.com/p/2026-games-to-watch-not-called-gta"
+      ]
+    },
+    {
+      "id": "alinea-september-update-revenue-2026",
+      "title": "Steam's top September 2026 games",
+      "author": "Rhys Elliott",
+      "publication": "The Alinea Insight newsletter",
+      "date": "2026-10-01",
+      "url": "https://alineaanalytics.substack.com/p/steams-top-september-2026-games",
+      "topics": [
+        "Revenue & pricing",
+        "Updates",
+        "Measurement integrity"
+      ],
+      "relatedGames": [
+        "Bodycam"
+      ],
+      "summary": "Elliott’s monthly ranking includes older games alongside fresh releases. Bodycam’s update coincides with a strong month, making it a useful dated example for evaluating post-launch investment.",
+      "hardData": [
+        "Alinea estimates Bodycam generated $24.2m on Steam during September 2026, compared with $16m in its Early Access launch month.",
+        "The article’s top-500 cohort represents roughly three-quarters of estimated September Steam revenue."
+      ],
+      "evidenceType": "Commercial analyst revenue estimates and selected ranking",
+      "actionableLesson": "Our proposal: assess an update against development cost, discounts, traffic and returning players before attributing a sales change to content.",
+      "applicationSteps": [
+        "Separate monthly revenue from lifetime totals.",
+        "Include weaker comparable updates in the decision sample."
+      ],
+      "limitations": "The ranking omits most releases and cannot establish an indie success rate. Estimated revenue is not studio profit; the update’s causal contribution is unknown.",
+      "access": "Public full article read; note covers the Bodycam example and sample denominator",
+      "checkedAt": "2026-10-05",
+      "sourceUrls": [
+        "https://alineaanalytics.substack.com/p/steams-top-september-2026-games"
+      ]
     }
   ],
   "sourceChecks": [
@@ -808,14 +937,114 @@
       "checkedAt": "2026-09-28",
       "latestVisiblePublicationDate": "2025-05-07",
       "result": "The designated case-study listing shows no September 22–28 entry; its newest main card is dated May 7, 2025. This does not establish publication-wide inactivity."
+    },
+    {
+      "source": "How To Market A Game",
+      "url": "https://howtomarketagame.com/blog/",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-09-08",
+      "result": "No September 29–October 5 entry visible in the returned blog listing. Latest horror-launch article remains represented."
+    },
+    {
+      "source": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-08-23",
+      "result": "No September 29–October 5 entry visible. Latest Dear Passengers vs Banana Airways article remains represented."
+    },
+    {
+      "source": "Game World Observer — Marketing",
+      "url": "https://gameworldobserver.com/category/marketing",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-05-21",
+      "result": "No September 29–October 5 entry visible in the designated marketing listing. Latest DREADMOOR case remains represented; not a publication-wide activity check."
+    },
+    {
+      "source": "IMPRESS Academy",
+      "url": "https://impress.games/blog",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2025-11-13",
+      "result": "No September 29–October 5 entry visible in the returned archive. Latest Pitch Up 2025 recap remains represented."
+    },
+    {
+      "source": "The GameDiscoverCo newsletter",
+      "url": "https://newsletter.gamediscover.co/archive",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-10-02",
+      "result": "September 29 s&box article and October 2 public discount-personalization lead read and added. The October 2 subscriber-only weekly remainder was excluded. Its linked Valve announcement yielded no readable body and is not recorded as independently verified."
+    },
+    {
+      "source": "The Alinea Insight newsletter",
+      "url": "https://alineaanalytics.substack.com/archive",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-10-01",
+      "result": "September 29 and October 1 public articles read. Added focused notes on returning demo players and monthly update revenue, retaining model-estimate and cohort limits."
+    },
+    {
+      "source": "Game Marketing Intel",
+      "url": "https://gamemarketing.substack.com/archive",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-07-19",
+      "result": "No September 29–October 5 entry visible in the returned archive, reported cached from the previous week. July audio/article variants remain represented once."
+    },
+    {
+      "source": "OP Game Marketing",
+      "url": "https://opgamemarketing.substack.com/archive",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-08-14",
+      "result": "No September 29–October 5 entry visible in the returned archive, reported cached from the previous week. Latest analysis remains represented."
+    },
+    {
+      "source": "GameDev Reports",
+      "url": "https://gamedevreports.substack.com/archive",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": null,
+      "result": "September 29–October 3 reports and a newer relative-dated mobile ranking visible. October 1 discovery-by-age item repeats GameDiscoverCo research already represented from its original September 18 publication; no duplicate note. Other listings were not selected for this focused pass; paid bodies not reviewed."
+    },
+    {
+      "source": "Butterscotch Shenanigans development blog",
+      "url": "https://blog.bscotch.net/",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-08-20",
+      "result": "No September 29–October 5 entry visible. Latest How Many Dudes timeline remains represented."
+    },
+    {
+      "source": "Push to Talk",
+      "url": "https://www.pushtotalk.gg/archive",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-07-20",
+      "result": "No September 29–October 5 entry visible in the returned archive. Latest entry concerns a print magazine."
+    },
+    {
+      "source": "Game File",
+      "url": "https://www.gamefile.news/archive",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2026-10-02",
+      "result": "October 2 reviews visible; not selected for this focused Steam-marketing pass. Article bodies not reviewed."
+    },
+    {
+      "source": "Game If You Are",
+      "url": "https://gameifyouare.com/projects-case-studies/",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": null,
+      "result": "Public case-study directory checked. Listings lack publication dates, so none is labeled a new October publication. No campaign metrics were refreshed."
+    },
+    {
+      "source": "Game Developer — First-hand Postmortems",
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "checkedAt": "2026-10-05",
+      "latestVisiblePublicationDate": "2025-05-07",
+      "result": "No September 29–October 5 entry visible in the designated case-study listing. Its news sidebar has newer reporting; this is not publication-wide inactivity."
     }
   ],
   "latestBatch": {
-    "addedAt": "2026-09-28",
-    "publishedSince": "2026-09-22",
+    "addedAt": "2026-10-05",
+    "publishedSince": "2026-09-29",
     "articleIds": [
-      "gdc-beamng-creator-platform-2026",
-      "gdc-steam-deck-review-denominator-2026"
+      "gdc-personalized-discounts-2026",
+      "gdc-sbox-platform-hook-2026",
+      "alinea-guildrun-demo-returners-2026",
+      "alinea-september-update-revenue-2026"
     ]
   },
   "previousBatches": [
@@ -851,6 +1080,15 @@
         "alinea-wardogs-wishlist-cohorts-2026"
       ],
       "methodology": "Weekly September 21 pass: inspected fourteen original publisher archives or directories and read three selected articles published September 15–18. Two full public articles and one publicly accessible lead analysis were reviewed; no subscription barrier was bypassed. Earlier notes and checks are retained. Archive results describe returned pages, including cached and undated listings, not exhaustive publication searches. Source publication, check dates and historical metric windows remain separate; game snapshots were not refreshed."
+    },
+    {
+      "addedAt": "2026-09-28",
+      "publishedSince": "2026-09-22",
+      "articleIds": [
+        "gdc-beamng-creator-platform-2026",
+        "gdc-steam-deck-review-denominator-2026"
+      ],
+      "methodology": "Weekly September 28 pass: inspected fourteen original publisher archives or directories and added two articles published September 22–25. One full public article and one publicly accessible lead analysis were reviewed; the paid remainder was excluded. No older articles were added. Earlier notes and checks are retained. Archive observations describe returned pages, including cached and undated listings, not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed."
     }
   ]
 }
