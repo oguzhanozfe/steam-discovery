@@ -12,6 +12,7 @@ Independent Steam marketing and indie game market research for game developers.
 
 - Game case studies with dated marketing events, KPIs and evidence limits.
 - A [co-op FPS market study](https://steam-discovery.vercel.app/indie-fps/) with 51 wave, run-based and mission shooters first available on Steam between September 28, 2023 and September 28, 2026; 18 solo comparisons and 25 context games sit alongside the original release directory. The visible sample has at least 30 total reviews per released game; 17 community case studies explain combat loops, progression and design lessons. Per-game Steam observations and transparent revenue scenarios are downloadable.
+- A page for every catalog game at `/steam/<appId>/` (reviews, review trend, price, SteamSpy owner estimate, a labelled revenue scenario and tag-based comparables) plus tag pages at `/steam/tags/<tag>/` and a directory at `/steam/`.
 - A Steam Radar sample with search, release-state/evidence filters, three-game comparison and a browser-local watchlist/export.
 - Eight niche briefs and eight original AI-assisted solo concepts, with explicit two-week scope, exclusions, validation gates and release constraints.
 - Developer Playbooks: source arguments converted into separate solo and 2–5-person action plans, with counterexamples and uncertainty retained.
@@ -44,6 +45,7 @@ pnpm validate:readability
 pnpm validate:citations
 pnpm validate:public
 pnpm validate:fps
+pnpm validate:steam
 pnpm audit
 ```
 
@@ -61,6 +63,17 @@ References use the shared `app/source-references.tsx` renderer. Original article
 
 `app/ad-slot.tsx` renders labeled availability notices, not paid campaigns or a connected ad network. Do not fabricate sponsors, publisher IDs or ads.txt entries. Connect a real publisher account only after confirming the provider, disclosures and applicable consent setup. Paid creative must identify the advertiser; paid links must use `rel="sponsored noopener noreferrer"`. Keep ads out of citations, KPI tables and research rankings. See `/about/#advertising` for the public policy and official references.
 
+## Daily data refresh
+
+`.github/workflows/refresh-data.yml` runs every day at 05:17 UTC (and on demand from the Actions tab):
+
+1. `scripts/refresh-radar.mjs` refreshes SteamSpy pages and curated Steam checks. If a source is unreachable, earlier rows are kept with their original check dates rather than dropped.
+2. `scripts/enrich-apps.mjs` checks a bounded batch of catalog games (default 1,500 SteamSpy and 600 Steam store requests, missing records first, then the stalest) into `data/steam/app-details.json`, so the whole catalog is covered within a few days.
+3. `scripts/record-history.mjs` files each observation under the date it was checked in `data/history/<date>.json`, keeping Steam API and SteamSpy review definitions separate.
+4. The site is built and validated, the data is committed to the default branch, and the build is deployed to Vercel production when the `VERCEL_TOKEN`, `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` repository secrets exist. Without them, data is still committed and the run notes that deployment was skipped.
+
+`scripts/generate-steam-pages.mjs` runs at the end of `pnpm build:vercel` and writes the static `/steam/` pages from that committed data. They are plain HTML with one shared stylesheet, so they do not grow the client bundle. Pages with too little data are `noindex` and left out of `sitemap-steam.xml` until enrichment fills them in.
+
 ## Refreshing the small-team hub
 
 `node scripts/refresh-radar.mjs` manually refreshes public observations. It respects SteamSpy’s one-per-minute bulk request rate, fetches selected owner-ranked pages (0, 5, 20), and checks curated games against Steam store metadata and review endpoints. `--only-new` checks newly added curated IDs without relabeling existing checks as fresh. No API key is required. Public store metadata uses an undocumented endpoint and can change. The script records request failures and leaves unavailable values unknown.
@@ -71,7 +84,7 @@ The curated snapshot is in `app/data/radar-snapshot.json`; the full client-loade
 
 ## Deploy to the existing host
 
-The existing production host is Vercel at `steam-discovery.vercel.app`. Git auto-deploy is intentionally disabled. Run `vercel build --prod` followed by `vercel deploy --prebuilt --prod` after checks pass, using the existing linked project and authorized account. Never commit local environment files, Vercel credentials or generated builds. Use the current validated build; do not deploy stale output directories.
+The existing production host is Vercel at `steam-discovery.vercel.app`. Git auto-deploy is intentionally disabled; the daily refresh workflow deploys when its Vercel secrets are configured. To deploy by hand, run `vercel build --prod` followed by `vercel deploy --prebuilt --prod` after checks pass, using the existing linked project and authorized account. Never commit local environment files, Vercel credentials or generated builds. Use the current validated build; do not deploy stale output directories.
 
 ## Interface palette
 

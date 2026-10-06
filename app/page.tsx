@@ -377,7 +377,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
         <div className="view-tabs">{navItems.map((item) => { const Icon = item.icon; return <a key={item.id} href={item.id === 'market' ? marketPeriodPath(marketPeriod) : viewPaths[item.id]} className={view === item.id ? 'is-active' : ''} aria-current={view === item.id ? 'page' : undefined}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.caption}</small></span></a>; })}</div>
         <Button variant="outline" size="sm" onClick={downloadDataset}><ArrowDownToLine aria-hidden="true" /> Export JSON</Button>
       </nav>
-      <nav className="research-secondary" aria-label="Supporting research"><a href="/reading/">Sources &amp; Reading</a><a href="/games/">Researched benchmarks</a><a href="/research/open-world-survival-craft/">Survival craft</a><a href="/case-studies/">Campaign timelines</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a><a href="/about/">About &amp; sources</a></nav>
+      <nav className="research-secondary" aria-label="Supporting research"><a href="/steam/">Steam games &amp; tags</a><a href="/reading/">Sources &amp; Reading</a><a href="/games/">Researched benchmarks</a><a href="/research/open-world-survival-craft/">Survival craft</a><a href="/case-studies/">Campaign timelines</a><a href="/build-lab/">Build Lab</a><a href="/sprint-plan/">Sprint Plan</a><a href="/about/">About &amp; sources</a></nav>
 
       <div id="research-content" tabIndex={-1} />
       {view === 'hub' && <SmallTeamHub />}

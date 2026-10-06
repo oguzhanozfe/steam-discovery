@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
-    "build:vercel": "vite build --config vite.static.config.ts && vite build --config vite.static.config.ts --ssr entry-prerender.tsx --outDir .prerender && node scripts/prerender.mjs",
+    "build:vercel": "vite build --config vite.static.config.ts && vite build --config vite.static.config.ts --ssr entry-prerender.tsx --outDir .prerender && node scripts/prerender.mjs && node scripts/generate-steam-pages.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
@@ -16,6 +16,9 @@
     "validate:readability": "node scripts/validate-readability.mjs",
     "validate:citations": "node scripts/validate-citations.mjs",
     "validate:public": "node scripts/validate-public.mjs",
+    "refresh:enrich": "node scripts/enrich-apps.mjs",
+    "refresh:history": "node scripts/record-history.mjs",
+    "validate:steam": "node scripts/validate-steam.mjs",
     "validate:fps": "node --experimental-strip-types scripts/validate-fps.mjs"
   },
   "dependencies": {

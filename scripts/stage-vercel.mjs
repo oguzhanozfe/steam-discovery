@@ -15,6 +15,10 @@ const routes = [
     ]),
     { src: `^${escapeRegex(route.path)}$`, dest: `${route.path}index.html` },
   ]),
+  // Generated static game and tag pages (scripts/generate-steam-pages.mjs).
+  { src: '^/steam/((?:tags/)?[a-z0-9-]+)$', status: 308, headers: { Location: '/steam/$1/' } },
+  { src: '^/steam/$', dest: '/steam/index.html' },
+  { src: '^/steam/((?:tags/)?[a-z0-9-]+)/$', dest: '/steam/$1/index.html' },
   { handle: 'filesystem' },
   { src: '/.*', status: 404, dest: '/404.html' },
 ];
