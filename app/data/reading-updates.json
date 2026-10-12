@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-05",
-  "methodology": "Weekly October 5 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 29–October 2. Three full public articles and one public lead analysis were reviewed; no subscription barrier was bypassed. Short notes separate source claims from our proposed tests. Earlier records remain intact. Returned archives, including cached and undated listings, are not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed.",
+  "checkedAt": "2026-10-12",
+  "methodology": "Weekly October 12 pass: checked fourteen original publication archives or directories and added three articles published October 6–9. Two full public contributor accounts and one public lead interview were read; the subscriber-only remainder was excluded. No older articles were added. One directory follow-up timed out; cached and undated listings do not establish complete coverage. Source claims, estimates and our proposed tests remain distinct. Earlier notes and checks are retained; publication dates, check dates and historical metric windows remain separate. Game snapshots were not refreshed.",
   "articles": [
     {
       "id": "gdc-august-2026-public-discovery-roundup",
@@ -578,6 +578,105 @@
       "sourceUrls": [
         "https://alineaanalytics.substack.com/p/steams-top-september-2026-games"
       ]
+    },
+    {
+      "id": "gdc-dressmaker-craft-hook-2026",
+      "title": "How Dressmaker became ‘ready to wear’ for hundreds of thousands of players!",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-10-09",
+      "url": "https://newsletter.gamediscover.co/p/how-dressmaker-became-ready-to-wear",
+      "topics": [
+        "Niche demand",
+        "Trailers & positioning",
+        "Production scope"
+      ],
+      "relatedGames": [
+        "Dressmaker"
+      ],
+      "summary": "Carless interviews co-creator Jonathan Hau-Yoon about turning sewing expertise into a creative sandbox. The case connects a recognizable activity with customization that players can show to others.",
+      "hardData": [
+        "The October 9 article estimates more than 500,000 Steam units in the first two weeks; these are GameDiscoverCo estimates, not audited sales.",
+        "Carless reports a three-person full-time core team and a playable prototype released in July 2025."
+      ],
+      "evidenceType": "Developer interview with commercial analyst estimates",
+      "actionableLesson": "Our proposal: test whether people understand the activity and want to share their own creations before expanding the feature set.",
+      "applicationSteps": [
+        "Observe unfamiliar players using a small prototype.",
+        "Separate recognition of the theme from repeat play and sharing."
+      ],
+      "limitations": "A selected hit does not establish demand for every craft simulator. Publisher history, production costs and channel effects are not controlled; the team count is not a total staffing or budget estimate.",
+      "access": "Public lead case read; Paid post, subscriber-only weekly remainder excluded",
+      "checkedAt": "2026-10-12",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/how-dressmaker-became-ready-to-wear"
+      ]
+    },
+    {
+      "id": "gwo-tiny-eden-campaign-preparation-2026",
+      "title": "How We Took Tiny Eden from 4,800 Wishlists to $700,000 in Its First Two Weeks: A Digital Vortex Publisher Case Study",
+      "author": "Irina Borodina (guest column); Alexander Semenov (page byline)",
+      "publication": "Game World Observer",
+      "date": "2026-10-06",
+      "url": "https://gameworldobserver.com/2026/10/06/how-we-took-tiny-eden-from-4800-wishlists-to-700000-in-its-first-two-weeks-a-digital-vortex-publisher-case-study",
+      "topics": [
+        "Campaign execution",
+        "Steam visibility",
+        "Measurement integrity"
+      ],
+      "relatedGames": [
+        "Tiny Eden"
+      ],
+      "summary": "Digital Vortex’s CMO describes revising the game, its presentation and campaign before a September launch. The useful distinction is between preparing an audience and receiving a later burst of store traffic.",
+      "hardData": [
+        "The publisher reports over $700,000 revenue during the two weeks after the September 7, 2026 launch; gross/net treatment and costs are unspecified.",
+        "The article reports roughly 20,000 Personal Calendar visits versus one million homepage visits during its pre-launch traffic period."
+      ],
+      "evidenceType": "First-person publisher campaign account; unaudited self-report",
+      "actionableLesson": "Our proposal: record store traffic by placement and date, then assess capsule clarity and purchase behavior separately.",
+      "applicationSteps": [
+        "Keep the campaign timeline alongside product and store-page revisions.",
+        "Compare release-date options without assuming a guaranteed homepage slot."
+      ],
+      "limitations": "The author represents the publisher. Concurrent changes prevent causal attribution. Calendar ranking claims are the publisher’s interpretation, not independently verified Valve policy; visit counts do not establish unique people or sales.",
+      "access": "Public full guest column read",
+      "checkedAt": "2026-10-12",
+      "sourceUrls": [
+        "https://gameworldobserver.com/2026/10/06/how-we-took-tiny-eden-from-4800-wishlists-to-700000-in-its-first-two-weeks-a-digital-vortex-publisher-case-study"
+      ]
+    },
+    {
+      "id": "gd-backrooms-handoff-and-networking-2026",
+      "title": "Co-dev case study: How Blackbird Interactive and Secret Mode helped Escape the Backrooms ride the Backrooms hype wave",
+      "author": "Steven Messner",
+      "publication": "Game Developer",
+      "date": "2026-10-06",
+      "url": "https://www.gamedeveloper.com/production/co-dev-case-study-how-blackbird-interactive-and-secret-mode-helped-escape-the-backrooms-ride-the-backrooms-hype-wave",
+      "topics": [
+        "Co-op",
+        "Production scope",
+        "Campaign execution"
+      ],
+      "relatedGames": [
+        "Escape the Backrooms"
+      ],
+      "summary": "Blackbird Interactive’s communications director describes taking over an established solo project. Recreating its development environment and resolving console matchmaking became prerequisites for the planned ports.",
+      "hardData": [
+        "The account places the handover in September 2025 and the eventual PS5/Xbox release on May 28, 2026, followed by Switch 2 on July 7.",
+        "The reported four million players span platforms and a stated month-long period; this is not a Steam paid-unit total."
+      ],
+      "evidenceType": "First-person co-development production account",
+      "actionableLesson": "Our proposal: test a clean-machine build and real cross-network multiplayer before promising a port date.",
+      "applicationSteps": [
+        "Record engine, plugin and SDK requirements at handover.",
+        "Budget separately for platform networking, certification and continued content work."
+      ],
+      "limitations": "The author works for the co-developer. An existing hit, publisher support and a film release limit transfer to a new small-team game. No budget, controlled marketing effect or independently audited player total is supplied.",
+      "access": "Public full developer-authored article read",
+      "checkedAt": "2026-10-12",
+      "sourceUrls": [
+        "https://www.gamedeveloper.com/production/co-dev-case-study-how-blackbird-interactive-and-secret-mode-helped-escape-the-backrooms-ride-the-backrooms-hype-wave"
+      ]
     }
   ],
   "sourceChecks": [
@@ -1035,16 +1134,113 @@
       "checkedAt": "2026-10-05",
       "latestVisiblePublicationDate": "2025-05-07",
       "result": "No September 29–October 5 entry visible in the designated case-study listing. Its news sidebar has newer reporting; this is not publication-wide inactivity."
+    },
+    {
+      "source": "How To Market A Game",
+      "url": "https://howtomarketagame.com/blog/",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-09-08",
+      "result": "No October 6–12 entry visible in the returned blog listing. Latest horror-launch article remains represented."
+    },
+    {
+      "source": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-08-23",
+      "result": "No October 6–12 entry visible in the blog listing. Latest Dear Passengers vs Banana Airways article remains represented; this does not cover the separate video channel."
+    },
+    {
+      "source": "Game World Observer — Marketing",
+      "url": "https://gameworldobserver.com/category/marketing",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-10-06",
+      "result": "Read and added the new Tiny Eden publisher guest column. Preserved contributor attribution, self-report limits and September metric windows."
+    },
+    {
+      "source": "IMPRESS Academy",
+      "url": "https://impress.games/blog",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2025-11-13",
+      "result": "No October 6–12 entry visible in the returned archive, reported cached from two days earlier. Latest Pitch Up recap remains represented."
+    },
+    {
+      "source": "The GameDiscoverCo newsletter",
+      "url": "https://newsletter.gamediscover.co/archive",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-10-09",
+      "result": "Read October 6 monthly analysis and October 9 public Dressmaker lead. Added the Dressmaker interview note; subscriber-only weekly remainder excluded. Monthly ranking not added separately; inconsistent August/September labels in its revenue paragraphs were not resolved or reused."
+    },
+    {
+      "source": "The Alinea Insight newsletter",
+      "url": "https://alineaanalytics.substack.com/archive",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-10-09",
+      "result": "October 6 FC 27 and October 9 Gears of War listings checked. Not selected for focused indie Steam-discovery research; article bodies not reviewed."
+    },
+    {
+      "source": "Game Marketing Intel",
+      "url": "https://gamemarketing.substack.com/archive",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-07-19",
+      "result": "No October 6–12 entry visible in the returned archive, reported cached from six days earlier. July audio/article variants remain represented once."
+    },
+    {
+      "source": "OP Game Marketing",
+      "url": "https://opgamemarketing.substack.com/archive",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-08-14",
+      "result": "No October 6–12 entry visible in the returned archive, reported cached from six days earlier. Latest analysis remains represented."
+    },
+    {
+      "source": "GameDev Reports",
+      "url": "https://gamedevreports.substack.com/archive",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": null,
+      "result": "October 6–10 reports and a newer relative-dated U.S. market listing checked. Not selected for this narrow Steam-discovery pass; paid bodies not reviewed and relative date not converted to a publication date."
+    },
+    {
+      "source": "Butterscotch Shenanigans development blog",
+      "url": "https://blog.bscotch.net/",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-08-20",
+      "result": "No October 6–12 entry visible. Latest How Many Dudes timeline remains represented."
+    },
+    {
+      "source": "Push to Talk",
+      "url": "https://www.pushtotalk.gg/archive",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-07-20",
+      "result": "No October 6–12 entry visible in the returned archive, reported cached from four days earlier. Latest entry concerns a print magazine."
+    },
+    {
+      "source": "Game File",
+      "url": "https://www.gamefile.news/archive",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-10-09",
+      "result": "October 7–9 development-tool, studio and console listings checked. Not selected for this Steam-discovery pass; article bodies not reviewed."
+    },
+    {
+      "source": "Game If You Are",
+      "url": "https://gameifyouare.com/projects-case-studies/",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": null,
+      "result": "Initial directory request returned a listing, but follow-up reads timed out. No new dated article verified; source coverage is incomplete and no campaign metrics were refreshed."
+    },
+    {
+      "source": "Game Developer — First-hand Postmortems",
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "checkedAt": "2026-10-12",
+      "latestVisiblePublicationDate": "2026-10-06",
+      "result": "Read and added the new Escape the Backrooms co-development account, retaining the contributor’s studio affiliation, historical timeline and cross-platform player-count limitation."
     }
   ],
   "latestBatch": {
-    "addedAt": "2026-10-05",
-    "publishedSince": "2026-09-29",
+    "addedAt": "2026-10-12",
+    "publishedSince": "2026-10-06",
     "articleIds": [
-      "gdc-personalized-discounts-2026",
-      "gdc-sbox-platform-hook-2026",
-      "alinea-guildrun-demo-returners-2026",
-      "alinea-september-update-revenue-2026"
+      "gdc-dressmaker-craft-hook-2026",
+      "gwo-tiny-eden-campaign-preparation-2026",
+      "gd-backrooms-handoff-and-networking-2026"
     ]
   },
   "previousBatches": [
@@ -1089,6 +1285,17 @@
         "gdc-steam-deck-review-denominator-2026"
       ],
       "methodology": "Weekly September 28 pass: inspected fourteen original publisher archives or directories and added two articles published September 22–25. One full public article and one publicly accessible lead analysis were reviewed; the paid remainder was excluded. No older articles were added. Earlier notes and checks are retained. Archive observations describe returned pages, including cached and undated listings, not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed."
+    },
+    {
+      "addedAt": "2026-10-05",
+      "publishedSince": "2026-09-29",
+      "articleIds": [
+        "gdc-personalized-discounts-2026",
+        "gdc-sbox-platform-hook-2026",
+        "alinea-guildrun-demo-returners-2026",
+        "alinea-september-update-revenue-2026"
+      ],
+      "methodology": "Weekly October 5 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 29–October 2. Three full public articles and one public lead analysis were reviewed; no subscription barrier was bypassed. Short notes separate source claims from our proposed tests. Earlier records remain intact. Returned archives, including cached and undated listings, are not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed."
     }
   ]
 }

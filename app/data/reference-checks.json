@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05",
+  "checkedAt": "2026-10-12",
   "method": "Targeted source and wording checks, not a site-wide plagiarism certification. Original publication dates and historical metric windows are separate from this check date.",
   "sources": [
     {
@@ -428,6 +428,39 @@
       "checkedAt": "2026-10-05",
       "scope": "Selected note claims and limits; proposed tests are Steam Discovery interpretation.",
       "wordingCompared": true
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/how-dressmaker-became-ready-to-wear",
+      "title": "How Dressmaker became ‘ready to wear’ for hundreds of thousands of players!",
+      "author": "Simon Carless",
+      "publishedAt": "2026-10-09",
+      "publication": "The GameDiscoverCo newsletter",
+      "access": "Public lead case read; Paid post, subscriber-only weekly remainder excluded",
+      "checkedAt": "2026-10-12",
+      "scope": "Selected note claims and limits; proposed tests are Steam Discovery interpretation.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://gameworldobserver.com/2026/10/06/how-we-took-tiny-eden-from-4800-wishlists-to-700000-in-its-first-two-weeks-a-digital-vortex-publisher-case-study",
+      "title": "How We Took Tiny Eden from 4,800 Wishlists to $700,000 in Its First Two Weeks: A Digital Vortex Publisher Case Study",
+      "author": "Irina Borodina (guest column); Alexander Semenov (page byline)",
+      "publishedAt": "2026-10-06",
+      "publication": "Game World Observer",
+      "access": "Public full guest column read",
+      "checkedAt": "2026-10-12",
+      "scope": "Selected note claims and limits; proposed tests are Steam Discovery interpretation.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://www.gamedeveloper.com/production/co-dev-case-study-how-blackbird-interactive-and-secret-mode-helped-escape-the-backrooms-ride-the-backrooms-hype-wave",
+      "title": "Co-dev case study: How Blackbird Interactive and Secret Mode helped Escape the Backrooms ride the Backrooms hype wave",
+      "author": "Steven Messner",
+      "publishedAt": "2026-10-06",
+      "publication": "Game Developer",
+      "access": "Public full developer-authored article read",
+      "checkedAt": "2026-10-12",
+      "scope": "Selected note claims and limits; proposed tests are Steam Discovery interpretation.",
+      "wordingCompared": true
     }
   ],
   "corrections": [
@@ -440,5 +473,5 @@
       "correction": "The earlier 485 accumulated across roughly six months. Corrected the narrative and event outcome; removed the unsupported weak-festival inference."
     }
   ],
-  "wordingReviewCount": 31
+  "wordingReviewCount": 34
 }
