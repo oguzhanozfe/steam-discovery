@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-12",
+  "checkedAt": "2026-10-19",
   "method": "Targeted source and wording checks, not a site-wide plagiarism certification. Original publication dates and historical metric windows are separate from this check date.",
   "sources": [
     {
@@ -461,6 +461,40 @@
       "checkedAt": "2026-10-12",
       "scope": "Selected note claims and limits; proposed tests are Steam Discovery interpretation.",
       "wordingCompared": true
+    },
+    {
+      "url": "https://howtomarketagame.com/2026/10/13/wishlist-inflation-is-real-but-they-are-still-important/",
+      "title": "Wishlist inflation is real, but you still need them",
+      "author": "Chris Zukowski",
+      "publishedAt": "2026-10-13",
+      "publication": "How To Market A Game",
+      "access": "Public full article read; author matched to publisher About page and archive account",
+      "checkedAt": "2026-10-19",
+      "scope": "Selected note claims and limitations; proposed tests are Steam Discovery interpretation.",
+      "wordingCompared": true,
+      "authorNote": "Author matched to the publisher About page and its zukalous archive account, not inferred from the URL."
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/steam-games-with-ccu-staying-power",
+      "title": "Steam games with CCU staying power: what defines them?",
+      "author": "Simon Carless",
+      "publishedAt": "2026-10-13",
+      "publication": "The GameDiscoverCo newsletter",
+      "access": "Public full article read; note covers the August-release follow-up",
+      "checkedAt": "2026-10-19",
+      "scope": "Selected note claims and limitations; proposed tests are Steam Discovery interpretation.",
+      "wordingCompared": true
+    },
+    {
+      "url": "https://newsletter.gamediscover.co/p/what-long-tail-should-you-expect",
+      "title": "What 'long tail' should you expect for your PC game in 2026?",
+      "author": "Simon Carless",
+      "publishedAt": "2026-07-21",
+      "publication": "The GameDiscoverCo newsletter",
+      "access": "Public full original article read; linked from the October 19 GameDev Reports recap",
+      "checkedAt": "2026-10-19",
+      "scope": "Selected note claims and limitations; proposed tests are Steam Discovery interpretation.",
+      "wordingCompared": true
     }
   ],
   "corrections": [
@@ -473,5 +507,5 @@
       "correction": "The earlier 485 accumulated across roughly six months. Corrected the narrative and event outcome; removed the unsupported weak-festival inference."
     }
   ],
-  "wordingReviewCount": 34
+  "wordingReviewCount": 37
 }

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-12",
-  "methodology": "Weekly October 12 pass: checked fourteen original publication archives or directories and added three articles published October 6–9. Two full public contributor accounts and one public lead interview were read; the subscriber-only remainder was excluded. No older articles were added. One directory follow-up timed out; cached and undated listings do not establish complete coverage. Source claims, estimates and our proposed tests remain distinct. Earlier notes and checks are retained; publication dates, check dates and historical metric windows remain separate. Game snapshots were not refreshed.",
+  "checkedAt": "2026-10-19",
+  "methodology": "Weekly October 19 pass: checked fourteen original publication archives or directories, read two new October 13 analyses and added one older July 21 study reached through a new recap. The older study keeps its original publication date and historical cohort. Three notes use public original articles; no paywall was bypassed. Cached listings and one unavailable directory limit coverage. Counts, modeled revenue, concurrent play and tracked retention are not interchangeable. Earlier notes, source checks and batches are retained; no game metrics were refreshed.",
   "articles": [
     {
       "id": "gdc-august-2026-public-discovery-roundup",
@@ -677,6 +677,103 @@
       "sourceUrls": [
         "https://www.gamedeveloper.com/production/co-dev-case-study-how-blackbird-interactive-and-secret-mode-helped-escape-the-backrooms-ride-the-backrooms-hype-wave"
       ]
+    },
+    {
+      "id": "htmag-wishlist-era-denominators-2026",
+      "title": "Wishlist inflation is real, but you still need them",
+      "author": "Chris Zukowski",
+      "publication": "How To Market A Game",
+      "date": "2026-10-13",
+      "url": "https://howtomarketagame.com/2026/10/13/wishlist-inflation-is-real-but-they-are-still-important/",
+      "topics": [
+        "Wishlists",
+        "Measurement integrity",
+        "Launch planning"
+      ],
+      "relatedGames": [],
+      "summary": "Zukowski compares launch wishlists with first-month units across two release eras. The later cohort has lower units per launch wishlist while retaining a strong rank association with sales.",
+      "hardData": [
+        "The voluntary survey covers 160 releases: 34 from 2020–2022 and 126 from 2023–2025; 2026 releases are excluded.",
+        "For 2023–2025, reported log-log R² is 0.72 for total wishlists and 0.70 for additions during the final 30 days."
+      ],
+      "evidenceType": "Practitioner analysis of voluntary developer survey data",
+      "actionableLesson": "Our proposal: retain both wishlist totals and recent additions, but calibrate planning assumptions against a comparable release cohort.",
+      "applicationSteps": [
+        "Keep the launch date, wishlist window and sales window beside each estimate.",
+        "Test prediction error on held-out games before using a multiplier for budgeting."
+      ],
+      "limitations": "Self-selection and unequal cohorts limit generalization. Units divided by launch wishlists are not the conversion rate of tracked individual wishlisters. Correlation does not establish causation or forecast accuracy.",
+      "access": "Public full article read; author matched to publisher About page and archive account",
+      "checkedAt": "2026-10-19",
+      "sourceUrls": [
+        "https://howtomarketagame.com/2026/10/13/wishlist-inflation-is-real-but-they-are-still-important/"
+      ]
+    },
+    {
+      "id": "gdc-ccu-staying-power-2026",
+      "title": "Steam games with CCU staying power: what defines them?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-10-13",
+      "url": "https://newsletter.gamediscover.co/p/steam-games-with-ccu-staying-power",
+      "topics": [
+        "Niche demand",
+        "Retention",
+        "Measurement integrity"
+      ],
+      "relatedGames": [
+        "Big Walk",
+        "ReStory",
+        "Combolands"
+      ],
+      "summary": "Carless revisits selected August launches in mid-October. Persistent concurrent play highlights repeatable loops, but a finite campaign can sell well after its active-player peak has passed.",
+      "hardData": [
+        "The October 13 analysis places Big Walk at about 30% of peak concurrent users and ReStory at about 15%.",
+        "Combolands is reported above half its 2,000-plus peak concurrent users in the same follow-up."
+      ],
+      "evidenceType": "Commercial analyst follow-up of selected successful releases",
+      "actionableLesson": "Our proposal: compare ongoing play within similar game structures and release ages, alongside sales evidence.",
+      "applicationSteps": [
+        "Keep the observation date and peak comparison window explicit.",
+        "Separate campaign completion from a failed repeat-play loop."
+      ],
+      "limitations": "Selected winners are not a representative release cohort. Concurrent users are neither a tracked retention rate nor revenue. Estimates and differing play lengths prevent a universal success threshold.",
+      "access": "Public full article read; note covers the August-release follow-up",
+      "checkedAt": "2026-10-19",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/steam-games-with-ccu-staying-power"
+      ]
+    },
+    {
+      "id": "gdc-long-tail-cohort-2026",
+      "title": "What 'long tail' should you expect for your PC game in 2026?",
+      "author": "Simon Carless",
+      "publication": "The GameDiscoverCo newsletter",
+      "date": "2026-07-21",
+      "url": "https://newsletter.gamediscover.co/p/what-long-tail-should-you-expect",
+      "topics": [
+        "Co-op",
+        "Revenue estimates",
+        "Measurement integrity"
+      ],
+      "relatedGames": [],
+      "summary": "This July study, newly added after an October recap linked to it, separates unit and gross-revenue multiples. Its co-op comparison is useful context for scenario planning, not a reason to assume multiplayer causes higher sales.",
+      "hardData": [
+        "GameDiscoverCo models roughly 5,000 July 2023–July 2025 releases with more than 1,000 first-month units.",
+        "Reported Year 1 / Week 1 medians are 2.59× for units and 2.46× for gross revenue; the co-op-tagged unit multiple is 3.53×."
+      ],
+      "evidenceType": "Commercial analyst estimates with a sales-qualified cohort",
+      "actionableLesson": "Our proposal: show a conservative long-tail scenario and its denominator before choosing scope.",
+      "applicationSteps": [
+        "Budget net receipts and multiplayer support costs separately from modeled gross revenue.",
+        "Keep this July evidence dated; an October recap is not a fresh measurement."
+      ],
+      "limitations": "The threshold excludes low-selling games. Proprietary estimates, release-age differences and an undisclosed co-op subgroup size limit transfer. Medians are not guaranteed outcomes or causal effects.",
+      "access": "Public full original article read; linked from the October 19 GameDev Reports recap",
+      "checkedAt": "2026-10-19",
+      "sourceUrls": [
+        "https://newsletter.gamediscover.co/p/what-long-tail-should-you-expect"
+      ]
     }
   ],
   "sourceChecks": [
@@ -1232,15 +1329,113 @@
       "checkedAt": "2026-10-12",
       "latestVisiblePublicationDate": "2026-10-06",
       "result": "Read and added the new Escape the Backrooms co-development account, retaining the contributor’s studio affiliation, historical timeline and cross-platform player-count limitation."
+    },
+    {
+      "source": "How To Market A Game",
+      "url": "https://howtomarketagame.com/blog/",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-10-13",
+      "result": "Read and added the new wishlist survey analysis. Historical 2020–2025 cohorts remain distinct from its October publication and check dates."
+    },
+    {
+      "source": "Derek Lieu",
+      "url": "https://www.derek-lieu.com/blog",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-08-23",
+      "result": "No October 13–19 entry visible in the returned blog listing. Latest Dear Passengers vs Banana Airways article remains represented; the separate video channel was not checked."
+    },
+    {
+      "source": "Game World Observer — Marketing",
+      "url": "https://gameworldobserver.com/category/marketing",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-10-06",
+      "result": "No October 13–19 entry visible in the returned archive, reported cached from two days earlier. Latest Tiny Eden column remains represented."
+    },
+    {
+      "source": "IMPRESS Academy",
+      "url": "https://impress.games/blog",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2025-11-13",
+      "result": "No October 13–19 entry visible in the current returned archive. Latest Pitch Up recap remains represented."
+    },
+    {
+      "source": "The GameDiscoverCo newsletter",
+      "url": "https://newsletter.gamediscover.co/archive",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-10-16",
+      "result": "Read the October 13 CCU follow-up and added a note. Also read the October 16 public device-overlap lead; no separate note added and its subscriber-only weekly remainder excluded. An older July 21 long-tail study was read and added separately after following an October recap to the original."
+    },
+    {
+      "source": "The Alinea Insight newsletter",
+      "url": "https://alineaanalytics.substack.com/archive",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-10-16",
+      "result": "October 13 first-party rankings and October 16 Arc Raiders/Ghost of Yotei update listings checked. Not selected for this focused small-team pass; article bodies not reviewed."
+    },
+    {
+      "source": "Game Marketing Intel",
+      "url": "https://gamemarketing.substack.com/archive",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-07-19",
+      "result": "No October 13–19 entry visible in the current archive. July audio/article variants remain represented once."
+    },
+    {
+      "source": "OP Game Marketing",
+      "url": "https://opgamemarketing.substack.com/archive",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-08-14",
+      "result": "No October 13–19 entry visible in the current archive. Latest turn-based analysis remains represented."
+    },
+    {
+      "source": "GameDev Reports",
+      "url": "https://gamedevreports.substack.com/archive",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-10-19",
+      "result": "Read the October 19 long-tail recap and followed its source to the July 21 original. Added the original as an older archive note, not a new October study; the recap is not independent corroboration. Other weekly listings were not selected and premium bodies were not read."
+    },
+    {
+      "source": "Butterscotch Shenanigans development blog",
+      "url": "https://blog.bscotch.net/",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-08-20",
+      "result": "No October 13–19 entry visible. Latest How Many Dudes timeline remains represented."
+    },
+    {
+      "source": "Push to Talk",
+      "url": "https://www.pushtotalk.gg/archive",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-07-20",
+      "result": "No October 13–19 entry visible. Latest entry concerns a print magazine."
+    },
+    {
+      "source": "Game File",
+      "url": "https://www.gamefile.news/archive",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-10-16",
+      "result": "October 13–16 console, studio and large-release access listings checked. Not selected for this Steam-discovery pass; article bodies not reviewed."
+    },
+    {
+      "source": "Game If You Are",
+      "url": "https://gameifyouare.com/projects-case-studies/",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": null,
+      "result": "Initial request returned a directory reference, but follow-up reads failed and a direct retry timed out. No new dated article verified; coverage remains incomplete."
+    },
+    {
+      "source": "Game Developer — First-hand Postmortems",
+      "url": "https://www.gamedeveloper.com/latest-case-studies",
+      "checkedAt": "2026-10-19",
+      "latestVisiblePublicationDate": "2026-10-06",
+      "result": "No October 13–19 entry visible. Latest Escape the Backrooms co-development account remains represented."
     }
   ],
   "latestBatch": {
-    "addedAt": "2026-10-12",
-    "publishedSince": "2026-10-06",
+    "addedAt": "2026-10-19",
+    "publishedSince": "2026-10-13",
     "articleIds": [
-      "gdc-dressmaker-craft-hook-2026",
-      "gwo-tiny-eden-campaign-preparation-2026",
-      "gd-backrooms-handoff-and-networking-2026"
+      "htmag-wishlist-era-denominators-2026",
+      "gdc-ccu-staying-power-2026",
+      "gdc-long-tail-cohort-2026"
     ]
   },
   "previousBatches": [
@@ -1296,6 +1491,16 @@
         "alinea-september-update-revenue-2026"
       ],
       "methodology": "Weekly October 5 pass: inspected fourteen original publisher archives or directories and read four selected articles published September 29–October 2. Three full public articles and one public lead analysis were reviewed; no subscription barrier was bypassed. Short notes separate source claims from our proposed tests. Earlier records remain intact. Returned archives, including cached and undated listings, are not exhaustive publication searches. Publication dates, check dates and metric windows remain separate; game snapshots were not refreshed."
+    },
+    {
+      "addedAt": "2026-10-12",
+      "publishedSince": "2026-10-06",
+      "articleIds": [
+        "gdc-dressmaker-craft-hook-2026",
+        "gwo-tiny-eden-campaign-preparation-2026",
+        "gd-backrooms-handoff-and-networking-2026"
+      ],
+      "methodology": "Weekly October 12 pass: checked fourteen original publication archives or directories and added three articles published October 6–9. Two full public contributor accounts and one public lead interview were read; the subscriber-only remainder was excluded. No older articles were added. One directory follow-up timed out; cached and undated listings do not establish complete coverage. Source claims, estimates and our proposed tests remain distinct. Earlier notes and checks are retained; publication dates, check dates and historical metric windows remain separate. Game snapshots were not refreshed."
     }
   ]
 }
