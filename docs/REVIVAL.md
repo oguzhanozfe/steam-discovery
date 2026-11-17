@@ -79,7 +79,21 @@ A chat box that retrieves from the notes, stories and playbooks and answers with
 
 - **Who it serves:** developers with a specific question who will not browse.
 - **What it reuses:** all editorial JSON. `llms.txt` and the research index already exist.
-- **Effort:** 2+ weeks. It needs a serverless function and a paid model key, because the site is static today. It also needs rate limits, abuse protection and a citation-faithfulness check, plus an ongoing cost and a privacy and consent decision.
+- **Model: a cloud model, not a local one.** It is a public website, so it must not depend on a machine in the owner's home.
+  - Gemini is the first choice (`GEMINI_API_KEY`), and the Claude API is the alternative.
+  - Calls go through an OpenAI-compatible endpoint, so switching provider is one environment setting (`LLM_BASE_URL`, `LLM_MODEL`).
+  - The key lives only in Vercel project environment variables and is read by one serverless function (`api/ask`). It never reaches the browser, the repository or the build output.
+- **Retrieval:** a keyword index over the notes, stories and playbooks, generated at build time from the JSON the site already exports. It ships as a static file the function loads, so there is no vector database. Gemini embeddings are an optional later upgrade.
+- **Grounding:** the model receives the top passages with their ids and must cite an id for every claim. The function then checks the answer before returning it:
+  - it removes any sentence without a valid citation;
+  - it applies the same rule as `validate:tactics`, so any number not found in the cited passages is replaced with "not in the library".
+- **Cost and abuse:**
+  - per-IP rate limits and a question length cap;
+  - a cache for repeated questions;
+  - token counts logged against the shared budget of about $20 a month;
+  - question text is not stored.
+  - Tests and CI use a fake provider with fixture answers, so they need no key.
+- **Effort:** 2+ weeks. This adds the first server-side code and a running cost to a static site. The owner also has to make a privacy decision: Gemini's free tier may use inputs to improve Google's products, so the page has to disclose that, or the site has to use a paid tier or the Claude API.
 - **Why it would delight:** questions like "what happened to co-op games that skipped Next Fest?" get a sourced answer in seconds. It is also the strongest AI-engineering portfolio piece of the three.
 - **Risk:** a wrong but confident answer under this brand undoes the site's main asset, which is trust. The retrieval quality also depends on the same normalization A requires.
 
@@ -116,5 +130,6 @@ A ships something useful with the least risk to the site's credibility, and it a
 ### Owner decisions before Phase 2
 
 - Which direction: A, B or C. This document recommends A.
+- If C is chosen, either now or later: Gemini or the Claude API, and the free or paid tier. A and B use no AI at runtime.
 - Who deploys, and when. Ten research notes from October and these dependency fixes are still not live.
 - Whether `docs/maintenance/` stays. It holds three "publication blocked" logs whose blocker is now resolved. This document does not change those logs or `CONTENT_MAINTENANCE.md`.
