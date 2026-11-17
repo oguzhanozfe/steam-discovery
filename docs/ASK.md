@@ -1,6 +1,6 @@
 # Ask the Library
 
-`/ask/` answers Steam marketing questions from this site's research library only. The site has no server and holds no API key: everything runs in the visitor's browser, in three tiers.
+`/ask/` answers Steam marketing questions from this site's research library only. The site has no server and holds no API key: everything runs in the visitor's browser, in three tiers. Tier 2 is built but hidden (`LOCAL_MODEL_ENABLED = false` in `app/ask-browser.ts`) because it failed the grounding review below; the owner chose to ship tiers 1 and 3.
 
 | Tier | What it does | What leaves the browser | Cost to the site |
 |---|---|---|---|

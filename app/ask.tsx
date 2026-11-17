@@ -3,8 +3,23 @@ import { ArrowRight, Cpu, KeyRound, Search, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ReferenceLink } from './source-references';
-import { askLibrary, extractive, ProviderError, type AskResult, type Passage, type Provider } from './ask-core';
-import { geminiProvider, GEMINI_MODEL, hasWebGpu, LOCAL_MODEL, localModelMegabytes, localProvider } from './ask-browser';
+import {
+  askLibrary,
+  extractive,
+  ProviderError,
+  type AskResult,
+  type Passage,
+  type Provider,
+} from './ask-core';
+import {
+  geminiProvider,
+  GEMINI_MODEL,
+  hasWebGpu,
+  LOCAL_MODEL,
+  LOCAL_MODEL_ENABLED,
+  localModelMegabytes,
+  localProvider,
+} from './ask-browser';
 
 const KEY_STORAGE = 'steam-discovery-gemini-key';
 const examples = [
@@ -12,9 +27,16 @@ const examples = [
   'Is it a bad idea to launch a horror game in October?',
   'What should I ask before paying to put my game in a showcase?',
 ];
-type Library = { passages: Passage[]; cards: import('./tactics-model').TacticCard[] };
+type Library = {
+  passages: Passage[];
+  cards: import('./tactics-model').TacticCard[];
+};
 let libraryPromise: Promise<Library> | null = null;
-const loadLibrary = () => (libraryPromise ??= import('./ask-library').then((m) => ({ passages: m.passages, cards: m.cards })));
+const loadLibrary = () =>
+  (libraryPromise ??= import('./ask-library').then((m) => ({
+    passages: m.passages,
+    cards: m.cards,
+  })));
 
 const readKey = () => {
   try {
@@ -38,7 +60,11 @@ function PassageCard({ passage }: { passage: Passage }) {
       <blockquote>{passage.text}</blockquote>
       <div className="ask-passage-meta">
         <a href={passage.sitePath}>{passage.recordTitle}</a>
-        <span className={`tactic-class tactic-class-${passage.evidenceClass ?? 'editorial'}`}>{passage.evidenceClass}</span>
+        <span
+          className={`tactic-class tactic-class-${passage.evidenceClass ?? 'editorial'}`}
+        >
+          {passage.evidenceClass}
+        </span>
         <span className="ask-label">
           {passage.label}
           {passage.date ? ` · ${passage.date}` : ''}
@@ -52,7 +78,9 @@ function PassageCard({ passage }: { passage: Passage }) {
 export function AskLibrary() {
   const [question, setQuestion] = useState('');
   const [asked, setAsked] = useState('');
-  const [found, setFound] = useState<ReturnType<typeof extractive> | null>(null);
+  const [found, setFound] = useState<ReturnType<typeof extractive> | null>(
+    null,
+  );
   const [summary, setSummary] = useState<AskResult | null>(null);
   const [summaryBy, setSummaryBy] = useState('');
   const [busy, setBusy] = useState('');
@@ -122,7 +150,10 @@ export function AskLibrary() {
       setBusy('');
       return;
     }
-    await summarise(localProvider((text) => setBusy(text)), 'the in-browser model');
+    await summarise(
+      localProvider((text) => setBusy(text)),
+      'the in-browser model',
+    );
   }
 
   function submitKey() {
@@ -134,12 +165,19 @@ export function AskLibrary() {
 
   return (
     <section className="ask" aria-labelledby="ask-title">
-      <p className="section-kicker">ASK THE LIBRARY · ANSWERS ONLY FROM SOURCES</p>
-      <h1 id="ask-title">Ask the research library a Steam marketing question</h1>
+      <p className="section-kicker">
+        ASK THE LIBRARY · ANSWERS ONLY FROM SOURCES
+      </p>
+      <h1 id="ask-title">
+        Ask the research library a Steam marketing question
+      </h1>
       <p className="tactic-lead">
-        Search runs in your browser and quotes the library’s passages as they are, with their evidence class and source. If nothing
-        matches well, it says the library does not cover the question. You can then ask a language model to summarise the quoted
-        passages; any sentence it writes without a valid citation, or with a number its cited passage does not contain, is removed.
+        Search runs in your browser and quotes the library’s passages as they
+        are, with their evidence class and source. If nothing matches well, it
+        says the library does not cover the question. You can then ask a
+        language model to summarise the quoted passages; any sentence it writes
+        without a valid citation, or with a number its cited passage does not
+        contain, is removed.
       </p>
       <form
         className="ask-form"
@@ -164,12 +202,17 @@ export function AskLibrary() {
         </Button>
       </form>
       <p className="ask-privacy">
-        <ShieldCheck aria-hidden="true" /> Searching never leaves your browser and nothing is stored.
+        <ShieldCheck aria-hidden="true" /> Searching never leaves your browser
+        and nothing is stored.
       </p>
       {!found && (
         <div className="ask-examples">
           {examples.map((example) => (
-            <button key={example} type="button" onClick={() => void search(example)}>
+            <button
+              key={example}
+              type="button"
+              onClick={() => void search(example)}
+            >
               {example}
             </button>
           ))}
@@ -188,7 +231,12 @@ export function AskLibrary() {
                     <li key={claim.text}>
                       {claim.text}{' '}
                       {claim.sources.map((n) => (
-                        <a key={n} className="ask-cite" href={`#ask-source-${n}`} aria-label={`Source ${n}`}>
+                        <a
+                          key={n}
+                          className="ask-cite"
+                          href={`#ask-source-${n}`}
+                          aria-label={`Source ${n}`}
+                        >
                           [{n}]
                         </a>
                       ))}
@@ -196,19 +244,27 @@ export function AskLibrary() {
                   ))}
                 </ul>
                 <p className="ask-note">
-                  Written by {summaryBy} from the library’s passages; uncited sentences and unsupported numbers were removed. Check the
+                  Written by {summaryBy} from the library’s passages; uncited
+                  sentences and unsupported numbers were removed. Check the
                   source before you rely on it.
                 </p>
                 <ol className="ask-sources">
                   {summary.sources.map((source) => (
                     <li key={source.n} id={`ask-source-${source.n}`}>
                       <a href={source.sitePath}>{source.recordTitle}</a>
-                      <span className={`tactic-class tactic-class-${source.evidenceClass ?? 'editorial'}`}>{source.evidenceClass}</span>
+                      <span
+                        className={`tactic-class tactic-class-${source.evidenceClass ?? 'editorial'}`}
+                      >
+                        {source.evidenceClass}
+                      </span>
                       <span className="ask-label">
                         {source.label}
                         {source.date ? ` · ${source.date}` : ''}
                       </span>
-                      <ReferenceLink url={source.sourceUrl} label="Original source" />
+                      <ReferenceLink
+                        url={source.sourceUrl}
+                        label="Original source"
+                      />
                     </li>
                   ))}
                 </ol>
@@ -229,7 +285,10 @@ export function AskLibrary() {
             ) : (
               <>
                 <h2>No summary the library supports</h2>
-                <p>{summaryBy} could not write a sentence that its cited passages support. The quoted passages below still stand.</p>
+                <p>
+                  {summaryBy} could not write a sentence that its cited passages
+                  support. The quoted passages below still stand.
+                </p>
               </>
             )}
           </div>
@@ -237,14 +296,19 @@ export function AskLibrary() {
         {found?.status === 'refused' && (
           <div className="ask-answer">
             <h2>Not in the library</h2>
-            <p>No passage matches this question well enough to quote. The library covers Steam marketing for small teams: demos and festivals, wishlists, launches, creators and dated game case studies.</p>
+            <p>
+              No passage matches this question well enough to quote. The library
+              covers Steam marketing for small teams: demos and festivals,
+              wishlists, launches, creators and dated game case studies.
+            </p>
           </div>
         )}
         {found?.status === 'passages' && (
           <>
             <h2 className="ask-results-title">What the library says, quoted</h2>
             <p className="ask-note">
-              The closest passages to your question, best match first. A passage on the topic may still not answer your exact question.
+              The closest passages to your question, best match first. A passage
+              on the topic may still not answer your exact question.
             </p>
             <ol className="ask-passages">
               {found.passages.map((passage) => (
@@ -253,34 +317,54 @@ export function AskLibrary() {
             </ol>
             <div className="ask-tiers">
               <h2>Optional: summarise with a language model</h2>
-              <div className="ask-tier">
-                <h3>
-                  <Cpu aria-hidden="true" /> In your browser
-                </h3>
-                {gpu ? (
-                  <>
+              {LOCAL_MODEL_ENABLED && (
+                <div className="ask-tier">
+                  <h3>
+                    <Cpu aria-hidden="true" /> In your browser
+                  </h3>
+                  {gpu ? (
+                    <>
+                      <p>
+                        Runs {LOCAL_MODEL} on your GPU with WebLLM. The model
+                        downloads once from Hugging Face
+                        {modelMb
+                          ? ` (${modelMb.toLocaleString('en')} MB)`
+                          : ''}{' '}
+                        and is cached by your browser. Your question stays on
+                        this device. Small models summarise less reliably than
+                        Gemini.
+                      </p>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        disabled={!!busy}
+                        onClick={() => void runLocalModel()}
+                      >
+                        {modelMb === null
+                          ? 'Check download size'
+                          : `Download and summarise`}
+                      </Button>
+                    </>
+                  ) : (
                     <p>
-                      Runs {LOCAL_MODEL} on your GPU with WebLLM. The model downloads once from Hugging Face
-                      {modelMb ? ` (${modelMb.toLocaleString('en')} MB)` : ''} and is cached by your browser. Your question stays on
-                      this device. Small models summarise less reliably than Gemini.
+                      This browser has no WebGPU, so the in-browser model is not
+                      available here.
                     </p>
-                    <Button type="button" variant="outline" disabled={!!busy} onClick={() => void runLocalModel()}>
-                      {modelMb === null ? 'Check download size' : `Download and summarise`}
-                    </Button>
-                  </>
-                ) : (
-                  <p>This browser has no WebGPU, so the in-browser model is not available here.</p>
-                )}
-              </div>
+                  )}
+                </div>
+              )}
               <div className="ask-tier">
                 <h3>
                   <KeyRound aria-hidden="true" /> With your own Gemini key
                 </h3>
                 <p>
-                  Your question and the quoted passages go from your browser straight to Google’s Gemini API ({GEMINI_MODEL}); this
-                  site never sees them or your key. Google’s Gemini API terms apply to your key, and on the free tier Google may use
-                  what you send to improve its products. The key stays in this tab, or in this browser’s storage if you tick
-                  Remember. Any script on this page can read it, so use a key you can revoke.
+                  Your question and the quoted passages go from your browser
+                  straight to Google’s Gemini API ({GEMINI_MODEL}); this site
+                  never sees them or your key. Google’s Gemini API terms apply
+                  to your key, and on the free tier Google may use what you send
+                  to improve its products. The key stays in this tab, or in this
+                  browser’s storage if you tick Remember. Any script on this
+                  page can read it, so use a key you can revoke.
                 </p>
                 <form
                   className="ask-key"
@@ -301,9 +385,18 @@ export function AskLibrary() {
                     placeholder="Paste your Gemini API key"
                   />
                   <label className="ask-remember">
-                    <input type="checkbox" checked={remember} onChange={(event) => setRemember(event.target.checked)} /> Remember
+                    <input
+                      type="checkbox"
+                      checked={remember}
+                      onChange={(event) => setRemember(event.target.checked)}
+                    />{' '}
+                    Remember
                   </label>
-                  <Button type="submit" variant="outline" disabled={!!busy || !apiKey.trim()}>
+                  <Button
+                    type="submit"
+                    variant="outline"
+                    disabled={!!busy || !apiKey.trim()}
+                  >
                     Summarise
                   </Button>
                   {remember && (
