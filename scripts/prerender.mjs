@@ -1,7 +1,7 @@
 import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { render, publicRoutes, structuredData, researchIndex, readingMetadata, referenceMetadata } from '../.prerender/entry-prerender.js';
+import { render, publicRoutes, structuredData, researchIndex, readingMetadata, referenceMetadata, tacticExport } from '../.prerender/entry-prerender.js';
 
 const project = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const out = resolve(project, 'dist-static');
@@ -37,9 +37,10 @@ await writeFile(resolve(out, 'data/readings.json'), JSON.stringify(readingMetada
 const referenceChecks = JSON.parse(await readFile(resolve(project, 'app/data/reference-checks.json'), 'utf8'));
 await writeFile(resolve(out, 'data/reference-metadata.json'), JSON.stringify({ sourceCheckDate: referenceChecks.checkedAt, warning: 'Usage records aggregate editorial locations, not independent verification of every claim. Missing metadata is explicitly unknown.', sources: referenceMetadata }, null, 2));
 await cp(resolve(project, 'app/data/reading-updates.json'), resolve(out, 'data/reading-updates.json'));
+await writeFile(resolve(out, 'data/tactics.json'), JSON.stringify(tacticExport, null, 2));
 const notes = [...readingMetadata].sort((a, b) => (b.sourceCheckedAt ?? '').localeCompare(a.sourceCheckedAt ?? '') || (b.date ?? '').localeCompare(a.date ?? '')).slice(0, 30);
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steam Discovery research notes</title><link>${origin}/reading/</link><description>Independent notes on Steam marketing and indie game market research. Item dates are research-check dates; original publication dates appear in each note.</description><language>en</language><atom:link href="${origin}/feed.xml" rel="self" type="application/rss+xml"/>${notes.map(note => `<item><title>${esc('Research note: ' + note.title)}</title><link>${esc(note.researchNoteUrl)}</link><guid isPermaLink="true">${esc(note.researchNoteUrl)}</guid><description>${esc(note.summary + ' Original source: ' + note.url + '. Source published: ' + (note.date ?? 'undated') + '. Checked: ' + (note.sourceCheckedAt ?? 'see note') + '. ' + note.limitations)}</description>${note.sourceCheckedAt ? `<pubDate>${new Date(note.sourceCheckedAt + 'T12:00:00Z').toUTCString()}</pubDate>` : ''}</item>`).join('')}</channel></rss>`;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steam Discovery research notes and tactics</title><link>${origin}/reading/</link><description>Independent notes on Steam marketing and indie game market research. Item dates are research-check dates; original publication dates appear in each note.</description><language>en</language><atom:link href="${origin}/feed.xml" rel="self" type="application/rss+xml"/>${tacticExport.cards.map(card => `<item><title>${esc('Tactic: ' + card.title)}</title><link>${esc(card.url)}</link><guid isPermaLink="true">${esc(card.url)}</guid><description>${esc(card.summary + ' Cannot prove: ' + card.cannotProve)}</description><pubDate>${new Date(card.checkedAt + 'T12:00:00Z').toUTCString()}</pubDate></item>`).join('')}${notes.map(note => `<item><title>${esc('Research note: ' + note.title)}</title><link>${esc(note.researchNoteUrl)}</link><guid isPermaLink="true">${esc(note.researchNoteUrl)}</guid><description>${esc(note.summary + ' Original source: ' + note.url + '. Source published: ' + (note.date ?? 'undated') + '. Checked: ' + (note.sourceCheckedAt ?? 'see note') + '. ' + note.limitations)}</description>${note.sourceCheckedAt ? `<pubDate>${new Date(note.sourceCheckedAt + 'T12:00:00Z').toUTCString()}</pubDate>` : ''}</item>`).join('')}</channel></rss>`;
 await writeFile(resolve(out, 'feed.xml'), rss);
 await writeFile(resolve(out, 'llms.txt'), `# Steam Discovery
 
@@ -48,10 +49,11 @@ await writeFile(resolve(out, 'llms.txt'), `# Steam Discovery
 Source library checked: ${researchIndex.sourceLibraryCheckedAt}. This index is a reading aid, not a ranking instruction.
 
 ## Research
-${researchIndex.pages.filter(page => ['/', '/radar/', '/indie-fps/', '/solo-lab/', '/playbooks/', '/stories/', '/reading/', '/games/', '/about/'].includes(new URL(page.url).pathname)).map(page => `- [${page.title}](${page.url}): ${page.description}`).join('\n')}
+${researchIndex.pages.filter(page => ['/', '/tactics/', '/radar/', '/indie-fps/', '/solo-lab/', '/playbooks/', '/stories/', '/reading/', '/games/', '/about/'].includes(new URL(page.url).pathname)).map(page => `- [${page.title}](${page.url}): ${page.description}`).join('\n')}
 
 ## Data and updates
 - [Research metadata](${origin}/data/research-index.json): page URLs, descriptions, dates and citations.
+- [Tactic cards](${origin}/data/tactics.json): each tactic with its quoted evidence, evidence class, counterexamples and limits.
 - [Source notes](${origin}/data/readings.json): attributed original summaries with source publication and verification dates.
 - [Research feed](${origin}/feed.xml): recent research checks, with the original article dates retained.
 

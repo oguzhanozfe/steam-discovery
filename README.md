@@ -10,6 +10,7 @@ Independent Steam marketing and indie game market research for game developers.
 
 ## What is here
 
+- A [Tactic Deck](https://steam-discovery.vercel.app/tactics/): Steam marketing tactics filtered by launch stage, team size and channel. Each card quotes its evidence from the library with source, date and evidence class, keeps a counterexample where one exists, and states what it cannot prove. Selected cards build a local launch plan that exports as Markdown.
 - Game case studies with dated marketing events, KPIs and evidence limits.
 - A [co-op FPS market study](https://steam-discovery.vercel.app/indie-fps/) with 51 wave, run-based and mission shooters first available on Steam between September 28, 2023 and September 28, 2026; 18 solo comparisons and 25 context games sit alongside the original release directory. The visible sample has at least 30 total reviews per released game; 17 community case studies explain combat loops, progression and design lessons. Per-game Steam observations and transparent revenue scenarios are downloadable.
 - A Steam Radar sample with search, release-state/evidence filters, three-game comparison and a browser-local watchlist/export.
@@ -44,6 +45,7 @@ pnpm validate:readability
 pnpm validate:citations
 pnpm validate:public
 pnpm validate:fps
+pnpm validate:tactics
 pnpm audit
 ```
 
@@ -54,6 +56,8 @@ The production build prerenders research pages into `dist-static/`. Every page h
 Follow [CONTENT_MAINTENANCE.md](CONTENT_MAINTENANCE.md) to add research. Suggest a source or correction through [Issues](https://github.com/oguzhanozfe/steam-discovery/issues), including the canonical page, original source and date. Do not paste private analytics or credentials into an issue.
 
 The source data lives in `app/data/`. `app/data/reading-updates.json` holds the latest collection of notes and archive checks. Older observations keep their original dates. Do not add internal project plans, team assignments or credentials to this public repository or its export payload.
+
+Tactic cards live in `app/data/tactics.json` and point at existing records with `kind:recordId#field.index` references; `app/data/evidence-classes.json` maps each free-text evidence label to one of five classes. `validate:tactics` fails on an unresolvable reference, an unmapped label, a card without a source fact, or a number on a card that is not in its referenced records.
 
 References use the shared `app/source-references.tsx` renderer. Original article metadata, contextual source-use mappings, access limits and editorial contribution appear on the research pages. Targeted fresh checks and public corrections are recorded in `app/data/reference-checks.json`; older metadata is explicitly distinguished from fresh verification. `/about/#attribution` explains the policy. `validate:citations` checks citation coverage and export consistency, not plagiarism or factual truth.
 

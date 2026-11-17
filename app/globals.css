@@ -1960,3 +1960,56 @@ textarea::placeholder{ color:var(--muted-foreground); opacity:1; }
   .fps-methodology>summary>span:last-child { display:none; }
   .fps-view .fps-category-definitions>div { grid-template-columns:1fr; gap:.3rem; }
 }
+
+/* Tactic Deck */
+.hub-entry-grid.hub-entry-three { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.hub-more { color:var(--text-secondary); font-size:var(--text-label); }
+.tactic-stages { display:flex; flex-wrap:wrap; gap:10px; margin:8px 0 12px; }
+.tactic-question { color:var(--text-secondary); font-size:var(--text-reading); margin:0 0 16px; }
+.tactic-toolbar { display:flex; flex-wrap:wrap; gap:16px; align-items:center; margin-bottom:20px; }
+.tactic-toolbar .hub-search { flex:1; }
+.tactic-toolbar .hub-audience { margin:0; }
+.tactic-select { display:flex; align-items:center; gap:10px; font-size:var(--text-label); }
+.tactic-select select { background:var(--field); color:var(--foreground); border:1px solid var(--input); border-radius:8px; padding:8px 10px; font-size:16px; }
+.tactic-layout { display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:28px; align-items:start; }
+.tactic-count { color:var(--text-secondary); font-size:var(--text-label); margin:0 0 12px; }
+.tactic-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.tactic-card { display:flex; flex-direction:column; border:1px solid var(--border); border-radius:12px; padding:24px; background:var(--card); min-width:0; }
+.tactic-card h2 { font-size:21px; margin:0 0 10px; }
+.tactic-card h2 a { color:var(--foreground); text-decoration:none; }
+.tactic-card h2 a:hover { color:var(--text-link-hover); text-decoration:underline; }
+.tactic-card>p { color:var(--text-secondary); flex:1; }
+.tactic-meta { display:flex; flex-wrap:wrap; gap:8px 16px; font-size:var(--text-label); color:var(--text-link); margin-bottom:12px; }
+.tactic-classes { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+.tactic-class { padding:4px 8px; border-radius:5px; font:700 13px/1.2 var(--font-mono-ui); text-transform:uppercase; letter-spacing:.04em; background:var(--surface-raised); color:var(--foreground); }
+.tactic-class-reported { background:var(--surface-success); color:var(--text-success); }
+.tactic-class-observed { background:var(--surface-accent); color:var(--text-link); }
+.tactic-class-estimate,.tactic-class-analysis { background:var(--surface-amber); color:var(--text-amber); }
+.tactic-class-counter { background:var(--surface-danger); color:var(--foreground); }
+.tactic-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; }
+.tactic-actions a { display:inline-flex; align-items:center; gap:6px; color:var(--text-link); font-size:var(--text-label); font-weight:650; }
+.tactic-plan { position:sticky; top:16px; border:1px solid var(--border-accent); border-radius:12px; padding:20px; background:var(--surface-accent); }
+.tactic-plan h2 { display:flex; align-items:center; gap:8px; font-size:20px; }
+.tactic-plan ol { list-style:none; padding:0; margin:0 0 16px; display:grid; gap:10px; }
+.tactic-plan li { display:grid; gap:2px; }
+.tactic-plan small { color:var(--text-secondary); font-size:var(--text-label); }
+.tactic-plan a { color:var(--text-link); }
+.tactic-plan-actions { display:flex; flex-wrap:wrap; gap:8px; }
+.tactic-detail { max-width:880px; }
+.tactic-detail h2 { display:flex; align-items:center; gap:8px; margin-top:32px; }
+.tactic-lead { font-size:var(--text-reading); line-height:1.8; color:var(--text-secondary); }
+.tactic-steps { list-style:disc; padding-left:22px; display:grid; gap:8px; }
+.tactic-evidence-list { list-style:none; padding:0; display:grid; gap:16px; }
+.tactic-evidence { border:1px solid var(--border); border-radius:10px; padding:18px; background:var(--card); }
+.tactic-evidence-head { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; font-size:var(--text-label); color:var(--text-secondary); }
+.tactic-evidence blockquote { margin:12px 0; padding-left:14px; border-left:3px solid var(--border-accent); color:var(--foreground); }
+.tactic-caveat { display:flex; gap:8px; color:var(--text-amber); font-size:var(--text-label); }
+.tactic-caveat svg { flex-shrink:0; width:16px; margin-top:4px; }
+.tactic-evidence-links { display:flex; flex-wrap:wrap; gap:8px 20px; font-size:var(--text-label); }
+.tactic-evidence-links a { color:var(--text-link); }
+.tactic-cannot { border:1px solid var(--border-warning); border-radius:10px; padding:4px 20px; background:var(--surface-amber); margin-top:32px; }
+.tactic-cannot h2 { margin-top:16px; }
+.tactic-cannot p { color:var(--text-amber); }
+.tactic-checked,.tactic-method { color:var(--text-secondary); font-size:var(--text-label); }
+@media (max-width:1100px) { .tactic-layout { grid-template-columns:1fr; } .tactic-plan { position:static; } }
+@media (max-width:760px) { .hub-entry-grid.hub-entry-three,.tactic-grid { grid-template-columns:1fr; } .tactic-toolbar { flex-direction:column; align-items:stretch; } }

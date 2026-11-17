@@ -40,6 +40,7 @@ import hubNiches from './data/hub-niches.json';
 import hubArticles from './data/hub-articles.json';
 import referenceChecks from './data/reference-checks.json';
 import { AdSlot } from './ad-slot';
+import { TacticDeck } from './tactics';
 import { ReferenceLink, ReferenceRegister, EditorialCredit, referenceMetadata, ideaReferences } from './source-references';
 
 type ModelTool = {
@@ -58,6 +59,7 @@ const filters = ['All', 'Co-op', 'Solo', '2026', 'Incremental', 'Control'] as co
 type CaseFilter = (typeof filters)[number];
 const navItems: { id: ResearchView; label: string; caption: string; icon: typeof Radar }[] = [
   { id: 'hub', label: 'Dev Hub', caption: 'Niches & next steps', icon: Compass },
+  { id: 'tactics', label: 'Tactic Deck', caption: 'What to do at your stage', icon: Lightbulb },
   { id: 'fps', label: 'Indie FPS', caption: 'Co-op market & comparisons', icon: Target },
   { id: 'radar', label: 'Steam Radar', caption: 'Search & compare games', icon: Radar },
   { id: 'solo', label: 'Solo Lab', caption: 'AI-assisted · two weeks', icon: Code2 },
@@ -136,11 +138,12 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       view === 'reading' && readingId ? candidate.initial.readingId === readingId :
       view === 'stories' && storyId ? candidate.initial.storyId === storyId :
       view === 'guides' && initial.guideId ? candidate.initial.guideId === initial.guideId :
+      view === 'tactics' && initial.tacticId ? candidate.initial.tacticId === initial.tacticId :
       candidate.path === viewPaths[view]);
     if (!route) return;
     const url = siteUrl + route.path;
     const image = route.image ?? `${siteUrl}/og.png`;
-    if (window.location.pathname !== route.path) window.history.pushState({}, '', route.path);
+    if (window.location.pathname !== route.path) window.history.pushState({}, '', route.path + (view === 'tactics' ? window.location.search : ''));
     document.title = route.title;
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', url);
     const values: Record<string, string> = { description: route.description, 'og:title': route.title, 'twitter:title': route.title, 'og:description': route.description, 'twitter:description': route.description, 'og:url': url, 'og:image': image, 'twitter:image': image, 'og:image:width': route.image ? String(route.imageWidth ?? 460) : '1200', 'og:image:height': route.image ? String(route.imageHeight ?? 215) : '630' };
@@ -149,7 +152,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
     document.querySelector('meta[property="og:type"]')?.setAttribute('content', route.initial.readingId || route.initial.storyId || route.initial.guideId ? 'article' : 'website');
     const structured = document.querySelector('script[type="application/ld+json"]');
     if (structured) structured.textContent = JSON.stringify(structuredData(route));
-  }, [view, marketPeriod, explorerSelectedId, readingId, storyId, initial.gameId, initial.guideId]);
+  }, [view, marketPeriod, explorerSelectedId, readingId, storyId, initial.gameId, initial.guideId, initial.tacticId]);
   useEffect(() => {
     const restoreRoute = () => window.location.reload();
     window.addEventListener('popstate', restoreRoute);
@@ -381,6 +384,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
 
       <div id="research-content" tabIndex={-1} />
       {view === 'hub' && <SmallTeamHub />}
+      {view === 'tactics' && <TacticDeck tacticId={initial.tacticId} />}
       {view === 'radar' && <SteamRadar />}
       {view === 'fps' && <IndieFps />}
       {view === 'solo' && <SoloLab />}

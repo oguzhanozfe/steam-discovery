@@ -29,7 +29,7 @@ export function structuredData(route: SiteRoute) {
   const story = gameStories.find(item => item.id === route.initial.storyId);
   const guide = hubArticles.articles.find(item => item.id === route.initial.guideId);
   const editorial = !!(article || story || guide);
-  const parentPath = guide ? '/playbooks/' : article ? '/reading/' : story ? '/stories/' : route.initial.gameId ? '/games/' : '/';
+  const parentPath = route.initial.tacticId ? '/tactics/' : guide ? '/playbooks/' : article ? '/reading/' : story ? '/stories/' : route.initial.gameId ? '/games/' : '/';
   const parent = publicRoutes.find(item => item.path === parentPath);
   const graph: Record<string, unknown>[] = [publisher,
     { '@type': 'WebSite', '@id': `${siteUrl}/#website`, url: `${siteUrl}/`, name: 'Steam Discovery', inLanguage: 'en', publisher: { '@id': publisher['@id'] }, description: 'Independent Steam marketing and indie game market research. Not affiliated with Valve.' },

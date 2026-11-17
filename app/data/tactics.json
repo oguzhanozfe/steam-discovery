@@ -1,0 +1,1002 @@
+{
+  "updatedAt": "2026-11-17",
+  "methodology": "Each card is a Steam Discovery synthesis of records already in this library. Evidence lines are quoted from those records with their original source, date and evidence label; the card adds no numbers of its own. A tactic that worked for the cited games is not a prediction for yours.",
+  "stages": [
+    {
+      "id": "idea",
+      "label": "Choosing the game",
+      "question": "Is there an audience, and can we build a convincing slice?"
+    },
+    {
+      "id": "page",
+      "label": "Store page live",
+      "question": "How do we turn visits into wishlists before there is a demo?"
+    },
+    {
+      "id": "demo",
+      "label": "Demo and playtests",
+      "question": "What should the first playable prove, and to whom?"
+    },
+    {
+      "id": "festival",
+      "label": "Festivals and events",
+      "question": "Which event fits, and what must be ready before it starts?"
+    },
+    {
+      "id": "launch",
+      "label": "Launch",
+      "question": "What decides the first weeks: timing, price, wishlists?"
+    },
+    {
+      "id": "post-launch",
+      "label": "After launch",
+      "question": "How do we keep a long tail and read our numbers honestly?"
+    }
+  ],
+  "channels": [
+    "Market research",
+    "Store page",
+    "Trailer",
+    "Short-form video",
+    "Creators and streamers",
+    "Demo",
+    "Playtest",
+    "Steam Next Fest",
+    "Festivals and showcases",
+    "Community",
+    "Pricing",
+    "Launch timing",
+    "Early Access",
+    "Publisher",
+    "Updates and long tail",
+    "Measurement"
+  ],
+  "cards": [
+    {
+      "id": "check-genre-median-before-committing",
+      "title": "Check a genre's median and downside before you commit",
+      "stages": [
+        "idea"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Market research",
+      "summary": "Estimated revenue in a genre can be dominated by a few hits, so the average hides what a typical release earns. Look at the median and the share taken by the top before shortlisting a genre.",
+      "try": [
+        "Pull a recent cohort for the genre and note median, average and how concentrated revenue is at the top.",
+        "Write down a second appealing loop and the production cost before adding it to the shortlist."
+      ],
+      "evidence": [
+        "article:opgm-turnbased#hardData.1",
+        "article:opgm-turnbased#hardData.2",
+        "article:opgm-turnbased#actionableLesson"
+      ],
+      "counter": [
+        "article:opgm-taverns#limitations"
+      ],
+      "cannotProve": "Estimates exclude very low earners, so the apparent success rate is optimistic, and a success count in a niche is not the chance that a new game succeeds.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "pick-comparables-by-cohort",
+      "title": "Choose comparables from a rising tag, not as a design brief",
+      "stages": [
+        "idea"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Market research",
+      "summary": "A rising tag helps you find similar games and compare both copies and revenue. It does not tell you what to design, and the weak end of the cohort belongs in the comparison.",
+      "try": [
+        "Use the tag to list comparable games, then compare them by release year, price and scale.",
+        "Keep the low performers in the list so the downside stays visible."
+      ],
+      "evidence": [
+        "article:gdc-genre-shift#hardData.3",
+        "article:gdc-genre-shift#actionableLesson",
+        "article:gmi-nextfest-competition#hardData.1"
+      ],
+      "counter": [
+        "article:gdc-genre-shift#limitations"
+      ],
+      "cannotProve": "Cohorts of winners do not measure success probability or how many games compete, and tags overlap.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "include-admired-underperformers",
+      "title": "Include admired games that underperformed in your comparison set",
+      "stages": [
+        "idea"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Market research",
+      "summary": "A well-reviewed game can still fail to fund its team, so praise is not a revenue signal. Putting admired underperformers next to the hits keeps the plan honest.",
+      "try": [
+        "Add a few well-liked games that did not earn enough to your comparable list.",
+        "Check whether their screenshots and first trailer seconds show the actual play experience."
+      ],
+      "evidence": [
+        "article:ptt-arco-countercase#hardData.0",
+        "article:ptt-arco-countercase#hardData.1",
+        "article:ptt-arco-countercase#actionableLesson"
+      ],
+      "counter": [],
+      "cannotProve": "This is a single historical counter-case, not current market data.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "scope-one-satisfying-machine",
+      "title": "Build one satisfying machine, then recombine it",
+      "stages": [
+        "idea"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Market research",
+      "summary": "Two cited small-team hits kept scope finite and put the polish into one core experience. Recombining that core can make new content cheaper than building more maps.",
+      "try": [
+        "Pick the single interaction that should feel best and spend art and audio effort there first.",
+        "Make new missions or levels by recombining what already exists."
+      ],
+      "evidence": [
+        "article:gdc-iron-nest#hardData.0",
+        "article:gdc-iron-nest#actionableLesson",
+        "article:gdc-hearth-hamlet#actionableLesson"
+      ],
+      "counter": [
+        "article:gdc-iron-nest#limitations"
+      ],
+      "cannotProve": "These are selected hits from experienced teams, so they do not show that a narrow core is enough for any game.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "estimate-scope-from-real-schedule",
+      "title": "Estimate scope from your real schedule and several revenue scenarios",
+      "stages": [
+        "idea"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Market research",
+      "summary": "Most releases earn far less than the headline hits, so a plan built on one optimistic outcome is fragile. Use your actual staffing and schedule and test the plan against several net-receipt scenarios.",
+      "try": [
+        "List who can work on the game and for how long, and estimate scope from that.",
+        "Run the plan against a few net-receipt scenarios, including a weak one."
+      ],
+      "evidence": [
+        "article:gdc-indie-budget-denominator-2026#hardData.0",
+        "article:gdc-indie-budget-denominator-2026#actionableLesson",
+        "article:gmi-development-time-proxy-2026#actionableLesson"
+      ],
+      "counter": [
+        "article:gdc-indie-budget-denominator-2026#limitations"
+      ],
+      "cannotProve": "The cohort mixes budgets and experience, and estimated gross revenue is not audited profit or a chance of success.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "prototype-test-activity-and-sharing",
+      "title": "Test with a prototype whether people grasp and share the activity",
+      "stages": [
+        "idea",
+        "demo"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Playtest",
+      "summary": "One cited craft game released a playable prototype early and tested whether players understood the activity before it expanded features. Understanding the core activity is a cheaper question to settle than a full feature list.",
+      "try": [
+        "Release a small playable and watch whether newcomers can say what they are doing.",
+        "Note whether players want to show their own creations before adding features."
+      ],
+      "evidence": [
+        "article:gdc-dressmaker-craft-hook-2026#hardData.1",
+        "article:gdc-dressmaker-craft-hook-2026#actionableLesson"
+      ],
+      "counter": [
+        "article:gdc-dressmaker-craft-hook-2026#limitations"
+      ],
+      "cannotProve": "A selected hit does not establish demand for the genre, and publisher and channel effects are not controlled.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "name-the-denominator-for-benchmarks",
+      "title": "Name the denominator before you quote a benchmark",
+      "stages": [
+        "idea",
+        "page",
+        "demo"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Measurement",
+      "summary": "A median of units per wishlist is not a measured conversion rate of wishlisters into buyers. State the model, cohort, year and denominator whenever you report conversion.",
+      "try": [
+        "Write what the number divides by and when it was observed.",
+        "Report wishlist-cohort conversion separately from all sales against a wishlist baseline."
+      ],
+      "evidence": [
+        "article:impress-steam-benchmarks-definition-check#hardData.0",
+        "article:impress-steam-benchmarks-definition-check#actionableLesson",
+        "article:alinea-demo-conversion-denominators-2026#actionableLesson"
+      ],
+      "counter": [
+        "article:impress-steam-benchmarks-definition-check#limitations"
+      ],
+      "cannotProve": "The old ratios are not verified current benchmarks, and no universal revenue forecast follows.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "trailer-opens-with-core-action",
+      "title": "Open the trailer with the core action, extras later",
+      "stages": [
+        "page"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Trailer",
+      "summary": "A trailer makeover opened with the basic action and left cosmetics and secondary modes until after the core was clear. The consultant reports views, but no controlled result.",
+      "try": [
+        "Cut the first seconds so they show the main action being played.",
+        "Show difficulty through imperfect play and add extras only after the core is understood."
+      ],
+      "evidence": [
+        "playbook:lieu-sheepherds-gameplay-trailer#takeaways.0",
+        "article:derek-lieu-sheepherds-makeover-2026#hardData.0",
+        "article:derek-lieu-sheepherds-makeover-2026#actionableLesson"
+      ],
+      "counter": [
+        "article:derek-lieu-sheepherds-makeover-2026#limitations"
+      ],
+      "cannotProve": "Reported views and craft judgments do not establish that the revision increased sales or wishlists.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "trailer-beats-readable-to-cold-viewer",
+      "title": "Make every trailer beat readable to a cold viewer",
+      "stages": [
+        "page"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Trailer",
+      "summary": "A viewer who does not know your game cannot decode insider title cards or unmotivated actions. Tie each advertised action to a goal and show consequences that read without explanation.",
+      "try": [
+        "Show the trailer to someone new and ask what happened after each beat.",
+        "Remove title cards that need insider knowledge and add a visible goal."
+      ],
+      "evidence": [
+        "article:derek-lieu-dosa-divas-makeover-2026#actionableLesson",
+        "article:derek-lieu-dear-passengers-banana-airways-2026#actionableLesson",
+        "case:dear-passengers#marketingEvents.0"
+      ],
+      "counter": [
+        "article:derek-lieu-dear-passengers-banana-airways-2026#limitations"
+      ],
+      "cannotProve": "The consultant says he does not know what caused the view gap, and no wishlist or sales effect of clarity is shown.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "post-short-clips-of-core-action",
+      "title": "Post short gameplay clips of the central action before launch",
+      "stages": [
+        "page"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Short-form video",
+      "summary": "Two cited games used short clips of their central action before release, but neither source isolates what the clips contributed. Clips that show the core loop are cheap to make and easy to test.",
+      "try": [
+        "Cut clips that show the central action with plain captions.",
+        "Track wishlists by date and compare against your posting days."
+      ],
+      "evidence": [
+        "story:a-game-about-digging-a-hole#timeline.0",
+        "case:iron-nest#marketingEvents.0",
+        "case:duck-detective-secret-salami#marketingEvents.3"
+      ],
+      "counter": [
+        "case:guildrun#marketingEvents.2"
+      ],
+      "cannotProve": "Channel attribution is not isolated in any of these cases, and one developer says short-form was not a major driver for their game.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "launch-store-page-with-announcement",
+      "title": "Launch the store page together with the announcement trailer",
+      "stages": [
+        "page"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Store page",
+      "summary": "One cited game put its announcement trailer and store page live together alongside a genre-aligned showcase and reported a strong initial spike. A late reveal needs strong assets and relationships behind it.",
+      "try": [
+        "Have the capsule, trailer and description ready on the day the page goes public.",
+        "Line the reveal up with a showcase that matches your genre."
+      ],
+      "evidence": [
+        "case:duck-detective-secret-salami#marketingEvents.0",
+        "article:opgm-wyldheart#actionableLesson"
+      ],
+      "counter": [
+        "article:opgm-wyldheart#limitations"
+      ],
+      "cannotProve": "The spike is developer-reported without a published figure, and a funded veteran team is unlike a micro-team.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "set-tags-and-languages-deliberately",
+      "title": "Set tags and languages deliberately for the audience you want",
+      "stages": [
+        "page"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Store page",
+      "summary": "Steam uses tags and languages to match games with players, and purchases and play indicate interest. Traffic alone is not a ranking input, so a precise page matters more than a loud one.",
+      "try": [
+        "Choose tags that describe the players you want, not the broadest genre.",
+        "Add the languages your game supports."
+      ],
+      "evidence": [
+        "playbook:steam-visibility-mechanisms#takeaways.1",
+        "playbook:steam-visibility-mechanisms#takeaways.0",
+        "playbook:steam-visibility-mechanisms#takeaways.2"
+      ],
+      "counter": [
+        "playbook:steam-visibility-mechanisms#cannotProve"
+      ],
+      "cannotProve": "Valve does not disclose ranking weights or guarantee placement, so tags are a matching aid, not a lever.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "log-wishlist-spikes-by-dated-activity",
+      "title": "Record wishlist spikes against dated activity, not as one total",
+      "stages": [
+        "page"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Measurement",
+      "summary": "One case study reported wishlist growth in separate bursts that coincided with different activities. Logging each burst against what was happening shows which activity may have mattered.",
+      "try": [
+        "Keep a dated log of every post, event and test next to daily wishlist additions.",
+        "Label overlapping activities as overlapping instead of picking one."
+      ],
+      "evidence": [
+        "story:dreadmoor#timeline.0",
+        "story:dreadmoor#timeline.1",
+        "story:dreadmoor#timeline.2"
+      ],
+      "counter": [
+        "article:gwo-dreadmoor-200k-campaign#limitations"
+      ],
+      "cannotProve": "This is not an attribution audit: activities overlapped, spend is unknown and sequence is unresolved.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "build-community-from-playtesters",
+      "title": "Grow a community from your first testers",
+      "stages": [
+        "page",
+        "demo"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Community",
+      "summary": "One demo-led game recruited niche testers through Reddit and Discord and iterated on their requests before launching the demo. Another reported a large Discord following within a month of a reveal.",
+      "try": [
+        "Recruit testers from communities that already want the mode or niche.",
+        "Keep a Discord for them and change the build based on their feedback."
+      ],
+      "evidence": [
+        "article:gdc-guildrun#hardData.2",
+        "case:guildrun#marketingEvents.0",
+        "article:opgm-wyldheart#hardData.0"
+      ],
+      "counter": [
+        "article:gdc-guildrun#limitations"
+      ],
+      "cannotProve": "Paid creators, ads and a well-funded team were also involved, so community growth is not shown to be the cause of the results.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "closed-playtest-as-wishlist-driver",
+      "title": "Run a closed playtest and promote it as a milestone",
+      "stages": [
+        "demo"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Playtest",
+      "summary": "A cited publisher reported wishlist growth from a closed technical test combined with social promotion. Treat each real build milestone as something to package for audience-matched channels.",
+      "try": [
+        "Open a closed playtest and recruit from communities that match the game.",
+        "Post the milestone in those channels and track wishlists during the test."
+      ],
+      "evidence": [
+        "story:dreadmoor#timeline.0",
+        "article:gwo-dreadmoor-200k-campaign#actionableLesson",
+        "case:guildrun#marketingEvents.0"
+      ],
+      "counter": [
+        "article:gwo-dreadmoor-200k-campaign#limitations"
+      ],
+      "cannotProve": "The playtest ran alongside social promotion and unknown spend, so its own effect on wishlists is not isolated.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "read-demo-median-playtime-as-hook-test",
+      "title": "Read demo median playtime as a test of your hook",
+      "stages": [
+        "demo"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Demo",
+      "summary": "Three cited games reported median playtime in their demos alongside strong interest, but the sources do not show that playtime caused sales. It is still a cheap signal of whether people stay once they start.",
+      "try": [
+        "Check median demo playtime, not just starts, after the first test group plays.",
+        "Revise the first minutes if most players leave before the hook lands."
+      ],
+      "evidence": [
+        "article:gdc-guildrun#hardData.0",
+        "article:gdc-hearth-hamlet#hardData.1",
+        "article:gdc-iron-nest#hardData.3"
+      ],
+      "counter": [
+        "article:gdc-guildrun#limitations"
+      ],
+      "cannotProve": "These are strong selected games, so their playtime says little about what a typical demo will see, and it does not predict sales.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "compare-demo-engagement-to-similar-games",
+      "title": "Compare demo engagement to similar games, not to one number",
+      "stages": [
+        "demo"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Demo",
+      "summary": "Demo concurrency relates to later peaks only loosely, and the cited ratio is for a selected cohort. Compare a range of outcomes for similar games before using demo results in a budget.",
+      "try": [
+        "List similar games with demos and note the spread of their demo and launch results.",
+        "Use that spread, not one ratio, when planning."
+      ],
+      "evidence": [
+        "article:gdc-demo-ccu-cohort-2026#hardData.0",
+        "article:gdc-demo-ccu-cohort-2026#actionableLesson"
+      ],
+      "counter": [
+        "article:gdc-demo-ccu-cohort-2026#limitations"
+      ],
+      "cannotProve": "The cohort excludes games without a qualifying demo, and the ratio is observational, not a forecast.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "demo-ready-before-next-fest",
+      "title": "Release the demo before Next Fest, not on its first day",
+      "stages": [
+        "demo",
+        "festival"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Steam Next Fest",
+      "summary": "Most festival demos are barely played, and the games that gained most started with an audience and an engaging demo. Shipping the demo early gives time to fix onboarding before the event traffic arrives.",
+      "try": [
+        "Publish the demo early enough to run cold tests of the opening and fix what testers stumble on.",
+        "Track impressions, visits, gross wishlist additions, removals and demo starts as separate fields during the event."
+      ],
+      "evidence": [
+        "article:gmi-nextfest-prediction#hardData.1",
+        "article:gmi-nextfest-prediction#hardData.2",
+        "article:gmi-nextfest-prediction#actionableLesson"
+      ],
+      "counter": [
+        "article:game-developer-freerunners-next-fest-2024#hardData.1"
+      ],
+      "cannotProve": "The festival figures are follower-derived estimates and observational buckets. They do not show that releasing early causes higher gains, and they say nothing about sales.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "vet-showcase-before-paying",
+      "title": "Ask a showcase for audience and co-stream details before you pay",
+      "stages": [
+        "festival"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Festivals and showcases",
+      "summary": "Showcases differ in lineup size, co-streaming and audience, and the wishlist gains attached to them are estimates with gaps. Asking for comparable-game results first keeps a placement fee from being a guess.",
+      "try": [
+        "Ask the organiser for cost, runtime, lineup size and co-streaming details.",
+        "Check whether the showcase audience already likes games close to yours.",
+        "Budget trailer work alongside the placement fee and have a live store page ready."
+      ],
+      "evidence": [
+        "article:gdc-showcases#actionableLesson",
+        "playbook:gdc-showcase-due-diligence-2026#takeaways.0",
+        "playbook:gdc-showcase-due-diligence-2026#takeaways.2"
+      ],
+      "counter": [
+        "article:gdc-showcases#limitations"
+      ],
+      "cannotProve": "Estimated before-and-after wishlist figures do not isolate what an event contributed, and they do not show that the spend paid back.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "shortlist-festivals-by-past-lineups",
+      "title": "Shortlist festivals by who they have featured before",
+      "stages": [
+        "festival"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Festivals and showcases",
+      "summary": "Third-party festivals show genre preferences, and past participant lists are a practical way to find the ones that suit your game. Appearing in many festivals is not the same as selling well.",
+      "try": [
+        "Read past lineups and keep only events that matched your player fantasy.",
+        "Reuse one concise pitch and your current demo assets across applications.",
+        "Give each application a deadline and a named owner for post-event measurement."
+      ],
+      "evidence": [
+        "playbook:htmag-festivals-2026-channel-fit#takeaways.0",
+        "playbook:htmag-festivals-2026-channel-fit#takeaways.2"
+      ],
+      "counter": [
+        "playbook:htmag-festivals-2026-channel-fit#takeaways.1",
+        "story:lost-twins-2#kpis.0",
+        "story:lost-twins-2#kpis.1"
+      ],
+      "cannotProve": "The archive is incomplete and its participants were selected, so it gives no population-wide success rate for any festival; reviews are not verified sales.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "benchmark-nextfest-against-comparable-games",
+      "title": "Benchmark your festival goal against comparable games, not the whole catalogue",
+      "stages": [
+        "festival"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Steam Next Fest",
+      "summary": "Only a slice of a very large festival catalogue competes for the same players. Filtering by genre and evidence of real interest gives a more honest comparison, and the weak cohorts show the risk.",
+      "try": [
+        "Pick a handful of games in your genre with a visible audience and note their estimated interest.",
+        "Keep the low-performing games in the comparison so your target is not set only by winners."
+      ],
+      "evidence": [
+        "article:gmi-nextfest-competition#hardData.1",
+        "article:gmi-nextfest-competition#hardData.2",
+        "article:gmi-nextfest-competition#actionableLesson"
+      ],
+      "counter": [
+        "article:gmi-nextfest-competition#limitations"
+      ],
+      "cannotProve": "Wishlist figures here come from a follower-based proxy with exclusions, so the counts are rough, and they do not predict how your own demo will perform.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "label-incentive-wishlists-separately",
+      "title": "Tag incentive-driven festival wishlists separately from organic ones",
+      "stages": [
+        "festival"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Steam Next Fest",
+      "summary": "Festival wishlists can come from very different routes, including a creator going viral and an incentivised collaboration. Counting them together hides which route actually found players who care about the game.",
+      "try": [
+        "Record where each batch of festival wishlists came from, and mark any incentive-driven ones.",
+        "Make the demo and creator outreach attractive on their own rather than relying on festival inclusion."
+      ],
+      "evidence": [
+        "article:alinea-nextfest-june#hardData.1",
+        "article:alinea-nextfest-june#hardData.3",
+        "article:alinea-nextfest-june#actionableLesson"
+      ],
+      "counter": [
+        "article:alinea-nextfest-june#limitations"
+      ],
+      "cannotProve": "The figures use different cohorts and time windows, and the claim that the event amplifies rather than creates demand is the author's interpretation, not a controlled result.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "keep-demo-live-around-festival",
+      "title": "Keep a live demo up through and beyond the festival window",
+      "stages": [
+        "festival"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Demo",
+      "summary": "Duck Detective left its demo live after Next Fest while press coverage arrived mid-event, and Balatro kept a demo live during a Next Fest it had not formally entered. Both sources report wishlist growth, but neither isolates what the live demo added.",
+      "try": [
+        "Decide in advance that the demo stays available after the event ends.",
+        "Note which wishlists arrive during and after the festival so late discovery is visible."
+      ],
+      "evidence": [
+        "case:duck-detective-secret-salami#marketingEvents.1",
+        "case:balatro#marketingEvents.2"
+      ],
+      "counter": [
+        "story:freerunners#timeline.4"
+      ],
+      "cannotProve": "Both games had other campaigns running at the same time, so the demo cannot be credited for the wishlist totals, and these are developer reports.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "festival-wishlist-baseline",
+      "title": "Compare festival wishlist gains with your normal daily baseline",
+      "stages": [
+        "festival"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Measurement",
+      "summary": "A festival wishlist spike only means something against what the page gains on an ordinary day. Without that baseline, a busy week can look like a result or a failure for the wrong reasons.",
+      "try": [
+        "Write down the normal daily wishlist gain in the weeks before the event.",
+        "After the event, compare the festival days with that baseline and the gains that followed."
+      ],
+      "evidence": [
+        "playbook:htmag-festivals-2026-channel-fit#smallTeamChecklist.1",
+        "story:power-of-ten#timeline.1",
+        "story:power-of-ten#timeline.0"
+      ],
+      "counter": [
+        "playbook:gamedeveloper-power-of-ten-wishlist-countercase#cannotProve"
+      ],
+      "cannotProve": "One developer recollection from an older event does not show how large a festival lift normally is, nor that a lift turns into purchases.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "start-steam-onboarding-early",
+      "title": "Start Steam onboarding early and treat its two clocks separately",
+      "stages": [
+        "launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Launch timing",
+      "summary": "Paying the app fee and making the store page public start separate release clocks, and review approval needs scheduling allowance. Learning that after announcing a date is a preventable launch risk.",
+      "try": [
+        "Record the fee payment date and the earliest eligible release date.",
+        "Prepare the store page before announcing a fixed launch date.",
+        "Reserve revision time for reviewer feedback before any public deadline."
+      ],
+      "evidence": [
+        "playbook:steam-onboarding-release-clock#takeaways.0",
+        "playbook:steam-onboarding-release-clock#takeaways.1",
+        "playbook:steam-onboarding-release-clock#soloChecklist.1"
+      ],
+      "counter": [],
+      "cannotProve": "Meeting the minimum eligibility rules does not guarantee timely approval, audience growth or commercial readiness.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "plan-low-mid-high-launch-scenarios",
+      "title": "Plan low, middle and high launch scenarios instead of one wishlist forecast",
+      "stages": [
+        "launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Measurement",
+      "summary": "A large wishlist stock did not turn into the purchases one developer expected on Early Access launch day. Writing down several scenarios before launch keeps a single hoped-for number from driving budget and mood.",
+      "try": [
+        "Draft low, middle and high launch outcomes from your own wishlist stock before launch.",
+        "Track normal daily growth between promotional spikes so you know what the stock is made of."
+      ],
+      "evidence": [
+        "story:power-of-ten#kpis.0",
+        "story:power-of-ten#kpis.1",
+        "playbook:gamedeveloper-power-of-ten-wishlist-countercase#takeaways.0"
+      ],
+      "counter": [
+        "story:peglin#kpis.1"
+      ],
+      "cannotProve": "This is one older anecdote. It is not a current conversion benchmark, and it does not show that wishlists generally fail to convert.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "separate-preorders-from-wishlist-conversion",
+      "title": "Count pre-orders and wishlist conversions as separate launch measures",
+      "stages": [
+        "launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Measurement",
+      "summary": "Pre-orders add copies before launch day, so total copies can overstate how well the remaining wishlist pool converted. Keeping the measures apart shows what the launch itself achieved.",
+      "try": [
+        "Record the starting wishlist pool and the conversion window you are measuring.",
+        "Report pre-orders, launch-week wishlist conversions and later conversions as three lines."
+      ],
+      "evidence": [
+        "article:alinea-wardogs-wishlist-cohorts-2026#hardData.0",
+        "article:alinea-wardogs-wishlist-cohorts-2026#applicationSteps.0",
+        "story:power-of-ten#kpis.1"
+      ],
+      "counter": [
+        "article:alinea-wardogs-wishlist-cohorts-2026#limitations"
+      ],
+      "cannotProve": "The Wardogs figures are analyst estimates for a large shooter, not a small-team benchmark, and they do not explain what caused its conversion.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "read-launch-traffic-by-placement",
+      "title": "Read store traffic by placement and date, not by an old wishlist threshold",
+      "stages": [
+        "launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Measurement",
+      "summary": "Steam's upcoming-game surfaces changed, so old wishlist rules of thumb no longer describe the same placement. A publisher's account shows different surfaces sending very different traffic.",
+      "try": [
+        "Check current Steamworks documentation instead of an old wishlist promise.",
+        "Record traffic by placement and date, and review the breakdown after each release beat."
+      ],
+      "evidence": [
+        "article:gmi-personal-calendar#actionableLesson",
+        "article:gwo-tiny-eden-campaign-preparation-2026#hardData.1",
+        "playbook:steam-visibility-mechanisms#takeaways.2"
+      ],
+      "counter": [
+        "article:gmi-personal-calendar#limitations",
+        "article:gwo-tiny-eden-campaign-preparation-2026#limitations"
+      ],
+      "cannotProve": "The placement claims are early observations and a publisher's own interpretation, not Valve's ranking rules, and visit counts are not unique people or sales.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "brief-creators-with-stable-build",
+      "title": "Give creators a clear hook, a stable build and a short clip before launch",
+      "stages": [
+        "launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Creators and streamers",
+      "summary": "Outreach works better when the next step is easy: the hook is clear, footage is ready and the build runs. Balatro's creator coverage and a creator tournament line up with its wishlist growth, though other work ran in parallel.",
+      "try": [
+        "Pick creators who recently covered the closest comparable games and note why their viewers fit.",
+        "Prepare a stable short build, a brief gameplay clip and a small press kit, then track replies and coverage."
+      ],
+      "evidence": [
+        "case:balatro#marketingEvents.1",
+        "case:balatro#marketingEvents.3",
+        "article:impress-content-creator-attention#actionableLesson"
+      ],
+      "counter": [
+        "article:impress-content-creator-attention#limitations"
+      ],
+      "cannotProve": "No source here measures the conversion of creator outreach, and Balatro's timeline also contains a demo, a festival and press coverage.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "check-early-access-fit-before-launch",
+      "title": "Ask your target players whether they buy Early Access before choosing it",
+      "stages": [
+        "launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Early Access",
+      "summary": "Early Access changes when some buyers purchase, so a wishlist stock can look larger than first-day demand. Asking target players before choosing it helps set realistic expectations.",
+      "try": [
+        "Ask people who play comparable games whether they wait for a full release.",
+        "Decide the Early Access launch plan with a low-demand scenario written down."
+      ],
+      "evidence": [
+        "playbook:gamedeveloper-power-of-ten-wishlist-countercase#takeaways.2",
+        "story:power-of-ten#timeline.2"
+      ],
+      "counter": [
+        "story:peglin#kpis.1",
+        "story:halls-of-torment#kpis.1"
+      ],
+      "cannotProve": "Two games that sold well in Early Access do not show that a given audience will buy early, and the cautionary case is a single older anecdote.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "model-conservative-long-tail",
+      "title": "Model a conservative long-tail scenario before you fix your scope",
+      "stages": [
+        "post-launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Updates and long tail",
+      "summary": "A study of many releases reports median multiples of later sales over week-one sales, and Arco's later break-even shows a slow tail is possible. The numbers are context for planning, not a promise of a tail.",
+      "try": [
+        "Write a conservative long-tail scenario and state the sample it comes from.",
+        "Budget net receipts and any multiplayer support costs separately from modelled gross revenue."
+      ],
+      "evidence": [
+        "article:gdc-long-tail-cohort-2026#hardData.1",
+        "article:gdc-long-tail-cohort-2026#applicationSteps.0",
+        "case:arco#marketingEvents.2"
+      ],
+      "counter": [
+        "article:gdc-long-tail-cohort-2026#limitations",
+        "case:arco#reportedOutcome"
+      ],
+      "cannotProve": "Medians of a filtered, estimated sample are not guaranteed outcomes for your game, and they do not show that any feature causes a longer tail.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "give-early-access-owners-reason-to-return",
+      "title": "Give Early Access owners a clear reason to return at full release",
+      "stages": [
+        "post-launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Updates and long tail",
+      "summary": "One studio paired a substantial update with targeted creator outreach at its full release and reports sales in the first two weeks of full release. Measuring owners who come back separately from new buyers shows which group the update reached.",
+      "try": [
+        "List the concrete additions in the update and send them to relevant creators.",
+        "Track returning owners, new players and purchases as separate numbers."
+      ],
+      "evidence": [
+        "article:gdc-yazs-10-returning-players-2026#hardData.0",
+        "article:gdc-yazs-10-returning-players-2026#actionableLesson"
+      ],
+      "counter": [
+        "article:gdc-yazs-10-returning-players-2026#limitations"
+      ],
+      "cannotProve": "One studio's self-report does not show a typical full-release result, and it does not isolate the effect of the outreach from the update.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "compare-ongoing-play-with-similar-games",
+      "title": "Compare ongoing play with similar games rather than a fixed player threshold",
+      "stages": [
+        "post-launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Measurement",
+      "summary": "Concurrent players a few months after launch differ widely between games, and a finite campaign can sell well after its active peak has passed. Comparing against games of the same structure and age is fairer than a universal bar.",
+      "try": [
+        "Pick comparison games with a similar structure and release age.",
+        "Keep the observation date and the peak comparison window explicit in your notes."
+      ],
+      "evidence": [
+        "article:gdc-ccu-staying-power-2026#hardData.0",
+        "article:gdc-ccu-staying-power-2026#hardData.1",
+        "article:gdc-ccu-staying-power-2026#applicationSteps.1"
+      ],
+      "counter": [
+        "article:gdc-ccu-staying-power-2026#limitations"
+      ],
+      "cannotProve": "The games are selected winners, and concurrent players are neither retention nor revenue, so no success threshold follows from them.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "compare-discount-periods-to-baseline",
+      "title": "Keep a pre-sale baseline so you can judge a discount period",
+      "stages": [
+        "post-launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Pricing",
+      "summary": "Steam discount placements may become more audience-specific, and one themed sale reported large exposure without reporting revenue. A baseline recorded before the discount is what lets you read the result.",
+      "try": [
+        "Save traffic sources and net receipts for the weeks before a discount.",
+        "Compare reach and purchase conversion separately, and recheck official Steamworks guidance before booking."
+      ],
+      "evidence": [
+        "article:gdc-personalized-discounts-2026#applicationSteps.0",
+        "article:gdc-personalized-discounts-2026#hardData.0",
+        "article:gwo-cm-games-lock-and-load#hardData.2"
+      ],
+      "counter": [
+        "article:gdc-personalized-discounts-2026#limitations"
+      ],
+      "cannotProve": "No game-level revenue gain from discounting is established here, and the sale account mixes discounts, platform featuring and promotion with undisclosed costs.",
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "read-refund-reasons-for-localization-gaps",
+      "title": "Read Early Access refund reasons for language and mode gaps",
+      "stages": [
+        "post-launch"
+      ],
+      "teamSizes": [
+        "solo",
+        "small"
+      ],
+      "channel": "Updates and long tail",
+      "summary": "Inkbound's studio reports that missing Chinese support was the leading refund reason in Early Access. Refund notes and review text are a cheap place to find gaps that testers did not raise.",
+      "try": [
+        "Sort refund and review reasons into language, play-mode and price themes.",
+        "Weigh each theme against how many players it plausibly affects before committing to the work."
+      ],
+      "evidence": [
+        "article:game-developer-inkbound-early-access-2024#hardData.2",
+        "story:inkbound#kpis.3"
+      ],
+      "counter": [
+        "article:game-developer-inkbound-early-access-2024#limitations"
+      ],
+      "cannotProve": "No refund count, rate or lost revenue is given, so the source does not show how much localisation would have earned.",
+      "checkedAt": "2026-11-17"
+    }
+  ]
+}

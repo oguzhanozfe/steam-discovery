@@ -37,6 +37,7 @@ import {
 } from './hub-model';
 import { SteamArtwork } from './steam-artwork';
 import { AdSlot } from './ad-slot';
+import { tactics } from './tactics-data';
 import { ReferenceLinks, ReferenceRegister, EditorialCredit, nicheReferences, conceptReferences, playbookReferences } from './source-references';
 
 const initialGames = snapshot.games as RadarGame[];
@@ -96,31 +97,12 @@ export function SmallTeamHub() {
         Explore the market, understand the games, then turn one player promise
         into a test you can finish.
       </Header>
-      <div className="hub-entry-grid">
-        <a className="hub-entry" href="/indie-fps/"><Radar /><span><strong>Co-op FPS market study</strong><p>Wave survival, roguelites and PvE missions. Compare review traction and estimated revenue with other FPS games.</p></span><ArrowRight /></a>
-        <a className="hub-entry primary" href="/radar/">
-          <Radar />
-          <span>
-            <strong>Steam Radar</strong>
-            <p>
-              {number(snapshot.catalogCount)} searchable apps. Compare evidence,
-              find a niche and save your watchlist.
-            </p>
-          </span>
-          <ArrowRight />
-        </a>
-        <a className="hub-entry" href="/solo-lab/">
-          <Compass />
-          <span>
-            <strong>One person. Two weeks.</strong>
-            <p>
-              {conceptData.concepts.length} original spins, hard scope cuts, AI
-              workflows and a day-by-day plan.
-            </p>
-          </span>
-          <ArrowRight />
-        </a>
+      <div className="hub-entry-grid hub-entry-three">
+        <a className="hub-entry primary" href="/tactics/"><Compass /><span><strong>Tactic Deck</strong><p>{tactics.cards.length} tactics by launch stage, each with sourced evidence, a counterexample where we have one, and its limits. Build your own launch plan.</p></span><ArrowRight /></a>
+        <a className="hub-entry" href="/stories/"><Radar /><span><strong>Game stories</strong><p>{gameStories.length} launches told event by event: dated KPIs, campaign timelines and what a small team could borrow.</p></span><ArrowRight /></a>
+        <a className="hub-entry" href="/reading/"><Search /><span><strong>Sources</strong><p>{readingLibrary.length} attributed notes on the newsletters and postmortems behind every claim, with their dates and limits.</p></span><ArrowRight /></a>
       </div>
+      <p className="hub-more">Also here: <a href="/radar/">Steam Radar</a> ({number(snapshot.catalogCount)} apps), the <a href="/indie-fps/">co-op FPS market study</a>, <a href="/solo-lab/">two-week solo concepts</a> and <a href="/playbooks/">playbooks</a>.</p>
       <div className="hub-stats">
         <span>
           <b>{gameStories.length}</b> game stories

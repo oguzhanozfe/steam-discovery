@@ -5,17 +5,19 @@ import { gameStories, editorialUpdatedAt, storyPath } from './editorial-data';
 import hubArticles from './data/hub-articles.json';
 import fpsData from './data/indie-fps.json';
 import fpsMarket from './data/fps-market.json';
+import { tactics, tacticPath, tacticSources } from './tactics-data';
 
 export const siteUrl = 'https://steam-discovery.vercel.app';
-export type InitialRoute = { view?: ResearchView; marketPeriod?: '2025' | '2026-q1' | '2026-q2'; gameId?: string; readingId?: string; storyId?: string; guideId?: string };
+export type InitialRoute = { view?: ResearchView; marketPeriod?: '2025' | '2026-q1' | '2026-q2'; gameId?: string; readingId?: string; storyId?: string; guideId?: string; tacticId?: string };
 export type SiteRoute = { path: string; title: string; description: string; initial: InitialRoute; image?: string; imageWidth?: number; imageHeight?: number; citations?: string[]; modifiedAt?: string; noindex?: boolean };
 export const viewPaths: Record<ResearchView, string> = {
-  hub: '/', radar: '/radar/', fps: '/indie-fps/', solo: '/solo-lab/', guides: '/playbooks/', stories: '/stories/', explorer: '/games/', cases: '/case-studies/', market: '/market/2025/', ideas: '/build-lab/', reading: '/reading/', playbook: '/sprint-plan/', survival: '/research/open-world-survival-craft/', methodology: '/about/',
+  hub: '/', radar: '/radar/', fps: '/indie-fps/', solo: '/solo-lab/', guides: '/playbooks/', stories: '/stories/', explorer: '/games/', cases: '/case-studies/', market: '/market/2025/', ideas: '/build-lab/', reading: '/reading/', playbook: '/sprint-plan/', survival: '/research/open-world-survival-craft/', methodology: '/about/', tactics: '/tactics/',
 };
 export const gamePath = (id: string) => `/games/${id}/`;
 export const readingPath = (id: string) => `/reading/${id}/`;
 export const sectionRoutes: SiteRoute[] = [
   { path: viewPaths.fps, title: 'Co-op FPS Market Study — Revenue Scenarios & Genre Comparisons | Steam Discovery', description: 'Explore 2023–2026 co-op wave survival, roguelite and mission FPS games. Compare Steam review traction, sentiment and transparent revenue scenarios, with SteamDB and primary sources.', initial: { view: 'fps' }, modifiedAt: fpsMarket.checkedAt, citations: [...fpsData.games.flatMap(game => game.sources.map(source => source.url)), ...fpsMarket.games.flatMap(game => game.sources.map(source => source.url)), ...fpsMarket.methodology.sources.map(source => source.url), ...fpsMarket.coverage.searches.map(source => source.url), ...fpsMarket.coverage.excluded.map(source => source.url)] },
+  { path: viewPaths.tactics, title: 'Tactic Deck — What Worked on Steam, by Launch Stage | Steam Discovery', description: `${tactics.cards.length} Steam marketing tactics for solo and small teams, filtered by stage and channel. Each card quotes dated, sourced evidence, a counterexample where one exists, and what it cannot prove.`, initial: { view: 'tactics' }, modifiedAt: tactics.updatedAt, citations: tactics.cards.flatMap(tacticSources) },
   { path: '/', title: 'Steam Discovery — Small Team Game Dev Hub', description: 'Find game niches, compare Steam evidence, read developer stories and choose an AI-assisted two-week solo prototype. Practical research for small game teams.', initial: { view: 'hub' }, modifiedAt: '2026-09-08' },
   { path: '/stories/', title: 'Game Stories & Small-Team Build Lessons — Steam Discovery', description: 'Digested game stories from breakouts to modest launches, with dated KPIs, campaign chronology, caveats and proposed solo prototype transfers.', initial: { view: 'stories' }, modifiedAt: editorialUpdatedAt },
   { path: '/radar/', title: 'Steam Radar — Game Discovery & Comparable Evidence', description: 'Search a documented Steam and SteamSpy sample, compare reviews and owner estimates, and save a local watchlist. Dated snapshots, not verified sales or a complete market census.', initial: { view: 'radar' }, modifiedAt: '2026-09-08' },
@@ -34,6 +36,7 @@ export const sectionRoutes: SiteRoute[] = [
 ];
 export const publicRoutes: SiteRoute[] = [
   ...sectionRoutes,
+  ...tactics.cards.map(card => ({ path: tacticPath(card.id), title: `${card.title} — Tactic | Steam Discovery`, description: card.summary.slice(0, 240), initial: { view: 'tactics' as const, tacticId: card.id }, citations: tacticSources(card), modifiedAt: card.checkedAt })),
   ...hubArticles.articles.map(article => ({ path: `/playbooks/${article.id}/`, title: `${article.title} — Action Playbook | Steam Discovery`, description: article.synopsis.slice(0, 220), initial: { view: 'guides' as const, guideId: article.id }, citations: [article.url, ...article.supportingSources.map(source => source.url)], modifiedAt: article.checkedAt })),
   ...gameStories.map(story => ({ path: storyPath(story.id), title: `${story.title}: ${story.headline} — Steam Discovery`, description: story.deck, initial: { view: 'stories' as const, storyId: story.id }, citations: story.sourceUrls, modifiedAt: story.checkedAt, image: steamImageUrl(String(story.appId)), imageWidth: steamImageManifest[String(story.appId)]?.width ?? 460, imageHeight: steamImageManifest[String(story.appId)]?.height ?? 215 })),
   ...gameLibrary.map(game => ({ path: gamePath(game.id), title: `${game.title}: Marketing Case & Market Evidence — Steam Discovery`, description: `${game.title} research: ${game.hook} Dated evidence, production scope and source limitations.`.slice(0, 240), initial: { view: 'explorer' as const, gameId: game.id }, citations: game.sources, image: game.appId ? steamImageUrl(game.appId) : undefined, imageWidth: game.appId ? steamImageManifest[game.appId]?.width ?? 460 : undefined, imageHeight: game.appId ? steamImageManifest[game.appId]?.height ?? 215 : undefined, modifiedAt: gameStories.find(story => story.id === game.storyId)?.checkedAt })),

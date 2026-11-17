@@ -4,6 +4,7 @@ import Home from './app/page';
 import { publicRoutes, type InitialRoute } from './app/site-routes';
 export { publicRoutes };
 export { findStories } from './app/editorial-data';
+export { tacticExport } from './app/tactics-data';
 export { storyReferences, sourceMetadata, referenceMetadata } from './app/source-references';
 export { structuredData, researchIndex, readingMetadata, citationUrls } from './app/research-metadata';
 export function render(initial: InitialRoute) {
