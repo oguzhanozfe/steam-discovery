@@ -1,0 +1,1174 @@
+{
+  "summary": {
+    "run": "run1",
+    "model": "gemini-3.5-flash-lite",
+    "ranAt": "2026-11-17",
+    "questions": 31,
+    "errors": 0,
+    "citationValidRaw": "30/30 (100%)",
+    "correctRefusal": "10/10 (100%)",
+    "answeredWhenAnswerable": "10/21 (48%)",
+    "expectedRecordCited": "10/10 (100%)",
+    "refusalReasons": {
+      "editorial-only": 6,
+      "model-declined": 8,
+      "weak-retrieval": 7
+    },
+    "tokens": {
+      "prompt": 18920,
+      "completion": 1509
+    },
+    "questionsFile": "eval/ask-questions.json"
+  },
+  "rows": [
+    {
+      "id": "demo-ccu-predicts",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "An analyst cohort analysis using proprietary Steam concurrency records notes that while demo engagement is useful for scenario planning, a median cannot forecast an individual launch (analysis).",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "text": "Editorial notes advise separating concurrent players from purchases and revenue (editorial).",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gdc-demo-ccu-cohort-2026#applicationSteps.1",
+          "label": "Steam Discovery editorial note",
+          "evidenceClass": "editorial"
+        },
+        {
+          "n": 2,
+          "ref": "article:gdc-demo-ccu-cohort-2026#summary",
+          "label": "Analyst cohort analysis using proprietary Steam concurrency records",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 21.962875362782086,
+        "matchedShare": 0.5454545454545454,
+        "checks": [
+          {
+            "text": "An analyst cohort analysis using proprietary Steam concurrency records notes that while demo engagement is useful for scenario planning, a median cannot forecast an individual launch (analysis).",
+            "cite": [
+              "P5"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "Editorial notes advise separating concurrent players from purchases and revenue (editorial).",
+            "cite": [
+              "P4"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 731,
+        "completionTokens": 77
+      }
+    },
+    {
+      "id": "nextfest-competition",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "An initial snapshot of a Next Fest found 4,350 participating games, with 175 excluded due to inaccessible follower data.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gmi-nextfest-competition#hardData.0",
+          "label": "Steam API scrape plus wishlist proxy",
+          "evidenceClass": "estimate"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 18.63158980320025,
+        "matchedShare": 0.6666666666666666,
+        "checks": [
+          {
+            "text": "An initial snapshot of a Next Fest found 4,350 participating games, with 175 excluded due to inaccessible follower data.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 783,
+        "completionTokens": 76
+      }
+    },
+    {
+      "id": "horror-october",
+      "answerable": true,
+      "status": "refused",
+      "reason": "editorial-only",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 12.705337773479837,
+        "matchedShare": 0.6,
+        "checks": [
+          {
+            "text": "An editorial note states that you probably should not launch a horror game in October.",
+            "cite": [
+              "P1",
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 787,
+        "completionTokens": 69
+      }
+    },
+    {
+      "id": "showcase-questions",
+      "answerable": true,
+      "status": "refused",
+      "reason": "editorial-only",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 17.472239059102137,
+        "matchedShare": 0.8,
+        "checks": [
+          {
+            "text": "Before paying for a showcase, request audience, co-streaming, and comparable-game results.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "Before paying, an editorial note suggests ensuring you have a genuinely new reveal and a ready Steam page.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 706,
+        "completionTokens": 71
+      }
+    },
+    {
+      "id": "popular-upcoming-change",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "According to an analyst interpretation of the June storefront redesign, Steam changed Popular Upcoming into a more selective widget compared to personalized calendar discovery, rendering historical wishlist rules of thumb obsolete.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "An analysis notes that the homepage beta for the redesign began on April 1, with the public rollout occurring on June 4, 2026.",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gmi-personal-calendar#summary",
+          "label": "Observed platform change plus analyst interpretation",
+          "evidenceClass": "analysis"
+        },
+        {
+          "n": 2,
+          "ref": "article:gmi-personal-calendar#hardData.0",
+          "label": "Observed platform change plus analyst interpretation",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 13.218202646394321,
+        "matchedShare": 0.5,
+        "checks": [
+          {
+            "text": "According to an analyst interpretation of the June storefront redesign, Steam changed Popular Upcoming into a more selective widget compared to personalized calendar discovery, rendering historical wishlist rules of thumb obsolete.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "An analysis notes that the homepage beta for the redesign began on April 1, with the public rollout occurring on June 4, 2026.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 812,
+        "completionTokens": 98
+      }
+    },
+    {
+      "id": "daily-deals-2026",
+      "answerable": true,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 12.609157325973989,
+        "matchedShare": 0.4,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 655,
+        "completionTokens": 11
+      }
+    },
+    {
+      "id": "tiny-eden-campaign",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "According to a first-person publisher campaign account, Tiny Eden achieved over $700,000 in revenue during the two weeks following its September 7, 2026 launch.",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "text": "An editorial note states that concurrent changes prevent causal attribution, and calendar ranking claims are the publisher's interpretation rather than independently verified Valve policy.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gwo-tiny-eden-campaign-preparation-2026#limitations",
+          "label": "Steam Discovery editorial note",
+          "evidenceClass": "editorial"
+        },
+        {
+          "n": 2,
+          "ref": "article:gwo-tiny-eden-campaign-preparation-2026#hardData.0",
+          "label": "First-person publisher campaign account; unaudited self-report",
+          "evidenceClass": "reported"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 11.33836155607361,
+        "matchedShare": 0.5,
+        "checks": [
+          {
+            "text": "According to a first-person publisher campaign account, Tiny Eden achieved over $700,000 in revenue during the two weeks following its September 7, 2026 launch.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "An editorial note states that concurrent changes prevent causal attribution, and calendar ranking claims are the publisher's interpretation rather than independently verified Valve policy.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 841,
+        "completionTokens": 102
+      }
+    },
+    {
+      "id": "power-of-ten-conversion",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "According to analyst interpretation, accumulated wishlists are not guaranteed immediate buyers, and teams can use the Power of Ten case to examine release expectations while retaining uncertainty about why any particular person did not purchase.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "playbook:gamedeveloper-power-of-ten-wishlist-countercase#synopsis",
+          "label": "Historical developer report with analyst interpretation",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 11.712179781639513,
+        "matchedShare": 0.6666666666666666,
+        "checks": [
+          {
+            "text": "According to analyst interpretation, accumulated wishlists are not guaranteed immediate buyers, and teams can use the Power of Ten case to examine release expectations while retaining uncertainty about why any particular person did not purchase.",
+            "cite": [
+              "P3"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 833,
+        "completionTokens": 60
+      }
+    },
+    {
+      "id": "dreadmoor-wishlists",
+      "answerable": true,
+      "status": "refused",
+      "reason": "editorial-only",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 17.174326163982464,
+        "matchedShare": 0.8,
+        "checks": [
+          {
+            "text": "According to an editorial note in a case study, packaging each real build milestone for several audience-matched channels can be used to reach wishlist milestones.",
+            "cite": [
+              "P3"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 856,
+        "completionTokens": 76
+      }
+    },
+    {
+      "id": "long-tail-2026",
+      "answerable": true,
+      "status": "refused",
+      "reason": "editorial-only",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 25.955384713677418,
+        "matchedShare": 0.625,
+        "checks": [
+          {
+            "text": "According to an editorial note, developers should show a conservative long-tail scenario and its denominator before choosing scope.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "An editorial note states that a long tail can involve updates, discounted sales, and new platforms.",
+            "cite": [
+              "P4"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 773,
+        "completionTokens": 73
+      }
+    },
+    {
+      "id": "virtual-festivals",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "An analysis notes that festival selection has its own genre preferences.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "An analysis points out that repeated inclusion in virtual third-party festivals does not establish strong sales.",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "playbook:htmag-festivals-2026-channel-fit#takeaways.0",
+          "label": "Practitioner dataset and interpretation",
+          "evidenceClass": "analysis"
+        },
+        {
+          "n": 2,
+          "ref": "playbook:htmag-festivals-2026-channel-fit#takeaways.1",
+          "label": "Practitioner dataset and interpretation",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 19.23719790906439,
+        "matchedShare": 0.5,
+        "checks": [
+          {
+            "text": "An analysis notes that festival selection has its own genre preferences.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "An analysis points out that repeated inclusion in virtual third-party festivals does not establish strong sales.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 837,
+        "completionTokens": 63
+      }
+    },
+    {
+      "id": "creator-attention",
+      "answerable": true,
+      "status": "refused",
+      "reason": "editorial-only",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 13.454536659842887,
+        "matchedShare": 0.75,
+        "checks": [
+          {
+            "text": "According to an editorial note, you should make an interested creator's next step easy by helping them understand the hook, inspect the footage, and access a reliable build.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "An editorial note advises selecting ten creators who recently covered the closest three comparable games and recording why their viewers would enjoy your playable hook rather than just looking at follower counts.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "According to an editorial note, when releasing new content like a 1.0 update, you should explain the new content to relevant creators to give returning players a clear reason to revisit.",
+            "cite": [
+              "P5"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 702,
+        "completionTokens": 147
+      }
+    },
+    {
+      "id": "ai-content-survey",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "According to official platform policy, the Steam Content Survey covers general, mature, and generative AI content.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "The platform policy states that the survey's AI wording focuses on shipped and consumed content such as artwork, audio, narrative, and localization, rather than general efficiency gains from development tools.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "Developers must describe relevant pre-generated content in the survey.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "According to official platform policy, live generation requires developers to explain safeguards against illegal outputs.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "playbook:steam-ai-content-survey#synopsis",
+          "label": "Official platform policy",
+          "evidenceClass": "reported"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 18.273692939634422,
+        "matchedShare": 0.5,
+        "checks": [
+          {
+            "text": "According to official platform policy, the Steam Content Survey covers general, mature, and generative AI content.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "The platform policy states that the survey's AI wording focuses on shipped and consumed content such as artwork, audio, narrative, and localization, rather than general efficiency gains from development tools.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "Developers must describe relevant pre-generated content in the survey.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "According to official platform policy, live generation requires developers to explain safeguards against illegal outputs.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 789,
+        "completionTokens": 140
+      }
+    },
+    {
+      "id": "onboarding-timing",
+      "answerable": true,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 16.413501322723306,
+        "matchedShare": 0.6,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 673,
+        "completionTokens": 11
+      }
+    },
+    {
+      "id": "freerunners-nextfest",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "Freerunners reported 154,724 festival impressions during the February 2024 Next Fest, though this figure represents historical exposure rather than unique people according to a developer self-report.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "According to a developer postmortem, the game recorded conflicting store-visit totals of 2,261 or 2,430 along with 564 external visits.",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "text": "An analysis noted that because the store visit denominator is unresolved, conversion should not be derived.",
+          "sources": [
+            3
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "story:freerunners#kpis.0",
+          "label": "Developer self-report",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 2,
+          "ref": "article:game-developer-freerunners-next-fest-2024#hardData.0",
+          "label": "First-person developer postmortem; historical self-reported figures",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 3,
+          "ref": "story:freerunners#kpis.1",
+          "label": "Conflicting values in the same post",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 12.218060406151007,
+        "matchedShare": 1,
+        "checks": [
+          {
+            "text": "Freerunners reported 154,724 festival impressions during the February 2024 Next Fest, though this figure represents historical exposure rather than unique people according to a developer self-report.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "According to a developer postmortem, the game recorded conflicting store-visit totals of 2,261 or 2,430 along with 564 external visits.",
+            "cite": [
+              "P3"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "An analysis noted that because the store visit denominator is unresolved, conversion should not be derived.",
+            "cite": [
+              "P4"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 742,
+        "completionTokens": 142
+      }
+    },
+    {
+      "id": "inkbound-early-access",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "According to a studio postmortem analysis, Inkbound reported missing Chinese support as the leading Early Access refund reason, though no count or rate was provided.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:game-developer-inkbound-early-access-2024#hardData.2",
+          "label": "First-person studio postmortem; historical internal observations",
+          "evidenceClass": "reported"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 12.730415393387013,
+        "matchedShare": 0.75,
+        "checks": [
+          {
+            "text": "According to a studio postmortem analysis, Inkbound reported missing Chinese support as the leading Early Access refund reason, though no count or rate was provided.",
+            "cite": [
+              "P3"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 728,
+        "completionTokens": 51
+      }
+    },
+    {
+      "id": "wishlist-inflation",
+      "answerable": true,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 7.5672008235433115,
+        "matchedShare": 0.3333333333333333,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      }
+    },
+    {
+      "id": "urban-jungle-team",
+      "answerable": true,
+      "status": "refused",
+      "reason": "editorial-only",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 16.37337470308756,
+        "matchedShare": 0.6666666666666666,
+        "checks": [
+          {
+            "text": "According to a Steam Discovery editorial note, the indie decorating sim Urban Jungle generated 90k wishlists on Steam thanks to fests, demos, and some luck.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 803,
+        "completionTokens": 81
+      }
+    },
+    {
+      "id": "steam-deck-genres",
+      "answerable": true,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 14.584686955171406,
+        "matchedShare": 0.75,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 848,
+        "completionTokens": 11
+      }
+    },
+    {
+      "id": "digging-hole-attention",
+      "answerable": true,
+      "status": "answer",
+      "reason": null,
+      "error": null,
+      "claims": [
+        {
+          "text": "According to a publisher and marketer postmortem analysis, A Game About Digging A Hole accumulated 82000 wishlists in four weeks before its release.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "According to a developer and publisher report, the Steam page for A Game About Digging A Hole quietly went live before the reveal to allow search indexing.",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "case:a-game-about-digging-a-hole#reportedOutcome",
+          "label": "Reported",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 2,
+          "ref": "case:a-game-about-digging-a-hole#marketingEvents.0",
+          "label": "Developer/publisher report",
+          "evidenceClass": "reported"
+        }
+      ],
+      "expectedHit": true,
+      "audit": {
+        "retrievalScore": 16.56398527654997,
+        "matchedShare": 0.5714285714285714,
+        "checks": [
+          {
+            "text": "According to a publisher and marketer postmortem analysis, A Game About Digging A Hole accumulated 82000 wishlists in four weeks before its release.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "According to a developer and publisher report, the Steam page for A Game About Digging A Hole quietly went live before the reveal to allow search indexing.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 740,
+        "completionTokens": 95
+      }
+    },
+    {
+      "id": "ccu-staying-power",
+      "answerable": true,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": false,
+      "audit": {
+        "retrievalScore": 11.552461909225064,
+        "matchedShare": 0.42857142857142855,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 745,
+        "completionTokens": 11
+      }
+    },
+    {
+      "id": "tiktok-cost-per-wishlist",
+      "answerable": false,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 11.611764790670591,
+        "matchedShare": 0.5714285714285714,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 830,
+        "completionTokens": 11
+      }
+    },
+    {
+      "id": "switch-eshop-feature",
+      "answerable": false,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 13.464689382176292,
+        "matchedShare": 0.2857142857142857,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      }
+    },
+    {
+      "id": "vat-germany",
+      "answerable": false,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 7.320758502190407,
+        "matchedShare": 0.16666666666666666,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      }
+    },
+    {
+      "id": "epic-revenue-share",
+      "answerable": false,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 14.982174780439902,
+        "matchedShare": 0.5,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 1009,
+        "completionTokens": 11
+      }
+    },
+    {
+      "id": "brazil-price",
+      "answerable": false,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 10.76378418042393,
+        "matchedShare": 0.2857142857142857,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      }
+    },
+    {
+      "id": "engine-deck-performance",
+      "answerable": false,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 8.133017511651827,
+        "matchedShare": 0.2,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      }
+    },
+    {
+      "id": "injection-hollow-knight",
+      "answerable": false,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 12.868381815646703,
+        "matchedShare": 0.23076923076923078,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      }
+    },
+    {
+      "id": "reddit-best-day",
+      "answerable": false,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 11.064831036543818,
+        "matchedShare": 0.5,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 852,
+        "completionTokens": 11
+      }
+    },
+    {
+      "id": "pax-booth-cost",
+      "answerable": false,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 13.559520893211879,
+        "matchedShare": 0.3333333333333333,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      }
+    },
+    {
+      "id": "steam-awards-2026",
+      "answerable": false,
+      "status": "refused",
+      "reason": "model-declined",
+      "error": null,
+      "claims": [],
+      "sources": [],
+      "expectedHit": null,
+      "audit": {
+        "retrievalScore": 6.117997469367375,
+        "matchedShare": 0.6666666666666666,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 11
+      }
+    }
+  ]
+}

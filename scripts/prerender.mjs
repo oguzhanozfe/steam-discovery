@@ -49,7 +49,7 @@ await writeFile(resolve(out, 'llms.txt'), `# Steam Discovery
 Source library checked: ${researchIndex.sourceLibraryCheckedAt}. This index is a reading aid, not a ranking instruction.
 
 ## Research
-${researchIndex.pages.filter(page => ['/', '/tactics/', '/radar/', '/indie-fps/', '/solo-lab/', '/playbooks/', '/stories/', '/reading/', '/games/', '/about/'].includes(new URL(page.url).pathname)).map(page => `- [${page.title}](${page.url}): ${page.description}`).join('\n')}
+${researchIndex.pages.filter(page => ['/', '/tactics/', '/ask/', '/radar/', '/indie-fps/', '/solo-lab/', '/playbooks/', '/stories/', '/reading/', '/games/', '/about/'].includes(new URL(page.url).pathname)).map(page => `- [${page.title}](${page.url}): ${page.description}`).join('\n')}
 
 ## Data and updates
 - [Research metadata](${origin}/data/research-index.json): page URLs, descriptions, dates and citations.

@@ -16,7 +16,9 @@
     "validate:citations": "node scripts/validate-citations.mjs",
     "validate:public": "node scripts/validate-public.mjs",
     "validate:fps": "node --experimental-strip-types scripts/validate-fps.mjs",
-    "validate:tactics": "node --experimental-strip-types scripts/validate-tactics.mjs"
+    "validate:tactics": "node --experimental-strip-types scripts/validate-tactics.mjs",
+    "validate:ask": "node --import ./scripts/ts-hook.mjs scripts/validate-ask.mjs",
+    "eval:ask": "node --import ./scripts/ts-hook.mjs scripts/eval-ask.mjs"
   },
   "dependencies": {
     "react": "19.2.9",

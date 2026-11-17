@@ -5,7 +5,7 @@ import { flushSync } from 'react-dom';
 import {
   AlertTriangle, ArrowDownToLine, ArrowRight, BarChart3,
   CalendarDays, CheckCircle2, ChevronRight, CircleDollarSign, Clock3,
-  Code2, Database, Eye, Filter, Gamepad2, Gauge, Lightbulb, Link2,
+  Code2, Database, Eye, Filter, Gamepad2, Gauge, Lightbulb, Link2, MessageSquare,
   Megaphone, Play, Radar, Search, ShieldAlert, Sparkles, Target,
   Users, XCircle, Zap, BookOpen, Compass,
 } from 'lucide-react';
@@ -41,6 +41,7 @@ import hubArticles from './data/hub-articles.json';
 import referenceChecks from './data/reference-checks.json';
 import { AdSlot } from './ad-slot';
 import { TacticDeck } from './tactics';
+import { AskLibrary } from './ask';
 import { ReferenceLink, ReferenceRegister, EditorialCredit, referenceMetadata, ideaReferences } from './source-references';
 
 type ModelTool = {
@@ -60,6 +61,7 @@ type CaseFilter = (typeof filters)[number];
 const navItems: { id: ResearchView; label: string; caption: string; icon: typeof Radar }[] = [
   { id: 'hub', label: 'Dev Hub', caption: 'Niches & next steps', icon: Compass },
   { id: 'tactics', label: 'Tactic Deck', caption: 'What to do at your stage', icon: Lightbulb },
+  { id: 'ask', label: 'Ask the Library', caption: 'Answers only from sources', icon: MessageSquare },
   { id: 'fps', label: 'Indie FPS', caption: 'Co-op market & comparisons', icon: Target },
   { id: 'radar', label: 'Steam Radar', caption: 'Search & compare games', icon: Radar },
   { id: 'solo', label: 'Solo Lab', caption: 'AI-assisted · two weeks', icon: Code2 },
@@ -385,6 +387,7 @@ export default function Home({ initial = {} }: { initial?: InitialRoute }) {
       <div id="research-content" tabIndex={-1} />
       {view === 'hub' && <SmallTeamHub />}
       {view === 'tactics' && <TacticDeck tacticId={initial.tacticId} />}
+      {view === 'ask' && <AskLibrary />}
       {view === 'radar' && <SteamRadar />}
       {view === 'fps' && <IndieFps />}
       {view === 'solo' && <SoloLab />}

@@ -102,7 +102,7 @@ export function SmallTeamHub() {
         <a className="hub-entry" href="/stories/"><Radar /><span><strong>Game stories</strong><p>{gameStories.length} launches told event by event: dated KPIs, campaign timelines and what a small team could borrow.</p></span><ArrowRight /></a>
         <a className="hub-entry" href="/reading/"><Search /><span><strong>Sources</strong><p>{readingLibrary.length} attributed notes on the newsletters and postmortems behind every claim, with their dates and limits.</p></span><ArrowRight /></a>
       </div>
-      <p className="hub-more">Also here: <a href="/radar/">Steam Radar</a> ({number(snapshot.catalogCount)} apps), the <a href="/indie-fps/">co-op FPS market study</a>, <a href="/solo-lab/">two-week solo concepts</a> and <a href="/playbooks/">playbooks</a>.</p>
+      <p className="hub-more">Also here: <a href="/ask/">ask the library a question</a>, <a href="/radar/">Steam Radar</a> ({number(snapshot.catalogCount)} apps), the <a href="/indie-fps/">co-op FPS market study</a>, <a href="/solo-lab/">two-week solo concepts</a> and <a href="/playbooks/">playbooks</a>.</p>
       <div className="hub-stats">
         <span>
           <b>{gameStories.length}</b> game stories
