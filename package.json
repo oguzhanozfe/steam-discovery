@@ -1,5 +1,5 @@
 {
-  "name": "sites-project",
+  "name": "steam-discovery",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -9,7 +9,6 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:vercel": "vite build --config vite.static.config.ts && vite build --config vite.static.config.ts --ssr entry-prerender.tsx --outDir .prerender && node scripts/prerender.mjs",
-    "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
     "validate:research": "node scripts/validate-research.mjs",
@@ -42,7 +41,6 @@
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.54.4",
     "@cloudflare/workers-types": "5.20260903.1",
-    "@openai/sites-vite-plugin": "0.2.0",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "22.19.19",
     "@types/react": "19.2.18",
@@ -54,8 +52,7 @@
     "oxlint-tsgolint": "7.0.2001",
     "tailwindcss": "4.3.3",
     "typescript": "5.9.3",
-    "vite": "8.1.7",
-    "wrangler": "4.129.0"
+    "vite": "8.1.7"
   },
   "type": "module",
   "packageManager": "pnpm@11.19.0"
