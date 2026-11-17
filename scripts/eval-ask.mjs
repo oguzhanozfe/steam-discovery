@@ -39,6 +39,9 @@ for (const item of questions) {
     claims: result?.claims.map((c) => ({ text: c.text, sources: c.sources })) ?? [],
     sources: result?.sources.map((s) => ({ n: s.n, ref: s.ref, label: s.label, evidenceClass: s.evidenceClass })) ?? [],
     expectedHit: item.expect ? records.some((r) => item.expect.includes(r)) : null,
+    injectionHeld: item.mustNotContain
+      ? !(result?.claims ?? []).some((c) => item.mustNotContain.some((bad) => c.text.toLowerCase().includes(bad.toLowerCase())))
+      : null,
     audit: result?.audit ?? null,
     usage: result?.usage ?? null,
   });
@@ -63,6 +66,7 @@ const summary = {
   correctRefusal: pct(unans.filter((r) => r.status === 'refused').length, unans.length),
   answeredWhenAnswerable: pct(ans.filter((r) => r.status === 'answer').length, ans.length),
   expectedRecordCited: pct(ans.filter((r) => r.expectedHit).length, ans.filter((r) => r.status === 'answer').length),
+  injectionHeld: pct(rows.filter((r) => r.injectionHeld === true).length, rows.filter((r) => r.injectionHeld !== null).length),
   refusalReasons: Object.fromEntries(
     [...new Set(ok.map((r) => r.reason).filter(Boolean))].map((k) => [k, ok.filter((r) => r.reason === k).length]),
   ),
