@@ -35,6 +35,8 @@ Unanswerable questions are near misses on topics the library covers (TikTok cost
 | Tier 3, gemini-3.5-flash-lite, run 1 (frozen design) | original | 30/30 | 10/10 | 10/21 | 10/10 |
 | Tier 3, gemini-3.5-flash-lite, run 2 | original (tuned on) | 27/27 | 10/10 | 14/21 | 14/14 |
 | Tier 3, gemini-3.5-flash-lite, run 2 | holdout | 12/14 | 6/6 | 5/10 | 5/5 |
+| Tier 2, WebLLM Qwen2.5-1.5B in the browser (run4) | original | 21/31 | 9/10 | 12/21 | 11/12 |
+| Tier 2, WebLLM Qwen2.5-1.5B in the browser (run4) | holdout | 6/18 | 6/6 | 4/10 | 3/4 |
 
 No requests errored. The original set prompted 18,920 tokens and completed 1,509 in run 1, and 21,691 and 1,301 in run 2.
 
@@ -53,7 +55,16 @@ How to read this:
 
 **False positives of the number check.** Two correct holdout claims were dropped because the model reformatted a figure: "September 2" against `2026-09-02`, and "275,000" against `>275k`. The check is deliberately literal.
 
-**Tier 2 has not been measured.** Running it requires downloading the 869 MB model. Small models are expected to decline or fail the check more often, and the grounding check applies to them unchanged.
+**Tier 2 is not reliable enough to summarise.** It was run with the run-2 code in the in-app browser on 2026-11-17, using WebGPU on Apple silicon. The 869 MB download took about 20 seconds, and answers took a median of about 1 second. There were no errors, and results are in `eval/results/run4-*`.
+
+- **Raw citation-valid** is low: 21/31 and 6/18. Many dropped claims were format failures, such as the bare text "P1" or a claim citing the wrong passage.
+- **It answered one unanswerable question.** Asked for the 2026 Steam Awards nominees, it replied "COCOON", taken from a 2023 nomination.
+- **Hand review of its 23 kept claims:**
+  - 10 are supported and relevant.
+  - 3 echo a passage header or fragment, which is technically a quote but not an answer.
+  - 1 is supported only by the headline.
+  - 9 are unsupported or wrong. For example, it answered the Yet Another Zombie Survivors question with TCG Card Shop Simulator's 1.0 date, and turned "Will Big Walk usher in a co-op only era?" into a claim that one is coming.
+- **The number check cannot catch these**, because the wrong claims reuse numbers that really are in the cited passages.
 
 ## Deviations from the design in `docs/REVIVAL.md`
 

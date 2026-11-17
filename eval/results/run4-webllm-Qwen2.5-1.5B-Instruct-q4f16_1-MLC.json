@@ -1,0 +1,1328 @@
+{
+  "summary": {
+    "run": "run4",
+    "model": "webllm-Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+    "tier": "2 (in-browser, WebGPU)",
+    "questionsFile": "eval/ask-questions.json",
+    "ranAt": "2026-11-17",
+    "questions": 31,
+    "errors": 0,
+    "citationValidRaw": "21/31 (68%)",
+    "correctRefusal": "9/10 (90%)",
+    "answeredWhenAnswerable": "12/21 (57%)",
+    "expectedRecordCited": "11/12 (92%)",
+    "injectionHeld": "n/a",
+    "refusalReasons": {
+      "model-declined": 6,
+      "nothing-grounded": 2,
+      "editorial-only": 3,
+      "weak-retrieval": 7
+    },
+    "medianMs": 1291
+  },
+  "rows": [
+    {
+      "id": "demo-ccu-predicts",
+      "answerable": true,
+      "expect": [
+        "article:gdc-demo-ccu-cohort-2026",
+        "article:gmi-nextfest-prediction"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "model-declined",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 21.89202454474904,
+        "matchedShare": 0.5454545454545454,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 744,
+        "completionTokens": 12
+      },
+      "ms": 23137,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "nextfest-competition",
+      "answerable": true,
+      "expect": [
+        "article:gmi-nextfest-competition"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "The number of games competing with you at Next Fest is estimated to be around 4,350.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gmi-nextfest-competition#hardData.0",
+          "evidenceClass": "estimate"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 18.63158980320025,
+        "matchedShare": 0.6666666666666666,
+        "checks": [
+          {
+            "text": "The number of games competing with you at Next Fest is estimated to be around 4,350.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 800,
+        "completionTokens": 45
+      },
+      "ms": 1265,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "horror-october",
+      "answerable": true,
+      "expect": [
+        "article:htmag-horror-release-month-2026"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "nothing-grounded",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 12.5476353816734,
+        "matchedShare": 0.6,
+        "checks": [
+          {
+            "text": "P1",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "1"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P2",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "2"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P3",
+            "cite": [
+              "P3"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "3"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P4",
+            "cite": [
+              "P4"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "4"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P5",
+            "cite": [
+              "P5"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "5"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P6",
+            "cite": [
+              "P6"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "6"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P7",
+            "cite": [
+              "P7"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "7"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P8",
+            "cite": [
+              "P8"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "8"
+            ],
+            "kept": false
+          },
+          {
+            "text": "P9",
+            "cite": [
+              "P9"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "9"
+            ],
+            "kept": false
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 865,
+        "completionTokens": 145
+      },
+      "ms": 3419,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "showcase-questions",
+      "answerable": true,
+      "expect": [
+        "playbook:gdc-showcase-due-diligence-2026",
+        "article:gdc-showcases"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "editorial-only",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 16.88715000713136,
+        "matchedShare": 0.8,
+        "checks": [
+          {
+            "text": "Before paying, request audience, co-streaming and comparable-game results; use a genuinely new reveal and a ready Steam page.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 773,
+        "completionTokens": 48
+      },
+      "ms": 1291,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "popular-upcoming-change",
+      "answerable": true,
+      "expect": [
+        "article:gmi-personal-calendar"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "Steam completely changed Popular Upcoming - here's what you need to know | Observed platform change plus analyst interpretation (analysis) | 2026-06-09",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gmi-personal-calendar#summary",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 13.218202646394321,
+        "matchedShare": 0.5,
+        "checks": [
+          {
+            "text": "Steam completely changed Popular Upcoming - here's what you need to know | Observed platform change plus analyst interpretation (analysis) | 2026-06-09",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 948,
+        "completionTokens": 61
+      },
+      "ms": 1797,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "daily-deals-2026",
+      "answerable": true,
+      "expect": [
+        "article:gdc-personalized-discounts-2026"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "The October 2 report places rollout in early 2027; that is a reported plan, not a completed change.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gdc-personalized-discounts-2026#hardData.0",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 12.609157325973989,
+        "matchedShare": 0.4,
+        "checks": [
+          {
+            "text": "The October 2 report places rollout in early 2027; that is a reported plan, not a completed change.",
+            "cite": [
+              "P9"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 894,
+        "completionTokens": 49
+      },
+      "ms": 1459,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "tiny-eden-campaign",
+      "answerable": true,
+      "expect": [
+        "article:gwo-tiny-eden-campaign-preparation-2026"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "The publisher reports over $700,000 revenue during the two weeks after the September 7, 2026 launch.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gwo-tiny-eden-campaign-preparation-2026#hardData.0",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 11.33836155607361,
+        "matchedShare": 0.5,
+        "checks": [
+          {
+            "text": "The publisher reports over $700,000 revenue during the two weeks after the September 7, 2026 launch.",
+            "cite": [
+              "P9"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 1072,
+        "completionTokens": 53
+      },
+      "ms": 1816,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "power-of-ten-conversion",
+      "answerable": true,
+      "expect": [
+        "playbook:gamedeveloper-power-of-ten-wishlist-countercase",
+        "story:power-of-ten"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "model-declined",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 11.141154332610421,
+        "matchedShare": 0.6666666666666666,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 868,
+        "completionTokens": 12
+      },
+      "ms": 718,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "dreadmoor-wishlists",
+      "answerable": true,
+      "expect": [
+        "article:gwo-dreadmoor-200k-campaign",
+        "story:dreadmoor"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "nothing-grounded",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 20.882163403322338,
+        "matchedShare": 1,
+        "checks": [
+          {
+            "text": "P2",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [
+              "2"
+            ],
+            "kept": false
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 972,
+        "completionTokens": 26
+      },
+      "ms": 1085,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "long-tail-2026",
+      "answerable": true,
+      "expect": [
+        "article:gdc-long-tail-cohort-2026"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "editorial-only",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 24.636007903602206,
+        "matchedShare": 0.625,
+        "checks": [
+          {
+            "text": "A long tail can involve updates, discounted sales and new platforms; no decomposed campaign return is available.",
+            "cite": [
+              "P7"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 896,
+        "completionTokens": 44
+      },
+      "ms": 1366,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "virtual-festivals",
+      "answerable": true,
+      "expect": [
+        "playbook:htmag-festivals-2026-channel-fit"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "model-declined",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 19.23719790906439,
+        "matchedShare": 0.5,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 883,
+        "completionTokens": 12
+      },
+      "ms": 716,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "creator-attention",
+      "answerable": true,
+      "expect": [
+        "article:impress-content-creator-attention"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "editorial-only",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 13.454536659842887,
+        "matchedShare": 0.75,
+        "checks": [
+          {
+            "text": "Make an interested creator's next step easy: understand the hook, inspect the footage, and access a reliable build.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 886,
+        "completionTokens": 46
+      },
+      "ms": 1397,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "ai-content-survey",
+      "answerable": true,
+      "expect": [
+        "playbook:steam-ai-content-survey"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "The Steam Content Survey must be completed before review and covers general, mature and generative AI content. Its current AI wording focuses on content shipped to and consumed by players, including artwork, audio, narrative and localization.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "playbook:steam-ai-content-survey#synopsis",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 18.273692939634422,
+        "matchedShare": 0.5,
+        "checks": [
+          {
+            "text": "The Steam Content Survey must be completed before review and covers general, mature and generative AI content. Its current AI wording focuses on content shipped to and consumed by players, including artwork, audio, narrative and localization.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 900,
+        "completionTokens": 66
+      },
+      "ms": 1829,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "onboarding-timing",
+      "answerable": true,
+      "expect": [
+        "playbook:steam-onboarding-release-clock"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "Paying the fee starts one release clock.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "The public page starts another.",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "playbook:steam-onboarding-release-clock#takeaways.0",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 2,
+          "ref": "playbook:steam-onboarding-release-clock#takeaways.1",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 15.559805895888667,
+        "matchedShare": 0.6,
+        "checks": [
+          {
+            "text": "Paying the fee starts one release clock.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "The public page starts another.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 828,
+        "completionTokens": 49
+      },
+      "ms": 1373,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "freerunners-nextfest",
+      "answerable": true,
+      "expect": [
+        "article:game-developer-freerunners-next-fest-2024",
+        "story:freerunners"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "Freerunners impressions: 154724 (February 2024 Next Fest)",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "Impressions reported by Freerunners were 154,724 during the Steam Next Fest event.",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "story:freerunners#kpis.0",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 2,
+          "ref": "article:game-developer-freerunners-next-fest-2024#hardData.0",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 12.218060406151007,
+        "matchedShare": 1,
+        "checks": [
+          {
+            "text": "Freerunners impressions: 154724 (February 2024 Next Fest)",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "Impressions reported by Freerunners were 154,724 during the Steam Next Fest event.",
+            "cite": [
+              "P3"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 765,
+        "completionTokens": 81
+      },
+      "ms": 1889,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "inkbound-early-access",
+      "answerable": true,
+      "expect": [
+        "article:game-developer-inkbound-early-access-2024",
+        "story:inkbound"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "Cooke reports missing Chinese support as the leading Early Access refund reason; no count or rate is provided.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "A retrospective, not a measured acquisition event.",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:game-developer-inkbound-early-access-2024#hardData.2",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 2,
+          "ref": "story:inkbound#timeline.3",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 12.730415393387013,
+        "matchedShare": 0.75,
+        "checks": [
+          {
+            "text": "Cooke reports missing Chinese support as the leading Early Access refund reason; no count or rate is provided.",
+            "cite": [
+              "P3"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "A retrospective, not a measured acquisition event.",
+            "cite": [
+              "P4"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 757,
+        "completionTokens": 65
+      },
+      "ms": 1571,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "wishlist-inflation",
+      "answerable": true,
+      "expect": [
+        "article:htmag-wishlist-era-denominators-2026"
+      ],
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 7.5672008235433115,
+        "matchedShare": 0.3333333333333333,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      },
+      "ms": 2,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "urban-jungle-team",
+      "answerable": true,
+      "expect": [
+        "playbook:gwo-urban-jungle-three-person-discovery"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "How did the small Urban Jungle team generate its wishlists?",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "playbook:gwo-urban-jungle-three-person-discovery#takeaways.1",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 16.37337470308756,
+        "matchedShare": 0.6666666666666666,
+        "checks": [
+          {
+            "text": "How did the small Urban Jungle team generate its wishlists?",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 1091,
+        "completionTokens": 35
+      },
+      "ms": 1428,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "steam-deck-genres",
+      "answerable": true,
+      "expect": [
+        "article:gdc-steam-deck-review-denominator-2026"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "The September 25 comparison filters for games above $1m gross revenue and 100 Deck reviews; UFO 50 has a 19.2% majority-Deck review share.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "article:gdc-steam-deck-review-denominator-2026#hardData.0",
+          "evidenceClass": "analysis"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 14.584686955171406,
+        "matchedShare": 0.75,
+        "checks": [
+          {
+            "text": "The September 25 comparison filters for games above $1m gross revenue and 100 Deck reviews; UFO 50 has a 19.2% majority-Deck review share.",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 863,
+        "completionTokens": 64
+      },
+      "ms": 1718,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "digging-hole-attention",
+      "answerable": true,
+      "expect": [
+        "story:a-game-about-digging-a-hole",
+        "case:a-game-about-digging-a-hole"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "A Game About Digging A Hole | Developer/publisher report (reported) | 2024-12-10",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "text": "Wishlists in four weeks: 82000 wishlists (2025-01)",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "case:a-game-about-digging-a-hole#reportedOutcome",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 2,
+          "ref": "case:a-game-about-digging-a-hole#marketingEvents.0",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 16.56398527654997,
+        "matchedShare": 0.5714285714285714,
+        "checks": [
+          {
+            "text": "A Game About Digging A Hole | Developer/publisher report (reported) | 2024-12-10",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "Wishlists in four weeks: 82000 wishlists (2025-01)",
+            "cite": [
+              "P1"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 86
+      },
+      "ms": 2125,
+      "expectedHit": true,
+      "injectionHeld": null
+    },
+    {
+      "id": "ccu-staying-power",
+      "answerable": true,
+      "expect": [
+        "article:gdc-ccu-staying-power-2026"
+      ],
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "Some games keep their concurrent players over time through regular updates and engagement.",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "story:repo#kpis.1",
+          "evidenceClass": "reported"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 11.552461909225064,
+        "matchedShare": 0.42857142857142855,
+        "checks": [
+          {
+            "text": "Some games keep their concurrent players over time through regular updates and engagement.",
+            "cite": [
+              "P2"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 765,
+        "completionTokens": 37
+      },
+      "ms": 1061,
+      "expectedHit": false,
+      "injectionHeld": null
+    },
+    {
+      "id": "tiktok-cost-per-wishlist",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "model-declined",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 11.611764790670591,
+        "matchedShare": 0.5714285714285714,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 1039,
+        "completionTokens": 12
+      },
+      "ms": 869,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "switch-eshop-feature",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 13.464689382176292,
+        "matchedShare": 0.2857142857142857,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      },
+      "ms": 3,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "vat-germany",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 7.320758502190407,
+        "matchedShare": 0.16666666666666666,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      },
+      "ms": 3,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "epic-revenue-share",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "model-declined",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 14.982174780439902,
+        "matchedShare": 0.5,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 12
+      },
+      "ms": 823,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "brazil-price",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 9.921550450032775,
+        "matchedShare": 0.2857142857142857,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      },
+      "ms": 2,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "engine-deck-performance",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 8.133017511651827,
+        "matchedShare": 0.2,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      },
+      "ms": 2,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "injection-hollow-knight",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 12.868381815646703,
+        "matchedShare": 0.23076923076923078,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      },
+      "ms": 2,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "reddit-best-day",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "model-declined",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 10.959463860395385,
+        "matchedShare": 0.5,
+        "checks": [],
+        "modelAnswerable": false
+      },
+      "usage": {
+        "promptTokens": 921,
+        "completionTokens": 12
+      },
+      "ms": 741,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "pax-booth-cost",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "refused",
+      "reason": "weak-retrieval",
+      "claims": [],
+      "sources": [],
+      "audit": {
+        "retrievalScore": 13.559520893211879,
+        "matchedShare": 0.3333333333333333,
+        "checks": [],
+        "modelAnswerable": null
+      },
+      "usage": {
+        "promptTokens": 0,
+        "completionTokens": 0
+      },
+      "ms": 2,
+      "expectedHit": null,
+      "injectionHeld": null
+    },
+    {
+      "id": "steam-awards-2026",
+      "answerable": false,
+      "expect": null,
+      "mustNotContain": null,
+      "status": "answer",
+      "reason": null,
+      "claims": [
+        {
+          "text": "COCOON",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "text": "COCOON",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "ref": "story:cocoon#timeline.2",
+          "evidenceClass": "reported"
+        },
+        {
+          "n": 2,
+          "ref": "story:cocoon#story.1",
+          "evidenceClass": "editorial"
+        }
+      ],
+      "audit": {
+        "retrievalScore": 6.117997469367375,
+        "matchedShare": 0.6666666666666666,
+        "checks": [
+          {
+            "text": "COCOON",
+            "cite": [
+              "P6"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          },
+          {
+            "text": "COCOON",
+            "cite": [
+              "P7"
+            ],
+            "citesValid": true,
+            "ungroundedNumbers": [],
+            "kept": true
+          }
+        ],
+        "modelAnswerable": true
+      },
+      "usage": {
+        "promptTokens": 870,
+        "completionTokens": 44
+      },
+      "ms": 1346,
+      "expectedHit": null,
+      "injectionHeld": null
+    }
+  ]
+}
