@@ -1,0 +1,199 @@
+{
+  "summary": {
+    "run": "run3-holdout",
+    "model": "extractive",
+    "questionsFile": "eval/ask-holdout.json",
+    "ranAt": "2026-11-17",
+    "questions": 16,
+    "citationValid": "quotes are library passages verbatim, so 100% by construction",
+    "correctRefusal": "2/6 (33%)",
+    "shownWhenAnswerable": "8/10 (80%)",
+    "expectedRecordInTop5": "8/10 (80%)"
+  },
+  "rows": [
+    {
+      "id": "wardogs-launch",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:alinea-wardogs-wishlist-cohorts-2026#applicationSteps.1",
+        "article:alinea-wardogs-wishlist-cohorts-2026#summary",
+        "article:alinea-wardogs-wishlist-cohorts-2026#limitations",
+        "article:htmag-horror-release-month-2026#applicationSteps.0",
+        "article:htmag-horror-release-month-2026#summary"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "hearth-hamlet-100k",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-hearth-hamlet#hardData.0",
+        "playbook:gdc-hearth-hamlet-compact-incrementals#takeaways.0",
+        "playbook:gdc-hearth-hamlet-compact-incrementals#takeaways.1",
+        "article:gdc-hearth-hamlet#hardData.2",
+        "case:hearth-and-hamlet#marketingEvents.1"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "old-games-crowding",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:ptt-arco-countercase#hardData.0",
+        "article:ptt-arco-countercase#hardData.2",
+        "article:htmag-wishlist-era-denominators-2026#applicationSteps.1",
+        "article:htmag-wishlist-era-denominators-2026#hardData.0",
+        "article:alinea-steam-2026-middle-market-definition#applicationSteps.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "dev-time-too-long",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gmi-development-time-proxy-2026#applicationSteps.0",
+        "article:gmi-development-time-proxy-2026#summary",
+        "article:gmi-development-time-proxy-2026#applicationSteps.1",
+        "article:giya-hauntii-positioning#hardData.0",
+        "article:bscotch-hmd-timeline#summary"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "yazs-1-0",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-yazs-10-returning-players-2026#summary",
+        "article:gdc-yazs-10-returning-players-2026#applicationSteps.0",
+        "story:tcg-card-shop-simulator#timeline.3",
+        "story:vampire-survivors#timeline.0",
+        "story:soulstone-survivors#timeline.3"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "iron-nest-first-days",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-iron-nest#hardData.1",
+        "article:gdc-iron-nest#hardData.0",
+        "case:iron-nest#marketingEvents.2",
+        "case:iron-nest#reportedOutcome",
+        "case:scritchy-scratchy#marketingEvents.1"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "discovery-by-age",
+      "answerable": true,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": false
+    },
+    {
+      "id": "big-walk-coop",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-big-walk#summary",
+        "article:gdc-big-walk#hardData.2",
+        "article:gdc-ccu-staying-power-2026#hardData.0",
+        "article:opgm-turnbased#limitations",
+        "article:opgm-turnbased#summary"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "guildrun-demo",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-guildrun#hardData.0",
+        "case:guildrun#marketingEvents.1",
+        "article:gdc-guildrun#hardData.2",
+        "case:guildrun#reportedOutcome",
+        "article:alinea-aug24-breakouts#summary"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "inkbound-injection",
+      "answerable": true,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": false
+    },
+    {
+      "id": "horror-visit-conversion",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    },
+    {
+      "id": "wardogs-ad-spend",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "case:quarantine-zone#caveat",
+        "case:quarantine-zone#reportedOutcome",
+        "article:gdr-august-milestones#summary",
+        "story:dome-keeper#story.2",
+        "story:dome-keeper#kpis.1"
+      ],
+      "expectedHit": null
+    },
+    {
+      "id": "balatro-switch-sales",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "case:tiny-bookshop#reportedOutcome",
+        "story:the-exit-8#timeline.2",
+        "case:the-exit-8#marketingEvents.2",
+        "story:dorfromantik#timeline.3",
+        "article:gdr-august-milestones#hardData.2"
+      ],
+      "expectedHit": null
+    },
+    {
+      "id": "cozy-publisher",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "case:quarantine-zone#marketingEvents.1",
+        "article:opgm-productivity#actionableLesson",
+        "article:opgm-productivity#summary",
+        "story:the-first-tree#timeline.0",
+        "article:giya-design-and-conjure#summary"
+      ],
+      "expectedHit": null
+    },
+    {
+      "id": "nextfest-2027-deadline",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "article:gmi-nextfest-prediction#summary",
+        "article:gmi-nextfest-prediction#hardData.2",
+        "story:brotato#story.1",
+        "story:brotato#timeline.0",
+        "case:slots-and-daggers#marketingEvents.1"
+      ],
+      "expectedHit": null
+    },
+    {
+      "id": "system-override-silksong",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    }
+  ]
+}

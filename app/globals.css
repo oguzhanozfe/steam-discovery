@@ -2016,6 +2016,9 @@ textarea::placeholder{ color:var(--muted-foreground); opacity:1; }
 
 /* Ask the Library */
 .ask { max-width:860px; }
+.ask h1 { max-width:760px; margin:4px 0 12px; font-size:clamp(24px, 3vw, 38px); line-height:1.08; letter-spacing:-.04em; }
+.ask h2 { font-size:22px; margin:0 0 12px; }
+.ask h3 { font-size:17px; margin:20px 0 8px; }
 .ask-form { display:flex; gap:12px; align-items:center; margin:20px 0 12px; }
 .ask-form .searchbox { flex:1; }
 .ask-privacy { display:flex; gap:8px; align-items:flex-start; color:var(--text-secondary); font-size:var(--text-label); }
@@ -2034,4 +2037,19 @@ textarea::placeholder{ color:var(--muted-foreground); opacity:1; }
 .ask-sources li { display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; margin-bottom:12px; }
 .ask-tactics a { display:inline-flex; align-items:center; gap:4px; }
 .ask-tactics svg { width:14px; height:14px; }
+.ask-busy { color:var(--text-secondary); }
+.ask-results-title { font-size:22px; margin:24px 0 4px; }
+.ask-passages { list-style:none; padding:0; display:grid; gap:12px; }
+.ask-passage { border:1px solid var(--border); border-radius:10px; padding:16px; }
+.ask-passage blockquote { margin:0 0 12px; padding-left:12px; border-left:3px solid var(--border-accent); line-height:1.7; }
+.ask-passage-meta { display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; }
+.ask-tiers { margin-top:28px; border-top:1px solid var(--border); padding-top:8px; }
+.ask-tier { margin-bottom:20px; }
+.ask-tier h3 { display:flex; align-items:center; gap:8px; }
+.ask-tier h3 svg { width:18px; height:18px; }
+.ask-tier p { color:var(--text-secondary); font-size:var(--text-label); line-height:1.6; }
+.ask-key { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.ask-key input[type=password] { flex:1; min-width:220px; }
+.ask-remember { display:inline-flex; align-items:center; gap:6px; font-size:var(--text-label); }
+.ask-forget { background:none; border:0; padding:0; color:var(--text-link); text-decoration:underline; cursor:pointer; font:inherit; font-size:var(--text-label); }
 @media (max-width:640px) { .ask-form { flex-direction:column; align-items:stretch; } }

@@ -1,22 +1,48 @@
 // Measure Ask the Library against a real model on the frozen question set.
-// Needs LLM_API_KEY or GEMINI_API_KEY in the environment (never written out).
+// Needs LLM_API_KEY or GEMINI_API_KEY in the environment (never written out),
+// except for the model name "extractive" (tier 1, no model).
 // Run: node --import ./scripts/ts-hook.mjs scripts/eval-ask.mjs <run-name> [model] [questions-file]
 import { readFile, writeFile } from 'node:fs/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { askLibrary, openAiCompatible, ProviderError } from '../app/ask-core.ts';
+import { askLibrary, extractive, openAiCompatible, ProviderError } from '../app/ask-core.ts';
 import { passages, cards } from '../app/ask-library.ts';
 
-const apiKey = process.env.LLM_API_KEY || process.env.GEMINI_API_KEY;
-if (!apiKey) throw new Error('Set LLM_API_KEY or GEMINI_API_KEY');
 const run = process.argv[2];
 if (!run) throw new Error('Name the run, e.g. run1');
 const model = process.argv[3] || process.env.LLM_MODEL || 'gemini-3.5-flash-lite';
 const questionsFile = process.argv[4] || 'eval/ask-questions.json';
 const baseUrl = process.env.LLM_BASE_URL || 'https://generativelanguage.googleapis.com/v1beta/openai';
+const apiKey = process.env.LLM_API_KEY || process.env.GEMINI_API_KEY;
+// "extractive" is tier 1: no model, the shown passages are the answer.
+if (model !== 'extractive' && !apiKey) throw new Error('Set LLM_API_KEY or GEMINI_API_KEY');
 const provider = openAiCompatible({ baseUrl, apiKey, model, maxTokens: 1200, timeoutMs: 60_000 });
 const { questions } = JSON.parse(await readFile(new URL(`../${questionsFile}`, import.meta.url), 'utf8'));
 
 const rows = [];
+if (model === 'extractive') {
+  for (const item of questions) {
+    const shown = extractive(item.q, passages);
+    const records = [...new Set(shown.passages.map((p) => p.ref.split('#')[0]))];
+    rows.push({ id: item.id, answerable: item.answerable, status: shown.status, shown: shown.passages.map((p) => p.ref), expectedHit: item.expect ? records.some((r) => item.expect.includes(r)) : null });
+  }
+  const ans = rows.filter((r) => r.answerable);
+  const unans = rows.filter((r) => !r.answerable);
+  const pct = (a, b) => (b ? `${a}/${b} (${Math.round((100 * a) / b)}%)` : 'n/a');
+  const summary = {
+    run,
+    model,
+    questionsFile,
+    ranAt: new Date().toISOString().slice(0, 10),
+    questions: rows.length,
+    citationValid: 'quotes are library passages verbatim, so 100% by construction',
+    correctRefusal: pct(unans.filter((r) => r.status === 'refused').length, unans.length),
+    shownWhenAnswerable: pct(ans.filter((r) => r.status === 'passages').length, ans.length),
+    expectedRecordInTop5: pct(ans.filter((r) => r.expectedHit).length, ans.length),
+  };
+  await writeFile(new URL(`../eval/results/${run}-extractive.json`, import.meta.url), `${JSON.stringify({ summary, rows }, null, 2)}\n`);
+  console.log(JSON.stringify(summary, null, 2));
+  process.exit(0);
+}
 for (const item of questions) {
   let result = null;
   let error = null;

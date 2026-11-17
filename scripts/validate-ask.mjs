@@ -2,9 +2,8 @@
 // grounding check and refusals. Run: node --import ./scripts/ts-hook.mjs scripts/validate-ask.mjs [--data-only]
 import assert from 'node:assert/strict';
 import { access } from 'node:fs/promises';
-import { askLibrary, checkClaims, search, parseModelOutput } from '../app/ask-core.ts';
+import { askLibrary, checkClaims, extractive, search, parseModelOutput } from '../app/ask-core.ts';
 import { passages, cards } from '../app/ask-library.ts';
-import handler from '../api/ask.ts';
 
 const fake = (reply) => {
   const provider = async () => {
@@ -75,17 +74,12 @@ assert.equal(weak.reason, 'weak-retrieval');
 assert.equal(offTopic.calls, 0, 'weak retrieval must not call the model');
 assert(parseModelOutput('```json\n{"answerable":false,"claims":[]}\n```'));
 
-// 4. The function fails closed without a key and rejects bad requests.
-delete process.env.LLM_API_KEY;
-delete process.env.GEMINI_API_KEY;
-const post = (body) => new Request('http://local/api/ask/', { method: 'POST', body });
-assert.equal((await handler.fetch(post('{"question":"How do demos work?"}'))).status, 503);
-process.env.LLM_API_KEY = 'test-placeholder';
-assert.equal((await handler.fetch(new Request('http://local/api/ask/'))).status, 405);
-assert.equal((await handler.fetch(post('{"question":"hi"}'))).status, 400);
-assert.equal((await handler.fetch(post('x'.repeat(3000)))).status, 413);
-delete process.env.LLM_API_KEY;
+// 4. Tier 1 (no model): quotes passages verbatim, or says the library does not cover it.
+const quoted = extractive(question, passages);
+assert.equal(quoted.status, 'passages');
+assert(quoted.passages.length > 0 && quoted.passages.every((p) => passages.includes(p)));
+assert.equal(extractive('What is the best colour palette for a capsule image?', passages).status, 'refused');
 
 console.log(
-  `Ask the Library: ${passages.length} citable passages from ${new Set(passages.map((p) => p.sitePath)).size} pages; grounding check, refusals and request limits pass with a fake provider. This does not measure answer quality (see docs/ASK.md).`,
+  `Ask the Library: ${passages.length} citable passages from ${new Set(passages.map((p) => p.sitePath)).size} pages; extractive search, grounding check and refusals pass with a fake provider. This does not measure answer quality (see docs/ASK.md).`,
 );

@@ -1,0 +1,376 @@
+{
+  "summary": {
+    "run": "run3",
+    "model": "extractive",
+    "questionsFile": "eval/ask-questions.json",
+    "ranAt": "2026-11-17",
+    "questions": 31,
+    "citationValid": "quotes are library passages verbatim, so 100% by construction",
+    "correctRefusal": "6/10 (60%)",
+    "shownWhenAnswerable": "20/21 (95%)",
+    "expectedRecordInTop5": "19/21 (90%)"
+  },
+  "rows": [
+    {
+      "id": "demo-ccu-predicts",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gmi-nextfest-prediction#hardData.1",
+        "article:gmi-nextfest-prediction#actionableLesson",
+        "article:gdc-demo-ccu-cohort-2026#applicationSteps.1",
+        "article:gdc-ccu-staying-power-2026#summary",
+        "article:gdc-demo-ccu-cohort-2026#summary"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "nextfest-competition",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gmi-nextfest-competition#hardData.3",
+        "article:gmi-nextfest-competition#hardData.0",
+        "case:slots-and-daggers#marketingEvents.1",
+        "article:alinea-nextfest-june#hardData.0",
+        "article:gmi-nextfest-prediction#hardData.2"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "horror-october",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:htmag-horror-release-month-2026#applicationSteps.1",
+        "article:htmag-horror-release-month-2026#summary",
+        "article:htmag-horror-release-month-2026#applicationSteps.0",
+        "article:bscotch-hmd-timeline#hardData.0",
+        "case:cloverpit#marketingEvents.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "showcase-questions",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-showcases#actionableLesson",
+        "playbook:gdc-showcase-due-diligence-2026#cannotProve",
+        "playbook:gdc-showcase-due-diligence-2026#takeaways.1",
+        "article:gdc-showcases#summary",
+        "playbook:steam-onboarding-release-clock#takeaways.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "popular-upcoming-change",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gmi-personal-calendar#summary",
+        "article:gmi-personal-calendar#hardData.0",
+        "story:power-of-ten#story.1",
+        "story:power-of-ten#kpis.0",
+        "story:inkbound#timeline.1"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "daily-deals-2026",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-personalized-discounts-2026#applicationSteps.0",
+        "article:gdc-personalized-discounts-2026#hardData.0",
+        "article:gdc-personalized-discounts-2026#applicationSteps.1",
+        "playbook:htmag-festivals-2026-channel-fit#smallTeamChecklist.1",
+        "playbook:htmag-festivals-2026-channel-fit#takeaways.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "tiny-eden-campaign",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gwo-tiny-eden-campaign-preparation-2026#limitations",
+        "article:gwo-tiny-eden-campaign-preparation-2026#hardData.0",
+        "article:gwo-tiny-eden-campaign-preparation-2026#applicationSteps.0",
+        "story:tiny-bookshop#mechanism",
+        "story:tiny-bookshop#kpis.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "power-of-ten-conversion",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "story:power-of-ten#timeline.0",
+        "story:power-of-ten#kpis.0",
+        "playbook:gamedeveloper-power-of-ten-wishlist-countercase#synopsis",
+        "playbook:gamedeveloper-power-of-ten-wishlist-countercase#takeaways.0",
+        "case:dear-passengers#marketingEvents.1"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "dreadmoor-wishlists",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gwo-dreadmoor-200k-campaign#hardData.0",
+        "article:gwo-dreadmoor-200k-campaign#actionableLesson",
+        "story:dreadmoor#kpis.0",
+        "story:dreadmoor#kpis.1",
+        "story:tiny-bookshop#kpis.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "long-tail-2026",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-long-tail-cohort-2026#actionableLesson",
+        "article:gdc-long-tail-cohort-2026#hardData.0",
+        "article:gdc-long-tail-cohort-2026#applicationSteps.1",
+        "case:chained-together#marketingEvents.3",
+        "case:creature-kitchen#reportedOutcome"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "virtual-festivals",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "playbook:htmag-festivals-2026-channel-fit#takeaways.0",
+        "playbook:htmag-festivals-2026-channel-fit#takeaways.1",
+        "story:lost-twins-2#timeline.1",
+        "story:lost-twins-2#kpis.0",
+        "article:gdc-august-2026-public-discovery-roundup#summary"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "creator-attention",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:impress-content-creator-attention#actionableLesson",
+        "article:impress-content-creator-attention#summary",
+        "article:impress-content-creator-attention#applicationSteps.0",
+        "story:design-and-conjure#kpis.0",
+        "story:design-and-conjure#timeline.1"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "ai-content-survey",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "playbook:steam-ai-content-survey#soloChecklist.0",
+        "playbook:steam-ai-content-survey#synopsis",
+        "article:impress-steam-benchmarks-definition-check#hardData.1",
+        "story:inkbound#story.1",
+        "story:inkbound#kpis.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "onboarding-timing",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "playbook:steam-onboarding-release-clock#takeaways.0",
+        "playbook:steam-onboarding-release-clock#takeaways.1",
+        "article:game-developer-inkbound-early-access-2024#hardData.0",
+        "story:peak#timeline.1",
+        "article:game-developer-freerunners-next-fest-2024#actionableLesson"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "freerunners-nextfest",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:game-developer-freerunners-next-fest-2024#actionableLesson",
+        "story:freerunners#kpis.0",
+        "article:game-developer-freerunners-next-fest-2024#hardData.0",
+        "story:freerunners#kpis.1",
+        "case:slots-and-daggers#marketingEvents.1"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "inkbound-early-access",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:game-developer-inkbound-early-access-2024#hardData.0",
+        "story:inkbound#timeline.0",
+        "article:game-developer-inkbound-early-access-2024#hardData.2",
+        "story:inkbound#timeline.3",
+        "case:waterpark-simulator#marketingEvents.1"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "wishlist-inflation",
+      "answerable": true,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": false
+    },
+    {
+      "id": "urban-jungle-team",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "playbook:gwo-urban-jungle-three-person-discovery#soloChecklist.1",
+        "playbook:gwo-urban-jungle-three-person-discovery#takeaways.1",
+        "article:alinea-wardogs-wishlist-cohorts-2026#limitations",
+        "article:alinea-wardogs-wishlist-cohorts-2026#summary",
+        "story:brotato#story.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "steam-deck-genres",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "article:gdc-steam-deck-review-denominator-2026#hardData.0",
+        "article:gdc-steam-deck-review-denominator-2026#applicationSteps.0",
+        "case:tiny-bookshop#marketingEvents.1",
+        "article:gdc-genre-shift#hardData.2",
+        "article:gdc-genre-shift#hardData.0"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "digging-hole-attention",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "case:a-game-about-digging-a-hole#reportedOutcome",
+        "case:a-game-about-digging-a-hole#marketingEvents.0",
+        "story:a-game-about-digging-a-hole#timeline.1",
+        "story:a-game-about-digging-a-hole#timeline.2",
+        "article:gdc-sbox-platform-hook-2026#actionableLesson"
+      ],
+      "expectedHit": true
+    },
+    {
+      "id": "ccu-staying-power",
+      "answerable": true,
+      "status": "passages",
+      "shown": [
+        "case:shift-at-midnight#reportedOutcome",
+        "story:repo#kpis.1",
+        "case:keep-driving#observedMetrics",
+        "story:hauntii#kpis.2",
+        "story:freerunners#kpis.5"
+      ],
+      "expectedHit": false
+    },
+    {
+      "id": "tiktok-cost-per-wishlist",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "story:dear-passengers#timeline.0",
+        "article:gdc-indie-budget-denominator-2026#applicationSteps.0",
+        "article:gdc-indie-budget-denominator-2026#summary",
+        "article:giya-design-and-conjure#limitations",
+        "article:giya-design-and-conjure#hardData.2"
+      ],
+      "expectedHit": null
+    },
+    {
+      "id": "switch-eshop-feature",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    },
+    {
+      "id": "vat-germany",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    },
+    {
+      "id": "epic-revenue-share",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "playbook:gamalytic-methodology-metric-definitions#takeaways.1",
+        "article:gdr-august-milestones#hardData.2",
+        "story:arco#kpis.0",
+        "playbook:steam-onboarding-release-clock#synopsis",
+        "story:minami-lane#story.1"
+      ],
+      "expectedHit": null
+    },
+    {
+      "id": "brazil-price",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    },
+    {
+      "id": "engine-deck-performance",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    },
+    {
+      "id": "injection-hollow-knight",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    },
+    {
+      "id": "reddit-best-day",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "story:choo-choo-charles#timeline.1",
+        "case:megabonk#marketingEvents.0",
+        "case:a-game-about-digging-a-hole#caveat",
+        "case:a-game-about-digging-a-hole#reportedOutcome",
+        "story:kinitopet#story.1"
+      ],
+      "expectedHit": null
+    },
+    {
+      "id": "pax-booth-cost",
+      "answerable": false,
+      "status": "refused",
+      "shown": [],
+      "expectedHit": null
+    },
+    {
+      "id": "steam-awards-2026",
+      "answerable": false,
+      "status": "passages",
+      "shown": [
+        "case:chained-together#marketingEvents.3",
+        "article:gdc-big-walk#hardData.2",
+        "case:big-walk#marketingEvents.0",
+        "case:slots-and-daggers#marketingEvents.1",
+        "story:a-short-hike#timeline.3"
+      ],
+      "expectedHit": null
+    }
+  ]
+}

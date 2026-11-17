@@ -11,6 +11,7 @@ Independent Steam marketing and indie game market research for game developers.
 ## What is here
 
 - A [Tactic Deck](https://steam-discovery.vercel.app/tactics/): Steam marketing tactics filtered by launch stage, team size and channel. Each card quotes its evidence from the library with source, date and evidence class, keeps a counterexample where one exists, and states what it cannot prove. Selected cards build a local launch plan that exports as Markdown.
+- [Ask the Library](https://steam-discovery.vercel.app/ask/): search the library in your browser and get its passages quoted with their sources, or "not in the library". Optionally summarise them with an in-browser model (WebGPU) or your own Gemini key; uncited sentences and unsupported numbers are removed. No server and no site key. Design and measured grounding: [docs/ASK.md](docs/ASK.md).
 - Game case studies with dated marketing events, KPIs and evidence limits.
 - A [co-op FPS market study](https://steam-discovery.vercel.app/indie-fps/) with 51 wave, run-based and mission shooters first available on Steam between September 28, 2023 and September 28, 2026; 18 solo comparisons and 25 context games sit alongside the original release directory. The visible sample has at least 30 total reviews per released game; 17 community case studies explain combat loops, progression and design lessons. Per-game Steam observations and transparent revenue scenarios are downloadable.
 - A Steam Radar sample with search, release-state/evidence filters, three-game comparison and a browser-local watchlist/export.
@@ -46,6 +47,7 @@ pnpm validate:citations
 pnpm validate:public
 pnpm validate:fps
 pnpm validate:tactics
+pnpm validate:ask
 pnpm audit
 ```
 

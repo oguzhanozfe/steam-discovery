@@ -270,6 +270,31 @@ export type AskResult = {
   usage: { promptTokens: number; completionTokens: number };
 };
 
+/** Tier 1, no model: the best passages quoted as they are, or "not in the library". */
+export function extractive(question: string, passages: Passage[], limit = 5) {
+  const { queryTerms, hits } = search(passages, question);
+  const top = hits[0];
+  const matchedShare = top ? top.matched.length / Math.max(1, queryTerms.length) : 0;
+  const weak = !top || top.score < MIN_SCORE || matchedShare < MIN_MATCHED_SHARE;
+  return {
+    status: weak ? ('refused' as const) : ('passages' as const),
+    // Show a record's sourced passage right after its first card, so an
+    // editorial lesson is never quoted without the evidence it rests on.
+    passages: weak
+      ? []
+      : hits
+          .flatMap((h, i) => {
+            const first = hits.findIndex((x) => x.passage.sitePath === h.passage.sitePath) === i;
+            const sourced = hits.find((x, j) => j >= limit && x.passage.sitePath === h.passage.sitePath && x.passage.evidenceClass !== 'editorial');
+            return first && sourced && i < limit ? [h.passage, sourced.passage] : [h.passage];
+          })
+          .filter((p, i, all) => all.indexOf(p) === i)
+          .slice(0, limit),
+    retrievalScore: top?.score ?? 0,
+    matchedShare,
+  };
+}
+
 export async function askLibrary(
   question: string,
   passages: Passage[],
@@ -284,7 +309,8 @@ export async function askLibrary(
   const base = { claims: [], sources: [], closest, tactics: [], usage: { promptTokens: 0, completionTokens: 0 } };
   const audit = { retrievalScore: top?.score ?? 0, matchedShare, checks: [] as ClaimCheck[], modelAnswerable: null as boolean | null };
   if (!top || top.score < MIN_SCORE || matchedShare < MIN_MATCHED_SHARE)
-    return { status: 'refused', reason: 'weak-retrieval', ...base, audit };
+    // Nothing matched well, so the nearest notes would be noise: list none.
+    return { status: 'refused', reason: 'weak-retrieval', ...base, closest: [], audit };
 
   const reply = await provider(buildMessages(question, hits));
   const usage = { promptTokens: reply.promptTokens ?? 0, completionTokens: reply.completionTokens ?? 0 };
