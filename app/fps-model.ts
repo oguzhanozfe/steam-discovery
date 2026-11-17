@@ -82,7 +82,7 @@ export function estimate(game: MarketGame): Revenue | null {
     priceUsd <= 0
   )
     return null;
-  // ponytail: transparent sensitivity scenarios, not a calibrated sales model; replace with disclosed sales when available.
+  // Limitation: transparent sensitivity scenarios, not a calibrated sales model; replace with disclosed sales when available.
   return {
     low: steamReviews * 20 * priceUsd * 0.4,
     high: steamReviews * 60 * priceUsd * 0.8,
