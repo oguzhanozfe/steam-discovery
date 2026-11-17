@@ -8,7 +8,7 @@ The research is good, and it is careful in ways most indie marketing content is 
 
 | Asset | Where | Size | Why a developer cares |
 | --- | --- | --- | --- |
-| Source notes with a lesson and limits | `newsletters.json`, `reading-expansion.json`, `reading-updates.json` | 57 notes. Each has `actionableLesson` and `limitations`. There are 76 dated `applicationSteps` in total. | They condense HTMAG, GameDiscoverCo, How To Market A Game, Game Marketing Insights and similar sources into "what to do" plus "what this does not prove". |
+| Source notes with a lesson and limits | `newsletters.json`, `reading-expansion.json`, `reading-updates.json` | 57 notes. Each has `actionableLesson` and `limitations`. There are 76 day-numbered `applicationSteps` in total. | They condense GameDiscoverCo, The Alinea Insight, How To Market A Game, Game Marketing Intel, OP Game Marketing, IMPRESS, Derek Lieu and others into "what to do" plus "what this does not prove". |
 | Game stories | `game-stories.json`, `hub-cases.json`, `story-expansion.json` | 60 stories, 211 dated timeline events and 129 KPIs. 21 of those KPIs concern wishlists (18 games). | Shows what a campaign looked like over time (announce, demo, festival, launch) with sourced outcomes. Each story also has a `buildTransfer` field: what a small team could borrow and what it should cut. |
 | Playbooks | `hub-articles.json` | 10 playbooks with 40 checklist items (separate solo and 2–5-person lists) and a `cannotProve` line each. | Already shaped as actionable checklists. |
 | Market context | `market-q1.json`, `market-q2.json`, `survival-research.json` | For example, Q1 2026 had 5,971 releases, and 96 of them (1.61%) reached 1,000+ reviews (HTMAG count). | Base rates that temper the success stories. |
@@ -18,7 +18,11 @@ The research is good, and it is careful in ways most indie marketing content is 
 
 ## Why it does not land today
 
-- **It reads like an archive, not a tool.** The navigation has 12+ sibling sections (Dev Hub, Indie FPS, Radar, Solo Lab, Stories, Reading, Benchmarks, Survival, Campaign timelines, Build Lab, Sprint Plan, About). The same games appear in several files. For example, Balatro, Lethal Company and Buckshot Roulette are each in two case files. A developer with a question ("should I do Next Fest with a 2k-wishlist page?") has to read across five pages to answer it.
+- **It reads like an archive, not a tool.** The navigation has 14 sibling sections (Dev Hub, Indie FPS, Steam Radar, Solo Lab, Game Stories, Playbooks, Market Pulse, Sources & Reading, Researched benchmarks, Survival craft, Campaign timelines, Build Lab, Sprint Plan, About).
+  - Each section has its own search. Reading filters by publication. Stories, Radar and the benchmark explorer have search, and Radar also has filters, a local watchlist and export.
+  - All of them are organised by content type (source, game or niche), not by the decision a developer faces at their stage. No view works across them.
+  - The home page opens with niche briefs, an advertising slot and a long reference register.
+  - The same games appear in several files. For example, Balatro and Lethal Company are each in `reference-cases.json` and `story-expansion.json`.
 - **The answers are in the data, but the data is not queryable.** Evidence labels are free text, with 57 distinct strings on KPIs alone. Timeline `channel` values are free text too. Wishlist and sales figures sit inside `hardData` sentences rather than typed fields.
 - **The live site is stale.** The production export still reports September 28. Ten notes prepared in October were never deployed because the audit gate blocked publication (`docs/maintenance/`). That gate was cleared on November 17: `pnpm audit` now reports 0 advisories. Deployment is still manual (`vercel deploy --prebuilt --prod`).
 
@@ -26,7 +30,13 @@ The research is good, and it is careful in ways most indie marketing content is 
 
 ### A. Tactic Deck: searchable cards from the research (recommended)
 
-One card per tactic, for example "Ship the demo weeks before Next Fest", "Run a closed playtest to grow wishlists" or "Price below the genre median at launch". Each card holds:
+One card per tactic. Examples include:
+
+- "Release the demo early enough to fix feedback before Next Fest" (`gmi-nextfest-prediction`);
+- "Use a closed playtest as a wishlist driver" (DREADMOOR timeline, `gwo-dreadmoor-200k-campaign`);
+- "Choose comparables by release age, genre, price and scale" (`alinea-steam-2026-middle-market-definition`).
+
+Each card holds:
 
 - what was done, by whom and when;
 - the outcome, quoted from the source record with its evidence label;
@@ -38,6 +48,7 @@ Filters are stage (no page yet, page live, demo, festival, launch, post-launch),
 
 - **Who it serves:** a solo developer or 2–5-person team deciding what to do this month.
 - **What it reuses:** 57 lessons with limitations, 76 application steps, 40 checklist items, 211 timeline events, 60 build transfers and 2 counter-cases. Cards link to existing records by id, so every number stays in its original record with its source.
+- **What it extends:** it is the cross-section, stage-first view the site lacks. Playbooks, notes and stories become sources for cards. Radar and the benchmark explorer stay as the comparables lookup, linked from the cards.
 - **Effort:** 1–2 weeks (scope below). It stays fully static: no backend, no API keys, no running cost.
 - **Why it would delight rather than be another blog:**
   - It answers "what should I do at my stage?" in one screen.
@@ -49,7 +60,7 @@ Filters are stage (no page yet, page live, demo, festival, launch, post-launch),
 
 The developer enters a genre, price, wishlists at launch, and whether they plan a demo or Next Fest. The site does not answer with a prediction. It answers with "where you sit among documented launches":
 
-- your wishlists against the 18 games with a sourced wishlist KPI;
+- your wishlists against the documented launch-time wishlist figures. There are about ten, for example shapez 958, PEAK 29,384 and Balatro 208,401, recorded in mixed formats. The other wishlist KPIs are milestones or campaign gains;
 - the Q1 2026 review-bucket base rate;
 - the Next Fest cohort figures from Game Marketing Insights (e.g. 1,241 of 4,175 games under 100 estimated wishlists; follower × 12 proxy);
 - a revenue range that uses the same disclosed scenario formula as `fps-model.ts` (reviews × 20–60 × price × 40–80%), labelled as an assumption.
@@ -58,7 +69,7 @@ The developer enters a genre, price, wishlists at launch, and whether they plan 
 - **What it reuses:** `fps-model.ts`, `market-q1.json`, the wishlist KPIs, and the Next Fest notes.
 - **Effort:** 2–3 weeks. The inputs it needs (wishlist and sales ratios) are scattered across `hardData` text. They would have to be retyped into structured fields, and each value checked against its source. Most of that time goes into data cleanup and wording reviews, not UI.
 - **Why it would delight:**
-  - It is the most shareable option ("my plan vs 18 real launches").
+  - It is the most shareable option ("my plan vs real documented launches").
   - A reverse mode ("what would $50k gross imply in reviews?") teaches the maths.
 - **Risk:** this is the easiest option to misuse. `CONTENT_MAINTENANCE.md` says a successful case is not a success probability, and that model revenue is not audited revenue. The tool would need hard guardrails (ranges only, a visible sample size, definition warnings) or it would contradict the site's own method. It is better built on top of A's structured data.
 
